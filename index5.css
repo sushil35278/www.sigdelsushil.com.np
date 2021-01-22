@@ -1,0 +1,148 @@
+
+html {
+    height: 100vh;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0 0;
+    padding: 0 0;
+    height: 100%;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa-github {
+    background: #555;
+    color: white;
+  }
+
+.about-info {
+    text-align: justify;
+}
+
+.ftco-section {
+    text-align: center;
+}
+
+#nav-section {
+  transition: 0.2s;
+  background-color: lightgreen;
+}
+
+#home-section {
+  display: inline;
+}
+
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  text-emphasis-color: red;
+  color: white;
+}
+
+#myBtn {
+  font-size: 10px; 
+  position: fixed;
+  bottom: 20px; 
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50%;
+
+
+}
+
+#myBtn:hover {
+  background-color: yellowgreen; /* Add a dark-grey background on hover */
+}
+
+#about-section {
+       font-family: "Trirong", serif;
+}
+
+#project-section1 {
+  background-image: url(medical.jpg);
+}
+
+#footer-section {
+    text-align: center;
+    padding: 3px;
+    color: black;;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  opacity: 1.0;
+  color:greenyellow;
+  width: 100%;
+  padding: 20px;
+
+}
+
+#about::before { 
+  content: "Designer"; 
+  animation: animate infinite 5s; 
+  padding-left: 10px; 
+}
+
+i, h2 {
+  display: inline;
+}
+
+@keyframes animate { 
+
+  0% { 
+      content: "Developer"; 
+  } 
+
+  50% { 
+      content: "Learner"; 
+  } 
+
+  75% { 
+      content: "Social Activist"; 
+  } 
+  100% {
+    content: "Nature Lover";
+  }
+}
