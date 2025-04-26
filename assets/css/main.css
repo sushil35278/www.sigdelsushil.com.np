@@ -2118,6 +2118,22 @@ responsive
     padding: 30px;
   }
 }
+.mobile-language-switcher {
+  display: inline-block;
+  margin: 20px 20px;
+  vertical-align: middle;
+}
+
+.mobile-language-switcher .language-flag {
+  width: 25px;
+  height: 15px;
+  margin-top: 5px;
+}
+
+/* Hide the original language switcher */
+.language-switcher {
+  display: none;
+}
 
 .fa-facebook {
   background: #3B5998;
