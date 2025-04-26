@@ -45,6 +45,14 @@
         border-color: #007bff;
         box-shadow: 0 0 5px rgba(0,123,255,0.5);
       }
+      @media only screen and (max-width: 768px) {
+            .mobile-language-switcher {
+              display: block;
+            }
+            .language-switcher {
+              display: none;
+            }
+          }
     </style>
   </head>
 
@@ -78,9 +86,9 @@
             <!-- ***** Logo End ***** -->
 
                         <!-- Add language switcher here -->
-            <div class="mobile-language-switcher">
+            <!-- <div class="mobile-language-switcher">
               <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/jp.svg" alt="日本語" class="language-flag active" onclick="changeLanguage('ja')" data-lang="ja">
-            </div>
+            </div> -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
               <li class="scroll-to-section"><a href="#top" class="active">ホーム</a></li>
