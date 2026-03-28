@@ -1,63 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="alternate" hreflang="en" href="index.html">
-    <link rel="alternate" hreflang="ja" href="index-ja.html">
-    <meta name="keywords"
-    content="sushil sigdel, personal website, nepali website, website using html css and bootstrap, web developer in nepal, system engineer, system engineer in japan, sigdel sushil, simple website, responsive website, student of MAC, django developer in nepal, python developer in nepal, php developer, laravel developer, ai, machine learning">                                                                                        
-    <link rel = "icon" href = "assets/images/sushil.JPG" type = "image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <title>Sushil Sigdel</title>
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/css/flag-icon.min.css" rel="stylesheet">
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/animated.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-        <!-- Language Switcher CSS -->
-        <style>
-          .language-switcher {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 1000;
-            display: flex;
-            gap: 10px;
-          }
-          .language-flag {
-            width: 30px;
-            height: 20px;
-            cursor: pointer;
-            border: 1px solid transparent;
-            transition: all 0.3s ease;
-          }
-          .language-flag:hover {
-            transform: scale(1.1);
-            border-color: #ddd;
-          }
-          .language-flag.active {
-            border-color: #007bff;
-            box-shadow: 0 0 5px rgba(0,123,255,0.5);
-          }
-          @media only screen and (max-width: 768px) {
-            .mobile-language-switcher {
-              display: block;
-            }
-            .language-switcher {
-              display: none;
-            }
-          }
-        </style>
-  </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="alternate" hreflang="en" href="index.html">
+  <link rel="alternate" hreflang="ja" href="index-ja.html">
+  <meta name="description"
+    content="Sushil Sigdel – System Engineer & Full Stack Developer based in Matsuyama, Japan. Specializing in Python, Django, React, AI/ML integrations, and cloud services.">
+  <meta name="author" content="Sushil Sigdel">
+  <meta name="keywords"
+    content="sushil sigdel, personal website, nepali website, full stack developer, web developer in nepal, system engineer, system engineer in japan, sigdel sushil, django developer, python developer, php developer, laravel developer, ai, machine learning, react developer">
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Sushil Sigdel – System Engineer & Full Stack Developer">
+  <meta property="og:description"
+    content="Personal portfolio of Sushil Sigdel – System Engineer & AI/ML Enthusiast based in Matsuyama, Japan.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sigdelsushil.com.np">
+  <meta property="og:image" content="https://www.sigdelsushil.com.np/assets/images/photo.jpg">
+  <link rel="icon" href="assets/images/sushil.JPG" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <title>Sushil Sigdel – System Engineer &amp; Full Stack Developer</title>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/css/flag-icon.min.css" rel="stylesheet">
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <!-- Language Switcher CSS -->
+  <style>
+    .language-switcher {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+      display: flex;
+      gap: 10px;
+    }
+
+    .language-flag {
+      width: 30px;
+      height: 20px;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    .language-flag:hover {
+      transform: scale(1.1);
+      border-color: #ddd;
+    }
+
+    .language-flag.active {
+      border-color: #007bff;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+    @media only screen and (max-width: 768px) {
+      .mobile-language-switcher {
+        display: block;
+      }
+
+      .language-switcher {
+        display: none;
+      }
+    }
+  </style>
+</head>
 
 <body>
-    <!-- Same preloader as index.html -->
+  <!-- Same preloader as index.html -->
 
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
@@ -79,14 +96,15 @@
         <div class="col-12">
           <nav class="main-nav">
             <a href="index.html" class="logo">
-              <img src="assets/images/sushil.JPG" alt="Sushil Sigdel" class="responsive" style="height: 50px; width:50px; border-radius:50%; margin-top:-12px;">
+              <img src="assets/images/sushil.JPG" alt="Sushil Sigdel" class="responsive"
+                style="height: 50px; width:50px; border-radius:50%; margin-top:-12px;">
             </a>
-            
+
             <!-- Add language switcher here
             <div class="mobile-language-switcher">
                 <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/jp.svg" alt="日本語" class="language-flag active" onclick="changeLanguage('ja')" data-lang="ja">
             </div> -->
-            
+
             <ul class="nav">
               <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
               <li class="scroll-to-section"><a href="#about">About</a></li>
@@ -96,13 +114,14 @@
               <li class="scroll-to-section"><a href="#contact">Contact</a></li>
               <li class="scroll-to-section">
                 <div class="language-switcher" style="margin-top: 0;">
-                  <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/jp.svg" alt="日本語" class="language-flag active" onclick="changeLanguage('ja')" data-lang="ja">
+                  <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/jp.svg" alt="日本語"
+                    class="language-flag active" onclick="changeLanguage('ja')" data-lang="ja">
                 </div>
               </li>
             </ul>
             <a class='menu-trigger'>
-                <span>Menu</span>
-            </a>        
+              <span>Menu</span>
+            </a>
             <!-- ***** Menu End ***** -->
           </nav>
         </div>
@@ -161,7 +180,13 @@
                   <h4>Who is <em>Sushil Sigdel</em></h4>
                   <div class="line-dec"></div>
                 </div>
-                <p>I am a passionate and detail-oriented Full Stack Developer with over three years of experience crafting innovative web applications and delivering robust software solutions. My expertise spans both front-end and back-end technologies,.Also I have experience of integrating cutting-edge Al tools like Langchain, Crawl4ai and gemini into real world project. My commitment to delivering high-quality, scalable solutions has led to measurable successes, such as optimizing business processes and enhancing user engagement. I thrive in collaborative environments and am always eager to tackle challenges that drive innovation and learning.
+                <p>I am a passionate and detail-oriented Full Stack Developer with over three years of experience
+                  crafting innovative web applications and delivering robust software solutions. My expertise spans both
+                  front-end and back-end technologies. I also have experience integrating cutting-edge AI tools like
+                  Langchain, Crawl4ai, and Gemini into real-world projects. My commitment to delivering high-quality,
+                  scalable solutions has led to measurable successes, such as optimizing business processes and
+                  enhancing user engagement. I thrive in collaborative environments and am always eager to tackle
+                  challenges that drive innovation and learning.
                 </p>
                 <div class="row">
                   <div class="col-lg-4 col-sm-4">
@@ -202,7 +227,7 @@
                   </div>
                   <div class="col-lg-4 col-sm-4">
                     <div class="skill-item third-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                      <div class="progress" data-percentage="80">
+                      <div class="progress" data-percentage="70">
                         <span class="progress-left">
                           <span class="progress-bar"></span>
                         </span>
@@ -218,7 +243,7 @@
                       </div>
                     </div>
                   </div>
-                </div> 
+                </div>
               </div>
             </div>
           </div>
@@ -250,75 +275,85 @@
                       </div>
                     </div>
                     <div>
-                      <div class="thumb">                 
+                      <div class="thumb">
                         <span class="icon"><img src="assets/images/service-icon-02.png" alt=""></span>
                         Education
                       </div>
                     </div>
                     <div>
-                      <div class="thumb">                 
+                      <div class="thumb">
                         <span class="icon"><img src="assets/images/service-icon-03.png" alt=""></span>
                         Trainings
                       </div>
                     </div>
                     <div>
-                      <div class="thumb">                 
+                      <div class="thumb">
                         <span class="icon"><img src="assets/images/service-icon-04.png" alt=""></span>
                         Hard Skills
                       </div>
                     </div>
                     <div class="last-thumb">
-                      <div class="thumb">                 
+                      <div class="thumb">
                         <span class="icon"><img src="assets/images/service-icon-01.png" alt=""></span>
                         Soft Skills
                       </div>
                     </div>
                   </div>
-                </div> 
+                </div>
                 <div class="col-lg-12">
                   <ul class="nacc">
+                    <!-- Experience -->
                     <li class="active">
                       <div>
                         <div class="thumb">
                           <div class="left-text">
-                            <h4>Eyemovic Inc. | System Engineer | Kathmandu, Nepal | July 2023 – Feb 2024 | Matsuyama, Japan | Feb 2024 –Present</h4>
+                            <h4>Eyemovic Inc. | System Engineer | Kathmandu, Nepal | July 2023 – Feb 2024 | Matsuyama,
+                              Japan | Feb 2024 – Present</h4>
                             <div class="ticks-list">
-                              <span><i class="fa fa-check"></i>Participated in research, system architecture design, technical planning, coding,
-                                comprehensive code reviews and refactor improve performance, maintainability, and
-                                scalability of core systems..</span><br>
-                              <span><i class="fa fa-check"></i>Contributed to CI/CD pipeline implementation and infrastructure automation using AWS
-                                CloudFormation.</span><br>
-                              <span><i class="fa fa-check"></i>Participated in customer meetings, offering technical insights and post-deployment
-                                support.</span><br>
-                              <span><i class="fa fa-check"></i>Worked in a hybrid international team setting with cross-functional collaboration.</span><br> 
+                              <span><i class="fa fa-check"></i>Participated in research, system architecture design,
+                                technical planning, coding, comprehensive code reviews and refactoring to improve
+                                performance, maintainability, and scalability of core systems.</span><br>
+                              <span><i class="fa fa-check"></i>Contributed to CI/CD pipeline implementation and
+                                infrastructure automation using AWS CloudFormation.</span><br>
+                              <span><i class="fa fa-check"></i>Participated in customer meetings, offering technical
+                                insights and post-deployment support.</span><br>
+                              <span><i class="fa fa-check"></i>Worked in a hybrid international team setting with
+                                cross-functional collaboration.</span><br>
                             </div>
-                              <h4>Kira Technologies Pvt. Ltd. | Full Stack Developer | 2021/06-2022/10</h4>
-                                <div class="ticks-list">
-                                  <span><i class="fa fa-check"></i>Designed and developed scalable web applications for product development.</span><br>
-                                  <span><i class="fa fa-check"></i>Implemented RESTful APIs and contributed to frontend using React and Bootstrap..</span><br>
-                                  <span><i class="fa fa-check"></i>Collaborated cross-functionally on product features, documentation, testing, and
-                                    debugging.
-                                    • Participated i</span><br> 
-                                  <span><i class="fa fa-check"></i>Participated in development planning, code reviews.</span><br>
-                                </div>
-                              <h4>Thulo Technology Pvt. Ltd. | Python Django Intern | 2021/01-2021/04</h4>
-                                <div class="ticks-list">
-                                  <span><i class="fa fa-check"></i>Implemented backend features and improved system logic using Django.</span><br>
-                                  <span><i class="fa fa-check"></i>Explored and integrated new development tools to streamline coding workflows.</span><br>
-                                  <span><i class="fa fa-check"></i>Collaborated with senior engineers and managers on in-house product improvements.</span><br> 
-                                </div> 
-                              <h4>Unity for Nations Development  | IT Coordinator| 2017/11-2021/12</h4>
-                                <div class="ticks-list">
-                                  <span><i class="fa fa-check"></i>Developed and implemented technology related plans.</span><br>
-                                  <span><i class="fa fa-check"></i>Provided technical support and training.</span><br>
-                                  <span><i class="fa fa-check"></i>Conducted technology related program.</span><br>
-                                  <span><i class="fa fa-check"></i>Spreading public awareness of cybersecurity.</span>
-                                </div>
+                            <h4>Kira Technologies Pvt. Ltd. | Full Stack Developer | 2021/06-2022/10</h4>
+                            <div class="ticks-list">
+                              <span><i class="fa fa-check"></i>Designed and developed scalable web applications for
+                                product development.</span><br>
+                              <span><i class="fa fa-check"></i>Implemented RESTful APIs and contributed to frontend
+                                using React and Bootstrap.</span><br>
+                              <span><i class="fa fa-check"></i>Collaborated cross-functionally on product features,
+                                documentation, testing, and debugging.</span><br>
+                              <span><i class="fa fa-check"></i>Participated in development planning, code
+                                reviews.</span><br>
+                            </div>
+                            <h4>Thulo Technology Pvt. Ltd. | Python Django Intern | 2021/01-2021/04</h4>
+                            <div class="ticks-list">
+                              <span><i class="fa fa-check"></i>Implemented backend features and improved system logic
+                                using Django.</span><br>
+                              <span><i class="fa fa-check"></i>Explored and integrated new development tools to
+                                streamline coding workflows.</span><br>
+                              <span><i class="fa fa-check"></i>Collaborated with senior engineers and managers on
+                                in-house product improvements.</span><br>
+                            </div>
+                            <h4>Unity for Nations Development | IT Coordinator | 2017/11-2021/12</h4>
+                            <div class="ticks-list">
+                              <span><i class="fa fa-check"></i>Developed and implemented technology related
+                                plans.</span><br>
+                              <span><i class="fa fa-check"></i>Provided technical support and training.</span><br>
+                              <span><i class="fa fa-check"></i>Conducted technology related program.</span><br>
+                              <span><i class="fa fa-check"></i>Spreading public awareness of cybersecurity.</span>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </li>
-                    <li class="active">
+                    <!-- Education -->
+                    <li>
                       <div>
                         <div class="thumb">
                           <div class="left-text">
@@ -326,20 +361,23 @@
                             <p>First division with 72.93%</p>
                             <h4>Higher Secondary | Mount Annapurna Campus | Completed in 2016</h4>
                             <p>First division with 69.20%</p>
-                            <h4>School Leaving Certificate | Shree Sarbodaya Higher Secondary School | Completed in 2014</h4>
-                            <P>First division with 75.50%</P>
+                            <h4>School Leaving Certificate | Shree Sarbodaya Higher Secondary School | Completed in 2014
+                            </h4>
+                            <p>First division with 75.50%</p>
                           </div>
                         </div>
                       </div>
                     </li>
-                    <li class="active">
+                    <!-- Trainings -->
+                    <li>
                       <div>
                         <div class="thumb">
                           <div class="left-text">
                             <div class="ticks-list">
                               <span><i class="fa fa-check"></i>Basic IT and Technical support training.</span><br>
-                              <span><i class="fa fa-check"></i>Professional Python and Django from Broadway Infosys Nepal.</span><br>
-                              <span><i class="fa fa-check"></i>Python for Data Science from Datacamp.</span><br> 
+                              <span><i class="fa fa-check"></i>Professional Python and Django from Broadway Infosys
+                                Nepal.</span><br>
+                              <span><i class="fa fa-check"></i>Python for Data Science from Datacamp.</span><br>
                               <span><i class="fa fa-check"></i>Self-empowerment training organized by MRR</span><br>
                               <span><i class="fa fa-check"></i>Japanese language training from Leadx Nepal.</span>
                             </div>
@@ -347,6 +385,7 @@
                         </div>
                       </div>
                     </li>
+                    <!-- Hard Skills -->
                     <li>
                       <div>
                         <div class="thumb">
@@ -354,15 +393,23 @@
                             <div class="col-lg-7 align-self-center">
                               <div class="left-text">
                                 <div class="ticks-list">
-                                  <span><i class="fa fa-check"></i><b>Front end skills:</b> HTML, CSS, Basic JS, BOOTSTRAP, React, Ant Design, Shadcn, TypeScript, Remix</span><br>
-                                  <span><i class="fa fa-check"></i><b>Back end skills:</b> hp, Laravel, Python, Django, Typescript, NodsJs, Remix, AdonisJs</span><br>
-                                  <span><i class="fa fa-check"></i><b>Database:</b> MySQL, SQLITE, PostgreSQL, Qdrant, Milvus.</span><br> 
-                                  <span><i class="fa fa-check"></i><b>Version Control and Containerization:</b> Git, with the knowledge of Github and Gitlab, Docker</span><br>
-                                  <span><i class="fa fa-check"></i><b>Design:</b> Canva, Figma</span>
-                                  <span><i class="fa fa-check"></i><b>API:</b> RestAPI with Swagger for documentation</span>
-                                  <span><i class="fa fa-check"></i><b>AI/ML Tools:</b> Langchain, Creawl4ai, Gemini, Mcp Server.</span>
-                                  <span><i class="fa fa-check"></i><b>Others:</b> Microsoft suite, OOP, Visual Code Studio, Basic Linux</span>
-                                  <span><i class="fa fa-check"></i><b>Cloud Services:</b> AWS EC2, Lambda, Basic Serverless Architecture</span><br>
+                                  <span><i class="fa fa-check"></i><b>Front end skills:</b> HTML, CSS, Basic JS,
+                                    BOOTSTRAP, React, Ant Design, Shadcn, TypeScript, Remix</span><br>
+                                  <span><i class="fa fa-check"></i><b>Back end skills:</b> PHP, Laravel, Python, Django,
+                                    TypeScript, NodeJs, Remix, AdonisJs</span><br>
+                                  <span><i class="fa fa-check"></i><b>Database:</b> MySQL, SQLITE, PostgreSQL, Qdrant,
+                                    Milvus.</span><br>
+                                  <span><i class="fa fa-check"></i><b>Version Control and Containerization:</b> Git,
+                                    with the knowledge of Github and Gitlab, Docker</span><br>
+                                  <span><i class="fa fa-check"></i><b>Design:</b> Canva, Figma</span><br>
+                                  <span><i class="fa fa-check"></i><b>API:</b> RestAPI with Swagger for
+                                    documentation</span><br>
+                                  <span><i class="fa fa-check"></i><b>AI/ML Tools:</b> Langchain, Crawl4ai, Gemini, MCP
+                                    Server.</span><br>
+                                  <span><i class="fa fa-check"></i><b>Others:</b> Microsoft suite, OOP, Visual Code
+                                    Studio, Basic Linux</span><br>
+                                  <span><i class="fa fa-check"></i><b>Cloud Services:</b> AWS EC2, Lambda, Basic
+                                    Serverless Architecture</span><br>
                                 </div>
                               </div>
                             </div>
@@ -375,6 +422,7 @@
                         </div>
                       </div>
                     </li>
+                    <!-- Soft Skills -->
                     <li>
                       <div>
                         <div class="thumb">
@@ -384,7 +432,7 @@
                                 <div class="ticks-list">
                                   <span><i class="fa fa-check"></i>Good personal and Interpretation Skill.</span><br>
                                   <span><i class="fa fa-check"></i>Problem Solving Skill.</span><br>
-                                  <span><i class="fa fa-check"></i>Management Skill.</span><br> 
+                                  <span><i class="fa fa-check"></i>Management Skill.</span><br>
                                   <span><i class="fa fa-check"></i>Teamwork Skill.</span><br>
                                 </div>
                               </div>
@@ -399,7 +447,7 @@
                       </div>
                     </li>
                   </ul>
-                </div>          
+                </div>
               </div>
             </div>
           </div>
@@ -412,74 +460,74 @@
     <div class="container">
       <div class="row">
         <div class="section-heading wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-          <h6>My Portofolio</h6>
+          <h6>My Portfolio</h6>
           <h4>See My Recent <em>Projects</em></h4>
           <div class="line-dec"></div>
         </div>
       </div>
     </div>
-    <div class="container-fluid wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+    <div class="container wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
       <div class="row">
         <div class="col-lg-12">
           <div class="loop owl-carousel">
             <div class="item">
               <a href="https://github.com/sushil35278/health-prediction-system">
                 <div class="portfolio-item">
-                <div class="thumb">
-                  <img src="assets/images/medical.jpg" alt="">
+                  <div class="thumb">
+                    <img src="assets/images/medical.jpg" alt="">
+                  </div>
+                  <div class="down-content">
+                    <h4>Smart Health Prediction System</h4>
+                    <span>Webapp</span>
+                  </div>
                 </div>
-                <div class="down-content">
-                  <h4>Smart Health Prediction System</h4>
-                  <span>Webapp</span>
-                </div>
-              </div>
-              </a>  
+              </a>
             </div>
             <div class="item">
               <a href="https://github.com/sushil35278/laravel-pos">
                 <div class="portfolio-item">
-                <div class="thumb">
-                  <img src="assets/images/pos.png" alt="">
+                  <div class="thumb">
+                    <img src="assets/images/pos.png" alt="">
+                  </div>
+                  <div class="down-content">
+                    <h4>POS System</h4>
+                    <span>webapp</span>
+                  </div>
                 </div>
-                <div class="down-content">
-                  <h4>POS System</h4>
-                  <span>webapp</span>
-                </div>
-              </div>
-              </a>  
+              </a>
             </div>
             <div class="item">
               <a href="https://www.seiwahld.com/en">
                 <div class="portfolio-item">
-                <div class="thumb">
-                  <img src="assets/images/chatbot.png" alt="webapp">
+                  <div class="thumb">
+                    <img src="assets/images/chatbot.png" alt="webapp">
+                  </div>
+                  <div class="down-content">
+                    <h4>AI-Powered Chatbot</h4>
+                    <span>Webapp</span>
+                  </div>
                 </div>
-                <div class="down-content">
-                  <h4>AI-Powered Chatbot</h4>
-                  <span>Webapp</span>
-                </div>
-              </div>
-              </a>  
+              </a>
             </div>
             <div class="item">
               <a href="#">
                 <div class="portfolio-item">
-                <div class="thumb">
-                  <img src="assets/images/blood_bank_nepal.png" alt="blood">
+                  <div class="thumb">
+                    <img src="assets/images/blood_bank_nepal.png" alt="blood">
+                  </div>
+                  <div class="down-content">
+                    <h4>Blood Bank Management System</h4>
+                    <span>Webapp</span>
+                  </div>
                 </div>
-                <div class="down-content">
-                  <h4>Blood Bank Management System</h4>
-                  <span>Webapp</span>
-                </div>
-              </div>
-              </a>  
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
+
   <div id="blog" class="blog">
     <div class="container">
       <div class="row">
@@ -498,10 +546,17 @@
             <div class="down-content">
               <span class="category">Reverse Image Search</span>
               <span class="date">15 May 2023</span>
-              <a href="https://abouttechnotrends.blogspot.com/2023/05/unlock-power-of-reverse-image-search.html" target="_blank" rel="noopener noreferrer"><h4>Unlock the Power of Reverse Image Search: A Step-by-Step Guide to Boost Your Online Discovery</h4></a>
-              <p>In the vast digital landscape, images have become a prominent form of communication and expression. However, tracing the origin of an image or protecting your own visual content can be challenging.<a href="https://abouttechnotrends.blogspot.com/2023/05/unlock-power-of-reverse-image-search.html" target="_blank" rel="noopener noreferrer">see more...</a></p>
+              <a href="https://abouttechnotrends.blogspot.com/2023/05/unlock-power-of-reverse-image-search.html"
+                target="_blank" rel="noopener noreferrer">
+                <h4>Unlock the Power of Reverse Image Search: A Step-by-Step Guide to Boost Your Online Discovery</h4>
+              </a>
+              <p>In the vast digital landscape, images have become a prominent form of communication and expression.
+                However, tracing the origin of an image or protecting your own visual content can be challenging.<a
+                  href="https://abouttechnotrends.blogspot.com/2023/05/unlock-power-of-reverse-image-search.html"
+                  target="_blank" rel="noopener noreferrer">see more...</a></p>
               <span class="author"><img src="assets/images/sushil.JPG" alt="">By:Sushil Sigdel</span>
-              <div class="border-first-button"><a href="https://abouttechnotrends.blogspot.com/ onclick=" window.open(this.src)">Discover More</a></div>
+              <div class="border-first-button"><a href="https://abouttechnotrends.blogspot.com/" target="_blank"
+                  rel="noopener noreferrer">Discover More</a></div>
             </div>
           </div>
         </div>
@@ -511,13 +566,21 @@
               <div class="col-lg-12">
                 <div class="post-item">
                   <div class="thumb">
-                    <a href="https://abouttechnotrends.blogspot.com/2023/05/mastering-chatgpt-how-to-effectively.html" target="_blank" rel="noopener noreferrer"><img src="assets/images/blog1.png" alt="" ></a>
+                    <a href="https://abouttechnotrends.blogspot.com/2023/05/mastering-chatgpt-how-to-effectively.html"
+                      target="_blank" rel="noopener noreferrer"><img src="assets/images/blog1.png" alt=""></a>
                   </div>
                   <div class="right-content">
                     <span class="category">Mastering ChatGPT</span>
                     <span class="date">01 May 2023</span>
-                    <a href="https://abouttechnotrends.blogspot.com/2023/05/mastering-chatgpt-how-to-effectively.html" target="_blank" rel="noopener noreferrer"><h4>Mastering ChatGPT: How to Effectively Use AI Chatbot for Your Business</h4></a>
-                    <p>ChatGPT is one such chatbot that uses natural language processing (NLP) and machine learning to provide personalized customer service and marketing automation. In this blog, we will explore how you can effectively use ChatGPT for your business.<a href="https://abouttechnotrends.blogspot.com/2023/05/unlock-power-of-reverse-image-search.html" target="_blank" rel="noopener noreferrer">see more...</a></p>
+                    <a href="https://abouttechnotrends.blogspot.com/2023/05/mastering-chatgpt-how-to-effectively.html"
+                      target="_blank" rel="noopener noreferrer">
+                      <h4>Mastering ChatGPT: How to Effectively Use AI Chatbot for Your Business</h4>
+                    </a>
+                    <p>ChatGPT is one such chatbot that uses natural language processing (NLP) and machine learning to
+                      provide personalized customer service and marketing automation. In this blog, we will explore how
+                      you can effectively use ChatGPT for your business.<a
+                        href="https://abouttechnotrends.blogspot.com/2023/05/unlock-power-of-reverse-image-search.html"
+                        target="_blank" rel="noopener noreferrer">see more...</a></p>
                   </div>
                 </div>
               </div>
@@ -529,21 +592,37 @@
                   <div class="right-content">
                     <span class="category">Amazon CodeWhisperer</span>
                     <span class="date">24 September 2021</span>
-                    <a href="#"><h4>Amazon CodeWhisperer: A Revolutionary AI-Powered Debugging Tool</h4></a>
-                    <p> Amazon CodeWhisperer is a new AI-powered debugging tool that is revolutionizing the way software developers identify and resolve issues in their code. This innovative tool combines advanced machine learning algorithms with natural language processing to help developers quickly identify and resolve bugs, errors, and other issues in their code.<a href="https://abouttechnotrends.blogspot.com/2023/05/unlock-power-of-reverse-image-search.html" target="_blank" rel="noopener noreferrer">see more...</a></p>
+                    <a href="#">
+                      <h4>Amazon CodeWhisperer: A Revolutionary AI-Powered Debugging Tool</h4>
+                    </a>
+                    <p> Amazon CodeWhisperer is a new AI-powered debugging tool that is revolutionizing the way software
+                      developers identify and resolve issues in their code. This innovative tool combines advanced
+                      machine learning algorithms with natural language processing to help developers quickly identify
+                      and resolve bugs, errors, and other issues in their code.<a
+                        href="https://abouttechnotrends.blogspot.com/2023/05/unlock-power-of-reverse-image-search.html"
+                        target="_blank" rel="noopener noreferrer">see more...</a></p>
                   </div>
                 </div>
               </div>
               <div class="col-lg-12">
                 <div class="post-item last-post-item">
                   <div class="thumb">
-                    <a href="https://abouttechnotrends.blogspot.com/2023/04/the-future-is-here-understanding-power.html" target="_blank" rel="noopener noreferrer"><img src="assets/images/blog3.png" alt=""></a>
+                    <a href="https://abouttechnotrends.blogspot.com/2023/04/the-future-is-here-understanding-power.html"
+                      target="_blank" rel="noopener noreferrer"><img src="assets/images/blog3.png" alt=""></a>
                   </div>
                   <div class="right-content">
                     <span class="category">5G Technology</span>
                     <span class="date">11 April 2023</span>
-                    <a href="https://abouttechnotrends.blogspot.com/2023/04/the-future-is-here-understanding-power.html" target="_blank" rel="noopener noreferrer"><h4>The Future is Here: Understanding the Power of 5G Technology</h4></a>
-                    <p> With 5G technology now becoming available in more and more places around the world, the possibilities for high-speed internet and data transfer are endless. 5G networks are designed to support a variety of technologies, including virtual and augmented reality, autonomous vehicles, and Internet of Things (IoT) devices.<a href="https://abouttechnotrends.blogspot.com/2023/04/the-future-is-here-understanding-power.html" target="_blank" rel="noopener noreferrer">see more...</a></p>
+                    <a href="https://abouttechnotrends.blogspot.com/2023/04/the-future-is-here-understanding-power.html"
+                      target="_blank" rel="noopener noreferrer">
+                      <h4>The Future is Here: Understanding the Power of 5G Technology</h4>
+                    </a>
+                    <p> With 5G technology now becoming available in more and more places around the world, the
+                      possibilities for high-speed internet and data transfer are endless. 5G networks are designed to
+                      support a variety of technologies, including virtual and augmented reality, autonomous vehicles,
+                      and Internet of Things (IoT) devices.<a
+                        href="https://abouttechnotrends.blogspot.com/2023/04/the-future-is-here-understanding-power.html"
+                        target="_blank" rel="noopener noreferrer">see more...</a></p>
                   </div>
                 </div>
               </div>
@@ -552,20 +631,20 @@
         </div>
       </div>
     </div>
-  </div>  
+  </div>
 
   <div id="contact" class="contact-us section">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
           <div class="section-heading wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-            <h6>Contact Us</h6>
+            <h6>Get In Touch</h6>
             <h4>Get In Touch With <em>Sushil Sigdel</em></h4>
             <div class="line-dec"></div>
           </div>
         </div>
         <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
-          <form id="contact" action="" method="post">
+          <form id="contact-form" action="https://formspree.io/f/sigsushil98@gmail.com" method="post">
             <div class="row">
               <div class="col-lg-12">
                 <div class="contact-dec">
@@ -604,15 +683,17 @@
                         <input type="text" name="name" id="name" placeholder="Your Name" autocomplete="on" required>
                       </fieldset>
                       <fieldset>
-                        <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+                        <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email"
+                          required="">
                       </fieldset>
                       <fieldset>
-                        <input type="text" name="subject" id="subject" placeholder="Subject" >
+                        <input type="text" name="subject" id="subject" placeholder="Subject">
                       </fieldset>
                     </div>
                     <div class="col-lg-6">
                       <fieldset>
-                        <textarea name="message" class="form-control" id="message" placeholder="Message" required=""></textarea> 
+                        <textarea name="message" class="form-control" id="message" placeholder="Message"
+                          required=""></textarea>
                       </fieldset>
                     </div>
                     <div class="col-lg-12">
@@ -625,7 +706,11 @@
               </div>
               <div class="col-lg-5">
                 <div id="map">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212513.54498576594!2d132.54406045788454!3d33.89224457979089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354fe532dd43389d%3A0x71f312a6246632a7!2sMatsuyama%2C%20Ehime!5e1!3m2!1sen!2sjp!4v1744388520347!5m2!1sen!2sjp" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212513.54498576594!2d132.54406045788454!3d33.89224457979089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354fe532dd43389d%3A0x71f312a6246632a7!2sMatsuyama%2C%20Ehime!5e1!3m2!1sen!2sjp!4v1744388520347!5m2!1sen!2sjp"
+                    width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
               </div>
             </div>
           </form>
@@ -633,6 +718,26 @@
       </div>
     </div>
   </div>
+
+  <!-- ***** Footer Start ***** -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div style="text-align:center; padding: 20px 0 10px;">
+            <a href="https://www.linkedin.com/in/sushil-sigdel-a115811b3/" target="_blank" rel="noopener noreferrer"
+              style="margin: 0 10px; color:#fff; font-size:20px;"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/sushil35278" target="_blank" rel="noopener noreferrer"
+              style="margin: 0 10px; color:#fff; font-size:20px;"><i class="fa fa-github"></i></a>
+            <a href="mailto:sigsushil98@gmail.com" style="margin: 0 10px; color:#fff; font-size:20px;"><i
+                class="fa fa-envelope"></i></a>
+          </div>
+          <p>Copyright &copy; <span id="footer-year"></span> Sushil Sigdel. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ***** Footer End ***** -->
 
   <!-- Scripts -->
   <script>
@@ -643,6 +748,8 @@
         window.location.href = 'index.html';
       }
     }
+    // Set footer year dynamically
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
   </script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -652,4 +759,5 @@
   <script src="assets/js/custom.js"></script>
 
 </body>
+
 </html>
