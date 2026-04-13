@@ -2423,6 +2423,48 @@ responsive
   font-weight: bold;
 }
 
+body.matrix-mode #particles-js {
+  opacity: 0 !important;
+}
+
+body.matrix-mode h1,
+body.matrix-mode h2,
+body.matrix-mode h3,
+body.matrix-mode h4,
+body.matrix-mode h5,
+body.matrix-mode h6 {
+  color: #00ff00 !important;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+body.matrix-mode p,
+body.matrix-mode span,
+body.matrix-mode a,
+body.matrix-mode li,
+body.matrix-mode i {
+  color: #00ff00 !important;
+}
+
+body.matrix-mode .main-banner,
+body.matrix-mode .about,
+body.matrix-mode .services,
+body.matrix-mode .our-portfolio,
+body.matrix-mode .blog,
+body.matrix-mode .contact-us,
+body.matrix-mode footer {
+  background: transparent !important;
+}
+
+body.matrix-mode .service-item,
+body.matrix-mode .portfolio-item,
+body.matrix-mode .contact-info,
+body.matrix-mode .blog-post,
+body.matrix-mode form#contact-form {
+  background-color: rgba(0, 20, 0, 0.8) !important;
+  border: 1px solid #00ff00 !important;
+  box-shadow: 0 0 15px #00ff00;
+}
+
 #term-input {
   background: transparent;
   border: none;
@@ -2527,4 +2569,260 @@ responsive
 
 #myBtn:hover {
   background-color: #726ae3;
+}
+
+/* Hero Image Enhancements - Mac Window Style */
+.hero-image-wrapper {
+  position: relative;
+  display: inline-block;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.mac-window-top {
+  height: 25px;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  gap: 6px;
+}
+
+.m-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.m-dot.red {
+  background: #ff5f56;
+}
+
+.m-dot.yellow {
+  background: #ffbd2e;
+}
+
+.m-dot.green {
+  background: #27c93f;
+}
+
+.profile-image {
+  border-radius: 0 0 15px 15px;
+  width: 100%;
+  display: block;
+}
+
+/* Scanning Line Effect */
+.scanning-line {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to bottom, transparent, var(--primary-color), transparent);
+  box-shadow: 0 0 15px var(--primary-color);
+  animation: scan 3s linear infinite;
+  pointer-events: none;
+  z-index: 5;
+}
+
+@keyframes scan {
+  0% {
+    top: 0%;
+  }
+
+  100% {
+    top: 100%;
+  }
+}
+
+.floating-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.f-icon {
+  position: absolute;
+  padding: 6px 14px;
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  animation: floatIcon 4s ease-in-out infinite;
+  z-index: 10;
+  white-space: nowrap;
+}
+
+/* Service-specific Styles */
+.python {
+  top: 15%;
+  left: 5%;
+  animation-delay: 0s;
+  background: #3776ab;
+}
+
+.django {
+  top: 45%;
+  left: -5%;
+  animation-delay: 1s;
+  background: #092e20;
+}
+
+.aws {
+  bottom: 15%;
+  left: 10%;
+  animation-delay: 2s;
+  background: #ff9900;
+}
+
+.ai {
+  top: 20%;
+  right: 5%;
+  animation-delay: 1.5s;
+  background: #726ae3;
+}
+
+.js {
+  top: 55%;
+  right: 0%;
+  animation-delay: 0.5s;
+  background: #f7df1e;
+  color: #333;
+}
+
+.linux {
+  bottom: 30%;
+  right: 10%;
+  animation-delay: 2.5s;
+  background: #333;
+  color: #fff;
+}
+
+.laravel {
+  bottom: 10%;
+  right: 25%;
+  animation-delay: 3s;
+  background: #ff2d20;
+}
+
+@keyframes floatIcon {
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+
+  50% {
+    transform: translateY(-12px) rotate(3deg);
+  }
+}
+
+.hero-image-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  background: var(--primary-color);
+  filter: blur(50px);
+  border-radius: 50px;
+  z-index: -2;
+  opacity: 0.15;
+  animation: pulseGlow 4s infinite alternate;
+}
+
+@keyframes pulseGlow {
+  from {
+    transform: scale(0.95);
+    opacity: 0.1;
+  }
+
+  to {
+    transform: scale(1.05);
+    opacity: 0.25;
+  }
+}
+
+/* Hero Image Interactive Overlays */
+.hero-link-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.h-link {
+  position: absolute;
+  width: 14%;
+  height: 14%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.h-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.7);
+  border: 1px solid rgba(0, 255, 255, 0.5);
+}
+
+.aws-link {
+  top: 3.5%;
+  left: 45.5%;
+}
+
+.linux-link {
+  top: 12%;
+  left: 72%;
+}
+
+.php-link {
+  top: 16%;
+  left: 24%;
+}
+
+.laravel-link {
+  top: 33%;
+  left: 10.5%;
+}
+
+.python-link {
+  top: 51%;
+  left: 13%;
+}
+
+.ts-link {
+  top: 53%;
+  left: 81%;
+}
+
+@media only screen and (max-width: 991px) {
+  .h-link {
+    width: 18%;
+    height: 18%;
+  }
+}
+/* Fix for Hero Link blocking image clicks */
+.hero-link-container {
+  pointer-events: none;
+}
+
+.h-link {
+  pointer-events: auto;
 }

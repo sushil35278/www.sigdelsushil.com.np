@@ -188,6 +188,34 @@
     });
   };
 
+  const initHeroToggle = () => {
+    const wrappers = document.querySelectorAll('.hero-image-wrapper');
+    if (!wrappers.length) return;
+
+    const img1 = 'hero_final.png';
+    const img2 = 'portfolio_hero_new.png';
+
+    wrappers.forEach(wrapper => {
+      wrapper.addEventListener('click', function (e) {
+        // If click was on a link hotspot, let it pass
+        if (e.target.closest('.h-link')) return;
+
+        const img = this.querySelector('#hero-img-toggle');
+        if (!img) return;
+
+        img.style.opacity = '0';
+        setTimeout(() => {
+          if (img.src.includes(img1)) {
+            img.src = 'assets/images/' + img2;
+          } else {
+            img.src = 'assets/images/' + img1;
+          }
+          img.style.opacity = '1';
+        }, 500);
+      });
+    });
+  };
+
   // Hacker Terminal Logic
   const initTerminal = () => {
     const termInput = document.getElementById('term-input');
@@ -319,11 +347,12 @@
     initParticles();
     initSkillAnimations();
     initTerminal();
+    initHeroToggle();
     initTyped();
 
     // Vanilla Tilt
     if (typeof VanillaTilt !== 'undefined') {
-      VanillaTilt.init(document.querySelectorAll(".portfolio-item"), {
+      VanillaTilt.init(document.querySelectorAll(".portfolio-item, .hero-image-wrapper"), {
         max: 15,
         speed: 400,
         glare: true,
