@@ -74,6 +74,7 @@ html, body {
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -1513,6 +1514,7 @@ Portfolio
   margin-bottom: 80px;
 }
 
+.our-portfolio .container,
 .our-portfolio .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
@@ -1523,6 +1525,10 @@ Portfolio
 .our-portfolio .item {
   position: relative;
   z-index: 222;
+}
+
+.our-portfolio .loop {
+  position: relative;
 }
 
 .portfolio-item {
@@ -1570,11 +1576,11 @@ Portfolio
 }
 
 .our-portfolio .owl-nav {
-  display: inline-block!important;
+  display: flex !important;
+  gap: 10px;
   position: absolute;
-  top: -125px;
-  right: 15%;
-  max-width: 1320px;
+  top: -90px;
+  right: 0;
 }
 
 .our-portfolio .owl-nav .owl-next {
@@ -1590,7 +1596,7 @@ Portfolio
   font-size: 30px;
   background-color: #eee;
   border-radius: 50%;
-  color: #fff;
+  color: #2a2a2a;
   transition: all 0.5s;
 }
 
@@ -1774,7 +1780,7 @@ contact
 }
 
 
-form#contact:before {
+form#contact-form:before {
   background-image: url(../images/contact-top-right.png);
   position: absolute;
   right: 0;
@@ -1793,7 +1799,7 @@ form#contact:before {
   top: -242px;
 }
 
-form#contact:after {
+form#contact-form:after {
   background-image: url(../images/contact-bottom-right.png);
   position: absolute;
   right: 0;
@@ -1805,7 +1811,7 @@ form#contact:after {
   z-index: 1;
 }
 
-form#contact {
+form#contact-form {
   box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
   position: relative;
   background-color: #fff;
@@ -1817,7 +1823,7 @@ form#contact {
 }
 
 
-form#contact #map iframe {
+form#contact-form #map iframe {
   border-top-left-radius: 23px;
   border-bottom-left-radius: 23px;
   margin-bottom: -7px;
@@ -1859,7 +1865,7 @@ form#contact #map iframe {
   color: #fa65b1;
 }
 
-form#contact input {
+form#contact-form input {
   width: 100%;
   height: 46px;
   background-color: transparent;
@@ -1873,11 +1879,11 @@ form#contact input {
   margin-top: 30px;
 }
 
-form#contact input::placeholder {
+form#contact-form input::placeholder {
   color: #aaa;
 }
 
-form#contact textarea {
+form#contact-form textarea {
   width: 100%;
   min-width: 100%;
   max-width: 100%;
@@ -1895,11 +1901,11 @@ form#contact textarea {
   margin-top: 30px;
 }
 
-form#contact textarea::placeholder {
+form#contact-form textarea::placeholder {
   color: #aaa;
 }
 
-form#contact button {
+form#contact-form button {
   display: inline-block;
   background-color: #fff;
   font-size: 15px;
@@ -1916,7 +1922,7 @@ form#contact button {
   outline: none;
 }
 
-form#contact button:hover {
+form#contact-form button:hover {
   background-color: #fa65b1!important;
   color: #fff!important;
 }
@@ -2027,7 +2033,9 @@ responsive
     margin-bottom: 70px;
   }
   .our-portfolio .owl-nav {
-    display: none !important;
+    position: static;
+    justify-content: center;
+    margin-top: 20px;
   }
   .contact-info {
     margin-top: 60px;
@@ -2119,7 +2127,7 @@ responsive
   }
 }
 .mobile-language-switcher {
-  display: inline-block;
+  display: none;
   margin: 20px 20px;
   vertical-align: middle;
 }
@@ -2130,9 +2138,22 @@ responsive
   margin-top: 5px;
 }
 
-/* Hide the original language switcher */
 .language-switcher {
-  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile-language-switcher {
+    display: inline-block;
+  }
+  .language-switcher {
+    display: none;
+  }
 }
 
 .fa-facebook {
@@ -2156,22 +2177,20 @@ responsive
 }
 
 #myBtn {
-  font-size: 10px; 
+  font-size: 10px;
   position: fixed;
-  bottom: 20px; 
-  right: 10px; /* Place the button 30px from the right */
-  z-index: 55; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: red; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 0px; /* Some padding */
+  bottom: 20px;
+  right: 10px;
+  z-index: 55;
+  border: none;
+  outline: none;
+  background-color: #fa65b1;
+  color: white;
+  cursor: pointer;
+  padding: 0px;
   border-radius: 50%;
-
-
 }
 
 #myBtn:hover {
-  background-color: yellowgreen; /* Add a dark-grey background on hover */
+  background-color: #726ae3;
 }
