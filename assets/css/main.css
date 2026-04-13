@@ -1963,7 +1963,7 @@ form#contact-form #map iframe {
 }
 
 .fill-form {
-  padding: 80px 60px 80px 30px;
+  padding: 80px 30px 80px 30px;
 }
 
 .fill-form .info-post {
@@ -2302,6 +2302,21 @@ responsive
 
   form#contact-form {
     padding: 15px;
+  }
+
+  .fill-form {
+    padding: 20px 10px;
+  }
+
+  .fill-form .info-post {
+    margin-bottom: 20px;
+    width: 100%;
+    word-break: break-all;
+  }
+
+  form#contact-form:before,
+  form#contact-form:after {
+    display: none;
   }
 
   .border-first-button a {
