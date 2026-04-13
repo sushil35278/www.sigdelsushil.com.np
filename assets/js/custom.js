@@ -112,7 +112,7 @@
   $(document).on("click", ".naccs .menu div", function () {
     var numberIndex = $(this).index();
 
-    if (!$(this).is("active")) {
+    if (!$(this).hasClass("active")) {
       $(".naccs .menu div").removeClass("active");
       $(".naccs ul li").removeClass("active");
 

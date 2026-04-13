@@ -1611,6 +1611,8 @@ Portfolio
 
 .our-portfolio {
   padding-top: 130px;
+  padding-left: 30px;
+  padding-right: 30px;
   overflow: hidden;
   position: relative;
 }
@@ -1645,8 +1647,8 @@ Portfolio
 
 .our-portfolio .container,
 .our-portfolio .container-fluid {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
   position: relative;
   z-index: 2;
 }
