@@ -1,4 +1,24 @@
-*/ html,
+:root {
+  --bg-color: #fff;
+  --text-color: #2a2a2a;
+  --heading-color: #2a2a2a;
+  --card-bg: #fff;
+  --primary-color: #fa65b1;
+  --secondary-color: #726ae3;
+  --header-bg: rgba(255, 255, 255, 0.95);
+  --section-bg: #f9f9f9;
+}
+
+[data-theme='dark'] {
+  --bg-color: #1a1a1a;
+  --text-color: #e0e0e0;
+  --heading-color: #ffffff;
+  --card-bg: #2d2d2d;
+  --header-bg: rgba(26, 26, 26, 0.95);
+  --section-bg: #212121;
+}
+
+html,
 body,
 div,
 span,
@@ -131,11 +151,13 @@ html,
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  background-color: #fff;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 a {
@@ -1214,6 +1236,11 @@ About Style
   position: absolute;
   top: 0;
   border-color: #fd6a54;
+  animation-play-state: paused;
+}
+
+.animate .progress-bar {
+  animation-play-state: running !important;
 }
 
 .first-skill-item .progress .progress-bar {
@@ -2324,6 +2351,112 @@ responsive
     width: 100%;
     margin-right: 0 !important;
   }
+}
+
+/* Hacker Terminal */
+.terminal-window {
+  background: #1e1e1e;
+  color: #00ff00;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.terminal-header {
+  border-bottom: 1px solid #333;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  display: flex;
+  gap: 5px;
+}
+
+.dot-red,
+.dot-yellow,
+.dot-green {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot-red {
+  background: #ff5f56;
+}
+
+.dot-yellow {
+  background: #ffbd2e;
+}
+
+.dot-green {
+  background: #27c93f;
+}
+
+.terminal-body {
+  height: 150px;
+  overflow-y: auto;
+}
+
+.terminal-body p {
+  margin: 0;
+  color: #00ff00;
+  line-height: 1.4;
+}
+
+.terminal-body .response {
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.terminal-input-line {
+  display: flex;
+  gap: 5px;
+}
+
+.prompt {
+  color: #fa65b1;
+  font-weight: bold;
+}
+
+#term-input {
+  background: transparent;
+  border: none;
+  color: #00ff00;
+  outline: none;
+  width: 100%;
+  font-family: inherit;
+}
+
+/* Dark Mode Overrides for sections */
+[data-theme='dark'] .about,
+[data-theme='dark'] .services,
+[data-theme='dark'] .our-portfolio,
+[data-theme='dark'] .contact-us {
+  background-color: var(--section-bg);
+}
+
+[data-theme='dark'] .service-item,
+[data-theme='dark'] .portfolio-item,
+[data-theme='dark'] .contact-info,
+[data-theme='dark'] form#contact-form {
+  background-color: var(--card-bg);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme='dark'] .section-heading h4,
+[data-theme='dark'] .about-item h4,
+[data-theme='dark'] .service-item h4,
+[data-theme='dark'] .portfolio-item h4 {
+  color: var(--heading-color);
+}
+
+[data-theme='dark'] p {
+  color: var(--text-color);
 }
 
 .mobile-language-switcher {

@@ -101,6 +101,23 @@
         display: none;
       }
     }
+
+    /* Theme Toggle */
+    .theme-toggle {
+      background: none;
+      border: none;
+      color: var(--text-color);
+      font-size: 20px;
+      cursor: pointer;
+      padding: 5px 10px;
+      transition: all 0.3s;
+      margin-top: 10px;
+    }
+
+    .theme-toggle:hover {
+      color: var(--primary-color);
+      transform: scale(1.1);
+    }
   </style>
 
   <!-- GOOGLE ADSENSE -->
@@ -124,6 +141,9 @@
   </div>
   <!-- ***** Preloader End ***** -->
 
+  <canvas id="matrix-canvas"
+    style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; display: none;"></canvas>
+
   <!-- ***** Header Area Start ***** -->
   <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
     <div class="container">
@@ -139,6 +159,9 @@
             <div class="mobile-language-switcher">
               <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/jp.svg" alt="日本語"
                 class="language-flag active" onclick="changeLanguage('ja')" data-lang="ja">
+              <button class="theme-toggle" id="theme-toggle-mobile" title="Toggle Theme">
+                <i class="fa fa-moon"></i>
+              </button>
             </div>
 
             <ul class="nav">
@@ -149,9 +172,12 @@
               <li class="scroll-to-section"><a href="#blog">Blog</a></li>
               <li class="scroll-to-section"><a href="#contact">Contact</a></li>
               <li class="scroll-to-section">
-                <div class="language-switcher" style="margin-top: 0;">
+                <div class="language-switcher" style="margin-top: 0; display: flex; align-items: center; gap: 15px;">
                   <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/jp.svg" alt="日本語"
                     class="language-flag active" onclick="changeLanguage('ja')" data-lang="ja">
+                  <button class="theme-toggle" id="theme-toggle" title="Toggle Theme" style="margin-top: 0;">
+                    <i class="fa fa-moon"></i>
+                  </button>
                 </div>
               </li>
             </ul>
@@ -167,7 +193,8 @@
   <!-- ***** Header Area End ***** -->
 
   <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
-    <div class="container">
+    <div id="particles-js" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 1;"></div>
+    <div class="container" style="position: relative; z-index: 2;">
       <div class="row">
         <div class="col-lg-12">
           <div class="row">
@@ -176,14 +203,30 @@
                 <div class="row">
                   <div class="col-lg-12">
                     <h6>Hello There</h6>
-                    <h2>I am Sushil Sigdel</h2>
-                    <p>System Engineer | AI & ML Enthusiast</p>
+                    <h2 id="hero-name">I am Sushil Sigdel</h2>
+                    <p>I am a <span id="typed"></span></p>
                   </div>
                   <div class="col-lg-12">
                     <div class="border-first-button scroll-to-section">
                       <a href="Sushil_Sigdel.pdf" target="_blank" rel="noopener noreferrer" download>Download CV</a>
                       <a href="#contact">Hire Me</a>
                       <a href="https://github.com/sushil35278" target="_blank" rel="noopener noreferrer">View GitHub</a>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="terminal-window wow fadeInUp" data-wow-delay="1.2s">
+                      <div class="terminal-header">
+                        <div class="dot-red"></div>
+                        <div class="dot-yellow"></div>
+                        <div class="dot-green"></div>
+                      </div>
+                      <div class="terminal-body" id="term-body">
+                        <p>Welcome to Sushil's Terminal. Type 'help' to start.</p>
+                      </div>
+                      <div class="terminal-input-line">
+                        <span class="prompt">></span>
+                        <input type="text" id="term-input" placeholder="...">
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -828,6 +871,9 @@
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
   <script src="assets/js/custom.js"></script>
 
 </body>
