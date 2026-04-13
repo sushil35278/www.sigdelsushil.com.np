@@ -2,8 +2,22 @@
 
   "use strict";
 
+  // Throttle function to improve performance
+  const throttle = (func, limit) => {
+    let inThrottle;
+    return function () {
+      const args = arguments;
+      const context = this;
+      if (!inThrottle) {
+        func.apply(context, args);
+        inThrottle = true;
+        setTimeout(() => inThrottle = false, limit);
+      }
+    }
+  }
+
   // Header Type = Fixed
-  $(window).scroll(function () {
+  $(window).scroll(throttle(function () {
     var scroll = $(window).scrollTop();
     var box = $('.header-text').height();
     var header = $('header').height();
@@ -13,7 +27,7 @@
     } else {
       $("header").removeClass("background-header");
     }
-  });
+  }, 50));
 
 
   $('.loop').owlCarousel({
@@ -342,7 +356,7 @@
   };
 
   $(document).ready(function () {
-    $(document).on("scroll", onScroll);
+    $(document).on("scroll", throttle(onScroll, 100));
     initTheme();
     initParticles();
     initSkillAnimations();
