@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Zero Trust Pivot: Securing the Human Layer Against Generative AI Threats | Sushil Sigdel Blog</title>
+    <meta name="description" content="As generative AI lowers the barrier for sophisticated social engineering, traditional security awareness training is no longer enough to protect the enterprise. This post explores how software engineers must evolve their architecture and culture to mitigate the risk of hyper-personalized, AI-driven phishing and deepfakes.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Additional CSS -->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <style>
+        :root {
+            --primary-color: {
+                    {
+                    accent_color
+                }
+            }
+
+            ;
+            --secondary-color: #6c757d;
+        }
+
+        body {
+            background: #f8f9fa;
+            color: #2a2a2a;
+            line-height: 1.8;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .blog-header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #2a2a2a 100%);
+            color: white;
+            padding: 100px 0 60px;
+            text-align: center;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            margin-bottom: -50px;
+        }
+
+        .blog-content-card {
+            background: white;
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+            margin-top: -30px;
+            z-index: 10;
+            position: relative;
+        }
+
+        .category-badge {
+            background: var(--primary-color);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .btn-back {
+            background: var(--primary-color);
+            color: white;
+            border-radius: 25px;
+            padding: 10px 25px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn-back:hover {
+            opacity: 0.8;
+            color: white;
+        }
+
+        h3 {
+            color: var(--primary-color);
+            margin-top: 30px;
+            font-weight: 700;
+        }
+
+        .blog-content-section {
+            padding: 120px 0;
+        }
+
+        .blog-detail-content {
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--text-color);
+        }
+
+        .blog-meta {
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        .blog-featured-image {
+            width: 100%;
+            border-radius: 20px;
+            margin-bottom: 50px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header-area header-sticky background-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <a href="../index.html" class="logo">
+                            <img src="../assets/images/sushil.JPG" alt="Sushil Sigdel"
+                                style="height: 50px; width:50px; border-radius:50%; margin-top:-12px;">
+                        </a>
+                        <ul class="nav">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../index.html#blog" class="active">Blog</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="blog-content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="blog-header">
+                        <span class="category"
+                            style="color: #fa65b1; font-weight: 600; text-transform: uppercase;">Cybersecurity</span>
+                        <h1>The Zero Trust Pivot: Securing the Human Layer Against Generative AI Threats</h1>
+                        <div class="blog-meta">
+                            <span>By Sushil Sigdel</span> | <span>14 April 2026</span>
+                        </div>
+                    </div>
+                    <img src="../https://loremflickr.com/800/600/biometrics,tech" alt="The Zero Trust Pivot: Securing the Human Layer Against Generative AI Threats" class="blog-featured-image">
+                    <div class="blog-detail-content">
+                        <h3>The Era of the Perfect Phish</h3><p>For years, the hallmarks of a phishing attempt were easy to spot: broken English, suspicious sender domains, and generic greetings. As software engineers, we often viewed these as 'low-effort' threats. However, the emergence of Large Language Models (LLMs) has fundamentally changed the game. Today, attackers use generative AI to craft hyper-personalized, context-aware emails that are indistinguishable from legitimate business communication. By scraping a target's LinkedIn profile or GitHub activity, AI can generate a lure that references specific projects, colleagues, and professional tone, making the 'human layer' of our systems more vulnerable than ever.</p><h3>The Rise of Deepfake Identity Fraud</h3><p>Beyond text, we are seeing a terrifying rise in deepfake audio and video. We have already seen headlines where finance employees were tricked into transferring millions of dollars after attending a video call with a deepfake representation of their CFO. For tech organizations, this presents a unique challenge. Standard verification methods like 'voice recognition' over a Slack call or a quick Zoom check are no longer definitive proof of identity. This evolution in social engineering 2.0 requires us to move beyond the traditional perimeter-based security and adopt a more rigorous identity-first approach.</p><h3>Technical Mitigations: From MFA to FIDO2</h3><p>As engineers, we must move away from 'phishable' multi-factor authentication. SMS-based codes and push notifications are increasingly susceptible to 'MFA fatigue' attacks and AI-driven interception. The industry standard must shift toward hardware-backed, cryptographically secure methods. Implementing FIDO2/WebAuthn protocols and moving to Passkeys is no longer an 'enterprise plus' feature; it is a baseline requirement. By removing the password—and the human's ability to reveal it—we effectively neutralize the most common goal of AI-driven phishing.</p><h3>Implementing Behavioral Analytics</h3><p>Static rules are no longer sufficient to catch AI-driven threats. Modern security architectures should leverage Behavioral AI to fight AI. By monitoring user behavior—such as typical login times, usual IP ranges, and common file access patterns—security systems can flag 'impossible travel' or unusual data exfiltration attempts in real-time. Even if an attacker successfully compromises a set of credentials via a deepfake, their post-exploitation behavior often deviates from the baseline of the actual user, triggering an automated response or a stepped-up authentication challenge.</p><h3>A Culture of Radical Verification</h3><p>Finally, we must cultivate a culture of 'radical verification' within our engineering teams. This means normalizing out-of-band verification for any high-stakes request. If an 'executive' asks for a production database dump or a wire transfer, the response shouldn't just be 'yes,' but a secondary check through a pre-agreed secure channel. Security is a shared responsibility, and as those building the systems, we must ensure that our code, our architecture, and our internal processes are resilient against the next generation of AI-enabled adversaries.</p>
+                    </div>
+                    <div class="border-first-button" style="margin-top: 50px; text-align: center;">
+                        <a href="../index.html#blog">Back to Blogs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright © 2026 Sushil Sigdel. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

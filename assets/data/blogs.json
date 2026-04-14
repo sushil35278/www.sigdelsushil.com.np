@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cybersecurity",
+    "title": "The Zero Trust Pivot: Securing the Human Layer Against Generative AI Threats",
+    "summary": "As generative AI lowers the barrier for sophisticated social engineering, traditional security awareness training is no longer enough to protect the enterprise. This post explores how software engineers must evolve their architecture and culture to mitigate the risk of hyper-personalized, AI-driven phishing and deepfakes.",
+    "date": "14 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://loremflickr.com/800/600/biometrics,tech",
+    "slug": "the-zero-trust-pivot-securing-the-human-layer-against-generative-ai-threats",
+    "isPopular": false,
+    "link": "blog/the-zero-trust-pivot-securing-the-human-layer-against-generative-ai-threats.html",
+    "id": 6
+  },
+  {
     "category": "AI & Software Architecture",
     "title": "Beyond the Prompt: Why Agentic AI Workflows are the Next Frontier in Software Engineering",
     "summary": "The shift from single-turn LLM prompts to iterative, multi-step 'agentic' workflows is redefining how we build autonomous systems. Discover why orchestration and reflection are becoming the most critical skills for modern AI engineers.",
