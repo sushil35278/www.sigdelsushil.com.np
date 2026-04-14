@@ -1,5 +1,17 @@
 [
   {
+    "category": "AI & Software Architecture",
+    "title": "Beyond the Prompt: Why Agentic AI Workflows are the Next Frontier in Software Engineering",
+    "summary": "The shift from single-turn LLM prompts to iterative, multi-step 'agentic' workflows is redefining how we build autonomous systems. Discover why orchestration and reflection are becoming the most critical skills for modern AI engineers.",
+    "date": "14 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "assets/images/bloghome.png",
+    "slug": "beyond-the-prompt-why-agentic-ai-workflows-are-the-next-frontier-in-software-engineering",
+    "isPopular": false,
+    "link": "blog/beyond-the-prompt-why-agentic-ai-workflows-are-the-next-frontier-in-software-engineering.html",
+    "id": 5
+  },
+  {
     "category": "AI & Software Engineering",
     "title": "Beyond Code Completion: The Era of Autonomous AI Agents in Software Development",
     "summary": "The shift from passive AI assistants to autonomous coding agents is fundamentally redefining the software development lifecycle. This post explores how 'agentic workflows' are moving us from simple code completion to end-to-end task execution.",
