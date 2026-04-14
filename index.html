@@ -12,8 +12,8 @@
   <link rel="icon" href="assets/images/sushil.JPG" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/images/hero_final.png" fetchpriority="high">
   <title>Sushil Sigdel | Full Stack Developer & System Engineer Portfolio</title>
   <meta name="description"
     content="Portfolio of Sushil Sigdel, a Full Stack Developer and System Engineer based in Matsuyama, Japan. Specialized in web development, AI integration, and scalable systems.">
@@ -62,8 +62,8 @@
   <!-- Additional CSS Files -->
   <link rel="stylesheet" href="assets/css/fontawesome.css">
   <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/animated.css">
-  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/animated.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="assets/css/owl.css" media="print" onload="this.media='all'">
   <!-- Language Switcher CSS -->
   <style>
     .language-switcher {
@@ -194,14 +194,14 @@
     </header>
     <!-- ***** Header Area End ***** -->
 
-    <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="main-banner" id="top">
       <div id="particles-js" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 1;"></div>
       <div class="container" style="position: relative; z-index: 2;">
         <div class="row">
           <div class="col-lg-12">
             <div class="row">
               <div class="col-lg-6 align-self-center">
-                <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="left-content show-up header-text">
                   <div class="row">
                     <div class="col-lg-12">
                       <h6>Hello There</h6>
@@ -236,11 +236,12 @@
                 </div>
               </div>
               <div class="col-lg-6">
-                <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="right-image">
                   <div class="hero-image-wrapper" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare
                     data-tilt-max-glare="0.2">
                     <img src="assets/images/hero_final.png" alt="Sushil Sigdel" class="profile-image"
-                      id="hero-img-toggle" width="1024" height="600" fetchpriority="high"
+                      id="hero-img-toggle" width="1024" height="600" fetchpriority="high" decoding="async"
+                      loading="eager"
                       style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); cursor: pointer; transition: opacity 0.5s ease; height: auto; width: 100%;">
 
                     <!-- Interactive Tech Links Overlays -->

@@ -1146,6 +1146,13 @@ Banner Style
 .main-banner .left-content p {
   margin-bottom: 30px;
   margin-right: 45px;
+  min-height: 60px;
+  /* Reserve space for Typed.js */
+}
+
+.main-banner {
+  min-height: 650px;
+  /* Reserve space for banner content on desktop */
 }
 
 .main-banner .right-image {
@@ -2617,6 +2624,7 @@ body.matrix-mode form#contact-form {
   border-radius: 0 0 15px 15px;
   width: 100%;
   height: auto;
+  aspect-ratio: 1024 / 600;
   display: block;
 }
 
