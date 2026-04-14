@@ -26,29 +26,40 @@ def slugify(text):
     return text
 
 def get_prioritized_models():
-    """Returns a list of models prioritized by 'Flash' (usually higher quota) then 'Pro'."""
+    """Dynamically detects available models from the key and prioritizes them."""
     try:
-        available_models = [m.name for m in client.models.list() if "generateContent" in m.supported_methods]
-        print(f"Total available generation models: {len(available_models)}")
+        raw_models = list(client.models.list())
+        # The model object in the new SDK usually has 'name' which might be 'models/gemini-...'
+        # We need to filter for models that support generation.
+        available_models = []
+        for m in raw_models:
+            # Safer attribute check
+            m_name = getattr(m, 'name', str(m))
+            # Just collect everything that looks like a gemini model
+            if "gemini" in m_name.lower() or "gemma" in m_name.lower():
+                available_models.append(m_name)
         
-        # Sort logic: Prefer 2.0-flash, then 1.5-flash, then any flash, then pro
+        print(f"Found {len(available_models)} potential models.")
+        
+        # Priority: 2.0-flash, 1.5-flash, flash-latest, then others
         priority_list = []
+        keywords = ["gemini-2.0-flash", "gemini-1.5-flash", "flash-latest", "flash"]
         
-        # 1. Look for Flash models first (highest success rate on free tier)
-        for preferred in ["gemini-2.0-flash", "gemini-1.5-flash", "-flash"]:
+        for kw in keywords:
             for m in available_models:
-                if preferred in m and m not in priority_list:
+                if kw in m and m not in priority_list:
                     priority_list.append(m)
         
-        # 2. Add remaining models (Pro etc)
+        # Add everything else
         for m in available_models:
             if m not in priority_list:
                 priority_list.append(m)
                 
         return priority_list
     except Exception as e:
-        print(f"Warning: Could not list models: {e}")
-        return ["gemini-1.5-flash"]
+        print(f"Warning: Model listing failed: {e}. Falling back to defaults.")
+        # Fallback to names that often work
+        return ["gemini-2.0-flash", "gemini-1.5-flash", "gemini-flash-latest"]
 
 def generate_blog_content():
     models_to_try = get_prioritized_models()
@@ -67,7 +78,9 @@ def generate_blog_content():
     """
     
     for model_name in models_to_try:
-        print(f"Attempting generation with: {model_name}...")
+        # Note: Some SDK versions expect 'gemini-1.5-flash' while others 'models/gemini-1.5-flash'
+        # We will try the name as provided by the list() call first.
+        print(f"--- Attempting: {model_name} ---")
         try:
             response = client.models.generate_content(
                 model=model_name,
@@ -76,53 +89,52 @@ def generate_blog_content():
             
             text = response.text.strip()
             if not text:
-                print(f"Empty response from {model_name}. Trying next...")
+                print(f"Empty response from {model_name}.")
                 continue
                 
-            # Handle potential markdown fencing
+            # Vigorous JSON cleaning
             if "```json" in text:
                 text = text.split("```json")[1].split("```")[0].strip()
             elif "```" in text:
                 text = text.split("```")[1].split("```")[0].strip()
             
+            # Remove any potential stray characters before/after JSON
+            text = text[text.find("{"):text.rfind("}")+1]
+            
             blog_data = json.loads(text)
             blog_data["date"] = datetime.datetime.now().strftime("%d %B %Y")
-            blog_data["author"] = "Sushil Sigdel (AI Generated)"
+            blog_data["author"] = "Sushil Sigdel"
             blog_data["image"] = "assets/images/bloghome.png"
             blog_data["slug"] = slugify(blog_data["title"])
             blog_data["isPopular"] = False
             
-            print(f"Success! Generated content using {model_name}.")
+            print(f"SUCCESS with {model_name}!")
             return blog_data
             
         except Exception as e:
-            error_msg = str(e)
-            if "429" in error_msg or "RESOURCE_EXHAUSTED" in error_msg:
-                print(f"Quota exceeded for {model_name}. Skipping to next available model...")
-                continue
+            msg = str(e)
+            if "429" in msg or "RESOURCE_EXHAUSTED" in msg:
+                print(f"Quota Hit for {model_name}. Trying next...")
+            elif "404" in msg or "not found" in msg.lower():
+                print(f"Model {model_name} not available for this key. Trying next...")
             else:
-                print(f"Error with {model_name}: {e}")
-                continue
+                print(f"Skipping {model_name} due to error: {e}")
+            continue
                 
     return None
 
 def create_static_page(blog_data):
     try:
         if not os.path.exists(TEMPLATE_FILE):
-            print(f"Template file {TEMPLATE_FILE} not found.")
+            print(f"Template {TEMPLATE_FILE} not found.")
             return False
             
-        with open(TEMPLATE_FILE, 'r') as f:
+        with open(TEMPLATE_FILE, 'r', encoding='utf-8') as f:
             template = f.read()
         
         html_content = template
-        html_content = html_content.replace("{{title}}", blog_data["title"])
-        html_content = html_content.replace("{{summary}}", blog_data["summary"])
-        html_content = html_content.replace("{{category}}", blog_data["category"])
-        html_content = html_content.replace("{{author}}", blog_data["author"])
-        html_content = html_content.replace("{{date}}", blog_data["date"])
-        html_content = html_content.replace("{{image}}", blog_data["image"])
-        html_content = html_content.replace("{{content}}", blog_data["content"])
+        for key in ["title", "summary", "category", "author", "date", "image", "content"]:
+            html_content = html_content.replace(f"{{{{{key}}}}}", str(blog_data.get(key, "")))
         
         if not os.path.exists(BLOG_DIR):
             os.makedirs(BLOG_DIR)
@@ -132,10 +144,10 @@ def create_static_page(blog_data):
             f.write(html_content)
         
         blog_data["link"] = f"blog/{blog_data['slug']}.html"
-        print(f"Created static page: {file_path}")
+        print(f"Created page: {file_path}")
         return True
     except Exception as e:
-        print(f"Error creating static page: {e}")
+        print(f"Error creating HTML: {e}")
         return False
 
 def update_blogs_json(new_blog):
@@ -146,11 +158,13 @@ def update_blogs_json(new_blog):
     if not os.path.exists(BLOGS_FILE):
         blogs = []
     else:
-        with open(BLOGS_FILE, 'r') as f:
-            blogs = json.load(f)
+        try:
+            with open(BLOGS_FILE, 'r', encoding='utf-8') as f:
+                blogs = json.load(f)
+        except:
+            blogs = []
     
     if any(b.get("slug") == json_entry["slug"] for b in blogs):
-        print("Blog with this slug already exists.")
         return
 
     json_entry["id"] = len(blogs) + 1
@@ -158,14 +172,15 @@ def update_blogs_json(new_blog):
     blogs = blogs[:12]
     
     with open(BLOGS_FILE, 'w', encoding='utf-8') as f:
-        json.dump(blogs, f, indent=2)
-    print(f"Updated blogs.json with: {json_entry['title']}")
+        json.dump(blogs, f, indent=2, ensure_ascii=False)
+    print(f"Updated blogs.json")
 
 if __name__ == "__main__":
-    print("Starting Ultra-Resilient Generation...")
+    print("Starting Final Reliable Generation...")
     new_post = generate_blog_content()
     if new_post:
         if create_static_page(new_post):
             update_blogs_json(new_post)
+            print("--- PROCESS COMPLETE ---")
     else:
-        print("Critical Error: All models failed or quota exhausted for all available models.")
+        print("CRITICAL: No models worked. Check API Key permissions.")
