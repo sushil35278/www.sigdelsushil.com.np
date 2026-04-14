@@ -24,7 +24,26 @@ def slugify(text):
     text = text.strip('-')
     return text
 
+def pick_best_model():
+    """Tries to find gemini-1.5-flash or returns a sensible default."""
+    try:
+        available_models = [m.name for m in client.models.list()]
+        print(f"Available models: {available_models}")
+        
+        # Preferred order
+        for preferred in ["gemini-1.5-flash", "gemini-1.5-pro", "gemini-pro"]:
+            for m in available_models:
+                if preferred in m:
+                    return m
+        return available_models[0] if available_models else "gemini-1.5-flash"
+    except Exception as e:
+        print(f"Warning: Could not list models: {e}")
+        return "gemini-1.5-flash"
+
 def generate_blog_content():
+    model_name = pick_best_model()
+    print(f"Using model: {model_name}")
+    
     prompt = """
     Act as an expert software engineer and tech blogger. 
     Write a high-quality blog post about a trending topic in software development, AI, or IT.
@@ -39,18 +58,21 @@ def generate_blog_content():
     """
     
     try:
-        # Using the new SDK syntax
         response = client.models.generate_content(
-            model="gemini-1.5-flash",
+            model=model_name,
             contents=prompt
         )
         
         text = response.text.strip()
-        # Handle potential markdown fencing in response
-        if text.startswith("```json"):
-            text = text[7:]
-        if text.endswith("```"):
-            text = text[:-3]
+        if not text:
+            print("Empty response from Gemini.")
+            return None
+            
+        # Handle potential markdown fencing
+        if "```json" in text:
+            text = text.split("```json")[1].split("```")[0].strip()
+        elif "```" in text:
+            text = text.split("```")[1].split("```")[0].strip()
         
         blog_data = json.loads(text)
         blog_data["date"] = datetime.datetime.now().strftime("%d %B %Y")
@@ -61,11 +83,15 @@ def generate_blog_content():
         
         return blog_data
     except Exception as e:
-        print(f"Error generating blog: {e}")
+        print(f"Error generating content with {model_name}: {e}")
         return None
 
 def create_static_page(blog_data):
     try:
+        if not os.path.exists(TEMPLATE_FILE):
+            print(f"Template file {TEMPLATE_FILE} not found.")
+            return False
+            
         with open(TEMPLATE_FILE, 'r') as f:
             template = f.read()
         
@@ -82,7 +108,7 @@ def create_static_page(blog_data):
             os.makedirs(BLOG_DIR)
             
         file_path = os.path.join(BLOG_DIR, f"{blog_data['slug']}.html")
-        with open(file_path, 'w') as f:
+        with open(file_path, 'w', encoding='utf-8') as f:
             f.write(html_content)
         
         blog_data["link"] = f"blog/{blog_data['slug']}.html"
@@ -93,7 +119,6 @@ def create_static_page(blog_data):
         return False
 
 def update_blogs_json(new_blog):
-    # Remove large 'content' field before saving to JSON to keep it light
     json_entry = new_blog.copy()
     if "content" in json_entry:
         del json_entry["content"]
@@ -104,23 +129,20 @@ def update_blogs_json(new_blog):
         with open(BLOGS_FILE, 'r') as f:
             blogs = json.load(f)
     
-    # Check if slug already exists to avoid duplicates
     if any(b.get("slug") == json_entry["slug"] for b in blogs):
-        print("Blog with this slug already exists. Skipping.")
+        print("Blog with this slug already exists.")
         return
 
     json_entry["id"] = len(blogs) + 1
     blogs.insert(0, json_entry)
-    
-    # Keep latest 12 blogs
     blogs = blogs[:12]
     
-    with open(BLOGS_FILE, 'w') as f:
+    with open(BLOGS_FILE, 'w', encoding='utf-8') as f:
         json.dump(blogs, f, indent=2)
     print(f"Updated blogs.json with: {json_entry['title']}")
 
 if __name__ == "__main__":
-    print("Starting generation with google-genai...")
+    print("Starting Resilient Generation...")
     new_post = generate_blog_content()
     if new_post:
         if create_static_page(new_post):
