@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}} | Sushil Sigdel Blog</title>
+    <meta name="description" content="{{summary}}">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Additional CSS -->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <style>
+        .blog-content-section {
+            padding: 120px 0;
+        }
+
+        .blog-detail-content {
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--text-color);
+        }
+
+        .blog-header {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .blog-header h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .blog-meta {
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        .blog-featured-image {
+            width: 100%;
+            border-radius: 20px;
+            margin-bottom: 50px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header-area header-sticky background-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <a href="../index.html" class="logo">
+                            <img src="../assets/images/sushil.JPG" alt="Sushil Sigdel"
+                                style="height: 50px; width:50px; border-radius:50%; margin-top:-12px;">
+                        </a>
+                        <ul class="nav">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../index.html#blog" class="active">Blog</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="blog-content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="blog-header">
+                        <span class="category"
+                            style="color: #fa65b1; font-weight: 600; text-transform: uppercase;">{{category}}</span>
+                        <h1>{{title}}</h1>
+                        <div class="blog-meta">
+                            <span>By {{author}}</span> | <span>{{date}}</span>
+                        </div>
+                    </div>
+                    <img src="../{{image}}" alt="{{title}}" class="blog-featured-image">
+                    <div class="blog-detail-content">
+                        {{content}}
+                    </div>
+                    <div class="border-first-button" style="margin-top: 50px; text-align: center;">
+                        <a href="../index.html#blog">Back to Blogs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright © 2026 Sushil Sigdel. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

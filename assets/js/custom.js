@@ -396,6 +396,108 @@
       }
     });
 
+    // Load dynamic blogs from JSON
+    const loadBlogs = () => {
+      const blogContainer = $('#blog-container');
+      if (!blogContainer.length) return;
+
+      const isJapanese = $('html').attr('lang') === 'ja';
+      const seeMoreText = isJapanese ? '詳細はこちら...' : 'see more...';
+      const discoverMoreText = isJapanese ? 'さらに発見' : 'Discover More';
+      const byText = isJapanese ? '投稿者:' : 'By:';
+
+      fetch('assets/data/blogs.json')
+        .then(response => response.json())
+        .then(blogs => {
+          if (!blogs || blogs.length === 0) {
+            blogContainer.html(`<div class="col-lg-12 text-center"><p>${isJapanese ? 'ブログ記事が見つかりませんでした。' : 'No blogs found.'}</p></div>`);
+            return;
+          }
+
+          blogContainer.empty();
+
+          // 1. Highlight Popular Blogs (Limit to 2 if available)
+          const popularBlogs = blogs.filter(b => b.isPopular).slice(0, 2);
+
+          // Use the first popular blog if exists, else most recent
+          const featuredBlog = popularBlogs.length > 0 ? popularBlogs[0] : blogs[0];
+          const remainingBlogs = blogs.filter(b => b.id !== featuredBlog.id);
+
+          let featuredHtml = `
+            <div class="col-lg-6 show-up wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+              <div class="blog-post">
+                <div class="thumb">
+                  <a href="${featuredBlog.link}">
+                    <img src="${featuredBlog.image}" alt="${featuredBlog.title}" width="550" height="350" loading="lazy" decoding="async">
+                  </a>
+                </div>
+                <div class="down-content">
+                  <span class="category">${featuredBlog.category}</span>
+                  <span class="date">${featuredBlog.date}</span>
+                  <a href="${featuredBlog.link}">
+                    <h4>${featuredBlog.title}</h4>
+                  </a>
+                  <p>${featuredBlog.summary}... <a href="${featuredBlog.link}"> ${seeMoreText}</a></p>
+                  <span class="author">
+                    <img src="assets/images/sushil.JPG" alt="${featuredBlog.author}" width="40" height="40" loading="lazy" decoding="async">
+                    ${byText} ${featuredBlog.author}
+                  </span>
+                  <div class="border-first-button">
+                    <a href="${featuredBlog.link}">${discoverMoreText}</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+          blogContainer.append(featuredHtml);
+
+          // 2. Render Side Posts (up to 3)
+          if (remainingBlogs.length > 0) {
+            let sideContainerHtml = `
+              <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                <div class="blog-posts">
+                  <div class="row" id="side-blogs-list"></div>
+                </div>
+              </div>
+            `;
+            blogContainer.append(sideContainerHtml);
+            const sideList = $('#side-blogs-list');
+
+            remainingBlogs.slice(0, 3).forEach((blog, index) => {
+              const isLast = (index === 2 || index === remainingBlogs.slice(0, 3).length - 1);
+              let postHtml = `
+                <div class="col-lg-12">
+                  <div class="post-item ${isLast ? 'last-post-item' : ''}">
+                    <div class="thumb">
+                      <a href="${blog.link}">
+                        <img src="${blog.image}" alt="${blog.title}" width="150" height="150" loading="lazy" decoding="async">
+                      </a>
+                    </div>
+                    <div class="right-content">
+                      <div class="blog-meta-wrapper">
+                        <span class="category">${blog.category}</span>
+                        <span class="date">${blog.date}</span>
+                      </div>
+                      <a href="${blog.link}">
+                        <h4>${blog.title}</h4>
+                      </a>
+                      <p>${blog.summary}... <a href="${blog.link}">${seeMoreText}</a></p>
+                    </div>
+                  </div>
+                </div>
+              `;
+              sideList.append(postHtml);
+            });
+          }
+        })
+        .catch(error => {
+          console.error('Error loading blogs:', error);
+          blogContainer.html(`<div class="col-lg-12 text-center"><p>${isJapanese ? 'エラーが発生しました。' : 'An error occurred while loading blogs.'}</p></div>`);
+        });
+    };
+
+    $(window).on('load', loadBlogs);
+
   });
 
 })(window.jQuery);
