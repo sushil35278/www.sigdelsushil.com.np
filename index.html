@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="alternate" hreflang="en" href="index.html">
-  <link rel="alternate" hreflang="ja" href="index-ja.html">
+  <link rel="alternate" hreflang="en" href="https://sigdelsushil.com.np/">
+  <link rel="alternate" hreflang="ja" href="https://sigdelsushil.com.np/index-ja.html">
+  <link rel="alternate" hreflang="x-default" href="https://sigdelsushil.com.np/">
   <meta name="keywords"
     content="sushil sigdel, personal website, nepali website, website using html css and bootstrap, web developer in nepal, system engineer, system engineer in japan, sigdel sushil, simple website, responsive website, student of MAC, django developer in nepal, python developer in nepal, php developer, laravel developer, ai, machine learning">
   <link rel="icon" href="assets/images/sushil.JPG" type="image/x-icon">
@@ -144,722 +145,748 @@
   <canvas id="matrix-canvas"
     style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; display: none;"></canvas>
 
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav class="main-nav">
-            <a href="index.html" class="logo">
-              <img src="assets/images/sushil.JPG" alt="Sushil Sigdel" class="responsive" width="50" height="50"
-                style="height: 50px; width:50px; border-radius:50%; margin-top:-12px;">
-            </a>
-
-            <!-- Add language switcher here -->
-            <div class="mobile-language-switcher">
-              <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/jp.svg" alt="日本語"
-                class="language-flag active" onclick="changeLanguage('ja')" data-lang="ja">
-              <button class="theme-toggle" id="theme-toggle-mobile" title="Toggle Theme">
-                <i class="fa fa-moon"></i>
-              </button>
-            </div>
-
-            <ul class="nav">
-              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="#about">About</a></li>
-              <li class="scroll-to-section"><a href="#services">Resume</a></li>
-              <li class="scroll-to-section"><a href="#portfolio">Projects</a></li>
-              <li class="scroll-to-section"><a href="#blog">Blog</a></li>
-              <li class="scroll-to-section"><a href="#contact">Contact</a></li>
-              <li class="scroll-to-section">
-                <div class="language-switcher" style="margin-top: 0; display: flex; align-items: center; gap: 15px;">
-                  <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/jp.svg" alt="日本語"
-                    class="language-flag active" onclick="changeLanguage('ja')" data-lang="ja">
-                  <button class="theme-toggle" id="theme-toggle" title="Toggle Theme" style="margin-top: 0;">
-                    <i class="fa fa-moon"></i>
-                  </button>
-                </div>
-              </li>
-            </ul>
-            <a class='menu-trigger'>
-              <span>Menu</span>
-            </a>
-            <!-- ***** Menu End ***** -->
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
-
-  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
-    <div id="particles-js" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 1;"></div>
-    <div class="container" style="position: relative; z-index: 2;">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="row">
-            <div class="col-lg-6 align-self-center">
-              <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <h6>Hello There</h6>
-                    <h2 id="hero-name">I am Sushil Sigdel</h2>
-                    <p>I am a <span id="typed"></span></p>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="border-first-button scroll-to-section">
-                      <a href="Sushil_Sigdel.pdf" target="_blank" rel="noopener noreferrer" download>Download CV</a>
-                      <a href="#contact">Hire Me</a>
-                      <a href="https://github.com/sushil35278" target="_blank" rel="noopener noreferrer">View GitHub</a>
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="terminal-window wow fadeInUp" data-wow-delay="1.2s">
-                      <div class="terminal-header">
-                        <div class="dot-red"></div>
-                        <div class="dot-yellow"></div>
-                        <div class="dot-green"></div>
-                      </div>
-                      <div class="terminal-body" id="term-body">
-                        <p>Welcome to Sushil's Terminal. Type 'help' to start.</p>
-                      </div>
-                      <div class="terminal-input-line">
-                        <span class="prompt">></span>
-                        <input type="text" id="term-input" placeholder="...">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <div class="hero-image-wrapper" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare
-                  data-tilt-max-glare="0.2">
-                  <img src="assets/images/hero_final.png" alt="Sushil Sigdel" class="profile-image" id="hero-img-toggle"
-                    width="1024" height="600" fetchpriority="high"
-                    style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); cursor: pointer; transition: opacity 0.5s ease;">
-
-                  <!-- Interactive Tech Links Overlays -->
-                  <div class="hero-link-container">
-                    <a href="https://aws.amazon.com/" target="_blank" class="h-link aws-link" title="AWS"></a>
-                    <a href="https://www.linux.org/" target="_blank" class="h-link linux-link" title="Linux"></a>
-                    <a href="https://www.php.net/" target="_blank" class="h-link php-link" title="PHP"></a>
-                    <a href="https://laravel.com/" target="_blank" class="h-link laravel-link" title="Laravel"></a>
-                    <a href="https://www.python.org/" target="_blank" class="h-link python-link" title="Python"></a>
-                    <a href="https://www.typescriptlang.org/" target="_blank" class="h-link ts-link"
-                      title="TypeScript"></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="about" class="about section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="about-left-image  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="assets/images/about-dec.png" alt="">
-              </div>
-            </div>
-            <div class="col-lg-6 align-self-center  wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-              <div class="about-right-content">
-                <div class="section-heading">
-                  <h6>About Me</h6>
-                  <h4>Who is <em>Sushil Sigdel</em></h4>
-                  <div class="line-dec"></div>
-                </div>
-                <p>I am a passionate and detail-oriented Full Stack Developer with over three years of experience
-                  crafting innovative web applications and delivering robust software solutions. My expertise spans both
-                  front-end and back-end technologies,.Also I have experience of integrating cutting-edge Al tools like
-                  Langchain, Crawl4ai and gemini into real world project. My commitment to delivering high-quality,
-                  scalable solutions has led to measurable successes, such as optimizing business processes and
-                  enhancing user engagement. I thrive in collaborative environments and am always eager to tackle
-                  challenges that drive innovation and learning.
-                </p>
-                <div class="row">
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="skill-item first-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                      <div class="progress" data-percentage="90">
-                        <span class="progress-left">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <span class="progress-right">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <div class="progress-value">
-                          <div>
-                            90%<br>
-                            <span>Learner</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="skill-item second-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                      <div class="progress" data-percentage="80">
-                        <span class="progress-left">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <span class="progress-right">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <div class="progress-value">
-                          <div>
-                            80%<br>
-                            <span>Nature Lover</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="skill-item third-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                      <div class="progress" data-percentage="80">
-                        <span class="progress-left">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <span class="progress-right">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <div class="progress-value">
-                          <div>
-                            70%<br>
-                            <span>Social Activist</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="services" class="services section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-            <h6>My Resume</h6>
-            <h4>My <em>Experience, Education, Trainings and Skills</em></h4>
-            <div class="line-dec"></div>
-          </div>
-        </div>
-        <div class="col-lg-12">
-          <div class="naccs">
-            <div class="grid">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="menu">
-                    <div class="first-thumb active">
-                      <div class="thumb">
-                        <span class="icon"><img src="assets/images/service-icon-01.png" alt=""></span>
-                        Experience
-                      </div>
-                    </div>
-                    <div>
-                      <div class="thumb">
-                        <span class="icon"><img src="assets/images/service-icon-02.png" alt=""></span>
-                        Education
-                      </div>
-                    </div>
-                    <div>
-                      <div class="thumb">
-                        <span class="icon"><img src="assets/images/service-icon-03.png" alt=""></span>
-                        Trainings
-                      </div>
-                    </div>
-                    <div>
-                      <div class="thumb">
-                        <span class="icon"><img src="assets/images/service-icon-04.png" alt=""></span>
-                        Hard Skills
-                      </div>
-                    </div>
-                    <div class="last-thumb">
-                      <div class="thumb">
-                        <span class="icon"><img src="assets/images/service-icon-01.png" alt=""></span>
-                        Soft Skills
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <ul class="nacc">
-                    <li class="active">
-                      <div>
-                        <div class="thumb">
-                          <div class="left-text">
-                            <h4>Eyemovic Inc. | System Engineer | Kathmandu, Nepal | July 2023 – Feb 2024 | Matsuyama,
-                              Japan | Feb 2024 –Present</h4>
-                            <div class="ticks-list">
-                              <span><i class="fa fa-check"></i>Participated in research, system architecture design,
-                                technical planning, coding,
-                                comprehensive code reviews and refactor improve performance, maintainability, and
-                                scalability of core systems..</span><br>
-                              <span><i class="fa fa-check"></i>Contributed to CI/CD pipeline implementation and
-                                infrastructure automation using AWS
-                                CloudFormation.</span><br>
-                              <span><i class="fa fa-check"></i>Participated in customer meetings, offering technical
-                                insights and post-deployment
-                                support.</span><br>
-                              <span><i class="fa fa-check"></i>Worked in a hybrid international team setting with
-                                cross-functional collaboration.</span><br>
-                            </div>
-                            <h4>Kira Technologies Pvt. Ltd. | Full Stack Developer | 2021/06-2022/10</h4>
-                            <div class="ticks-list">
-                              <span><i class="fa fa-check"></i>Designed and developed scalable web applications for
-                                product development.</span><br>
-                              <span><i class="fa fa-check"></i>Implemented RESTful APIs and contributed to frontend
-                                using React and Bootstrap..</span><br>
-                              <span><i class="fa fa-check"></i>Collaborated cross-functionally on product features,
-                                documentation, testing, and
-                                debugging.
-                                • Participated i</span><br>
-                              <span><i class="fa fa-check"></i>Participated in development planning, code
-                                reviews.</span><br>
-                            </div>
-                            <h4>Thulo Technology Pvt. Ltd. | Python Django Intern | 2021/01-2021/04</h4>
-                            <div class="ticks-list">
-                              <span><i class="fa fa-check"></i>Implemented backend features and improved system logic
-                                using Django.</span><br>
-                              <span><i class="fa fa-check"></i>Explored and integrated new development tools to
-                                streamline coding workflows.</span><br>
-                              <span><i class="fa fa-check"></i>Collaborated with senior engineers and managers on
-                                in-house product improvements.</span><br>
-                            </div>
-                            <h4>Unity for Nations Development | IT Coordinator| 2017/11-2021/12</h4>
-                            <div class="ticks-list">
-                              <span><i class="fa fa-check"></i>Developed and implemented technology related
-                                plans.</span><br>
-                              <span><i class="fa fa-check"></i>Provided technical support and training.</span><br>
-                              <span><i class="fa fa-check"></i>Conducted technology related program.</span><br>
-                              <span><i class="fa fa-check"></i>Spreading public awareness of cybersecurity.</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div class="thumb">
-                          <div class="left-text">
-                            <h4>BSC.CSIT | Mount Annapurna Campus (Tribhuvan University) | 2016 - 2022</h4>
-                            <p>First division with 72.93%</p>
-                            <h4>Higher Secondary | Mount Annapurna Campus | Completed in 2016</h4>
-                            <p>First division with 69.20%</p>
-                            <h4>School Leaving Certificate | Shree Sarbodaya Higher Secondary School | Completed in 2014
-                            </h4>
-                            <P>First division with 75.50%</P>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div class="thumb">
-                          <div class="left-text">
-                            <div class="ticks-list">
-                              <span><i class="fa fa-check"></i>Basic IT and Technical support training.</span><br>
-                              <span><i class="fa fa-check"></i>Professional Python and Django from Broadway Infosys
-                                Nepal.</span><br>
-                              <span><i class="fa fa-check"></i>Python for Data Science from Datacamp.</span><br>
-                              <span><i class="fa fa-check"></i>Self-empowerment training organized by MRR</span><br>
-                              <span><i class="fa fa-check"></i>Japanese language training from Leadx Nepal.</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div class="thumb">
-                          <div class="row">
-                            <div class="col-lg-7 align-self-center">
-                              <div class="left-text">
-                                <div class="ticks-list">
-                                  <span><i class="fa fa-check"></i><b>Front end skills:</b> HTML, CSS, Basic JS,
-                                    BOOTSTRAP, React, Ant Design, Shadcn, TypeScript, Remix</span><br>
-                                  <span><i class="fa fa-check"></i><b>Back end skills:</b> hp, Laravel, Python, Django,
-                                    Typescript, NodsJs, Remix, AdonisJs</span><br>
-                                  <span><i class="fa fa-check"></i><b>Database:</b> MySQL, SQLITE, PostgreSQL, Qdrant,
-                                    Milvus.</span><br>
-                                  <span><i class="fa fa-check"></i><b>Version Control and Containerization:</b> Git,
-                                    with the knowledge of Github and Gitlab, Docker</span><br>
-                                  <span><i class="fa fa-check"></i><b>Design:</b> Canva, Figma</span>
-                                  <span><i class="fa fa-check"></i><b>API:</b> RestAPI with Swagger for
-                                    documentation</span>
-                                  <span><i class="fa fa-check"></i><b>AI/ML Tools:</b> Langchain, Creawl4ai, Gemini, Mcp
-                                    Server.</span>
-                                  <span><i class="fa fa-check"></i><b>Others:</b> Microsoft suite, OOP, Visual Code
-                                    Studio, Basic Linux</span>
-                                  <span><i class="fa fa-check"></i><b>Cloud Services:</b> AWS EC2, Lambda, Basic
-                                    Serverless Architecture</span><br>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-5 align-self-center">
-                              <div class="right-image">
-                                <img src="assets/images/services-image-04.jpg" alt="">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div class="thumb">
-                          <div class="row">
-                            <div class="col-lg-6 align-self-center">
-                              <div class="left-text">
-                                <div class="ticks-list">
-                                  <span><i class="fa fa-check"></i>Good personal and Interpretation Skill.</span><br>
-                                  <span><i class="fa fa-check"></i>Problem Solving Skill.</span><br>
-                                  <span><i class="fa fa-check"></i>Management Skill.</span><br>
-                                  <span><i class="fa fa-check"></i>Teamwork Skill.</span><br>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-6 align-self-center">
-                              <div class="right-image">
-                                <img src="assets/images/services-image.jpg" alt="">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="portfolio" class="our-portfolio section">
-    <div class="container">
-      <div class="row">
-        <div class="section-heading wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-          <h6>My Portofolio</h6>
-          <h4>See My Recent <em>Projects</em></h4>
-          <div class="line-dec"></div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="loop owl-carousel">
-            <div class="item">
-              <a href="https://github.com/sushil35278/health-prediction-system">
-                <div class="portfolio-item">
-                  <div class="thumb">
-                    <img src="assets/images/medical.jpg" alt="">
-                  </div>
-                  <div class="down-content">
-                    <h4>Smart Health Prediction System</h4>
-                    <span>Webapp</span>
-                  </div>
-                </div>
+  <main>
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <a href="index.html" class="logo">
+                <img src="assets/images/sushil.JPG" alt="Sushil Sigdel" class="responsive" width="50" height="50"
+                  style="height: 50px; width:50px; border-radius:50%; margin-top:-12px;">
               </a>
-            </div>
-            <div class="item">
-              <a href="https://github.com/sushil35278/laravel-pos">
-                <div class="portfolio-item">
-                  <div class="thumb">
-                    <img src="assets/images/pos.png" alt="">
+
+              <!-- Add language switcher here -->
+              <div class="mobile-language-switcher">
+                <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/jp.svg" alt="日本語"
+                  class="language-flag active" onclick="changeLanguage('ja')" data-lang="ja" width="30" height="20">
+                <button class="theme-toggle" id="theme-toggle-mobile" title="Toggle Theme">
+                  <i class="fa fa-moon"></i>
+                </button>
+              </div>
+
+              <ul class="nav">
+                <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                <li class="scroll-to-section"><a href="#about">About</a></li>
+                <li class="scroll-to-section"><a href="#services">Resume</a></li>
+                <li class="scroll-to-section"><a href="#portfolio">Projects</a></li>
+                <li class="scroll-to-section"><a href="#blog">Blog</a></li>
+                <li class="scroll-to-section"><a href="#contact">Contact</a></li>
+                <li class="scroll-to-section">
+                  <div class="language-switcher" style="margin-top: 0; display: flex; align-items: center; gap: 15px;">
+                    <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/jp.svg" alt="日本語"
+                      class="language-flag active" onclick="changeLanguage('ja')" data-lang="ja" width="30" height="20">
+                    <button class="theme-toggle" id="theme-toggle" title="Toggle Theme" style="margin-top: 0;">
+                      <i class="fa fa-moon"></i>
+                    </button>
                   </div>
-                  <div class="down-content">
-                    <h4>POS System</h4>
-                    <span>webapp</span>
-                  </div>
-                </div>
+                </li>
+              </ul>
+              <a class='menu-trigger' href="#top">
+                <span>Menu</span>
               </a>
-            </div>
-            <div class="item">
-              <a href="https://www.seiwahld.com/en">
-                <div class="portfolio-item">
-                  <div class="thumb">
-                    <img src="assets/images/chatbot.png" alt="webapp">
-                  </div>
-                  <div class="down-content">
-                    <h4>AI-Powered Chatbot</h4>
-                    <span>Webapp</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <div class="portfolio-item">
-                  <div class="thumb">
-                    <img src="assets/images/blood_bank_nepal.png" alt="blood">
-                  </div>
-                  <div class="down-content">
-                    <h4>Blood Bank Management System</h4>
-                    <span>Webapp</span>
-                  </div>
-                </div>
-              </a>
-            </div>
+              <!-- ***** Menu End ***** -->
+            </nav>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
 
-  <div id="blog" class="blog">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 offset-lg-4  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
-          <div class="section-heading">
-            <h6>Techno Trends</h6>
-            <h4>Check My Blog <em>Posts</em></h4>
-            <div class="line-dec"></div>
-          </div>
-        </div>
-        <div class="col-lg-6 show-up wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-          <div class="blog-post">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/bloghome.png" alt=""></a>
-            </div>
-            <div class="down-content">
-              <span class="category">Reverse Image Search</span>
-              <span class="date">15 May 2023</span>
-              <a href="https://abouttechnotrends.blogspot.com/2023/05/unlock-power-of-reverse-image-search.html"
-                target="_blank" rel="noopener noreferrer">
-                <h4>Unlock the Power of Reverse Image Search: A Step-by-Step Guide to Boost Your Online Discovery</h4>
-              </a>
-              <p>In the vast digital landscape, images have become a prominent form of communication and expression.
-                However, tracing the origin of an image or protecting your own visual content can be challenging.<a
-                  href="https://abouttechnotrends.blogspot.com/2023/05/unlock-power-of-reverse-image-search.html"
-                  target="_blank" rel="noopener noreferrer">see more...</a></p>
-              <span class="author"><img src="assets/images/sushil.JPG" alt="">By:Sushil Sigdel</span>
-              <div class="border-first-button"><a href="https://abouttechnotrends.blogspot.com/ onclick="
-                  window.open(this.src)">Discover More</a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-          <div class="blog-posts">
+    <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+      <div id="particles-js" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 1;"></div>
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="row">
+          <div class="col-lg-12">
             <div class="row">
-              <div class="col-lg-12">
-                <div class="post-item">
-                  <div class="thumb">
-                    <a href="https://abouttechnotrends.blogspot.com/2023/05/mastering-chatgpt-how-to-effectively.html"
-                      target="_blank" rel="noopener noreferrer"><img src="assets/images/blog1.png" alt=""></a>
-                  </div>
-                  <div class="right-content">
-                    <span class="category">Mastering ChatGPT</span>
-                    <span class="date">01 May 2023</span>
-                    <a href="https://abouttechnotrends.blogspot.com/2023/05/mastering-chatgpt-how-to-effectively.html"
-                      target="_blank" rel="noopener noreferrer">
-                      <h4>Mastering ChatGPT: How to Effectively Use AI Chatbot for Your Business</h4>
-                    </a>
-                    <p>ChatGPT is one such chatbot that uses natural language processing (NLP) and machine learning to
-                      provide personalized customer service and marketing automation. In this blog, we will explore how
-                      you can effectively use ChatGPT for your business.<a
-                        href="https://abouttechnotrends.blogspot.com/2023/05/unlock-power-of-reverse-image-search.html"
-                        target="_blank" rel="noopener noreferrer">see more...</a></p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <div class="post-item">
-                  <div class="thumb">
-                    <a href="#"><img src="assets/images/blog2.png" alt=""></a>
-                  </div>
-                  <div class="right-content">
-                    <span class="category">Amazon CodeWhisperer</span>
-                    <span class="date">24 September 2021</span>
-                    <a href="#">
-                      <h4>Amazon CodeWhisperer: A Revolutionary AI-Powered Debugging Tool</h4>
-                    </a>
-                    <p> Amazon CodeWhisperer is a new AI-powered debugging tool that is revolutionizing the way software
-                      developers identify and resolve issues in their code. This innovative tool combines advanced
-                      machine learning algorithms with natural language processing to help developers quickly identify
-                      and resolve bugs, errors, and other issues in their code.<a
-                        href="https://abouttechnotrends.blogspot.com/2023/05/unlock-power-of-reverse-image-search.html"
-                        target="_blank" rel="noopener noreferrer">see more...</a></p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <div class="post-item last-post-item">
-                  <div class="thumb">
-                    <a href="https://abouttechnotrends.blogspot.com/2023/04/the-future-is-here-understanding-power.html"
-                      target="_blank" rel="noopener noreferrer"><img src="assets/images/blog3.png" alt=""></a>
-                  </div>
-                  <div class="right-content">
-                    <span class="category">5G Technology</span>
-                    <span class="date">11 April 2023</span>
-                    <a href="https://abouttechnotrends.blogspot.com/2023/04/the-future-is-here-understanding-power.html"
-                      target="_blank" rel="noopener noreferrer">
-                      <h4>The Future is Here: Understanding the Power of 5G Technology</h4>
-                    </a>
-                    <p> With 5G technology now becoming available in more and more places around the world, the
-                      possibilities for high-speed internet and data transfer are endless. 5G networks are designed to
-                      support a variety of technologies, including virtual and augmented reality, autonomous vehicles,
-                      and Internet of Things (IoT) devices.<a
-                        href="https://abouttechnotrends.blogspot.com/2023/04/the-future-is-here-understanding-power.html"
-                        target="_blank" rel="noopener noreferrer">see more...</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="contact" class="contact-us section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-            <h6>Contact Us</h6>
-            <h4>Get In Touch With <em>Sushil Sigdel</em></h4>
-            <div class="line-dec"></div>
-          </div>
-        </div>
-        <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
-          <!-- SUCCESS / ERROR ALERTS -->
-          <div id="form-success"
-            style="display:none; background:#d4edda; color:#155724; border:1px solid #c3e6cb; border-radius:8px; padding:16px 20px; margin-bottom:20px; font-size:0.95rem;">
-            ✅ <strong>Message sent!</strong> Thank you — I will get back to you soon.
-          </div>
-          <div id="form-error"
-            style="display:none; background:#f8d7da; color:#721c24; border:1px solid #f5c6cb; border-radius:8px; padding:16px 20px; margin-bottom:20px; font-size:0.95rem;">
-            ❌ Something went wrong. Please try again or email me directly at <a href="mailto:sigsushil98@gmail.com"
-              style="color:#721c24;">sigsushil98@gmail.com</a>.
-          </div>
-
-          <form id="contact-form" action="https://formspree.io/f/mlgaeeag" method="POST">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="contact-dec">
-                  <img src="assets/images/contact-dec.png" alt="" width="224" height="242">
-                </div>
-              </div>
-              <div class="col-lg-7">
-                <div class="fill-form">
+              <div class="col-lg-6 align-self-center">
+                <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                   <div class="row">
-                    <div class="col-lg-4">
-                      <div class="info-post">
-                        <div class="icon">
-                          <img src="assets/images/phone-icon.png" alt="" width="60" height="60">
-                          <a href="tel://050-5219-2883">050-5219-2883</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4">
-                      <div class="info-post">
-                        <div class="icon">
-                          <img src="assets/images/email-icon.png" alt="" width="60" height="60">
-                          <a href="mailto:sigsushil98@gmail.com">sigsushil98@gmail.com</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4">
-                      <div class="info-post">
-                        <div class="icon">
-                          <img src="assets/images/location-icon.png" alt="" width="60" height="60">
-                          <a href="https://www.sigdelsushil.com.np">sigdelsushil.com.np</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <fieldset>
-                        <input type="text" name="name" id="name" placeholder="Your Name" autocomplete="on" required>
-                      </fieldset>
-                      <fieldset>
-                        <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email"
-                          required="">
-                      </fieldset>
-                      <fieldset>
-                        <input type="text" name="subject" id="subject" placeholder="Subject">
-                      </fieldset>
-                    </div>
-                    <div class="col-lg-6">
-                      <fieldset>
-                        <textarea name="message" class="form-control" id="message" placeholder="Message"
-                          required=""></textarea>
-                      </fieldset>
+                    <div class="col-lg-12">
+                      <h6>Hello There</h6>
+                      <h1 id="hero-name">I am Sushil Sigdel</h1>
+                      <p>I am a <span id="typed"></span></p>
                     </div>
                     <div class="col-lg-12">
-                      <fieldset>
-                        <button type="submit" id="form-submit" class="main-button">Send Message Now</button>
-                      </fieldset>
+                      <div class="border-first-button scroll-to-section">
+                        <a href="Sushil_Sigdel.pdf" target="_blank" rel="noopener noreferrer" download>Download CV</a>
+                        <a href="#contact">Hire Me</a>
+                        <a href="https://github.com/sushil35278" target="_blank" rel="noopener noreferrer">View
+                          GitHub</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="terminal-window wow fadeInUp" data-wow-delay="1.2s">
+                        <div class="terminal-header">
+                          <div class="dot-red"></div>
+                          <div class="dot-yellow"></div>
+                          <div class="dot-green"></div>
+                        </div>
+                        <div class="terminal-body" id="term-body">
+                          <p>Welcome to Sushil's Terminal. Type 'help' to start.</p>
+                        </div>
+                        <div class="terminal-input-line">
+                          <span class="prompt">></span>
+                          <input type="text" id="term-input" placeholder="...">
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-5">
-                <div id="map">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212513.54498576594!2d132.54406045788454!3d33.89224457979089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354fe532dd43389d%3A0x71f312a6246632a7!2sMatsuyama%2C%20Ehime!5e1!3m2!1sen!2sjp!4v1744388520347!5m2!1sen!2sjp"
-                    width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="col-lg-6">
+                <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                  <div class="hero-image-wrapper" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare
+                    data-tilt-max-glare="0.2">
+                    <img src="assets/images/hero_final.png" alt="Sushil Sigdel" class="profile-image"
+                      id="hero-img-toggle" width="1024" height="600" fetchpriority="high"
+                      style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); cursor: pointer; transition: opacity 0.5s ease; height: auto; width: 100%;">
+
+                    <!-- Interactive Tech Links Overlays -->
+                    <div class="hero-link-container">
+                      <a href="https://aws.amazon.com/" target="_blank" class="h-link aws-link" title="AWS"></a>
+                      <a href="https://www.linux.org/" target="_blank" class="h-link linux-link" title="Linux"></a>
+                      <a href="https://www.php.net/" target="_blank" class="h-link php-link" title="PHP"></a>
+                      <a href="https://laravel.com/" target="_blank" class="h-link laravel-link" title="Laravel"></a>
+                      <a href="https://www.python.org/" target="_blank" class="h-link python-link" title="Python"></a>
+                      <a href="https://www.typescriptlang.org/" target="_blank" class="h-link ts-link"
+                        title="TypeScript"></a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </form>
-
-          <script>
-            document.getElementById('contact-form').addEventListener('submit', function (e) {
-              e.preventDefault();
-              var form = this;
-              var btn = document.getElementById('form-submit');
-              btn.textContent = 'Sending...';
-              btn.disabled = true;
-
-              fetch(form.action, {
-                method: 'POST',
-                body: new FormData(form),
-                headers: { 'Accept': 'application/json' }
-              })
-                .then(function (res) {
-                  if (res.ok) {
-                    document.getElementById('form-success').style.display = 'block';
-                    document.getElementById('form-error').style.display = 'none';
-                    form.reset();
-                  } else {
-                    document.getElementById('form-error').style.display = 'block';
-                    document.getElementById('form-success').style.display = 'none';
-                  }
-                })
-                .catch(function () {
-                  document.getElementById('form-error').style.display = 'block';
-                  document.getElementById('form-success').style.display = 'none';
-                })
-                .finally(function () {
-                  btn.textContent = 'Send Message Now';
-                  btn.disabled = false;
-                });
-            });
-          </script>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
+    <div id="about" class="about section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="about-left-image  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                  <img src="assets/images/about-dec.png" alt="About Decoration" width="450" height="450">
+                </div>
+              </div>
+              <div class="col-lg-6 align-self-center  wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="about-right-content">
+                  <div class="section-heading">
+                    <h2>About Me</h2>
+                    <h3>Who is <em>Sushil Sigdel</em></h3>
+                    <div class="line-dec"></div>
+                  </div>
+                  <p>I am a passionate and detail-oriented Full Stack Developer with over three years of experience
+                    crafting innovative web applications and delivering robust software solutions. My expertise spans
+                    both
+                    front-end and back-end technologies,.Also I have experience of integrating cutting-edge Al tools
+                    like
+                    Langchain, Crawl4ai and gemini into real world project. My commitment to delivering high-quality,
+                    scalable solutions has led to measurable successes, such as optimizing business processes and
+                    enhancing user engagement. I thrive in collaborative environments and am always eager to tackle
+                    challenges that drive innovation and learning.
+                  </p>
+                  <div class="row">
+                    <div class="col-lg-4 col-sm-4">
+                      <div class="skill-item first-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                        <div class="progress" data-percentage="90">
+                          <span class="progress-left">
+                            <span class="progress-bar"></span>
+                          </span>
+                          <span class="progress-right">
+                            <span class="progress-bar"></span>
+                          </span>
+                          <div class="progress-value">
+                            <div>
+                              90%<br>
+                              <span>Learner</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-4">
+                      <div class="skill-item second-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                        <div class="progress" data-percentage="80">
+                          <span class="progress-left">
+                            <span class="progress-bar"></span>
+                          </span>
+                          <span class="progress-right">
+                            <span class="progress-bar"></span>
+                          </span>
+                          <div class="progress-value">
+                            <div>
+                              80%<br>
+                              <span>Nature Lover</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-4">
+                      <div class="skill-item third-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                        <div class="progress" data-percentage="80">
+                          <span class="progress-left">
+                            <span class="progress-bar"></span>
+                          </span>
+                          <span class="progress-right">
+                            <span class="progress-bar"></span>
+                          </span>
+                          <div class="progress-value">
+                            <div>
+                              70%<br>
+                              <span>Social Activist</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="services" class="services section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+              <h2>My Resume</h2>
+              <h3>My <em>Experience, Education, Trainings and Skills</em></h3>
+              <div class="line-dec"></div>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="naccs">
+              <div class="grid">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="menu">
+                      <div class="first-thumb active">
+                        <div class="thumb">
+                          <span class="icon"><img src="assets/images/service-icon-01.png" alt="Experience Icon"
+                              width="60" height="60"></span>
+                          Experience
+                        </div>
+                      </div>
+                      <div>
+                        <div class="thumb">
+                          <span class="icon"><img src="assets/images/service-icon-02.png" alt="Education Icon"
+                              width="60" height="60"></span>
+                          Education
+                        </div>
+                      </div>
+                      <div>
+                        <div class="thumb">
+                          <span class="icon"><img src="assets/images/service-icon-03.png" alt="Trainings Icon"
+                              width="60" height="60"></span>
+                          Trainings
+                        </div>
+                      </div>
+                      <div>
+                        <div class="thumb">
+                          <span class="icon"><img src="assets/images/service-icon-04.png" alt="Hard Skills Icon"
+                              width="60" height="60"></span>
+                          Hard Skills
+                        </div>
+                      </div>
+                      <div class="last-thumb">
+                        <div class="thumb">
+                          <span class="icon"><img src="assets/images/service-icon-01.png" alt="Soft Skills Icon"
+                              width="60" height="60"></span>
+                          Soft Skills
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <ul class="nacc">
+                      <li class="active">
+                        <div>
+                          <div class="thumb">
+                            <div class="left-text">
+                              <h4>Eyemovic Inc. | System Engineer | Kathmandu, Nepal | July 2023 – Feb 2024 | Matsuyama,
+                                Japan | Feb 2024 –Present</h4>
+                              <div class="ticks-list">
+                                <span><i class="fa fa-check"></i>Participated in research, system architecture design,
+                                  technical planning, coding,
+                                  comprehensive code reviews and refactor improve performance, maintainability, and
+                                  scalability of core systems..</span><br>
+                                <span><i class="fa fa-check"></i>Contributed to CI/CD pipeline implementation and
+                                  infrastructure automation using AWS
+                                  CloudFormation.</span><br>
+                                <span><i class="fa fa-check"></i>Participated in customer meetings, offering technical
+                                  insights and post-deployment
+                                  support.</span><br>
+                                <span><i class="fa fa-check"></i>Worked in a hybrid international team setting with
+                                  cross-functional collaboration.</span><br>
+                              </div>
+                              <h4>Kira Technologies Pvt. Ltd. | Full Stack Developer | 2021/06-2022/10</h4>
+                              <div class="ticks-list">
+                                <span><i class="fa fa-check"></i>Designed and developed scalable web applications for
+                                  product development.</span><br>
+                                <span><i class="fa fa-check"></i>Implemented RESTful APIs and contributed to frontend
+                                  using React and Bootstrap..</span><br>
+                                <span><i class="fa fa-check"></i>Collaborated cross-functionally on product features,
+                                  documentation, testing, and
+                                  debugging.
+                                  • Participated i</span><br>
+                                <span><i class="fa fa-check"></i>Participated in development planning, code
+                                  reviews.</span><br>
+                              </div>
+                              <h4>Thulo Technology Pvt. Ltd. | Python Django Intern | 2021/01-2021/04</h4>
+                              <div class="ticks-list">
+                                <span><i class="fa fa-check"></i>Implemented backend features and improved system logic
+                                  using Django.</span><br>
+                                <span><i class="fa fa-check"></i>Explored and integrated new development tools to
+                                  streamline coding workflows.</span><br>
+                                <span><i class="fa fa-check"></i>Collaborated with senior engineers and managers on
+                                  in-house product improvements.</span><br>
+                              </div>
+                              <h4>Unity for Nations Development | IT Coordinator| 2017/11-2021/12</h4>
+                              <div class="ticks-list">
+                                <span><i class="fa fa-check"></i>Developed and implemented technology related
+                                  plans.</span><br>
+                                <span><i class="fa fa-check"></i>Provided technical support and training.</span><br>
+                                <span><i class="fa fa-check"></i>Conducted technology related program.</span><br>
+                                <span><i class="fa fa-check"></i>Spreading public awareness of cybersecurity.</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="thumb">
+                            <div class="left-text">
+                              <h4>BSC.CSIT | Mount Annapurna Campus (Tribhuvan University) | 2016 - 2022</h4>
+                              <p>First division with 72.93%</p>
+                              <h4>Higher Secondary | Mount Annapurna Campus | Completed in 2016</h4>
+                              <p>First division with 69.20%</p>
+                              <h4>School Leaving Certificate | Shree Sarbodaya Higher Secondary School | Completed in
+                                2014
+                              </h4>
+                              <P>First division with 75.50%</P>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="thumb">
+                            <div class="left-text">
+                              <div class="ticks-list">
+                                <span><i class="fa fa-check"></i>Basic IT and Technical support training.</span><br>
+                                <span><i class="fa fa-check"></i>Professional Python and Django from Broadway Infosys
+                                  Nepal.</span><br>
+                                <span><i class="fa fa-check"></i>Python for Data Science from Datacamp.</span><br>
+                                <span><i class="fa fa-check"></i>Self-empowerment training organized by MRR</span><br>
+                                <span><i class="fa fa-check"></i>Japanese language training from Leadx Nepal.</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="thumb">
+                            <div class="row">
+                              <div class="col-lg-7 align-self-center">
+                                <div class="left-text">
+                                  <div class="ticks-list">
+                                    <span><i class="fa fa-check"></i><b>Front end skills:</b> HTML, CSS, Basic JS,
+                                      BOOTSTRAP, React, Ant Design, Shadcn, TypeScript, Remix</span><br>
+                                    <span><i class="fa fa-check"></i><b>Back end skills:</b> hp, Laravel, Python,
+                                      Django,
+                                      Typescript, NodsJs, Remix, AdonisJs</span><br>
+                                    <span><i class="fa fa-check"></i><b>Database:</b> MySQL, SQLITE, PostgreSQL, Qdrant,
+                                      Milvus.</span><br>
+                                    <span><i class="fa fa-check"></i><b>Version Control and Containerization:</b> Git,
+                                      with the knowledge of Github and Gitlab, Docker</span><br>
+                                    <span><i class="fa fa-check"></i><b>Design:</b> Canva, Figma</span>
+                                    <span><i class="fa fa-check"></i><b>API:</b> RestAPI with Swagger for
+                                      documentation</span>
+                                    <span><i class="fa fa-check"></i><b>AI/ML Tools:</b> Langchain, Creawl4ai, Gemini,
+                                      Mcp
+                                      Server.</span>
+                                    <span><i class="fa fa-check"></i><b>Others:</b> Microsoft suite, OOP, Visual Code
+                                      Studio, Basic Linux</span>
+                                    <span><i class="fa fa-check"></i><b>Cloud Services:</b> AWS EC2, Lambda, Basic
+                                      Serverless Architecture</span><br>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-5 align-self-center">
+                                <div class="right-image">
+                                  <img src="assets/images/services-image-04.jpg" alt="Skills Illustration" width="400"
+                                    height="300">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="thumb">
+                            <div class="row">
+                              <div class="col-lg-6 align-self-center">
+                                <div class="left-text">
+                                  <div class="ticks-list">
+                                    <span><i class="fa fa-check"></i>Good personal and Interpretation Skill.</span><br>
+                                    <span><i class="fa fa-check"></i>Problem Solving Skill.</span><br>
+                                    <span><i class="fa fa-check"></i>Management Skill.</span><br>
+                                    <span><i class="fa fa-check"></i>Teamwork Skill.</span><br>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-6 align-self-center">
+                                <div class="right-image">
+                                  <img src="assets/images/services-image.jpg" alt="Soft Skills Illustration" width="450"
+                                    height="350">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio" class="our-portfolio section">
+      <div class="container">
+        <div class="row">
+          <div class="section-heading wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+            <h2>My Portofolio</h2>
+            <h3>See My Recent <em>Projects</em></h3>
+            <div class="line-dec"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="loop owl-carousel">
+              <div class="item">
+                <a href="https://github.com/sushil35278/health-prediction-system">
+                  <div class="portfolio-item">
+                    <div class="thumb">
+                      <img src="assets/images/medical.jpg" alt="Smart Health Prediction System" width="350"
+                        height="250">
+                    </div>
+                    <div class="down-content">
+                      <h4>Smart Health Prediction System</h4>
+                      <span>Webapp</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="https://github.com/sushil35278/laravel-pos">
+                  <div class="portfolio-item">
+                    <div class="thumb">
+                      <img src="assets/images/pos.png" alt="POS System" width="350" height="250">
+                    </div>
+                    <div class="down-content">
+                      <h4>POS System</h4>
+                      <span>webapp</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="https://www.seiwahld.com/en">
+                  <div class="portfolio-item">
+                    <div class="thumb">
+                      <img src="assets/images/chatbot.png" alt="AI-Powered Chatbot" width="350" height="250">
+                    </div>
+                    <div class="down-content">
+                      <h4>AI-Powered Chatbot</h4>
+                      <span>Webapp</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <div class="portfolio-item">
+                    <div class="thumb">
+                      <img src="assets/images/blood_bank_nepal.png" alt="Blood Bank Management System" width="350"
+                        height="250">
+                    </div>
+                    <div class="down-content">
+                      <h4>Blood Bank Management System</h4>
+                      <span>Webapp</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="blog" class="blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 offset-lg-4  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="section-heading">
+              <h2>Techno Trends</h2>
+              <h3>Check My Blog <em>Posts</em></h3>
+              <div class="line-dec"></div>
+            </div>
+          </div>
+          <div class="col-lg-6 show-up wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="blog-post">
+              <div class="thumb">
+                <a href="https://abouttechnotrends.blogspot.com/" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/images/bloghome.png" alt="Blog Featured Image" width="550" height="350">
+                </a>
+              </div>
+              <div class="down-content">
+                <span class="category">Reverse Image Search</span>
+                <span class="date">15 May 2023</span>
+                <a href="https://abouttechnotrends.blogspot.com/2023/05/unlock-power-of-reverse-image-search.html"
+                  target="_blank" rel="noopener noreferrer">
+                  <h4>Unlock the Power of Reverse Image Search: A Step-by-Step Guide to Boost Your Online Discovery</h4>
+                </a>
+                <p>In the vast digital landscape, images have become a prominent form of communication and expression.
+                  However, tracing the origin of an image or protecting your own visual content can be challenging.<a
+                    href="https://abouttechnotrends.blogspot.com/2023/05/unlock-power-of-reverse-image-search.html"
+                    target="_blank" rel="noopener noreferrer">see more...</a></p>
+                <span class="author"><img src="assets/images/sushil.JPG" alt="Sushil Sigdel" width="40"
+                    height="40">By:Sushil Sigdel</span>
+                <div class="border-first-button"><a href="https://abouttechnotrends.blogspot.com/ onclick="
+                    window.open(this.src)">Discover More</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="blog-posts">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="post-item">
+                    <div class="thumb">
+                      <a href="https://abouttechnotrends.blogspot.com/2023/05/mastering-chatgpt-how-to-effectively.html"
+                        target="_blank" rel="noopener noreferrer"><img src="assets/images/blog1.png" alt="ChatGPT Blog"
+                          width="150" height="150"></a>
+                    </div>
+                    <div class="right-content">
+                      <span class="category">Mastering ChatGPT</span>
+                      <span class="date">01 May 2023</span>
+                      <a href="https://abouttechnotrends.blogspot.com/2023/05/mastering-chatgpt-how-to-effectively.html"
+                        target="_blank" rel="noopener noreferrer">
+                        <h4>Mastering ChatGPT: How to Effectively Use AI Chatbot for Your Business</h4>
+                      </a>
+                      <p>ChatGPT is one such chatbot that uses natural language processing (NLP) and machine learning to
+                        provide personalized customer service and marketing automation. In this blog, we will explore
+                        how
+                        you can effectively use ChatGPT for your business.<a
+                          href="https://abouttechnotrends.blogspot.com/2023/05/unlock-power-of-reverse-image-search.html"
+                          target="_blank" rel="noopener noreferrer">see more...</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="post-item">
+                    <div class="thumb">
+                      <a href="https://abouttechnotrends.blogspot.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/images/blog2.png" alt="AWS CodeWhisperer" width="150" height="150">
+                      </a>
+                    </div>
+                    <div class="right-content">
+                      <span class="category">Amazon CodeWhisperer</span>
+                      <span class="date">24 September 2021</span>
+                      <a href="#">
+                        <h4>Amazon CodeWhisperer: A Revolutionary AI-Powered Debugging Tool</h4>
+                      </a>
+                      <p> Amazon CodeWhisperer is a new AI-powered debugging tool that is revolutionizing the way
+                        software
+                        developers identify and resolve issues in their code. This innovative tool combines advanced
+                        machine learning algorithms with natural language processing to help developers quickly identify
+                        and resolve bugs, errors, and other issues in their code.<a
+                          href="https://abouttechnotrends.blogspot.com/2023/05/unlock-power-of-reverse-image-search.html"
+                          target="_blank" rel="noopener noreferrer">see more...</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="post-item last-post-item">
+                    <div class="thumb">
+                      <a href="https://abouttechnotrends.blogspot.com/2023/04/the-future-is-here-understanding-power.html"
+                        target="_blank" rel="noopener noreferrer"><img src="assets/images/blog3.png"
+                          alt="5G Technology Blog" width="150" height="150"></a>
+                    </div>
+                    <div class="right-content">
+                      <span class="category">5G Technology</span>
+                      <span class="date">11 April 2023</span>
+                      <a href="https://abouttechnotrends.blogspot.com/2023/04/the-future-is-here-understanding-power.html"
+                        target="_blank" rel="noopener noreferrer">
+                        <h4>The Future is Here: Understanding the Power of 5G Technology</h4>
+                      </a>
+                      <p> With 5G technology now becoming available in more and more places around the world, the
+                        possibilities for high-speed internet and data transfer are endless. 5G networks are designed to
+                        support a variety of technologies, including virtual and augmented reality, autonomous vehicles,
+                        and Internet of Things (IoT) devices.<a
+                          href="https://abouttechnotrends.blogspot.com/2023/04/the-future-is-here-understanding-power.html"
+                          target="_blank" rel="noopener noreferrer">see more...</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="contact-us section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 offset-lg-3">
+            <div class="section-heading wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+              <h2>Contact Us</h2>
+              <h3>Get In Touch With <em>Sushil Sigdel</em></h3>
+              <div class="line-dec"></div>
+            </div>
+          </div>
+          <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
+            <!-- SUCCESS / ERROR ALERTS -->
+            <div id="form-success"
+              style="display:none; background:#d4edda; color:#155724; border:1px solid #c3e6cb; border-radius:8px; padding:16px 20px; margin-bottom:20px; font-size:0.95rem;">
+              ✅ <strong>Message sent!</strong> Thank you — I will get back to you soon.
+            </div>
+            <div id="form-error"
+              style="display:none; background:#f8d7da; color:#721c24; border:1px solid #f5c6cb; border-radius:8px; padding:16px 20px; margin-bottom:20px; font-size:0.95rem;">
+              ❌ Something went wrong. Please try again or email me directly at <a href="mailto:sigsushil98@gmail.com"
+                style="color:#721c24;">sigsushil98@gmail.com</a>.
+            </div>
+
+            <form id="contact-form" action="https://formspree.io/f/mlgaeeag" method="POST">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="contact-dec">
+                    <img src="assets/images/contact-dec.png" alt="" width="224" height="242">
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div class="fill-form">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <div class="info-post">
+                          <div class="icon">
+                            <img src="assets/images/phone-icon.png" alt="" width="60" height="60">
+                            <a href="tel://050-5219-2883">050-5219-2883</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="info-post">
+                          <div class="icon">
+                            <img src="assets/images/email-icon.png" alt="" width="60" height="60">
+                            <a href="mailto:sigsushil98@gmail.com">sigsushil98@gmail.com</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="info-post">
+                          <div class="icon">
+                            <img src="assets/images/location-icon.png" alt="" width="60" height="60">
+                            <a href="https://www.sigdelsushil.com.np">sigdelsushil.com.np</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <fieldset>
+                          <input type="text" name="name" id="name" placeholder="Your Name" autocomplete="on" required>
+                        </fieldset>
+                        <fieldset>
+                          <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email"
+                            required="">
+                        </fieldset>
+                        <fieldset>
+                          <input type="text" name="subject" id="subject" placeholder="Subject">
+                        </fieldset>
+                      </div>
+                      <div class="col-lg-6">
+                        <fieldset>
+                          <textarea name="message" class="form-control" id="message" placeholder="Message"
+                            required=""></textarea>
+                        </fieldset>
+                      </div>
+                      <div class="col-lg-12">
+                        <fieldset>
+                          <button type="submit" id="form-submit" class="main-button">Send Message Now</button>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <div id="map">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212513.54498576594!2d132.54406045788454!3d33.89224457979089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354fe532dd43389d%3A0x71f312a6246632a7!2sMatsuyama%2C%20Ehime!5e1!3m2!1sen!2sjp!4v1744388520347!5m2!1sen!2sjp"
+                      width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+              </div>
+            </form>
+
+            <script>
+              document.getElementById('contact-form').addEventListener('submit', function (e) {
+                e.preventDefault();
+                var form = this;
+                var btn = document.getElementById('form-submit');
+                btn.textContent = 'Sending...';
+                btn.disabled = true;
+
+                fetch(form.action, {
+                  method: 'POST',
+                  body: new FormData(form),
+                  headers: { 'Accept': 'application/json' }
+                })
+                  .then(function (res) {
+                    if (res.ok) {
+                      document.getElementById('form-success').style.display = 'block';
+                      document.getElementById('form-error').style.display = 'none';
+                      form.reset();
+                    } else {
+                      document.getElementById('form-error').style.display = 'block';
+                      document.getElementById('form-success').style.display = 'none';
+                    }
+                  })
+                  .catch(function () {
+                    document.getElementById('form-error').style.display = 'block';
+                    document.getElementById('form-success').style.display = 'none';
+                  })
+                  .finally(function () {
+                    btn.textContent = 'Send Message Now';
+                    btn.disabled = false;
+                  });
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
   <!-- ***** Footer Start ***** -->
   <footer
     style="background:#1a1a2e; color:#aaa; text-align:center; padding:22px 0; font-size:0.85rem; font-family:'Poppins',sans-serif;">
@@ -882,15 +909,15 @@
       }
     }
   </script>
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/animation.js"></script>
-  <script src="assets/js/imagesloaded.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
-  <script src="assets/js/custom.js"></script>
+  <script src="vendor/jquery/jquery.min.js" defer></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/js/owl-carousel.js" defer></script>
+  <script src="assets/js/animation.js" defer></script>
+  <script src="assets/js/imagesloaded.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js" defer></script>
+  <script src="assets/js/custom.js" defer></script>
 
 </body>
 

@@ -182,7 +182,7 @@ p {
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
-  color: #afafaf;
+  color: #555;
 }
 
 img {
@@ -415,7 +415,7 @@ header
 }
 
 .pre-header ul.info li a {
-  color: #afafaf;
+  color: #666;
   font-size: 14px;
   transition: all .3s;
 }
@@ -1299,7 +1299,7 @@ About Style
 .progress .progress-value span {
   font-size: 18px;
   text-transform: none;
-  color: #afafaf;
+  color: #666;
   font-weight: 300;
 }
 
@@ -1729,7 +1729,7 @@ Portfolio
 
 .portfolio-item .down-content span {
   font-size: 15px;
-  color: #afafaf;
+  color: #666;
   transition: all .3s;
 }
 
@@ -1829,7 +1829,7 @@ Blog
 
 .blog-post .down-content span.date {
   font-size: 15px;
-  color: #afafaf;
+  color: #666;
   text-align: right;
   float: right;
   margin-top: 4px;
@@ -1902,7 +1902,7 @@ Blog
 
 .post-item .right-content span.date {
   font-size: 15px;
-  color: #afafaf;
+  color: #666;
   text-align: right;
   float: right;
   margin-top: 4px;
@@ -2150,7 +2150,7 @@ responsive
 
   .main-banner {
     text-align: center;
-    padding: 226px 0px 30px 0px;
+    padding: 140px 0px 30px 0px;
   }
 
   .main-banner:before {
@@ -2159,6 +2159,7 @@ responsive
 
   .main-banner .right-image {
     margin: 30px auto 0px auto;
+    max-width: 100%;
     text-align: center;
   }
 
@@ -2615,6 +2616,7 @@ body.matrix-mode form#contact-form {
 .profile-image {
   border-radius: 0 0 15px 15px;
   width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -2818,6 +2820,7 @@ body.matrix-mode form#contact-form {
     height: 18%;
   }
 }
+
 /* Fix for Hero Link blocking image clicks */
 .hero-link-container {
   pointer-events: none;

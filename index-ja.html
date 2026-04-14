@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="alternate" hreflang="en" href="index.html">
-  <link rel="alternate" hreflang="ja" href="index-ja.html">
+  <link rel="alternate" hreflang="en" href="https://sigdelsushil.com.np/">
+  <link rel="alternate" hreflang="ja" href="https://sigdelsushil.com.np/index-ja.html">
+  <link rel="alternate" hreflang="x-default" href="https://sigdelsushil.com.np/">
   <meta name="keywords" content="シグデル・スシル, ポートフォリオ, システムエンジニア, ウェブ開発者, フルスタック開発者, Python開発者, Django開発者, AI, 機械学習">
   <link rel="icon" href="assets/images/sushil.JPG" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -118,717 +119,736 @@
   <canvas id="matrix-canvas"
     style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; display: none;"></canvas>
 
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav class="main-nav">
+  <main>
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
 
-            <!-- ***** Logo Start ***** -->
-            <a href="index-ja.html" class="logo">
-              <img src="assets/images/sushil.JPG" alt="シグデル・スシル" class="responsive" width="50" height="50"
-                style="height: 50px; width:50px; border-radius:50%; margin-top:-12px;" onclick="window.open(this.src)">
-            </a>
-            <!-- ***** Logo End ***** -->
-
-            <!-- Add language switcher here -->
-            <div class="mobile-language-switcher">
-              <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/us.svg" alt="English"
-                class="language-flag active" onclick="changeLanguage('en')" data-lang="en">
-              <button class="theme-toggle" id="theme-toggle-mobile" title="テーマ切り替え">
-                <i class="fa fa-moon"></i>
-              </button>
-            </div>
-            <!-- ***** Menu Start ***** -->
-            <ul class="nav">
-              <li class="scroll-to-section"><a href="#top" class="active">ホーム</a></li>
-              <li class="scroll-to-section"><a href="#about">私について</a></li>
-              <li class="scroll-to-section"><a href="#services">履歴書</a></li>
-              <li class="scroll-to-section"><a href="#portfolio">プロジェクト</a></li>
-              <li class="scroll-to-section"><a href="#blog">ブログ</a></li>
-              <li class="scroll-to-section"><a href="#contact">お問い合わせ</a></li>
-              <li class="scroll-to-section">
-                <div class="language-switcher" style="margin-top: 0;">
-                  <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/us.svg" alt="English"
-                    class="language-flag active" onclick="changeLanguage('en')" data-lang="en">
-                </div>
-              </li>
-            </ul>
-            <a class='menu-trigger'>
-              <span>メニュー</span>
-            </a>
-            <!-- ***** Menu End ***** -->
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
-
-  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
-    <div id="particles-js" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 1;"></div>
-    <div class="container" style="position: relative; z-index: 2;">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="row">
-            <div class="col-lg-6 align-self-center">
-              <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <h6>こんにちは</h6>
-                    <h2 id="hero-name">シグデル・スシルです</h2>
-                    <p>私は <span id="typed"></span> です</p>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="border-first-button scroll-to-section">
-                      <a href="sushil_sigdel_jp.pdf" target="_blank" rel="noopener noreferrer" download>履歴書</a>
-                      <a href="#contact">採用相談</a>
-                      <a href="https://github.com/sushil35278" target="_blank" rel="noopener noreferrer">Github</a>
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="terminal-window wow fadeInUp" data-wow-delay="1.2s">
-                      <div class="terminal-header">
-                        <div class="dot-red"></div>
-                        <div class="dot-yellow"></div>
-                        <div class="dot-green"></div>
-                      </div>
-                      <div class="terminal-body" id="term-body">
-                        <p>スシルのターミナルへようこそ。'help' と入力してください。</p>
-                      </div>
-                      <div class="terminal-input-line">
-                        <span class="prompt">></span>
-                        <input type="text" id="term-input" placeholder="...">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <div class="hero-image-wrapper" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare
-                  data-tilt-max-glare="0.2">
-                  <img src="assets/images/hero_final.png" alt="シグデル・スシル" class="profile-image" id="hero-img-toggle"
-                    width="1024" height="600" fetchpriority="high"
-                    style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); cursor: pointer; transition: opacity 0.5s ease;">
-
-                  <!-- Interactive Tech Links Overlays -->
-                  <div class="hero-link-container">
-                    <a href="https://aws.amazon.com/" target="_blank" class="h-link aws-link" title="AWS"></a>
-                    <a href="https://www.linux.org/" target="_blank" class="h-link linux-link" title="Linux"></a>
-                    <a href="https://www.php.net/" target="_blank" class="h-link php-link" title="PHP"></a>
-                    <a href="https://laravel.com/" target="_blank" class="h-link laravel-link" title="Laravel"></a>
-                    <a href="https://www.python.org/" target="_blank" class="h-link python-link" title="Python"></a>
-                    <a href="https://www.typescriptlang.org/" target="_blank" class="h-link ts-link"
-                      title="TypeScript"></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="about" class="about section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="about-left-image  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="assets/images/about-dec.png" alt="">
-              </div>
-            </div>
-            <div class="col-lg-6 align-self-center  wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-              <div class="about-right-content">
-                <div class="section-heading">
-                  <h6>プロフィール</h6>
-                  <h2 id="hero-name">シグデル・スシルです</h2>
-                  <div class="line-dec"></div>
-                </div>
-                <p>
-                  私は、革新的なWebアプリケーションを開発し、堅牢なソフトウェアソリューションを提供してきた3年以上の経験を持つ、情熱的で細部にまでこだわるフルスタック開発者です。Python（Django、FastAPI）、JavaScriptフレームワーク（React、Svelte）、およびクラウドインフラ（AWS）など、フロントエンドとバックエンドの両方の技術に精通しています。
-
-                  ソフトウェアエンジニアリングの強固な基盤と、人工知能（AI）や機械学習（ML）への深い関心を活かし、ウェブベースの疾病予測システム、チャットボット、価格シミュレーションプラットフォームなど、多様なプロジェクトに貢献してきました。高品質でスケーラブルなソリューションの提供に尽力し、業務プロセスの最適化やユーザーエンゲージメントの向上といった具体的な成果を上げています。
-
-                  技術的スキルだけでなく、問題解決能力、チームワーク、リーダーシップにも自信があります。協調的な環境で力を発揮し、イノベーションと学びを促進するような挑戦に常に意欲的に取り組んでいま</p>
-                <div class="row">
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="skill-item first-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                      <div class="progress" data-percentage="90">
-                        <span class="progress-left">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <span class="progress-right">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <div class="progress-value">
-                          <div>
-                            90%<br>
-                            <span>Learner</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="skill-item second-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                      <div class="progress" data-percentage="80">
-                        <span class="progress-left">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <span class="progress-right">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <div class="progress-value">
-                          <div>
-                            80%<br>
-                            <span>Nature Lover</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-4">
-                    <div class="skill-item third-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                      <div class="progress" data-percentage="80">
-                        <span class="progress-left">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <span class="progress-right">
-                          <span class="progress-bar"></span>
-                        </span>
-                        <div class="progress-value">
-                          <div>
-                            70%<br>
-                            <span>Social Activist</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="services" class="services section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section-heading wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-            <h6>経歴</h6>
-            <h4>職歴、学歴、<em>研修とスキル</em></h4>
-            <div class="line-dec"></div>
-          </div>
-        </div>
-        <div class="col-lg-12">
-          <div class="naccs">
-            <div class="grid">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="menu">
-                    <div class="first-thumb active">
-                      <div class="thumb">
-                        <span class="icon"><img src="assets/images/service-icon-01.png" alt=""></span>
-                        職歴
-                      </div>
-                    </div>
-                    <div>
-                      <div class="thumb">
-                        <span class="icon"><img src="assets/images/service-icon-02.png" alt=""></span>
-                        学歴
-                      </div>
-                    </div>
-                    <div>
-                      <div class="thumb">
-                        <span class="icon"><img src="assets/images/service-icon-03.png" alt=""></span>
-                        研修
-                      </div>
-                    </div>
-                    <div>
-                      <div class="thumb">
-                        <span class="icon"><img src="assets/images/service-icon-04.png" alt=""></span>
-                        技術スキル
-                      </div>
-                    </div>
-                    <div class="last-thumb">
-                      <div class="thumb">
-                        <span class="icon"><img src="assets/images/service-icon-01.png" alt=""></span>
-                        ソフトスキル
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <ul class="nacc">
-                    <li class="active">
-                      <div>
-                        <div class="thumb">
-                          <div class="left-text">
-                            <h4>Eyemovic Inc. | System Engineer | Kathmandu, Nepal | July 2023 – Feb 2024 | Matsuyama,
-                              Japan | Feb 2024 –Present</h4>
-                            <div class="ticks-list">
-                              <span><i class="fa fa-check"></i>Participated in research, system architecture design,
-                                technical planning, coding,
-                                comprehensive code reviews and refactor improve performance, maintainability, and
-                                scalability of core systems..</span><br>
-                              <span><i class="fa fa-check"></i>Contributed to CI/CD pipeline implementation and
-                                infrastructure automation using AWS
-                                CloudFormation.</span><br>
-                              <span><i class="fa fa-check"></i>Participated in customer meetings, offering technical
-                                insights and post-deployment
-                                support.</span><br>
-                              <span><i class="fa fa-check"></i>Worked in a hybrid international team setting with
-                                cross-functional collaboration.</span><br>
-                            </div>
-                            <h4>Kira Technologies Pvt. Ltd. | Full Stack Developer | 2021/06-2022/10</h4>
-                            <div class="ticks-list">
-                              <span><i class="fa fa-check"></i>Designed and developed scalable web applications for
-                                product development.</span><br>
-                              <span><i class="fa fa-check"></i>Implemented RESTful APIs and contributed to frontend
-                                using React and Bootstrap..</span><br>
-                              <span><i class="fa fa-check"></i>Collaborated cross-functionally on product features,
-                                documentation, testing, and
-                                debugging.
-                                • Participated i</span><br>
-                              <span><i class="fa fa-check"></i>Participated in development planning, code
-                                reviews.</span><br>
-                            </div>
-                            <h4>Thulo Technology Pvt. Ltd. | Python Django Intern | 2021/01-2021/04</h4>
-                            <div class="ticks-list">
-                              <span><i class="fa fa-check"></i>Implemented backend features and improved system logic
-                                using Django.</span><br>
-                              <span><i class="fa fa-check"></i>Explored and integrated new development tools to
-                                streamline coding workflows.</span><br>
-                              <span><i class="fa fa-check"></i>Collaborated with senior engineers and managers on
-                                in-house product improvements.</span><br>
-                            </div>
-                            <h4>Unity for Nations Development | IT Coordinator| 2017/11-2021/12</h4>
-                            <div class="ticks-list">
-                              <span><i class="fa fa-check"></i>Developed and implemented technology related
-                                plans.</span><br>
-                              <span><i class="fa fa-check"></i>Provided technical support and training.</span><br>
-                              <span><i class="fa fa-check"></i>Conducted technology related program.</span><br>
-                              <span><i class="fa fa-check"></i>Spreading public awareness of cybersecurity.</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div class="thumb">
-                          <div class="left-text">
-                            <h4>BSC.CSIT | Mount Annapurna Campus (Tribhuvan University) | 2016 - 2022</h4>
-                            <p>First division with 72.93%</p>
-                            <h4>Higher Secondary | Mount Annapurna Campus | Completed in 2016</h4>
-                            <p>First division with 69.20%</p>
-                            <h4>School Leaving Certificate | Shree Sarbodaya Higher Secondary School | Completed in 2014
-                            </h4>
-                            <P>First division with 75.50%</P>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div class="thumb">
-                          <div class="left-text">
-                            <div class="ticks-list">
-                              <span><i class="fa fa-check"></i>Basic IT and Technical support training.</span><br>
-                              <span><i class="fa fa-check"></i>Professional Python and Django from Broadway Infosys
-                                Nepal.</span><br>
-                              <span><i class="fa fa-check"></i>Python for Data Science from Datacamp.</span><br>
-                              <span><i class="fa fa-check"></i>Self-empowerment training organized by MRR</span><br>
-                              <span><i class="fa fa-check"></i>Japanese language training from Leadx Nepal.</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div class="thumb">
-                          <div class="row">
-                            <div class="col-lg-7 align-self-center">
-                              <div class="left-text">
-                                <div class="ticks-list">
-                                  <span><i class="fa fa-check"></i><b>フロントエンドスキル：</b>HTML, CSS, Basic JS, BOOTSTRAP ,
-                                    React, Ant Design, Shadcn.</span><br>
-                                  <span><i class="fa fa-check"></i><b>バックエンドスキル：</b> Php, Laravel, Python, Django,
-                                    Typescript, Nods.js, Remix, AdonisJs.</span><br>
-                                  <span><i class="fa fa-check"></i><b>データベース：</b> MySQL, SQLITE, PostgreSQL, Redis,
-                                    Qdrant, Milvus.</span><br>
-                                  <span><i class="fa fa-check"></i><b>バージョン管理とコンテナ化：</b>
-                                    Git（GithubとGitlabの知識あり）、Docker</span><br>
-                                  <span><i class="fa fa-check"></i><b>クラウドサービス：</b> AWS
-                                    EC2、Lambda、基本的なサーバーレスアーキテクチャ</span><br>
-                                  <span><i class="fa fa-check"></i><b>デザイン：</b> Canva、Figma</span><br>
-                                  <span><i class="fa fa-check"></i><b>API：</b> Swaggerによるドキュメント化を含むRestAPI</span><br>
-                                  <span><i class="fa fa-check"></i><b>その他：</b> Microsoft製品群、オブジェクト指向プログラミング、Visual Code
-                                    Studio、基本的なLinux</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-5 align-self-center">
-                              <div class="right-image">
-                                <img src="assets/images/services-image-04.jpg" alt="">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div class="thumb">
-                          <div class="row">
-                            <div class="col-lg-6 align-self-center">
-                              <div class="left-text">
-                                <div class="ticks-list">
-                                  <span><i class="fa fa-check"></i>優れた対人関係とコミュニケーション能力</span><br>
-                                  <span><i class="fa fa-check"></i>問題解決能力</span><br>
-                                  <span><i class="fa fa-check"></i>マネジメント能力</span><br>
-                                  <span><i class="fa fa-check"></i>チームワーク能力</span><br>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-6 align-self-center">
-                              <div class="right-image">
-                                <img src="assets/images/services-image.jpg" alt="">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="portfolio" class="our-portfolio section">
-    <div class="container">
-      <div class="row">
-        <div class="section-heading wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-          <h6>ポートフォリオ</h6>
-          <h4>最近の<em>プロジェクト</em></h4>
-          <div class="line-dec"></div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="loop owl-carousel">
-            <div class="item">
-              <a href="https://github.com/sushil35278/health-prediction-system">
-                <div class="portfolio-item">
-                  <div class="thumb">
-                    <img src="assets/images/medical.jpg" alt="">
-                  </div>
-                  <div class="down-content">
-                    <h4>Smart Health Prediction System</h4>
-                    <span>Webapp</span>
-                  </div>
-                </div>
+              <!-- ***** Logo Start ***** -->
+              <a href="index-ja.html" class="logo">
+                <img src="assets/images/sushil.JPG" alt="シグデル・スシル" class="responsive" width="50" height="50"
+                  style="height: 50px; width:50px; border-radius:50%; margin-top:-12px;"
+                  onclick="window.open(this.src)">
               </a>
-            </div>
-            <div class="item">
-              <a href="https://github.com/sushil35278/laravel-pos">
-                <div class="portfolio-item">
-                  <div class="thumb">
-                    <img src="assets/images/pos.png" alt="">
+              <!-- ***** Logo End ***** -->
+
+              <!-- Add language switcher here -->
+              <div class="mobile-language-switcher">
+                <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/us.svg" alt="English"
+                  class="language-flag active" onclick="changeLanguage('en')" data-lang="en" width="30" height="20">
+                <button class="theme-toggle" id="theme-toggle-mobile" title="テーマ切り替え">
+                  <i class="fa fa-moon"></i>
+                </button>
+              </div>
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                <li class="scroll-to-section"><a href="#top" class="active">ホーム</a></li>
+                <li class="scroll-to-section"><a href="#about">私について</a></li>
+                <li class="scroll-to-section"><a href="#services">履歴書</a></li>
+                <li class="scroll-to-section"><a href="#portfolio">プロジェクト</a></li>
+                <li class="scroll-to-section"><a href="#blog">ブログ</a></li>
+                <li class="scroll-to-section"><a href="#contact">お問い合わせ</a></li>
+                <li class="scroll-to-section">
+                  <div class="language-switcher" style="margin-top: 0;">
+                    <img src="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/flags/4x3/us.svg" alt="English"
+                      class="language-flag active" onclick="changeLanguage('en')" data-lang="en" width="30" height="20">
                   </div>
-                  <div class="down-content">
-                    <h4>POS System</h4>
-                    <span>webapp</span>
-                  </div>
-                </div>
+                </li>
+              </ul>
+              <a class='menu-trigger' href="#top">
+                <span>メニュー</span>
               </a>
-            </div>
-            <div class="item">
-              <a href="https://www.seiwahld.com/en">
-                <div class="portfolio-item">
-                  <div class="thumb">
-                    <img src="assets/images/chatbot.png" alt="webapp">
-                  </div>
-                  <div class="down-content">
-                    <h4>AI-Powered Chatbot</h4>
-                    <span>Webapp</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <div class="portfolio-item">
-                  <div class="thumb">
-                    <img src="assets/images/blood_bank_nepal.png" alt="blood">
-                  </div>
-                  <div class="down-content">
-                    <h4>Blood Bank Management System</h4>
-                    <span>Webapp</span>
-                  </div>
-                </div>
-              </a>
-            </div>
+              <!-- ***** Menu End ***** -->
+            </nav>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
 
-  <div id="blog" class="blog">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 offset-lg-4  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
-          <div class="section-heading">
-            <h6>テクノトレンド</h6>
-            <h4>ブログ<em>記事</em>をチェック</h4>
-            <div class="line-dec"></div>
-          </div>
-        </div>
-        <div class="col-lg-6 show-up wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-          <div class="blog-post">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/bloghome.png" alt=""></a>
-            </div>
-            <div class="down-content">
-              <span class="category">Reverse Image Search</span>
-              <span class="date">15 May 2023</span>
-              <a href="https://abouttechnotrends.blogspot.com/2023/05/unlock-power-of-reverse-image-search.html"
-                target="_blank" rel="noopener noreferrer">
-                <h4>Unlock the Power of Reverse Image Search: A Step-by-Step Guide to Boost Your Online Discovery</h4>
-              </a>
-              <p>In the vast digital landscape, images have become a prominent form of communication and expression.
-                However, tracing the origin of an image or protecting your own visual content can be challenging.<a
-                  href="https://abouttechnotrends.blogspot.com/2023/05/unlock-power-of-reverse-image-search.html"
-                  target="_blank" rel="noopener noreferrer">see more...</a></p>
-              <span class="author"><img src="assets/images/sushil.JPG" alt="">By:Sushil Sigdel</span>
-              <div class="border-first-button"><a href="https://abouttechnotrends.blogspot.com/ onclick="
-                  window.open(this.src)">Discover More</a></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-          <div class="blog-posts">
+    <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+      <div id="particles-js" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 1;"></div>
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="row">
+          <div class="col-lg-12">
             <div class="row">
-              <div class="col-lg-12">
-                <div class="post-item">
-                  <div class="thumb">
-                    <a href="https://abouttechnotrends.blogspot.com/2023/05/mastering-chatgpt-how-to-effectively.html"
-                      target="_blank" rel="noopener noreferrer"><img src="assets/images/blog1.png" alt=""></a>
-                  </div>
-                  <div class="right-content">
-                    <span class="category">Mastering ChatGPT</span>
-                    <span class="date">01 May 2023</span>
-                    <a href="https://abouttechnotrends.blogspot.com/2023/05/mastering-chatgpt-how-to-effectively.html"
-                      target="_blank" rel="noopener noreferrer">
-                      <h4>Mastering ChatGPT: How to Effectively Use AI Chatbot for Your Business</h4>
-                    </a>
-                    <p>ChatGPT is one such chatbot that uses natural language processing (NLP) and machine learning to
-                      provide personalized customer service and marketing automation. In this blog, we will explore how
-                      you can effectively use ChatGPT for your business.<a
-                        href="https://abouttechnotrends.blogspot.com/2023/05/unlock-power-of-reverse-image-search.html"
-                        target="_blank" rel="noopener noreferrer">see more...</a></p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <div class="post-item">
-                  <div class="thumb">
-                    <a href="#"><img src="assets/images/blog2.png" alt=""></a>
-                  </div>
-                  <div class="right-content">
-                    <span class="category">Amazon CodeWhisperer</span>
-                    <span class="date">24 September 2021</span>
-                    <a href="#">
-                      <h4>Amazon CodeWhisperer: A Revolutionary AI-Powered Debugging Tool</h4>
-                    </a>
-                    <p> Amazon CodeWhisperer is a new AI-powered debugging tool that is revolutionizing the way software
-                      developers identify and resolve issues in their code. This innovative tool combines advanced
-                      machine learning algorithms with natural language processing to help developers quickly identify
-                      and resolve bugs, errors, and other issues in their code.<a
-                        href="https://abouttechnotrends.blogspot.com/2023/05/unlock-power-of-reverse-image-search.html"
-                        target="_blank" rel="noopener noreferrer">see more...</a></p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12">
-                <div class="post-item last-post-item">
-                  <div class="thumb">
-                    <a href="https://abouttechnotrends.blogspot.com/2023/04/the-future-is-here-understanding-power.html"
-                      target="_blank" rel="noopener noreferrer"><img src="assets/images/blog3.png" alt=""></a>
-                  </div>
-                  <div class="right-content">
-                    <span class="category">5G Technology</span>
-                    <span class="date">11 April 2023</span>
-                    <a href="https://abouttechnotrends.blogspot.com/2023/04/the-future-is-here-understanding-power.html"
-                      target="_blank" rel="noopener noreferrer">
-                      <h4>The Future is Here: Understanding the Power of 5G Technology</h4>
-                    </a>
-                    <p> With 5G technology now becoming available in more and more places around the world, the
-                      possibilities for high-speed internet and data transfer are endless. 5G networks are designed to
-                      support a variety of technologies, including virtual and augmented reality, autonomous vehicles,
-                      and Internet of Things (IoT) devices.<a
-                        href="https://abouttechnotrends.blogspot.com/2023/04/the-future-is-here-understanding-power.html"
-                        target="_blank" rel="noopener noreferrer">see more...</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="contact" class="contact-us section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-            <h6>お問い合わせ</h6>
-            <h4>ご連絡は<em>こちら</em></h4>
-            <div class="line-dec"></div>
-          </div>
-        </div>
-        <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
-          <!-- SUCCESS / ERROR ALERTS -->
-          <div id="form-success"
-            style="display:none; background:#d4edda; color:#155724; border:1px solid #c3e6cb; border-radius:8px; padding:16px 20px; margin-bottom:20px; font-size:0.95rem;">
-            ✅ <strong>送信しました！</strong> ありがとうございます。近日中にご連絡いたします。
-          </div>
-          <div id="form-error"
-            style="display:none; background:#f8d7da; color:#721c24; border:1px solid #f5c6cb; border-radius:8px; padding:16px 20px; margin-bottom:20px; font-size:0.95rem;">
-            ❌ エラーが発生しました。もう一度お試しいただくか、<a href="mailto:sigsushil98@gmail.com"
-              style="color:#721c24;">sigsushil98@gmail.com</a> までメールをお送りください。
-          </div>
-
-          <form id="contact-form" action="https://formspree.io/f/mlgaeeag" method="POST">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="contact-dec">
-                  <img src="assets/images/contact-dec.png" alt="" width="224" height="242">
-                </div>
-              </div>
-              <div class="col-lg-7">
-                <div class="fill-form">
+              <div class="col-lg-6 align-self-center">
+                <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                   <div class="row">
-                    <div class="col-lg-4">
-                      <div class="info-post">
-                        <div class="icon">
-                          <img src="assets/images/phone-icon.png" alt="" width="60" height="60">
-                          <a href="tel://050-5219-2883">050-5219-2883</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4">
-                      <div class="info-post">
-                        <div class="icon">
-                          <img src="assets/images/email-icon.png" alt="" width="60" height="60">
-                          <a href="mailto:sigsushil98@gmail.com">sigsushil98@gmail.com</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4">
-                      <div class="info-post">
-                        <div class="icon">
-                          <img src="assets/images/location-icon.png" alt="" width="60" height="60">
-                          <a href="https://www.sigdelsushil.com.np">sigdelsushil.com.np</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <fieldset>
-                        <input type="text" name="name" id="name" placeholder="お名前" autocomplete="on" required>
-                      </fieldset>
-                      <fieldset>
-                        <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="メールアドレス"
-                          required="">
-                      </fieldset>
-                      <fieldset>
-                        <input type="text" name="subject" id="subject" placeholder="件名">
-                      </fieldset>
-                    </div>
-                    <div class="col-lg-6">
-                      <fieldset>
-                        <textarea name="message" class="form-control" id="message" placeholder="メッセージ"
-                          required=""></textarea>
-                      </fieldset>
+                    <div class="col-lg-12">
+                      <h6>こんにちは</h6>
+                      <h1 id="hero-name">シグデル・スシルです</h1>
+                      <p>私は <span id="typed"></span> です</p>
                     </div>
                     <div class="col-lg-12">
-                      <fieldset>
-                        <button type="submit" id="form-submit" class="main-button">送信する</button>
-                      </fieldset>
+                      <div class="border-first-button scroll-to-section">
+                        <a href="sushil_sigdel_jp.pdf" target="_blank" rel="noopener noreferrer" download>履歴書</a>
+                        <a href="#contact">採用相談</a>
+                        <a href="https://github.com/sushil35278" target="_blank" rel="noopener noreferrer">Github</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="terminal-window wow fadeInUp" data-wow-delay="1.2s">
+                        <div class="terminal-header">
+                          <div class="dot-red"></div>
+                          <div class="dot-yellow"></div>
+                          <div class="dot-green"></div>
+                        </div>
+                        <div class="terminal-body" id="term-body">
+                          <p>スシルのターミナルへようこそ。'help' と入力してください。</p>
+                        </div>
+                        <div class="terminal-input-line">
+                          <span class="prompt">></span>
+                          <input type="text" id="term-input" placeholder="...">
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-5">
-                <div id="map">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212513.54498576594!2d132.54406045788454!3d33.89224457979089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354fe532dd43389d%3A0x71f312a6246632a7!2sMatsuyama%2C%20Ehime!5e1!3m2!1sen!2sjp!4v1744388520347!5m2!1sen!2sjp"
-                    width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="col-lg-6">
+                <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                  <div class="hero-image-wrapper" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare
+                    data-tilt-max-glare="0.2">
+                    <img src="assets/images/hero_final.png" alt="シグデル・スシル" class="profile-image" id="hero-img-toggle"
+                      width="1024" height="600" fetchpriority="high"
+                      style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); cursor: pointer; transition: opacity 0.5s ease; height: auto; width: 100%;">
+
+                    <!-- Interactive Tech Links Overlays -->
+                    <div class="hero-link-container">
+                      <a href="https://aws.amazon.com/" target="_blank" class="h-link aws-link" title="AWS"></a>
+                      <a href="https://www.linux.org/" target="_blank" class="h-link linux-link" title="Linux"></a>
+                      <a href="https://www.php.net/" target="_blank" class="h-link php-link" title="PHP"></a>
+                      <a href="https://laravel.com/" target="_blank" class="h-link laravel-link" title="Laravel"></a>
+                      <a href="https://www.python.org/" target="_blank" class="h-link python-link" title="Python"></a>
+                      <a href="https://www.typescriptlang.org/" target="_blank" class="h-link ts-link"
+                        title="TypeScript"></a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </form>
-
-          <script>
-            document.getElementById('contact-form').addEventListener('submit', function (e) {
-              e.preventDefault();
-              var form = this;
-              var btn = document.getElementById('form-submit');
-              btn.textContent = '送信中...';
-              btn.disabled = true;
-
-              fetch(form.action, {
-                method: 'POST',
-                body: new FormData(form),
-                headers: { 'Accept': 'application/json' }
-              })
-                .then(function (res) {
-                  if (res.ok) {
-                    document.getElementById('form-success').style.display = 'block';
-                    document.getElementById('form-error').style.display = 'none';
-                    form.reset();
-                  } else {
-                    document.getElementById('form-error').style.display = 'block';
-                    document.getElementById('form-success').style.display = 'none';
-                  }
-                })
-                .catch(function () {
-                  document.getElementById('form-error').style.display = 'block';
-                  document.getElementById('form-success').style.display = 'none';
-                })
-                .finally(function () {
-                  btn.textContent = '送信する';
-                  btn.disabled = false;
-                });
-            });
-          </script>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
+    <div id="about" class="about section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="about-left-image  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                  <img src="assets/images/about-dec.png" alt="プロフィール装飾" width="450" height="450">
+                </div>
+              </div>
+              <div class="col-lg-6 align-self-center  wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="about-right-content">
+                  <div class="section-heading">
+                    <h2>プロフィール</h2>
+                    <h3>シグデル・スシルです</h3>
+                    <div class="line-dec"></div>
+                  </div>
+                  <p>
+                    私は、革新的なWebアプリケーションを開発し、堅牢なソフトウェアソリューションを提供してきた3年以上の経験を持つ、情熱的で細部にまでこだわるフルスタック開発者です。Python（Django、FastAPI）、JavaScriptフレームワーク（React、Svelte）、およびクラウドインフラ（AWS）など、フロントエンドとバックエンドの両方の技術に精通しています。
+
+                    ソフトウェアエンジニアリングの強固な基盤と、人工知能（AI）や機械学習（ML）への深い関心を活かし、ウェブベースの疾病予測システム、チャットボット、価格シミュレーションプラットフォームなど、多様なプロジェクトに貢献してきました。高品質でスケーラブルなソリューションの提供に尽力し、業務プロセスの最適化やユーザーエンゲージメントの向上といった具体的な成果を上げています。
+
+                    技術的スキルだけでなく、問題解決能力、チームワーク、リーダーシップにも自信があります。協調的な環境で力を発揮し、イノベーションと学びを促進するような挑戦に常に意欲的に取り組んでいま</p>
+                  <div class="row">
+                    <div class="col-lg-4 col-sm-4">
+                      <div class="skill-item first-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                        <div class="progress" data-percentage="90">
+                          <span class="progress-left">
+                            <span class="progress-bar"></span>
+                          </span>
+                          <span class="progress-right">
+                            <span class="progress-bar"></span>
+                          </span>
+                          <div class="progress-value">
+                            <div>
+                              90%<br>
+                              <span>Learner</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-4">
+                      <div class="skill-item second-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                        <div class="progress" data-percentage="80">
+                          <span class="progress-left">
+                            <span class="progress-bar"></span>
+                          </span>
+                          <span class="progress-right">
+                            <span class="progress-bar"></span>
+                          </span>
+                          <div class="progress-value">
+                            <div>
+                              80%<br>
+                              <span>Nature Lover</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-4">
+                      <div class="skill-item third-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                        <div class="progress" data-percentage="80">
+                          <span class="progress-left">
+                            <span class="progress-bar"></span>
+                          </span>
+                          <span class="progress-right">
+                            <span class="progress-bar"></span>
+                          </span>
+                          <div class="progress-value">
+                            <div>
+                              70%<br>
+                              <span>Social Activist</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="services" class="services section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-heading wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+              <h2>経歴</h2>
+              <h3>職歴、学歴、<em>研修とスキル</em></h3>
+              <div class="line-dec"></div>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="naccs">
+              <div class="grid">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="menu">
+                      <div class="first-thumb active">
+                        <div class="thumb">
+                          <span class="icon"><img src="assets/images/service-icon-01.png" alt="職歴アイコン" width="60"
+                              height="60"></span>
+                          職歴
+                        </div>
+                      </div>
+                      <div>
+                        <div class="thumb">
+                          <span class="icon"><img src="assets/images/service-icon-02.png" alt="学歴アイコン" width="60"
+                              height="60"></span>
+                          学歴
+                        </div>
+                      </div>
+                      <div>
+                        <div class="thumb">
+                          <span class="icon"><img src="assets/images/service-icon-03.png" alt="研修アイコン" width="60"
+                              height="60"></span>
+                          研修
+                        </div>
+                      </div>
+                      <div>
+                        <div class="thumb">
+                          <span class="icon"><img src="assets/images/service-icon-04.png" alt="技術スキルアイコン" width="60"
+                              height="60"></span>
+                          技術スキル
+                        </div>
+                      </div>
+                      <div class="last-thumb">
+                        <div class="thumb">
+                          <span class="icon"><img src="assets/images/service-icon-01.png" alt="ソフトスキルアイコン" width="60"
+                              height="60"></span>
+                          ソフトスキル
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <ul class="nacc">
+                      <li class="active">
+                        <div>
+                          <div class="thumb">
+                            <div class="left-text">
+                              <h4>Eyemovic Inc. | System Engineer | Kathmandu, Nepal | July 2023 – Feb 2024 | Matsuyama,
+                                Japan | Feb 2024 –Present</h4>
+                              <div class="ticks-list">
+                                <span><i class="fa fa-check"></i>Participated in research, system architecture design,
+                                  technical planning, coding,
+                                  comprehensive code reviews and refactor improve performance, maintainability, and
+                                  scalability of core systems..</span><br>
+                                <span><i class="fa fa-check"></i>Contributed to CI/CD pipeline implementation and
+                                  infrastructure automation using AWS
+                                  CloudFormation.</span><br>
+                                <span><i class="fa fa-check"></i>Participated in customer meetings, offering technical
+                                  insights and post-deployment
+                                  support.</span><br>
+                                <span><i class="fa fa-check"></i>Worked in a hybrid international team setting with
+                                  cross-functional collaboration.</span><br>
+                              </div>
+                              <h4>Kira Technologies Pvt. Ltd. | Full Stack Developer | 2021/06-2022/10</h4>
+                              <div class="ticks-list">
+                                <span><i class="fa fa-check"></i>Designed and developed scalable web applications for
+                                  product development.</span><br>
+                                <span><i class="fa fa-check"></i>Implemented RESTful APIs and contributed to frontend
+                                  using React and Bootstrap..</span><br>
+                                <span><i class="fa fa-check"></i>Collaborated cross-functionally on product features,
+                                  documentation, testing, and
+                                  debugging.
+                                  • Participated i</span><br>
+                                <span><i class="fa fa-check"></i>Participated in development planning, code
+                                  reviews.</span><br>
+                              </div>
+                              <h4>Thulo Technology Pvt. Ltd. | Python Django Intern | 2021/01-2021/04</h4>
+                              <div class="ticks-list">
+                                <span><i class="fa fa-check"></i>Implemented backend features and improved system logic
+                                  using Django.</span><br>
+                                <span><i class="fa fa-check"></i>Explored and integrated new development tools to
+                                  streamline coding workflows.</span><br>
+                                <span><i class="fa fa-check"></i>Collaborated with senior engineers and managers on
+                                  in-house product improvements.</span><br>
+                              </div>
+                              <h4>Unity for Nations Development | IT Coordinator| 2017/11-2021/12</h4>
+                              <div class="ticks-list">
+                                <span><i class="fa fa-check"></i>Developed and implemented technology related
+                                  plans.</span><br>
+                                <span><i class="fa fa-check"></i>Provided technical support and training.</span><br>
+                                <span><i class="fa fa-check"></i>Conducted technology related program.</span><br>
+                                <span><i class="fa fa-check"></i>Spreading public awareness of cybersecurity.</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="thumb">
+                            <div class="left-text">
+                              <h4>BSC.CSIT | Mount Annapurna Campus (Tribhuvan University) | 2016 - 2022</h4>
+                              <p>First division with 72.93%</p>
+                              <h4>Higher Secondary | Mount Annapurna Campus | Completed in 2016</h4>
+                              <p>First division with 69.20%</p>
+                              <h4>School Leaving Certificate | Shree Sarbodaya Higher Secondary School | Completed in
+                                2014
+                              </h4>
+                              <P>First division with 75.50%</P>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="thumb">
+                            <div class="left-text">
+                              <div class="ticks-list">
+                                <span><i class="fa fa-check"></i>Basic IT and Technical support training.</span><br>
+                                <span><i class="fa fa-check"></i>Professional Python and Django from Broadway Infosys
+                                  Nepal.</span><br>
+                                <span><i class="fa fa-check"></i>Python for Data Science from Datacamp.</span><br>
+                                <span><i class="fa fa-check"></i>Self-empowerment training organized by MRR</span><br>
+                                <span><i class="fa fa-check"></i>Japanese language training from Leadx Nepal.</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="thumb">
+                            <div class="row">
+                              <div class="col-lg-7 align-self-center">
+                                <div class="left-text">
+                                  <div class="ticks-list">
+                                    <span><i class="fa fa-check"></i><b>フロントエンドスキル：</b>HTML, CSS, Basic JS, BOOTSTRAP ,
+                                      React, Ant Design, Shadcn.</span><br>
+                                    <span><i class="fa fa-check"></i><b>バックエンドスキル：</b> Php, Laravel, Python, Django,
+                                      Typescript, Nods.js, Remix, AdonisJs.</span><br>
+                                    <span><i class="fa fa-check"></i><b>データベース：</b> MySQL, SQLITE, PostgreSQL, Redis,
+                                      Qdrant, Milvus.</span><br>
+                                    <span><i class="fa fa-check"></i><b>バージョン管理とコンテナ化：</b>
+                                      Git（GithubとGitlabの知識あり）、Docker</span><br>
+                                    <span><i class="fa fa-check"></i><b>クラウドサービス：</b> AWS
+                                      EC2、Lambda、基本的なサーバーレスアーキテクチャ</span><br>
+                                    <span><i class="fa fa-check"></i><b>デザイン：</b> Canva、Figma</span><br>
+                                    <span><i class="fa fa-check"></i><b>API：</b> Swaggerによるドキュメント化を含むRestAPI</span><br>
+                                    <span><i class="fa fa-check"></i><b>その他：</b> Microsoft製品群、オブジェクト指向プログラミング、Visual
+                                      Code
+                                      Studio、基本的なLinux</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-5 align-self-center">
+                                <div class="right-image">
+                                  <img src="assets/images/services-image-04.jpg" alt="技術スキル図解" width="400" height="300">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <div class="thumb">
+                            <div class="row">
+                              <div class="col-lg-6 align-self-center">
+                                <div class="left-text">
+                                  <div class="ticks-list">
+                                    <span><i class="fa fa-check"></i>優れた対人関係とコミュニケーション能力</span><br>
+                                    <span><i class="fa fa-check"></i>問題解決能力</span><br>
+                                    <span><i class="fa fa-check"></i>マネジメント能力</span><br>
+                                    <span><i class="fa fa-check"></i>チームワーク能力</span><br>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-6 align-self-center">
+                                <div class="right-image">
+                                  <img src="assets/images/services-image.jpg" alt="ソフトスキル図解" width="450" height="350">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio" class="our-portfolio section">
+      <div class="container">
+        <div class="row">
+          <div class="section-heading wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+            <h2>ポートフォリオ</h2>
+            <h3>最近の<em>プロジェクト</em></h3>
+            <div class="line-dec"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="loop owl-carousel">
+              <div class="item">
+                <a href="https://github.com/sushil35278/health-prediction-system">
+                  <div class="portfolio-item">
+                    <div class="thumb">
+                      <img src="assets/images/medical.jpg" alt="スマート健康予測システム" width="350" height="250">
+                    </div>
+                    <div class="down-content">
+                      <h4>Smart Health Prediction System</h4>
+                      <span>Webapp</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="https://github.com/sushil35278/laravel-pos">
+                  <div class="portfolio-item">
+                    <div class="thumb">
+                      <img src="assets/images/pos.png" alt="POSシステム" width="350" height="250">
+                    </div>
+                    <div class="down-content">
+                      <h4>POS System</h4>
+                      <span>webapp</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="https://www.seiwahld.com/en">
+                  <div class="portfolio-item">
+                    <div class="thumb">
+                      <img src="assets/images/chatbot.png" alt="AIチャットボット" width="350" height="250">
+                    </div>
+                    <div class="down-content">
+                      <h4>AI-Powered Chatbot</h4>
+                      <span>Webapp</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <div class="portfolio-item">
+                    <div class="thumb">
+                      <img src="assets/images/blood_bank_nepal.png" alt="献血管理システム" width="350" height="250">
+                    </div>
+                    <div class="down-content">
+                      <h4>Blood Bank Management System</h4>
+                      <span>Webapp</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="blog" class="blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 offset-lg-4  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="section-heading">
+              <h2>テクノトレンド</h2>
+              <h3>ブログ<em>記事</em>をチェック</h3>
+              <div class="line-dec"></div>
+            </div>
+          </div>
+          <div class="col-lg-6 show-up wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="blog-post">
+              <div class="thumb">
+                <a href="https://abouttechnotrends.blogspot.com/" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/images/bloghome.png" alt="ブログ主要画像" width="550" height="350">
+                </a>
+              </div>
+              <div class="down-content">
+                <span class="category">Reverse Image Search</span>
+                <span class="date">15 May 2023</span>
+                <a href="https://abouttechnotrends.blogspot.com/2023/05/unlock-power-of-reverse-image-search.html"
+                  target="_blank" rel="noopener noreferrer">
+                  <h4>Unlock the Power of Reverse Image Search: A Step-by-Step Guide to Boost Your Online Discovery</h4>
+                </a>
+                <p>In the vast digital landscape, images have become a prominent form of communication and expression.
+                  However, tracing the origin of an image or protecting your own visual content can be challenging.<a
+                    href="https://abouttechnotrends.blogspot.com/2023/05/unlock-power-of-reverse-image-search.html"
+                    target="_blank" rel="noopener noreferrer">see more...</a></p>
+                <span class="author"><img src="assets/images/sushil.JPG" alt="スシル・シグデル" width="40" height="40">By:Sushil
+                  Sigdel</span>
+                <div class="border-first-button"><a href="https://abouttechnotrends.blogspot.com/ onclick="
+                    window.open(this.src)">Discover More</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="blog-posts">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="post-item">
+                    <div class="thumb">
+                      <a href="https://abouttechnotrends.blogspot.com/2023/05/mastering-chatgpt-how-to-effectively.html"
+                        target="_blank" rel="noopener noreferrer"><img src="assets/images/blog1.png" alt="ChatGPTブログ"
+                          width="150" height="150"></a>
+                    </div>
+                    <div class="right-content">
+                      <span class="category">Mastering ChatGPT</span>
+                      <span class="date">01 May 2023</span>
+                      <a href="https://abouttechnotrends.blogspot.com/2023/05/mastering-chatgpt-how-to-effectively.html"
+                        target="_blank" rel="noopener noreferrer">
+                        <h4>Mastering ChatGPT: How to Effectively Use AI Chatbot for Your Business</h4>
+                      </a>
+                      <p>ChatGPT is one such chatbot that uses natural language processing (NLP) and machine learning to
+                        provide personalized customer service and marketing automation. In this blog, we will explore
+                        how
+                        you can effectively use ChatGPT for your business.<a
+                          href="https://abouttechnotrends.blogspot.com/2023/05/unlock-power-of-reverse-image-search.html"
+                          target="_blank" rel="noopener noreferrer">see more...</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="post-item">
+                    <div class="thumb">
+                      <a href="https://abouttechnotrends.blogspot.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/images/blog2.png" alt="Amazon CodeWhispererブログ" width="150" height="150">
+                      </a>
+                    </div>
+                    <div class="right-content">
+                      <span class="category">Amazon CodeWhisperer</span>
+                      <span class="date">24 September 2021</span>
+                      <a href="#">
+                        <h4>Amazon CodeWhisperer: A Revolutionary AI-Powered Debugging Tool</h4>
+                      </a>
+                      <p> Amazon CodeWhisperer is a new AI-powered debugging tool that is revolutionizing the way
+                        software
+                        developers identify and resolve issues in their code. This innovative tool combines advanced
+                        machine learning algorithms with natural language processing to help developers quickly identify
+                        and resolve bugs, errors, and other issues in their code.<a
+                          href="https://abouttechnotrends.blogspot.com/2023/05/unlock-power-of-reverse-image-search.html"
+                          target="_blank" rel="noopener noreferrer">see more...</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="post-item last-post-item">
+                    <div class="thumb">
+                      <a href="https://abouttechnotrends.blogspot.com/2023/04/the-future-is-here-understanding-power.html"
+                        target="_blank" rel="noopener noreferrer"><img src="assets/images/blog3.png" alt="5G技術ブログ"
+                          width="150" height="150"></a>
+                    </div>
+                    <div class="right-content">
+                      <span class="category">5G Technology</span>
+                      <span class="date">11 April 2023</span>
+                      <a href="https://abouttechnotrends.blogspot.com/2023/04/the-future-is-here-understanding-power.html"
+                        target="_blank" rel="noopener noreferrer">
+                        <h4>The Future is Here: Understanding the Power of 5G Technology</h4>
+                      </a>
+                      <p> With 5G technology now becoming available in more and more places around the world, the
+                        possibilities for high-speed internet and data transfer are endless. 5G networks are designed to
+                        support a variety of technologies, including virtual and augmented reality, autonomous vehicles,
+                        and Internet of Things (IoT) devices.<a
+                          href="https://abouttechnotrends.blogspot.com/2023/04/the-future-is-here-understanding-power.html"
+                          target="_blank" rel="noopener noreferrer">see more...</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="contact-us section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 offset-lg-3">
+            <div class="section-heading wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+              <h2>お問い合わせ</h2>
+              <h3>ご連絡は<em>こちら</em></h3>
+              <div class="line-dec"></div>
+            </div>
+          </div>
+          <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
+            <!-- SUCCESS / ERROR ALERTS -->
+            <div id="form-success"
+              style="display:none; background:#d4edda; color:#155724; border:1px solid #c3e6cb; border-radius:8px; padding:16px 20px; margin-bottom:20px; font-size:0.95rem;">
+              ✅ <strong>送信しました！</strong> ありがとうございます。近日中にご連絡いたします。
+            </div>
+            <div id="form-error"
+              style="display:none; background:#f8d7da; color:#721c24; border:1px solid #f5c6cb; border-radius:8px; padding:16px 20px; margin-bottom:20px; font-size:0.95rem;">
+              ❌ エラーが発生しました。もう一度お試しいただくか、<a href="mailto:sigsushil98@gmail.com"
+                style="color:#721c24;">sigsushil98@gmail.com</a> までメールをお送りください。
+            </div>
+
+            <form id="contact-form" action="https://formspree.io/f/mlgaeeag" method="POST">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="contact-dec">
+                    <img src="assets/images/contact-dec.png" alt="" width="224" height="242">
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div class="fill-form">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <div class="info-post">
+                          <div class="icon">
+                            <img src="assets/images/phone-icon.png" alt="" width="60" height="60">
+                            <a href="tel://050-5219-2883">050-5219-2883</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="info-post">
+                          <div class="icon">
+                            <img src="assets/images/email-icon.png" alt="" width="60" height="60">
+                            <a href="mailto:sigsushil98@gmail.com">sigsushil98@gmail.com</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="info-post">
+                          <div class="icon">
+                            <img src="assets/images/location-icon.png" alt="" width="60" height="60">
+                            <a href="https://www.sigdelsushil.com.np">sigdelsushil.com.np</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <fieldset>
+                          <input type="text" name="name" id="name" placeholder="お名前" autocomplete="on" required>
+                        </fieldset>
+                        <fieldset>
+                          <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="メールアドレス"
+                            required="">
+                        </fieldset>
+                        <fieldset>
+                          <input type="text" name="subject" id="subject" placeholder="件名">
+                        </fieldset>
+                      </div>
+                      <div class="col-lg-6">
+                        <fieldset>
+                          <textarea name="message" class="form-control" id="message" placeholder="メッセージ"
+                            required=""></textarea>
+                        </fieldset>
+                      </div>
+                      <div class="col-lg-12">
+                        <fieldset>
+                          <button type="submit" id="form-submit" class="main-button">送信する</button>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <div id="map">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212513.54498576594!2d132.54406045788454!3d33.89224457979089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354fe532dd43389d%3A0x71f312a6246632a7!2sMatsuyama%2C%20Ehime!5e1!3m2!1sen!2sjp!4v1744388520347!5m2!1sen!2sjp"
+                      width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+              </div>
+            </form>
+
+            <script>
+              document.getElementById('contact-form').addEventListener('submit', function (e) {
+                e.preventDefault();
+                var form = this;
+                var btn = document.getElementById('form-submit');
+                btn.textContent = '送信中...';
+                btn.disabled = true;
+
+                fetch(form.action, {
+                  method: 'POST',
+                  body: new FormData(form),
+                  headers: { 'Accept': 'application/json' }
+                })
+                  .then(function (res) {
+                    if (res.ok) {
+                      document.getElementById('form-success').style.display = 'block';
+                      document.getElementById('form-error').style.display = 'none';
+                      form.reset();
+                    } else {
+                      document.getElementById('form-error').style.display = 'block';
+                      document.getElementById('form-success').style.display = 'none';
+                    }
+                  })
+                  .catch(function () {
+                    document.getElementById('form-error').style.display = 'block';
+                    document.getElementById('form-success').style.display = 'none';
+                  })
+                  .finally(function () {
+                    btn.textContent = '送信する';
+                    btn.disabled = false;
+                  });
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
   <!-- ***** Footer Start ***** -->
   <footer
     style="background:#1a1a2e; color:#aaa; text-align:center; padding:22px 0; font-size:0.85rem; font-family:'Poppins',sans-serif;">
@@ -851,15 +871,15 @@
       }
     }
   </script>
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/animation.js"></script>
-  <script src="assets/js/imagesloaded.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
-  <script src="assets/js/custom.js"></script>
+  <script src="vendor/jquery/jquery.min.js" defer></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/js/owl-carousel.js" defer></script>
+  <script src="assets/js/animation.js" defer></script>
+  <script src="assets/js/imagesloaded.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js" defer></script>
+  <script src="assets/js/custom.js" defer></script>
 
 </body>
 
