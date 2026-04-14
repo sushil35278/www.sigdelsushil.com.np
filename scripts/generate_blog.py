@@ -2,7 +2,7 @@ import os
 import json
 import datetime
 import re
-import google.generativeai as genai
+from google import genai
 
 # Configuration
 API_KEY = os.environ.get("GEMINI_API_KEY")
@@ -14,9 +14,8 @@ if not API_KEY:
     print("Error: GEMINI_API_KEY environment variable not set.")
     exit(1)
 
-genai.configure(api_key=API_KEY)
-# Use flash for speed and reliability in JSON mode
-model = genai.GenerativeModel('gemini-1.5-flash')
+# Initialize the new GenAI client
+client = genai.Client(api_key=API_KEY)
 
 def slugify(text):
     text = text.lower()
@@ -40,8 +39,14 @@ def generate_blog_content():
     """
     
     try:
-        response = model.generate_content(prompt)
+        # Using the new SDK syntax
+        response = client.models.generate_content(
+            model="gemini-1.5-flash",
+            contents=prompt
+        )
+        
         text = response.text.strip()
+        # Handle potential markdown fencing in response
         if text.startswith("```json"):
             text = text[7:]
         if text.endswith("```"):
@@ -73,6 +78,9 @@ def create_static_page(blog_data):
         html_content = html_content.replace("{{image}}", blog_data["image"])
         html_content = html_content.replace("{{content}}", blog_data["content"])
         
+        if not os.path.exists(BLOG_DIR):
+            os.makedirs(BLOG_DIR)
+            
         file_path = os.path.join(BLOG_DIR, f"{blog_data['slug']}.html")
         with open(file_path, 'w') as f:
             f.write(html_content)
@@ -112,9 +120,10 @@ def update_blogs_json(new_blog):
     print(f"Updated blogs.json with: {json_entry['title']}")
 
 if __name__ == "__main__":
+    print("Starting generation with google-genai...")
     new_post = generate_blog_content()
     if new_post:
         if create_static_page(new_post):
             update_blogs_json(new_post)
     else:
-        print("Failed to generate blog.")
+        print("Failed to generate blog content.")
