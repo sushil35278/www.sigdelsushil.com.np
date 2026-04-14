@@ -30,12 +30,101 @@
   <meta property="twitter:title" content="スシル・シグデル | フルスタックエンジニア ポートフォリオ">
   <meta property="twitter:description" content="日本とネパールの技術の架け橋となるエンジニア、スシル・シグデルのプロジェクトと経歴を紹介します。">
   <meta property="twitter:image" content="https://sigdelsushil.com.np/assets/images/sushil.JPG">
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/css/flag-icon.min.css" rel="stylesheet">
-  <!-- Additional CSS Files -->
-  <link rel="stylesheet" href="assets/css/fontawesome.css">
-  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Critical Inline CSS -->
+  <style>
+    :root {
+      --bg-color: #fff;
+      --text-color: #2a2a2a;
+      --primary-color: #fa65b1;
+    }
+
+    [data-theme='dark'] {
+      --bg-color: #1a1a1a;
+      --text-color: #e0e0e0;
+    }
+
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-color);
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .js-preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.25s ease;
+    }
+
+    .js-preloader.loaded {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .preloader-inner {
+      position: relative;
+      width: 142px;
+      height: 40px;
+      background: #fff;
+    }
+
+    .preloader-inner .dot {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      top: 12px;
+      left: 15px;
+      background: #fa65b1;
+      border-radius: 50%;
+      animation: dot 2.8s infinite;
+    }
+
+    .preloader-inner .dots {
+      margin-top: 12px;
+      margin-left: 31px;
+      animation: dots 2.8s infinite;
+    }
+
+    .preloader-inner .dots span {
+      display: block;
+      float: left;
+      width: 16px;
+      height: 16px;
+      margin-left: 16px;
+      background: #fa65b1;
+      border-radius: 50%;
+    }
+
+    @keyframes dot {
+      50% {
+        transform: translateX(96px);
+      }
+    }
+
+    @keyframes dots {
+      50% {
+        transform: translateX(-31px);
+      }
+    }
+  </style>
+
+  <!-- Bootstrap core CSS deferred -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="https://cdn.jsdelivr.net/npm/flag-icon-css@3.5.0/css/flag-icon.min.css" rel="stylesheet" media="print"
+    onload="this.media='all'">
+  <!-- Additional CSS Files deferred -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="assets/css/main.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="assets/css/animated.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="assets/css/owl.css" media="print" onload="this.media='all'">
   <!-- Language Switcher CSS -->
@@ -214,7 +303,7 @@
                   <div class="hero-image-wrapper" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare
                     data-tilt-max-glare="0.2">
                     <img src="assets/images/hero_final.png" alt="シグデル・スシル" class="profile-image" id="hero-img-toggle"
-                      width="1024" height="600" fetchpriority="high" decoding="async" loading="eager"
+                      width="1024" height="800" fetchpriority="high" decoding="async" loading="eager"
                       style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); cursor: pointer; transition: opacity 0.5s ease; height: auto; width: 100%;">
 
                     <!-- Interactive Tech Links Overlays -->
@@ -243,7 +332,8 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="about-left-image  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                  <img src="assets/images/about-dec.png" alt="プロフィール装飾" width="450" height="450">
+                  <img src="assets/images/about-dec.png" alt="プロフィール装飾" width="450" height="450" loading="lazy"
+                    decoding="async">
                 </div>
               </div>
               <div class="col-lg-6 align-self-center  wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
@@ -342,35 +432,35 @@
                       <div class="first-thumb active">
                         <div class="thumb">
                           <span class="icon"><img src="assets/images/service-icon-01.png" alt="職歴アイコン" width="60"
-                              height="60"></span>
+                              height="60" loading="lazy" decoding="async"></span>
                           職歴
                         </div>
                       </div>
                       <div>
                         <div class="thumb">
                           <span class="icon"><img src="assets/images/service-icon-02.png" alt="学歴アイコン" width="60"
-                              height="60"></span>
+                              height="60" loading="lazy" decoding="async"></span>
                           学歴
                         </div>
                       </div>
                       <div>
                         <div class="thumb">
                           <span class="icon"><img src="assets/images/service-icon-03.png" alt="研修アイコン" width="60"
-                              height="60"></span>
+                              height="60" loading="lazy" decoding="async"></span>
                           研修
                         </div>
                       </div>
                       <div>
                         <div class="thumb">
                           <span class="icon"><img src="assets/images/service-icon-04.png" alt="技術スキルアイコン" width="60"
-                              height="60"></span>
+                              height="60" loading="lazy" decoding="async"></span>
                           技術スキル
                         </div>
                       </div>
                       <div class="last-thumb">
                         <div class="thumb">
                           <span class="icon"><img src="assets/images/service-icon-01.png" alt="ソフトスキルアイコン" width="60"
-                              height="60"></span>
+                              height="60" loading="lazy" decoding="async"></span>
                           ソフトスキル
                         </div>
                       </div>
@@ -491,7 +581,8 @@
                               </div>
                               <div class="col-lg-5 align-self-center">
                                 <div class="right-image">
-                                  <img src="assets/images/services-image-04.jpg" alt="技術スキル図解" width="400" height="300">
+                                  <img src="assets/images/services-image-04.jpg" alt="技術スキル図解" width="400" height="300"
+                                    loading="lazy" decoding="async">
                                 </div>
                               </div>
                             </div>
@@ -514,7 +605,8 @@
                               </div>
                               <div class="col-lg-6 align-self-center">
                                 <div class="right-image">
-                                  <img src="assets/images/services-image.jpg" alt="ソフトスキル図解" width="450" height="350">
+                                  <img src="assets/images/services-image.jpg" alt="ソフトスキル図解" width="450" height="350"
+                                    loading="lazy" decoding="async">
                                 </div>
                               </div>
                             </div>
@@ -541,7 +633,7 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+      <div class="container wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
         <div class="row">
           <div class="col-lg-12">
             <div class="loop owl-carousel">
@@ -549,7 +641,8 @@
                 <a href="https://github.com/sushil35278/health-prediction-system">
                   <div class="portfolio-item">
                     <div class="thumb">
-                      <img src="assets/images/medical.jpg" alt="スマート健康予測システム" width="350" height="250">
+                      <img src="assets/images/medical.jpg" alt="スマート健康予測システム" width="350" height="250" loading="lazy"
+                        decoding="async">
                     </div>
                     <div class="down-content">
                       <h4>Smart Health Prediction System</h4>
@@ -562,7 +655,8 @@
                 <a href="https://github.com/sushil35278/laravel-pos">
                   <div class="portfolio-item">
                     <div class="thumb">
-                      <img src="assets/images/pos.png" alt="POSシステム" width="350" height="250">
+                      <img src="assets/images/pos.png" alt="POSシステム" width="350" height="250" loading="lazy"
+                        decoding="async">
                     </div>
                     <div class="down-content">
                       <h4>POS System</h4>
@@ -575,7 +669,8 @@
                 <a href="https://www.seiwahld.com/en">
                   <div class="portfolio-item">
                     <div class="thumb">
-                      <img src="assets/images/chatbot.png" alt="AIチャットボット" width="350" height="250">
+                      <img src="assets/images/chatbot.png" alt="AIチャットボット" width="350" height="250" loading="lazy"
+                        decoding="async">
                     </div>
                     <div class="down-content">
                       <h4>AI-Powered Chatbot</h4>
@@ -588,7 +683,8 @@
                 <a href="#">
                   <div class="portfolio-item">
                     <div class="thumb">
-                      <img src="assets/images/blood_bank_nepal.png" alt="献血管理システム" width="350" height="250">
+                      <img src="assets/images/blood_bank_nepal.png" alt="献血管理システム" width="350" height="250"
+                        loading="lazy" decoding="async">
                     </div>
                     <div class="down-content">
                       <h4>Blood Bank Management System</h4>
@@ -617,7 +713,8 @@
             <div class="blog-post">
               <div class="thumb">
                 <a href="https://abouttechnotrends.blogspot.com/" target="_blank" rel="noopener noreferrer">
-                  <img src="assets/images/bloghome.png" alt="ブログ主要画像" width="550" height="350">
+                  <img src="assets/images/bloghome.png" alt="ブログ主要画像" width="550" height="350" loading="lazy"
+                    decoding="async">
                 </a>
               </div>
               <div class="down-content">
@@ -631,7 +728,8 @@
                   However, tracing the origin of an image or protecting your own visual content can be challenging.<a
                     href="https://abouttechnotrends.blogspot.com/2023/05/unlock-power-of-reverse-image-search.html"
                     target="_blank" rel="noopener noreferrer">see more...</a></p>
-                <span class="author"><img src="assets/images/sushil.JPG" alt="スシル・シグデル" width="40" height="40">By:Sushil
+                <span class="author"><img src="assets/images/sushil.JPG" alt="スシル・シグデル" width="40" height="40"
+                    loading="lazy" decoding="async">By:Sushil
                   Sigdel</span>
                 <div class="border-first-button"><a href="https://abouttechnotrends.blogspot.com/ onclick="
                     window.open(this.src)">Discover More</a></div>
@@ -646,7 +744,7 @@
                     <div class="thumb">
                       <a href="https://abouttechnotrends.blogspot.com/2023/05/mastering-chatgpt-how-to-effectively.html"
                         target="_blank" rel="noopener noreferrer"><img src="assets/images/blog1.png" alt="ChatGPTブログ"
-                          width="150" height="150"></a>
+                          width="150" height="150" loading="lazy" decoding="async"></a>
                     </div>
                     <div class="right-content">
                       <span class="category">Mastering ChatGPT</span>
@@ -668,7 +766,8 @@
                   <div class="post-item">
                     <div class="thumb">
                       <a href="https://abouttechnotrends.blogspot.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/images/blog2.png" alt="Amazon CodeWhispererブログ" width="150" height="150">
+                        <img src="assets/images/blog2.png" alt="Amazon CodeWhispererブログ" width="150" height="150"
+                          loading="lazy" decoding="async">
                       </a>
                     </div>
                     <div class="right-content">
@@ -692,7 +791,7 @@
                     <div class="thumb">
                       <a href="https://abouttechnotrends.blogspot.com/2023/04/the-future-is-here-understanding-power.html"
                         target="_blank" rel="noopener noreferrer"><img src="assets/images/blog3.png" alt="5G技術ブログ"
-                          width="150" height="150"></a>
+                          width="150" height="150" loading="lazy" decoding="async"></a>
                     </div>
                     <div class="right-content">
                       <span class="category">5G Technology</span>

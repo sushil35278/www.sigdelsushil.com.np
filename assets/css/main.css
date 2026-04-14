@@ -1151,8 +1151,8 @@ Banner Style
 }
 
 .main-banner {
-  min-height: 650px;
-  /* Reserve space for banner content on desktop */
+  min-height: 850px;
+  /* Increased to accommodate taller hero image (800px) */
 }
 
 .main-banner .right-image {
@@ -1676,7 +1676,12 @@ Portfolio
 }
 
 .our-portfolio .section-heading {
+  text-align: center;
   margin-bottom: 80px;
+}
+
+.our-portfolio .section-heading .line-dec {
+  margin: 0 auto;
 }
 
 .our-portfolio .container,
@@ -2624,7 +2629,8 @@ body.matrix-mode form#contact-form {
   border-radius: 0 0 15px 15px;
   width: 100%;
   height: auto;
-  aspect-ratio: 1024 / 600;
+  aspect-ratio: 1024 / 800;
+  object-fit: cover;
   display: block;
 }
 
