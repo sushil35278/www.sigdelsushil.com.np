@@ -1,38 +1,50 @@
 [
-    {
-        "id": 1,
-        "category": "Reverse Image Search",
-        "date": "15 May 2023",
-        "title": "Unlock the Power of Reverse Image Search: A Step-by-Step Guide to Boost Your Online Discovery",
-        "summary": "In the vast digital landscape, images have become a prominent form of communication and expression. However, tracing the origin of an image or protecting your own visual content can be challenging.",
-        "link": "https://abouttechnotrends.blogspot.com/2023/05/unlock-power-of-reverse-image-search.html",
-        "image": "assets/images/bloghome.png",
-        "author": "Sushil Sigdel",
-        "slug": "reverse-image-search-guide",
-        "isPopular": true
-    },
-    {
-        "id": 2,
-        "category": "Mastering ChatGPT",
-        "date": "01 May 2023",
-        "title": "Mastering ChatGPT: How to Effectively Use AI Chatbot for Your Business",
-        "summary": "ChatGPT is one such chatbot that uses natural language processing (NLP) and machine learning to provide personalized customer service and marketing automation.",
-        "link": "https://abouttechnotrends.blogspot.com/2023/05/mastering-chatgpt-how-to-effectively.html",
-        "image": "assets/images/blog1.png",
-        "author": "Sushil Sigdel",
-        "slug": "mastering-chatgpt",
-        "isPopular": true
-    },
-    {
-        "id": 3,
-        "category": "Amazon CodeWhisperer",
-        "date": "24 September 2021",
-        "title": "Amazon CodeWhisperer: A Revolutionary AI-Powered Debugging Tool",
-        "summary": "Amazon CodeWhisperer is a new AI-powered debugging tool that is revolutionizing the way software developers identify and resolve issues in their code.",
-        "link": "#",
-        "image": "assets/images/blog2.png",
-        "author": "Sushil Sigdel",
-        "slug": "amazon-codewhisperer-debugging",
-        "isPopular": false
-    }
+  {
+    "category": "AI & Software Engineering",
+    "title": "Beyond Code Completion: The Era of Autonomous AI Agents in Software Development",
+    "summary": "The shift from passive AI assistants to autonomous coding agents is fundamentally redefining the software development lifecycle. This post explores how 'agentic workflows' are moving us from simple code completion to end-to-end task execution.",
+    "date": "14 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "assets/images/bloghome.png",
+    "slug": "beyond-code-completion-the-era-of-autonomous-ai-agents-in-software-development",
+    "isPopular": false,
+    "link": "blog/beyond-code-completion-the-era-of-autonomous-ai-agents-in-software-development.html",
+    "id": 4
+  },
+  {
+    "id": 1,
+    "category": "Reverse Image Search",
+    "date": "15 May 2023",
+    "title": "Unlock the Power of Reverse Image Search: A Step-by-Step Guide to Boost Your Online Discovery",
+    "summary": "In the vast digital landscape, images have become a prominent form of communication and expression. However, tracing the origin of an image or protecting your own visual content can be challenging.",
+    "link": "https://abouttechnotrends.blogspot.com/2023/05/unlock-power-of-reverse-image-search.html",
+    "image": "assets/images/bloghome.png",
+    "author": "Sushil Sigdel",
+    "slug": "reverse-image-search-guide",
+    "isPopular": true
+  },
+  {
+    "id": 2,
+    "category": "Mastering ChatGPT",
+    "date": "01 May 2023",
+    "title": "Mastering ChatGPT: How to Effectively Use AI Chatbot for Your Business",
+    "summary": "ChatGPT is one such chatbot that uses natural language processing (NLP) and machine learning to provide personalized customer service and marketing automation.",
+    "link": "https://abouttechnotrends.blogspot.com/2023/05/mastering-chatgpt-how-to-effectively.html",
+    "image": "assets/images/blog1.png",
+    "author": "Sushil Sigdel",
+    "slug": "mastering-chatgpt",
+    "isPopular": true
+  },
+  {
+    "id": 3,
+    "category": "Amazon CodeWhisperer",
+    "date": "24 September 2021",
+    "title": "Amazon CodeWhisperer: A Revolutionary AI-Powered Debugging Tool",
+    "summary": "Amazon CodeWhisperer is a new AI-powered debugging tool that is revolutionizing the way software developers identify and resolve issues in their code.",
+    "link": "#",
+    "image": "assets/images/blog2.png",
+    "author": "Sushil Sigdel",
+    "slug": "amazon-codewhisperer-debugging",
+    "isPopular": false
+  }
 ]
