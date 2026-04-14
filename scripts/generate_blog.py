@@ -2,6 +2,7 @@ import os
 import json
 import datetime
 import re
+import time
 from google import genai
 
 # Configuration
@@ -24,25 +25,33 @@ def slugify(text):
     text = text.strip('-')
     return text
 
-def pick_best_model():
-    """Tries to find gemini-1.5-flash or returns a sensible default."""
+def get_prioritized_models():
+    """Returns a list of models prioritized by 'Flash' (usually higher quota) then 'Pro'."""
     try:
-        available_models = [m.name for m in client.models.list()]
-        print(f"Available models: {available_models}")
+        available_models = [m.name for m in client.models.list() if "generateContent" in m.supported_methods]
+        print(f"Total available generation models: {len(available_models)}")
         
-        # Preferred order
-        for preferred in ["gemini-1.5-flash", "gemini-1.5-pro", "gemini-pro"]:
+        # Sort logic: Prefer 2.0-flash, then 1.5-flash, then any flash, then pro
+        priority_list = []
+        
+        # 1. Look for Flash models first (highest success rate on free tier)
+        for preferred in ["gemini-2.0-flash", "gemini-1.5-flash", "-flash"]:
             for m in available_models:
-                if preferred in m:
-                    return m
-        return available_models[0] if available_models else "gemini-1.5-flash"
+                if preferred in m and m not in priority_list:
+                    priority_list.append(m)
+        
+        # 2. Add remaining models (Pro etc)
+        for m in available_models:
+            if m not in priority_list:
+                priority_list.append(m)
+                
+        return priority_list
     except Exception as e:
         print(f"Warning: Could not list models: {e}")
-        return "gemini-1.5-flash"
+        return ["gemini-1.5-flash"]
 
 def generate_blog_content():
-    model_name = pick_best_model()
-    print(f"Using model: {model_name}")
+    models_to_try = get_prioritized_models()
     
     prompt = """
     Act as an expert software engineer and tech blogger. 
@@ -57,34 +66,45 @@ def generate_blog_content():
     Ensure the content is insightful and professional.
     """
     
-    try:
-        response = client.models.generate_content(
-            model=model_name,
-            contents=prompt
-        )
-        
-        text = response.text.strip()
-        if not text:
-            print("Empty response from Gemini.")
-            return None
+    for model_name in models_to_try:
+        print(f"Attempting generation with: {model_name}...")
+        try:
+            response = client.models.generate_content(
+                model=model_name,
+                contents=prompt
+            )
             
-        # Handle potential markdown fencing
-        if "```json" in text:
-            text = text.split("```json")[1].split("```")[0].strip()
-        elif "```" in text:
-            text = text.split("```")[1].split("```")[0].strip()
-        
-        blog_data = json.loads(text)
-        blog_data["date"] = datetime.datetime.now().strftime("%d %B %Y")
-        blog_data["author"] = "Sushil Sigdel (AI Generated)"
-        blog_data["image"] = "assets/images/bloghome.png"
-        blog_data["slug"] = slugify(blog_data["title"])
-        blog_data["isPopular"] = False
-        
-        return blog_data
-    except Exception as e:
-        print(f"Error generating content with {model_name}: {e}")
-        return None
+            text = response.text.strip()
+            if not text:
+                print(f"Empty response from {model_name}. Trying next...")
+                continue
+                
+            # Handle potential markdown fencing
+            if "```json" in text:
+                text = text.split("```json")[1].split("```")[0].strip()
+            elif "```" in text:
+                text = text.split("```")[1].split("```")[0].strip()
+            
+            blog_data = json.loads(text)
+            blog_data["date"] = datetime.datetime.now().strftime("%d %B %Y")
+            blog_data["author"] = "Sushil Sigdel (AI Generated)"
+            blog_data["image"] = "assets/images/bloghome.png"
+            blog_data["slug"] = slugify(blog_data["title"])
+            blog_data["isPopular"] = False
+            
+            print(f"Success! Generated content using {model_name}.")
+            return blog_data
+            
+        except Exception as e:
+            error_msg = str(e)
+            if "429" in error_msg or "RESOURCE_EXHAUSTED" in error_msg:
+                print(f"Quota exceeded for {model_name}. Skipping to next available model...")
+                continue
+            else:
+                print(f"Error with {model_name}: {e}")
+                continue
+                
+    return None
 
 def create_static_page(blog_data):
     try:
@@ -142,10 +162,10 @@ def update_blogs_json(new_blog):
     print(f"Updated blogs.json with: {json_entry['title']}")
 
 if __name__ == "__main__":
-    print("Starting Resilient Generation...")
+    print("Starting Ultra-Resilient Generation...")
     new_post = generate_blog_content()
     if new_post:
         if create_static_page(new_post):
             update_blogs_json(new_post)
     else:
-        print("Failed to generate blog content.")
+        print("Critical Error: All models failed or quota exhausted for all available models.")
