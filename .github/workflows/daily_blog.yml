@@ -26,10 +26,10 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/generate_blog.py
 
-      - name: Commit and Push changes
+      - name: Commit and push changes
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/data/blogs.json
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add assets/data/blogs.json blog/*.html
           git commit -m "docs: add daily AI blog post" || echo "No changes to commit"
           git push
