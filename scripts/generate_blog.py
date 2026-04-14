@@ -2,7 +2,7 @@ import os
 import json
 import datetime
 import re
-import time
+import random
 from google import genai
 
 # Configuration
@@ -10,6 +10,10 @@ API_KEY = os.environ.get("GEMINI_API_KEY")
 BLOGS_FILE = "assets/data/blogs.json"
 TEMPLATE_FILE = "scripts/blog-template.html"
 BLOG_DIR = "blog"
+
+# Dynamic Styling Options
+ACCENT_COLORS = ["#fa65b1", "#726ae3", "#00d2ff", "#44D7B6", "#ffc107", "#ff5722"]
+TECH_CATEGORIES = ["AI & Machine Learning", "Web Development", "Cloud Architecture", "Cybersecurity", "DevOps & SRE", "Software Engineering", "Mobile Development"]
 
 if not API_KEY:
     print("Error: GEMINI_API_KEY environment variable not set.")
@@ -29,57 +33,48 @@ def get_prioritized_models():
     """Dynamically detects available models from the key and prioritizes them."""
     try:
         raw_models = list(client.models.list())
-        # The model object in the new SDK usually has 'name' which might be 'models/gemini-...'
-        # We need to filter for models that support generation.
         available_models = []
         for m in raw_models:
-            # Safer attribute check
             m_name = getattr(m, 'name', str(m))
-            # Just collect everything that looks like a gemini model
-            if "gemini" in m_name.lower() or "gemma" in m_name.lower():
+            if "gemini" in m_name.lower():
                 available_models.append(m_name)
         
-        print(f"Found {len(available_models)} potential models.")
-        
-        # Priority: 2.0-flash, 1.5-flash, flash-latest, then others
         priority_list = []
         keywords = ["gemini-2.0-flash", "gemini-1.5-flash", "flash-latest", "flash"]
-        
         for kw in keywords:
             for m in available_models:
                 if kw in m and m not in priority_list:
                     priority_list.append(m)
         
-        # Add everything else
         for m in available_models:
             if m not in priority_list:
                 priority_list.append(m)
-                
         return priority_list
     except Exception as e:
-        print(f"Warning: Model listing failed: {e}. Falling back to defaults.")
-        # Fallback to names that often work
+        print(f"Warning: Model listing failed: {e}")
         return ["gemini-2.0-flash", "gemini-1.5-flash", "gemini-flash-latest"]
 
 def generate_blog_content():
     models_to_try = get_prioritized_models()
     
-    prompt = """
+    # Pick a random target topic to ensure variety
+    target_topic = random.choice(TECH_CATEGORIES)
+    
+    prompt = f"""
     Act as an expert software engineer and tech blogger. 
-    Write a high-quality blog post about a trending topic in software development, AI, or IT.
+    Write a high-quality blog post about a trending topic in {target_topic}.
     
     Return the response ONLY as a JSON object with the following fields:
-    - category: A short category name (e.g., 'AI & ML', 'Web Dev')
+    - category: The category (must be one of: {", ".join(TECH_CATEGORIES)})
     - title: An eye-catching title
     - summary: A 2-sentence summary hook
-    - content: The full blog post content in HTML format (use <p>, <h3>, <ul>, <li> tags). Make it detailed (approx 500 words).
+    - content: The full blog post content in HTML format (use <p>, <h3>, <ul>, <li> tags). Approx 500 words.
+    - image_keyword: A single descriptive English keyword for a featured image related to the post (e.g., 'robot', 'coding', 'cloud').
     
-    Ensure the content is insightful and professional.
+    Ensure the content is insightful, professional, and unique.
     """
     
     for model_name in models_to_try:
-        # Note: Some SDK versions expect 'gemini-1.5-flash' while others 'models/gemini-1.5-flash'
-        # We will try the name as provided by the list() call first.
         print(f"--- Attempting: {model_name} ---")
         try:
             response = client.models.generate_content(
@@ -88,52 +83,45 @@ def generate_blog_content():
             )
             
             text = response.text.strip()
-            if not text:
-                print(f"Empty response from {model_name}.")
-                continue
-                
-            # Vigorous JSON cleaning
+            if not text: continue
+            
+            # JSON Cleaning
             if "```json" in text:
                 text = text.split("```json")[1].split("```")[0].strip()
             elif "```" in text:
                 text = text.split("```")[1].split("```")[0].strip()
-            
-            # Remove any potential stray characters before/after JSON
             text = text[text.find("{"):text.rfind("}")+1]
             
             blog_data = json.loads(text)
             blog_data["date"] = datetime.datetime.now().strftime("%d %B %Y")
             blog_data["author"] = "Sushil Sigdel"
-            blog_data["image"] = "assets/images/bloghome.png"
+            
+            # Dynamic Styling & Images
+            blog_data["accent_color"] = random.choice(ACCENT_COLORS)
+            keyword = blog_data.get("image_keyword", "technology")
+            # Using LoremFlicker for truly dynamic, safe images
+            blog_data["image"] = f"https://loremflickr.com/800/600/{keyword},tech"
+            
             blog_data["slug"] = slugify(blog_data["title"])
             blog_data["isPopular"] = False
             
-            print(f"SUCCESS with {model_name}!")
             return blog_data
             
         except Exception as e:
-            msg = str(e)
-            if "429" in msg or "RESOURCE_EXHAUSTED" in msg:
-                print(f"Quota Hit for {model_name}. Trying next...")
-            elif "404" in msg or "not found" in msg.lower():
-                print(f"Model {model_name} not available for this key. Trying next...")
-            else:
-                print(f"Skipping {model_name} due to error: {e}")
+            print(f"Skipping {model_name} due to error: {e}")
             continue
                 
     return None
 
 def create_static_page(blog_data):
     try:
-        if not os.path.exists(TEMPLATE_FILE):
-            print(f"Template {TEMPLATE_FILE} not found.")
-            return False
+        if not os.path.exists(TEMPLATE_FILE): return False
             
         with open(TEMPLATE_FILE, 'r', encoding='utf-8') as f:
             template = f.read()
         
         html_content = template
-        for key in ["title", "summary", "category", "author", "date", "image", "content"]:
+        for key in ["title", "summary", "category", "author", "date", "image", "content", "accent_color"]:
             html_content = html_content.replace(f"{{{{{key}}}}}", str(blog_data.get(key, "")))
         
         if not os.path.exists(BLOG_DIR):
@@ -144,7 +132,6 @@ def create_static_page(blog_data):
             f.write(html_content)
         
         blog_data["link"] = f"blog/{blog_data['slug']}.html"
-        print(f"Created page: {file_path}")
         return True
     except Exception as e:
         print(f"Error creating HTML: {e}")
@@ -152,8 +139,9 @@ def create_static_page(blog_data):
 
 def update_blogs_json(new_blog):
     json_entry = new_blog.copy()
-    if "content" in json_entry:
-        del json_entry["content"]
+    # Keep only metadata in JSON
+    for key in ["content", "image_keyword", "accent_color"]:
+        if key in json_entry: del json_entry[key]
         
     if not os.path.exists(BLOGS_FILE):
         blogs = []
@@ -164,8 +152,7 @@ def update_blogs_json(new_blog):
         except:
             blogs = []
     
-    if any(b.get("slug") == json_entry["slug"] for b in blogs):
-        return
+    if any(b.get("slug") == json_entry["slug"] for b in blogs): return
 
     json_entry["id"] = len(blogs) + 1
     blogs.insert(0, json_entry)
@@ -173,14 +160,12 @@ def update_blogs_json(new_blog):
     
     with open(BLOGS_FILE, 'w', encoding='utf-8') as f:
         json.dump(blogs, f, indent=2, ensure_ascii=False)
-    print(f"Updated blogs.json")
 
 if __name__ == "__main__":
-    print("Starting Final Reliable Generation...")
     new_post = generate_blog_content()
     if new_post:
         if create_static_page(new_post):
             update_blogs_json(new_post)
             print("--- PROCESS COMPLETE ---")
     else:
-        print("CRITICAL: No models worked. Check API Key permissions.")
+        print("CRITICAL: No models worked.")
