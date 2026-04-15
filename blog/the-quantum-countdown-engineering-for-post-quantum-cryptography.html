@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Quantum Countdown: Engineering for Post-Quantum Cryptography | Sushil Sigdel Blog</title>
+    <meta name="description" content="As quantum computing approaches the scale needed to break classical encryption, the tech industry faces a massive migration to quantum-resistant algorithms. This guide explores the 'Harvest Now, Decrypt Later' threat and how engineers can implement cryptographic agility today.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Additional CSS -->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <style>
+        :root {
+            --primary-color: {
+                    {
+                    accent_color
+                }
+            }
+
+            ;
+            --secondary-color: #6c757d;
+        }
+
+        body {
+            background: #f8f9fa;
+            color: #2a2a2a;
+            line-height: 1.8;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .blog-header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #2a2a2a 100%);
+            color: white;
+            padding: 100px 0 60px;
+            text-align: center;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            margin-bottom: -50px;
+        }
+
+        .blog-content-card {
+            background: white;
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+            margin-top: -30px;
+            z-index: 10;
+            position: relative;
+        }
+
+        .category-badge {
+            background: var(--primary-color);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .btn-back {
+            background: var(--primary-color);
+            color: white;
+            border-radius: 25px;
+            padding: 10px 25px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn-back:hover {
+            opacity: 0.8;
+            color: white;
+        }
+
+        h3 {
+            color: var(--primary-color);
+            margin-top: 30px;
+            font-weight: 700;
+        }
+
+        .blog-content-section {
+            padding: 120px 0;
+        }
+
+        .blog-detail-content {
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--text-color);
+        }
+
+        .blog-meta {
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        .blog-featured-image {
+            width: 100%;
+            border-radius: 20px;
+            margin-bottom: 50px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header-area header-sticky background-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <a href="../index.html" class="logo">
+                            <img src="../assets/images/sushil.JPG" alt="Sushil Sigdel"
+                                style="height: 50px; width:50px; border-radius:50%; margin-top:-12px;">
+                        </a>
+                        <ul class="nav">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../index.html#blog" class="active">Blog</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="blog-content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="blog-header">
+                        <span class="category"
+                            style="color: #fa65b1; font-weight: 600; text-transform: uppercase;">Cybersecurity</span>
+                        <h1>The Quantum Countdown: Engineering for Post-Quantum Cryptography</h1>
+                        <div class="blog-meta">
+                            <span>By Sushil Sigdel</span> | <span>15 April 2026</span>
+                        </div>
+                    </div>
+                    <img src="../https://loremflickr.com/800/600/encryption,tech" alt="The Quantum Countdown: Engineering for Post-Quantum Cryptography" class="blog-featured-image">
+                    <div class="blog-detail-content">
+                        <h3>The Impending End of RSA and ECC</h3><p>For decades, our digital security has rested on the mathematical difficulty of factoring large integers and computing discrete logarithms. These problems are the foundation of RSA and Elliptic Curve Cryptography (ECC). However, the rise of fault-tolerant quantum computers threatens to render these methods obsolete using Shor’s algorithm. While a cryptographically relevant quantum computer (CRQC) may still be years away, the threat to our data is immediate.</p><h3>Understanding 'Harvest Now, Decrypt Later'</h3><p>One of the most pressing concerns in the cybersecurity community is the 'Harvest Now, Decrypt Later' (HNDL) strategy. State actors and sophisticated hackers are currently intercepting and storing encrypted sensitive data, betting on the fact that they will be able to decrypt it once quantum technology matures. For industries with long-term data sensitivity—such as healthcare, government, and infrastructure—the breach has effectively already happened if the data is not protected by quantum-resistant measures.</p><h3>NIST Standards and the Transition</h3><p>The National Institute of Standards and Technology (NIST) recently finalized its first set of post-quantum cryptography (PQC) standards. These include algorithms like ML-KEM (formerly CRYSTALS-Kyber) for general encryption and ML-DSA (formerly CRYSTALS-Dilithium) for digital signatures. Unlike RSA, these algorithms rely on lattice-based mathematics, which are believed to be resistant to both classical and quantum attacks. Transitioning to these new standards is not a simple 'find and replace' operation; these new keys and signatures often have significantly different sizes and performance characteristics.</p><h3>The Role of Cryptographic Agility</h3><p>As software engineers, our primary goal during this transition is 'cryptographic agility.' This is the ability of a system to switch between multiple cryptographic primitives without requiring major structural changes to the codebase. To achieve this, engineers should:</p><ul><li><strong>Abstract Cryptographic Layers:</strong> Avoid hardcoding specific algorithms into business logic. Use provider-agnostic interfaces that allow for configuration-based updates.</li><li><strong>Inventory Assets:</strong> Identify every instance where encryption is used, from TLS termination points to database-at-rest encryption.</li><li><strong>Hybrid Deployment:</strong> Consider 'hybrid' schemes that combine a classical algorithm with a post-quantum one. This ensures that even if a flaw is discovered in the new PQC algorithm, the data remains as secure as it was under classical encryption.</li></ul><h3>Conclusion: A Proactive Security Posture</h3><p>The migration to post-quantum cryptography is likely to be the most complex coordinated upgrade in the history of computing. By starting with an audit of your current cryptographic dependencies and adopting an agile architecture, you can protect your organization from future threats. The time to prepare for 'Q-Day' is not when the first quantum threat emerges, but today.</p>
+                    </div>
+                    <div class="border-first-button" style="margin-top: 50px; text-align: center;">
+                        <a href="../index.html#blog">Back to Blogs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright © 2026 Sushil Sigdel. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
