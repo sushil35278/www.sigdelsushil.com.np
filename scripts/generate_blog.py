@@ -84,10 +84,10 @@ def generate_blog_content():
             blog_data["accent_color"] = random.choice(ACCENT_COLORS)
             
             keyword = blog_data.get("image_keyword", "technology")
-            # Using Unsplash with specific styling parameters for better quality
-            blog_data["image"] = f"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200" # fallback to a good one
-            # Actually use keyword based unsplash
-            blog_data["image"] = f"https://source.unsplash.com/featured/1200x800/?{keyword},dark,tech"
+            # Using a more stable Unsplash URL pattern
+            blog_data["image"] = f"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200" # default
+            if keyword:
+                blog_data["image"] = f"https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop&keyword={keyword}"
             
             blog_data["slug"] = slugify(blog_data["title"])
             blog_data["isPopular"] = False
