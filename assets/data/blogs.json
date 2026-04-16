@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cybersecurity",
+    "title": "The Great Firewall is Dead: Why Identity is the Only Perimeter That Matters",
+    "summary": "Stop wasting your budget on legacy VPNs and hardware appliances. In a world of distributed cloud architecture, your identity is the only firewall you have left.",
+    "date": "16 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?neon-grid,dark,tech",
+    "slug": "the-great-firewall-is-dead-why-identity-is-the-only-perimeter-that-matters",
+    "isPopular": false,
+    "link": "blog/the-great-firewall-is-dead-why-identity-is-the-only-perimeter-that-matters.html",
+    "id": 9
+  },
+  {
     "category": "Mobile Development",
     "title": "The Great Unification: Why Kotlin Multiplatform is Redefining Mobile Strategy",
     "summary": "Kotlin Multiplatform has moved past its experimental phase to become the gold standard for sharing business logic without sacrificing native performance. Discover why engineering teams are pivoting away from traditional cross-platform frameworks to embrace this 'shared logic, native UI' approach.",
