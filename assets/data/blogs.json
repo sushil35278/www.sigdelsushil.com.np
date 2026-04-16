@@ -1,5 +1,17 @@
 [
   {
+    "category": "Web Development",
+    "title": "The Great Re-Servering: Why Your 10MB Javascript Bundle is a Technical Debt Time Bomb",
+    "summary": "We spent a decade moving every ounce of logic into the browser, and now we're finally realizing it was a massive mistake. Learn why the industry is sprinting back to the server and why your next massive SPA might be your last.",
+    "date": "16 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop&keyword=server",
+    "slug": "the-great-re-servering-why-your-10mb-javascript-bundle-is-a-technical-debt-time-bomb",
+    "isPopular": false,
+    "link": "blog/the-great-re-servering-why-your-10mb-javascript-bundle-is-a-technical-debt-time-bomb.html",
+    "id": 12
+  },
+  {
     "category": "Software Engineering",
     "title": "The Cloud-Native Mirage: Why Local-First is the Future of Real Engineering",
     "summary": "We traded user sovereignty and performance for the convenience of centralized clouds, but the era of 'waiting for the spinner' is ending. Discover why the next generation of elite developers is moving the database back to the client.",

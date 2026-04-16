@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Great Re-Servering: Why Your 10MB Javascript Bundle is a Technical Debt Time Bomb | Sushil Sigdel</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <style>
+        :root {
+            --primary-accent: {
+                    {
+                    accent_color
+                }
+            }
+
+            ;
+            --text-dark: #2d3436;
+            --text-gray: #636e72;
+        }
+
+        body {
+            background-color: #fafbfc;
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+        }
+
+        .blog-hero {
+            position: relative;
+            padding: 120px 0 80px;
+            background-color: #2a2a2a;
+            /* Solid fallback */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+            url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop&keyword=server');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            margin-bottom: -40px;
+        }
+
+        .blog-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .category-tag {
+            background: var(--primary-accent);
+            color: white;
+            padding: 6px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .blog-meta-top {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .content-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
+            position: relative;
+            z-index: 5;
+        }
+
+        .featured-img-wrap {
+            margin-bottom: 40px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .featured-img-wrap img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .blog-body {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .blog-body h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--text-dark);
+            font-size: 2rem;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .blog-body p {
+            margin-bottom: 25px;
+        }
+
+        .blog-body ul {
+            margin-bottom: 30px;
+            padding-left: 20px;
+        }
+
+        .blog-body li {
+            position: relative;
+            padding-left: 10px;
+            margin-bottom: 12px;
+        }
+
+        .footer-action {
+            margin-top: 60px;
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 40px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary-accent);
+            font-weight: 600;
+            text-decoration: none;
+            gap: 10px;
+            transition: 0.3s;
+        }
+
+        .back-link:hover {
+            transform: translateX(-5px);
+            color: #222;
+        }
+
+        @media (max-width: 768px) {
+            .blog-hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .content-container {
+                padding: 30px;
+                border-radius: 0;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="blog-hero">
+        <div class="container">
+            <span class="category-tag">Web Development</span>
+            <h1>The Great Re-Servering: Why Your 10MB Javascript Bundle is a Technical Debt Time Bomb</h1>
+            <div class="blog-meta-top">
+                By <strong>Sushil Sigdel</strong> | 16 April 2026
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-img-wrap">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop&keyword=server" alt="The Great Re-Servering: Why Your 10MB Javascript Bundle is a Technical Debt Time Bomb" onerror="this.src='../assets/images/bloghome.png'">
+            </div>
+
+            <article class="blog-body">
+                <h3>The Pendulum Swings Back</h3><p>For the last ten years, the web development community has been obsessed with moving logic into the browser. We convinced ourselves that every website needed to be a complex Single Page Application (SPA), dragging massive JavaScript bundles over shaky mobile connections just to render a static blog post. We built intricate state management libraries to solve problems we created ourselves by abandoning the server. But the honeymoon is over. We’re witnessing 'The Great Re-Servering,' and it’s the best thing to happen to web development in a generation.</p><h3>The Rehydration Tax is Too High</h3><p>The industry is finally admitting that 'Hydration'—the process of making a server-rendered page interactive by downloading and executing the entire component tree again in the browser—is a performance disaster. It’s a double-tax on the user: they pay for the CPU cycles to render it twice and the bandwidth to download it. My opinion? If your landing page requires a 200ms main-thread block just to handle a 'Click Me' button, you haven't built a modern app; you've built a digital anchor. We've been optimizing for developer experience at the total expense of the user, and the market is finally pushing back.</p><h3>Enter the Age of Server-First Components</h3><p>The rise of React Server Components (RSC) and the resurgence of hypermedia-driven tools like HTMX aren't just fads. They represent a fundamental architectural realization: the network is the bottleneck, and the client is a hostile environment. By keeping the logic on the server and sending only the minimal HTML needed, we eliminate entire categories of bugs related to state synchronization and data fetching. We’re finally moving away from the 'JSON API for everything' dogma that has bloated our architecture for years. Why maintain a complex REST or GraphQL API for a client you control? It's redundant overhead.</p><h3>Why this matters for developers</h3><ul><li><strong>Lower Cognitive Load:</strong> You no longer need to manage complex Redux or TanStack Query caches for data that should have just stayed on the server. This simplifies your mental model significantly.</li><li><strong>Performance as a Feature:</strong> Building server-first apps naturally results in better Core Web Vitals, which directly impacts SEO and conversion rates. High-performance apps are no longer a luxury; they are a requirement.</li><li><strong>Reduced Infrastructure Costs:</strong> Thin clients mean fewer client-side errors and lower support overhead, allowing teams to focus on actual business logic rather than debugging race conditions in the browser's local storage.</li></ul><h3>Future Predictions and Pro Tips</h3><ul><li><strong>Prediction: The Edge is the New Data Center.</strong> In the next three years, the distinction between 'The Server' and 'The Client' will vanish. Logic will migrate to the Edge (Vercel, Cloudflare, etc.), executing milliseconds away from the user without the overhead of a traditional heavy SPA.</li><li><strong>Pro Tip: Audit your Bundle Size Weekly.</strong> If your framework-agnostic logic makes up less than 20% of your total bundle, you are over-engineered. Use tools like Bundlephobia to ruthlessly cut dependencies that don't add direct user value.</li><li><strong>Pro Tip: Embrace 'Boring' Technology.</strong> Stop trying to reinvent the wheel with custom state engines. Re-learn how to use standard HTTP headers, ETags, and Cache-Control. The most scalable state management library is the one built into the browser's native networking stack.</li></ul><h3>Conclusion: The End of the SPA Monolith</h3><p>The era of the 'Thick Client' is coming to an end. As architects, we must stop chasing the trend of moving every single byte of logic into the browser. The future belongs to those who can master the balance between the server's power and the client's interactivity. Don't be the developer still shipping 10MB of JS in 2026. Start moving your logic back where it belongs: on the server.</p>
+            </article>
+
+            <div class="footer-action">
+                <a href="../#blog" class="back-link">
+                    <i class="fa fa-arrow-left"></i> Back to All Stories
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
