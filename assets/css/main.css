@@ -1791,7 +1791,10 @@ Blog
   top: 0px;
   width: 961px;
   height: 1020px;
-  z-index: 0;
+  z-index: -1;
+  /* Move behind content */
+  pointer-events: none;
+  /* Don't block clicks */
 }
 
 .blog {
@@ -2892,4 +2895,58 @@ body.matrix-mode form#contact-form {
 
 .h-link {
   pointer-events: auto;
+}
+
+/* Blog Pagination Styles */
+.blog-pagination {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.pagination-list {
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+.pagination-list li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: white;
+  color: #2a2a2a;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.pagination-list li a:hover {
+  background: #fa65b1;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(250, 101, 177, 0.3);
+}
+
+.pagination-list li a.active {
+  background: #fa65b1;
+  color: white;
+  box-shadow: 0 6px 20px rgba(250, 101, 177, 0.3);
+}
+
+.pagination-list li a i {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .pagination-list li a {
+    width: 40px;
+    height: 40px;
+    font-size: 0.9rem;
+  }
 }

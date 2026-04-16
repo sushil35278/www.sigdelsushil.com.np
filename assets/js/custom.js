@@ -396,9 +396,15 @@
       }
     });
 
+    // Global state for pagination
+    let currentBlogPage = 1;
+    const blogsPerPage = 4;
+
     // Load dynamic blogs from JSON
-    const loadBlogs = () => {
+    const loadBlogs = (page = 1) => {
+      currentBlogPage = page;
       const blogContainer = $('#blog-container');
+      const pagContainer = $('#blog-pagination');
       if (!blogContainer.length) return;
 
       const isJapanese = $('html').attr('lang') === 'ja';
@@ -411,90 +417,143 @@
         .then(blogs => {
           if (!blogs || blogs.length === 0) {
             blogContainer.html(`<div class="col-lg-12 text-center"><p>${isJapanese ? 'ブログ記事が見つかりませんでした。' : 'No blogs found.'}</p></div>`);
+            pagContainer.empty();
             return;
           }
 
           blogContainer.empty();
+          pagContainer.empty();
 
-          // 1. Highlight Popular Blogs (Limit to 2 if available)
-          const popularBlogs = blogs.filter(b => b.isPopular).slice(0, 2);
+          // Pagination logic
+          const totalPages = Math.ceil(blogs.length / blogsPerPage);
+          const startIndex = (page - 1) * blogsPerPage;
+          const paginatedBlogs = blogs.slice(startIndex, startIndex + blogsPerPage);
 
-          // Use the first popular blog if exists, else most recent
-          const featuredBlog = popularBlogs.length > 0 ? popularBlogs[0] : blogs[0];
-          const remainingBlogs = blogs.filter(b => b.id !== featuredBlog.id);
+          if (page === 1) {
+            // --- PAGE 1: Featured + Sidebar Layout ---
+            const popularBlogs = blogs.filter(b => b.isPopular).slice(0, 2);
+            const featuredBlog = popularBlogs.length > 0 ? popularBlogs[0] : blogs[0];
+            const sideBlogs = blogs.filter(b => b.id !== featuredBlog.id).slice(0, 3);
 
-          let featuredHtml = `
-            <div class="col-lg-6 show-up wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-              <div class="blog-post">
-                <div class="thumb">
-                  <a href="${featuredBlog.link}">
-                    <img src="${featuredBlog.image}" alt="${featuredBlog.title}" width="550" height="350" loading="lazy" decoding="async">
-                  </a>
-                </div>
-                <div class="down-content">
-                  <span class="category">${featuredBlog.category}</span>
-                  <span class="date">${featuredBlog.date}</span>
-                  <a href="${featuredBlog.link}">
-                    <h4>${featuredBlog.title}</h4>
-                  </a>
-                  <p>${featuredBlog.summary}... <a href="${featuredBlog.link}"> ${seeMoreText}</a></p>
-                  <span class="author">
-                    <img src="assets/images/sushil.JPG" alt="${featuredBlog.author}" width="40" height="40" loading="lazy" decoding="async">
-                    ${byText} ${featuredBlog.author}
-                  </span>
-                  <div class="border-first-button">
-                    <a href="${featuredBlog.link}">${discoverMoreText}</a>
+            let featuredHtml = `
+              <div class="col-lg-6 show-up wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                <div class="blog-post">
+                  <div class="thumb">
+                    <a href="${featuredBlog.link}">
+                      <img src="${featuredBlog.image}" alt="${featuredBlog.title}" width="550" height="350" loading="lazy" decoding="async">
+                    </a>
                   </div>
-                </div>
-              </div>
-            </div>
-          `;
-          blogContainer.append(featuredHtml);
-
-          // 2. Render Side Posts (up to 3)
-          if (remainingBlogs.length > 0) {
-            let sideContainerHtml = `
-              <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-                <div class="blog-posts">
-                  <div class="row" id="side-blogs-list"></div>
+                  <div class="down-content">
+                    <span class="category">${featuredBlog.category}</span>
+                    <span class="date">${featuredBlog.date}</span>
+                    <a href="${featuredBlog.link}">
+                      <h4>${featuredBlog.title}</h4>
+                    </a>
+                    <p>${featuredBlog.summary}... <a href="${featuredBlog.link}"> ${seeMoreText}</a></p>
+                    <span class="author">
+                      <img src="assets/images/sushil.JPG" alt="${featuredBlog.author}" width="40" height="40" loading="lazy" decoding="async">
+                      ${byText} ${featuredBlog.author}
+                    </span>
+                    <div class="border-first-button">
+                      <a href="${featuredBlog.link}">${discoverMoreText}</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             `;
-            blogContainer.append(sideContainerHtml);
-            const sideList = $('#side-blogs-list');
+            blogContainer.append(featuredHtml);
 
-            remainingBlogs.slice(0, 3).forEach((blog, index) => {
-              const isLast = (index === 2 || index === remainingBlogs.slice(0, 3).length - 1);
-              let postHtml = `
-                <div class="col-lg-12">
-                  <div class="post-item ${isLast ? 'last-post-item' : ''}">
-                    <div class="thumb">
-                      <a href="${blog.link}">
-                        <img src="${blog.image}" alt="${blog.title}" width="150" height="150" loading="lazy" decoding="async">
-                      </a>
-                    </div>
-                    <div class="right-content">
-                      <div class="blog-meta-wrapper">
-                        <span class="category">${blog.category}</span>
-                        <span class="date">${blog.date}</span>
-                      </div>
-                      <a href="${blog.link}">
-                        <h4>${blog.title}</h4>
-                      </a>
-                      <p>${blog.summary}... <a href="${blog.link}">${seeMoreText}</a></p>
-                    </div>
+            if (sideBlogs.length > 0) {
+              let sideContainerHtml = `
+                <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                  <div class="blog-posts">
+                    <div class="row" id="side-blogs-list"></div>
                   </div>
                 </div>
               `;
-              sideList.append(postHtml);
+              blogContainer.append(sideContainerHtml);
+              const sideList = $('#side-blogs-list');
+
+              sideBlogs.forEach((blog, index) => {
+                const isLast = (index === 2 || index === sideBlogs.length - 1);
+                sideList.append(createPostItemHtml(blog, isLast, seeMoreText));
+              });
+            }
+          } else {
+            // --- PAGE 2+: Uniform Grid Layout ---
+            let gridHtml = `<div class="col-lg-12"><div class="row"></div></div>`;
+            const $gridRow = $(gridHtml).appendTo(blogContainer).find('.row');
+
+            paginatedBlogs.forEach((blog) => {
+              let itemHtml = `
+                <div class="col-lg-6">
+                  ${createPostItemHtml(blog, false, seeMoreText)}
+                </div>
+              `;
+              $gridRow.append(itemHtml);
             });
           }
+
+          renderPagination(totalPages, page, pagContainer);
         })
         .catch(error => {
           console.error('Error loading blogs:', error);
           blogContainer.html(`<div class="col-lg-12 text-center"><p>${isJapanese ? 'エラーが発生しました。' : 'An error occurred while loading blogs.'}</p></div>`);
         });
     };
+
+    // Helper: Create Small Post Item HTML
+    const createPostItemHtml = (blog, isLast, seeMoreText) => {
+      return `
+        <div class="col-lg-12">
+          <div class="post-item ${isLast ? 'last-post-item' : ''}">
+            <div class="thumb">
+              <a href="${blog.link}">
+                <img src="${blog.image}" alt="${blog.title}" width="150" height="150" style="object-fit: cover;" loading="lazy" decoding="async">
+              </a>
+            </div>
+            <div class="right-content">
+              <div class="blog-meta-wrapper">
+                <span class="category">${blog.category}</span>
+                <span class="date">${blog.date}</span>
+              </div>
+              <a href="${blog.link}">
+                <h4>${blog.title}</h4>
+              </a>
+              <p>${blog.summary}... <a href="${blog.link}">${seeMoreText}</a></p>
+            </div>
+          </div>
+        </div>
+      `;
+    };
+
+    // Helper: Render Pagination Controls
+    const renderPagination = (totalPages, currentPage, container) => {
+      if (totalPages <= 1) return;
+
+      let paginationHtml = `<ul class="pagination-list">`;
+
+      // Previous button
+      if (currentPage > 1) {
+        paginationHtml += `<li><a href="#blog" onclick="loadBlogs(${currentPage - 1})"><i class="fa fa-angle-left"></i></a></li>`;
+      }
+
+      // Page numbers
+      for (let i = 1; i <= totalPages; i++) {
+        paginationHtml += `<li><a href="#blog" class="${i === currentPage ? 'active' : ''}" onclick="loadBlogs(${i})">${i}</a></li>`;
+      }
+
+      // Next button
+      if (currentPage < totalPages) {
+        paginationHtml += `<li><a href="#blog" onclick="loadBlogs(${currentPage + 1})"><i class="fa fa-angle-right"></i></a></li>`;
+      }
+
+      paginationHtml += `</ul>`;
+      container.html(paginationHtml);
+    };
+
+    // Expose to global for onclick events
+    window.loadBlogs = loadBlogs;
 
     $(window).on('load', loadBlogs);
 

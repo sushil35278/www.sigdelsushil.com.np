@@ -136,9 +136,41 @@ def update_blogs_json(new_blog):
     with open(BLOGS_FILE, 'w', encoding='utf-8') as f:
         json.dump(blogs, f, indent=2, ensure_ascii=False)
 
+def update_sitemap(blog_data):
+    sitemap_file = "sitemap.xml"
+    if not os.path.exists(sitemap_file): return
+    
+    today = datetime.datetime.now().strftime("%Y-%m-%d")
+    new_url = f"https://sigdelsushil.com.np/{blog_data['link']}"
+    
+    try:
+        with open(sitemap_file, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        # Simple string-based insertion before the closing tag to avoid complex XML libraries in this script
+        if new_url not in content:
+            url_block = f"""  <url>
+    <loc>{new_url}</loc>
+    <lastmod>{today}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+"""
+            content = content.replace("</urlset>", f"{url_block}</urlset>")
+            
+            # Update index lastmod
+            content = re.sub(r'(<loc>https://sigdelsushil\.com\.np/</loc>\s*<lastmod>).*?(</lastmod>)', rf'\1{today}\2', content)
+            
+            with open(sitemap_file, 'w', encoding='utf-8') as f:
+                f.write(content)
+            print(f"Sitemap updated for {new_url}")
+    except Exception as e:
+        print(f"Error updating sitemap: {e}")
+
 if __name__ == "__main__":
     new_post = generate_blog_content()
     if new_post:
         if create_static_page(new_post):
             update_blogs_json(new_post)
+            update_sitemap(new_post)
             print("--- SUCCESS ---")
