@@ -1,5 +1,17 @@
 [
   {
+    "category": "Software Engineering",
+    "title": "The Cloud-Native Mirage: Why Local-First is the Future of Real Engineering",
+    "summary": "We traded user sovereignty and performance for the convenience of centralized clouds, but the era of 'waiting for the spinner' is ending. Discover why the next generation of elite developers is moving the database back to the client.",
+    "date": "16 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop&keyword=cyberpunk-workspace",
+    "slug": "the-cloud-native-mirage-why-local-first-is-the-future-of-real-engineering",
+    "isPopular": false,
+    "link": "blog/the-cloud-native-mirage-why-local-first-is-the-future-of-real-engineering.html",
+    "id": 11
+  },
+  {
     "category": "Web Development",
     "title": "The Death of the Loading Spinner: Why Local-First is the Only Architecture That Matters",
     "summary": "We’ve spent ten years making web apps slower by obsessing over the cloud. It’s time to move the database back to the device and finally deliver the 'instant' web we were promised.",
