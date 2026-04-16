@@ -498,6 +498,11 @@
           }
 
           renderPagination(totalPages, pageNum, pagContainer);
+
+          // Re-trigger WOW animations for newly added dynamic content
+          if (window.wow && typeof window.wow.start === 'function') {
+            window.wow.start();
+          }
         })
         .catch(error => {
           console.error('Error loading blogs:', error);
