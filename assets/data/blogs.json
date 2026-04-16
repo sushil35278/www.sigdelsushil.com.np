@@ -1,5 +1,17 @@
 [
   {
+    "category": "Mobile Development",
+    "title": "The Great Unification: Why Kotlin Multiplatform is Redefining Mobile Strategy",
+    "summary": "Kotlin Multiplatform has moved past its experimental phase to become the gold standard for sharing business logic without sacrificing native performance. Discover why engineering teams are pivoting away from traditional cross-platform frameworks to embrace this 'shared logic, native UI' approach.",
+    "date": "16 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://loremflickr.com/800/600/connectivity,tech",
+    "slug": "the-great-unification-why-kotlin-multiplatform-is-redefining-mobile-strategy",
+    "isPopular": false,
+    "link": "blog/the-great-unification-why-kotlin-multiplatform-is-redefining-mobile-strategy.html",
+    "id": 8
+  },
+  {
     "category": "Cybersecurity",
     "title": "The Quantum Countdown: Engineering for Post-Quantum Cryptography",
     "summary": "As quantum computing approaches the scale needed to break classical encryption, the tech industry faces a massive migration to quantum-resistant algorithms. This guide explores the 'Harvest Now, Decrypt Later' threat and how engineers can implement cryptographic agility today.",
