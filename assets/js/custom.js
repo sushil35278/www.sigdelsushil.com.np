@@ -402,7 +402,10 @@
 
     // Load dynamic blogs from JSON
     const loadBlogs = (page = 1) => {
-      currentBlogPage = page;
+      // If page is an event object (from $(window).on('load')), default to 1
+      const pageNum = (typeof page === 'number') ? page : 1;
+
+      currentBlogPage = pageNum;
       const blogContainer = $('#blog-container');
       const pagContainer = $('#blog-pagination');
       if (!blogContainer.length) return;
@@ -426,10 +429,10 @@
 
           // Pagination logic
           const totalPages = Math.ceil(blogs.length / blogsPerPage);
-          const startIndex = (page - 1) * blogsPerPage;
+          const startIndex = (pageNum - 1) * blogsPerPage;
           const paginatedBlogs = blogs.slice(startIndex, startIndex + blogsPerPage);
 
-          if (page === 1) {
+          if (pageNum === 1) {
             // --- PAGE 1: Featured + Sidebar Layout ---
             const popularBlogs = blogs.filter(b => b.isPopular).slice(0, 2);
             const featuredBlog = popularBlogs.length > 0 ? popularBlogs[0] : blogs[0];
@@ -494,7 +497,7 @@
             });
           }
 
-          renderPagination(totalPages, page, pagContainer);
+          renderPagination(totalPages, pageNum, pagContainer);
         })
         .catch(error => {
           console.error('Error loading blogs:', error);
