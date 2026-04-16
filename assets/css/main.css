@@ -1784,7 +1784,7 @@ Blog
 
 .blog:before {
   content: '';
-  background-image: url(../images/blog-left-dec.jpg);
+  /* background-image: url(../images/blog-left-dec.jpg); */
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
