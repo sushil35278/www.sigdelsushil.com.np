@@ -1,5 +1,17 @@
 [
   {
+    "category": "Mobile Development",
+    "title": "The Death of the 'Native vs. Cross-Platform' Debate: Welcome to the Era of Unified Abstraction",
+    "summary": "For a decade, we’ve been shackled to the tired argument of Flutter vs. Swift vs. React Native. It’s time to stop picking sides and realize that the future of mobile isn't about the framework—it's about the abstraction layer.",
+    "date": "17 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop&keyword=architecture",
+    "slug": "the-death-of-the-native-vs-cross-platform-debate-welcome-to-the-era-of-unified-abstraction",
+    "isPopular": false,
+    "link": "blog/the-death-of-the-native-vs-cross-platform-debate-welcome-to-the-era-of-unified-abstraction.html",
+    "id": 13
+  },
+  {
     "category": "Web Development",
     "title": "The Great Re-Servering: Why Your 10MB Javascript Bundle is a Technical Debt Time Bomb",
     "summary": "We spent a decade moving every ounce of logic into the browser, and now we're finally realizing it was a massive mistake. Learn why the industry is sprinting back to the server and why your next massive SPA might be your last.",
@@ -130,17 +142,5 @@
     "author": "Sushil Sigdel",
     "slug": "mastering-chatgpt",
     "isPopular": true
-  },
-  {
-    "id": 3,
-    "category": "Amazon CodeWhisperer",
-    "date": "24 September 2021",
-    "title": "Amazon CodeWhisperer: A Revolutionary AI-Powered Debugging Tool",
-    "summary": "Amazon CodeWhisperer is a new AI-powered debugging tool that is revolutionizing the way software developers identify and resolve issues in their code.",
-    "link": "#",
-    "image": "assets/images/blog2.png",
-    "author": "Sushil Sigdel",
-    "slug": "amazon-codewhisperer-debugging",
-    "isPopular": false
   }
 ]
