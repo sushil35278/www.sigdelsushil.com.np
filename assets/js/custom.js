@@ -442,23 +442,23 @@
               <div class="col-lg-6 show-up wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
                 <div class="blog-post">
                   <div class="thumb">
-                    <a href="${featuredBlog.link}">
+                    <a href="${featuredBlog.link}" target="_blank" rel="noopener">
                       <img src="${featuredBlog.image}" alt="${featuredBlog.title}" width="550" height="350" loading="lazy" decoding="async">
                     </a>
                   </div>
                   <div class="down-content">
                     <span class="category">${featuredBlog.category}</span>
                     <span class="date">${featuredBlog.date}</span>
-                    <a href="${featuredBlog.link}">
+                    <a href="${featuredBlog.link}" target="_blank" rel="noopener">
                       <h4>${featuredBlog.title}</h4>
                     </a>
-                    <p>${featuredBlog.summary}... <a href="${featuredBlog.link}"> ${seeMoreText}</a></p>
+                    <p>${featuredBlog.summary}... <a href="${featuredBlog.link}" target="_blank" rel="noopener"> ${seeMoreText}</a></p>
                     <span class="author">
                       <img src="assets/images/sushil.JPG" alt="${featuredBlog.author}" width="40" height="40" loading="lazy" decoding="async">
                       ${byText} ${featuredBlog.author}
                     </span>
                     <div class="border-first-button">
-                      <a href="${featuredBlog.link}">${discoverMoreText}</a>
+                      <a href="${featuredBlog.link}" target="_blank" rel="noopener">${discoverMoreText}</a>
                     </div>
                   </div>
                 </div>
@@ -516,7 +516,7 @@
         <div class="col-lg-12">
           <div class="post-item ${isLast ? 'last-post-item' : ''}">
             <div class="thumb">
-              <a href="${blog.link}">
+              <a href="${blog.link}" target="_blank" rel="noopener">
                 <img src="${blog.image}" alt="${blog.title}" width="150" height="150" style="object-fit: cover;" loading="lazy" decoding="async">
               </a>
             </div>
@@ -525,10 +525,10 @@
                 <span class="category">${blog.category}</span>
                 <span class="date">${blog.date}</span>
               </div>
-              <a href="${blog.link}">
+              <a href="${blog.link}" target="_blank" rel="noopener">
                 <h4>${blog.title}</h4>
               </a>
-              <p>${blog.summary}... <a href="${blog.link}">${seeMoreText}</a></p>
+              <p>${blog.summary}... <a href="${blog.link}" target="_blank" rel="noopener">${seeMoreText}</a></p>
             </div>
           </div>
         </div>
