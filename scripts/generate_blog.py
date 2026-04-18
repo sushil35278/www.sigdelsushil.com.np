@@ -46,25 +46,34 @@ def get_prioritized_models():
         return ["gemini-2.0-flash", "gemini-1.5-flash"]
 
 def generate_blog_content():
+    # Load existing blogs to avoid duplicates
+    try:
+        with open(BLOGS_FILE, 'r') as f:
+            existing_blogs = json.load(f)
+        existing_titles = {b['title'].lower() for b in existing_blogs}
+    except:
+        existing_titles = set()
+    
     models_to_try = get_prioritized_models()
     target_topic = random.choice(TECH_CATEGORIES)
     
     prompt = f"""
-    Act as a senior software architect and popular tech blogger. 
-    Write a high-quality, deeply interesting blog post about a specific modern trend in {target_topic}.
+    Act as a senior software architect and popular tech blogger with 10+ years experience. 
+    Write a high-quality, deeply interesting blog post about a SPECIFIC, cutting-edge trend in {target_topic} that developers are talking about in 2026.
     
     CRITICAL INSTRUCTIONS:
-    1. Be bold and opinionated. Don't just list facts. 
-    2. Include a 'Why this matters for developers' section.
-    3. Include at least 3 'Pro Tips' or 'Future Predictions'.
-    4. Format the content with <h3> headings, <p> paragraphs, and <ul>/<li> lists.
+    1. Be bold, opinionated, and contrarian. Challenge common beliefs with data/examples.
+    2. Include real-world examples, code snippets (in <pre><code> tags), and statistics.
+    3. Structure: Intro hook, 3-4 main sections with <h3>, Pro Tips, Future Predictions, Conclusion with CTA.
+    4. Make it unique: Reference current events, your personal insights as a Nepal-to-Japan dev, and avoid generic advice.
+    5. Length: 800-1200 words. Engaging tone.
     
     Return ONLY a JSON object:
     - category: The category (must be one of: {", ".join(TECH_CATEGORIES)})
-    - title: A catchy, magazine-style headline
-    - summary: A 2-sentence hook that makes people want to click.
-    - content: The full HTML content (approx 600 words).
-    - image_keyword: A single English keyword for a beautiful tech photo (e.g., 'coding', 'minimalism', 'data', 'robot').
+    - title: A catchy, SEO-optimized headline (include keywords like '2026', 'future')
+    - summary: A compelling 2-3 sentence hook.
+    - content: The full HTML content.
+    - image_keyword: A specific keyword for image (e.g., 'neural-network-cyberpunk', 'quantum-computer').
     """
     
     for model_name in models_to_try:
@@ -79,15 +88,19 @@ def generate_blog_content():
             text = text[text.find("{"):text.rfind("}")+1]
             
             blog_data = json.loads(text)
+            
+            # Check for duplicate title
+            if blog_data["title"].lower() in existing_titles:
+                print(f"Duplicate title: {blog_data['title']}. Regenerating...")
+                continue
+            
             blog_data["date"] = datetime.datetime.now().strftime("%d %B %Y")
             blog_data["author"] = "Sushil Sigdel"
             blog_data["accent_color"] = random.choice(ACCENT_COLORS)
             
             keyword = blog_data.get("image_keyword", "technology")
-            # Using a more stable Unsplash URL pattern
-            blog_data["image"] = f"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200" # default
-            if keyword:
-                blog_data["image"] = f"https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop&keyword={keyword}"
+            # Use random Unsplash image based on keyword for uniqueness and relevance
+            blog_data["image"] = f"https://source.unsplash.com/random/1200x800/?{keyword.replace(' ', '+')}"
             
             blog_data["slug"] = slugify(blog_data["title"])
             blog_data["isPopular"] = False
