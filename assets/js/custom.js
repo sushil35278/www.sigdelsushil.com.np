@@ -563,7 +563,43 @@
     // Expose to global for onclick events
     window.loadBlogs = loadBlogs;
 
-    $(window).on('load', loadBlogs);
+    // --- Cookie Consent Logic ---
+    const initCookieConsent = () => {
+      const isJapanese = $('html').attr('lang') === 'ja';
+      const cookieKey = 'cookie_consent_accepted';
+
+      if (localStorage.getItem(cookieKey)) return;
+
+      const message = isJapanese
+        ? 'このウェブサイトでは、ユーザーエクスペリエンスの向上と広告のパーソナライズのためにクッキーを使用しています。詳細は <a href="privacy-policy.html">プライバシーポリシー</a> をご覧ください。'
+        : 'This website uses cookies to ensure you get the best experience and to personalize ads. Check our <a href="privacy-policy.html">Privacy Policy</a> for details.';
+      const btnText = isJapanese ? '同意する' : 'Accept';
+
+      const bannerHtml = `
+        <div id="cookie-consent-banner" class="cookie-consent">
+          <p>${message}</p>
+          <button class="btn-accept" id="btn-accept-cookies">${btnText}</button>
+        </div>
+      `;
+
+      $('body').append(bannerHtml);
+
+      // Delay to trigger animation
+      setTimeout(() => {
+        $('#cookie-consent-banner').addClass('show');
+      }, 1000);
+
+      $('#btn-accept-cookies').on('click', function () {
+        localStorage.setItem(cookieKey, 'true');
+        $('#cookie-consent-banner').removeClass('show');
+        setTimeout(() => $('#cookie-consent-banner').remove(), 500);
+      });
+    };
+
+    $(window).on('load', () => {
+      loadBlogs(1);
+      initCookieConsent();
+    });
 
   });
 

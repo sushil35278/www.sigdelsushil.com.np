@@ -2950,3 +2950,65 @@ body.matrix-mode form#contact-form {
     font-size: 0.9rem;
   }
 }
+/* Cookie Consent Banner */
+.cookie-consent {
+  position: fixed;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 600px;
+  background: rgba(26, 26, 46, 0.98);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  transition: bottom 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.cookie-consent.show {
+  bottom: 30px;
+}
+
+.cookie-consent p {
+  font-size: 0.85rem;
+  margin: 0;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.cookie-consent p a {
+  color: #fa65b1;
+  text-decoration: underline;
+}
+
+.cookie-consent .btn-accept {
+  background: #fa65b1;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.3s;
+}
+
+.cookie-consent .btn-accept:hover {
+  background: #ff7eb9;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .cookie-consent {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+  }
+}
