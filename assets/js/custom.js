@@ -443,7 +443,7 @@
                 <div class="blog-post">
                   <div class="thumb">
                     <a href="${featuredBlog.link}" target="_blank" rel="noopener">
-                      <img src="${featuredBlog.image}" alt="${featuredBlog.title}" width="550" height="350" loading="lazy" decoding="async">
+                      <img src="${featuredBlog.image}" alt="${featuredBlog.title}" width="550" height="350" loading="lazy" decoding="async" onerror="this.src='assets/images/bloghome.png'">
                     </a>
                   </div>
                   <div class="down-content">
@@ -517,7 +517,7 @@
           <div class="post-item ${isLast ? 'last-post-item' : ''}">
             <div class="thumb">
               <a href="${blog.link}" target="_blank" rel="noopener">
-                <img src="${blog.image}" alt="${blog.title}" width="150" height="150" style="object-fit: cover;" loading="lazy" decoding="async">
+                <img src="${blog.image}" alt="${blog.title}" width="150" height="150" style="object-fit: cover;" loading="lazy" decoding="async" onerror="this.src='assets/images/bloghome.png'">
               </a>
             </div>
             <div class="right-content">
