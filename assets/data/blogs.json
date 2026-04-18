@@ -1,5 +1,17 @@
 [
   {
+    "category": "Mobile Development",
+    "title": "Beyond the Pixel: Why 2026 is the Year of 'Headless' Mobile and Why Your UI Skills are Becoming Technical Debt",
+    "summary": "The era of the 'app-as-a-silo' is dead. As we move into 2026, the industry is pivoting toward Local-First Model Context Protocols (MCP) where the OS orchestrates functionality, rendering the traditional GUI an optional legacy feature.",
+    "date": "18 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?futuristic-headless-smartphone-interface-hologram",
+    "slug": "beyond-the-pixel-why-2026-is-the-year-of-headless-mobile-and-why-your-ui-skills-are-becoming-technical-debt",
+    "isPopular": false,
+    "link": "blog/beyond-the-pixel-why-2026-is-the-year-of-headless-mobile-and-why-your-ui-skills-are-becoming-technical-debt.html",
+    "id": 13
+  },
+  {
     "category": "Web Development",
     "title": "Hydration is Dead: Why Autonomous Orchestrators are Killing the Traditional Web Framework in 2026",
     "summary": "The era of shipping massive JavaScript bundles and praying for SEO is over. As we move into 2026, the industry is abandoning the 'React-monolith' for Autonomous Hydration Orchestrators (AHOs) that predict user intent before a single click happens.",
@@ -130,17 +142,5 @@
     "isPopular": false,
     "link": "blog/beyond-the-prompt-why-agentic-ai-workflows-are-the-next-frontier-in-software-engineering.html",
     "id": 5
-  },
-  {
-    "category": "AI & Software Engineering",
-    "title": "Beyond Code Completion: The Era of Autonomous AI Agents in Software Development",
-    "summary": "The shift from passive AI assistants to autonomous coding agents is fundamentally redefining the software development lifecycle. This post explores how 'agentic workflows' are moving us from simple code completion to end-to-end task execution.",
-    "date": "14 April 2026",
-    "author": "Sushil Sigdel",
-    "image": "assets/images/bloghome.png",
-    "slug": "beyond-code-completion-the-era-of-autonomous-ai-agents-in-software-development",
-    "isPopular": false,
-    "link": "blog/beyond-code-completion-the-era-of-autonomous-ai-agents-in-software-development.html",
-    "id": 4
   }
 ]
