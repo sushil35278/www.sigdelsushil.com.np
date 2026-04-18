@@ -754,6 +754,18 @@
         <div class="row">
           <div class="col-lg-12">
             <div id="blog-pagination" class="blog-pagination"></div>
+            <!-- AdSense 広告プレースホルダー -->
+            <div class="adsense-placeholder"
+              style="margin: 30px 0; background: #fafafa; border: 1px dashed #ddd; border-radius: 15px; padding: 20px; text-align: center;">
+              <span style="color: #999; font-size: 0.7rem; text-transform: uppercase;">スポンサーリンク</span>
+              <div id="index-blog-ad-ja"></div>
+            </div>
+            <!-- AdSense In-feed Placeholder -->
+            <div class="adsense-placeholder"
+              style="margin: 30px 0; background: #fafafa; border: 1px dashed #ddd; border-radius: 15px; padding: 20px; text-align: center;">
+              <span style="color: #999; font-size: 0.7rem; text-transform: uppercase;">Advertisement</span>
+              <div id="index-blog-ad-en"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -895,7 +907,43 @@
       </div>
     </div>
 
+    <!-- Newsletter Section -->
+    <div id="newsletter" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <div class="newsletter-card wow zoomIn" data-wow-duration="1s">
+              <div class="section-heading text-center">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to my newsletter for the latest tech insights and project updates.</p>
+              </div>
+              <form id="newsletter-form" class="newsletter-form">
+                <input type="hidden" name="_subject" value="New Newsletter Subscription!">
+                <input type="hidden" name="_next" value="https://www.sigdelsushil.com.np">
+                <input type="email" name="email" placeholder="Your Email Address" required>
+                <button type="submit" class="main-button">Subscribe Now</button>
+              </form>
+              <div id="nl-success" style="display:none; color: #4CAF50; margin-top:20px; text-align:center;">
+                ✅ Awesome! You're on the list.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
   </main>
+
+  <!-- Scroll to Top Button -->
+  <div id="scroll-top" class="scroll-top">
+    <svg class="progress-circle" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+    <i class="fa fa-arrow-up"></i>
+  </div>
+
   <!-- ***** Footer Start ***** -->
   <footer
     style="background:#1a1a2e; color:#aaa; text-align:center; padding:22px 0; font-size:0.85rem; font-family:'Poppins',sans-serif;">
@@ -909,6 +957,12 @@
       <a href="terms-of-service.html" target="_blank" rel="noopener" style="color:#f5a425; text-decoration:none;">Terms
         of Service</a>
     </p>
+    <div style="margin-top: 15px;">
+      <a href="https://www.buymeacoffee.com/sushilsigdel" target="_blank" rel="noopener" class="bmc-button">
+        <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee"
+          style="height: 40px !important;width: 145px !important;">
+      </a>
+    </div>
   </footer>
   <!-- ***** Footer End ***** -->
 

@@ -596,11 +596,86 @@
       });
     };
 
+    // Scroll to Top Logic with Progress Circle
+    const initScrollTop = () => {
+      const scrollTopBtn = document.getElementById('scroll-top');
+      const progressPath = document.querySelector('.progress-circle path');
+      if (!scrollTopBtn || !progressPath) return;
+
+      const pathLength = progressPath.getTotalLength();
+      progressPath.style.strokeDasharray = `${pathLength} ${pathLength}`;
+      progressPath.style.strokeDashoffset = pathLength;
+
+      const updateProgress = () => {
+        const scroll = window.pageYOffset;
+        const height = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = pathLength - (scroll * pathLength / height);
+        progressPath.style.strokeDashoffset = progress;
+
+        if (scroll > 300) {
+          scrollTopBtn.classList.add('active');
+        } else {
+          scrollTopBtn.classList.remove('active');
+        }
+      };
+
+      scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+
+      window.addEventListener('scroll', throttle(updateProgress, 10));
+      updateProgress();
+    };
+
     $(window).on('load', () => {
       loadBlogs(1);
       initCookieConsent();
+      initScrollTop();
     });
 
   });
 
 })(window.jQuery);
+
+// Newsletter Form Handler
+const setupNewsletter = (formId, successId) => {
+  const form = document.getElementById(formId);
+  if (form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const btn = form.querySelector('button');
+      const originalBtnText = btn.textContent;
+      btn.textContent = $('html').attr('lang') === 'ja' ? '登録中...' : 'Subscribing...';
+      btn.disabled = true;
+
+      // Use Formspree AJAX submission
+      fetch('https://formspree.io/f/mlgaeeag', {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      })
+        .then(response => {
+          if (response.ok) {
+            form.style.display = 'none';
+            document.getElementById(successId).style.display = 'block';
+          } else {
+            throw new Error('Form submission failed');
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          btn.textContent = $('html').attr('lang') === 'ja' ? 'エラー' : 'Error';
+          setTimeout(() => {
+            btn.textContent = originalBtnText;
+            btn.disabled = false;
+          }, 2000);
+        });
+    });
+  }
+};
+
+setupNewsletter('newsletter-form', 'nl-success');
+setupNewsletter('newsletter-form-ja', 'nl-success-ja');

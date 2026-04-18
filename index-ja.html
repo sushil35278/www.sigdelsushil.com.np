@@ -719,6 +719,12 @@
         <div class="row">
           <div class="col-lg-12">
             <div id="blog-pagination" class="blog-pagination"></div>
+            <!-- AdSense 広告プレースホルダー -->
+            <div class="adsense-placeholder"
+              style="margin: 30px 0; background: #fafafa; border: 1px dashed #ddd; border-radius: 15px; padding: 20px; text-align: center;">
+              <span style="color: #999; font-size: 0.7rem; text-transform: uppercase;">スポンサーリンク</span>
+              <div id="index-blog-ad-ja"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -855,6 +861,30 @@
       </div>
     </div>
 
+    <!-- ニュースレターセクション -->
+    <div id="newsletter" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <div class="newsletter-card wow zoomIn" data-wow-duration="1s">
+              <div class="section-heading text-center">
+                <h2>最新情報をお届け</h2>
+                <p>ニュースレターを購読して、最新の記事やプロジェクトの更新情報を手に入れましょう。</p>
+              </div>
+              <form id="newsletter-form-ja" class="newsletter-form">
+                <input type="hidden" name="_subject" value="ニュースレターの新規購読者に登録されました！">
+                <input type="hidden" name="_next" value="https://www.sigdelsushil.com.np/index-ja.html">
+                <input type="email" name="email" placeholder="メールアドレス" required>
+                <button type="submit" class="main-button">購読する</button>
+              </form>
+              <div id="nl-success-ja" style="display:none; color: #4CAF50; margin-top:20px; text-align:center;">
+                ✅ 登録が完了しました！ありがとうございます。
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <!-- ***** Footer Start ***** -->
   <footer
@@ -869,6 +899,12 @@
       <a href="terms-of-service.html" target="_blank" rel="noopener"
         style="color:#f5a425; text-decoration:none;">利用規約</a>
     </p>
+    <div style="margin-top: 15px;">
+      <a href="https://www.buymeacoffee.com/sushilsigdel" target="_blank" rel="noopener" class="bmc-button">
+        <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee"
+          style="height: 40px !important;width: 145px !important;">
+      </a>
+    </div>
   </footer>
   <!-- ***** Footer End ***** -->
 
@@ -895,3 +931,18 @@
 </body>
 
 </html>
+<style>
+  .adsense-placeholder {
+    margin: 30px 0;
+    background: #fafafa;
+    border: 1px dashed #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  [data-theme='dark'] .adsense-placeholder {
+    background: #2a2a2a;
+    border-color: #444;
+  }
+</style>
