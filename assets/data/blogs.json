@@ -1,5 +1,17 @@
 [
   {
+    "category": "Web Development",
+    "title": "The Great Pendulum Swing: Why Your Thick-Client SPA is Becoming a Liability",
+    "summary": "We spent a decade moving every ounce of logic into the browser, only to realize we’ve created a performance monster. It’s time to stop shipping megabytes of JavaScript and reclaim the power of the server.",
+    "date": "18 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop&keyword=neon",
+    "slug": "the-great-pendulum-swing-why-your-thick-client-spa-is-becoming-a-liability",
+    "isPopular": false,
+    "link": "blog/the-great-pendulum-swing-why-your-thick-client-spa-is-becoming-a-liability.html",
+    "id": 13
+  },
+  {
     "category": "Mobile Development",
     "title": "The Death of the 'Native vs. Cross-Platform' Debate: Welcome to the Era of Unified Abstraction",
     "summary": "For a decade, we’ve been shackled to the tired argument of Flutter vs. Swift vs. React Native. It’s time to stop picking sides and realize that the future of mobile isn't about the framework—it's about the abstraction layer.",
@@ -129,18 +141,6 @@
     "image": "assets/images/bloghome.png",
     "author": "Sushil Sigdel",
     "slug": "reverse-image-search-guide",
-    "isPopular": true
-  },
-  {
-    "id": 2,
-    "category": "Mastering ChatGPT",
-    "date": "01 May 2023",
-    "title": "Mastering ChatGPT: How to Effectively Use AI Chatbot for Your Business",
-    "summary": "ChatGPT is one such chatbot that uses natural language processing (NLP) and machine learning to provide personalized customer service and marketing automation.",
-    "link": "https://abouttechnotrends.blogspot.com/2023/05/mastering-chatgpt-how-to-effectively.html",
-    "image": "assets/images/blog1.png",
-    "author": "Sushil Sigdel",
-    "slug": "mastering-chatgpt",
     "isPopular": true
   }
 ]
