@@ -2,61 +2,139 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sigdelsushil.com.np/</loc>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/index-ja.html</loc>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/privacy-policy.html</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/terms-of-service.html</loc>
-    <lastmod>2026-04-18</lastmod>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://sigdelsushil.com.np/blog/the-great-firewall-is-dead-why-identity-is-the-only-perimeter-that-matters.html</loc>
-    <lastmod>2026-04-17</lastmod>
+    <loc>https://sigdelsushil.com.np/sushil_sigdel.pdf</loc>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://sigdelsushil.com.np/blog/the-great-unification-why-kotlin-multiplatform-is-redefining-mobile-strategy.html</loc>
-    <lastmod>2026-04-17</lastmod>
+    <loc>https://sigdelsushil.com.np/sushil_sigdel_jp.pdf</loc>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://sigdelsushil.com.np/blog/the-quantum-countdown-engineering-for-post-quantum-cryptography.html</loc>
-    <lastmod>2026-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://sigdelsushil.com.np/blog/the-zero-trust-pivot-securing-the-human-layer-against-generative-ai-threats.html</loc>
-    <lastmod>2026-04-17</lastmod>
+    <loc>https://sigdelsushil.com.np/blog/beyond-the-pixel-why-2026-is-the-year-of-headless-mobile-and-why-your-ui-skills-are-becoming-technical-debt.html</loc>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/blog/beyond-the-prompt-why-agentic-ai-workflows-are-the-next-frontier-in-software-engineering.html</loc>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sigdelsushil.com.np/blog/beyond-code-completion-the-era-of-autonomous-ai-agents-in-software-development.html</loc>
-    <lastmod>2026-04-17</lastmod>
+    <loc>https://sigdelsushil.com.np/blog/cost-optimization-ai-models-edge-vs-cloud.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/edge-ai-is-not-what-you-think-the-real-future-of-hyper-personalization-in-mobile-apps-2026-edition.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/hydration-is-dead-why-autonomous-orchestrators-are-killing-the-traditional-web-framework-in-2026.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/kubernetes-cost-management-case-studies.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/microservices-webassembly-performance-benchmarks.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-cloud-native-mirage-why-local-first-is-the-future-of-real-engineering.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-death-of-the-loading-spinner-why-local-first-is-the-only-architecture-that-matters.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-death-of-the-native-vs-cross-platform-debate-welcome-to-the-era-of-unified-abstraction.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-great-firewall-is-dead-why-identity-is-the-only-perimeter-that-matters.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-great-pendulum-swing-why-your-thick-client-spa-is-becoming-a-liability.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-great-re-servering-why-your-10mb-javascript-bundle-is-a-technical-debt-time-bomb.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-great-unification-why-kotlin-multiplatform-is-redefining-mobile-strategy.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-quantum-countdown-engineering-for-post-quantum-cryptography.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-zero-trust-pivot-securing-the-human-layer-against-generative-ai-threats.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/zero-trust-security-roi-remote-teams.html</loc>
+    <lastmod>2026-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
