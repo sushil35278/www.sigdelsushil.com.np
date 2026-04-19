@@ -1,5 +1,53 @@
 [
   {
+    "category": "AI, Cloud Computing, DevOps",
+    "title": "Cost Optimization: Running AI Models on Edge vs Cloud",
+    "summary": "A comprehensive comparison of edge computing and cloud deployment for AI models. Learn about architecture, costs, latency tradeoffs, and real-world case studies to choose the right approach for your enterprise.",
+    "date": "22 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop",
+    "slug": "cost-optimization-ai-models-edge-vs-cloud",
+    "isPopular": true,
+    "link": "blog/cost-optimization-ai-models-edge-vs-cloud.html",
+    "id": 17
+  },
+  {
+    "category": "WebAssembly, Architecture, Performance",
+    "title": "Building Microservices with WebAssembly: Performance Benchmarks",
+    "summary": "Benchmark WebAssembly microservices against traditional Docker containers. Discover 3-10x performance improvements and significantly lower resource consumption in production environments.",
+    "date": "19 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=500&fit=crop",
+    "slug": "microservices-webassembly-performance-benchmarks",
+    "isPopular": true,
+    "link": "blog/microservices-webassembly-performance-benchmarks.html",
+    "id": 16
+  },
+  {
+    "category": "Security, DevOps, Enterprise",
+    "title": "Zero Trust Security: ROI for Remote Teams",
+    "summary": "Discover how Zero Trust Security Architecture reduces breach risk by 70% and improves remote team productivity. Real ROI calculations and implementation roadmap for enterprises.",
+    "date": "19 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://images.unsplash.com/photo-1563986768609-322c8b8c08b9?w=800&h=500&fit=crop",
+    "slug": "zero-trust-security-roi-remote-teams",
+    "isPopular": true,
+    "link": "blog/zero-trust-security-roi-remote-teams.html",
+    "id": 15
+  },
+  {
+    "category": "DevOps, Kubernetes, FinOps",
+    "title": "Kubernetes Cost Management: Real-World Case Studies",
+    "summary": "Learn proven strategies for reducing Kubernetes costs through real-world case studies. Discover cost optimization techniques, FinOps practices, and save up to 60% on cloud infrastructure.",
+    "date": "19 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=500&fit=crop",
+    "slug": "kubernetes-cost-management-case-studies",
+    "isPopular": true,
+    "link": "blog/kubernetes-cost-management-case-studies.html",
+    "id": 14
+  },
+  {
     "category": "Mobile Development",
     "title": "Edge AI is NOT What You Think: The REAL Future of Hyper-Personalization in Mobile Apps (2026 Edition)",
     "summary": "Forget the 'cloud-first' dogma for mobile AI. In 2026, the real battle for user attention and deep engagement is happening at the very edge – on our devices. I'm here to tell you why most companies are still getting personalization wrong, and how on-device intelligence is not just a privacy play, but the undisputed champion for truly magical user experiences.",
@@ -21,7 +69,7 @@
     "slug": "beyond-the-pixel-why-2026-is-the-year-of-headless-mobile-and-why-your-ui-skills-are-becoming-technical-debt",
     "isPopular": false,
     "link": "blog/beyond-the-pixel-why-2026-is-the-year-of-headless-mobile-and-why-your-ui-skills-are-becoming-technical-debt.html",
-    "id": 13
+    "id": 12
   },
   {
     "category": "Web Development",
@@ -33,31 +81,31 @@
     "slug": "hydration-is-dead-why-autonomous-orchestrators-are-killing-the-traditional-web-framework-in-2026",
     "isPopular": false,
     "link": "blog/hydration-is-dead-why-autonomous-orchestrators-are-killing-the-traditional-web-framework-in-2026.html",
-    "id": 13
+    "id": 11
   },
   {
     "category": "Web Development",
     "title": "The Great Pendulum Swing: Why Your Thick-Client SPA is Becoming a Liability",
-    "summary": "We spent a decade moving every ounce of logic into the browser, only to realize we’ve created a performance monster. It’s time to stop shipping megabytes of JavaScript and reclaim the power of the server.",
+    "summary": "We spent a decade moving every ounce of logic into the browser, only to realize we've created a performance monster. It's time to stop shipping megabytes of JavaScript and reclaim the power of the server.",
     "date": "18 April 2026",
     "author": "Sushil Sigdel",
     "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop&keyword=neon",
     "slug": "the-great-pendulum-swing-why-your-thick-client-spa-is-becoming-a-liability",
     "isPopular": false,
     "link": "blog/the-great-pendulum-swing-why-your-thick-client-spa-is-becoming-a-liability.html",
-    "id": 13
+    "id": 10
   },
   {
     "category": "Mobile Development",
     "title": "The Death of the 'Native vs. Cross-Platform' Debate: Welcome to the Era of Unified Abstraction",
-    "summary": "For a decade, we’ve been shackled to the tired argument of Flutter vs. Swift vs. React Native. It’s time to stop picking sides and realize that the future of mobile isn't about the framework—it's about the abstraction layer.",
+    "summary": "For a decade, we've been shackled to the tired argument of Flutter vs. Swift vs. React Native. It's time to stop picking sides and realize that the future of mobile isn't about the framework—it's about the abstraction layer.",
     "date": "17 April 2026",
     "author": "Sushil Sigdel",
     "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop&keyword=architecture",
     "slug": "the-death-of-the-native-vs-cross-platform-debate-welcome-to-the-era-of-unified-abstraction",
     "isPopular": false,
     "link": "blog/the-death-of-the-native-vs-cross-platform-debate-welcome-to-the-era-of-unified-abstraction.html",
-    "id": 13
+    "id": 9
   },
   {
     "category": "Web Development",
@@ -69,7 +117,7 @@
     "slug": "the-great-re-servering-why-your-10mb-javascript-bundle-is-a-technical-debt-time-bomb",
     "isPopular": false,
     "link": "blog/the-great-re-servering-why-your-10mb-javascript-bundle-is-a-technical-debt-time-bomb.html",
-    "id": 12
+    "id": 8
   },
   {
     "category": "Software Engineering",
@@ -81,19 +129,19 @@
     "slug": "the-cloud-native-mirage-why-local-first-is-the-future-of-real-engineering",
     "isPopular": false,
     "link": "blog/the-cloud-native-mirage-why-local-first-is-the-future-of-real-engineering.html",
-    "id": 11
+    "id": 7
   },
   {
     "category": "Web Development",
     "title": "The Death of the Loading Spinner: Why Local-First is the Only Architecture That Matters",
-    "summary": "We’ve spent ten years making web apps slower by obsessing over the cloud. It’s time to move the database back to the device and finally deliver the 'instant' web we were promised.",
+    "summary": "We've spent ten years making web apps slower by obsessing over the cloud. It's time to move the database back to the device and finally deliver the 'instant' web we were promised.",
     "date": "16 April 2026",
     "author": "Sushil Sigdel",
     "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop&keyword=synchronization",
     "slug": "the-death-of-the-loading-spinner-why-local-first-is-the-only-architecture-that-matters",
     "isPopular": false,
     "link": "blog/the-death-of-the-loading-spinner-why-local-first-is-the-only-architecture-that-matters.html",
-    "id": 10
+    "id": 6
   },
   {
     "category": "Cybersecurity",
@@ -105,7 +153,7 @@
     "slug": "the-great-firewall-is-dead-why-identity-is-the-only-perimeter-that-matters",
     "isPopular": false,
     "link": "blog/the-great-firewall-is-dead-why-identity-is-the-only-perimeter-that-matters.html",
-    "id": 9
+    "id": 5
   },
   {
     "category": "Mobile Development",
@@ -117,7 +165,7 @@
     "slug": "the-great-unification-why-kotlin-multiplatform-is-redefining-mobile-strategy",
     "isPopular": false,
     "link": "blog/the-great-unification-why-kotlin-multiplatform-is-redefining-mobile-strategy.html",
-    "id": 8
+    "id": 4
   },
   {
     "category": "Cybersecurity",
@@ -129,7 +177,7 @@
     "slug": "the-quantum-countdown-engineering-for-post-quantum-cryptography",
     "isPopular": false,
     "link": "blog/the-quantum-countdown-engineering-for-post-quantum-cryptography.html",
-    "id": 7
+    "id": 3
   },
   {
     "category": "Cybersecurity",
@@ -141,6 +189,18 @@
     "slug": "the-zero-trust-pivot-securing-the-human-layer-against-generative-ai-threats",
     "isPopular": false,
     "link": "blog/the-zero-trust-pivot-securing-the-human-layer-against-generative-ai-threats.html",
-    "id": 6
+    "id": 2
+  },
+  {
+    "category": "Software Engineering",
+    "title": "Beyond the Prompt: Why Agentic AI Workflows are the Next Frontier in Software Engineering",
+    "summary": "Forget prompt engineering. The next evolution of AI-assisted development isn't about better prompts—it's about building autonomous agent systems that can plan, execute, and reason about complex software problems. This post explores how AI agents will reshape how we build software.",
+    "date": "13 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://loremflickr.com/800/600/artificial-intelligence,robot",
+    "slug": "beyond-the-prompt-why-agentic-ai-workflows-are-the-next-frontier-in-software-engineering",
+    "isPopular": false,
+    "link": "blog/beyond-the-prompt-why-agentic-ai-workflows-are-the-next-frontier-in-software-engineering.html",
+    "id": 1
   }
 ]
