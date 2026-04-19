@@ -3189,9 +3189,16 @@ body.matrix-mode form#contact-form {
 [data-theme='dark'] .newsletter-form input[type="email"] {
   border-color: #555;
   background: #333;
-  color: #e0e0e0;
+  color: #e0e0e;
 }
 
 [data-theme='dark'] .newsletter-form input[type="email"]:focus {
   border-color: #fa65b1;
+}
+
+.search-highlight {
+  background: rgba(255, 212, 0, 0.35);
+  color: #000;
+  border-radius: 3px;
+  padding: 0 2px;
 }

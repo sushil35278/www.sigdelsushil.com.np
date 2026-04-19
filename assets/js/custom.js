@@ -396,9 +396,67 @@
       }
     });
 
-    // Global state for pagination
+    // Global state for pagination and search
     let currentBlogPage = 1;
+    let currentBlogSearchQuery = '';
     const blogsPerPage = 4;
+
+    const filterBlogs = (blogs, query) => {
+      if (!query) return blogs;
+      const normalizedQuery = query.toLowerCase();
+      return blogs.filter(blog => {
+        const blogText = `${blog.title} ${blog.summary} ${blog.category} ${blog.author}`.toLowerCase();
+        return blogText.includes(normalizedQuery);
+      });
+    };
+
+    const escapeRegExp = (string) => {
+      return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    };
+
+    const highlightText = (text, query) => {
+      if (!query) return text;
+      const escapedQuery = escapeRegExp(query.trim());
+      if (!escapedQuery) return text;
+      const regex = new RegExp(`(${escapedQuery})`, 'gi');
+      return text.replace(regex, '<span class="search-highlight">$1</span>');
+    };
+
+    const setupBlogSearch = () => {
+      const searchInput = $('#blog-search-input');
+      const searchButton = $('#blog-search-button');
+      const clearButton = $('#blog-search-clear');
+
+      if (!searchInput.length) return;
+
+      const updateClearButton = () => {
+        const query = searchInput.val().trim();
+        clearButton.toggle(query.length > 0);
+      };
+
+      const runSearch = () => {
+        currentBlogSearchQuery = searchInput.val().trim();
+        currentBlogPage = 1;
+        loadBlogs(1);
+      };
+
+      searchButton.on('click', runSearch);
+      clearButton.on('click', () => {
+        searchInput.val('');
+        currentBlogSearchQuery = '';
+        updateClearButton();
+        loadBlogs(1);
+      });
+      searchInput.on('input', updateClearButton);
+      searchInput.on('keypress', (event) => {
+        if (event.key === 'Enter') {
+          event.preventDefault();
+          runSearch();
+        }
+      });
+
+      updateClearButton();
+    };
 
     // Load dynamic blogs from JSON
     const loadBlogs = (page = 1) => {
@@ -427,12 +485,27 @@
           blogContainer.empty();
           pagContainer.empty();
 
-          // Pagination logic
-          const totalPages = Math.ceil(blogs.length / blogsPerPage);
-          const startIndex = (pageNum - 1) * blogsPerPage;
-          const paginatedBlogs = blogs.slice(startIndex, startIndex + blogsPerPage);
+          const filteredBlogs = filterBlogs(blogs, currentBlogSearchQuery);
+          if (filteredBlogs.length === 0) {
+            const noResultsMessage = isJapanese ? '検索条件に一致するブログは見つかりませんでした。' : 'No blogs found matching your search.';
+            blogContainer.html(`<div class="col-lg-12 text-center"><p>${noResultsMessage}</p></div>`);
+            return;
+          }
 
-          if (pageNum === 1) {
+          if (currentBlogSearchQuery) {
+            const resultCountText = isJapanese
+              ? `${filteredBlogs.length}件の検索結果: "${currentBlogSearchQuery}"`
+              : `Showing ${filteredBlogs.length} result${filteredBlogs.length === 1 ? '' : 's'} for "${currentBlogSearchQuery}"`;
+            blogContainer.append(`<div class="col-lg-12" style="margin-bottom: 20px;"><p>${resultCountText}</p></div>`);
+          }
+
+          // Pagination logic
+          const totalPages = Math.ceil(filteredBlogs.length / blogsPerPage);
+          const startIndex = (pageNum - 1) * blogsPerPage;
+          const paginatedBlogs = filteredBlogs.slice(startIndex, startIndex + blogsPerPage);
+
+          const showFeaturedLayout = (pageNum === 1 && !currentBlogSearchQuery);
+          if (showFeaturedLayout) {
             // --- PAGE 1: Featured + Sidebar Layout ---
             const popularBlogs = blogs.filter(b => b.isPopular).slice(0, 2);
             const featuredBlog = popularBlogs.length > 0 ? popularBlogs[0] : blogs[0];
@@ -479,18 +552,18 @@
 
               sideBlogs.forEach((blog, index) => {
                 const isLast = (index === 2 || index === sideBlogs.length - 1);
-                sideList.append(createPostItemHtml(blog, isLast, seeMoreText));
+                sideList.append(createPostItemHtml(blog, isLast, seeMoreText, currentBlogSearchQuery));
               });
             }
           } else {
-            // --- PAGE 2+: Uniform Grid Layout ---
+            // --- PAGE 1 with search or PAGE 2+: Uniform Grid Layout ---
             let gridHtml = `<div class="col-lg-12"><div class="row"></div></div>`;
             const $gridRow = $(gridHtml).appendTo(blogContainer).find('.row');
 
             paginatedBlogs.forEach((blog) => {
               let itemHtml = `
                 <div class="col-lg-6">
-                  ${createPostItemHtml(blog, false, seeMoreText)}
+                  ${createPostItemHtml(blog, false, seeMoreText, currentBlogSearchQuery)}
                 </div>
               `;
               $gridRow.append(itemHtml);
@@ -511,7 +584,11 @@
     };
 
     // Helper: Create Small Post Item HTML
-    const createPostItemHtml = (blog, isLast, seeMoreText) => {
+    const createPostItemHtml = (blog, isLast, seeMoreText, query) => {
+      const highlightedTitle = highlightText(blog.title, query);
+      const highlightedSummary = highlightText(blog.summary, query);
+      const highlightedCategory = highlightText(blog.category, query);
+
       return `
         <div class="col-lg-12">
           <div class="post-item ${isLast ? 'last-post-item' : ''}">
@@ -522,13 +599,13 @@
             </div>
             <div class="right-content">
               <div class="blog-meta-wrapper">
-                <span class="category">${blog.category}</span>
+                <span class="category">${highlightedCategory}</span>
                 <span class="date">${blog.date}</span>
               </div>
               <a href="${blog.link}" target="_blank" rel="noopener">
-                <h4>${blog.title}</h4>
+                <h4>${highlightedTitle}</h4>
               </a>
-              <p>${blog.summary}... <a href="${blog.link}" target="_blank" rel="noopener">${seeMoreText}</a></p>
+              <p>${highlightedSummary}... <a href="${blog.link}" target="_blank" rel="noopener">${seeMoreText}</a></p>
             </div>
           </div>
         </div>
@@ -631,6 +708,7 @@
     };
 
     $(window).on('load', () => {
+      setupBlogSearch();
       loadBlogs(1);
       initCookieConsent();
       initScrollTop();
