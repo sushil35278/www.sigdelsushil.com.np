@@ -13,7 +13,20 @@ BLOG_DIR = "blog"
 
 # Dynamic Styling Options
 ACCENT_COLORS = ["#fa65b1", "#726ae3", "#00d2ff", "#44D7B6", "#ffc107", "#ff5722"]
-TECH_CATEGORIES = ["AI & Machine Learning", "Web Development", "Cloud Architecture", "Cybersecurity", "DevOps & SRE", "Software Engineering", "Mobile Development"]
+TECH_CATEGORIES = ["AI & Machine Learning", "Web Development", "Cloud Architecture", "Cybersecurity", "DevOps & SRE", "Software Engineering", "Distributed Systems"]
+
+BANNED_PHRASES = [
+    "synergy",
+    "disruptive",
+    "game-changer",
+    "best-in-class",
+    "cutting edge",
+    "thought leader",
+    "mobilize",
+    "monetize",
+    "AI-powered",
+    "next generation"
+]
 
 if not API_KEY:
     print("Error: GEMINI_API_KEY environment variable not set.")
@@ -28,6 +41,32 @@ def slugify(text):
     text = re.sub(r'[\s_-]+', '-', text)
     text = text.strip('-')
     return text
+
+def word_count(text):
+    return len(re.findall(r'\w+', text or ""))
+
+def is_quality_blog(blog_data, existing_titles):
+    required = ["category", "title", "summary", "content", "image_keyword"]
+    if not all(blog_data.get(k) and isinstance(blog_data.get(k), str) and blog_data.get(k).strip() for k in required):
+        return False
+
+    title_lower = blog_data["title"].lower()
+    if title_lower in existing_titles:
+        return False
+
+    content_lower = blog_data["content"].lower()
+    aggregate_text = f"{title_lower} {blog_data['summary'].lower()} {content_lower}"
+    if any(phrase in aggregate_text for phrase in BANNED_PHRASES):
+        return False
+
+    if word_count(blog_data["content"]) < 750:
+        return False
+
+    if "<h3>" not in content_lower or "<pre><code>" not in content_lower:
+        return False
+
+    return True
+
 
 def get_prioritized_models():
     try:
@@ -58,16 +97,18 @@ def generate_blog_content():
     target_topic = random.choice(TECH_CATEGORIES)
     
     prompt = f"""
-    Act as a senior software architect and popular tech blogger with 10+ years experience. 
-    Write a high-quality, deeply interesting blog post about a SPECIFIC, cutting-edge trend in {target_topic} that developers are talking about in 2026.
-    
+    Act as a senior software architect and respected tech blogger with 10+ years of experience.
+    Write a high-quality, deeply interesting blog post about a SPECIFIC trend in {target_topic} that senior developers and engineering leaders are debating in 2026.
+
     CRITICAL INSTRUCTIONS:
-    1. Be bold, opinionated, and contrarian. Challenge common beliefs with data/examples.
-    2. Include real-world examples, code snippets (in <pre><code> tags), and statistics.
-    3. Structure: Intro hook, 3-4 main sections with <h3>, Pro Tips, Future Predictions, Conclusion with CTA.
-    4. Make it unique: Reference current events, your personal insights as a Nepal-to-Japan dev, and avoid generic advice.
-    5. Length: 800-1200 words. Engaging tone.
-    
+    1. Write with a professional, evidence-driven tone. Avoid marketing fluff and AI-sounding filler.
+    2. Do not use buzzword phrases like synergy, disruptive, game-changer, best-in-class, cutting edge, thought leader, mobilize, monetize, AI-powered, or next generation unless they are explicitly justified.
+    3. Include real-world examples, code snippets (in <pre><code> tags), and concrete statistics or references.
+    4. Structure: Intro hook, 3-4 main sections with <h3>, Pro Tips, Future Predictions, Conclusion with CTA.
+    5. Make it unique: reference current events, experience from Nepal and Japan, and avoid generic advice.
+    6. Length: 800-1200 words. Keep the article grounded and technical.
+    7. Return ONLY a JSON object with the fields below and no extra commentary.
+
     Return ONLY a JSON object:
     - category: The category (must be one of: {", ".join(TECH_CATEGORIES)})
     - title: A catchy, SEO-optimized headline (include keywords like '2026', 'future')
@@ -89,11 +130,10 @@ def generate_blog_content():
             
             blog_data = json.loads(text)
             
-            # Check for duplicate title
-            if blog_data["title"].lower() in existing_titles:
-                print(f"Duplicate title: {blog_data['title']}. Regenerating...")
+            if not is_quality_blog(blog_data, existing_titles):
+                print(f"Low quality or invalid blog content detected. Regenerating...")
                 continue
-            
+
             blog_data["date"] = datetime.datetime.now().strftime("%d %B %Y")
             blog_data["author"] = "Sushil Sigdel"
             blog_data["accent_color"] = random.choice(ACCENT_COLORS)
@@ -118,7 +158,7 @@ def create_static_page(blog_data):
             template = f.read()
         
         html_content = template
-        for key in ["title", "summary", "category", "author", "date", "image", "content", "accent_color"]:
+        for key in ["title", "summary", "category", "author", "date", "image", "content", "accent_color", "slug"]:
             html_content = html_content.replace(f"{{{{{key}}}}}", str(blog_data.get(key, "")))
         
         if not os.path.exists(BLOG_DIR): os.makedirs(BLOG_DIR)
