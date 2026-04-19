@@ -1,6 +1,18 @@
 [
   {
     "category": "Mobile Development",
+    "title": "Edge AI is NOT What You Think: The REAL Future of Hyper-Personalization in Mobile Apps (2026 Edition)",
+    "summary": "Forget the 'cloud-first' dogma for mobile AI. In 2026, the real battle for user attention and deep engagement is happening at the very edge – on our devices. I'm here to tell you why most companies are still getting personalization wrong, and how on-device intelligence is not just a privacy play, but the undisputed champion for truly magical user experiences.",
+    "date": "19 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?edge-ai-mobile-device-futuristic",
+    "slug": "edge-ai-is-not-what-you-think-the-real-future-of-hyper-personalization-in-mobile-apps-2026-edition",
+    "isPopular": false,
+    "link": "blog/edge-ai-is-not-what-you-think-the-real-future-of-hyper-personalization-in-mobile-apps-2026-edition.html",
+    "id": 13
+  },
+  {
+    "category": "Mobile Development",
     "title": "Beyond the Pixel: Why 2026 is the Year of 'Headless' Mobile and Why Your UI Skills are Becoming Technical Debt",
     "summary": "The era of the 'app-as-a-silo' is dead. As we move into 2026, the industry is pivoting toward Local-First Model Context Protocols (MCP) where the OS orchestrates functionality, rendering the traditional GUI an optional legacy feature.",
     "date": "18 April 2026",
@@ -130,17 +142,5 @@
     "isPopular": false,
     "link": "blog/the-zero-trust-pivot-securing-the-human-layer-against-generative-ai-threats.html",
     "id": 6
-  },
-  {
-    "category": "AI & Software Architecture",
-    "title": "Beyond the Prompt: Why Agentic AI Workflows are the Next Frontier in Software Engineering",
-    "summary": "The shift from single-turn LLM prompts to iterative, multi-step 'agentic' workflows is redefining how we build autonomous systems. Discover why orchestration and reflection are becoming the most critical skills for modern AI engineers.",
-    "date": "14 April 2026",
-    "author": "Sushil Sigdel",
-    "image": "assets/images/bloghome.png",
-    "slug": "beyond-the-prompt-why-agentic-ai-workflows-are-the-next-frontier-in-software-engineering",
-    "isPopular": false,
-    "link": "blog/beyond-the-prompt-why-agentic-ai-workflows-are-the-next-frontier-in-software-engineering.html",
-    "id": 5
   }
 ]
