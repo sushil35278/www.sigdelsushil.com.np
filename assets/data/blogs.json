@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "Beyond the Hyperscaler: The Rise of Sovereign Cloud Mesh in 2026",
+    "summary": "As global data residency laws tighten and edge latency requirements hit sub-10ms thresholds, the debate has shifted from multi-cloud to Sovereign Cloud Mesh. This post explores why senior architects are moving away from centralized regions in favor of localized, high-performance execution environments.",
+    "date": "21 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?decentralized-cloud-mesh-topology",
+    "slug": "beyond-the-hyperscaler-the-rise-of-sovereign-cloud-mesh-in-2026",
+    "isPopular": false,
+    "link": "blog/beyond-the-hyperscaler-the-rise-of-sovereign-cloud-mesh-in-2026.html",
+    "id": 13
+  },
+  {
     "category": "Software Engineering",
     "title": "Beyond the Inference: Why 2026 is the Year of the Formally Verified Codebase",
     "summary": "As the industry reels from the 'Hallucination Debt' accumulated during the 2023-2025 AI-assisted coding boom, senior architects are pivoting back to formal methods. This post explores the rise of deterministic verification and why mathematical proofs are replacing unit tests in high-stakes environments.",
@@ -130,17 +142,5 @@
     "isPopular": false,
     "link": "blog/the-great-re-servering-why-your-10mb-javascript-bundle-is-a-technical-debt-time-bomb.html",
     "id": 8
-  },
-  {
-    "category": "Software Engineering",
-    "title": "The Cloud-Native Mirage: Why Local-First is the Future of Real Engineering",
-    "summary": "We traded user sovereignty and performance for the convenience of centralized clouds, but the era of 'waiting for the spinner' is ending. Discover why the next generation of elite developers is moving the database back to the client.",
-    "date": "16 April 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop&keyword=cyberpunk-workspace",
-    "slug": "the-cloud-native-mirage-why-local-first-is-the-future-of-real-engineering",
-    "isPopular": false,
-    "link": "blog/the-cloud-native-mirage-why-local-first-is-the-future-of-real-engineering.html",
-    "id": 7
   }
 ]
