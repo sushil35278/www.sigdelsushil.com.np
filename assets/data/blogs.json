@@ -1,5 +1,17 @@
 [
   {
+    "category": "Software Engineering",
+    "title": "The Great Determinism Pivot: Why Engineering Leaders are Moving Beyond Raw LLM Inference in 2026",
+    "summary": "As the initial hype of LLM integration fades, senior architects are facing a reliability crisis. This post explores the shift toward Hybrid Inference Architectures—combining probabilistic models with strict formal verification and WASM-based sandboxing.",
+    "date": "22 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?system-architecture-schematic",
+    "slug": "the-great-determinism-pivot-why-engineering-leaders-are-moving-beyond-raw-llm-inference-in-2026",
+    "isPopular": false,
+    "link": "blog/the-great-determinism-pivot-why-engineering-leaders-are-moving-beyond-raw-llm-inference-in-2026.html",
+    "id": 13
+  },
+  {
     "category": "Cloud Architecture",
     "title": "Beyond the Hyperscaler: The Rise of Sovereign Cloud Mesh in 2026",
     "summary": "As global data residency laws tighten and edge latency requirements hit sub-10ms thresholds, the debate has shifted from multi-cloud to Sovereign Cloud Mesh. This post explores why senior architects are moving away from centralized regions in favor of localized, high-performance execution environments.",
@@ -130,17 +142,5 @@
     "isPopular": false,
     "link": "blog/the-death-of-the-native-vs-cross-platform-debate-welcome-to-the-era-of-unified-abstraction.html",
     "id": 9
-  },
-  {
-    "category": "Web Development",
-    "title": "The Great Re-Servering: Why Your 10MB Javascript Bundle is a Technical Debt Time Bomb",
-    "summary": "We spent a decade moving every ounce of logic into the browser, and now we're finally realizing it was a massive mistake. Learn why the industry is sprinting back to the server and why your next massive SPA might be your last.",
-    "date": "16 April 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop&keyword=server",
-    "slug": "the-great-re-servering-why-your-10mb-javascript-bundle-is-a-technical-debt-time-bomb",
-    "isPopular": false,
-    "link": "blog/the-great-re-servering-why-your-10mb-javascript-bundle-is-a-technical-debt-time-bomb.html",
-    "id": 8
   }
 ]
