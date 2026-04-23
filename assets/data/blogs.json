@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cybersecurity",
+    "title": "Beyond Zero Trust: The 2026 Debate on Adaptive Trust and Hyper-Contextual Authorization",
+    "summary": "In 2026, the cybersecurity landscape demands more than static 'Zero Trust' policies. Engineering leaders are now grappling with the complexities and immense potential of Adaptive Trust and Hyper-Contextual Authorization – a paradigm shift requiring continuous, dynamic evaluation of every access request. This post dissects the ongoing debate, the formidable challenges, and why this evolution is critical for safeguarding modern cloud-native architectures.",
+    "date": "23 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?adaptive-trust-cybersecurity-futuristic-network",
+    "slug": "beyond-zero-trust-the-2026-debate-on-adaptive-trust-and-hyper-contextual-authorization",
+    "isPopular": false,
+    "link": "blog/beyond-zero-trust-the-2026-debate-on-adaptive-trust-and-hyper-contextual-authorization.html",
+    "id": 13
+  },
+  {
     "category": "Software Engineering",
     "title": "The Great Determinism Pivot: Why Engineering Leaders are Moving Beyond Raw LLM Inference in 2026",
     "summary": "As the initial hype of LLM integration fades, senior architects are facing a reliability crisis. This post explores the shift toward Hybrid Inference Architectures—combining probabilistic models with strict formal verification and WASM-based sandboxing.",
@@ -130,17 +142,5 @@
     "isPopular": false,
     "link": "blog/the-great-pendulum-swing-why-your-thick-client-spa-is-becoming-a-liability.html",
     "id": 10
-  },
-  {
-    "category": "Mobile Development",
-    "title": "The Death of the 'Native vs. Cross-Platform' Debate: Welcome to the Era of Unified Abstraction",
-    "summary": "For a decade, we've been shackled to the tired argument of Flutter vs. Swift vs. React Native. It's time to stop picking sides and realize that the future of mobile isn't about the framework—it's about the abstraction layer.",
-    "date": "17 April 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop&keyword=architecture",
-    "slug": "the-death-of-the-native-vs-cross-platform-debate-welcome-to-the-era-of-unified-abstraction",
-    "isPopular": false,
-    "link": "blog/the-death-of-the-native-vs-cross-platform-debate-welcome-to-the-era-of-unified-abstraction.html",
-    "id": 9
   }
 ]
