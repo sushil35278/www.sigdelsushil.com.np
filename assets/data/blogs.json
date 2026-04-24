@@ -1,5 +1,17 @@
 [
   {
+    "category": "DevOps & SRE",
+    "title": "Beyond the YAML Horizon: Why Deterministic Intent is Replacing IaC in 2026",
+    "summary": "As we move past the era of brittle Infrastructure-as-Code templates, a new debate is surfacing among SREs: the transition from declarative configuration to Deterministic Intent-Based Infrastructure. This shift promises to solve the multi-cloud drift problem that has plagued the industry for the last decade.",
+    "date": "24 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?abstract-cybernetic-infrastructure-nodes",
+    "slug": "beyond-the-yaml-horizon-why-deterministic-intent-is-replacing-iac-in-2026",
+    "isPopular": false,
+    "link": "blog/beyond-the-yaml-horizon-why-deterministic-intent-is-replacing-iac-in-2026.html",
+    "id": 13
+  },
+  {
     "category": "Cybersecurity",
     "title": "Beyond Zero Trust: The 2026 Debate on Adaptive Trust and Hyper-Contextual Authorization",
     "summary": "In 2026, the cybersecurity landscape demands more than static 'Zero Trust' policies. Engineering leaders are now grappling with the complexities and immense potential of Adaptive Trust and Hyper-Contextual Authorization – a paradigm shift requiring continuous, dynamic evaluation of every access request. This post dissects the ongoing debate, the formidable challenges, and why this evolution is critical for safeguarding modern cloud-native architectures.",
@@ -130,17 +142,5 @@
     "isPopular": false,
     "link": "blog/hydration-is-dead-why-autonomous-orchestrators-are-killing-the-traditional-web-framework-in-2026.html",
     "id": 11
-  },
-  {
-    "category": "Web Development",
-    "title": "The Great Pendulum Swing: Why Your Thick-Client SPA is Becoming a Liability",
-    "summary": "We spent a decade moving every ounce of logic into the browser, only to realize we've created a performance monster. It's time to stop shipping megabytes of JavaScript and reclaim the power of the server.",
-    "date": "18 April 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop&keyword=neon",
-    "slug": "the-great-pendulum-swing-why-your-thick-client-spa-is-becoming-a-liability",
-    "isPopular": false,
-    "link": "blog/the-great-pendulum-swing-why-your-thick-client-spa-is-becoming-a-liability.html",
-    "id": 10
   }
 ]
