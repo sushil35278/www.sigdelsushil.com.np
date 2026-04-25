@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cybersecurity",
+    "title": "Decentralized Identity in 2026: The Enterprise Readiness Debate – From POC to Production?",
+    "summary": "Decentralized Identity (DID) and Self-Sovereign Identity (SSI) promise a revolutionary shift in how we manage digital trust. Yet, despite years of development, their enterprise-wide adoption remains a contentious topic among engineering leaders in 2026. This post delves into the formidable technical and architectural challenges preventing SSI from moving past pilot programs to mainstream production.",
+    "date": "25 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?self-sovereign-identity-futuristic-network",
+    "slug": "decentralized-identity-in-2026-the-enterprise-readiness-debate-from-poc-to-production",
+    "isPopular": false,
+    "link": "blog/decentralized-identity-in-2026-the-enterprise-readiness-debate-from-poc-to-production.html",
+    "id": 13
+  },
+  {
     "category": "DevOps & SRE",
     "title": "Beyond the YAML Horizon: Why Deterministic Intent is Replacing IaC in 2026",
     "summary": "As we move past the era of brittle Infrastructure-as-Code templates, a new debate is surfacing among SREs: the transition from declarative configuration to Deterministic Intent-Based Infrastructure. This shift promises to solve the multi-cloud drift problem that has plagued the industry for the last decade.",
@@ -130,17 +142,5 @@
     "isPopular": false,
     "link": "blog/beyond-the-pixel-why-2026-is-the-year-of-headless-mobile-and-why-your-ui-skills-are-becoming-technical-debt.html",
     "id": 12
-  },
-  {
-    "category": "Web Development",
-    "title": "Hydration is Dead: Why Autonomous Orchestrators are Killing the Traditional Web Framework in 2026",
-    "summary": "The era of shipping massive JavaScript bundles and praying for SEO is over. As we move into 2026, the industry is abandoning the 'React-monolith' for Autonomous Hydration Orchestrators (AHOs) that predict user intent before a single click happens.",
-    "date": "18 April 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/random/1200x800/?futuristic-web-architecture-neon",
-    "slug": "hydration-is-dead-why-autonomous-orchestrators-are-killing-the-traditional-web-framework-in-2026",
-    "isPopular": false,
-    "link": "blog/hydration-is-dead-why-autonomous-orchestrators-are-killing-the-traditional-web-framework-in-2026.html",
-    "id": 11
   }
 ]

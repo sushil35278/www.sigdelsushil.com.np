@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decentralized Identity in 2026: The Enterprise Readiness Debate – From POC to Production? | Sushil Sigdel</title>
+    <meta name="description" content="Decentralized Identity (DID) and Self-Sovereign Identity (SSI) promise a revolutionary shift in how we manage digital trust. Yet, despite years of development, their enterprise-wide adoption remains a contentious topic among engineering leaders in 2026. This post delves into the formidable technical and architectural challenges preventing SSI from moving past pilot programs to mainstream production.">
+    <link rel="canonical" href="https://sigdelsushil.com.np/blog/decentralized-identity-in-2026-the-enterprise-readiness-debate-from-poc-to-production.html">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Sushil Sigdel">
+    <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id=GTM-KHDFS4SM'+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KHDFS4SM');</script>
+  <!-- End Google Tag Manager -->
+
+<!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <style>
+        :root {
+            --primary-accent: #ffc107;
+            --text-dark: #2d3436;
+            --text-gray: #636e72;
+        }
+
+        body {
+            background-color: #fafbfc;
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Reading Progress Bar */
+        #progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            z-index: 10000;
+        }
+
+        #progress-bar {
+            height: 100%;
+            background: linear-gradient(to right, #ffc107, #fa65b1);
+            width: 0%;
+            transition: width 0.1s ease;
+        }
+
+        /* Hero Styling */
+        .blog-hero {
+            position: relative;
+            padding: 120px 0 80px;
+            background-color: #2a2a2a;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+            url('https://source.unsplash.com/featured/1200x800/?self-sovereign-identity-futuristic-network');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            margin-bottom: -40px;
+        }
+
+        .blog-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .category-tag {
+            background: var(--primary-accent);
+            color: white;
+            padding: 6px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .blog-meta-top {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .content-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
+            position: relative;
+            z-index: 5;
+        }
+
+        .featured-img-wrap {
+            margin-bottom: 40px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .featured-img-wrap img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .blog-body {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .blog-body h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--text-dark);
+            font-size: 2rem;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .blog-body pre {
+            background: #0f172a;
+            color: #e2e8f0;
+            padding: 24px;
+            border-radius: 20px;
+            overflow-x: auto;
+            font-family: 'Fira Code', 'JetBrains Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin: 30px 0;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .blog-body code {
+            background: rgba(250, 101, 177, 0.12);
+            color: #111827;
+            padding: 3px 8px;
+            border-radius: 8px;
+            font-family: 'Fira Code', 'JetBrains Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+            font-size: 0.95rem;
+        }
+
+        .blog-body pre code {
+            background: transparent;
+            padding: 0;
+            color: inherit;
+        }
+
+        /* Floating Social Share */
+        .share-buttons {
+            position: fixed;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 100;
+        }
+
+        .share-btn {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+        }
+
+        .share-btn:hover {
+            transform: scale(1.1) translateX(5px);
+            color: white;
+        }
+
+        .share-tw {
+            background: #1DA1F2;
+        }
+
+        .share-li {
+            background: #0077b5;
+        }
+
+        .share-fb {
+            background: #4267B2;
+        }
+
+        /* Sticky Back to Top */
+        #scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--primary-accent);
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s;
+            z-index: 100;
+            border: none;
+        }
+
+        #scroll-top.show {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .footer-action {
+            margin-top: 60px;
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 40px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary-accent);
+            font-weight: 600;
+            text-decoration: none;
+            gap: 10px;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 1200px) {
+            .share-buttons {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .blog-hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .content-container {
+                padding: 30px;
+                border-radius: 0;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHDFS4SM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Reading Progress Bar -->
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
+    <!-- Social Share -->
+    <div class="share-buttons">
+        <a href="javascript:void(0)" class="share-btn share-tw" onclick="share('twitter')"><i
+                class="fab fa-twitter"></i></a>
+        <a href="javascript:void(0)" class="share-btn share-li" onclick="share('linkedin')"><i
+                class="fab fa-linkedin-in"></i></a>
+        <a href="javascript:void(0)" class="share-btn share-fb" onclick="share('facebook')"><i
+                class="fab fa-facebook-f"></i></a>
+    </div>
+
+    <!-- Scroll Top -->
+    <button id="scroll-top"><i class="fa fa-angle-up"></i></button>
+
+    <section class="blog-hero">
+        <div class="container">
+            <span class="category-tag">Cybersecurity</span>
+            <h1>Decentralized Identity in 2026: The Enterprise Readiness Debate – From POC to Production?</h1>
+            <div class="blog-meta-top">
+                By <strong>Sushil Sigdel</strong> | 25 April 2026
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-img-wrap">
+                <img src="https://source.unsplash.com/featured/1200x800/?self-sovereign-identity-futuristic-network" alt="Decentralized Identity in 2026: The Enterprise Readiness Debate – From POC to Production?" onerror="this.src='../assets/images/bloghome.png'">
+            </div>
+
+            <!-- AdSense Ad - In Content -->
+            <div style="text-align: center; margin: 30px 0; padding: 20px; background: #f8f9fa; border-radius: 10px;">
+              <ins class="adsbygoogle" style="display: block" data-ad-client="ca-pub-7936732053264133" data-ad-slot="9876543210" data-ad-format="auto" data-full-width-responsive="true"></ins>
+              <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+
+            <article class="blog-body">
+                <h1>Decentralized Identity in 2026: The Enterprise Readiness Debate – From POC to Production?</h1>
+
+<p>For years, the cybersecurity community has grappled with the inherent vulnerabilities of centralized identity systems. From recurring data breaches impacting millions to the opaque nature of personal data usage, the status quo is clearly unsustainable. Enter Decentralized Identity (DID) and Self-Sovereign Identity (SSI) – concepts that champion individual control over digital credentials, leveraging cryptographic proofs and distributed ledger technologies.</p>
+
+<p>In 2026, while the promise of SSI is still palpable, especially in a world increasingly sensitive to data privacy and sovereignty, its practical, scaled adoption in enterprise environments remains one of the most hotly debated topics among senior developers and engineering leaders. We're past the theoretical 'what if'; the debate is now fiercely focused on 'how' – and 'if' it's truly ready for the demands of the modern, interconnected enterprise.</p>
+
+<h3>The Promise vs. The Production Reality: Why SSI Isn't Ubiquitous (Yet)</h3>
+
+<p>At its core, SSI empowers individuals to manage their digital identifiers and credentials (think a verifiable university degree, a government-issued ID, or an employment record) independently, without relying on a central authority. Verifiable Credentials (VCs), as defined by the W3C, are the data packets allowing this. The vision is compelling: users present cryptographically secured proofs directly to relying parties, cutting out intermediaries and reducing honey pots for attackers.</p>
+
+<p>However, the journey from proof-of-concept to widespread production has been arduous. Despite a reported 300% increase in SSI pilot programs across various sectors since 2023, independent analyses by firms like Gartner indicate that only approximately 7% of Fortune 500 companies have successfully integrated SSI into their production B2B or B2C authentication flows by early 2026. Why the lag?</p>
+
+<p>The primary technical hurdles revolve around interoperability, wallet adoption, and key management. While organizations like the Decentralized Identity Foundation (DIF) and the W3C have made significant strides in standardizing DID methods and VC formats, the ecosystem is still fragmented. Enterprise architects face a bewildering array of choices, each with different underlying DLTs (Distributed Ledger Technologies) and community support. Furthermore, widespread user adoption of secure, intuitive digital wallets capable of managing these credentials remains a critical bottleneck. Imagine onboarding millions of users to a new identity paradigm – the UX challenges alone are immense.</p>
+
+<h3>Navigating the Integration Maze: Architecture and Legacy Systems</h3>
+
+<p>Integrating SSI into existing enterprise architectures is not a trivial task. Most large organizations operate with decades-old legacy identity and access management (IAM) systems. Ripping and replacing these is often economically and operationally unfeasible. The challenge is finding pragmatic integration strategies that allow SSI to augment, rather than entirely replace, established flows.</p>
+
+<p>Consider a major Japanese financial institution, steeped in meticulous KYC (Know Your Customer) regulations. Traditionally, this involves multiple document submissions and stringent verification processes. SSI could streamline this by allowing a user to present a single, privacy-preserving VC from a trusted government agency directly to the bank. However, the bank's backend systems need to be capable of receiving, parsing, and cryptographically verifying this VC, then mapping its claims to internal customer profiles, all while adhering to local data residency laws (like Japan’s Act on the Protection of Personal Information).</p>
+
+<p>Here’s a simplified Pythonic illustration of what a backend service might conceptually do to verify a Verifiable Credential:</p>
+
+<pre><code>
+# Simplified Python example: Verifying a Verifiable Credential (VC) in a backend service
+# This snippet illustrates the conceptual flow, not a production-ready implementation.
+
+# Assume we have libraries for:
+# - DID resolution (e.g., `didkit.resolve_did()`)
+# - VC parsing and signature verification (e.g., `py_vc.verify_vc()`)
+# - Schema validation (e.g., `jsonschema.validate()`)
+
+class VerifiableCredentialVerifier:
+    def verify(self, vc_jwt: str, expected_issuer_did: str, expected_schema_url: str) -> bool:
+        """
+        Verifies a Verifiable Credential (VC) against expected issuer and schema.
+        """
+        try:
+            # 1. Parse the VC (commonly a JWT) to extract header, payload, and signature.
+            vc_payload = parse_vc_jwt(vc_jwt) # Hypothetical function
+            
+            # 2. Validate the VC's claims and structure against the expected schema.
+            validate_vc_schema(vc_payload, expected_schema_url) # Hypothetical function
+
+            # 3. Extract the issuer's Decentralized Identifier (DID) from the VC.
+            actual_issuer_did = vc_payload.get('issuer')
+            if actual_issuer_did != expected_issuer_did:
+                print(f"Error: Issuer DID mismatch. Expected {expected_issuer_did}, got {actual_issuer_did}")
+                return False
+
+            # 4. Resolve the issuer's DID to obtain their public keys.
+            issuer_did_document = did_resolver.resolve(actual_issuer_did) # Hypothetical library call
+            if not issuer_did_document or not issuer_did_document.get('verificationMethod'):
+                print(f"Error: Could not resolve DID Document for {actual_issuer_did} or no verification methods found.")
+                return False
+
+            # 5. Verify the VC's cryptographic signature using the issuer's public key.
+            if not verify_vc_signature(vc_jwt, issuer_did_document): # Hypothetical library call
+                print("Error: VC signature verification failed.")
+                return False
+
+            # 6. (Optional but crucial) Check the revocation status of the VC.
+            if is_vc_revoked(vc_jwt): # Hypothetical function
+                print("Error: VC has been revoked.")
+                return False
+
+            print(f"Verifiable Credential from {actual_issuer_did} successfully verified for schema {expected_schema_url}.")
+            return True
+
+        except Exception as e:
+            print(f"An error occurred during VC verification: {e}")
+            return False
+
+# --- Hypothetical library placeholders for illustration ---
+def parse_vc_jwt(jwt_string: str) -> dict:
+    # In reality, this would decode and parse the JWT header and payload.
+    if "eyJ" in jwt_string: 
+        return {"issuer": "did:example:issuer-bank-jp", "claims": {"name": "Jane Doe"}, "schema": "https://schema.org/FinanceKYC"}
+    raise ValueError("Invalid JWT format")
+
+def validate_vc_schema(payload: dict, schema_url: str) -> None:
+    # In reality, this would use a JSON Schema validator.
+    if payload.get("schema") != schema_url:
+        raise ValueError(f"Schema mismatch. Expected {schema_url}, got {payload.get('schema')}")
+    pass
+
+class MockDIDResolver:
+    def resolve(self, did_url: str) -> dict:
+        if did_url == "did:example:issuer-bank-jp":
+            return {"id": did_url, "verificationMethod": [{
+                "id": "#key-1", "type": "Ed25519VerificationKey2020", "publicKeyJwk": {"crv": "Ed25519", "x": "..."}}]}
+        return {}
+
+def verify_vc_signature(vc_jwt: str, issuer_did_document: dict) -> bool:
+    # In reality, this uses the public key from issuer_did_document to verify signature.
+    return True
+
+def is_vc_revoked(vc_jwt: str) -> bool:
+    # In reality, this would query a revocation registry.
+    return False
+
+# --- Usage Example ---
+did_resolver = MockDIDResolver()
+verifier = VerifiableCredentialVerifier()
+
+# Example VC (simplified placeholder for a real signed JWT)
+example_finance_vc_jwt = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3N1ZXIiOiJkaWQ6ZXhhbXBsZTppc3N1ZXItYmFuay1qcCIsImNsYWltcyI6eyJuYW1lIjoiSmFuZSBEb2UiLCJhZ2UiOjMyLCJjb3VudHJ5IjoiSlAiLCJraXJpUmVnaXN0cmF0aW9uIjoiMTIzNDUifSwic2NoZW1hIjoiaHR0cHM6Ly9zY2hlbWEub3JnL0ZpbmFuY2VLWUMifQ.SignaturePlaceholder"
+
+print("--- Verifying Japanese KYC Credential ---")
+is_valid_finance = verifier.verify(
+    vc_jwt=example_finance_vc_jwt,
+    expected_issuer_did="did:example:issuer-bank-jp",
+    expected_schema_url="https://schema.org/FinanceKYC"
+)
+print(f"Japanese KYC Credential Valid: {is_valid_finance}\n")
+</code></pre>
+
+<p>This code snippet barely scratches the surface. Real-world implementation involves managing cryptographic keys securely, handling diverse DID methods, integrating with enterprise service buses, and ensuring compliance with complex authorization policies. For instance, in a Nepalese context, imagine using VCs for provenance in the agricultural supply chain. A local farmer issues a VC for their organic produce, which is verified by distributors and retailers. The technical setup must be robust enough to function reliably even with inconsistent internet infrastructure, a common challenge in remote regions.</p>
+
+<h3>The Security & Compliance Paradox: New Attack Vectors and Regulatory Gaps</h3>
+
+<p>While SSI significantly reduces the risk of large-scale data breaches by fragmenting identity data, it introduces its own set of security considerations. Wallet compromise becomes paramount: if a user's digital wallet (containing their private keys and VCs) is compromised, an attacker gains control over their digital identity. This shifts the attack surface from centralized databases to individual endpoints, requiring robust end-user security practices and secure hardware elements.</p>
+
+<p>Furthermore, the decentralized nature poses interesting challenges for compliance. Regulations like GDPR (especially with potential 'GDPR 2.0' amendments expected by 2027 focusing on data portability and deletion) emphasize the 'right to be forgotten.' While SSI technically gives users more control, the immutable nature of some underlying DLTs complicates the complete erasure of linked metadata or transaction records, creating a paradox. How do you 'forget' something designed for verifiable persistence?</p>
+
+<p>Another angle is data sovereignty. For a company operating globally, say with branches in Japan and Nepal, ensuring that identity data processed via SSI aligns with the local jurisdictional requirements is critical. While SSI *can* be designed to store minimal data locally, the global resolution of DIDs and potential cross-border credential exchange requires careful legal and architectural consideration to avoid inadvertently violating data localization laws.</p>
+
+<h3>Pro Tips for Engineering Leaders in 2026</h3>
+
+<ol>
+    <li><strong>Start Small, Focus on Specific Use Cases:</strong> Don't attempt a 'big bang' migration. Identify niche, high-value areas where SSI clearly solves a persistent pain point, such as specific B2B partner onboarding or internal employee credentialing.</li>
+    <li><strong>Prioritize Open Standards & Interoperability:</strong> Lean heavily on W3C DID, Verifiable Credentials, and DIF standards. This future-proofs your investments and enables participation in a broader ecosystem.</li>
+    <li><strong>Invest in Developer Education & Tooling:</strong> The SSI paradigm requires new skill sets. Equip your teams with the knowledge and access to robust SDKs and developer tools to build and integrate securely.</li>
+    <li><strong>Pilot with a Hybrid Approach:</strong> Explore architectures that integrate SSI alongside existing IAM systems, using SSI for specific, verifiable claims while maintaining legacy systems for broader access control. This reduces risk and allows gradual adoption.</li>
+</ol>
+
+<h3>Future Predictions</h3>
+
+<p>By the end of the decade, I anticipate significant shifts. We'll likely see a consolidation of DID methods, with a few dominant, highly interoperable standards emerging. Governments, particularly in Europe and parts of Asia, will likely throw their weight behind national e-ID schemes based on SSI principles, driving mass adoption and standardizing wallet interfaces. The market for 'Decentralized Security Service Providers' will mature, offering enterprise-grade tools for key management, revocation services, and compliance auditing tailored for SSI environments. I also predict that global regulatory bodies will adapt, issuing clearer guidelines on how 'right to be forgotten' and data sovereignty apply within decentralized identity frameworks, alleviating some current legal ambiguities.</p>
+
+<h3>Conclusion</h3>
+
+<p>The debate around Decentralized Identity in 2026 isn't about its potential; that's largely acknowledged. It's about the pragmatic path to realizing that potential within the complex, regulated, and often constrained reality of enterprise engineering. It demands careful architectural planning, a deep understanding of cryptographic primitives, and a commitment to open standards. While the journey is challenging, the long-term benefits of enhanced security, user privacy, and operational efficiency make it a debate worth engaging deeply with.</p>
+
+<p>What are your thoughts? Are you seeing SSI making significant inroads in your organization? Share your experiences and predictions in the comments below.</p>
+            </article>
+
+            <!-- Related Posts Section -->
+            <div style="margin-top: 60px; padding-top: 40px; border-top: 2px solid #eee;">
+              <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 30px;">Related Articles</h3>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                <a href="../index.html#blog" style="background: #f8f9fa; padding: 20px; border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.3s;" onmouseover="this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'">
+                  <h4 style="color: var(--primary-accent); margin-bottom: 10px;">→ View All Articles</h4>
+                  <p style="font-size: 0.9rem; opacity: 0.8;">Explore more insights on tech, AI, and development</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="footer-action">
+                <a href="../#blog" class="back-link">
+                    <i class="fa fa-arrow-left"></i> Back to All Stories
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script>
+        // Reading Progress Bar
+        window.onscroll = function () {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (height > 0) ? (winScroll / height) * 100 : 0;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+
+            // Scroll to Top visibility
+            const scrollTop = document.getElementById("scroll-top");
+            if (winScroll > 300) {
+                scrollTop.classList.add("show");
+            } else {
+                scrollTop.classList.remove("show");
+            }
+        };
+
+        // Scroll to Top Action
+        document.getElementById("scroll-top").addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Social Share Function
+        function share(platform) {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent(document.title);
+            let shareUrl = '';
+
+            switch (platform) {
+                case 'twitter':
+                    shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${title}`;
+                    break;
+                case 'linkedin':
+                    shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+                    break;
+                case 'facebook':
+                    shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+                    break;
+            }
+
+            if (shareUrl) {
+                window.open(shareUrl, '_blank', 'width=600,height=400');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
