@@ -1,5 +1,17 @@
 [
   {
+    "category": "Web Development",
+    "title": "The 2026 Pivot: Why Senior Architects are Moving from 'Cloud-First' to 'Deterministic Local-First' Architectures",
+    "summary": "In 2026, the industry is witnessing a massive migration away from centralized state management. This post explores how Zero Data Transit (ZDT) and deterministic local-first patterns are solving the latency and compliance challenges that cloud-only models can't touch.",
+    "date": "26 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?decentralized-data-mesh-web",
+    "slug": "the-2026-pivot-why-senior-architects-are-moving-from-cloud-first-to-deterministic-local-first-architectures",
+    "isPopular": false,
+    "link": "blog/the-2026-pivot-why-senior-architects-are-moving-from-cloud-first-to-deterministic-local-first-architectures.html",
+    "id": 13
+  },
+  {
     "category": "Cybersecurity",
     "title": "Decentralized Identity in 2026: The Enterprise Readiness Debate – From POC to Production?",
     "summary": "Decentralized Identity (DID) and Self-Sovereign Identity (SSI) promise a revolutionary shift in how we manage digital trust. Yet, despite years of development, their enterprise-wide adoption remains a contentious topic among engineering leaders in 2026. This post delves into the formidable technical and architectural challenges preventing SSI from moving past pilot programs to mainstream production.",
@@ -130,17 +142,5 @@
     "isPopular": false,
     "link": "blog/edge-ai-is-not-what-you-think-the-real-future-of-hyper-personalization-in-mobile-apps-2026-edition.html",
     "id": 13
-  },
-  {
-    "category": "Mobile Development",
-    "title": "Beyond the Pixel: Why 2026 is the Year of 'Headless' Mobile and Why Your UI Skills are Becoming Technical Debt",
-    "summary": "The era of the 'app-as-a-silo' is dead. As we move into 2026, the industry is pivoting toward Local-First Model Context Protocols (MCP) where the OS orchestrates functionality, rendering the traditional GUI an optional legacy feature.",
-    "date": "18 April 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?futuristic-headless-smartphone-interface-hologram",
-    "slug": "beyond-the-pixel-why-2026-is-the-year-of-headless-mobile-and-why-your-ui-skills-are-becoming-technical-debt",
-    "isPopular": false,
-    "link": "blog/beyond-the-pixel-why-2026-is-the-year-of-headless-mobile-and-why-your-ui-skills-are-becoming-technical-debt.html",
-    "id": 12
   }
 ]
