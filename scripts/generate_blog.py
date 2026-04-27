@@ -187,7 +187,7 @@ def update_blogs_json(new_blog):
 
     json_entry["id"] = len(blogs) + 1
     blogs.insert(0, json_entry)
-    blogs = blogs[:12]
+    blogs = blogs[:100] # Increased limit to show more blogs
     with open(BLOGS_FILE, 'w', encoding='utf-8') as f:
         json.dump(blogs, f, indent=2, ensure_ascii=False)
 
@@ -201,10 +201,31 @@ def update_sitemap(blog_data):
     except Exception as e:
         print(f"Error updating sitemap: {e}")
 
+def update_noscript(blog_data):
+    try:
+        index_files = ["index.html", "index-ja.html"]
+        new_link = f'                <li><a href="{blog_data["link"]}">{blog_data["title"]}</a></li>'
+        
+        for index_file in index_files:
+            if not os.path.exists(index_file): continue
+            with open(index_file, 'r', encoding='utf-8') as f:
+                content = f.read()
+            
+            # Insert the new link at the top of the <ul> inside <noscript>
+            pattern = r'(<noscript>[\s\n]*<div class="col-lg-12">[\s\n]*<ul>)'
+            if re.search(pattern, content):
+                content = re.sub(pattern, rf'\1\n{new_link}', content)
+                with open(index_file, 'w', encoding='utf-8') as f:
+                    f.write(content)
+        print("Noscript sections updated.")
+    except Exception as e:
+        print(f"Error updating noscript: {e}")
+
 if __name__ == "__main__":
     new_post = generate_blog_content()
     if new_post:
         if create_static_page(new_post):
             update_blogs_json(new_post)
             update_sitemap(new_post)
+            update_noscript(new_post)
             print("--- SUCCESS ---")

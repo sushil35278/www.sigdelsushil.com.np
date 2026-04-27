@@ -9,7 +9,7 @@
     "slug": "from-zero-trust-to-deterministic-identity-the-2026-security-shift-every-architect-needs-to-lead",
     "isPopular": false,
     "link": "blog/from-zero-trust-to-deterministic-identity-the-2026-security-shift-every-architect-needs-to-lead.html",
-    "id": 13
+    "id": 21
   },
   {
     "category": "Web Development",
@@ -21,7 +21,7 @@
     "slug": "the-2026-pivot-why-senior-architects-are-moving-from-cloud-first-to-deterministic-local-first-architectures",
     "isPopular": false,
     "link": "blog/the-2026-pivot-why-senior-architects-are-moving-from-cloud-first-to-deterministic-local-first-architectures.html",
-    "id": 13
+    "id": 20
   },
   {
     "category": "Cybersecurity",
@@ -33,7 +33,7 @@
     "slug": "decentralized-identity-in-2026-the-enterprise-readiness-debate-from-poc-to-production",
     "isPopular": false,
     "link": "blog/decentralized-identity-in-2026-the-enterprise-readiness-debate-from-poc-to-production.html",
-    "id": 13
+    "id": 19
   },
   {
     "category": "DevOps & SRE",
@@ -45,7 +45,7 @@
     "slug": "beyond-the-yaml-horizon-why-deterministic-intent-is-replacing-iac-in-2026",
     "isPopular": false,
     "link": "blog/beyond-the-yaml-horizon-why-deterministic-intent-is-replacing-iac-in-2026.html",
-    "id": 13
+    "id": 18
   },
   {
     "category": "Cybersecurity",
@@ -57,7 +57,19 @@
     "slug": "beyond-zero-trust-the-2026-debate-on-adaptive-trust-and-hyper-contextual-authorization",
     "isPopular": false,
     "link": "blog/beyond-zero-trust-the-2026-debate-on-adaptive-trust-and-hyper-contextual-authorization.html",
-    "id": 13
+    "id": 17
+  },
+  {
+    "category": "AI, Cloud Computing, DevOps",
+    "title": "Cost Optimization: Running AI Models on Edge vs Cloud",
+    "summary": "A comprehensive comparison of edge computing and cloud deployment for AI models. Learn about architecture, costs, latency tradeoffs, and real-world case studies to choose the right approach for your enterprise.",
+    "date": "April 22, 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop",
+    "slug": "cost-optimization-ai-models-edge-vs-cloud",
+    "isPopular": false,
+    "link": "blog/cost-optimization-ai-models-edge-vs-cloud.html",
+    "id": 16
   },
   {
     "category": "Software Engineering",
@@ -69,7 +81,7 @@
     "slug": "the-great-determinism-pivot-why-engineering-leaders-are-moving-beyond-raw-llm-inference-in-2026",
     "isPopular": false,
     "link": "blog/the-great-determinism-pivot-why-engineering-leaders-are-moving-beyond-raw-llm-inference-in-2026.html",
-    "id": 13
+    "id": 15
   },
   {
     "category": "Cloud Architecture",
@@ -81,7 +93,7 @@
     "slug": "beyond-the-hyperscaler-the-rise-of-sovereign-cloud-mesh-in-2026",
     "isPopular": false,
     "link": "blog/beyond-the-hyperscaler-the-rise-of-sovereign-cloud-mesh-in-2026.html",
-    "id": 13
+    "id": 14
   },
   {
     "category": "Software Engineering",
@@ -93,54 +105,150 @@
     "slug": "beyond-the-inference-why-2026-is-the-year-of-the-formally-verified-codebase",
     "isPopular": false,
     "link": "blog/beyond-the-inference-why-2026-is-the-year-of-the-formally-verified-codebase.html",
-    "id": 18
+    "id": 13
   },
   {
-    "category": "AI, Cloud Computing, DevOps",
-    "title": "Cost Optimization: Running AI Models on Edge vs Cloud",
-    "summary": "A comprehensive comparison of edge computing and cloud deployment for AI models. Learn about architecture, costs, latency tradeoffs, and real-world case studies to choose the right approach for your enterprise.",
-    "date": "22 April 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop",
-    "slug": "cost-optimization-ai-models-edge-vs-cloud",
-    "isPopular": true,
-    "link": "blog/cost-optimization-ai-models-edge-vs-cloud.html",
-    "id": 17
-  },
-  {
-    "category": "WebAssembly, Architecture, Performance",
-    "title": "Building Microservices with WebAssembly: Performance Benchmarks",
-    "summary": "Benchmark WebAssembly microservices against traditional Docker containers. Discover 3-10x performance improvements and significantly lower resource consumption in production environments.",
+    "category": "Mobile Development",
+    "title": "Edge AI is NOT What You Think: The REAL Future of Hyper-Personalization in Mobile Apps (2026 Edition)",
+    "summary": "Forget the 'cloud-first' dogma for mobile AI. In 2026, the real battle for user attention and deep engagement is happening at the very edge – on our devices. I'm here to tell you why most companies are still getting personalization wrong, and how on-device intelligence is not just a privacy play, but the undisputed champion for truly magical user experiences.",
     "date": "19 April 2026",
     "author": "Sushil Sigdel",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=500&fit=crop",
-    "slug": "microservices-webassembly-performance-benchmarks",
-    "isPopular": true,
-    "link": "blog/microservices-webassembly-performance-benchmarks.html",
-    "id": 16
+    "image": "https://source.unsplash.com/featured/1200x800/?edge-ai-mobile-device-futuristic",
+    "slug": "edge-ai-is-not-what-you-think-the-real-future-of-hyper-personalization-in-mobile-apps-2026-edition",
+    "isPopular": false,
+    "link": "blog/edge-ai-is-not-what-you-think-the-real-future-of-hyper-personalization-in-mobile-apps-2026-edition.html",
+    "id": 12
   },
   {
     "category": "Security, DevOps, Enterprise",
     "title": "Zero Trust Security: ROI for Remote Teams",
     "summary": "Discover how Zero Trust Security Architecture reduces breach risk by 70% and improves remote team productivity. Real ROI calculations and implementation roadmap for enterprises.",
-    "date": "19 April 2026",
+    "date": "April 19, 2026",
     "author": "Sushil Sigdel",
     "image": "https://images.unsplash.com/photo-1563986768609-322c8b8c08b9?w=800&h=500&fit=crop",
     "slug": "zero-trust-security-roi-remote-teams",
-    "isPopular": true,
+    "isPopular": false,
     "link": "blog/zero-trust-security-roi-remote-teams.html",
-    "id": 15
+    "id": 11
   },
   {
     "category": "DevOps, Kubernetes, FinOps",
     "title": "Kubernetes Cost Management: Real-World Case Studies",
     "summary": "Learn proven strategies for reducing Kubernetes costs through real-world case studies. Discover cost optimization techniques, FinOps practices, and save up to 60% on cloud infrastructure.",
-    "date": "19 April 2026",
+    "date": "April 19, 2026",
     "author": "Sushil Sigdel",
     "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=500&fit=crop",
     "slug": "kubernetes-cost-management-case-studies",
-    "isPopular": true,
+    "isPopular": false,
     "link": "blog/kubernetes-cost-management-case-studies.html",
-    "id": 14
+    "id": 10
+  },
+  {
+    "category": "WebAssembly, Architecture, Performance",
+    "title": "Building Microservices with WebAssembly: Performance Benchmarks",
+    "summary": "Benchmark WebAssembly microservices against traditional Docker containers. Discover 3-10x performance improvements and significantly lower resource consumption in production environments.",
+    "date": "April 19, 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=500&fit=crop",
+    "slug": "microservices-webassembly-performance-benchmarks",
+    "isPopular": false,
+    "link": "blog/microservices-webassembly-performance-benchmarks.html",
+    "id": 9
+  },
+  {
+    "category": "Web Development",
+    "title": "Hydration is Dead: Why Autonomous Orchestrators are Killing the Traditional Web Framework in 2026",
+    "summary": "The era of shipping massive JavaScript bundles and praying for SEO is over. As we move into 2026, the industry is abandoning the 'React-monolith' for Autonomous Hydration Orchestrators (AHOs) that predict user intent before a single click happens.",
+    "date": "18 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/random/1200x800/?futuristic-web-architecture-neon",
+    "slug": "hydration-is-dead-why-autonomous-orchestrators-are-killing-the-traditional-web-framework-in-2026",
+    "isPopular": false,
+    "link": "blog/hydration-is-dead-why-autonomous-orchestrators-are-killing-the-traditional-web-framework-in-2026.html",
+    "id": 8
+  },
+  {
+    "category": "Web Development",
+    "title": "The Great Pendulum Swing: Why Your Thick-Client SPA is Becoming a Liability",
+    "summary": "We spent a decade moving every ounce of logic into the browser, only to realize we’ve created a performance monster. It’s time to stop shipping megabytes of JavaScript and reclaim the power of the server.",
+    "date": "18 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop&keyword=neon",
+    "slug": "the-great-pendulum-swing-why-your-thick-client-spa-is-becoming-a-liability",
+    "isPopular": false,
+    "link": "blog/the-great-pendulum-swing-why-your-thick-client-spa-is-becoming-a-liability.html",
+    "id": 7
+  },
+  {
+    "category": "Mobile Development",
+    "title": "Beyond the Pixel: Why 2026 is the Year of 'Headless' Mobile and Why Your UI Skills are Becoming Technical Debt",
+    "summary": "The era of the 'app-as-a-silo' is dead. As we move into 2026, the industry is pivoting toward Local-First Model Context Protocols (MCP) where the OS orchestrates functionality, rendering the traditional GUI an optional legacy feature.",
+    "date": "18 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?futuristic-headless-smartphone-interface-hologram",
+    "slug": "beyond-the-pixel-why-2026-is-the-year-of-headless-mobile-and-why-your-ui-skills-are-becoming-technical-debt",
+    "isPopular": false,
+    "link": "blog/beyond-the-pixel-why-2026-is-the-year-of-headless-mobile-and-why-your-ui-skills-are-becoming-technical-debt.html",
+    "id": 6
+  },
+  {
+    "category": "Mobile Development",
+    "title": "The Death of the 'Native vs. Cross-Platform' Debate: Welcome to the Era of Unified Abstraction",
+    "summary": "For a decade, we’ve been shackled to the tired argument of Flutter vs. Swift vs. React Native. It’s time to stop picking sides and realize that the future of mobile isn't about the framework—it's about the abstraction layer.",
+    "date": "17 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop&keyword=architecture",
+    "slug": "the-death-of-the-native-vs-cross-platform-debate-welcome-to-the-era-of-unified-abstraction",
+    "isPopular": false,
+    "link": "blog/the-death-of-the-native-vs-cross-platform-debate-welcome-to-the-era-of-unified-abstraction.html",
+    "id": 5
+  },
+  {
+    "category": "Software Engineering",
+    "title": "The Cloud-Native Mirage: Why Local-First is the Future of Real Engineering",
+    "summary": "We traded user sovereignty and performance for the convenience of centralized clouds, but the era of 'waiting for the spinner' is ending. Discover why the next generation of elite developers is moving the database back to the client.",
+    "date": "16 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop&keyword=cyberpunk-workspace",
+    "slug": "the-cloud-native-mirage-why-local-first-is-the-future-of-real-engineering",
+    "isPopular": false,
+    "link": "blog/the-cloud-native-mirage-why-local-first-is-the-future-of-real-engineering.html",
+    "id": 4
+  },
+  {
+    "category": "Web Development",
+    "title": "The Death of the Loading Spinner: Why Local-First is the Only Architecture That Matters",
+    "summary": "The era of 'waiting for the spinner' is over. Local-first architecture isn't just a trend—it's the inevitable future of responsive, privacy-focused software. Learn why your next app should work offline by default.",
+    "date": "16 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop&keyword=synchronization",
+    "slug": "the-death-of-the-loading-spinner-why-local-first-is-the-only-architecture-that-matters",
+    "isPopular": false,
+    "link": "blog/the-death-of-the-loading-spinner-why-local-first-is-the-only-architecture-that-matters.html",
+    "id": 3
+  },
+  {
+    "category": "Web Development",
+    "title": "The Great Re-Servering: Why Your 10MB Javascript Bundle is a Technical Debt Time Bomb",
+    "summary": "We spent a decade moving every ounce of logic into the browser, and now we're finally realizing it was a massive mistake. Learn why the industry is sprinting back to the server and why your next massive SPA might be your last.",
+    "date": "16 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop&keyword=server",
+    "slug": "the-great-re-servering-why-your-10mb-javascript-bundle-is-a-technical-debt-time-bomb",
+    "isPopular": false,
+    "link": "blog/the-great-re-servering-why-your-10mb-javascript-bundle-is-a-technical-debt-time-bomb.html",
+    "id": 2
+  },
+  {
+    "category": "Cybersecurity",
+    "title": "The Great Firewall is Dead: Why Identity is the Only Perimeter That Matters",
+    "summary": "The traditional network perimeter is crumbling under the weight of cloud migration and remote work. As zero-trust architecture becomes mandatory, identity emerges as the new security boundary. This post examines why authentication and authorization are now the most critical components of enterprise security.",
+    "date": "16 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?neon-grid,dark,tech",
+    "slug": "the-great-firewall-is-dead-why-identity-is-the-only-perimeter-that-matters",
+    "isPopular": false,
+    "link": "blog/the-great-firewall-is-dead-why-identity-is-the-only-perimeter-that-matters.html",
+    "id": 1
   }
 ]
