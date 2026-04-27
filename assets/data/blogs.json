@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cybersecurity",
+    "title": "From Zero Trust to Deterministic Identity: The 2026 Security Shift Every Architect Needs to Lead",
+    "summary": "As bearer tokens lose their efficacy against automated session hijacking, engineering leaders are pivoting toward hardware-bound identity and eBPF-driven enforcement. This post explores why 2026 marks the end of identity-as-a-string and the rise of kernel-level attestation.",
+    "date": "27 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?secure-kernel-abstraction",
+    "slug": "from-zero-trust-to-deterministic-identity-the-2026-security-shift-every-architect-needs-to-lead",
+    "isPopular": false,
+    "link": "blog/from-zero-trust-to-deterministic-identity-the-2026-security-shift-every-architect-needs-to-lead.html",
+    "id": 13
+  },
+  {
     "category": "Web Development",
     "title": "The 2026 Pivot: Why Senior Architects are Moving from 'Cloud-First' to 'Deterministic Local-First' Architectures",
     "summary": "In 2026, the industry is witnessing a massive migration away from centralized state management. This post explores how Zero Data Transit (ZDT) and deterministic local-first patterns are solving the latency and compliance challenges that cloud-only models can't touch.",
@@ -130,17 +142,5 @@
     "isPopular": true,
     "link": "blog/kubernetes-cost-management-case-studies.html",
     "id": 14
-  },
-  {
-    "category": "Mobile Development",
-    "title": "Edge AI is NOT What You Think: The REAL Future of Hyper-Personalization in Mobile Apps (2026 Edition)",
-    "summary": "Forget the 'cloud-first' dogma for mobile AI. In 2026, the real battle for user attention and deep engagement is happening at the very edge – on our devices. I'm here to tell you why most companies are still getting personalization wrong, and how on-device intelligence is not just a privacy play, but the undisputed champion for truly magical user experiences.",
-    "date": "19 April 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?edge-ai-mobile-device-futuristic",
-    "slug": "edge-ai-is-not-what-you-think-the-real-future-of-hyper-personalization-in-mobile-apps-2026-edition",
-    "isPopular": false,
-    "link": "blog/edge-ai-is-not-what-you-think-the-real-future-of-hyper-personalization-in-mobile-apps-2026-edition.html",
-    "id": 13
   }
 ]
