@@ -1,6 +1,18 @@
 [
   {
     "category": "Cybersecurity",
+    "title": "The End of Persistent Secrets: Transitioning to Attestation-Based Security in 2026",
+    "summary": "Static credentials remain the primary vector for 82% of modern enterprise breaches. This deep dive explores why senior architects in 2026 are moving toward hardware-backed cryptographic attestation and ephemeral workload identities to eliminate lateral movement risks.",
+    "date": "28 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?cryptographic-attestation-security",
+    "slug": "the-end-of-persistent-secrets-transitioning-to-attestation-based-security-in-2026",
+    "isPopular": false,
+    "link": "blog/the-end-of-persistent-secrets-transitioning-to-attestation-based-security-in-2026.html",
+    "id": 22
+  },
+  {
+    "category": "Cybersecurity",
     "title": "From Zero Trust to Deterministic Identity: The 2026 Security Shift Every Architect Needs to Lead",
     "summary": "As bearer tokens lose their efficacy against automated session hijacking, engineering leaders are pivoting toward hardware-bound identity and eBPF-driven enforcement. This post explores why 2026 marks the end of identity-as-a-string and the rise of kernel-level attestation.",
     "date": "27 April 2026",
