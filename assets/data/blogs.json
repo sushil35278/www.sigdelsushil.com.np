@@ -1,5 +1,17 @@
 [
   {
+    "category": "Distributed Systems",
+    "title": "The Death of Centralized Consensus: Why We’re Abandoning Global Raft for Deterministic Localism in 2026",
+    "summary": "As we move into 2026, the industry is shifting away from traditional global consensus protocols. This post explores the transition toward deterministic local state machines and why 'Edge-State' is the new battleground for distributed systems architects.",
+    "date": "29 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-computing-network-topology",
+    "slug": "the-death-of-centralized-consensus-why-were-abandoning-global-raft-for-deterministic-localism-in-2026",
+    "isPopular": false,
+    "link": "blog/the-death-of-centralized-consensus-why-were-abandoning-global-raft-for-deterministic-localism-in-2026.html",
+    "id": 23
+  },
+  {
     "category": "Cybersecurity",
     "title": "The End of Persistent Secrets: Transitioning to Attestation-Based Security in 2026",
     "summary": "Static credentials remain the primary vector for 82% of modern enterprise breaches. This deep dive explores why senior architects in 2026 are moving toward hardware-backed cryptographic attestation and ephemeral workload identities to eliminate lateral movement risks.",
