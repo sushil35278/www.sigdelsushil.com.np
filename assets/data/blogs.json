@@ -1,6 +1,18 @@
 [
   {
     "category": "Distributed Systems",
+    "title": "Beyond the Cloud: Why Local-First Persistence is Redefining Distributed Systems in 2026",
+    "summary": "As global latency hits physical limits, the 2026 engineering debate has shifted from centralized clouds to local-first state management. Explore how CRDTs and sovereign data zones are replacing the traditional request-response model to solve the physics of distance.",
+    "date": "30 April 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-computing-mesh-network",
+    "slug": "beyond-the-cloud-why-local-first-persistence-is-redefining-distributed-systems-in-2026",
+    "isPopular": false,
+    "link": "blog/beyond-the-cloud-why-local-first-persistence-is-redefining-distributed-systems-in-2026.html",
+    "id": 24
+  },
+  {
+    "category": "Distributed Systems",
     "title": "The Death of Centralized Consensus: Why We’re Abandoning Global Raft for Deterministic Localism in 2026",
     "summary": "As we move into 2026, the industry is shifting away from traditional global consensus protocols. This post explores the transition toward deterministic local state machines and why 'Edge-State' is the new battleground for distributed systems architects.",
     "date": "29 April 2026",
