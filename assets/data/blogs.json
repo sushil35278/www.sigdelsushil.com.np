@@ -1,6 +1,18 @@
 [
   {
     "category": "Distributed Systems",
+    "title": "Beyond the Cloud: The Architect’s Guide to Local-First Distributed Systems in 2026",
+    "summary": "In 2026, the industry is moving away from centralized cloud-native models toward local-first architectures. This shift prioritizes deterministic state replication over synchronous RPC, fundamentally changing how we build resilient global applications.",
+    "date": "01 May 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-mesh-network-tokyo",
+    "slug": "beyond-the-cloud-the-architects-guide-to-local-first-distributed-systems-in-2026",
+    "isPopular": false,
+    "link": "blog/beyond-the-cloud-the-architects-guide-to-local-first-distributed-systems-in-2026.html",
+    "id": 25
+  },
+  {
+    "category": "Distributed Systems",
     "title": "Beyond the Cloud: Why Local-First Persistence is Redefining Distributed Systems in 2026",
     "summary": "As global latency hits physical limits, the 2026 engineering debate has shifted from centralized clouds to local-first state management. Explore how CRDTs and sovereign data zones are replacing the traditional request-response model to solve the physics of distance.",
     "date": "30 April 2026",
