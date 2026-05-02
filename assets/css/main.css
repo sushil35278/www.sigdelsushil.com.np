@@ -2904,7 +2904,9 @@ body.matrix-mode form#contact-form {
 }
 
 .pagination-list {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style: none;
   padding: 0;
   margin: 0;
