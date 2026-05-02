@@ -1,5 +1,17 @@
 [
   {
+    "category": "DevOps & SRE",
+    "title": "The Death of Staging: Why Engineering Leaders in 2026 are Pivoting to Ephemeral Production Shards",
+    "summary": "Maintaining staging environments has become a multi-million dollar liability for distributed systems. This post explores the transition toward traffic shadowing and Wasm-based sidecars as the new standard for reliability engineering.",
+    "date": "02 May 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-system-server-topology",
+    "slug": "the-death-of-staging-why-engineering-leaders-in-2026-are-pivoting-to-ephemeral-production-shards",
+    "isPopular": false,
+    "link": "blog/the-death-of-staging-why-engineering-leaders-in-2026-are-pivoting-to-ephemeral-production-shards.html",
+    "id": 26
+  },
+  {
     "category": "Distributed Systems",
     "title": "Beyond the Cloud: The Architect’s Guide to Local-First Distributed Systems in 2026",
     "summary": "In 2026, the industry is moving away from centralized cloud-native models toward local-first architectures. This shift prioritizes deterministic state replication over synchronous RPC, fundamentally changing how we build resilient global applications.",
