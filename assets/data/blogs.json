@@ -1,5 +1,17 @@
 [
   {
+    "category": "AI & Machine Learning",
+    "title": "Beyond the Vector: Why the 2026 Architecture Shift Favors Deterministic Logic Graphs",
+    "summary": "As vector databases hit their architectural ceiling, senior leaders are pivoting toward Logic-Graph hybrids to solve the hallucination and observability crisis in enterprise AI. This post explores why semantic similarity is no longer enough for high-stakes production systems.",
+    "date": "03 May 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?knowledge-graph-visualization-complex",
+    "slug": "beyond-the-vector-why-the-2026-architecture-shift-favors-deterministic-logic-graphs",
+    "isPopular": false,
+    "link": "blog/beyond-the-vector-why-the-2026-architecture-shift-favors-deterministic-logic-graphs.html",
+    "id": 27
+  },
+  {
     "category": "DevOps & SRE",
     "title": "The Death of Staging: Why Engineering Leaders in 2026 are Pivoting to Ephemeral Production Shards",
     "summary": "Maintaining staging environments has become a multi-million dollar liability for distributed systems. This post explores the transition toward traffic shadowing and Wasm-based sidecars as the new standard for reliability engineering.",
