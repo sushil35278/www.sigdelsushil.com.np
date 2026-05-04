@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "Beyond us-east-1: The Rise of Sovereign Cloud Repatriation in 2026",
+    "summary": "As global hyperscalers face regulatory and geopolitical friction, engineering leaders in 2026 are shifting toward 'Sovereign-by-Design' architectures. This post explores how regional hubs like Tokyo and Kathmandu are pioneering localized, high-performance infrastructure through Kubernetes and eBPF.",
+    "date": "04 May 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?sovereign-cloud-server-landscape",
+    "slug": "beyond-us-east-1-the-rise-of-sovereign-cloud-repatriation-in-2026",
+    "isPopular": false,
+    "link": "blog/beyond-us-east-1-the-rise-of-sovereign-cloud-repatriation-in-2026.html",
+    "id": 28
+  },
+  {
     "category": "AI & Machine Learning",
     "title": "Beyond the Vector: Why the 2026 Architecture Shift Favors Deterministic Logic Graphs",
     "summary": "As vector databases hit their architectural ceiling, senior leaders are pivoting toward Logic-Graph hybrids to solve the hallucination and observability crisis in enterprise AI. This post explores why semantic similarity is no longer enough for high-stakes production systems.",
