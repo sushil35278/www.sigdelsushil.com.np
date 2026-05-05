@@ -1,6 +1,18 @@
 [
   {
     "category": "Cloud Architecture",
+    "title": "Beyond the Mega-Region: The Rise of Deterministic Data Sharding in 2026",
+    "summary": "As global data sovereignty laws fragment the traditional cloud model, senior architects are moving away from monolithic regional clusters toward Deterministic Data Sharding (DDS). This post explores how WebAssembly at the edge is solving the compliance-latency paradox in 2026.",
+    "date": "05 May 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?data-sovereignty-digital-map",
+    "slug": "beyond-the-mega-region-the-rise-of-deterministic-data-sharding-in-2026",
+    "isPopular": false,
+    "link": "blog/beyond-the-mega-region-the-rise-of-deterministic-data-sharding-in-2026.html",
+    "id": 29
+  },
+  {
+    "category": "Cloud Architecture",
     "title": "Beyond us-east-1: The Rise of Sovereign Cloud Repatriation in 2026",
     "summary": "As global hyperscalers face regulatory and geopolitical friction, engineering leaders in 2026 are shifting toward 'Sovereign-by-Design' architectures. This post explores how regional hubs like Tokyo and Kathmandu are pioneering localized, high-performance infrastructure through Kubernetes and eBPF.",
     "date": "04 May 2026",
