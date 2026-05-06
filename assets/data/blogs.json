@@ -1,5 +1,17 @@
 [
   {
+    "category": "Distributed Systems",
+    "title": "Beyond the API: Why 2026 is the Year of Deterministic Local-Inference (L-I) Architectures",
+    "summary": "As the honeymoon phase with massive, centralized LLM providers ends, senior architects are navigating a high-stakes pivot toward local-inference. This shift, driven by data sovereignty and the 'inference tax,' is redefining how we build resilient distributed systems in 2026.",
+    "date": "06 May 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?edge-computing-rust-wasm",
+    "slug": "beyond-the-api-why-2026-is-the-year-of-deterministic-local-inference-l-i-architectures",
+    "isPopular": false,
+    "link": "blog/beyond-the-api-why-2026-is-the-year-of-deterministic-local-inference-l-i-architectures.html",
+    "id": 30
+  },
+  {
     "category": "Cloud Architecture",
     "title": "Beyond the Mega-Region: The Rise of Deterministic Data Sharding in 2026",
     "summary": "As global data sovereignty laws fragment the traditional cloud model, senior architects are moving away from monolithic regional clusters toward Deterministic Data Sharding (DDS). This post explores how WebAssembly at the edge is solving the compliance-latency paradox in 2026.",
