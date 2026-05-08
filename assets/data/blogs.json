@@ -1,5 +1,17 @@
 [
   {
+    "category": "Software Engineering",
+    "title": "Beyond Unit Testing: The 2026 Pivot to Formally Verified Specifications",
+    "summary": "As LLM-generated code floods repositories with technical debt, senior architects are abandoning traditional unit testing in favor of formal verification. This shift marks a return to deterministic engineering in an era where 'probabilistic enough' is no longer acceptable for critical infrastructure.",
+    "date": "08 May 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?formal-verification-logic-gate-abstract",
+    "slug": "beyond-unit-testing-the-2026-pivot-to-formally-verified-specifications",
+    "isPopular": false,
+    "link": "blog/beyond-unit-testing-the-2026-pivot-to-formally-verified-specifications.html",
+    "id": 32
+  },
+  {
     "category": "Web Development",
     "title": "Beyond the Virtual DOM: Why 2026 is the Year of Deterministic UI Engineering",
     "summary": "The era of reactive state 'guessing' is ending. Engineering leaders are now pivoting toward deterministic state engines and formally verified UI components to solve the reliability crisis in complex web applications.",
