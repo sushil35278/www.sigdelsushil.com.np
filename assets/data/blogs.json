@@ -1,5 +1,17 @@
 [
   {
+    "category": "Software Engineering",
+    "title": "Beyond FaaS: The 2026 Debate on Serverless-Native Hyper-Abstraction and Engineering Depth",
+    "summary": "The software engineering landscape in 2026 is no longer debating if serverless is viable, but rather how deeply we should embrace hyper-abstracted, cloud-native services. This shift promises unparalleled developer velocity but reignites critical discussions around engineering depth, vendor lock-in, and the very definition of 'building' software.",
+    "date": "10 May 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?serverless-native-architecture-diagram-modern-cloud",
+    "slug": "beyond-faas-the-2026-debate-on-serverless-native-hyper-abstraction-and-engineering-depth",
+    "isPopular": false,
+    "link": "blog/beyond-faas-the-2026-debate-on-serverless-native-hyper-abstraction-and-engineering-depth.html",
+    "id": 34
+  },
+  {
     "category": "Web Development",
     "title": "Beyond the Loading Spinner: Why Local-First is Splitting the Senior Dev Community in 2026",
     "summary": "As we hit the physical limits of cloud-centralized state, 2026 marks the definitive shift toward Local-First Architecture. We explore why senior architects are ditching traditional REST APIs for CRDT-based synchronization and what this means for global infrastructure.",
