@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cybersecurity",
+    "title": "Beyond Zero Trust: Why Runtime Attestation is the Only Security Metric That Matters in 2026",
+    "summary": "As we move past the era of simple identity-based security, engineering leaders are shifting focus to the integrity of the binary itself. This post explores how runtime attestation and hardware-backed root of trust are replacing traditional perimeter defenses in high-stakes environments.",
+    "date": "11 May 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?tpm-security-chip-hologram",
+    "slug": "beyond-zero-trust-why-runtime-attestation-is-the-only-security-metric-that-matters-in-2026",
+    "isPopular": false,
+    "link": "blog/beyond-zero-trust-why-runtime-attestation-is-the-only-security-metric-that-matters-in-2026.html",
+    "id": 35
+  },
+  {
     "category": "Software Engineering",
     "title": "Beyond FaaS: The 2026 Debate on Serverless-Native Hyper-Abstraction and Engineering Depth",
     "summary": "The software engineering landscape in 2026 is no longer debating if serverless is viable, but rather how deeply we should embrace hyper-abstracted, cloud-native services. This shift promises unparalleled developer velocity but reignites critical discussions around engineering depth, vendor lock-in, and the very definition of 'building' software.",
