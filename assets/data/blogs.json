@@ -1,5 +1,17 @@
 [
   {
+    "category": "Distributed Systems",
+    "title": "The End of Centrality: Why 2026 is the Year of Deterministic Causal Consistency",
+    "summary": "As global latency plateaus and regional data sovereignty laws tighten, engineering leaders are shifting from massive centralized clusters to local-first architectures. This post examines why Deterministic Causal Consistency and CRDTs have become the standard for high-availability systems in 2026.",
+    "date": "12 May 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-lattice-network",
+    "slug": "the-end-of-centrality-why-2026-is-the-year-of-deterministic-causal-consistency",
+    "isPopular": false,
+    "link": "blog/the-end-of-centrality-why-2026-is-the-year-of-deterministic-causal-consistency.html",
+    "id": 36
+  },
+  {
     "category": "Cybersecurity",
     "title": "Beyond Zero Trust: Why Runtime Attestation is the Only Security Metric That Matters in 2026",
     "summary": "As we move past the era of simple identity-based security, engineering leaders are shifting focus to the integrity of the binary itself. This post explores how runtime attestation and hardware-backed root of trust are replacing traditional perimeter defenses in high-stakes environments.",
