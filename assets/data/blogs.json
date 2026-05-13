@@ -1,5 +1,17 @@
 [
   {
+    "category": "AI & Machine Learning",
+    "title": "The Great AI Architecture Debate of 2026: Monolithic Generalists vs. Federated Specialists",
+    "summary": "In 2026, engineering leaders are grappling with a critical architectural decision: relying on massive, general-purpose foundation models or building federations of smaller, specialized AI agents. This post dives deep into the strategic implications, costs, and performance trade-offs shaping enterprise AI adoption today.",
+    "date": "13 May 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?ai-orchestration-federated-models",
+    "slug": "the-great-ai-architecture-debate-of-2026-monolithic-generalists-vs-federated-specialists",
+    "isPopular": false,
+    "link": "blog/the-great-ai-architecture-debate-of-2026-monolithic-generalists-vs-federated-specialists.html",
+    "id": 37
+  },
+  {
     "category": "Distributed Systems",
     "title": "The End of Centrality: Why 2026 is the Year of Deterministic Causal Consistency",
     "summary": "As global latency plateaus and regional data sovereignty laws tighten, engineering leaders are shifting from massive centralized clusters to local-first architectures. This post examines why Deterministic Causal Consistency and CRDTs have become the standard for high-availability systems in 2026.",
