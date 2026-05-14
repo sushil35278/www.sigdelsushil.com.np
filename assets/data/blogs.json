@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "Beyond the Global Control Plane: Why 2026 belongs to Sovereign Cell-Based Architecture",
+    "summary": "As egress costs soar and data sovereignty laws tighten, senior architects are abandoning the 'Global Single-Region' myth in favor of decoupled Cell-Based Architectures. This shift prioritizes blast radius containment and local compliance over central management convenience.",
+    "date": "14 May 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-system-architecture-schematic",
+    "slug": "beyond-the-global-control-plane-why-2026-belongs-to-sovereign-cell-based-architecture",
+    "isPopular": false,
+    "link": "blog/beyond-the-global-control-plane-why-2026-belongs-to-sovereign-cell-based-architecture.html",
+    "id": 38
+  },
+  {
     "category": "AI & Machine Learning",
     "title": "The Great AI Architecture Debate of 2026: Monolithic Generalists vs. Federated Specialists",
     "summary": "In 2026, engineering leaders are grappling with a critical architectural decision: relying on massive, general-purpose foundation models or building federations of smaller, specialized AI agents. This post dives deep into the strategic implications, costs, and performance trade-offs shaping enterprise AI adoption today.",
