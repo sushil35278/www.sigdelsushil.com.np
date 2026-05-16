@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "The Strategic Cloud Recalibration: Why 2026 Sees Architects Debating Workload Repatriation",
+    "summary": "The initial rush to 'cloud-first' is maturing. By 2026, engineering leaders are no longer blindly migrating but critically evaluating which workloads truly benefit from public cloud, and where strategic repatriation or specialized hybrid models offer superior economics, performance, or control. This post dives into the nuanced debate shaping cloud architecture's future.",
+    "date": "16 May 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?cloud-repatriation-hybrid-architecture",
+    "slug": "the-strategic-cloud-recalibration-why-2026-sees-architects-debating-workload-repatriation",
+    "isPopular": false,
+    "link": "blog/the-strategic-cloud-recalibration-why-2026-sees-architects-debating-workload-repatriation.html",
+    "id": 40
+  },
+  {
     "category": "Web Development",
     "title": "Beyond the Cloud: Why Local-First is the Definitive Web Architecture of 2026",
     "summary": "The traditional request-response cycle is becoming a bottleneck for modern user experiences. In 2026, the industry is pivoting toward Local-First architectures, leveraging SQLite-WASM and CRDTs to eliminate latency and reduce cloud egress costs.",
