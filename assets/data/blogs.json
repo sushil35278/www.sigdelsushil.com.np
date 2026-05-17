@@ -1,5 +1,17 @@
 [
   {
+    "category": "Web Development",
+    "title": "The Great Re-Centralization: Navigating Hybrid Rendering Paradigms in 2026 Web Development",
+    "summary": "The dust has settled on the pure SPA era, giving way to a new architectural debate for 2026: how do we strategically combine server-side and client-side rendering? This post delves into the evolving hybrid paradigms, offering insights for senior developers and engineering leaders grappling with performance, resilience, and developer experience in a globally connected world.",
+    "date": "17 May 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?hybrid-web-architecture-2026",
+    "slug": "the-great-re-centralization-navigating-hybrid-rendering-paradigms-in-2026-web-development",
+    "isPopular": false,
+    "link": "blog/the-great-re-centralization-navigating-hybrid-rendering-paradigms-in-2026-web-development.html",
+    "id": 41
+  },
+  {
     "category": "Cloud Architecture",
     "title": "The Strategic Cloud Recalibration: Why 2026 Sees Architects Debating Workload Repatriation",
     "summary": "The initial rush to 'cloud-first' is maturing. By 2026, engineering leaders are no longer blindly migrating but critically evaluating which workloads truly benefit from public cloud, and where strategic repatriation or specialized hybrid models offer superior economics, performance, or control. This post dives into the nuanced debate shaping cloud architecture's future.",
