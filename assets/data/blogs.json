@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "The 2026 Sovereign Cloud Shift: Why Architects are Decoupling from Hyperscalers",
+    "summary": "As global data sovereignty laws tighten and egress costs spiral, senior architects in 2026 are pivoting from 'Cloud-First' to 'Regional-First' architectures. This post explores the technical shift toward decentralized, sovereign infrastructure and the rise of WebAssembly-based edge computing.",
+    "date": "18 May 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?decentralized-cloud-infrastructure",
+    "slug": "the-2026-sovereign-cloud-shift-why-architects-are-decoupling-from-hyperscalers",
+    "isPopular": false,
+    "link": "blog/the-2026-sovereign-cloud-shift-why-architects-are-decoupling-from-hyperscalers.html",
+    "id": 42
+  },
+  {
     "category": "Web Development",
     "title": "The Great Re-Centralization: Navigating Hybrid Rendering Paradigms in 2026 Web Development",
     "summary": "The dust has settled on the pure SPA era, giving way to a new architectural debate for 2026: how do we strategically combine server-side and client-side rendering? This post delves into the evolving hybrid paradigms, offering insights for senior developers and engineering leaders grappling with performance, resilience, and developer experience in a globally connected world.",
