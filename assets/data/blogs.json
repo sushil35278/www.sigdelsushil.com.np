@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cybersecurity",
+    "title": "Beyond the Password: Why Non-Human Identity (NHI) is the 2026 Cybersecurity Frontier",
+    "summary": "As autonomous agents and microservices outnumber human users 50-to-1, the industry is shifting from user authentication to machine attestation. This post explores how engineering leaders are tackling the 'Post-Identity Crisis' through workload identity and zero-trust logic.",
+    "date": "19 May 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-systems-security-node",
+    "slug": "beyond-the-password-why-non-human-identity-nhi-is-the-2026-cybersecurity-frontier",
+    "isPopular": false,
+    "link": "blog/beyond-the-password-why-non-human-identity-nhi-is-the-2026-cybersecurity-frontier.html",
+    "id": 43
+  },
+  {
     "category": "Cloud Architecture",
     "title": "The 2026 Sovereign Cloud Shift: Why Architects are Decoupling from Hyperscalers",
     "summary": "As global data sovereignty laws tighten and egress costs spiral, senior architects in 2026 are pivoting from 'Cloud-First' to 'Regional-First' architectures. This post explores the technical shift toward decentralized, sovereign infrastructure and the rise of WebAssembly-based edge computing.",
