@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "Beyond Event-Driven Chaos: The 2026 Shift to Durable Execution in Multi-Region Cloud Architecture",
+    "summary": "As distributed microservices reach unprecedented scale, architects are facing the limits of traditional event-driven choreography. This deep dive explores how Durable Execution frameworks are replacing fragile message queues to solve consistency challenges across disparate global regions.",
+    "date": "20 May 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?cloud-architecture-distributed-network",
+    "slug": "beyond-event-driven-chaos-the-2026-shift-to-durable-execution-in-multi-region-cloud-architecture",
+    "isPopular": false,
+    "link": "blog/beyond-event-driven-chaos-the-2026-shift-to-durable-execution-in-multi-region-cloud-architecture.html",
+    "id": 44
+  },
+  {
     "category": "Cybersecurity",
     "title": "Beyond the Password: Why Non-Human Identity (NHI) is the 2026 Cybersecurity Frontier",
     "summary": "As autonomous agents and microservices outnumber human users 50-to-1, the industry is shifting from user authentication to machine attestation. This post explores how engineering leaders are tackling the 'Post-Identity Crisis' through workload identity and zero-trust logic.",
