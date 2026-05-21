@@ -1,5 +1,17 @@
 [
   {
+    "category": "Web Development",
+    "title": "The Great Local-First Debate of 2026: Why PGLite and CRDTs are Splitting Engineering Teams",
+    "summary": "In 2026, the pendulum is swinging away from server-centric rendering back to the client. We examine the architectural trade-offs, network failures in Nepal, edge limits in Tokyo, and whether local-first WASM databases are ready for enterprise production.",
+    "date": "21 May 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?database-architecture-network",
+    "slug": "the-great-local-first-debate-of-2026-why-pglite-and-crdts-are-splitting-engineering-teams",
+    "isPopular": false,
+    "link": "blog/the-great-local-first-debate-of-2026-why-pglite-and-crdts-are-splitting-engineering-teams.html",
+    "id": 45
+  },
+  {
     "category": "Cloud Architecture",
     "title": "Beyond Event-Driven Chaos: The 2026 Shift to Durable Execution in Multi-Region Cloud Architecture",
     "summary": "As distributed microservices reach unprecedented scale, architects are facing the limits of traditional event-driven choreography. This deep dive explores how Durable Execution frameworks are replacing fragile message queues to solve consistency challenges across disparate global regions.",
