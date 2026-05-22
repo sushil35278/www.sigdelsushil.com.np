@@ -1,5 +1,17 @@
 [
   {
+    "category": "Distributed Systems",
+    "title": "Edge vs. Core in 2026: Debating the 'Stateless Core, Stateful Edge' Paradox",
+    "summary": "As distributed systems push computation closer to the user at the network edge, a profound architectural debate emerges: how do we reconcile a stateless, globally consistent core with stateful, low-latency edge operations? In 2026, this isn't just theoretical; it's a critical design challenge for engineering leaders grappling with unprecedented scale and performance demands.",
+    "date": "22 May 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?edge+computing+architecture",
+    "slug": "edge-vs-core-in-2026-debating-the-stateless-core-stateful-edge-paradox",
+    "isPopular": false,
+    "link": "blog/edge-vs-core-in-2026-debating-the-stateless-core-stateful-edge-paradox.html",
+    "id": 46
+  },
+  {
     "category": "Web Development",
     "title": "The Great Local-First Debate of 2026: Why PGLite and CRDTs are Splitting Engineering Teams",
     "summary": "In 2026, the pendulum is swinging away from server-centric rendering back to the client. We examine the architectural trade-offs, network failures in Nepal, edge limits in Tokyo, and whether local-first WASM databases are ready for enterprise production.",

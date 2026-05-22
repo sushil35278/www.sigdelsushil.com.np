@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edge vs. Core in 2026: Debating the 'Stateless Core, Stateful Edge' Paradox | Sushil Sigdel</title>
+    <meta name="description" content="As distributed systems push computation closer to the user at the network edge, a profound architectural debate emerges: how do we reconcile a stateless, globally consistent core with stateful, low-latency edge operations? In 2026, this isn't just theoretical; it's a critical design challenge for engineering leaders grappling with unprecedented scale and performance demands.">
+    <link rel="canonical" href="https://sigdelsushil.com.np/blog/edge-vs-core-in-2026-debating-the-stateless-core-stateful-edge-paradox.html">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Sushil Sigdel">
+    <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id=GTM-KHDFS4SM'+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KHDFS4SM');</script>
+  <!-- End Google Tag Manager -->
+
+<!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <style>
+        :root {
+            --primary-accent: #726ae3;
+            --text-dark: #2d3436;
+            --text-gray: #636e72;
+        }
+
+        body {
+            background-color: #fafbfc;
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Reading Progress Bar */
+        #progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            z-index: 10000;
+        }
+
+        #progress-bar {
+            height: 100%;
+            background: linear-gradient(to right, #726ae3, #fa65b1);
+            width: 0%;
+            transition: width 0.1s ease;
+        }
+
+        /* Hero Styling */
+        .blog-hero {
+            position: relative;
+            padding: 120px 0 80px;
+            background-color: #2a2a2a;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+            url('https://source.unsplash.com/featured/1200x800/?edge+computing+architecture');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            margin-bottom: -40px;
+        }
+
+        .blog-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .category-tag {
+            background: var(--primary-accent);
+            color: white;
+            padding: 6px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .blog-meta-top {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .content-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
+            position: relative;
+            z-index: 5;
+        }
+
+        .featured-img-wrap {
+            margin-bottom: 40px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .featured-img-wrap img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .blog-body {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .blog-body h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--text-dark);
+            font-size: 2rem;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .blog-body pre {
+            background: #0f172a;
+            color: #e2e8f0;
+            padding: 24px;
+            border-radius: 20px;
+            overflow-x: auto;
+            font-family: 'Fira Code', 'JetBrains Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin: 30px 0;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .blog-body code {
+            background: rgba(250, 101, 177, 0.12);
+            color: #111827;
+            padding: 3px 8px;
+            border-radius: 8px;
+            font-family: 'Fira Code', 'JetBrains Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+            font-size: 0.95rem;
+        }
+
+        .blog-body pre code {
+            background: transparent;
+            padding: 0;
+            color: inherit;
+        }
+
+        /* Floating Social Share */
+        .share-buttons {
+            position: fixed;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 100;
+        }
+
+        .share-btn {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+        }
+
+        .share-btn:hover {
+            transform: scale(1.1) translateX(5px);
+            color: white;
+        }
+
+        .share-tw {
+            background: #1DA1F2;
+        }
+
+        .share-li {
+            background: #0077b5;
+        }
+
+        .share-fb {
+            background: #4267B2;
+        }
+
+        /* Sticky Back to Top */
+        #scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--primary-accent);
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s;
+            z-index: 100;
+            border: none;
+        }
+
+        #scroll-top.show {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .footer-action {
+            margin-top: 60px;
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 40px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary-accent);
+            font-weight: 600;
+            text-decoration: none;
+            gap: 10px;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 1200px) {
+            .share-buttons {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .blog-hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .content-container {
+                padding: 30px;
+                border-radius: 0;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHDFS4SM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Reading Progress Bar -->
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
+    <!-- Social Share -->
+    <div class="share-buttons">
+        <a href="javascript:void(0)" class="share-btn share-tw" onclick="share('twitter')" title="Share on X (Twitter)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 16 16">
+                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+            </svg>
+        </a>
+        <a href="javascript:void(0)" class="share-btn share-li" onclick="share('linkedin')" title="Share on LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.401c.03.674 0 7.225 0 7.225h2.401z"/>
+            </svg>
+        </a>
+        <a href="javascript:void(0)" class="share-btn share-fb" onclick="share('facebook')" title="Share on Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Scroll Top -->
+    <button id="scroll-top"><i class="fa fa-angle-up"></i></button>
+
+    <section class="blog-hero">
+        <div class="container">
+            <span class="category-tag">Distributed Systems</span>
+            <h1>Edge vs. Core in 2026: Debating the 'Stateless Core, Stateful Edge' Paradox</h1>
+            <div class="blog-meta-top">
+                By <strong>Sushil Sigdel</strong> | 22 May 2026
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-img-wrap">
+                <img src="https://source.unsplash.com/featured/1200x800/?edge+computing+architecture" alt="Edge vs. Core in 2026: Debating the 'Stateless Core, Stateful Edge' Paradox" onerror="this.src='../assets/images/bloghome.png'">
+            </div>
+
+            <!-- AdSense Ad - In Content -->
+            <div style="text-align: center; margin: 30px 0; padding: 20px; background: #f8f9fa; border-radius: 10px;">
+              <ins class="adsbygoogle" style="display: block" data-ad-client="ca-pub-7936732053264133" data-ad-slot="9876543210" data-ad-format="auto" data-full-width-responsive="true"></ins>
+              <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+
+            <article class="blog-body">
+                <h1>Edge vs. Core in 2026: Debating the 'Stateless Core, Stateful Edge' Paradox</h1>
+<p>For over a decade, my journey across diverse technological landscapes – from building resilient systems for developing regions like Nepal to architecting hyper-efficient solutions in urban Japan – has consistently shown me one truth: the architecture of our distributed systems is always in flux. In 2026, the most spirited debates among senior architects aren't about microservices anymore; that's largely settled. Instead, we're wrestling with a far more complex beast: the inherent tension between a centralized, stateless core and an increasingly stateful, decentralized edge.</p>
+
+<p>The promise of edge computing has matured beyond hype, delivering tangible benefits across industries. Yet, this shift introduces a profound architectural paradox: how do we effectively manage state and orchestrate operations when significant computational power and local data reside at the very periphery of our networks? This isn't merely an optimization; it's a fundamental re-evaluation of system design, demanding new tools, patterns, and a willingness to embrace eventual consistency more deeply than ever before.</p>
+
+<h3>The Unstoppable March to the Edge: Why We're Here</h3>
+<p>The drivers behind the relentless push towards the edge are multifaceted and compelling:</p>
+<ol>
+    <li><strong>Latency Requirements:</strong> Applications like augmented reality (AR), autonomous vehicles, and industrial IoT demand sub-millisecond response times that centralized cloud data centers simply cannot provide. Imagine controlling a robotic arm in a Japanese smart factory; every millisecond of network latency is a potential defect or safety hazard.</li>
+    <li><strong>Bandwidth Constraints & Cost:</strong> Transmitting vast amounts of raw data (e.g., from thousands of IoT sensors, high-definition security cameras) back to a central cloud is often prohibitively expensive and inefficient. Processing data locally, filtering, and sending only actionable insights significantly reduces network load. My experience in Nepal, where reliable, high-bandwidth internet can be scarce, taught me the absolute necessity of local processing for critical applications like remote healthcare kiosks.</li>
+    <li><strong>Regulatory & Data Sovereignty:</strong> Increasing regulations globally (e.g., GDPR, local data residency laws) necessitate that certain data remains within specific geographical boundaries, or at least processed locally before any aggregation.</li>
+    <li><strong>Resilience & Disconnected Operations:</strong> Edge nodes can continue to function even if connectivity to the central cloud is temporarily lost. For mission-critical systems – think emergency services or utility grids – this autonomy is non-negotiable.</li>
+</ol>
+<p>A recent report by EdgeX Foundry indicated that over 60% of new enterprise IoT deployments in 2025 incorporated significant edge processing capabilities, up from 35% in 2023. The trend is undeniable.</p>
+
+<h3>The Core of the Debate: The 'Stateless Core, Stateful Edge' Paradox</h3>
+<p>For years, cloud-native wisdom preached stateless services. Ship your business logic as lightweight, ephemeral functions, scale them horizontally, and push state to managed, centralized databases. This paradigm simplified deployments, enabled rapid scaling, and made global consistency a more tractable problem.</p>
+
+<p>The edge, however, fundamentally challenges this. To achieve the benefits outlined above, edge nodes must often hold significant local state – user profiles, device configurations, cached data, or aggregated sensor readings. This creates the paradox:</p>
+<ul>
+    <li><strong>Stateless Core:</strong> Your central cloud services remain ideally stateless, operating on the assumption of a globally consistent data view, simplifying their own scaling and recovery.</li>
+    <li><strong>Stateful Edge:</strong> Your edge services become inherently stateful to deliver low-latency, resilient, and bandwidth-efficient operations. They hold local data, often processing it before synchronization.</li>
+</ul>
+<p>The debate isn't about whether we <em>should</em> have stateful edges; it's about <em>how</em> to manage the resulting architectural complexity:</p>
+<ul>
+    <li><strong>Consistency Models:</strong> How do you reconcile strong consistency needs at the core with the inevitable eventual consistency at thousands or millions of distributed edge nodes? This requires sophisticated conflict resolution strategies and a deep understanding of application-specific consistency requirements.</li>
+    <li><strong>Data Synchronization:</strong> Efficiently synchronizing state between the edge and the core, and between different edge nodes, without overwhelming networks or causing data loss, is a monumental task.</li>
+    <li><strong>Operational Burden:</strong> Deploying, monitoring, debugging, and patching software across a massively distributed, heterogenous fleet of edge devices introduces unprecedented operational challenges compared to managing a centralized cloud environment.</li>
+</ul>
+
+<h3>Architecting for a Hyper-Distributed Future</h3>
+<p>Navigating this paradox requires a robust architectural toolkit and a shift in mindset. Here are some key technologies and patterns emerging as front-runners:</p>
+
+<h4>WebAssembly (WASM) at the Edge</h4>
+<p>WASM has emerged as a compelling execution environment for edge functions. Its small footprint, fast startup times, sandboxed security, and language agnosticism make it ideal for deploying portable compute closer to the data source.</p>
+<pre><code>
+// Example: A hypothetical WASM function in Rust for edge data pre-processing
+
+#[no_mangle]
+pub extern "C" fn process_sensor_data(ptr: *mut u8, len: usize) -> *mut u8 {
+    let data_slice = unsafe { std::slice::from_raw_parts(ptr, len) };
+    let sensor_reading: f32 = String::from_utf8_lossy(data_slice).parse().unwrap_or(0.0);
+
+    // Simulate local anomaly detection
+    let is_anomaly = sensor_reading > 99.5 || sensor_reading < 0.5;
+
+    let result = if is_anomaly {
+        format!("ANOMALY:{}", sensor_reading)
+    } else {
+        format!("NORMAL:{}", sensor_reading)
+    };
+
+    // Return processed data to the host
+    let bytes = result.into_bytes();
+    let ptr = bytes.as_mut_ptr();
+    let len = bytes.len();
+    std::mem::forget(bytes); // Prevent deallocation
+
+    // The host environment (e.g., a custom runtime or WASM-compatible service mesh) 
+    // would then handle the returned pointer and length.
+    ptr // In a real scenario, we'd also return length and manage memory more carefully.
+}
+</code></pre>
+<p>This snippet illustrates how a lightweight WASM module can perform local processing and decision-making directly on the edge device, reducing the need for constant cloud communication.</p>
+
+<h4>Conflict-free Replicated Data Types (CRDTs) and Global Data Grids</h4>
+<p>For managing state across the core and numerous edge locations, CRDTs offer a mathematically sound approach to eventual consistency. They allow concurrent updates to data replicas independently, guaranteeing convergence without complex coordination. Combined with intelligent global data grids (e.g., extensions of Apache Ignite, Hazelcast, or purpose-built edge databases), they provide a framework for managing distributed state where strong consistency isn't always feasible or necessary.</p>
+<pre><code>
+// Example: Pseudo-code for a CRDT-like counter update at the edge
+
+// GCounter (Grow-only counter) example
+struct GCounter {
+    node_id: String,
+    counts: HashMap<String, u64>, // Map of node_id to its local count
+}
+
+impl GCounter {
+    fn new(id: String) -> Self { /* ... */ }
+
+    // Increment locally
+    fn increment(&mut self) {
+        *self.counts.entry(self.node_id.clone()).or_insert(0) += 1;
+    }
+
+    // Merge with another GCounter from a different node
+    fn merge(&mut self, other: &GCounter) {
+        for (node, count) in &other.counts {
+            let local_count = self.counts.entry(node.clone()).or_insert(0);
+            *local_count = (*local_count).max(*count); // Take the max for each node's contribution
+        }
+    }
+
+    // Get total value
+    fn value(&self) -> u64 {
+        self.counts.values().sum()
+    }
+}
+
+// Usage:
+let mut edge_counter_1 = GCounter::new("edge-node-1".to_string());
+edge_counter_1.increment(); // 1
+edge_counter_1.increment(); // 2
+
+let mut edge_counter_2 = GCounter::new("edge-node-2".to_string());
+edge_counter_2.increment(); // 1
+
+// Periodically synchronize:
+edge_counter_1.merge(&edge_counter_2);
+edge_counter_2.merge(&edge_counter_1);
+
+// Both will eventually have the same total value (3) and merged internal state.
+</code></pre>
+
+<h4>Unified Observability and Control Planes</h4>
+<p>The operational nightmare of the edge is real. Extending control planes like Kubernetes (e.g., K3s, OpenShift Edge) and service meshes (e.g., Istio, Linkerd) to manage thousands of distributed edge nodes becomes crucial. These platforms provide a unified way to deploy, manage traffic, enforce policies, and, critically, gather metrics and logs from the very edge of the network, bringing order to the chaos.</p>
+
+<h3>Pro Tips for Architects</h3>
+<ol>
+    <li><strong>Identify True Edge Needs:</strong> Don't push everything to the edge. Carefully identify which services genuinely benefit from low latency, local processing, or disconnected operation. A thoughtful domain-driven design approach is more critical than ever.</li>
+    <li><strong>Embrace Eventual Consistency:</strong> Design your application models to gracefully handle eventual consistency. Understand your data's consistency requirements (e.g., financial transactions vs. sensor readings) and choose appropriate patterns (CRDTs, eventual consistency, strong consistency only where absolutely vital).</li>
+    <li><strong>Standardize Edge Runtime:</strong> Leverage technologies like WebAssembly or container runtimes (e.g., containerd) to provide a consistent, portable execution environment across diverse edge hardware.</li>
+    <li><strong>Invest in Observability:</strong> Centralized logging, metrics, and tracing for edge services are paramount. Tools that can aggregate data from intermittent connections and massive fleets will be your lifeline.</li>
+</ol>
+
+<h3>Future Predictions</h3>
+<p>Looking ahead, I believe we'll see a consolidation of edge orchestration platforms, blurring the lines between traditional cloud providers and edge infrastructure specialists. Serverless functions will become truly ubiquitous, deployed natively on edge devices without needing a full-blown Kubernetes cluster. The definition of a 'data center' will expand to include millions of tiny, interconnected nodes, managed by sophisticated, self-healing, AI-driven control planes that dynamically shift workloads between core and edge based on real-time conditions (network health, load, compliance needs).</p>
+
+<p>Furthermore, expect significant advancements in federated learning where AI models are trained at the edge using local data, with only model updates (not raw data) being sent back to the core for aggregation. This will address both privacy concerns and data transfer costs, cementing the stateful edge as a critical component in the AI landscape.</p>
+
+<h3>Conclusion</h3>
+<p>The 'Stateless Core, Stateful Edge' paradox is the defining architectural challenge for distributed systems in 2026. It forces us to confront fundamental trade-offs between global consistency and local autonomy, operational simplicity and localized performance. The solutions aren't trivial, but the tools and patterns emerging – from WASM functions to intelligent CRDTs and extended service meshes – provide a powerful foundation.</p>
+
+<p>As architects and engineering leaders, our responsibility is to carefully weigh these trade-offs, design for resilience in the face of uncertainty, and cultivate a deep understanding of our application's true requirements. The future of distributed systems isn't just in the cloud; it's everywhere. Are your systems ready for this hyper-distributed reality? What challenges are you facing with your edge deployments?</p>
+            </article>
+
+            <!-- Related Posts Section -->
+            <div style="margin-top: 60px; padding-top: 40px; border-top: 2px solid #eee;">
+              <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 30px;">Related Articles</h3>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                <a href="../index.html#blog" style="background: #f8f9fa; padding: 20px; border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.3s;" onmouseover="this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'">
+                  <h4 style="color: var(--primary-accent); margin-bottom: 10px;">→ View All Articles</h4>
+                  <p style="font-size: 0.9rem; opacity: 0.8;">Explore more insights on tech, AI, and development</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="footer-action">
+                <a href="../#blog" class="back-link">
+                    <i class="fa fa-arrow-left"></i> Back to All Stories
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script>
+        // Reading Progress Bar
+        window.onscroll = function () {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (height > 0) ? (winScroll / height) * 100 : 0;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+
+            // Scroll to Top visibility
+            const scrollTop = document.getElementById("scroll-top");
+            if (winScroll > 300) {
+                scrollTop.classList.add("show");
+            } else {
+                scrollTop.classList.remove("show");
+            }
+        };
+
+        // Scroll to Top Action
+        document.getElementById("scroll-top").addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Social Share Function
+        function share(platform) {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent(document.title);
+            let shareUrl = '';
+
+            switch (platform) {
+                case 'twitter':
+                    shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${title}`;
+                    break;
+                case 'linkedin':
+                    shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+                    break;
+                case 'facebook':
+                    shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+                    break;
+            }
+
+            if (shareUrl) {
+                window.open(shareUrl, '_blank', 'width=600,height=400');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
