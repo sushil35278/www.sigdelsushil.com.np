@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "The Death of the Regional Mega-Cluster: Why 2026 is the Year of State-Affine Edge Cells",
+    "summary": "As global network topologies bifurcate between ultra-dense metropolitan fiber and high-latency satellite backhauls, the traditional multi-region Kubernetes architecture is fracturing. Engineering leaders in 2026 are turning to state-affine WebAssembly (Wasm) cell-based architectures to achieve resilience and microsecond execution at the edge.",
+    "date": "23 May 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?edge-computing-wasm-network",
+    "slug": "the-death-of-the-regional-mega-cluster-why-2026-is-the-year-of-state-affine-edge-cells",
+    "isPopular": false,
+    "link": "blog/the-death-of-the-regional-mega-cluster-why-2026-is-the-year-of-state-affine-edge-cells.html",
+    "id": 47
+  },
+  {
     "category": "Distributed Systems",
     "title": "Edge vs. Core in 2026: Debating the 'Stateless Core, Stateful Edge' Paradox",
     "summary": "As distributed systems push computation closer to the user at the network edge, a profound architectural debate emerges: how do we reconcile a stateless, globally consistent core with stateful, low-latency edge operations? In 2026, this isn't just theoretical; it's a critical design challenge for engineering leaders grappling with unprecedented scale and performance demands.",
