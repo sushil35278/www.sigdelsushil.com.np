@@ -1,5 +1,17 @@
 [
   {
+    "category": "Distributed Systems",
+    "title": "The Data Truth Paradox: Event Streams vs. Distributed Transactions in 2026 Architecture Debates",
+    "summary": "As distributed systems mature, the lines between an immutable event log and a strongly consistent transactional database are blurring. Engineering leaders in 2026 face a critical architectural decision: is one truly the 'source of truth,' or do we need a new paradigm? This post dissects the debate and offers practical insights.",
+    "date": "24 May 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-database-event-stream-convergence-2026",
+    "slug": "the-data-truth-paradox-event-streams-vs-distributed-transactions-in-2026-architecture-debates",
+    "isPopular": false,
+    "link": "blog/the-data-truth-paradox-event-streams-vs-distributed-transactions-in-2026-architecture-debates.html",
+    "id": 48
+  },
+  {
     "category": "Cloud Architecture",
     "title": "The Death of the Regional Mega-Cluster: Why 2026 is the Year of State-Affine Edge Cells",
     "summary": "As global network topologies bifurcate between ultra-dense metropolitan fiber and high-latency satellite backhauls, the traditional multi-region Kubernetes architecture is fracturing. Engineering leaders in 2026 are turning to state-affine WebAssembly (Wasm) cell-based architectures to achieve resilience and microsecond execution at the edge.",
