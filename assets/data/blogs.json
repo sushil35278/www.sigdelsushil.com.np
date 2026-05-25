@@ -1,6 +1,18 @@
 [
   {
     "category": "Distributed Systems",
+    "title": "Beyond the Saga Pattern: Why Durable Execution is Polarizing Distributed Architecture in 2026",
+    "summary": "As distributed systems hit complexity limits, the industry is shifting from stateless RPCs to Durable Execution runtimes. Explore why this architectural transition is sparking fierce debates among systems architects from Tokyo to Kathmandu.",
+    "date": "25 May 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-database-architecture",
+    "slug": "beyond-the-saga-pattern-why-durable-execution-is-polarizing-distributed-architecture-in-2026",
+    "isPopular": false,
+    "link": "blog/beyond-the-saga-pattern-why-durable-execution-is-polarizing-distributed-architecture-in-2026.html",
+    "id": 49
+  },
+  {
+    "category": "Distributed Systems",
     "title": "The Data Truth Paradox: Event Streams vs. Distributed Transactions in 2026 Architecture Debates",
     "summary": "As distributed systems mature, the lines between an immutable event log and a strongly consistent transactional database are blurring. Engineering leaders in 2026 face a critical architectural decision: is one truly the 'source of truth,' or do we need a new paradigm? This post dissects the debate and offers practical insights.",
     "date": "24 May 2026",
