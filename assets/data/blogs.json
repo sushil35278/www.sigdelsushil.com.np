@@ -1,6 +1,18 @@
 [
   {
     "category": "Distributed Systems",
+    "title": "The Death of Stateless Edge: Why 2026 is the Year of the Durable Actor Mesh",
+    "summary": "Decoupling compute from state was the golden rule of the cloud era. In 2026, rising egress costs, strict localized data residency laws, and physical latency limits are forcing a massive architectural pivot toward stateful, durable WebAssembly actors at the edge.",
+    "date": "26 May 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-systems-edge-network",
+    "slug": "the-death-of-stateless-edge-why-2026-is-the-year-of-the-durable-actor-mesh",
+    "isPopular": false,
+    "link": "blog/the-death-of-stateless-edge-why-2026-is-the-year-of-the-durable-actor-mesh.html",
+    "id": 50
+  },
+  {
+    "category": "Distributed Systems",
     "title": "Beyond the Saga Pattern: Why Durable Execution is Polarizing Distributed Architecture in 2026",
     "summary": "As distributed systems hit complexity limits, the industry is shifting from stateless RPCs to Durable Execution runtimes. Explore why this architectural transition is sparking fierce debates among systems architects from Tokyo to Kathmandu.",
     "date": "25 May 2026",
