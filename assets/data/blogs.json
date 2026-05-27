@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "Beyond the Global VPC: Why Architectures in 2026 are Pivoting to Sovereign Cell-Based Topologies",
+    "summary": "As global egress costs spiral and regional compliance mandates tighten, engineering leaders are abandoning the monolithic, multi-region VPC. This article explores how Cell-Based Architectures (CBA) paired with WebAssembly isolation are redefining fault tolerance and operational costs from Tokyo to Kathmandu.",
+    "date": "27 May 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?server-farm-modular-cells",
+    "slug": "beyond-the-global-vpc-why-architectures-in-2026-are-pivoting-to-sovereign-cell-based-topologies",
+    "isPopular": false,
+    "link": "blog/beyond-the-global-vpc-why-architectures-in-2026-are-pivoting-to-sovereign-cell-based-topologies.html",
+    "id": 51
+  },
+  {
     "category": "Distributed Systems",
     "title": "The Death of Stateless Edge: Why 2026 is the Year of the Durable Actor Mesh",
     "summary": "Decoupling compute from state was the golden rule of the cloud era. In 2026, rising egress costs, strict localized data residency laws, and physical latency limits are forcing a massive architectural pivot toward stateful, durable WebAssembly actors at the edge.",
