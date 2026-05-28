@@ -1,5 +1,17 @@
 [
   {
+    "category": "Distributed Systems",
+    "title": "Beyond the Cloud Hub: The 2026 Pivot to Deterministic Edge Orchestration",
+    "summary": "As centralized cloud architectures hit the latency ceiling, 2026 marks a decisive shift toward local-first distributed systems. This deep dive explores how engineers are utilizing CRDTs and WebAssembly to maintain state across fragmented networks from Nagoya to Kathmandu.",
+    "date": "28 May 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-computing-mesh",
+    "slug": "beyond-the-cloud-hub-the-2026-pivot-to-deterministic-edge-orchestration",
+    "isPopular": false,
+    "link": "blog/beyond-the-cloud-hub-the-2026-pivot-to-deterministic-edge-orchestration.html",
+    "id": 52
+  },
+  {
     "category": "Cloud Architecture",
     "title": "Beyond the Global VPC: Why Architectures in 2026 are Pivoting to Sovereign Cell-Based Topologies",
     "summary": "As global egress costs spiral and regional compliance mandates tighten, engineering leaders are abandoning the monolithic, multi-region VPC. This article explores how Cell-Based Architectures (CBA) paired with WebAssembly isolation are redefining fault tolerance and operational costs from Tokyo to Kathmandu.",
