@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "Beyond the Container: Why WebAssembly (Wasm) Micro-VMs are Splitting Cloud Architects in 2026",
+    "summary": "As Kubernetes faces scaling bottlenecks at the edge, a high-stakes debate has emerged around WebAssembly (Wasm) micro-VMs. Here is an architectural deep-dive into why containers are losing their monopoly on compute.",
+    "date": "29 May 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?wasm-micro-vm-edge-architecture",
+    "slug": "beyond-the-container-why-webassembly-wasm-micro-vms-are-splitting-cloud-architects-in-2026",
+    "isPopular": false,
+    "link": "blog/beyond-the-container-why-webassembly-wasm-micro-vms-are-splitting-cloud-architects-in-2026.html",
+    "id": 53
+  },
+  {
     "category": "Distributed Systems",
     "title": "Beyond the Cloud Hub: The 2026 Pivot to Deterministic Edge Orchestration",
     "summary": "As centralized cloud architectures hit the latency ceiling, 2026 marks a decisive shift toward local-first distributed systems. This deep dive explores how engineers are utilizing CRDTs and WebAssembly to maintain state across fragmented networks from Nagoya to Kathmandu.",
