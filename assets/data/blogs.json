@@ -1,5 +1,17 @@
 [
   {
+    "category": "DevOps & SRE",
+    "title": "The Death of the Sidecar: Why eBPF and Wasm are Redefining SRE in 2026",
+    "summary": "The traditional sidecar proxy model has hit a performance and complexity wall. We explore the 2026 shift toward kernel-level observability and deterministic remediation, drawing on architectural evolutions from the high-frequency trading floors of Tokyo to the resource-constrained edge hubs of Kathmandu.",
+    "date": "30 May 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?ebpf-kernel-networking-topology",
+    "slug": "the-death-of-the-sidecar-why-ebpf-and-wasm-are-redefining-sre-in-2026",
+    "isPopular": false,
+    "link": "blog/the-death-of-the-sidecar-why-ebpf-and-wasm-are-redefining-sre-in-2026.html",
+    "id": 54
+  },
+  {
     "category": "Cloud Architecture",
     "title": "Beyond the Container: Why WebAssembly (Wasm) Micro-VMs are Splitting Cloud Architects in 2026",
     "summary": "As Kubernetes faces scaling bottlenecks at the edge, a high-stakes debate has emerged around WebAssembly (Wasm) micro-VMs. Here is an architectural deep-dive into why containers are losing their monopoly on compute.",
