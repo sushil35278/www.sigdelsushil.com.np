@@ -1,5 +1,17 @@
 [
   {
+    "category": "AI & Machine Learning",
+    "title": "The Great Decentralization: Why Engineering Leaders Are Abandoning Mega-LLM APIs for Edge-MoE Meshes in 2026",
+    "summary": "As monolithic cloud-based AI costs skyrocket and data sovereignty laws tighten globally, senior software architects are shifting to decentralized Small Language Model (SLM) meshes. Discover how local hardware and smart routing are replacing centralized endpoints.",
+    "date": "31 May 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?edge-computing-server-rack",
+    "slug": "the-great-decentralization-why-engineering-leaders-are-abandoning-mega-llm-apis-for-edge-moe-meshes-in-2026",
+    "isPopular": false,
+    "link": "blog/the-great-decentralization-why-engineering-leaders-are-abandoning-mega-llm-apis-for-edge-moe-meshes-in-2026.html",
+    "id": 55
+  },
+  {
     "category": "DevOps & SRE",
     "title": "The Death of the Sidecar: Why eBPF and Wasm are Redefining SRE in 2026",
     "summary": "The traditional sidecar proxy model has hit a performance and complexity wall. We explore the 2026 shift toward kernel-level observability and deterministic remediation, drawing on architectural evolutions from the high-frequency trading floors of Tokyo to the resource-constrained edge hubs of Kathmandu.",
