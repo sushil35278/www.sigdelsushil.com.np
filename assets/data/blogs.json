@@ -1,6 +1,18 @@
 [
   {
     "category": "AI & Machine Learning",
+    "title": "From LLMs to LLRTs: Navigating the Rise of Real-Time Generative AI in 2026",
+    "summary": "The promise of Large Language Models (LLMs) has evolved. In 2026, the critical debate centers not on their existence, but on their real-time, interactive capabilities. This post explores the challenges and opportunities of Low-Latency Response Transformers (LLRTs) and their impact on enterprise applications.",
+    "date": "01 June 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?low+latency+neural+network",
+    "slug": "from-llms-to-llrts-navigating-the-rise-of-real-time-generative-ai-in-2026",
+    "isPopular": false,
+    "link": "blog/from-llms-to-llrts-navigating-the-rise-of-real-time-generative-ai-in-2026.html",
+    "id": 56
+  },
+  {
+    "category": "AI & Machine Learning",
     "title": "The Great Decentralization: Why Engineering Leaders Are Abandoning Mega-LLM APIs for Edge-MoE Meshes in 2026",
     "summary": "As monolithic cloud-based AI costs skyrocket and data sovereignty laws tighten globally, senior software architects are shifting to decentralized Small Language Model (SLM) meshes. Discover how local hardware and smart routing are replacing centralized endpoints.",
     "date": "31 May 2026",
