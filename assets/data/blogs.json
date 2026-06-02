@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cybersecurity",
+    "title": "Beyond SBOMs: The 2026 Debate on Autonomous Policy Enforcement in the Software Supply Chain",
+    "summary": "The software supply chain, a complex web of dependencies, remains a primary target for sophisticated attacks. As we stand in 2026, the discussion has moved beyond mere Software Bill of Materials (SBOMs) to the hotly debated topic of autonomous, algorithmic enforcement of security policies directly within our development and deployment pipelines. This post unpacks the challenges, promises, and the profound questions this shift raises for engineering leaders.",
+    "date": "02 June 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?autonomous-security-robot-digital-supply-chain",
+    "slug": "beyond-sboms-the-2026-debate-on-autonomous-policy-enforcement-in-the-software-supply-chain",
+    "isPopular": false,
+    "link": "blog/beyond-sboms-the-2026-debate-on-autonomous-policy-enforcement-in-the-software-supply-chain.html",
+    "id": 57
+  },
+  {
     "category": "AI & Machine Learning",
     "title": "From LLMs to LLRTs: Navigating the Rise of Real-Time Generative AI in 2026",
     "summary": "The promise of Large Language Models (LLMs) has evolved. In 2026, the critical debate centers not on their existence, but on their real-time, interactive capabilities. This post explores the challenges and opportunities of Low-Latency Response Transformers (LLRTs) and their impact on enterprise applications.",
