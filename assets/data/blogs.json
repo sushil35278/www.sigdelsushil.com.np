@@ -1,6 +1,18 @@
 [
   {
     "category": "Cybersecurity",
+    "title": "Post-Quantum Cryptography in 2026: Why Senior Architects Are Rejecting the 'Lift-and-Shift' Migration Strategy",
+    "summary": "As NIST’s post-quantum standards transition from academic theory to runtime reality, engineering teams face a critical performance bottleneck. Learn why a simple dependency upgrade will degrade your service-to-service latency and how to implement true cryptographic agility.",
+    "date": "03 June 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?secure-cryptography-network",
+    "slug": "post-quantum-cryptography-in-2026-why-senior-architects-are-rejecting-the-lift-and-shift-migration-strategy",
+    "isPopular": false,
+    "link": "blog/post-quantum-cryptography-in-2026-why-senior-architects-are-rejecting-the-lift-and-shift-migration-strategy.html",
+    "id": 58
+  },
+  {
+    "category": "Cybersecurity",
     "title": "Beyond SBOMs: The 2026 Debate on Autonomous Policy Enforcement in the Software Supply Chain",
     "summary": "The software supply chain, a complex web of dependencies, remains a primary target for sophisticated attacks. As we stand in 2026, the discussion has moved beyond mere Software Bill of Materials (SBOMs) to the hotly debated topic of autonomous, algorithmic enforcement of security policies directly within our development and deployment pipelines. This post unpacks the challenges, promises, and the profound questions this shift raises for engineering leaders.",
     "date": "02 June 2026",
