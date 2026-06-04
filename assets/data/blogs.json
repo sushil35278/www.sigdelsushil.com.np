@@ -1,5 +1,17 @@
 [
   {
+    "category": "Web Development",
+    "title": "Beyond Server Components: Why Local-First Architecture is the Great 2026 Web Debate",
+    "summary": "As network instability increases globally and the limits of Server Actions become apparent, senior engineers are shifting from server-centric rendering to local-first database-in-the-browser architectures. We explore the architectural trade-offs, real-world constraints from Kathmandu to Tokyo, and the technology defining this shift.",
+    "date": "04 June 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?database-architecture",
+    "slug": "beyond-server-components-why-local-first-architecture-is-the-great-2026-web-debate",
+    "isPopular": false,
+    "link": "blog/beyond-server-components-why-local-first-architecture-is-the-great-2026-web-debate.html",
+    "id": 59
+  },
+  {
     "category": "Cybersecurity",
     "title": "Post-Quantum Cryptography in 2026: Why Senior Architects Are Rejecting the 'Lift-and-Shift' Migration Strategy",
     "summary": "As NIST’s post-quantum standards transition from academic theory to runtime reality, engineering teams face a critical performance bottleneck. Learn why a simple dependency upgrade will degrade your service-to-service latency and how to implement true cryptographic agility.",
