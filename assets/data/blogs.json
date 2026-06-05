@@ -1,5 +1,17 @@
 [
   {
+    "category": "AI & Machine Learning",
+    "title": "Beyond the API: Why Senior Architects in 2026 are Moving to WebAssembly-Based Local SLMs",
+    "summary": "As centralized cloud inference costs skyrocket and offline reliability becomes non-negotiable, engineering leaders are shifting from monolithic LLM APIs to decentralized Small Language Models running inside WebAssembly. This deep dive explores the architecture, performance trade-offs, and real-world implementation of edge-native inference.",
+    "date": "05 June 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?wasm-edge-computing",
+    "slug": "beyond-the-api-why-senior-architects-in-2026-are-moving-to-webassembly-based-local-slms",
+    "isPopular": false,
+    "link": "blog/beyond-the-api-why-senior-architects-in-2026-are-moving-to-webassembly-based-local-slms.html",
+    "id": 60
+  },
+  {
     "category": "Web Development",
     "title": "Beyond Server Components: Why Local-First Architecture is the Great 2026 Web Debate",
     "summary": "As network instability increases globally and the limits of Server Actions become apparent, senior engineers are shifting from server-centric rendering to local-first database-in-the-browser architectures. We explore the architectural trade-offs, real-world constraints from Kathmandu to Tokyo, and the technology defining this shift.",
