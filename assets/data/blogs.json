@@ -1,5 +1,17 @@
 [
   {
+    "category": "Web Development",
+    "title": "Local-First vs. Edge-Streaming: The Architectural Battleground of 2026",
+    "summary": "In 2026, the web development community is split between edge-rendered streaming and local-first WASM architectures. We analyze this tension through concrete code, performance data, and hard-won lessons from deploying systems in Nepal and Japan.",
+    "date": "06 June 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?decentralized-database-network",
+    "slug": "local-first-vs-edge-streaming-the-architectural-battleground-of-2026",
+    "isPopular": false,
+    "link": "blog/local-first-vs-edge-streaming-the-architectural-battleground-of-2026.html",
+    "id": 61
+  },
+  {
     "category": "AI & Machine Learning",
     "title": "Beyond the API: Why Senior Architects in 2026 are Moving to WebAssembly-Based Local SLMs",
     "summary": "As centralized cloud inference costs skyrocket and offline reliability becomes non-negotiable, engineering leaders are shifting from monolithic LLM APIs to decentralized Small Language Models running inside WebAssembly. This deep dive explores the architecture, performance trade-offs, and real-world implementation of edge-native inference.",
