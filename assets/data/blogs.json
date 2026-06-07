@@ -1,6 +1,18 @@
 [
   {
     "category": "Web Development",
+    "title": "Beyond REST and gRPC: Why Local-First Sync Engines Are the Most Debated Web Trend of 2026",
+    "summary": "As we navigate 2026, the traditional request-response paradigm is facing its toughest challenger yet. This post explores the architectural shift toward local-first sync engines, comparing real-world engineering lessons from Tokyo's high-density infrastructure to Kathmandu's offline-heavy networks.",
+    "date": "07 June 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-database-network",
+    "slug": "beyond-rest-and-grpc-why-local-first-sync-engines-are-the-most-debated-web-trend-of-2026",
+    "isPopular": false,
+    "link": "blog/beyond-rest-and-grpc-why-local-first-sync-engines-are-the-most-debated-web-trend-of-2026.html",
+    "id": 62
+  },
+  {
+    "category": "Web Development",
     "title": "Local-First vs. Edge-Streaming: The Architectural Battleground of 2026",
     "summary": "In 2026, the web development community is split between edge-rendered streaming and local-first WASM architectures. We analyze this tension through concrete code, performance data, and hard-won lessons from deploying systems in Nepal and Japan.",
     "date": "06 June 2026",
