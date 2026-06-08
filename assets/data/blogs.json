@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "WASM Components vs. OCI Containers: The Architectural Battleground of 2026",
+    "summary": "As the WASI Component Model reaches production maturity in 2026, engineering teams are debating whether to abandon traditional Docker containers for lightweight WebAssembly runtimes. We analyze the performance realities, developer experience friction, and how geographic infrastructure disparities in Japan and Nepal are driving this architectural shift.",
+    "date": "08 June 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?server-architecture-abstract",
+    "slug": "wasm-components-vs-oci-containers-the-architectural-battleground-of-2026",
+    "isPopular": false,
+    "link": "blog/wasm-components-vs-oci-containers-the-architectural-battleground-of-2026.html",
+    "id": 63
+  },
+  {
     "category": "Web Development",
     "title": "Beyond REST and gRPC: Why Local-First Sync Engines Are the Most Debated Web Trend of 2026",
     "summary": "As we navigate 2026, the traditional request-response paradigm is facing its toughest challenger yet. This post explores the architectural shift toward local-first sync engines, comparing real-world engineering lessons from Tokyo's high-density infrastructure to Kathmandu's offline-heavy networks.",
