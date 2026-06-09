@@ -1,6 +1,18 @@
 [
   {
     "category": "Cloud Architecture",
+    "title": "Beyond the Blast Radius: Why Cellular Architecture is Reclaiming the Cloud in 2026",
+    "summary": "As centralized control planes reach their scaling limits and regional outages become more costly, senior architects are shifting toward Cellular Architecture. This post explores how isolating workloads into independent, shared-nothing 'cells' is replacing the monolithic regional model to ensure true fault tolerance.",
+    "date": "09 June 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-system-nodes-isolation",
+    "slug": "beyond-the-blast-radius-why-cellular-architecture-is-reclaiming-the-cloud-in-2026",
+    "isPopular": false,
+    "link": "blog/beyond-the-blast-radius-why-cellular-architecture-is-reclaiming-the-cloud-in-2026.html",
+    "id": 64
+  },
+  {
+    "category": "Cloud Architecture",
     "title": "WASM Components vs. OCI Containers: The Architectural Battleground of 2026",
     "summary": "As the WASI Component Model reaches production maturity in 2026, engineering teams are debating whether to abandon traditional Docker containers for lightweight WebAssembly runtimes. We analyze the performance realities, developer experience friction, and how geographic infrastructure disparities in Japan and Nepal are driving this architectural shift.",
     "date": "08 June 2026",
