@@ -1,5 +1,17 @@
 [
   {
+    "category": "AI & Machine Learning",
+    "title": "Beyond the Cloud API: Why 2026 is the Year of WebAssembly-Based Local SLM Architectures",
+    "summary": "As centralized LLM APIs face severe bottlenecks in latency, cost, and data residency, senior architects are shifting production workloads to edge-deployed Small Language Models (SLMs) running on WebAssembly. Here is the architectural blueprint for local, deterministic AI execution.",
+    "date": "10 June 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?wasm-neural-network-edge",
+    "slug": "beyond-the-cloud-api-why-2026-is-the-year-of-webassembly-based-local-slm-architectures",
+    "isPopular": false,
+    "link": "blog/beyond-the-cloud-api-why-2026-is-the-year-of-webassembly-based-local-slm-architectures.html",
+    "id": 65
+  },
+  {
     "category": "Cloud Architecture",
     "title": "Beyond the Blast Radius: Why Cellular Architecture is Reclaiming the Cloud in 2026",
     "summary": "As centralized control planes reach their scaling limits and regional outages become more costly, senior architects are shifting toward Cellular Architecture. This post explores how isolating workloads into independent, shared-nothing 'cells' is replacing the monolithic regional model to ensure true fault tolerance.",
