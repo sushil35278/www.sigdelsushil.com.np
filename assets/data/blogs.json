@@ -1,5 +1,17 @@
 [
   {
+    "category": "DevOps & SRE",
+    "title": "The Evolving SRE Role in 2026: From Operational Custodian to Platform Enablement Engineer – A Debate on Cognitive Load and Developer Autonomy",
+    "summary": "The SRE landscape is shifting dramatically. In 2026, engineering leaders are locked in a crucial debate: should SREs remain operational custodians, directly responsible for critical service reliability, or pivot to building robust internal platforms that empower developers? This post dissects the arguments, drawing on real-world experiences and future predictions.",
+    "date": "12 June 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?Platform+engineering+dashboard",
+    "slug": "the-evolving-sre-role-in-2026-from-operational-custodian-to-platform-enablement-engineer-a-debate-on-cognitive-load-and-developer-autonomy",
+    "isPopular": false,
+    "link": "blog/the-evolving-sre-role-in-2026-from-operational-custodian-to-platform-enablement-engineer-a-debate-on-cognitive-load-and-developer-autonomy.html",
+    "id": 67
+  },
+  {
     "category": "Distributed Systems",
     "title": "Beyond Microservices: The Rise of Deterministic Cell-Based Architectures in 2026",
     "summary": "As distributed systems hit the complexity wall, 2026 is seeing a radical shift toward deterministic state machines and cell-based isolation. Learn how global engineering teams are moving away from sidecar-heavy meshes to kernel-level orchestration and sovereign data cells.",
