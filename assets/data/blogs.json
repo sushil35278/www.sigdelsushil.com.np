@@ -1,5 +1,17 @@
 [
   {
+    "category": "AI & Machine Learning",
+    "title": "The Death of the Centralized LLM API? Why 2026 is the Year of 1.58-Bit Local Inference on WebAssembly",
+    "summary": "As cloud API costs skyrocket and privacy mandates tighten, engineering leaders in 2026 are shifting from massive cloud-hosted LLMs to local, 1.58-bit quantized models running on WebAssembly. Discover how this architectural shift reduces latency, cuts costs, and enables offline-first intelligence.",
+    "date": "13 June 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?edge-computing-tokyo-neon",
+    "slug": "the-death-of-the-centralized-llm-api-why-2026-is-the-year-of-158-bit-local-inference-on-webassembly",
+    "isPopular": false,
+    "link": "blog/the-death-of-the-centralized-llm-api-why-2026-is-the-year-of-158-bit-local-inference-on-webassembly.html",
+    "id": 68
+  },
+  {
     "category": "DevOps & SRE",
     "title": "The Evolving SRE Role in 2026: From Operational Custodian to Platform Enablement Engineer – A Debate on Cognitive Load and Developer Autonomy",
     "summary": "The SRE landscape is shifting dramatically. In 2026, engineering leaders are locked in a crucial debate: should SREs remain operational custodians, directly responsible for critical service reliability, or pivot to building robust internal platforms that empower developers? This post dissects the arguments, drawing on real-world experiences and future predictions.",
