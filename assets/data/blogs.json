@@ -1,5 +1,17 @@
 [
   {
+    "category": "DevOps & SRE",
+    "title": "Beyond YAML-Hell: Why SREs are Shifting to Programmable Wasm Control Planes in 2026",
+    "summary": "The decade-long reign of declarative YAML in GitOps is facing a quiet rebellion. As SRE teams in Tokyo and Kathmandu grapple with templating fatigue and performance overheads, programmable WebAssembly (Wasm) control planes are emerging as the modern standard for policy-as-code and infrastructure automation.",
+    "date": "15 June 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?wasm-kubernetes-cloud-architecture",
+    "slug": "beyond-yaml-hell-why-sres-are-shifting-to-programmable-wasm-control-planes-in-2026",
+    "isPopular": false,
+    "link": "blog/beyond-yaml-hell-why-sres-are-shifting-to-programmable-wasm-control-planes-in-2026.html",
+    "id": 70
+  },
+  {
     "category": "Web Development",
     "title": "Beyond the Cloud: The 2026 Battle Between Local-First CRDTs and Edge-State Hydration",
     "summary": "As we enter 2026, the architectural consensus around server-centric rendering is fracturing. Engineering leaders are split between the immediate, offline-resilient feedback loops of local-first CRDTs and the centralized control of edge-native Server Components.",
