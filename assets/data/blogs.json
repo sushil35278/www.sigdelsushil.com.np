@@ -1,5 +1,17 @@
 [
   {
+    "category": "AI & Machine Learning",
+    "title": "The Death of the Autonomous Agent: Why Engineering Leaders are Shifting to Compiled AI Workflows in 2026",
+    "summary": "After years of burning budgets on unpredictable, multi-agent loops, engineering teams are demanding deterministic reliability. This article explores the shift toward compiled, declarative AI pipelines using structural frameworks, drawing on real-world lessons from Tokyo and Kathmandu.",
+    "date": "16 June 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?deterministic-software-architecture",
+    "slug": "the-death-of-the-autonomous-agent-why-engineering-leaders-are-shifting-to-compiled-ai-workflows-in-2026",
+    "isPopular": false,
+    "link": "blog/the-death-of-the-autonomous-agent-why-engineering-leaders-are-shifting-to-compiled-ai-workflows-in-2026.html",
+    "id": 71
+  },
+  {
     "category": "DevOps & SRE",
     "title": "Beyond YAML-Hell: Why SREs are Shifting to Programmable Wasm Control Planes in 2026",
     "summary": "The decade-long reign of declarative YAML in GitOps is facing a quiet rebellion. As SRE teams in Tokyo and Kathmandu grapple with templating fatigue and performance overheads, programmable WebAssembly (Wasm) control planes are emerging as the modern standard for policy-as-code and infrastructure automation.",
