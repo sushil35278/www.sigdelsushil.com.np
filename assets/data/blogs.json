@@ -1,5 +1,17 @@
 [
   {
+    "category": "Software Engineering",
+    "title": "The Great Code Debt of 2026: Why Senior Architects are Restricting AI Agents with WASM-Based Micro-Sandboxes",
+    "summary": "As autonomous AI agents flood production codebases with synthetic code, engineering leaders are facing unprecedented technical and security debt. This post explores the rise of WebAssembly-based local verification gates as the new standard for isolating and executing untrusted generative code.",
+    "date": "17 June 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?webassembly-sandbox-architecture",
+    "slug": "the-great-code-debt-of-2026-why-senior-architects-are-restricting-ai-agents-with-wasm-based-micro-sandboxes",
+    "isPopular": false,
+    "link": "blog/the-great-code-debt-of-2026-why-senior-architects-are-restricting-ai-agents-with-wasm-based-micro-sandboxes.html",
+    "id": 72
+  },
+  {
     "category": "AI & Machine Learning",
     "title": "The Death of the Autonomous Agent: Why Engineering Leaders are Shifting to Compiled AI Workflows in 2026",
     "summary": "After years of burning budgets on unpredictable, multi-agent loops, engineering teams are demanding deterministic reliability. This article explores the shift toward compiled, declarative AI pipelines using structural frameworks, drawing on real-world lessons from Tokyo and Kathmandu.",
