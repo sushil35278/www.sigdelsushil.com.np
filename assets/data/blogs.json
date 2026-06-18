@@ -1,5 +1,17 @@
 [
   {
+    "category": "DevOps & SRE",
+    "title": "Beyond Uptime: The Great Debate on SRE's Expanded Role in Sustainable Cloud Architectures for 2026",
+    "summary": "In 2026, the SRE mandate is evolving beyond just reliability. Driven by relentless cloud cost pressures and urgent sustainability goals, engineering leaders are grappling with whether SRE teams should proactively architect for efficiency – sparking a critical debate on scope, ownership, and the future of cloud operations.",
+    "date": "18 June 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?sre-cloud-efficiency-sustainability-2026",
+    "slug": "beyond-uptime-the-great-debate-on-sres-expanded-role-in-sustainable-cloud-architectures-for-2026",
+    "isPopular": false,
+    "link": "blog/beyond-uptime-the-great-debate-on-sres-expanded-role-in-sustainable-cloud-architectures-for-2026.html",
+    "id": 73
+  },
+  {
     "category": "Software Engineering",
     "title": "The Great Code Debt of 2026: Why Senior Architects are Restricting AI Agents with WASM-Based Micro-Sandboxes",
     "summary": "As autonomous AI agents flood production codebases with synthetic code, engineering leaders are facing unprecedented technical and security debt. This post explores the rise of WebAssembly-based local verification gates as the new standard for isolating and executing untrusted generative code.",
