@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "The Hyper-Distributed Cloud Fabric: Rethinking Edge-to-Core Architectures in 2026",
+    "summary": "The traditional divide between 'cloud' and 'edge' is dissolving. In 2026, engineering leaders are grappling with the implications of a truly hyper-distributed cloud fabric, where compute extends seamlessly from core data centers to the remotest sensors. This shift demands a radical re-evaluation of our architectural patterns, operational models, and security strategies.",
+    "date": "19 June 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-cloud-fabric-edge-computing-2026",
+    "slug": "the-hyper-distributed-cloud-fabric-rethinking-edge-to-core-architectures-in-2026",
+    "isPopular": false,
+    "link": "blog/the-hyper-distributed-cloud-fabric-rethinking-edge-to-core-architectures-in-2026.html",
+    "id": 74
+  },
+  {
     "category": "DevOps & SRE",
     "title": "Beyond Uptime: The Great Debate on SRE's Expanded Role in Sustainable Cloud Architectures for 2026",
     "summary": "In 2026, the SRE mandate is evolving beyond just reliability. Driven by relentless cloud cost pressures and urgent sustainability goals, engineering leaders are grappling with whether SRE teams should proactively architect for efficiency – sparking a critical debate on scope, ownership, and the future of cloud operations.",
