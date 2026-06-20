@@ -1,5 +1,17 @@
 [
   {
+    "category": "Distributed Systems",
+    "title": "Beyond the Container: Why We Are Replacing Docker with WASM in 2026",
+    "summary": "The debate between traditional containerization and WebAssembly (WASM) has moved from theoretical edge use cases to core production environments. This article analyzes how architects are navigating the shift to WASM micro-VMs, drawing on deployment patterns from Tokyo's high-throughput transit backends to Nepal's off-grid micro-datacenters.",
+    "date": "20 June 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?wasm-distributed-computing",
+    "slug": "beyond-the-container-why-we-are-replacing-docker-with-wasm-in-2026",
+    "isPopular": false,
+    "link": "blog/beyond-the-container-why-we-are-replacing-docker-with-wasm-in-2026.html",
+    "id": 75
+  },
+  {
     "category": "Cloud Architecture",
     "title": "The Hyper-Distributed Cloud Fabric: Rethinking Edge-to-Core Architectures in 2026",
     "summary": "The traditional divide between 'cloud' and 'edge' is dissolving. In 2026, engineering leaders are grappling with the implications of a truly hyper-distributed cloud fabric, where compute extends seamlessly from core data centers to the remotest sensors. This shift demands a radical re-evaluation of our architectural patterns, operational models, and security strategies.",
