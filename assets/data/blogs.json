@@ -1,5 +1,17 @@
 [
   {
+    "category": "DevOps & SRE",
+    "title": "SRE in 2026: Why Engineering Leaders are Rejecting Probabilistic AI for Deterministic eBPF-Guided Recovery",
+    "summary": "As autonomous AI SRE agents face a wave of production rollbacks, engineering organizations are returning to deterministic principles. This article explores how combining eBPF kernel tracing with WebAssembly runtimes is shaping the real-world recovery architectures of 2026.",
+    "date": "21 June 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?ebpf-kernel-networking-telemetry",
+    "slug": "sre-in-2026-why-engineering-leaders-are-rejecting-probabilistic-ai-for-deterministic-ebpf-guided-recovery",
+    "isPopular": false,
+    "link": "blog/sre-in-2026-why-engineering-leaders-are-rejecting-probabilistic-ai-for-deterministic-ebpf-guided-recovery.html",
+    "id": 76
+  },
+  {
     "category": "Distributed Systems",
     "title": "Beyond the Container: Why We Are Replacing Docker with WASM in 2026",
     "summary": "The debate between traditional containerization and WebAssembly (WASM) has moved from theoretical edge use cases to core production environments. This article analyzes how architects are navigating the shift to WASM micro-VMs, drawing on deployment patterns from Tokyo's high-throughput transit backends to Nepal's off-grid micro-datacenters.",
