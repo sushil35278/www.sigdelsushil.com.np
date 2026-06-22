@@ -1,5 +1,17 @@
 [
   {
+    "category": "Distributed Systems",
+    "title": "Beyond the API: Why Senior Architects in 2026 are Migrating to Local-First and WASM-SQLite",
+    "summary": "The traditional request-response REST API is hitting its physical limits. Senior engineers are increasingly adopting local-first architectures powered by WebAssembly-compiled SQLite and CRDTs to solve latency, resilience, and cloud-hosting costs.",
+    "date": "22 June 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-database-network",
+    "slug": "beyond-the-api-why-senior-architects-in-2026-are-migrating-to-local-first-and-wasm-sqlite",
+    "isPopular": false,
+    "link": "blog/beyond-the-api-why-senior-architects-in-2026-are-migrating-to-local-first-and-wasm-sqlite.html",
+    "id": 77
+  },
+  {
     "category": "DevOps & SRE",
     "title": "SRE in 2026: Why Engineering Leaders are Rejecting Probabilistic AI for Deterministic eBPF-Guided Recovery",
     "summary": "As autonomous AI SRE agents face a wave of production rollbacks, engineering organizations are returning to deterministic principles. This article explores how combining eBPF kernel tracing with WebAssembly runtimes is shaping the real-world recovery architectures of 2026.",
