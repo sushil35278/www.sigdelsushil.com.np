@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cybersecurity",
+    "title": "The Rise of 'Adversarial Statecraft' in 2026: A Cybersecurity Dilemma for Developers",
+    "summary": "As nation-state actors evolve their tactics beyond traditional espionage, software engineering teams in 2026 face a new paradigm: 'Adversarial Statecraft.' This isn't just about zero-days; it's about the subtle weaponization of software supply chains and infrastructure. Are your development practices prepared for this sophisticated threat landscape?",
+    "date": "23 June 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?digital+supply+chain+security",
+    "slug": "the-rise-of-adversarial-statecraft-in-2026-a-cybersecurity-dilemma-for-developers",
+    "isPopular": false,
+    "link": "blog/the-rise-of-adversarial-statecraft-in-2026-a-cybersecurity-dilemma-for-developers.html",
+    "id": 78
+  },
+  {
     "category": "Distributed Systems",
     "title": "Beyond the API: Why Senior Architects in 2026 are Migrating to Local-First and WASM-SQLite",
     "summary": "The traditional request-response REST API is hitting its physical limits. Senior engineers are increasingly adopting local-first architectures powered by WebAssembly-compiled SQLite and CRDTs to solve latency, resilience, and cloud-hosting costs.",
