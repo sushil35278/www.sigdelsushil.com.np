@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cybersecurity",
+    "title": "Beyond the Bearer Token: Why 2026 is the Year of Deterministic Identity and DPoP",
+    "summary": "As token-theft surges and the 'Golden SAML' attacks of the mid-2020s haunt enterprise security, senior architects are moving away from traditional JWTs toward sender-constrained, hardware-bound identity. This post explores the implementation of RFC 9449 and the shift toward cryptographic proof-of-possession.",
+    "date": "25 June 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?secure-hardware-key-encryption",
+    "slug": "beyond-the-bearer-token-why-2026-is-the-year-of-deterministic-identity-and-dpop",
+    "isPopular": false,
+    "link": "blog/beyond-the-bearer-token-why-2026-is-the-year-of-deterministic-identity-and-dpop.html",
+    "id": 80
+  },
+  {
     "category": "AI & Machine Learning",
     "title": "The SLM Ascendancy: Optimizing for Practical AI in 2026's Enterprise Landscape",
     "summary": "In 2026, the AI debate among senior engineering leaders isn't just about scaling LLMs; it's about the pragmatic shift towards Small Language Models (SLMs). This post dives into why specialized, efficient models are becoming critical for real-world enterprise applications, addressing cost, latency, and data governance challenges.",
