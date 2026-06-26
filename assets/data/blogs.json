@@ -1,5 +1,17 @@
 [
   {
+    "category": "Web Development",
+    "title": "The Great API Decoupling: Why Local-First Architecture is Dividing Engineering Teams in 2026",
+    "summary": "As the latency gap between edge computing and client-side storage narrows, senior architects are debating the necessity of traditional REST and GraphQL layers. We explore how Local-First (Lo-Fi) patterns and CRDTs are fundamentally altering the state management lifecycle.",
+    "date": "26 June 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-database-network",
+    "slug": "the-great-api-decoupling-why-local-first-architecture-is-dividing-engineering-teams-in-2026",
+    "isPopular": false,
+    "link": "blog/the-great-api-decoupling-why-local-first-architecture-is-dividing-engineering-teams-in-2026.html",
+    "id": 81
+  },
+  {
     "category": "Cybersecurity",
     "title": "Beyond the Bearer Token: Why 2026 is the Year of Deterministic Identity and DPoP",
     "summary": "As token-theft surges and the 'Golden SAML' attacks of the mid-2020s haunt enterprise security, senior architects are moving away from traditional JWTs toward sender-constrained, hardware-bound identity. This post explores the implementation of RFC 9449 and the shift toward cryptographic proof-of-possession.",
