@@ -1,5 +1,17 @@
 [
   {
+    "category": "AI & Machine Learning",
+    "title": "Beyond the API: Why Senior Architects in 2026 are Decoupling Systems with Local Speculative Decoding and Wasm",
+    "summary": "As centralized API costs, network latency, and strict data residency rules hit a wall in 2026, senior engineering leaders are shifting workloads to edge-computed Small Language Models (SLMs). We dive deep into the technical realities of deploying cooperative speculative decoding using WebAssembly, drawing on real-world architectural lessons from Tokyo to Kathmandu.",
+    "date": "28 June 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?decentralized-edge-computing",
+    "slug": "beyond-the-api-why-senior-architects-in-2026-are-decoupling-systems-with-local-speculative-decoding-and-wasm",
+    "isPopular": false,
+    "link": "blog/beyond-the-api-why-senior-architects-in-2026-are-decoupling-systems-with-local-speculative-decoding-and-wasm.html",
+    "id": 82
+  },
+  {
     "category": "Web Development",
     "title": "The Great API Decoupling: Why Local-First Architecture is Dividing Engineering Teams in 2026",
     "summary": "As the latency gap between edge computing and client-side storage narrows, senior architects are debating the necessity of traditional REST and GraphQL layers. We explore how Local-First (Lo-Fi) patterns and CRDTs are fundamentally altering the state management lifecycle.",
