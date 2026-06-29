@@ -97,20 +97,72 @@
   }
 
   // Acc
+  const interleaveButtonsAndContent = () => {
+    const isMobile = $(window).width() < 768;
+    const $naccsContainer = $(".naccs");
+    const $menu = $naccsContainer.find(".menu").first();
+    const $menuItems = $menu.children();
+    const $contentList = $naccsContainer.find("ul.nacc").first();
+    const $contentItems = $contentList.children();
+
+    // Clean up any previous rearrangement
+    $naccsContainer.find(".interleaved-section").remove();
+    $menu.show();
+    $contentList.show();
+
+    if (isMobile) {
+      // Hide original menu and content list
+      $menu.hide();
+      $contentList.hide();
+
+      // Create interleaved sections
+      $menuItems.each(function(index) {
+        const $menuItem = $(this);
+        const $contentItem = $contentItems.eq(index);
+        if ($contentItem.length) {
+          // Create a section container for button + content
+          const $section = $("<div class='interleaved-section'></div>");
+          
+          // Clone button and add to section
+          const $clonedButton = $menuItem.clone(true);
+          $section.append($clonedButton);
+          
+          // Clone content and add to section, ensure it's visible
+          const $clonedContent = $contentItem.children().clone(true);
+          const $contentBox = $("<div class='content-box'></div>");
+          $contentBox.append($clonedContent);
+          $section.append($contentBox);
+          
+          $naccsContainer.append($section);
+        }
+      });
+    }
+  };
+
+  // Call on load and resize
+  $(window).on("load resize", interleaveButtonsAndContent);
+
   $(document).on("click", ".naccs .menu div", function () {
     var numberIndex = $(this).index();
+    var isMobile = $(window).width() < 768;
 
-    if (!$(this).hasClass("active")) {
-      $(".naccs .menu div").removeClass("active");
-      $(".naccs ul li").removeClass("active");
+    if (isMobile) {
+      // On mobile, no toggle needed, just smooth scroll if needed
+      return;
+    } else {
+      // On desktop, keep original toggle behavior
+      if (!$(this).hasClass("active")) {
+        $(".naccs .menu div").removeClass("active");
+        $(".naccs ul li").removeClass("active");
 
-      $(this).addClass("active");
-      $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+        $(this).addClass("active");
+        $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
 
-      var listItemHeight = $(".naccs ul")
-        .find("li:eq(" + numberIndex + ")")
-        .innerHeight();
-      $(".naccs ul").height(listItemHeight + "px");
+        var listItemHeight = $(".naccs ul")
+          .find("li:eq(" + numberIndex + ")")
+          .innerHeight();
+        $(".naccs ul").height(listItemHeight + "px");
+      }
     }
   });
 
