@@ -2,187 +2,559 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sigdelsushil.com.np/</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/index-ja.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/privacy-policy.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/terms-of-service.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/sushil_sigdel.pdf</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/sushil_sigdel_jp.pdf</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-event-driven-chaos-the-2026-shift-to-durable-execution-in-multi-region-cloud-architecture.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-faas-the-2026-debate-on-serverless-native-hyper-abstraction-and-engineering-depth.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-microservices-the-rise-of-deterministic-cell-based-architectures-in-2026.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-rest-and-grpc-why-local-first-sync-engines-are-the-most-debated-web-trend-of-2026.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-sboms-the-2026-debate-on-autonomous-policy-enforcement-in-the-software-supply-chain.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-server-components-why-local-first-architecture-is-the-great-2026-web-debate.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-the-api-why-2026-is-the-year-of-deterministic-local-inference-l-i-architectures.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-the-api-why-senior-architects-in-2026-are-decoupling-systems-with-local-speculative-decoding-and-wasm.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-the-api-why-senior-architects-in-2026-are-migrating-to-local-first-and-wasm-sqlite.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-the-api-why-senior-architects-in-2026-are-moving-to-webassembly-based-local-slms.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-the-bearer-token-why-2026-is-the-year-of-deterministic-identity-and-dpop.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-the-blast-radius-why-cellular-architecture-is-reclaiming-the-cloud-in-2026.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-the-cloud-api-why-2026-is-the-year-of-webassembly-based-local-slm-architectures.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-the-cloud-hub-the-2026-pivot-to-deterministic-edge-orchestration.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-the-cloud-the-2026-battle-between-local-first-crdts-and-edge-state-hydration.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-the-cloud-the-architects-guide-to-local-first-distributed-systems-in-2026.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-the-cloud-why-local-first-is-the-definitive-web-architecture-of-2026.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-the-cloud-why-local-first-persistence-is-redefining-distributed-systems-in-2026.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-the-container-why-we-are-replacing-docker-with-wasm-in-2026.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-the-container-why-webassembly-wasm-micro-vms-are-splitting-cloud-architects-in-2026.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-the-global-control-plane-why-2026-belongs-to-sovereign-cell-based-architecture.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-the-global-vpc-why-architectures-in-2026-are-pivoting-to-sovereign-cell-based-topologies.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://sigdelsushil.com.np/blog/beyond-the-hyperscaler-the-rise-of-sovereign-cloud-mesh-in-2026.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/blog/beyond-the-inference-why-2026-is-the-year-of-the-formally-verified-codebase.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-the-loading-spinner-why-local-first-is-splitting-the-senior-dev-community-in-2026.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-the-mega-region-the-rise-of-deterministic-data-sharding-in-2026.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-the-password-why-non-human-identity-nhi-is-the-2026-cybersecurity-frontier.html</loc>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/blog/beyond-the-pixel-why-2026-is-the-year-of-headless-mobile-and-why-your-ui-skills-are-becoming-technical-debt.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/blog/beyond-the-prompt-why-agentic-ai-workflows-are-the-next-frontier-in-software-engineering.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-the-saga-pattern-why-durable-execution-is-polarizing-distributed-architecture-in-2026.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-the-vector-why-the-2026-architecture-shift-favors-deterministic-logic-graphs.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-the-virtual-dom-why-2026-is-the-year-of-deterministic-ui-engineering.html</loc>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/blog/beyond-the-yaml-horizon-why-deterministic-intent-is-replacing-iac-in-2026.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-unit-testing-the-2026-pivot-to-formally-verified-specifications.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-uptime-the-great-debate-on-sres-expanded-role-in-sustainable-cloud-architectures-for-2026.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-us-east-1-the-rise-of-sovereign-cloud-repatriation-in-2026.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-yaml-hell-why-sres-are-shifting-to-programmable-wasm-control-planes-in-2026.html</loc>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/blog/beyond-zero-trust-the-2026-debate-on-adaptive-trust-and-hyper-contextual-authorization.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/beyond-zero-trust-why-runtime-attestation-is-the-only-security-metric-that-matters-in-2026.html</loc>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/blog/cost-optimization-ai-models-edge-vs-cloud.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/blog/decentralized-identity-in-2026-the-enterprise-readiness-debate-from-poc-to-production.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/blog/edge-ai-is-not-what-you-think-the-real-future-of-hyper-personalization-in-mobile-apps-2026-edition.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/edge-vs-core-in-2026-debating-the-stateless-core-stateful-edge-paradox.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/from-llms-to-llrts-navigating-the-rise-of-real-time-generative-ai-in-2026.html</loc>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/blog/from-zero-trust-to-deterministic-identity-the-2026-security-shift-every-architect-needs-to-lead.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/blog/hydration-is-dead-why-autonomous-orchestrators-are-killing-the-traditional-web-framework-in-2026.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/blog/kubernetes-cost-management-case-studies.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/local-first-vs-edge-streaming-the-architectural-battleground-of-2026.html</loc>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/blog/microservices-webassembly-performance-benchmarks.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/post-quantum-cryptography-in-2026-why-senior-architects-are-rejecting-the-lift-and-shift-migration-strategy.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/sre-in-2026-why-engineering-leaders-are-rejecting-probabilistic-ai-for-deterministic-ebpf-guided-recovery.html</loc>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/blog/the-2026-pivot-why-senior-architects-are-moving-from-cloud-first-to-deterministic-local-first-architectures.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-2026-sovereign-cloud-shift-why-architects-are-decoupling-from-hyperscalers.html</loc>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/blog/the-cloud-native-mirage-why-local-first-is-the-future-of-real-engineering.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-data-truth-paradox-event-streams-vs-distributed-transactions-in-2026-architecture-debates.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-death-of-centralized-consensus-why-were-abandoning-global-raft-for-deterministic-localism-in-2026.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-death-of-staging-why-engineering-leaders-in-2026-are-pivoting-to-ephemeral-production-shards.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-death-of-stateless-edge-why-2026-is-the-year-of-the-durable-actor-mesh.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-death-of-the-autonomous-agent-why-engineering-leaders-are-shifting-to-compiled-ai-workflows-in-2026.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-death-of-the-centralized-llm-api-why-2026-is-the-year-of-158-bit-local-inference-on-webassembly.html</loc>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/blog/the-death-of-the-loading-spinner-why-local-first-is-the-only-architecture-that-matters.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/blog/the-death-of-the-native-vs-cross-platform-debate-welcome-to-the-era-of-unified-abstraction.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-death-of-the-regional-mega-cluster-why-2026-is-the-year-of-state-affine-edge-cells.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-death-of-the-sidecar-why-ebpf-and-wasm-are-redefining-sre-in-2026.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-end-of-centrality-why-2026-is-the-year-of-deterministic-causal-consistency.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-end-of-persistent-secrets-transitioning-to-attestation-based-security-in-2026.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-evolving-sre-role-in-2026-from-operational-custodian-to-platform-enablement-engineer-a-debate-on-cognitive-load-and-developer-autonomy.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-great-ai-architecture-debate-of-2026-monolithic-generalists-vs-federated-specialists.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-great-api-decoupling-why-local-first-architecture-is-dividing-engineering-teams-in-2026.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-great-attestation-divide-securing-the-software-supply-chain-beyond-sca-in-2026.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-great-code-debt-of-2026-why-senior-architects-are-restricting-ai-agents-with-wasm-based-micro-sandboxes.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-great-decentralization-why-engineering-leaders-are-abandoning-mega-llm-apis-for-edge-moe-meshes-in-2026.html</loc>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/blog/the-great-determinism-pivot-why-engineering-leaders-are-moving-beyond-raw-llm-inference-in-2026.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/blog/the-great-firewall-is-dead-why-identity-is-the-only-perimeter-that-matters.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-great-local-first-debate-of-2026-why-pglite-and-crdts-are-splitting-engineering-teams.html</loc>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/blog/the-great-pendulum-swing-why-your-thick-client-spa-is-becoming-a-liability.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-great-re-centralization-navigating-hybrid-rendering-paradigms-in-2026-web-development.html</loc>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/blog/the-great-re-servering-why-your-10mb-javascript-bundle-is-a-technical-debt-time-bomb.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/blog/the-great-unification-why-kotlin-multiplatform-is-redefining-mobile-strategy.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-hyper-distributed-cloud-fabric-rethinking-edge-to-core-architectures-in-2026.html</loc>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/blog/the-quantum-countdown-engineering-for-post-quantum-cryptography.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-rise-of-adversarial-statecraft-in-2026-a-cybersecurity-dilemma-for-developers.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-slm-ascendancy-optimizing-for-practical-ai-in-2026s-enterprise-landscape.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/the-strategic-cloud-recalibration-why-2026-sees-architects-debating-workload-repatriation.html</loc>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/blog/the-zero-trust-pivot-securing-the-human-layer-against-generative-ai-threats.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sigdelsushil.com.np/blog/wasm-components-vs-oci-containers-the-architectural-battleground-of-2026.html</loc>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sigdelsushil.com.np/blog/zero-trust-security-roi-remote-teams.html</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

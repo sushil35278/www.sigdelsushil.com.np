@@ -98,7 +98,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: #fff;
+      background-color: #0d1117;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -113,48 +113,41 @@
     }
 
     .preloader-inner {
-      position: relative;
-      width: 142px;
-      height: 40px;
-      background: #fff;
+      font-family: 'Courier New', Courier, monospace;
+      color: #58a6ff;
+      background: #161b22;
+      padding: 30px;
+      border-radius: 8px;
+      border: 1px solid #30363d;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 90%;
     }
 
-    .preloader-inner .dot {
-      position: absolute;
-      width: 16px;
-      height: 16px;
-      top: 12px;
-      left: 15px;
-      background: #fa65b1;
-      border-radius: 50%;
-      animation: dot 2.8s infinite;
+    .preloader-line {
+      margin: 5px 0;
+      line-height: 1.5;
     }
 
-    .preloader-inner .dots {
-      margin-top: 12px;
-      margin-left: 31px;
-      animation: dots 2.8s infinite;
+    .preloader-line span {
+      color: #7ee787;
     }
 
-    .preloader-inner .dots span {
-      display: block;
-      float: left;
-      width: 16px;
-      height: 16px;
-      margin-left: 16px;
-      background: #fa65b1;
-      border-radius: 50%;
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      height: 18px;
+      background: #58a6ff;
+      animation: blink 1s infinite;
+      margin-left: 5px;
     }
 
-    @keyframes dot {
-      50% {
-        transform: translateX(96px);
+    @keyframes blink {
+      0%, 49% {
+        opacity: 1;
       }
-    }
-
-    @keyframes dots {
-      50% {
-        transform: translateX(-31px);
+      50%, 100% {
+        opacity: 0;
       }
     }
   </style>
@@ -244,15 +237,55 @@
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <div class="preloader-line">$ Initializing environment...</div>
+      <div class="preloader-line" id="line1"></div>
+      <div class="preloader-line" id="line2"></div>
+      <div class="preloader-line" id="line3"></div>
+      <div class="preloader-line" id="line4"></div>
+      <div class="preloader-line">$ <span id="typing-line"></span><span class="cursor"></span></div>
     </div>
   </div>
   <!-- ***** Preloader End ***** -->
+  
+  <script>
+    const lines = [
+      "Loading dependencies...",
+      "Compiling assets...",
+      "Connecting to server...",
+      "Welcome to Sushil's portfolio!"
+    ];
+    const typingText = "npm run start";
+    let lineIndex = 0;
+    let charIndex = 0;
+
+    function typeLine() {
+      if (lineIndex < lines.length) {
+        const lineEl = document.getElementById(`line${lineIndex + 1}`);
+        if (charIndex < lines[lineIndex].length) {
+          lineEl.innerHTML += lines[lineIndex][charIndex];
+          charIndex++;
+          setTimeout(typeLine, 50);
+        } else {
+          charIndex = 0;
+          lineIndex++;
+          setTimeout(typeLine, 300);
+        }
+      } else {
+        typeFinalLine();
+      }
+    }
+
+    function typeFinalLine() {
+      const finalEl = document.getElementById("typing-line");
+      if (charIndex < typingText.length) {
+        finalEl.innerHTML += typingText[charIndex];
+        charIndex++;
+        setTimeout(typeFinalLine, 80);
+      }
+    }
+
+    setTimeout(typeLine, 500);
+  </script>
 
   <canvas id="matrix-canvas"
     style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; display: none;"></canvas>
