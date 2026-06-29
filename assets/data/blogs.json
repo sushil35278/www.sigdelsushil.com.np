@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cybersecurity",
+    "title": "The Great Attestation Divide: Securing the Software Supply Chain Beyond SCA in 2026",
+    "summary": "As software supply chain attacks continue to proliferate, senior engineering leaders are grappling with a critical question: how deep must our software component attestation go? In 2026, the debate intensifies between comprehensive, verifiable provenance and the practical realities of development velocity, demanding a new blueprint for trust in our digital infrastructure.",
+    "date": "29 June 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?software-supply-chain-attestation",
+    "slug": "the-great-attestation-divide-securing-the-software-supply-chain-beyond-sca-in-2026",
+    "isPopular": false,
+    "link": "blog/the-great-attestation-divide-securing-the-software-supply-chain-beyond-sca-in-2026.html",
+    "id": 83
+  },
+  {
     "category": "AI & Machine Learning",
     "title": "Beyond the API: Why Senior Architects in 2026 are Decoupling Systems with Local Speculative Decoding and Wasm",
     "summary": "As centralized API costs, network latency, and strict data residency rules hit a wall in 2026, senior engineering leaders are shifting workloads to edge-computed Small Language Models (SLMs). We dive deep into the technical realities of deploying cooperative speculative decoding using WebAssembly, drawing on real-world architectural lessons from Tokyo to Kathmandu.",
