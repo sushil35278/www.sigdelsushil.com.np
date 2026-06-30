@@ -1,5 +1,17 @@
 [
   {
+    "category": "AI & Machine Learning",
+    "title": "Beyond Centralized LLMs: The 2026 Shift to Tiered Local SLMs and WebGPU Orchestration",
+    "summary": "As centralized API costs skyrocket and offline latency requirements tighten, engineering leaders in 2026 are shifting from massive cloud-hosted LLMs to tiered architectures utilizing local WebGPU-driven Small Language Models (SLMs).",
+    "date": "30 June 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?edge-computing-neural-network",
+    "slug": "beyond-centralized-llms-the-2026-shift-to-tiered-local-slms-and-webgpu-orchestration",
+    "isPopular": false,
+    "link": "blog/beyond-centralized-llms-the-2026-shift-to-tiered-local-slms-and-webgpu-orchestration.html",
+    "id": 84
+  },
+  {
     "category": "Cybersecurity",
     "title": "The Great Attestation Divide: Securing the Software Supply Chain Beyond SCA in 2026",
     "summary": "As software supply chain attacks continue to proliferate, senior engineering leaders are grappling with a critical question: how deep must our software component attestation go? In 2026, the debate intensifies between comprehensive, verifiable provenance and the practical realities of development velocity, demanding a new blueprint for trust in our digital infrastructure.",
