@@ -1,5 +1,17 @@
 [
   {
+    "category": "DevOps & SRE",
+    "title": "Beyond Kernel Space: The 2026 SRE Transition from eBPF to WASM Telemetry",
+    "summary": "As SRE teams encounter strict security audits and resource limits with kernel-level eBPF probes at scale, WebAssembly (WASM) is emerging as the preferred runtime for isolated, high-performance user-space telemetry.",
+    "date": "02 July 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?datacenter-rack-telemetry-glow",
+    "slug": "beyond-kernel-space-the-2026-sre-transition-from-ebpf-to-wasm-telemetry",
+    "isPopular": false,
+    "link": "blog/beyond-kernel-space-the-2026-sre-transition-from-ebpf-to-wasm-telemetry.html",
+    "id": 86
+  },
+  {
     "category": "AI & Machine Learning",
     "title": "The Edge AI Paradox: Performance vs. Explainability in 2026 and Beyond",
     "summary": "By 2026, AI's omnipresence on the edge is undeniable, driving innovation across industries. Yet, as models become hyper-optimized for constrained environments, a critical debate emerges: how do we balance raw performance with the imperative for transparency, auditability, and ethical governance? This post delves into the core challenges and emerging strategies for accountable Edge AI.",

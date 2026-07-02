@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond Kernel Space: The 2026 SRE Transition from eBPF to WASM Telemetry | Sushil Sigdel</title>
+    <meta name="description" content="As SRE teams encounter strict security audits and resource limits with kernel-level eBPF probes at scale, WebAssembly (WASM) is emerging as the preferred runtime for isolated, high-performance user-space telemetry.">
+    <link rel="canonical" href="https://sigdelsushil.com.np/blog/beyond-kernel-space-the-2026-sre-transition-from-ebpf-to-wasm-telemetry.html">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Sushil Sigdel">
+    <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id=GTM-KHDFS4SM'+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KHDFS4SM');</script>
+  <!-- End Google Tag Manager -->
+
+<!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <style>
+        :root {
+            --primary-accent: #00d2ff;
+            --text-dark: #2d3436;
+            --text-gray: #636e72;
+        }
+
+        body {
+            background-color: #fafbfc;
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Reading Progress Bar */
+        #progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            z-index: 10000;
+        }
+
+        #progress-bar {
+            height: 100%;
+            background: linear-gradient(to right, #00d2ff, #fa65b1);
+            width: 0%;
+            transition: width 0.1s ease;
+        }
+
+        /* Hero Styling */
+        .blog-hero {
+            position: relative;
+            padding: 120px 0 80px;
+            background-color: #2a2a2a;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+            url('https://source.unsplash.com/featured/1200x800/?datacenter-rack-telemetry-glow');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            margin-bottom: -40px;
+        }
+
+        .blog-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .category-tag {
+            background: var(--primary-accent);
+            color: white;
+            padding: 6px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .blog-meta-top {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .content-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
+            position: relative;
+            z-index: 5;
+        }
+
+        .featured-img-wrap {
+            margin-bottom: 40px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .featured-img-wrap img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .blog-body {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .blog-body h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--text-dark);
+            font-size: 2rem;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .blog-body pre {
+            background: #0f172a;
+            color: #e2e8f0;
+            padding: 24px;
+            border-radius: 20px;
+            overflow-x: auto;
+            font-family: 'Fira Code', 'JetBrains Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin: 30px 0;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .blog-body code {
+            background: rgba(250, 101, 177, 0.12);
+            color: #111827;
+            padding: 3px 8px;
+            border-radius: 8px;
+            font-family: 'Fira Code', 'JetBrains Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+            font-size: 0.95rem;
+        }
+
+        .blog-body pre code {
+            background: transparent;
+            padding: 0;
+            color: inherit;
+        }
+
+        /* Floating Social Share */
+        .share-buttons {
+            position: fixed;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 100;
+        }
+
+        .share-btn {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+        }
+
+        .share-btn:hover {
+            transform: scale(1.1) translateX(5px);
+            color: white;
+        }
+
+        .share-tw {
+            background: #1DA1F2;
+        }
+
+        .share-li {
+            background: #0077b5;
+        }
+
+        .share-fb {
+            background: #4267B2;
+        }
+
+        /* Sticky Back to Top */
+        #scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--primary-accent);
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s;
+            z-index: 100;
+            border: none;
+        }
+
+        #scroll-top.show {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .footer-action {
+            margin-top: 60px;
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 40px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary-accent);
+            font-weight: 600;
+            text-decoration: none;
+            gap: 10px;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 1200px) {
+            .share-buttons {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .blog-hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .content-container {
+                padding: 30px;
+                border-radius: 0;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHDFS4SM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Reading Progress Bar -->
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
+    <!-- Social Share -->
+    <div class="share-buttons">
+        <a href="javascript:void(0)" class="share-btn share-tw" onclick="share('twitter')" title="Share on X (Twitter)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 16 16">
+                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+            </svg>
+        </a>
+        <a href="javascript:void(0)" class="share-btn share-li" onclick="share('linkedin')" title="Share on LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.401c.03.674 0 7.225 0 7.225h2.401z"/>
+            </svg>
+        </a>
+        <a href="javascript:void(0)" class="share-btn share-fb" onclick="share('facebook')" title="Share on Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Scroll Top -->
+    <button id="scroll-top"><i class="fa fa-angle-up"></i></button>
+
+    <section class="blog-hero">
+        <div class="container">
+            <span class="category-tag">DevOps & SRE</span>
+            <h1>Beyond Kernel Space: The 2026 SRE Transition from eBPF to WASM Telemetry</h1>
+            <div class="blog-meta-top">
+                By <strong>Sushil Sigdel</strong> | 02 July 2026
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-img-wrap">
+                <img src="https://source.unsplash.com/featured/1200x800/?datacenter-rack-telemetry-glow" alt="Beyond Kernel Space: The 2026 SRE Transition from eBPF to WASM Telemetry" onerror="this.src='../assets/images/bloghome.png'">
+            </div>
+
+            <!-- AdSense Ad - In Content -->
+            <div style="text-align: center; margin: 30px 0; padding: 20px; background: #f8f9fa; border-radius: 10px;">
+              <ins class="adsbygoogle" style="display: block" data-ad-client="ca-pub-7936732053264133" data-ad-slot="9876543210" data-ad-format="auto" data-full-width-responsive="true"></ins>
+              <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+
+            <article class="blog-body">
+                <p>For the past four years, the systems engineering landscape has been dominated by a singular narrative: <em>eBPF (Extended Berkeley Packet Filter) is the future of observability</em>. By bypassing user-space overhead and injecting probes directly into the Linux kernel, eBPF promised unparalleled visibility into network sockets, system calls, and application runtimes. It became the default engine under the hood of modern monitoring agents.</p>
+
+<p>But in 2026, the honeymoon period is officially over. As platforms scale and security environments tighten, SRE teams are hitting a hard technical wall. We are witnessing a sharp architectural pivot. Top-tier engineering teams are shifting telemetry and proxy logic away from kernel-space eBPF and toward user-space <strong>WebAssembly (WASM) runtimes</strong>. This shift is not driven by fashion, but by the cold realities of kernel safety, organizational compliance, and edge resource constraints.</p>
+
+<h3>The Friction of Kernel Privilege: Lessons from Tokyo</h3>
+
+<p>To understand why eBPF is facing pushback, we must look at enterprise compliance. Last year, while consulting for a major financial services provider in Tokyo, my team attempted to deploy an eBPF-based security and performance monitoring agent across a fleet of 5,000 Kubernetes nodes. </p>
+
+<p>The deployment was halted immediately by the internal Security Operations Center (SOC). Their objection was simple but unyielding: eBPF requires loading bytecode directly into ring 0 (kernel space). Even though the Linux kernel verifier mathematically checks the bytecode for safety (ensuring no infinite loops or out-of-bounds memory access), the enterprise security policy treated any dynamic kernel modification as an unacceptable risk. Recent local privilege escalation vulnerabilities targeting kernel verifier bugs (such as those stemming from incorrect register state tracking) justified their caution.</p>
+
+<p>Furthermore, managing kernel headers across a heterogeneous fleet of Linux distributions (ranging from legacy RHEL instances to modern flatcar containers) introduced a massive packaging overhead. When a kernel update broke the BPF CO-RE (Compile Once – Run Everywhere) mappings on 12% of the nodes, the SRE team spent 48 hours debugging kernel panic traces rather than monitoring application health.</p>
+
+<h3>Resource Constraints at the Edge: The Nepal Micro-Grid Case Study</h3>
+
+<p>On the other end of the spectrum are extreme resource constraints. In a recent project deploying IoT gateway telemetry for micro-hydroelectric power plants in rural Nepal, we operated on hardware with strict physical limitations: single-core ARM Cortex-A7 processors with only 256MB of RAM, running customized, unpatched kernels where upgrading to a modern kernel with full eBPF support was structurally impossible.</p>
+
+<p>An eBPF-based collector requires a modern Linux kernel (5.8+) and places a measurable footprint on memory-mapped ring buffers to pass events to user space. At high throughput, this overhead degrades application performance. </p>
+
+<p>Instead, we deployed a micro-WASM runtime (WAMR - WebAssembly Micro Runtime) in user space. Because WASM runs on an interpreter or via Just-In-Time (JIT) compilation in a strictly sandboxed user-space environment, we achieved telemetry filtering on 15MB of RAM, bypassing the host kernel version entirely. If a WASM telemetry module crashed, it simply restarted in user space; it could never compromise host stability or cause a kernel panic.</p>
+
+<h3>How User-Space WASM Solves the Telemetry Bottleneck</h3>
+
+<p>WebAssembly is no longer just a browser technology. In the backend, the Proxy-WASM standard allows developers to inject lightweight, isolated telemetry filters directly into proxies like Envoy, Traefik, or custom Rust-based ingress gateways. </p>
+
+<p>Unlike eBPF, which forces developers to write constrained C code (or Rust via <code>aya</code>) that must satisfy the strict, loop-hating kernel verifier, WASM runtimes allow developers to write standard Rust, Go, or C++ with rich standard libraries. The resulting binary is compiled to <code>wasm32-wasi</code> and runs in an isolated sandbox at near-native speeds.</p>
+
+<p>Here is an example of a practical Proxy-WASM telemetry filter written in Rust. It intercepts incoming HTTP traffic, parses headers, and registers custom latency metrics directly inside the proxy's user-space memory, without ever crossing the kernel boundary:</p>
+
+<pre><code>use proxy_wasm::traits::*;
+use proxy_wasm::types::*;
+use std::time::Duration;
+
+#[no_mangle]
+pub fn _start() {
+    proxy_wasm::set_log_level(LogLevel::Info);
+    proxy_wasm::set_http_context(|_context_id, _root_context_id| -> Box&lt;dyn HttpContext&gt; {
+        Box::new(TelemetryFilter { start_time: Duration::ZERO })
+    });
+}
+
+struct TelemetryFilter {
+    start_time: Duration,
+}
+
+impl Context for TelemetryFilter {}
+
+impl HttpContext for TelemetryFilter {
+    fn on_http_request_headers(&mut self, _: usize, _: bool) -&gt; Action {
+        self.start_time = self.get_current_time();
+        Action::Continue
+    }
+
+    fn on_http_response_headers(&mut self, _: usize, _: bool) -&gt; Action {
+        let end_time = self.get_current_time();
+        let duration = end_time.saturating_sub(self.start_time);
+        
+        if let Some(path) = self.get_http_request_header(":path") {
+            // Log telemetry locally in user-space without kernel system calls
+            log::info!("Path: {}, Latency: {}ms", path, duration.as_millis());
+        }
+        Action::Continue
+    }
+}</code></pre>
+
+<p>This approach offers a clean separation of concerns. Developers can write, test, and deploy this WASM filter using standard CI/CD pipelines. No root access is required, no kernel modules are loaded, and security teams can audit the WASM sandbox's restricted capabilities using simple WASI (WebAssembly System Interface) runtime configurations.</p>
+
+<h3>Pro Tips for Transitioning Telemetry Architectures</h3>
+
+<ul>
+  <li><strong>Use eBPF for System-Level Observability, WASM for App-Level Observability:</strong> Do not treat WASM as a complete replacement. Use eBPF for global, low-level network packet captures and disk I/O metrics where kernel access is unavoidable. Use WASM inside user-space runtimes (like Envoy or custom application wrappers) for API-level routing, metrics aggregation, and payload filtering.</li>
+  <li><strong>Implement the WebAssembly System Interface (WASI):</strong> Ensure your WASM runtimes use WASI to strictly limit system access. A telemetry filter should never have access to the underlying filesystem or random network sockets unless explicitly allowed.</li>
+  <li><strong>Benchmark JIT vs. AOT Compilation:</strong> For high-throughput production nodes, avoid basic interpreters. Use Ahead-of-Time (AOT) compilation options in engines like Wasmtime or Wasmer to reduce overhead to within 2-5% of native machine code.</li>
+</ul>
+
+<h3>Future Predictions</h3>
+
+<p>By 2028, the concept of "sidecar containers" will be largely obsolete. Instead, we will see unified, single-process application runtimes where business logic and WASM-based security/monitoring policies run in highly isolated, concurrent sandboxes on the same virtual machine. </p>
+
+<p>Furthermore, standard Kubernetes distributions will ship with pre-configured WASM runtimes alongside runc, treating WebAssembly modules as first-class scheduling units that start up in microseconds and consume a fraction of the memory of current containerized agents.</p>
+
+<h3>Conclusion</h3>
+
+<p>The transition from eBPF to WASM represents a maturing DevOps industry. We are moving away from the complex, high-privilege allure of the Linux kernel back to secure, highly optimized user-space runtimes. By containing telemetry code within safe sandboxes, SRE teams can achieve deep observability without risking kernel panics, compromising security compliance, or exhausting edge device resources.</p>
+
+<p><em>Is your team facing security objections with eBPF-based agents? Have you started experimenting with WASM filters in your service mesh? Let me know in the comments below or join the discussion on our community Slack.</em></p>
+            </article>
+
+            <!-- Related Posts Section -->
+            <div style="margin-top: 60px; padding-top: 40px; border-top: 2px solid #eee;">
+              <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 30px;">Related Articles</h3>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                <a href="../index.html#blog" style="background: #f8f9fa; padding: 20px; border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.3s;" onmouseover="this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'">
+                  <h4 style="color: var(--primary-accent); margin-bottom: 10px;">→ View All Articles</h4>
+                  <p style="font-size: 0.9rem; opacity: 0.8;">Explore more insights on tech, AI, and development</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="footer-action">
+                <a href="../#blog" class="back-link">
+                    <i class="fa fa-arrow-left"></i> Back to All Stories
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script>
+        // Reading Progress Bar
+        window.onscroll = function () {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (height > 0) ? (winScroll / height) * 100 : 0;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+
+            // Scroll to Top visibility
+            const scrollTop = document.getElementById("scroll-top");
+            if (winScroll > 300) {
+                scrollTop.classList.add("show");
+            } else {
+                scrollTop.classList.remove("show");
+            }
+        };
+
+        // Scroll to Top Action
+        document.getElementById("scroll-top").addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Social Share Function
+        function share(platform) {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent(document.title);
+            let shareUrl = '';
+
+            switch (platform) {
+                case 'twitter':
+                    shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${title}`;
+                    break;
+                case 'linkedin':
+                    shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+                    break;
+                case 'facebook':
+                    shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+                    break;
+            }
+
+            if (shareUrl) {
+                window.open(shareUrl, '_blank', 'width=600,height=400');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
