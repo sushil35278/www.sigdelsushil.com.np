@@ -1,6 +1,18 @@
 [
   {
     "category": "DevOps & SRE",
+    "title": "Beyond Edge-Kubernetes: The 2026 Shift to Wasm-Native GitOps in Extreme Environments",
+    "summary": "As SRE teams face the limitations of running lightweight Kubernetes distributions on constrained edge hardware, a new architecture is emerging. We explore why platforms are transitioning from K3s to WebAssembly (Wasm) runtimes managed directly by declarative GitOps controllers.",
+    "date": "03 July 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?edge-computing-server-rack",
+    "slug": "beyond-edge-kubernetes-the-2026-shift-to-wasm-native-gitops-in-extreme-environments",
+    "isPopular": false,
+    "link": "blog/beyond-edge-kubernetes-the-2026-shift-to-wasm-native-gitops-in-extreme-environments.html",
+    "id": 87
+  },
+  {
+    "category": "DevOps & SRE",
     "title": "Beyond Kernel Space: The 2026 SRE Transition from eBPF to WASM Telemetry",
     "summary": "As SRE teams encounter strict security audits and resource limits with kernel-level eBPF probes at scale, WebAssembly (WASM) is emerging as the preferred runtime for isolated, high-performance user-space telemetry.",
     "date": "02 July 2026",
