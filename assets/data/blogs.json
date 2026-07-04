@@ -1,5 +1,17 @@
 [
   {
+    "category": "AI & Machine Learning",
+    "title": "Beyond the Cloud API: Why 2026 is the Year of Deterministic Local SLMs on WebGPU",
+    "summary": "Engineering teams are abandoning centralized LLM APIs due to cost, latency, and compliance risks. This post explores the technical realities of deploying deterministic, quantized Small Language Models directly in the browser using WebGPU and WebAssembly.",
+    "date": "04 July 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?webgpu-silicon-chip",
+    "slug": "beyond-the-cloud-api-why-2026-is-the-year-of-deterministic-local-slms-on-webgpu",
+    "isPopular": false,
+    "link": "blog/beyond-the-cloud-api-why-2026-is-the-year-of-deterministic-local-slms-on-webgpu.html",
+    "id": 88
+  },
+  {
     "category": "DevOps & SRE",
     "title": "Beyond Edge-Kubernetes: The 2026 Shift to Wasm-Native GitOps in Extreme Environments",
     "summary": "As SRE teams face the limitations of running lightweight Kubernetes distributions on constrained edge hardware, a new architecture is emerging. We explore why platforms are transitioning from K3s to WebAssembly (Wasm) runtimes managed directly by declarative GitOps controllers.",
