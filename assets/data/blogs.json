@@ -1,5 +1,17 @@
 [
   {
+    "category": "DevOps & SRE",
+    "title": "Beyond the Scraping Loop: Why SREs in 2026 are Replacing Prometheus with Active eBPF Mitigations",
+    "summary": "The classic reactive alert-response loop is failing under the pressures of extreme network latency and microsecond SLA requirements. This article explores how modern engineering teams are shifting from passive observability to autonomous, in-kernel eBPF self-healing systems.",
+    "date": "05 July 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?linux-kernel-ebpf-architecture",
+    "slug": "beyond-the-scraping-loop-why-sres-in-2026-are-replacing-prometheus-with-active-ebpf-mitigations",
+    "isPopular": false,
+    "link": "blog/beyond-the-scraping-loop-why-sres-in-2026-are-replacing-prometheus-with-active-ebpf-mitigations.html",
+    "id": 89
+  },
+  {
     "category": "AI & Machine Learning",
     "title": "Beyond the Cloud API: Why 2026 is the Year of Deterministic Local SLMs on WebGPU",
     "summary": "Engineering teams are abandoning centralized LLM APIs due to cost, latency, and compliance risks. This post explores the technical realities of deploying deterministic, quantized Small Language Models directly in the browser using WebGPU and WebAssembly.",
