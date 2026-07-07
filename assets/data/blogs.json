@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "The Death of the Sidecar: Why We are Migrating to Kernel-Level eBPF Service Meshes in 2026",
+    "summary": "The classic sidecar pattern for service meshes is reaching its architectural limits. As we navigate 2026, leading platform teams are discarding Envoy-based sidecars in favor of kernel-level eBPF routing to eliminate the microservice latency tax.",
+    "date": "07 July 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?kubernetes-cluster-network-topology",
+    "slug": "the-death-of-the-sidecar-why-we-are-migrating-to-kernel-level-ebpf-service-meshes-in-2026",
+    "isPopular": false,
+    "link": "blog/the-death-of-the-sidecar-why-we-are-migrating-to-kernel-level-ebpf-service-meshes-in-2026.html",
+    "id": 91
+  },
+  {
     "category": "Distributed Systems",
     "title": "Beyond Raft: The 2026 Rise of Physical Time Consensus in Distributed Systems",
     "summary": "As hardware-assisted Precision Time Protocol (PTP) moves from specialized financial desks to commodity public cloud instances, distributed systems architects are debating a fundamental shift: abandoning heavy logical consensus protocols in favor of hard physical-time bounds. Here is how this shift impacts latency, consistency, and system design in 2026.",
