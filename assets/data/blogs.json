@@ -1,6 +1,18 @@
 [
   {
     "category": "Cloud Architecture",
+    "title": "Beyond the Control Plane: Why We Are Swapping Multi-Region Kubernetes for Localized WASI Outposts in 2026",
+    "summary": "The dream of a unified global cloud control plane is fracturing under the weight of regulatory compliance and egress costs. This post explores why leading software architects are shifting from heavy Kubernetes clusters to localized, WebAssembly-based micro-runtimes running on sovereign edge infrastructure.",
+    "date": "08 July 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?decentralized-cloud-datacenter-edge",
+    "slug": "beyond-the-control-plane-why-we-are-swapping-multi-region-kubernetes-for-localized-wasi-outposts-in-2026",
+    "isPopular": false,
+    "link": "blog/beyond-the-control-plane-why-we-are-swapping-multi-region-kubernetes-for-localized-wasi-outposts-in-2026.html",
+    "id": 92
+  },
+  {
+    "category": "Cloud Architecture",
     "title": "The Death of the Sidecar: Why We are Migrating to Kernel-Level eBPF Service Meshes in 2026",
     "summary": "The classic sidecar pattern for service meshes is reaching its architectural limits. As we navigate 2026, leading platform teams are discarding Envoy-based sidecars in favor of kernel-level eBPF routing to eliminate the microservice latency tax.",
     "date": "07 July 2026",
