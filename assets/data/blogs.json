@@ -1,5 +1,17 @@
 [
   {
+    "category": "Distributed Systems",
+    "title": "Beyond Global Consensus: Why 2026 is the Year We Pivot to Local-First CRDTs",
+    "summary": "As global WAN egress costs soar and physical latency limits persist, senior architects are moving away from centralized synchronous consensus. Discover how local-first SQLite and delta-state CRDTs are redefining distributed systems from Tokyo to rural Nepal.",
+    "date": "09 July 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-nodes-network-globe",
+    "slug": "beyond-global-consensus-why-2026-is-the-year-we-pivot-to-local-first-crdts",
+    "isPopular": false,
+    "link": "blog/beyond-global-consensus-why-2026-is-the-year-we-pivot-to-local-first-crdts.html",
+    "id": 93
+  },
+  {
     "category": "Cloud Architecture",
     "title": "Beyond the Control Plane: Why We Are Swapping Multi-Region Kubernetes for Localized WASI Outposts in 2026",
     "summary": "The dream of a unified global cloud control plane is fracturing under the weight of regulatory compliance and egress costs. This post explores why leading software architects are shifting from heavy Kubernetes clusters to localized, WebAssembly-based micro-runtimes running on sovereign edge infrastructure.",
