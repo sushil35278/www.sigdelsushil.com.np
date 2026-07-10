@@ -1,6 +1,18 @@
 [
   {
     "category": "Distributed Systems",
+    "title": "The Great Container De-escalation: Why 2026 Belongs to WASI-Based Edge Actors",
+    "summary": "As container orchestration costs rise and edge latency budgets shrink, engineering teams are shifting away from traditional Docker-and-Kubernetes architectures. This post explores how lightweight, deterministic WebAssembly (WASI) runtimes are replacing containers for high-density, low-latency distributed systems.",
+    "date": "10 July 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?wasm-micro-runtime-edge-network",
+    "slug": "the-great-container-de-escalation-why-2026-belongs-to-wasi-based-edge-actors",
+    "isPopular": false,
+    "link": "blog/the-great-container-de-escalation-why-2026-belongs-to-wasi-based-edge-actors.html",
+    "id": 94
+  },
+  {
+    "category": "Distributed Systems",
     "title": "Beyond Global Consensus: Why 2026 is the Year We Pivot to Local-First CRDTs",
     "summary": "As global WAN egress costs soar and physical latency limits persist, senior architects are moving away from centralized synchronous consensus. Discover how local-first SQLite and delta-state CRDTs are redefining distributed systems from Tokyo to rural Nepal.",
     "date": "09 July 2026",
