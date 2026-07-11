@@ -1,5 +1,17 @@
 [
   {
+    "category": "DevOps & SRE",
+    "title": "Beyond OpenTelemetry: Why eBPF-Driven Zero-Instrumentation is Splitting SRE Teams in 2026",
+    "summary": "As the computational cost of telemetry agents reaches a breaking point, platform engineering teams are debating a shift from SDK-based tracing to kernel-level eBPF observability. We analyze the architectural trade-offs between semantic application-level tracking and zero-overhead kernel monitoring.",
+    "date": "11 July 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?ebpf-kernel-observability-network",
+    "slug": "beyond-opentelemetry-why-ebpf-driven-zero-instrumentation-is-splitting-sre-teams-in-2026",
+    "isPopular": false,
+    "link": "blog/beyond-opentelemetry-why-ebpf-driven-zero-instrumentation-is-splitting-sre-teams-in-2026.html",
+    "id": 95
+  },
+  {
     "category": "Distributed Systems",
     "title": "The Great Container De-escalation: Why 2026 Belongs to WASI-Based Edge Actors",
     "summary": "As container orchestration costs rise and edge latency budgets shrink, engineering teams are shifting away from traditional Docker-and-Kubernetes architectures. This post explores how lightweight, deterministic WebAssembly (WASI) runtimes are replacing containers for high-density, low-latency distributed systems.",
