@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "Wasm in the Cloud: The Serverless Runtime Debate Defining 2026's Architecture Future",
+    "summary": "The cloud landscape is always shifting, but a foundational debate is intensifying as we head into 2026: are containers, once the undisputed champions of cloud deployment, becoming too much of a good thing? WebAssembly (Wasm) is emerging as a formidable contender, promising a leaner, faster, and more secure runtime for serverless functions and microservices, sparking fervent discussion among senior architects and engineering leaders.",
+    "date": "12 July 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?WebAssembly+cloud+architecture",
+    "slug": "wasm-in-the-cloud-the-serverless-runtime-debate-defining-2026s-architecture-future",
+    "isPopular": false,
+    "link": "blog/wasm-in-the-cloud-the-serverless-runtime-debate-defining-2026s-architecture-future.html",
+    "id": 96
+  },
+  {
     "category": "DevOps & SRE",
     "title": "Beyond OpenTelemetry: Why eBPF-Driven Zero-Instrumentation is Splitting SRE Teams in 2026",
     "summary": "As the computational cost of telemetry agents reaches a breaking point, platform engineering teams are debating a shift from SDK-based tracing to kernel-level eBPF observability. We analyze the architectural trade-offs between semantic application-level tracking and zero-overhead kernel monitoring.",
