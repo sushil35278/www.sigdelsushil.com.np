@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cybersecurity",
+    "title": "The PQC Hangover: Why ML-KEM is Breaking High-Throughput Pipelines in 2026",
+    "summary": "As NIST's post-quantum cryptography standards shift from theoretical RFCs to mandatory production baselines, engineering leaders are hitting an unexpected wall. This article analyzes how ML-KEM's packet fragmentation and CPU overhead are impacting low-latency distributed networks from Tokyo to Kathmandu.",
+    "date": "13 July 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?cryptography-quantum-datacenter",
+    "slug": "the-pqc-hangover-why-ml-kem-is-breaking-high-throughput-pipelines-in-2026",
+    "isPopular": false,
+    "link": "blog/the-pqc-hangover-why-ml-kem-is-breaking-high-throughput-pipelines-in-2026.html",
+    "id": 97
+  },
+  {
     "category": "Cloud Architecture",
     "title": "Wasm in the Cloud: The Serverless Runtime Debate Defining 2026's Architecture Future",
     "summary": "The cloud landscape is always shifting, but a foundational debate is intensifying as we head into 2026: are containers, once the undisputed champions of cloud deployment, becoming too much of a good thing? WebAssembly (Wasm) is emerging as a formidable contender, promising a leaner, faster, and more secure runtime for serverless functions and microservices, sparking fervent discussion among senior architects and engineering leaders.",
