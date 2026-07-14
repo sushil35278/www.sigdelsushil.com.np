@@ -1,5 +1,17 @@
 [
   {
+    "category": "Distributed Systems",
+    "title": "Beyond Global Consensus: Why 2026 is the Year of Deterministic Regional Clusters",
+    "summary": "As we move further into 2026, the reliance on heavyweight consensus protocols like Raft and Paxos across global spans is facing a reckoning. This post explores the technical pivot toward locally deterministic edge clusters and how this architectural shift is solving the latency paradox between urban hubs and remote nodes.",
+    "date": "14 July 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-edge-server-matrix",
+    "slug": "beyond-global-consensus-why-2026-is-the-year-of-deterministic-regional-clusters",
+    "isPopular": false,
+    "link": "blog/beyond-global-consensus-why-2026-is-the-year-of-deterministic-regional-clusters.html",
+    "id": 98
+  },
+  {
     "category": "Cybersecurity",
     "title": "The PQC Hangover: Why ML-KEM is Breaking High-Throughput Pipelines in 2026",
     "summary": "As NIST's post-quantum cryptography standards shift from theoretical RFCs to mandatory production baselines, engineering leaders are hitting an unexpected wall. This article analyzes how ML-KEM's packet fragmentation and CPU overhead are impacting low-latency distributed networks from Tokyo to Kathmandu.",
