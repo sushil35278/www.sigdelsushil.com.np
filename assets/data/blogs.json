@@ -1,5 +1,17 @@
 [
   {
+    "category": "Web Development",
+    "title": "Beyond Edge-Rendering: Why Local-First Web Architectures are Dividing Engineering Teams in 2026",
+    "summary": "The consensus around Edge SSR is fracturing. As cloud egress fees skyrocket and client-side WebAssembly matures, senior architects are debating a fundamental shift back to decentralized, local-first web applications.",
+    "date": "15 July 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?decentralized-database-architecture",
+    "slug": "beyond-edge-rendering-why-local-first-web-architectures-are-dividing-engineering-teams-in-2026",
+    "isPopular": false,
+    "link": "blog/beyond-edge-rendering-why-local-first-web-architectures-are-dividing-engineering-teams-in-2026.html",
+    "id": 99
+  },
+  {
     "category": "Distributed Systems",
     "title": "Beyond Global Consensus: Why 2026 is the Year of Deterministic Regional Clusters",
     "summary": "As we move further into 2026, the reliance on heavyweight consensus protocols like Raft and Paxos across global spans is facing a reckoning. This post explores the technical pivot toward locally deterministic edge clusters and how this architectural shift is solving the latency paradox between urban hubs and remote nodes.",
