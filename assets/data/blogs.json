@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cybersecurity",
+    "title": "The Fragmented Reality of Post-Quantum Cryptography: Why ML-KEM is Breaking Real-World Networks in 2026",
+    "summary": "As organizations transition to NIST-standardized post-quantum algorithms, engineering teams are facing a harsh reality: ML-KEM key sizes are causing severe IP fragmentation and TLS handshake failures on high-latency networks. Here is how senior architects are balancing quantum safety with real-world network performance.",
+    "date": "16 July 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?post-quantum-cryptography-network-cables",
+    "slug": "the-fragmented-reality-of-post-quantum-cryptography-why-ml-kem-is-breaking-real-world-networks-in-2026",
+    "isPopular": false,
+    "link": "blog/the-fragmented-reality-of-post-quantum-cryptography-why-ml-kem-is-breaking-real-world-networks-in-2026.html",
+    "id": 100
+  },
+  {
     "category": "Web Development",
     "title": "Beyond Edge-Rendering: Why Local-First Web Architectures are Dividing Engineering Teams in 2026",
     "summary": "The consensus around Edge SSR is fracturing. As cloud egress fees skyrocket and client-side WebAssembly matures, senior architects are debating a fundamental shift back to decentralized, local-first web applications.",
