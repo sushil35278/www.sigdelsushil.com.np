@@ -1,5 +1,17 @@
 [
   {
+    "category": "AI & Machine Learning",
+    "title": "The Death of the API Loop: Why Architects are Moving to Local Semantic Routing in 2026",
+    "summary": "As network latency, rising egress costs, and data sovereignty laws expose the limits of centralized LLM APIs, engineering leaders are shifting toward edge-native semantic routing. Learn how combining local WebAssembly-driven embedding models with specialized edge NPUs is reshaping enterprise AI architecture.",
+    "date": "17 July 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?edge-computing-neural-network",
+    "slug": "the-death-of-the-api-loop-why-architects-are-moving-to-local-semantic-routing-in-2026",
+    "isPopular": false,
+    "link": "blog/the-death-of-the-api-loop-why-architects-are-moving-to-local-semantic-routing-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "Cybersecurity",
     "title": "The Fragmented Reality of Post-Quantum Cryptography: Why ML-KEM is Breaking Real-World Networks in 2026",
     "summary": "As organizations transition to NIST-standardized post-quantum algorithms, engineering teams are facing a harsh reality: ML-KEM key sizes are causing severe IP fragmentation and TLS handshake failures on high-latency networks. Here is how senior architects are balancing quantum safety with real-world network performance.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-great-re-servering-why-your-10mb-javascript-bundle-is-a-technical-debt-time-bomb.html",
     "id": 2
-  },
-  {
-    "category": "Cybersecurity",
-    "title": "The Great Firewall is Dead: Why Identity is the Only Perimeter That Matters",
-    "summary": "The traditional network perimeter is crumbling under the weight of cloud migration and remote work. As zero-trust architecture becomes mandatory, identity emerges as the new security boundary. This post examines why authentication and authorization are now the most critical components of enterprise security.",
-    "date": "16 April 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?neon-grid,dark,tech",
-    "slug": "the-great-firewall-is-dead-why-identity-is-the-only-perimeter-that-matters",
-    "isPopular": false,
-    "link": "blog/the-great-firewall-is-dead-why-identity-is-the-only-perimeter-that-matters.html",
-    "id": 1
   }
 ]
