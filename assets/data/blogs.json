@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cybersecurity",
+    "title": "Beyond the SBOM: Why 2026 is the Year of Mandatory Runtime Attestation",
+    "summary": "Static Software Bill of Materials (SBOMs) are no longer enough to satisfy regulatory and security demands. We examine the shift toward live, cryptographic provenance and how engineering leaders are restructuring CI/CD pipelines to survive the era of automated supply chain exploits.",
+    "date": "18 July 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?cryptographic-binary-security",
+    "slug": "beyond-the-sbom-why-2026-is-the-year-of-mandatory-runtime-attestation",
+    "isPopular": false,
+    "link": "blog/beyond-the-sbom-why-2026-is-the-year-of-mandatory-runtime-attestation.html",
+    "id": 101
+  },
+  {
     "category": "AI & Machine Learning",
     "title": "The Death of the API Loop: Why Architects are Moving to Local Semantic Routing in 2026",
     "summary": "As network latency, rising egress costs, and data sovereignty laws expose the limits of centralized LLM APIs, engineering leaders are shifting toward edge-native semantic routing. Learn how combining local WebAssembly-driven embedding models with specialized edge NPUs is reshaping enterprise AI architecture.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-death-of-the-loading-spinner-why-local-first-is-the-only-architecture-that-matters.html",
     "id": 3
-  },
-  {
-    "category": "Web Development",
-    "title": "The Great Re-Servering: Why Your 10MB Javascript Bundle is a Technical Debt Time Bomb",
-    "summary": "We spent a decade moving every ounce of logic into the browser, and now we're finally realizing it was a massive mistake. Learn why the industry is sprinting back to the server and why your next massive SPA might be your last.",
-    "date": "16 April 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop&keyword=server",
-    "slug": "the-great-re-servering-why-your-10mb-javascript-bundle-is-a-technical-debt-time-bomb",
-    "isPopular": false,
-    "link": "blog/the-great-re-servering-why-your-10mb-javascript-bundle-is-a-technical-debt-time-bomb.html",
-    "id": 2
   }
 ]
