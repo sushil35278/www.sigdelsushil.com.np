@@ -1,6 +1,18 @@
 [
   {
     "category": "Cybersecurity",
+    "title": "The Post-Quantum Tax: Inside the 2026 Battle Over ML-KEM and Packet Fragmentation",
+    "summary": "As senior engineering teams transition production systems to quantum-resistant algorithms in 2026, a quiet crisis is emerging at the network layer. This article explores how NIST's post-quantum cryptography standards break legacy MTU limits, degrade performance over unstable networks, and require immediate architectural remediation.",
+    "date": "21 July 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?quantum-cryptography-network",
+    "slug": "the-post-quantum-tax-inside-the-2026-battle-over-ml-kem-and-packet-fragmentation",
+    "isPopular": false,
+    "link": "blog/the-post-quantum-tax-inside-the-2026-battle-over-ml-kem-and-packet-fragmentation.html",
+    "id": 101
+  },
+  {
+    "category": "Cybersecurity",
     "title": "The Post-Quantum Fragmentation Crisis: Why ML-KEM is Breaking Our Networks in 2026",
     "summary": "As organizations rush to comply with post-quantum mandates, engineering teams are running into a silent killer: MTU fragmentation. Discover how larger public keys are breaking TCP handshakes and how to architect around these structural network limits.",
     "date": "20 July 2026",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-the-pixel-why-2026-is-the-year-of-headless-mobile-and-why-your-ui-skills-are-becoming-technical-debt.html",
     "id": 6
-  },
-  {
-    "category": "Mobile Development",
-    "title": "The Death of the 'Native vs. Cross-Platform' Debate: Welcome to the Era of Unified Abstraction",
-    "summary": "For a decade, we’ve been shackled to the tired argument of Flutter vs. Swift vs. React Native. It’s time to stop picking sides and realize that the future of mobile isn't about the framework—it's about the abstraction layer.",
-    "date": "17 April 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop&keyword=architecture",
-    "slug": "the-death-of-the-native-vs-cross-platform-debate-welcome-to-the-era-of-unified-abstraction",
-    "isPopular": false,
-    "link": "blog/the-death-of-the-native-vs-cross-platform-debate-welcome-to-the-era-of-unified-abstraction.html",
-    "id": 5
   }
 ]
