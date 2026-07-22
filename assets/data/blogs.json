@@ -1,5 +1,17 @@
 [
   {
+    "category": "DevOps & SRE",
+    "title": "SRE in 2026: The Great Platform Engineering Debate – To Build or To Consume?",
+    "summary": "The rise of Platform Engineering promises to revolutionize developer experience, but it poses a critical question for Site Reliability Engineering (SRE) teams: Do we become the architects and builders of these internal platforms, or do we pivot to expertly consuming and optimizing them? This article explores the nuanced debate shaping the future of SRE.",
+    "date": "22 July 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?platform-engineering-blueprint",
+    "slug": "sre-in-2026-the-great-platform-engineering-debate-to-build-or-to-consume",
+    "isPopular": false,
+    "link": "blog/sre-in-2026-the-great-platform-engineering-debate-to-build-or-to-consume.html",
+    "id": 101
+  },
+  {
     "category": "Cybersecurity",
     "title": "The Post-Quantum Tax: Inside the 2026 Battle Over ML-KEM and Packet Fragmentation",
     "summary": "As senior engineering teams transition production systems to quantum-resistant algorithms in 2026, a quiet crisis is emerging at the network layer. This article explores how NIST's post-quantum cryptography standards break legacy MTU limits, degrade performance over unstable networks, and require immediate architectural remediation.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-great-pendulum-swing-why-your-thick-client-spa-is-becoming-a-liability.html",
     "id": 7
-  },
-  {
-    "category": "Mobile Development",
-    "title": "Beyond the Pixel: Why 2026 is the Year of 'Headless' Mobile and Why Your UI Skills are Becoming Technical Debt",
-    "summary": "The era of the 'app-as-a-silo' is dead. As we move into 2026, the industry is pivoting toward Local-First Model Context Protocols (MCP) where the OS orchestrates functionality, rendering the traditional GUI an optional legacy feature.",
-    "date": "18 April 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?futuristic-headless-smartphone-interface-hologram",
-    "slug": "beyond-the-pixel-why-2026-is-the-year-of-headless-mobile-and-why-your-ui-skills-are-becoming-technical-debt",
-    "isPopular": false,
-    "link": "blog/beyond-the-pixel-why-2026-is-the-year-of-headless-mobile-and-why-your-ui-skills-are-becoming-technical-debt.html",
-    "id": 6
   }
 ]
