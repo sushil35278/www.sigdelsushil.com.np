@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cybersecurity",
+    "title": "Zero-Trust at the Kernel: Why 2026 Engineering Leaders Are Replacing Sidecars with eBPF",
+    "summary": "As microservice architectures hit performance limits, the traditional user-space sidecar proxy model for Zero Trust security is causing severe latency and cost inflation. Senior architects are turning to kernel-enforced eBPF security probes to handle identity and network policy directly at the OS boundary.",
+    "date": "23 July 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?linux-kernel-ebpf-network",
+    "slug": "zero-trust-at-the-kernel-why-2026-engineering-leaders-are-replacing-sidecars-with-ebpf",
+    "isPopular": false,
+    "link": "blog/zero-trust-at-the-kernel-why-2026-engineering-leaders-are-replacing-sidecars-with-ebpf.html",
+    "id": 101
+  },
+  {
     "category": "DevOps & SRE",
     "title": "SRE in 2026: The Great Platform Engineering Debate – To Build or To Consume?",
     "summary": "The rise of Platform Engineering promises to revolutionize developer experience, but it poses a critical question for Site Reliability Engineering (SRE) teams: Do we become the architects and builders of these internal platforms, or do we pivot to expertly consuming and optimizing them? This article explores the nuanced debate shaping the future of SRE.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/hydration-is-dead-why-autonomous-orchestrators-are-killing-the-traditional-web-framework-in-2026.html",
     "id": 8
-  },
-  {
-    "category": "Web Development",
-    "title": "The Great Pendulum Swing: Why Your Thick-Client SPA is Becoming a Liability",
-    "summary": "We spent a decade moving every ounce of logic into the browser, only to realize we’ve created a performance monster. It’s time to stop shipping megabytes of JavaScript and reclaim the power of the server.",
-    "date": "18 April 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop&keyword=neon",
-    "slug": "the-great-pendulum-swing-why-your-thick-client-spa-is-becoming-a-liability",
-    "isPopular": false,
-    "link": "blog/the-great-pendulum-swing-why-your-thick-client-spa-is-becoming-a-liability.html",
-    "id": 7
   }
 ]
