@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "Cloud Architecture in 2026: Ditching Kubernetes Pods for WebAssembly Micro-Runtimes",
+    "summary": "As managed cloud infrastructure costs reach unsustainable peaks in 2026, engineering leaders are re-evaluating the Linux container paradigm. This article analyzes the architectural shift toward sandboxed WebAssembly micro-runtimes on bare metal, drawing from high-density deployments in Tokyo and low-power telemetry nodes in Nepal.",
+    "date": "24 July 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?cloud-server-datacenter",
+    "slug": "cloud-architecture-in-2026-ditching-kubernetes-pods-for-webassembly-micro-runtimes",
+    "isPopular": false,
+    "link": "blog/cloud-architecture-in-2026-ditching-kubernetes-pods-for-webassembly-micro-runtimes.html",
+    "id": 101
+  },
+  {
     "category": "Cybersecurity",
     "title": "Zero-Trust at the Kernel: Why 2026 Engineering Leaders Are Replacing Sidecars with eBPF",
     "summary": "As microservice architectures hit performance limits, the traditional user-space sidecar proxy model for Zero Trust security is causing severe latency and cost inflation. Senior architects are turning to kernel-enforced eBPF security probes to handle identity and network policy directly at the OS boundary.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/microservices-webassembly-performance-benchmarks.html",
     "id": 9
-  },
-  {
-    "category": "Web Development",
-    "title": "Hydration is Dead: Why Autonomous Orchestrators are Killing the Traditional Web Framework in 2026",
-    "summary": "The era of shipping massive JavaScript bundles and praying for SEO is over. As we move into 2026, the industry is abandoning the 'React-monolith' for Autonomous Hydration Orchestrators (AHOs) that predict user intent before a single click happens.",
-    "date": "18 April 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/random/1200x800/?futuristic-web-architecture-neon",
-    "slug": "hydration-is-dead-why-autonomous-orchestrators-are-killing-the-traditional-web-framework-in-2026",
-    "isPopular": false,
-    "link": "blog/hydration-is-dead-why-autonomous-orchestrators-are-killing-the-traditional-web-framework-in-2026.html",
-    "id": 8
   }
 ]
