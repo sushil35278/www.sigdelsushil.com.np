@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cybersecurity",
+    "title": "Supply Chain Security's New Frontier: The 2026 Debate Over Verifiable Builds and AI-Generated Code",
+    "summary": "In 2026, the specter of SolarWinds and Log4j still looms, but the battlefield for software supply chain security has shifted. Engineering leaders are locked in a critical debate: how do we secure our systems when code is increasingly ephemeral, AI-generated, and sourced from a vast, often opaque ecosystem? This isn't just about scanning for known CVEs; it's about deep, verifiable integrity from commit to runtime.",
+    "date": "25 July 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?software-supply-chain-security-blockchain-attestation",
+    "slug": "supply-chain-securitys-new-frontier-the-2026-debate-over-verifiable-builds-and-ai-generated-code",
+    "isPopular": false,
+    "link": "blog/supply-chain-securitys-new-frontier-the-2026-debate-over-verifiable-builds-and-ai-generated-code.html",
+    "id": 101
+  },
+  {
     "category": "Cloud Architecture",
     "title": "Cloud Architecture in 2026: Ditching Kubernetes Pods for WebAssembly Micro-Runtimes",
     "summary": "As managed cloud infrastructure costs reach unsustainable peaks in 2026, engineering leaders are re-evaluating the Linux container paradigm. This article analyzes the architectural shift toward sandboxed WebAssembly micro-runtimes on bare metal, drawing from high-density deployments in Tokyo and low-power telemetry nodes in Nepal.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/kubernetes-cost-management-case-studies.html",
     "id": 10
-  },
-  {
-    "category": "WebAssembly, Architecture, Performance",
-    "title": "Building Microservices with WebAssembly: Performance Benchmarks",
-    "summary": "Benchmark WebAssembly microservices against traditional Docker containers. Discover 3-10x performance improvements and significantly lower resource consumption in production environments.",
-    "date": "April 19, 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=500&fit=crop",
-    "slug": "microservices-webassembly-performance-benchmarks",
-    "isPopular": false,
-    "link": "blog/microservices-webassembly-performance-benchmarks.html",
-    "id": 9
   }
 ]
