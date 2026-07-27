@@ -1,6 +1,18 @@
 [
   {
     "category": "Web Development",
+    "title": "The Great Rebalancing: Are Framework Monoliths Fading for a Standards-First Web in 2026?",
+    "summary": "The web development landscape in 2026 is grappling with a profound shift: the increasing viability of standards-first approaches challenging the long-held dominance of monolithic JavaScript frameworks. This post dives deep into the 'Intrinsic Web Components' movement, exploring why senior developers and engineering leaders are re-evaluating their core architectural choices and pushing for a leaner, more resilient web.",
+    "date": "27 July 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?web-components-architecture-diagram-future",
+    "slug": "the-great-rebalancing-are-framework-monoliths-fading-for-a-standards-first-web-in-2026",
+    "isPopular": false,
+    "link": "blog/the-great-rebalancing-are-framework-monoliths-fading-for-a-standards-first-web-in-2026.html",
+    "id": 101
+  },
+  {
+    "category": "Web Development",
     "title": "Beyond the Bundle: Why 2026 is the Year of Edge-Native Wasm and the Death of the Heavy SPA",
     "summary": "As the performance ceiling of JavaScript-heavy Single Page Applications becomes a liability, senior architects are pivoting toward Edge-Native WebAssembly. This shift moves orchestration from the browser to distributed nodes, solving the latency challenges found in both hyper-connected cities like Tokyo and bandwidth-constrained regions like Kathmandu.",
     "date": "26 July 2026",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/edge-ai-is-not-what-you-think-the-real-future-of-hyper-personalization-in-mobile-apps-2026-edition.html",
     "id": 12
-  },
-  {
-    "category": "Security, DevOps, Enterprise",
-    "title": "Zero Trust Security: ROI for Remote Teams",
-    "summary": "Discover how Zero Trust Security Architecture reduces breach risk by 70% and improves remote team productivity. Real ROI calculations and implementation roadmap for enterprises.",
-    "date": "April 19, 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://images.unsplash.com/photo-1563986768609-322c8b8c08b9?w=800&h=500&fit=crop",
-    "slug": "zero-trust-security-roi-remote-teams",
-    "isPopular": false,
-    "link": "blog/zero-trust-security-roi-remote-teams.html",
-    "id": 11
   }
 ]
