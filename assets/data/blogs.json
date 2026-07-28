@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cybersecurity",
+    "title": "Identity Fabric in 2026: Why Adaptive Access Control is Sparking the Next Big Cybersecurity Debate for Engineering Leaders",
+    "summary": "Traditional Identity and Access Management (IAM) is buckling under the weight of hyperscale, multi-cloud architectures. Enter Identity Fabric – a decentralized, context-aware approach to access control. But as enterprises grapple with its promises of resilience and agility, a fierce debate is emerging among engineering leaders regarding its complexity, cost, and the very definition of security.",
+    "date": "28 July 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?Adaptive+Security+Network+Diagram",
+    "slug": "identity-fabric-in-2026-why-adaptive-access-control-is-sparking-the-next-big-cybersecurity-debate-for-engineering-leaders",
+    "isPopular": false,
+    "link": "blog/identity-fabric-in-2026-why-adaptive-access-control-is-sparking-the-next-big-cybersecurity-debate-for-engineering-leaders.html",
+    "id": 101
+  },
+  {
     "category": "Web Development",
     "title": "The Great Rebalancing: Are Framework Monoliths Fading for a Standards-First Web in 2026?",
     "summary": "The web development landscape in 2026 is grappling with a profound shift: the increasing viability of standards-first approaches challenging the long-held dominance of monolithic JavaScript frameworks. This post dives deep into the 'Intrinsic Web Components' movement, exploring why senior developers and engineering leaders are re-evaluating their core architectural choices and pushing for a leaner, more resilient web.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-the-inference-why-2026-is-the-year-of-the-formally-verified-codebase.html",
     "id": 13
-  },
-  {
-    "category": "Mobile Development",
-    "title": "Edge AI is NOT What You Think: The REAL Future of Hyper-Personalization in Mobile Apps (2026 Edition)",
-    "summary": "Forget the 'cloud-first' dogma for mobile AI. In 2026, the real battle for user attention and deep engagement is happening at the very edge – on our devices. I'm here to tell you why most companies are still getting personalization wrong, and how on-device intelligence is not just a privacy play, but the undisputed champion for truly magical user experiences.",
-    "date": "19 April 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?edge-ai-mobile-device-futuristic",
-    "slug": "edge-ai-is-not-what-you-think-the-real-future-of-hyper-personalization-in-mobile-apps-2026-edition",
-    "isPopular": false,
-    "link": "blog/edge-ai-is-not-what-you-think-the-real-future-of-hyper-personalization-in-mobile-apps-2026-edition.html",
-    "id": 12
   }
 ]
