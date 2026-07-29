@@ -1,6 +1,18 @@
 [
   {
     "category": "Cybersecurity",
+    "title": "The Post-Quantum Migration Debt: Why 2026 is the Year of Crypto-Agility",
+    "summary": "As NIST-standardized algorithms like ML-KEM become the baseline, engineering leaders are facing a massive 'cryptographic debt' crisis. This post explores why 2026 is the year we move from static encryption to programmatic crypto-agility.",
+    "date": "29 July 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?quantum-cryptography-circuit",
+    "slug": "the-post-quantum-migration-debt-why-2026-is-the-year-of-crypto-agility",
+    "isPopular": false,
+    "link": "blog/the-post-quantum-migration-debt-why-2026-is-the-year-of-crypto-agility.html",
+    "id": 101
+  },
+  {
+    "category": "Cybersecurity",
     "title": "Identity Fabric in 2026: Why Adaptive Access Control is Sparking the Next Big Cybersecurity Debate for Engineering Leaders",
     "summary": "Traditional Identity and Access Management (IAM) is buckling under the weight of hyperscale, multi-cloud architectures. Enter Identity Fabric – a decentralized, context-aware approach to access control. But as enterprises grapple with its promises of resilience and agility, a fierce debate is emerging among engineering leaders regarding its complexity, cost, and the very definition of security.",
     "date": "28 July 2026",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-the-hyperscaler-the-rise-of-sovereign-cloud-mesh-in-2026.html",
     "id": 14
-  },
-  {
-    "category": "Software Engineering",
-    "title": "Beyond the Inference: Why 2026 is the Year of the Formally Verified Codebase",
-    "summary": "As the industry reels from the 'Hallucination Debt' accumulated during the 2023-2025 AI-assisted coding boom, senior architects are pivoting back to formal methods. This post explores the rise of deterministic verification and why mathematical proofs are replacing unit tests in high-stakes environments.",
-    "date": "20 April 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?mathematical-logic-circuitry",
-    "slug": "beyond-the-inference-why-2026-is-the-year-of-the-formally-verified-codebase",
-    "isPopular": false,
-    "link": "blog/beyond-the-inference-why-2026-is-the-year-of-the-formally-verified-codebase.html",
-    "id": 13
   }
 ]
