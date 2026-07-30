@@ -1,5 +1,17 @@
 [
   {
+    "category": "Web Development",
+    "title": "Local-First CRDTs vs. Edge SSR in 2026: Architectural Trade-Offs for High-Availability Web Apps",
+    "summary": "As web apps transition from centralized cloud DBs to distributed local-first engines and edge runtimes, engineering teams face a critical choice between eventual consistency CRDTs and low-latency edge SSR. This deep dive explores the technical trade-offs, network resilience lessons from Kathmandu to Tokyo, and benchmarks shaping web architecture in 2026.",
+    "date": "30 July 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?wasm-database-edge-network",
+    "slug": "local-first-crdts-vs-edge-ssr-in-2026-architectural-trade-offs-for-high-availability-web-apps",
+    "isPopular": false,
+    "link": "blog/local-first-crdts-vs-edge-ssr-in-2026-architectural-trade-offs-for-high-availability-web-apps.html",
+    "id": 101
+  },
+  {
     "category": "Cybersecurity",
     "title": "The Post-Quantum Migration Debt: Why 2026 is the Year of Crypto-Agility",
     "summary": "As NIST-standardized algorithms like ML-KEM become the baseline, engineering leaders are facing a massive 'cryptographic debt' crisis. This post explores why 2026 is the year we move from static encryption to programmatic crypto-agility.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-great-determinism-pivot-why-engineering-leaders-are-moving-beyond-raw-llm-inference-in-2026.html",
     "id": 15
-  },
-  {
-    "category": "Cloud Architecture",
-    "title": "Beyond the Hyperscaler: The Rise of Sovereign Cloud Mesh in 2026",
-    "summary": "As global data residency laws tighten and edge latency requirements hit sub-10ms thresholds, the debate has shifted from multi-cloud to Sovereign Cloud Mesh. This post explores why senior architects are moving away from centralized regions in favor of localized, high-performance execution environments.",
-    "date": "21 April 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?decentralized-cloud-mesh-topology",
-    "slug": "beyond-the-hyperscaler-the-rise-of-sovereign-cloud-mesh-in-2026",
-    "isPopular": false,
-    "link": "blog/beyond-the-hyperscaler-the-rise-of-sovereign-cloud-mesh-in-2026.html",
-    "id": 14
   }
 ]
