@@ -1,5 +1,17 @@
 [
   {
+    "category": "AI & Machine Learning",
+    "title": "The GFM vs. SLM Divide: Navigating Enterprise AI Strategy in 2026",
+    "summary": "Engineering leaders in 2026 face a critical architectural decision: harness the broad power of generalized foundational models or invest in highly specialized, smaller alternatives. This post dives into the complex trade-offs, offering a pragmatic guide for navigating this evolving landscape of cost, performance, and data sensitivity.",
+    "date": "31 July 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?neural-network-specialized-general",
+    "slug": "the-gfm-vs-slm-divide-navigating-enterprise-ai-strategy-in-2026",
+    "isPopular": false,
+    "link": "blog/the-gfm-vs-slm-divide-navigating-enterprise-ai-strategy-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "Web Development",
     "title": "Local-First CRDTs vs. Edge SSR in 2026: Architectural Trade-Offs for High-Availability Web Apps",
     "summary": "As web apps transition from centralized cloud DBs to distributed local-first engines and edge runtimes, engineering teams face a critical choice between eventual consistency CRDTs and low-latency edge SSR. This deep dive explores the technical trade-offs, network resilience lessons from Kathmandu to Tokyo, and benchmarks shaping web architecture in 2026.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/cost-optimization-ai-models-edge-vs-cloud.html",
     "id": 16
-  },
-  {
-    "category": "Software Engineering",
-    "title": "The Great Determinism Pivot: Why Engineering Leaders are Moving Beyond Raw LLM Inference in 2026",
-    "summary": "As the initial hype of LLM integration fades, senior architects are facing a reliability crisis. This post explores the shift toward Hybrid Inference Architectures—combining probabilistic models with strict formal verification and WASM-based sandboxing.",
-    "date": "22 April 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?system-architecture-schematic",
-    "slug": "the-great-determinism-pivot-why-engineering-leaders-are-moving-beyond-raw-llm-inference-in-2026",
-    "isPopular": false,
-    "link": "blog/the-great-determinism-pivot-why-engineering-leaders-are-moving-beyond-raw-llm-inference-in-2026.html",
-    "id": 15
   }
 ]
