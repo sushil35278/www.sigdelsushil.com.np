@@ -1,6 +1,18 @@
 [
   {
     "category": "AI & Machine Learning",
+    "title": "Micro-Model Architectures: The 2026 Debate on Scaling AI Beyond Monoliths",
+    "summary": "As the initial wave of massive foundation models settles, engineering leaders in 2026 are grappling with a new architectural paradigm: hyper-specialized, smaller models. This post dives into the strategic shift towards micro-model architectures, exploring their promise for efficiency, cost-effectiveness, and real-world impact, from Himalayan clinics to bustling Tokyo data centers.",
+    "date": "01 August 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?micro-model-architecture-distributed-ai",
+    "slug": "micro-model-architectures-the-2026-debate-on-scaling-ai-beyond-monoliths",
+    "isPopular": false,
+    "link": "blog/micro-model-architectures-the-2026-debate-on-scaling-ai-beyond-monoliths.html",
+    "id": 101
+  },
+  {
+    "category": "AI & Machine Learning",
     "title": "The GFM vs. SLM Divide: Navigating Enterprise AI Strategy in 2026",
     "summary": "Engineering leaders in 2026 face a critical architectural decision: harness the broad power of generalized foundational models or invest in highly specialized, smaller alternatives. This post dives into the complex trade-offs, offering a pragmatic guide for navigating this evolving landscape of cost, performance, and data sensitivity.",
     "date": "31 July 2026",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-zero-trust-the-2026-debate-on-adaptive-trust-and-hyper-contextual-authorization.html",
     "id": 17
-  },
-  {
-    "category": "AI, Cloud Computing, DevOps",
-    "title": "Cost Optimization: Running AI Models on Edge vs Cloud",
-    "summary": "A comprehensive comparison of edge computing and cloud deployment for AI models. Learn about architecture, costs, latency tradeoffs, and real-world case studies to choose the right approach for your enterprise.",
-    "date": "April 22, 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop",
-    "slug": "cost-optimization-ai-models-edge-vs-cloud",
-    "isPopular": false,
-    "link": "blog/cost-optimization-ai-models-edge-vs-cloud.html",
-    "id": 16
   }
 ]
