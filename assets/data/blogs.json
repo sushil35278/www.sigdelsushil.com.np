@@ -1,6 +1,18 @@
 [
   {
     "category": "AI & Machine Learning",
+    "title": "The Great Inference Split: Why Engineering Leaders in 2026 Are Ditching Cloud LLMs for Edge Speculative Decoding",
+    "summary": "As cloud inference costs balloon and privacy mandates tighten across Asia and Europe, senior architects in 2026 are shifting critical AI workloads to hybrid edge architecture. This article explores how on-device speculative decoding and micro-distillation are replacing monolithic API calls in production environments.",
+    "date": "02 August 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?edge-computing-neural-network-2026",
+    "slug": "the-great-inference-split-why-engineering-leaders-in-2026-are-ditching-cloud-llms-for-edge-speculative-decoding",
+    "isPopular": false,
+    "link": "blog/the-great-inference-split-why-engineering-leaders-in-2026-are-ditching-cloud-llms-for-edge-speculative-decoding.html",
+    "id": 101
+  },
+  {
+    "category": "AI & Machine Learning",
     "title": "Micro-Model Architectures: The 2026 Debate on Scaling AI Beyond Monoliths",
     "summary": "As the initial wave of massive foundation models settles, engineering leaders in 2026 are grappling with a new architectural paradigm: hyper-specialized, smaller models. This post dives into the strategic shift towards micro-model architectures, exploring their promise for efficiency, cost-effectiveness, and real-world impact, from Himalayan clinics to bustling Tokyo data centers.",
     "date": "01 August 2026",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-the-yaml-horizon-why-deterministic-intent-is-replacing-iac-in-2026.html",
     "id": 18
-  },
-  {
-    "category": "Cybersecurity",
-    "title": "Beyond Zero Trust: The 2026 Debate on Adaptive Trust and Hyper-Contextual Authorization",
-    "summary": "In 2026, the cybersecurity landscape demands more than static 'Zero Trust' policies. Engineering leaders are now grappling with the complexities and immense potential of Adaptive Trust and Hyper-Contextual Authorization – a paradigm shift requiring continuous, dynamic evaluation of every access request. This post dissects the ongoing debate, the formidable challenges, and why this evolution is critical for safeguarding modern cloud-native architectures.",
-    "date": "23 April 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?adaptive-trust-cybersecurity-futuristic-network",
-    "slug": "beyond-zero-trust-the-2026-debate-on-adaptive-trust-and-hyper-contextual-authorization",
-    "isPopular": false,
-    "link": "blog/beyond-zero-trust-the-2026-debate-on-adaptive-trust-and-hyper-contextual-authorization.html",
-    "id": 17
   }
 ]
