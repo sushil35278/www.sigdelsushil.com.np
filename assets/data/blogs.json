@@ -1,6 +1,18 @@
 [
   {
     "category": "AI & Machine Learning",
+    "title": "Neuro-Symbolic AI in 2026: The Enterprise's Path to Explainable, Robust Intelligence",
+    "summary": "As the initial euphoria around monolithic deep learning models gives way to a demand for interpretability and reasoning, senior developers and engineering leaders in 2026 are confronting the complexities and promises of Neuro-Symbolic AI. This post dives into the critical architectural debates, real-world applications, and the strategic shifts required to implement truly robust and explainable intelligent systems.",
+    "date": "03 August 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?neuro-symbolic-architecture-hybrid",
+    "slug": "neuro-symbolic-ai-in-2026-the-enterprises-path-to-explainable-robust-intelligence",
+    "isPopular": false,
+    "link": "blog/neuro-symbolic-ai-in-2026-the-enterprises-path-to-explainable-robust-intelligence.html",
+    "id": 101
+  },
+  {
+    "category": "AI & Machine Learning",
     "title": "The Great Inference Split: Why Engineering Leaders in 2026 Are Ditching Cloud LLMs for Edge Speculative Decoding",
     "summary": "As cloud inference costs balloon and privacy mandates tighten across Asia and Europe, senior architects in 2026 are shifting critical AI workloads to hybrid edge architecture. This article explores how on-device speculative decoding and micro-distillation are replacing monolithic API calls in production environments.",
     "date": "02 August 2026",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/decentralized-identity-in-2026-the-enterprise-readiness-debate-from-poc-to-production.html",
     "id": 19
-  },
-  {
-    "category": "DevOps & SRE",
-    "title": "Beyond the YAML Horizon: Why Deterministic Intent is Replacing IaC in 2026",
-    "summary": "As we move past the era of brittle Infrastructure-as-Code templates, a new debate is surfacing among SREs: the transition from declarative configuration to Deterministic Intent-Based Infrastructure. This shift promises to solve the multi-cloud drift problem that has plagued the industry for the last decade.",
-    "date": "24 April 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?abstract-cybernetic-infrastructure-nodes",
-    "slug": "beyond-the-yaml-horizon-why-deterministic-intent-is-replacing-iac-in-2026",
-    "isPopular": false,
-    "link": "blog/beyond-the-yaml-horizon-why-deterministic-intent-is-replacing-iac-in-2026.html",
-    "id": 18
   }
 ]
