@@ -1,6 +1,18 @@
 [
   {
     "category": "Cloud Architecture",
+    "title": "Beyond the Global Cluster: Why Cell-Based Architectures are Dominating Cloud Design in 2026",
+    "summary": "As global data sovereignty laws tighten and physics-constrained latency becomes the primary bottleneck, senior architects are moving away from massive regional clusters toward deterministic, cell-based architectures powered by WebAssembly.",
+    "date": "05 August 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?sovereign-cloud-datacenter",
+    "slug": "beyond-the-global-cluster-why-cell-based-architectures-are-dominating-cloud-design-in-2026",
+    "isPopular": false,
+    "link": "blog/beyond-the-global-cluster-why-cell-based-architectures-are-dominating-cloud-design-in-2026.html",
+    "id": 101
+  },
+  {
+    "category": "Cloud Architecture",
     "title": "The Death of the MicroVM? Why WASI Preview 3 is Dividing Cloud Architects in 2026",
     "summary": "As cold-start latencies and ballooning container images strain edge networks, a fierce debate is brewing: should we abandon microVMs for the WebAssembly Component Model? Here is why the transition is far more complex than simply swapping Docker for WASI.",
     "date": "04 August 2026",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/from-zero-trust-to-deterministic-identity-the-2026-security-shift-every-architect-needs-to-lead.html",
     "id": 21
-  },
-  {
-    "category": "Web Development",
-    "title": "The 2026 Pivot: Why Senior Architects are Moving from 'Cloud-First' to 'Deterministic Local-First' Architectures",
-    "summary": "In 2026, the industry is witnessing a massive migration away from centralized state management. This post explores how Zero Data Transit (ZDT) and deterministic local-first patterns are solving the latency and compliance challenges that cloud-only models can't touch.",
-    "date": "26 April 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?decentralized-data-mesh-web",
-    "slug": "the-2026-pivot-why-senior-architects-are-moving-from-cloud-first-to-deterministic-local-first-architectures",
-    "isPopular": false,
-    "link": "blog/the-2026-pivot-why-senior-architects-are-moving-from-cloud-first-to-deterministic-local-first-architectures.html",
-    "id": 20
   }
 ]
