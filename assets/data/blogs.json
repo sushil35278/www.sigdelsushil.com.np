@@ -1,5 +1,17 @@
 [
   {
+    "category": "DevOps & SRE",
+    "title": "The Great Sidecar Debate of 2026: Why SRE Teams Are Replacing Envoy with eBPF Ambient Architectures",
+    "summary": "As microservice clusters scale across high-density datacenters in Tokyo and constrained edge nodes in Kathmandu, engineering teams are confronting the steep compute cost of sidecar proxies. In 2026, the SRE community is fiercely debating the transition from sidecar-based service meshes to eBPF-driven kernel-level networking.",
+    "date": "06 August 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?ebpf-service-mesh-architecture",
+    "slug": "the-great-sidecar-debate-of-2026-why-sre-teams-are-replacing-envoy-with-ebpf-ambient-architectures",
+    "isPopular": false,
+    "link": "blog/the-great-sidecar-debate-of-2026-why-sre-teams-are-replacing-envoy-with-ebpf-ambient-architectures.html",
+    "id": 101
+  },
+  {
     "category": "Cloud Architecture",
     "title": "Beyond the Global Cluster: Why Cell-Based Architectures are Dominating Cloud Design in 2026",
     "summary": "As global data sovereignty laws tighten and physics-constrained latency becomes the primary bottleneck, senior architects are moving away from massive regional clusters toward deterministic, cell-based architectures powered by WebAssembly.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-end-of-persistent-secrets-transitioning-to-attestation-based-security-in-2026.html",
     "id": 22
-  },
-  {
-    "category": "Cybersecurity",
-    "title": "From Zero Trust to Deterministic Identity: The 2026 Security Shift Every Architect Needs to Lead",
-    "summary": "As bearer tokens lose their efficacy against automated session hijacking, engineering leaders are pivoting toward hardware-bound identity and eBPF-driven enforcement. This post explores why 2026 marks the end of identity-as-a-string and the rise of kernel-level attestation.",
-    "date": "27 April 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?secure-kernel-abstraction",
-    "slug": "from-zero-trust-to-deterministic-identity-the-2026-security-shift-every-architect-needs-to-lead",
-    "isPopular": false,
-    "link": "blog/from-zero-trust-to-deterministic-identity-the-2026-security-shift-every-architect-needs-to-lead.html",
-    "id": 21
   }
 ]
