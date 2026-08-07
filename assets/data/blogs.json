@@ -1,5 +1,17 @@
 [
   {
+    "category": "AI & Machine Learning",
+    "title": "Local-First LLMs and SLMs in 2026: The Architectural Shift Away from Centralized APIs",
+    "summary": "As network latency, data sovereignty laws, and inference costs push engineering teams to rethink infrastructure, local-first Small Language Models (SLMs) are replacing centralized frontier APIs for mission-critical microservices. Here is how senior architects are designing hybrid edge-cloud pipelines in 2026.",
+    "date": "07 August 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?server-rack-neural-network",
+    "slug": "local-first-llms-and-slms-in-2026-the-architectural-shift-away-from-centralized-apis",
+    "isPopular": false,
+    "link": "blog/local-first-llms-and-slms-in-2026-the-architectural-shift-away-from-centralized-apis.html",
+    "id": 101
+  },
+  {
     "category": "DevOps & SRE",
     "title": "The Great Sidecar Debate of 2026: Why SRE Teams Are Replacing Envoy with eBPF Ambient Architectures",
     "summary": "As microservice clusters scale across high-density datacenters in Tokyo and constrained edge nodes in Kathmandu, engineering teams are confronting the steep compute cost of sidecar proxies. In 2026, the SRE community is fiercely debating the transition from sidecar-based service meshes to eBPF-driven kernel-level networking.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-death-of-centralized-consensus-why-were-abandoning-global-raft-for-deterministic-localism-in-2026.html",
     "id": 23
-  },
-  {
-    "category": "Cybersecurity",
-    "title": "The End of Persistent Secrets: Transitioning to Attestation-Based Security in 2026",
-    "summary": "Static credentials remain the primary vector for 82% of modern enterprise breaches. This deep dive explores why senior architects in 2026 are moving toward hardware-backed cryptographic attestation and ephemeral workload identities to eliminate lateral movement risks.",
-    "date": "28 April 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?cryptographic-attestation-security",
-    "slug": "the-end-of-persistent-secrets-transitioning-to-attestation-based-security-in-2026",
-    "isPopular": false,
-    "link": "blog/the-end-of-persistent-secrets-transitioning-to-attestation-based-security-in-2026.html",
-    "id": 22
   }
 ]
