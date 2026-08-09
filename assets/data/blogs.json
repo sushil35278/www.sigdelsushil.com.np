@@ -1,5 +1,17 @@
 [
   {
+    "category": "Web Development",
+    "title": "The Death of Client Hydration: Why Senior Architects Are Shifting to WASI Edge Components in 2026",
+    "summary": "As mobile JavaScript bundles surpass 500KB on average, engineering teams are divided between JS resumability and zero-bundle WebAssembly components at the edge. Here is an evidence-backed analysis of why streaming Wasm-native micro-frontends are replacing traditional hydration paradigms across global networks.",
+    "date": "09 August 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?edge-computing-webassembly-network",
+    "slug": "the-death-of-client-hydration-why-senior-architects-are-shifting-to-wasi-edge-components-in-2026",
+    "isPopular": false,
+    "link": "blog/the-death-of-client-hydration-why-senior-architects-are-shifting-to-wasi-edge-components-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "Distributed Systems",
     "title": "The Great Decoupling: Data Plane Unbundling in Distributed Systems – Blessing or Burden for 2026?",
     "summary": "Distributed systems are evolving at an unprecedented pace, with the very fabric of our networks undergoing a radical transformation. Senior architects and engineering leaders are grappling with the unbundling of the data plane from the control plane, a shift promising unparalleled flexibility but introducing complex operational dilemmas. Is this architectural revolution the future we've been waiting for, or are we trading one set of problems for another, more intricate challenge?",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-the-cloud-the-architects-guide-to-local-first-distributed-systems-in-2026.html",
     "id": 25
-  },
-  {
-    "category": "Distributed Systems",
-    "title": "Beyond the Cloud: Why Local-First Persistence is Redefining Distributed Systems in 2026",
-    "summary": "As global latency hits physical limits, the 2026 engineering debate has shifted from centralized clouds to local-first state management. Explore how CRDTs and sovereign data zones are replacing the traditional request-response model to solve the physics of distance.",
-    "date": "30 April 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?distributed-computing-mesh-network",
-    "slug": "beyond-the-cloud-why-local-first-persistence-is-redefining-distributed-systems-in-2026",
-    "isPopular": false,
-    "link": "blog/beyond-the-cloud-why-local-first-persistence-is-redefining-distributed-systems-in-2026.html",
-    "id": 24
   }
 ]
