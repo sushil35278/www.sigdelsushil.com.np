@@ -1,5 +1,17 @@
 [
   {
+    "category": "Distributed Systems",
+    "title": "The Death of the Sidecar Proxy: eBPF and Wasm Architectures in 2026",
+    "summary": "Engineering teams in 2026 are abandoning sidecar containers like Envoy in favor of eBPF kernel redirection and embedded WebAssembly runtimes. This article analyzes the technical trade-offs, performance statistics, and real-world deployment patterns from Tokyo to Kathmandu.",
+    "date": "10 August 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?ebpf-network-architecture",
+    "slug": "the-death-of-the-sidecar-proxy-ebpf-and-wasm-architectures-in-2026",
+    "isPopular": false,
+    "link": "blog/the-death-of-the-sidecar-proxy-ebpf-and-wasm-architectures-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "Web Development",
     "title": "The Death of Client Hydration: Why Senior Architects Are Shifting to WASI Edge Components in 2026",
     "summary": "As mobile JavaScript bundles surpass 500KB on average, engineering teams are divided between JS resumability and zero-bundle WebAssembly components at the edge. Here is an evidence-backed analysis of why streaming Wasm-native micro-frontends are replacing traditional hydration paradigms across global networks.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-death-of-staging-why-engineering-leaders-in-2026-are-pivoting-to-ephemeral-production-shards.html",
     "id": 26
-  },
-  {
-    "category": "Distributed Systems",
-    "title": "Beyond the Cloud: The Architect’s Guide to Local-First Distributed Systems in 2026",
-    "summary": "In 2026, the industry is moving away from centralized cloud-native models toward local-first architectures. This shift prioritizes deterministic state replication over synchronous RPC, fundamentally changing how we build resilient global applications.",
-    "date": "01 May 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?distributed-mesh-network-tokyo",
-    "slug": "beyond-the-cloud-the-architects-guide-to-local-first-distributed-systems-in-2026",
-    "isPopular": false,
-    "link": "blog/beyond-the-cloud-the-architects-guide-to-local-first-distributed-systems-in-2026.html",
-    "id": 25
   }
 ]
