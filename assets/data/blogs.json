@@ -1,5 +1,17 @@
 [
   {
+    "category": "AI & Machine Learning",
+    "title": "Beyond Prompt Engineering: The Rise of Deterministic Guardrails in 2026 AI Architectures",
+    "summary": "As foundational models mature, senior engineering teams are abandoning probabilistic prompt hacks in favor of deterministic guardrail architectures. Here is how production systems are solving non-determinism at scale.",
+    "date": "11 August 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?server-rack-cybersecurity-code",
+    "slug": "beyond-prompt-engineering-the-rise-of-deterministic-guardrails-in-2026-ai-architectures",
+    "isPopular": false,
+    "link": "blog/beyond-prompt-engineering-the-rise-of-deterministic-guardrails-in-2026-ai-architectures.html",
+    "id": 101
+  },
+  {
     "category": "Distributed Systems",
     "title": "The Death of the Sidecar Proxy: eBPF and Wasm Architectures in 2026",
     "summary": "Engineering teams in 2026 are abandoning sidecar containers like Envoy in favor of eBPF kernel redirection and embedded WebAssembly runtimes. This article analyzes the technical trade-offs, performance statistics, and real-world deployment patterns from Tokyo to Kathmandu.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-the-vector-why-the-2026-architecture-shift-favors-deterministic-logic-graphs.html",
     "id": 27
-  },
-  {
-    "category": "DevOps & SRE",
-    "title": "The Death of Staging: Why Engineering Leaders in 2026 are Pivoting to Ephemeral Production Shards",
-    "summary": "Maintaining staging environments has become a multi-million dollar liability for distributed systems. This post explores the transition toward traffic shadowing and Wasm-based sidecars as the new standard for reliability engineering.",
-    "date": "02 May 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?distributed-system-server-topology",
-    "slug": "the-death-of-staging-why-engineering-leaders-in-2026-are-pivoting-to-ephemeral-production-shards",
-    "isPopular": false,
-    "link": "blog/the-death-of-staging-why-engineering-leaders-in-2026-are-pivoting-to-ephemeral-production-shards.html",
-    "id": 26
   }
 ]
