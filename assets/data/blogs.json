@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "The 'Distributed Monolith' Dilemma: Rethinking Microservices in 2026 Cloud Architectures",
+    "summary": "As cloud-native architectures mature, the initial promises of microservices are being re-evaluated. In 2026, many organizations grapple with the complexities of 'distributed monoliths,' prompting a critical debate about the optimal path forward. This post explores this trend, drawing lessons from global experiences, and offers practical advice.",
+    "date": "12 August 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed+systems+complexity",
+    "slug": "the-distributed-monolith-dilemma-rethinking-microservices-in-2026-cloud-architectures",
+    "isPopular": false,
+    "link": "blog/the-distributed-monolith-dilemma-rethinking-microservices-in-2026-cloud-architectures.html",
+    "id": 101
+  },
+  {
     "category": "AI & Machine Learning",
     "title": "Beyond Prompt Engineering: The Rise of Deterministic Guardrails in 2026 AI Architectures",
     "summary": "As foundational models mature, senior engineering teams are abandoning probabilistic prompt hacks in favor of deterministic guardrail architectures. Here is how production systems are solving non-determinism at scale.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-us-east-1-the-rise-of-sovereign-cloud-repatriation-in-2026.html",
     "id": 28
-  },
-  {
-    "category": "AI & Machine Learning",
-    "title": "Beyond the Vector: Why the 2026 Architecture Shift Favors Deterministic Logic Graphs",
-    "summary": "As vector databases hit their architectural ceiling, senior leaders are pivoting toward Logic-Graph hybrids to solve the hallucination and observability crisis in enterprise AI. This post explores why semantic similarity is no longer enough for high-stakes production systems.",
-    "date": "03 May 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?knowledge-graph-visualization-complex",
-    "slug": "beyond-the-vector-why-the-2026-architecture-shift-favors-deterministic-logic-graphs",
-    "isPopular": false,
-    "link": "blog/beyond-the-vector-why-the-2026-architecture-shift-favors-deterministic-logic-graphs.html",
-    "id": 27
   }
 ]
