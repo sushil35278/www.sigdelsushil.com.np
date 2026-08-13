@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cybersecurity",
+    "title": "The Post-Quantum Fragmentation Crisis: Why Dual-Key TLS 1.3 is Breaking the Edge in 2026",
+    "summary": "As engineering teams race to implement NIST-approved post-quantum algorithms, a quiet architectural crisis has emerged. This post explores why the massive cryptographic keys of ML-KEM and ML-DSA are causing IP fragmentation, packet loss, and latency anomalies across high-performance service meshes and constrained networks.",
+    "date": "13 August 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?post-quantum-cryptography-network",
+    "slug": "the-post-quantum-fragmentation-crisis-why-dual-key-tls-13-is-breaking-the-edge-in-2026",
+    "isPopular": false,
+    "link": "blog/the-post-quantum-fragmentation-crisis-why-dual-key-tls-13-is-breaking-the-edge-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "Cloud Architecture",
     "title": "The 'Distributed Monolith' Dilemma: Rethinking Microservices in 2026 Cloud Architectures",
     "summary": "As cloud-native architectures mature, the initial promises of microservices are being re-evaluated. In 2026, many organizations grapple with the complexities of 'distributed monoliths,' prompting a critical debate about the optimal path forward. This post explores this trend, drawing lessons from global experiences, and offers practical advice.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-the-mega-region-the-rise-of-deterministic-data-sharding-in-2026.html",
     "id": 29
-  },
-  {
-    "category": "Cloud Architecture",
-    "title": "Beyond us-east-1: The Rise of Sovereign Cloud Repatriation in 2026",
-    "summary": "As global hyperscalers face regulatory and geopolitical friction, engineering leaders in 2026 are shifting toward 'Sovereign-by-Design' architectures. This post explores how regional hubs like Tokyo and Kathmandu are pioneering localized, high-performance infrastructure through Kubernetes and eBPF.",
-    "date": "04 May 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?sovereign-cloud-server-landscape",
-    "slug": "beyond-us-east-1-the-rise-of-sovereign-cloud-repatriation-in-2026",
-    "isPopular": false,
-    "link": "blog/beyond-us-east-1-the-rise-of-sovereign-cloud-repatriation-in-2026.html",
-    "id": 28
   }
 ]
