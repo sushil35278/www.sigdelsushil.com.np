@@ -1,5 +1,17 @@
 [
   {
+    "category": "Web Development",
+    "title": "Beyond the Spinner: Why Local-First Architecture is the Senior Dev Debate of 2026",
+    "summary": "As the industry moves past the 'Server Components vs. SPA' wars, a more fundamental shift toward local-first synchronization is redefining web architecture. This post explores why senior engineers are abandoning traditional REST patterns for CRDTs and WASM-based sync engines to solve the global latency gap.",
+    "date": "14 August 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-database-sync",
+    "slug": "beyond-the-spinner-why-local-first-architecture-is-the-senior-dev-debate-of-2026",
+    "isPopular": false,
+    "link": "blog/beyond-the-spinner-why-local-first-architecture-is-the-senior-dev-debate-of-2026.html",
+    "id": 101
+  },
+  {
     "category": "Cybersecurity",
     "title": "The Post-Quantum Fragmentation Crisis: Why Dual-Key TLS 1.3 is Breaking the Edge in 2026",
     "summary": "As engineering teams race to implement NIST-approved post-quantum algorithms, a quiet architectural crisis has emerged. This post explores why the massive cryptographic keys of ML-KEM and ML-DSA are causing IP fragmentation, packet loss, and latency anomalies across high-performance service meshes and constrained networks.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-the-api-why-2026-is-the-year-of-deterministic-local-inference-l-i-architectures.html",
     "id": 30
-  },
-  {
-    "category": "Cloud Architecture",
-    "title": "Beyond the Mega-Region: The Rise of Deterministic Data Sharding in 2026",
-    "summary": "As global data sovereignty laws fragment the traditional cloud model, senior architects are moving away from monolithic regional clusters toward Deterministic Data Sharding (DDS). This post explores how WebAssembly at the edge is solving the compliance-latency paradox in 2026.",
-    "date": "05 May 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?data-sovereignty-digital-map",
-    "slug": "beyond-the-mega-region-the-rise-of-deterministic-data-sharding-in-2026",
-    "isPopular": false,
-    "link": "blog/beyond-the-mega-region-the-rise-of-deterministic-data-sharding-in-2026.html",
-    "id": 29
   }
 ]
