@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cybersecurity",
+    "title": "Post-Quantum TLS in 2026: Surviving Packet Fragmentation and Handshake Blowup in Distributed Systems",
+    "summary": "As NIST FIPS 203 and 204 mandates hit production in 2026, the transition to post-quantum cryptography is triggering unexpected tail-latency spikes and MTU fragmentation across distributed architectures. Here is an architectural blueprint for navigating algorithm agility and cryptographic observability without breaking throughput.",
+    "date": "15 August 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?quantum-cryptography-network",
+    "slug": "post-quantum-tls-in-2026-surviving-packet-fragmentation-and-handshake-blowup-in-distributed-systems",
+    "isPopular": false,
+    "link": "blog/post-quantum-tls-in-2026-surviving-packet-fragmentation-and-handshake-blowup-in-distributed-systems.html",
+    "id": 101
+  },
+  {
     "category": "Web Development",
     "title": "Beyond the Spinner: Why Local-First Architecture is the Senior Dev Debate of 2026",
     "summary": "As the industry moves past the 'Server Components vs. SPA' wars, a more fundamental shift toward local-first synchronization is redefining web architecture. This post explores why senior engineers are abandoning traditional REST patterns for CRDTs and WASM-based sync engines to solve the global latency gap.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-the-virtual-dom-why-2026-is-the-year-of-deterministic-ui-engineering.html",
     "id": 31
-  },
-  {
-    "category": "Distributed Systems",
-    "title": "Beyond the API: Why 2026 is the Year of Deterministic Local-Inference (L-I) Architectures",
-    "summary": "As the honeymoon phase with massive, centralized LLM providers ends, senior architects are navigating a high-stakes pivot toward local-inference. This shift, driven by data sovereignty and the 'inference tax,' is redefining how we build resilient distributed systems in 2026.",
-    "date": "06 May 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?edge-computing-rust-wasm",
-    "slug": "beyond-the-api-why-2026-is-the-year-of-deterministic-local-inference-l-i-architectures",
-    "isPopular": false,
-    "link": "blog/beyond-the-api-why-2026-is-the-year-of-deterministic-local-inference-l-i-architectures.html",
-    "id": 30
   }
 ]
