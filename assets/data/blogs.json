@@ -1,5 +1,17 @@
 [
   {
+    "category": "Web Development",
+    "title": "Beyond Edge Hydration: Why Local-First CRDT Architectures Are Winning in 2026",
+    "summary": "As distributed web applications face escalating cloud compute bills and unpredictable mobile networks, engineering teams are shifting away from pure edge SSR toward local-first runtimes. Here is an architectural analysis of why embedded client databases and CRDT synchronization are redefining modern web systems in 2026.",
+    "date": "16 August 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-database-network",
+    "slug": "beyond-edge-hydration-why-local-first-crdt-architectures-are-winning-in-2026",
+    "isPopular": false,
+    "link": "blog/beyond-edge-hydration-why-local-first-crdt-architectures-are-winning-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "Cybersecurity",
     "title": "Post-Quantum TLS in 2026: Surviving Packet Fragmentation and Handshake Blowup in Distributed Systems",
     "summary": "As NIST FIPS 203 and 204 mandates hit production in 2026, the transition to post-quantum cryptography is triggering unexpected tail-latency spikes and MTU fragmentation across distributed architectures. Here is an architectural blueprint for navigating algorithm agility and cryptographic observability without breaking throughput.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-unit-testing-the-2026-pivot-to-formally-verified-specifications.html",
     "id": 32
-  },
-  {
-    "category": "Web Development",
-    "title": "Beyond the Virtual DOM: Why 2026 is the Year of Deterministic UI Engineering",
-    "summary": "The era of reactive state 'guessing' is ending. Engineering leaders are now pivoting toward deterministic state engines and formally verified UI components to solve the reliability crisis in complex web applications.",
-    "date": "07 May 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?abstract-geometric-logic-structure",
-    "slug": "beyond-the-virtual-dom-why-2026-is-the-year-of-deterministic-ui-engineering",
-    "isPopular": false,
-    "link": "blog/beyond-the-virtual-dom-why-2026-is-the-year-of-deterministic-ui-engineering.html",
-    "id": 31
   }
 ]
