@@ -1,5 +1,17 @@
 [
   {
+    "category": "Software Engineering",
+    "title": "The 'Invisible Compute' Paradox: Navigating the Rise of Embedded AI in 2026",
+    "summary": "In 2026, senior engineers are grappling with the subtle yet profound shift towards 'invisible compute' – AI models embedded deeply within application logic, rather than deployed as standalone services. This trend presents unique challenges for observability, maintainability, and even ethical considerations. Let's explore this burgeoning landscape.",
+    "date": "17 August 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?embedded-ai-circuitry",
+    "slug": "the-invisible-compute-paradox-navigating-the-rise-of-embedded-ai-in-2026",
+    "isPopular": false,
+    "link": "blog/the-invisible-compute-paradox-navigating-the-rise-of-embedded-ai-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "Web Development",
     "title": "Beyond Edge Hydration: Why Local-First CRDT Architectures Are Winning in 2026",
     "summary": "As distributed web applications face escalating cloud compute bills and unpredictable mobile networks, engineering teams are shifting away from pure edge SSR toward local-first runtimes. Here is an architectural analysis of why embedded client databases and CRDT synchronization are redefining modern web systems in 2026.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-the-loading-spinner-why-local-first-is-splitting-the-senior-dev-community-in-2026.html",
     "id": 33
-  },
-  {
-    "category": "Software Engineering",
-    "title": "Beyond Unit Testing: The 2026 Pivot to Formally Verified Specifications",
-    "summary": "As LLM-generated code floods repositories with technical debt, senior architects are abandoning traditional unit testing in favor of formal verification. This shift marks a return to deterministic engineering in an era where 'probabilistic enough' is no longer acceptable for critical infrastructure.",
-    "date": "08 May 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?formal-verification-logic-gate-abstract",
-    "slug": "beyond-unit-testing-the-2026-pivot-to-formally-verified-specifications",
-    "isPopular": false,
-    "link": "blog/beyond-unit-testing-the-2026-pivot-to-formally-verified-specifications.html",
-    "id": 32
   }
 ]
