@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "The Pragmatic Repatriation: Architecting for a Hybrid Cloud Reality in 2026",
+    "summary": "As cloud costs escalate and operational complexities mount, senior developers and engineering leaders in 2026 are deeply engaged in a nuanced debate: not about abandoning the cloud, but about strategically bringing specific workloads back on-premises or to co-location facilities. This isn't a retreat, but a matured re-evaluation of optimal infrastructure, driven by financial prudence, performance demands, and regulatory foresight.",
+    "date": "19 August 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?hybrid-cloud-architecture-data-flow",
+    "slug": "the-pragmatic-repatriation-architecting-for-a-hybrid-cloud-reality-in-2026",
+    "isPopular": false,
+    "link": "blog/the-pragmatic-repatriation-architecting-for-a-hybrid-cloud-reality-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "DevOps & SRE",
     "title": "The Sidecar Tax is Too High: Why SREs are Migrating to eBPF Ambient Meshes in 2026",
     "summary": "As platform teams hit the scaling limits of sidecar-heavy service meshes, a shift toward kernel-space networking is reshaping Kubernetes architecture. Explore why senior SREs are abandoning the sidecar pattern in favor of eBPF-driven ambient service meshes and the trade-offs this migration introduces.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-zero-trust-why-runtime-attestation-is-the-only-security-metric-that-matters-in-2026.html",
     "id": 35
-  },
-  {
-    "category": "Software Engineering",
-    "title": "Beyond FaaS: The 2026 Debate on Serverless-Native Hyper-Abstraction and Engineering Depth",
-    "summary": "The software engineering landscape in 2026 is no longer debating if serverless is viable, but rather how deeply we should embrace hyper-abstracted, cloud-native services. This shift promises unparalleled developer velocity but reignites critical discussions around engineering depth, vendor lock-in, and the very definition of 'building' software.",
-    "date": "10 May 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?serverless-native-architecture-diagram-modern-cloud",
-    "slug": "beyond-faas-the-2026-debate-on-serverless-native-hyper-abstraction-and-engineering-depth",
-    "isPopular": false,
-    "link": "blog/beyond-faas-the-2026-debate-on-serverless-native-hyper-abstraction-and-engineering-depth.html",
-    "id": 34
   }
 ]

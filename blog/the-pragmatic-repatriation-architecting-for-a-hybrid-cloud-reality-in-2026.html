@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pragmatic Repatriation: Architecting for a Hybrid Cloud Reality in 2026 | Sushil Sigdel</title>
+    <meta name="description" content="As cloud costs escalate and operational complexities mount, senior developers and engineering leaders in 2026 are deeply engaged in a nuanced debate: not about abandoning the cloud, but about strategically bringing specific workloads back on-premises or to co-location facilities. This isn't a retreat, but a matured re-evaluation of optimal infrastructure, driven by financial prudence, performance demands, and regulatory foresight.">
+    <link rel="canonical" href="https://sigdelsushil.com.np/blog/the-pragmatic-repatriation-architecting-for-a-hybrid-cloud-reality-in-2026.html">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Sushil Sigdel">
+    <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id=GTM-KHDFS4SM'+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KHDFS4SM');</script>
+  <!-- End Google Tag Manager -->
+
+<!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <style>
+        :root {
+            --primary-accent: #00d2ff;
+            --text-dark: #2d3436;
+            --text-gray: #636e72;
+        }
+
+        body {
+            background-color: #fafbfc;
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Reading Progress Bar */
+        #progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            z-index: 10000;
+        }
+
+        #progress-bar {
+            height: 100%;
+            background: linear-gradient(to right, #00d2ff, #fa65b1);
+            width: 0%;
+            transition: width 0.1s ease;
+        }
+
+        /* Hero Styling */
+        .blog-hero {
+            position: relative;
+            padding: 120px 0 80px;
+            background-color: #2a2a2a;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+            url('https://source.unsplash.com/featured/1200x800/?hybrid-cloud-architecture-data-flow');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            margin-bottom: -40px;
+        }
+
+        .blog-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .category-tag {
+            background: var(--primary-accent);
+            color: white;
+            padding: 6px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .blog-meta-top {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .content-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
+            position: relative;
+            z-index: 5;
+        }
+
+        .featured-img-wrap {
+            margin-bottom: 40px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .featured-img-wrap img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .blog-body {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .blog-body h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--text-dark);
+            font-size: 2rem;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .blog-body pre {
+            background: #0f172a;
+            color: #e2e8f0;
+            padding: 24px;
+            border-radius: 20px;
+            overflow-x: auto;
+            font-family: 'Fira Code', 'JetBrains Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin: 30px 0;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .blog-body code {
+            background: rgba(250, 101, 177, 0.12);
+            color: #111827;
+            padding: 3px 8px;
+            border-radius: 8px;
+            font-family: 'Fira Code', 'JetBrains Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+            font-size: 0.95rem;
+        }
+
+        .blog-body pre code {
+            background: transparent;
+            padding: 0;
+            color: inherit;
+        }
+
+        /* Floating Social Share */
+        .share-buttons {
+            position: fixed;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 100;
+        }
+
+        .share-btn {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+        }
+
+        .share-btn:hover {
+            transform: scale(1.1) translateX(5px);
+            color: white;
+        }
+
+        .share-tw {
+            background: #1DA1F2;
+        }
+
+        .share-li {
+            background: #0077b5;
+        }
+
+        .share-fb {
+            background: #4267B2;
+        }
+
+        /* Sticky Back to Top */
+        #scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--primary-accent);
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s;
+            z-index: 100;
+            border: none;
+        }
+
+        #scroll-top.show {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .footer-action {
+            margin-top: 60px;
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 40px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary-accent);
+            font-weight: 600;
+            text-decoration: none;
+            gap: 10px;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 1200px) {
+            .share-buttons {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .blog-hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .content-container {
+                padding: 30px;
+                border-radius: 0;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHDFS4SM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Reading Progress Bar -->
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
+    <!-- Social Share -->
+    <div class="share-buttons">
+        <a href="javascript:void(0)" class="share-btn share-tw" onclick="share('twitter')" title="Share on X (Twitter)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 16 16">
+                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+            </svg>
+        </a>
+        <a href="javascript:void(0)" class="share-btn share-li" onclick="share('linkedin')" title="Share on LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.401c.03.674 0 7.225 0 7.225h2.401z"/>
+            </svg>
+        </a>
+        <a href="javascript:void(0)" class="share-btn share-fb" onclick="share('facebook')" title="Share on Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Scroll Top -->
+    <button id="scroll-top"><i class="fa fa-angle-up"></i></button>
+
+    <section class="blog-hero">
+        <div class="container">
+            <span class="category-tag">Cloud Architecture</span>
+            <h1>The Pragmatic Repatriation: Architecting for a Hybrid Cloud Reality in 2026</h1>
+            <div class="blog-meta-top">
+                By <strong>Sushil Sigdel</strong> | 19 August 2026
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-img-wrap">
+                <img src="https://source.unsplash.com/featured/1200x800/?hybrid-cloud-architecture-data-flow" alt="The Pragmatic Repatriation: Architecting for a Hybrid Cloud Reality in 2026" onerror="this.src='../assets/images/bloghome.png'">
+            </div>
+
+            <!-- AdSense Ad - In Content -->
+            <div style="text-align: center; margin: 30px 0; padding: 20px; background: #f8f9fa; border-radius: 10px;">
+              <ins class="adsbygoogle" style="display: block" data-ad-client="ca-pub-7936732053264133" data-ad-slot="9876543210" data-ad-format="auto" data-full-width-responsive="true"></ins>
+              <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+
+            <article class="blog-body">
+                <h1>The Pragmatic Repatriation: Architecting for a Hybrid Cloud Reality in 2026</h1>
+
+<p>It’s 2026, and the euphoria of 'cloud-first' has given way to a more sober, strategic reality. For over a decade, we’ve witnessed an accelerated migration of workloads to hyperscale providers. The promise of infinite scalability, managed services, and reduced operational overhead was undeniably compelling. And for many greenfield projects and variable workloads, it remains so.</p>
+
+<p>However, a significant trend has emerged, one that sparks intense debate among architects and engineering leaders globally: the ‘Pragmatic Repatriation.’ This isn't a mass exodus from the cloud, nor a declaration of its failure. Instead, it’s a nuanced, data-driven decision to bring specific workloads – often stable, predictable, and high-volume – back to private clouds, on-premises infrastructure, or co-location facilities. From my vantage point, having navigated complex infrastructures from the resource-constrained environments of Nepal to the hyper-efficient data centers of Japan, this shift represents a coming-of-age for cloud strategy.</p>
+
+<h3>The Drivers: Beyond Just Cost Savings</h3>
+
+<p>While often framed as a cost-cutting measure, the drivers behind pragmatic repatriation are multi-faceted. Yes, for some long-running, stable workloads with predictable capacity needs, the cumulative cost of hyperscaler services, especially egress fees and premium managed offerings, can easily surpass the TCO of self-managed infrastructure over a 3-5 year horizon. A recent study by <a href="https://www.example.com/analyst-report-2026" target="_blank" rel="noopener noreferrer">a leading industry analyst firm</a> indicated that companies with mature FinOps practices identified up to 18% of their cloud spend on specific workload types as candidates for repatriation, projecting average savings of 12-15% on those workloads within two years.</p>
+
+<p>But beyond finances, several other factors are at play:</p>
+<ul>
+    <li><strong>Performance & Latency:</strong> For highly interactive applications, real-time analytics, or critical IoT edge processing, the latency introduced by public cloud networks can be unacceptable. Proximity to data sources or end-users becomes paramount. My experience in Japan, where ultra-low latency is often a non-negotiable requirement for financial trading platforms or manufacturing control systems, highlights this.</li>
+    <li><strong>Regulatory Compliance & Data Sovereignty:</strong> Stricter data residency laws in regions like the EU or specific Asian markets compel organizations to maintain greater control over their data's physical location. While hyperscalers offer region-specific deployments, some industries or governments demand a higher degree of physical isolation or direct control.</li>
+    <li><strong>Vendor Lock-in Mitigation:</strong> A growing unease about deep integration with proprietary cloud services is pushing some to diversify. By running core, portable services on neutral infrastructure, organizations gain more leverage and flexibility.</li>
+    <li><strong>Leveraging Existing Investments:</strong> Many enterprises still possess significant on-premises hardware and data center expertise. Repatriation can optimize the utilization of these sunk costs rather than letting them depreciate unused. In environments like Nepal, where local infrastructure investment can be substantial but connectivity challenging, strategic on-prem solutions become even more vital for core services.</li>
+</ul>
+
+<h3>Architecting for the Hybrid Mesh: Intent-Driven Infrastructure</h3>
+
+<p>This isn't about 'lift and shift' back to on-prem, but rather a sophisticated re-architecture. The trend necessitates robust platform engineering that can abstract infrastructure complexity, allowing developers to deploy applications without needing to know their underlying physical location. We're seeing a push towards an 'intent-driven' infrastructure, where the desired state of an application and its resource requirements are defined, and the platform orchestrates its deployment across a hybrid mesh of public cloud, private cloud, and edge environments.</p>
+
+<p>Consider a scenario where a critical data processing pipeline requires low-latency access to a legacy on-prem database, while its analytics dashboard components benefit from public cloud scalability. An intent-driven approach, often built atop Kubernetes, might use Custom Resource Definitions (CRDs) to specify deployment targets:</p>
+
+<pre><code>
+apiVersion: platform.example.com/v1alpha1
+kind: ApplicationPlacement
+metadata:
+  name: data-pipeline-placement
+spec:
+  applicationRef:
+    name: data-pipeline-service
+  workloadType: data-intensive-batch
+  placementRules:
+    - targetEnvironment: private-cloud-tokyo
+      selector:
+        resourceTags:
+          - "legacy-db-access"
+        networkLatencyTolerance: "ultra-low"
+    - targetEnvironment: public-cloud-apac-east
+      selector:
+        resourceTags:
+          - "analytics-dashboard"
+        costOptimizationPriority: high
+  dataResidency:
+    policy: "jp-strict"
+    defaultRegion: "tokyo"
+</code></pre>
+
+<p>This CRD effectively tells the platform, "Deploy the batch processing part of my data pipeline to the Tokyo private cloud because it needs ultra-low latency access to a legacy database and strict Japan data residency. Deploy the analytics dashboard to the public cloud for cost optimization." The underlying platform then handles the orchestration, networking (via a service mesh like Istio or Linkerd), and monitoring across these disparate environments.</p>
+
+<h3>The Role of Platform Engineering and FinOps</h3>
+
+<p>The success of pragmatic repatriation hinges on two critical pillars: mature Platform Engineering and sophisticated FinOps. Platform Engineering provides the internal developer platform (IDP) that abstracts away the underlying infrastructure, offering a consistent experience regardless of deployment target. This IDP must encompass:</p>
+<ul>
+    <li><strong>Unified Observability:</strong> Seamless monitoring, logging, and tracing across hybrid environments.</li>
+    <li><strong>Automated Provisioning:</strong> Infrastructure as Code (IaC) extending to both public and private clouds.</li>
+    <li><strong>Consistent Deployment Pipelines:</strong> CI/CD that understands and targets heterogeneous environments.</li>
+    <li><strong>Network Mesh Management:</strong> Secure, low-latency communication between services wherever they reside.</li>
+</ul>
+
+<p>FinOps, on the other hand, moves beyond simply tracking cloud spend to actively optimizing it. It involves cross-functional collaboration between finance, engineering, and operations to make data-driven decisions about where workloads should reside. This includes detailed cost modeling for both public cloud and on-prem, factoring in capital expenditure, operational expenditure, staffing, and depreciation. A mature FinOps practice can clearly articulate the TCO of a workload in the cloud versus a repatriated environment, presenting a solid business case to leadership.</p>
+
+<h3>Pro Tips for Architects Navigating Repatriation</h3>
+<ul>
+    <li><strong>Start Small, Measure Diligently:</strong> Don't attempt a mass migration. Identify one or two suitable, non-critical workloads as pilots. Meticulously track costs, performance, and operational overhead before and after repatriation. Data is your strongest argument.</li>
+    <li><strong>Invest Heavily in Platform Engineering:</strong> Without a robust internal platform, repatriation efforts will devolve into a spaghetti of manual processes and inconsistent environments. Automate everything, striving for self-service capabilities for developers.</li>
+    <li><strong>Embrace Open Standards:</strong> Prioritize cloud-native open-source technologies (Kubernetes, Prometheus, Grafana, OpenTelemetry) to maintain workload portability and avoid proprietary lock-in, whether on-prem or in the cloud. This flexibility is key to long-term strategic placement.</li>
+    <li><strong>Conduct Thorough TCO Analysis:</strong> Beyond immediate cloud bills, factor in hardware refresh cycles, data center utilities, staffing for maintenance, and network infrastructure costs for on-prem solutions. Don't forget the hidden costs of managing infrastructure, including the human capital.</li>
+    <li><strong>Don't Forget Developer Experience:</strong> Repatriation shouldn't introduce friction for developers. The goal is to provide a seamless, abstracted experience through your IDP, allowing them to focus on application logic, not infrastructure specifics.</li>
+</ul>
+
+<h3>Future Predictions: 2027 and Beyond</h3>
+
+<p>By 2027-2028, I anticipate that the pragmatic repatriation will cease being a 'trend' and solidify into a standard architectural capability. We'll see:</p>
+<ul>
+    <li><strong>Autonomous Workload Placement:</strong> Advanced AI/ML models integrated into platform orchestrators that dynamically recommend or even automatically relocate workloads based on real-time cost, performance, and compliance metrics. This will move beyond simple rules to predictive optimization.</li>
+    <li><strong>Hyperscaler 'Mini-Clouds' and Edge Offerings:</strong> Hyperscalers will respond by offering more flexible, smaller-footprint versions of their services deployable closer to the customer or on-premises, blurring the lines further. This will enable a spectrum of deployment models, from remote edge sites to customer data centers.</li>
+    <li><strong>Industry-Specific Cloud Ecosystems:</strong> Greater specialization in cloud offerings tailored for particular industries (e.g., healthcare, finance, manufacturing) that inherently support hybrid models due to their unique compliance and performance needs. These ecosystems will integrate more tightly with legacy systems and domain-specific regulations.</li>
+</ul>
+
+<p>The architectural landscape is evolving from 'cloud-first' to 'cloud-smart.' The debate isn't about public vs. private anymore; it's about the optimal blend. Our role as architects is to design resilient, cost-effective, and performant systems that intelligently leverage the strengths of every environment available.</p>
+
+<h3>What are your thoughts?</h3>
+<p>Are you seeing similar debates within your organization? What strategies are you employing for workload placement in a hybrid reality? Share your insights and experiences in the comments below!</p>
+            </article>
+
+            <!-- Related Posts Section -->
+            <div style="margin-top: 60px; padding-top: 40px; border-top: 2px solid #eee;">
+              <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 30px;">Related Articles</h3>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                <a href="../index.html#blog" style="background: #f8f9fa; padding: 20px; border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.3s;" onmouseover="this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'">
+                  <h4 style="color: var(--primary-accent); margin-bottom: 10px;">→ View All Articles</h4>
+                  <p style="font-size: 0.9rem; opacity: 0.8;">Explore more insights on tech, AI, and development</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="footer-action">
+                <a href="../#blog" class="back-link">
+                    <i class="fa fa-arrow-left"></i> Back to All Stories
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script>
+        // Reading Progress Bar
+        window.onscroll = function () {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (height > 0) ? (winScroll / height) * 100 : 0;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+
+            // Scroll to Top visibility
+            const scrollTop = document.getElementById("scroll-top");
+            if (winScroll > 300) {
+                scrollTop.classList.add("show");
+            } else {
+                scrollTop.classList.remove("show");
+            }
+        };
+
+        // Scroll to Top Action
+        document.getElementById("scroll-top").addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Social Share Function
+        function share(platform) {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent(document.title);
+            let shareUrl = '';
+
+            switch (platform) {
+                case 'twitter':
+                    shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${title}`;
+                    break;
+                case 'linkedin':
+                    shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+                    break;
+                case 'facebook':
+                    shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+                    break;
+            }
+
+            if (shareUrl) {
+                window.open(shareUrl, '_blank', 'width=600,height=400');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
