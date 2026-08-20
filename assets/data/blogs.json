@@ -1,6 +1,18 @@
 [
   {
     "category": "Cloud Architecture",
+    "title": "Why We Are Abandoning Centralized Cloud Databases in 2026: The Rise of Sovereign Cell Architecture",
+    "summary": "As global data residency laws harden and cloud egress fees squeeze margins, engineering leaders are shifting from massive multi-region RDBMS setups to localized, sovereign cell-based architectures. Here is how edge-replicated SQLite and cellular isolation are redefining high-availability systems.",
+    "date": "20 August 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?edge-computing-datacenter-networking",
+    "slug": "why-we-are-abandoning-centralized-cloud-databases-in-2026-the-rise-of-sovereign-cell-architecture",
+    "isPopular": false,
+    "link": "blog/why-we-are-abandoning-centralized-cloud-databases-in-2026-the-rise-of-sovereign-cell-architecture.html",
+    "id": 101
+  },
+  {
+    "category": "Cloud Architecture",
     "title": "The Pragmatic Repatriation: Architecting for a Hybrid Cloud Reality in 2026",
     "summary": "As cloud costs escalate and operational complexities mount, senior developers and engineering leaders in 2026 are deeply engaged in a nuanced debate: not about abandoning the cloud, but about strategically bringing specific workloads back on-premises or to co-location facilities. This isn't a retreat, but a matured re-evaluation of optimal infrastructure, driven by financial prudence, performance demands, and regulatory foresight.",
     "date": "19 August 2026",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-end-of-centrality-why-2026-is-the-year-of-deterministic-causal-consistency.html",
     "id": 36
-  },
-  {
-    "category": "Cybersecurity",
-    "title": "Beyond Zero Trust: Why Runtime Attestation is the Only Security Metric That Matters in 2026",
-    "summary": "As we move past the era of simple identity-based security, engineering leaders are shifting focus to the integrity of the binary itself. This post explores how runtime attestation and hardware-backed root of trust are replacing traditional perimeter defenses in high-stakes environments.",
-    "date": "11 May 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?tpm-security-chip-hologram",
-    "slug": "beyond-zero-trust-why-runtime-attestation-is-the-only-security-metric-that-matters-in-2026",
-    "isPopular": false,
-    "link": "blog/beyond-zero-trust-why-runtime-attestation-is-the-only-security-metric-that-matters-in-2026.html",
-    "id": 35
   }
 ]
