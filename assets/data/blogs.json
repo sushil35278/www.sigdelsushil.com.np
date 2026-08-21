@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cybersecurity",
+    "title": "The Great Decentralization: Debating Security Ownership in 2026's Cloud-Native World",
+    "summary": "As cloud-native architectures grow relentlessly complex, traditional centralized security models are showing cracks. In 2026, engineering leaders are locked in a critical debate: should security ownership be fully embedded within development teams, or does a central security function still hold the ultimate key? This isn't just an organizational shift; it's a fundamental re-evaluation of how we build and secure software.",
+    "date": "21 August 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?decentralized+cloud+security+architecture",
+    "slug": "the-great-decentralization-debating-security-ownership-in-2026s-cloud-native-world",
+    "isPopular": false,
+    "link": "blog/the-great-decentralization-debating-security-ownership-in-2026s-cloud-native-world.html",
+    "id": 101
+  },
+  {
     "category": "Cloud Architecture",
     "title": "Why We Are Abandoning Centralized Cloud Databases in 2026: The Rise of Sovereign Cell Architecture",
     "summary": "As global data residency laws harden and cloud egress fees squeeze margins, engineering leaders are shifting from massive multi-region RDBMS setups to localized, sovereign cell-based architectures. Here is how edge-replicated SQLite and cellular isolation are redefining high-availability systems.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-great-ai-architecture-debate-of-2026-monolithic-generalists-vs-federated-specialists.html",
     "id": 37
-  },
-  {
-    "category": "Distributed Systems",
-    "title": "The End of Centrality: Why 2026 is the Year of Deterministic Causal Consistency",
-    "summary": "As global latency plateaus and regional data sovereignty laws tighten, engineering leaders are shifting from massive centralized clusters to local-first architectures. This post examines why Deterministic Causal Consistency and CRDTs have become the standard for high-availability systems in 2026.",
-    "date": "12 May 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?distributed-lattice-network",
-    "slug": "the-end-of-centrality-why-2026-is-the-year-of-deterministic-causal-consistency",
-    "isPopular": false,
-    "link": "blog/the-end-of-centrality-why-2026-is-the-year-of-deterministic-causal-consistency.html",
-    "id": 36
   }
 ]
