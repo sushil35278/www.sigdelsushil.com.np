@@ -1,6 +1,18 @@
 [
   {
     "category": "Distributed Systems",
+    "title": "Reconciling Granularity: The 2026 Debate on Serverless Monoliths vs. Hyper-Granular Microservices",
+    "summary": "As serverless platforms mature, the architectural pendulum swings again. Senior engineering leaders in 2026 are confronting a critical question: Have we pushed microservice granularity too far, or do 'Serverless Monoliths' offer a pragmatic path forward for complex distributed systems? This post dives into the heated debate surrounding FaaS-based macroservices and optimal system decomposition.",
+    "date": "24 August 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?serverless-architecture-decision-tree",
+    "slug": "reconciling-granularity-the-2026-debate-on-serverless-monoliths-vs-hyper-granular-microservices",
+    "isPopular": false,
+    "link": "blog/reconciling-granularity-the-2026-debate-on-serverless-monoliths-vs-hyper-granular-microservices.html",
+    "id": 101
+  },
+  {
+    "category": "Distributed Systems",
     "title": "The Pragmatic Shift: Why CRDTs are Dominating Distributed State Debates in 2026",
     "summary": "As our systems stretch across continents and into the furthest edges of the network, the tension between consistency and availability intensifies. In 2026, senior architects are increasingly turning to Conflict-free Replicated Data Types (CRDTs) not as a theoretical novelty, but as a pragmatic necessity for managing state in hyper-distributed, eventually consistent architectures. This isn't just a technical choice; it's a strategic one that reshapes how we build resilient applications for a globally connected, and sometimes disconnected, world.",
     "date": "23 August 2026",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-strategic-cloud-recalibration-why-2026-sees-architects-debating-workload-repatriation.html",
     "id": 40
-  },
-  {
-    "category": "Web Development",
-    "title": "Beyond the Cloud: Why Local-First is the Definitive Web Architecture of 2026",
-    "summary": "The traditional request-response cycle is becoming a bottleneck for modern user experiences. In 2026, the industry is pivoting toward Local-First architectures, leveraging SQLite-WASM and CRDTs to eliminate latency and reduce cloud egress costs.",
-    "date": "15 May 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?decentralized-data-mesh",
-    "slug": "beyond-the-cloud-why-local-first-is-the-definitive-web-architecture-of-2026",
-    "isPopular": false,
-    "link": "blog/beyond-the-cloud-why-local-first-is-the-definitive-web-architecture-of-2026.html",
-    "id": 39
   }
 ]
