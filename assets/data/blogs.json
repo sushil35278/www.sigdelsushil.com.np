@@ -1,5 +1,17 @@
 [
   {
+    "category": "Web Development",
+    "title": "The Great 2026 State Debate: Why Tech Leaders Are Moving Beyond Server Components to Local-First CRDTs",
+    "summary": "As server-driven rendering frameworks hit latency ceilings on variable networks, engineering teams in 2026 are split over the shift toward local-first WebAssembly architectures. This deep dive examines the tradeoffs between server-centric execution and client-side CRDT state synchronization.",
+    "date": "25 August 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?database-sync-network",
+    "slug": "the-great-2026-state-debate-why-tech-leaders-are-moving-beyond-server-components-to-local-first-crdts",
+    "isPopular": false,
+    "link": "blog/the-great-2026-state-debate-why-tech-leaders-are-moving-beyond-server-components-to-local-first-crdts.html",
+    "id": 101
+  },
+  {
     "category": "Distributed Systems",
     "title": "Reconciling Granularity: The 2026 Debate on Serverless Monoliths vs. Hyper-Granular Microservices",
     "summary": "As serverless platforms mature, the architectural pendulum swings again. Senior engineering leaders in 2026 are confronting a critical question: Have we pushed microservice granularity too far, or do 'Serverless Monoliths' offer a pragmatic path forward for complex distributed systems? This post dives into the heated debate surrounding FaaS-based macroservices and optimal system decomposition.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-great-re-centralization-navigating-hybrid-rendering-paradigms-in-2026-web-development.html",
     "id": 41
-  },
-  {
-    "category": "Cloud Architecture",
-    "title": "The Strategic Cloud Recalibration: Why 2026 Sees Architects Debating Workload Repatriation",
-    "summary": "The initial rush to 'cloud-first' is maturing. By 2026, engineering leaders are no longer blindly migrating but critically evaluating which workloads truly benefit from public cloud, and where strategic repatriation or specialized hybrid models offer superior economics, performance, or control. This post dives into the nuanced debate shaping cloud architecture's future.",
-    "date": "16 May 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?cloud-repatriation-hybrid-architecture",
-    "slug": "the-strategic-cloud-recalibration-why-2026-sees-architects-debating-workload-repatriation",
-    "isPopular": false,
-    "link": "blog/the-strategic-cloud-recalibration-why-2026-sees-architects-debating-workload-repatriation.html",
-    "id": 40
   }
 ]
