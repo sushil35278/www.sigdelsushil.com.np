@@ -1,5 +1,17 @@
 [
   {
+    "category": "Software Engineering",
+    "title": "The Generalist vs. Specialist Divide: Navigating Developer Careers in the AI-Augmented 2026 Landscape",
+    "summary": "As 2026 unfolds, a pivotal debate reshapes software engineering careers: is deep specialization the only path to relevance, or does broad generalist knowledge offer superior adaptability in an AI-driven world? This article delves into the strategic implications for developers and leaders, dissecting how AI is both fragmenting and unifying skill sets.",
+    "date": "27 August 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?generalist-vs-specialist-developer-ai-future",
+    "slug": "the-generalist-vs-specialist-divide-navigating-developer-careers-in-the-ai-augmented-2026-landscape",
+    "isPopular": false,
+    "link": "blog/the-generalist-vs-specialist-divide-navigating-developer-careers-in-the-ai-augmented-2026-landscape.html",
+    "id": 101
+  },
+  {
     "category": "Cloud Architecture",
     "title": "Beyond the Region: Why Cell-Based Architecture is the 2026 Standard for Resilience",
     "summary": "As global cloud control planes face increasing stability challenges, senior architects are moving away from monolithic regional deployments toward Cell-Based Architecture (CBA). This shift marks a fundamental change in how we manage blast radius and data sovereignty in a fragmented geopolitical landscape.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-the-password-why-non-human-identity-nhi-is-the-2026-cybersecurity-frontier.html",
     "id": 43
-  },
-  {
-    "category": "Cloud Architecture",
-    "title": "The 2026 Sovereign Cloud Shift: Why Architects are Decoupling from Hyperscalers",
-    "summary": "As global data sovereignty laws tighten and egress costs spiral, senior architects in 2026 are pivoting from 'Cloud-First' to 'Regional-First' architectures. This post explores the technical shift toward decentralized, sovereign infrastructure and the rise of WebAssembly-based edge computing.",
-    "date": "18 May 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?decentralized-cloud-infrastructure",
-    "slug": "the-2026-sovereign-cloud-shift-why-architects-are-decoupling-from-hyperscalers",
-    "isPopular": false,
-    "link": "blog/the-2026-sovereign-cloud-shift-why-architects-are-decoupling-from-hyperscalers.html",
-    "id": 42
   }
 ]
