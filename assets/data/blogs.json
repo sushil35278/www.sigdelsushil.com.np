@@ -1,5 +1,17 @@
 [
   {
+    "category": "Distributed Systems",
+    "title": "The Hyper-Distributed Edge: Navigating State, Sovereignty, and Serenity in 2026",
+    "summary": "As 2026 unfolds, the gravitational pull towards the hyper-distributed edge is undeniable, driven by performance, resilience, and early data sovereignty demands. This post dives deep into the complex architectural debates surrounding consistent state management and the escalating regulatory challenges of geo-distributed data, drawing on real-world experiences from Asia.",
+    "date": "28 August 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-data-nodes-world-map",
+    "slug": "the-hyper-distributed-edge-navigating-state-sovereignty-and-serenity-in-2026",
+    "isPopular": false,
+    "link": "blog/the-hyper-distributed-edge-navigating-state-sovereignty-and-serenity-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "Software Engineering",
     "title": "The Generalist vs. Specialist Divide: Navigating Developer Careers in the AI-Augmented 2026 Landscape",
     "summary": "As 2026 unfolds, a pivotal debate reshapes software engineering careers: is deep specialization the only path to relevance, or does broad generalist knowledge offer superior adaptability in an AI-driven world? This article delves into the strategic implications for developers and leaders, dissecting how AI is both fragmenting and unifying skill sets.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-event-driven-chaos-the-2026-shift-to-durable-execution-in-multi-region-cloud-architecture.html",
     "id": 44
-  },
-  {
-    "category": "Cybersecurity",
-    "title": "Beyond the Password: Why Non-Human Identity (NHI) is the 2026 Cybersecurity Frontier",
-    "summary": "As autonomous agents and microservices outnumber human users 50-to-1, the industry is shifting from user authentication to machine attestation. This post explores how engineering leaders are tackling the 'Post-Identity Crisis' through workload identity and zero-trust logic.",
-    "date": "19 May 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?distributed-systems-security-node",
-    "slug": "beyond-the-password-why-non-human-identity-nhi-is-the-2026-cybersecurity-frontier",
-    "isPopular": false,
-    "link": "blog/beyond-the-password-why-non-human-identity-nhi-is-the-2026-cybersecurity-frontier.html",
-    "id": 43
   }
 ]
