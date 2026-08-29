@@ -1,5 +1,17 @@
 [
   {
+    "category": "Web Development",
+    "title": "Beyond the Request-Response Cycle: Why Local-First Persistence is the Standard for 2026",
+    "summary": "As we move into 2026, engineering leaders are shifting away from traditional cloud-centric CRUD architectures in favor of local-first patterns. This article explores how CRDTs and Wasm-powered databases are solving latency issues from Kathmandu to Tokyo.",
+    "date": "29 August 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-system-database-visual",
+    "slug": "beyond-the-request-response-cycle-why-local-first-persistence-is-the-standard-for-2026",
+    "isPopular": false,
+    "link": "blog/beyond-the-request-response-cycle-why-local-first-persistence-is-the-standard-for-2026.html",
+    "id": 101
+  },
+  {
     "category": "Distributed Systems",
     "title": "The Hyper-Distributed Edge: Navigating State, Sovereignty, and Serenity in 2026",
     "summary": "As 2026 unfolds, the gravitational pull towards the hyper-distributed edge is undeniable, driven by performance, resilience, and early data sovereignty demands. This post dives deep into the complex architectural debates surrounding consistent state management and the escalating regulatory challenges of geo-distributed data, drawing on real-world experiences from Asia.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-great-local-first-debate-of-2026-why-pglite-and-crdts-are-splitting-engineering-teams.html",
     "id": 45
-  },
-  {
-    "category": "Cloud Architecture",
-    "title": "Beyond Event-Driven Chaos: The 2026 Shift to Durable Execution in Multi-Region Cloud Architecture",
-    "summary": "As distributed microservices reach unprecedented scale, architects are facing the limits of traditional event-driven choreography. This deep dive explores how Durable Execution frameworks are replacing fragile message queues to solve consistency challenges across disparate global regions.",
-    "date": "20 May 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?cloud-architecture-distributed-network",
-    "slug": "beyond-event-driven-chaos-the-2026-shift-to-durable-execution-in-multi-region-cloud-architecture",
-    "isPopular": false,
-    "link": "blog/beyond-event-driven-chaos-the-2026-shift-to-durable-execution-in-multi-region-cloud-architecture.html",
-    "id": 44
   }
 ]
