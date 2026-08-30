@@ -1,5 +1,17 @@
 [
   {
+    "category": "AI & Machine Learning",
+    "title": "Beyond the API: Why 2026 is the Year of Local Model Distillation and SLMs",
+    "summary": "As the overhead of massive LLM APIs becomes unsustainable, senior architects are shifting toward local, task-specific Small Language Models (SLMs). This post explores the technical transition from 'prompting the giant' to 'distilling the specialist' for production-grade systems.",
+    "date": "30 August 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?edge-computing-neural-chip",
+    "slug": "beyond-the-api-why-2026-is-the-year-of-local-model-distillation-and-slms",
+    "isPopular": false,
+    "link": "blog/beyond-the-api-why-2026-is-the-year-of-local-model-distillation-and-slms.html",
+    "id": 101
+  },
+  {
     "category": "Web Development",
     "title": "Beyond the Request-Response Cycle: Why Local-First Persistence is the Standard for 2026",
     "summary": "As we move into 2026, engineering leaders are shifting away from traditional cloud-centric CRUD architectures in favor of local-first patterns. This article explores how CRDTs and Wasm-powered databases are solving latency issues from Kathmandu to Tokyo.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/edge-vs-core-in-2026-debating-the-stateless-core-stateful-edge-paradox.html",
     "id": 46
-  },
-  {
-    "category": "Web Development",
-    "title": "The Great Local-First Debate of 2026: Why PGLite and CRDTs are Splitting Engineering Teams",
-    "summary": "In 2026, the pendulum is swinging away from server-centric rendering back to the client. We examine the architectural trade-offs, network failures in Nepal, edge limits in Tokyo, and whether local-first WASM databases are ready for enterprise production.",
-    "date": "21 May 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?database-architecture-network",
-    "slug": "the-great-local-first-debate-of-2026-why-pglite-and-crdts-are-splitting-engineering-teams",
-    "isPopular": false,
-    "link": "blog/the-great-local-first-debate-of-2026-why-pglite-and-crdts-are-splitting-engineering-teams.html",
-    "id": 45
   }
 ]
