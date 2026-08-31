@@ -1,5 +1,17 @@
 [
   {
+    "category": "Web Development",
+    "title": "Hybrid Rendering & The Future of Web Dev: Debating Server-First in 2026",
+    "summary": "In 2026, a fundamental shift is challenging the decade-long dominance of single-page applications. Senior developers are actively debating the pragmatic return to server-first experiences through hybrid rendering architectures, seeking optimal performance and developer efficiency.",
+    "date": "31 August 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?server-side-rendering-modern-web-architecture",
+    "slug": "hybrid-rendering-the-future-of-web-dev-debating-server-first-in-2026",
+    "isPopular": false,
+    "link": "blog/hybrid-rendering-the-future-of-web-dev-debating-server-first-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "AI & Machine Learning",
     "title": "Beyond the API: Why 2026 is the Year of Local Model Distillation and SLMs",
     "summary": "As the overhead of massive LLM APIs becomes unsustainable, senior architects are shifting toward local, task-specific Small Language Models (SLMs). This post explores the technical transition from 'prompting the giant' to 'distilling the specialist' for production-grade systems.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-death-of-the-regional-mega-cluster-why-2026-is-the-year-of-state-affine-edge-cells.html",
     "id": 47
-  },
-  {
-    "category": "Distributed Systems",
-    "title": "Edge vs. Core in 2026: Debating the 'Stateless Core, Stateful Edge' Paradox",
-    "summary": "As distributed systems push computation closer to the user at the network edge, a profound architectural debate emerges: how do we reconcile a stateless, globally consistent core with stateful, low-latency edge operations? In 2026, this isn't just theoretical; it's a critical design challenge for engineering leaders grappling with unprecedented scale and performance demands.",
-    "date": "22 May 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?edge+computing+architecture",
-    "slug": "edge-vs-core-in-2026-debating-the-stateless-core-stateful-edge-paradox",
-    "isPopular": false,
-    "link": "blog/edge-vs-core-in-2026-debating-the-stateless-core-stateful-edge-paradox.html",
-    "id": 46
   }
 ]
