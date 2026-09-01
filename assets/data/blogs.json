@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cybersecurity",
+    "title": "Autonomous Code & Cyber Risk: The Great Developer-Security Debate of 2026",
+    "summary": "As autonomous code generation moves from novelty to mainstream by 2026, engineering leaders face a critical dilemma: how do we harness unprecedented development velocity without introducing catastrophic security vulnerabilities? This post dives into the evolving cybersecurity landscape, offering strategies to secure our future software supply chain and navigate this profound architectural challenge.",
+    "date": "01 September 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?autonomous-code-cybersecurity-dilemma-futuristic",
+    "slug": "autonomous-code-cyber-risk-the-great-developer-security-debate-of-2026",
+    "isPopular": false,
+    "link": "blog/autonomous-code-cyber-risk-the-great-developer-security-debate-of-2026.html",
+    "id": 101
+  },
+  {
     "category": "Web Development",
     "title": "Hybrid Rendering & The Future of Web Dev: Debating Server-First in 2026",
     "summary": "In 2026, a fundamental shift is challenging the decade-long dominance of single-page applications. Senior developers are actively debating the pragmatic return to server-first experiences through hybrid rendering architectures, seeking optimal performance and developer efficiency.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-data-truth-paradox-event-streams-vs-distributed-transactions-in-2026-architecture-debates.html",
     "id": 48
-  },
-  {
-    "category": "Cloud Architecture",
-    "title": "The Death of the Regional Mega-Cluster: Why 2026 is the Year of State-Affine Edge Cells",
-    "summary": "As global network topologies bifurcate between ultra-dense metropolitan fiber and high-latency satellite backhauls, the traditional multi-region Kubernetes architecture is fracturing. Engineering leaders in 2026 are turning to state-affine WebAssembly (Wasm) cell-based architectures to achieve resilience and microsecond execution at the edge.",
-    "date": "23 May 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?edge-computing-wasm-network",
-    "slug": "the-death-of-the-regional-mega-cluster-why-2026-is-the-year-of-state-affine-edge-cells",
-    "isPopular": false,
-    "link": "blog/the-death-of-the-regional-mega-cluster-why-2026-is-the-year-of-state-affine-edge-cells.html",
-    "id": 47
   }
 ]
