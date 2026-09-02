@@ -1,5 +1,17 @@
 [
   {
+    "category": "Distributed Systems",
+    "title": "Beyond Microservices: Why Cell-Based Architectures are Dominating Distributed Systems in 2026",
+    "summary": "The industry is shifting away from monolithic global control planes. Discover why Cell-Based Architecture (CBA) has become the primary defense against global cascading failures and strict data sovereignty laws in 2026.",
+    "date": "02 September 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-systems-network-topology",
+    "slug": "beyond-microservices-why-cell-based-architectures-are-dominating-distributed-systems-in-2026",
+    "isPopular": false,
+    "link": "blog/beyond-microservices-why-cell-based-architectures-are-dominating-distributed-systems-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "Cybersecurity",
     "title": "Autonomous Code & Cyber Risk: The Great Developer-Security Debate of 2026",
     "summary": "As autonomous code generation moves from novelty to mainstream by 2026, engineering leaders face a critical dilemma: how do we harness unprecedented development velocity without introducing catastrophic security vulnerabilities? This post dives into the evolving cybersecurity landscape, offering strategies to secure our future software supply chain and navigate this profound architectural challenge.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-the-saga-pattern-why-durable-execution-is-polarizing-distributed-architecture-in-2026.html",
     "id": 49
-  },
-  {
-    "category": "Distributed Systems",
-    "title": "The Data Truth Paradox: Event Streams vs. Distributed Transactions in 2026 Architecture Debates",
-    "summary": "As distributed systems mature, the lines between an immutable event log and a strongly consistent transactional database are blurring. Engineering leaders in 2026 face a critical architectural decision: is one truly the 'source of truth,' or do we need a new paradigm? This post dissects the debate and offers practical insights.",
-    "date": "24 May 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?distributed-database-event-stream-convergence-2026",
-    "slug": "the-data-truth-paradox-event-streams-vs-distributed-transactions-in-2026-architecture-debates",
-    "isPopular": false,
-    "link": "blog/the-data-truth-paradox-event-streams-vs-distributed-transactions-in-2026-architecture-debates.html",
-    "id": 48
   }
 ]
