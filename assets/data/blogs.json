@@ -1,5 +1,17 @@
 [
   {
+    "category": "AI & Machine Learning",
+    "title": "The Great Divide: Centralized Cloud AI vs. Federated Edge Intelligence in 2026",
+    "summary": "As we navigate 2026, the foundational debate in AI architecture isn't about *if* to leverage machine learning, but *where* and *how*. Engineering leaders are grappling with the critical choice between traditional centralized cloud-based AI and the burgeoning decentralized paradigms of federated learning and on-device intelligence. This strategic pivot, driven by privacy, latency, and data gravity, demands a fresh look at our ML stacks.",
+    "date": "03 September 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?federated-learning-edge-privacy",
+    "slug": "the-great-divide-centralized-cloud-ai-vs-federated-edge-intelligence-in-2026",
+    "isPopular": false,
+    "link": "blog/the-great-divide-centralized-cloud-ai-vs-federated-edge-intelligence-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "Distributed Systems",
     "title": "Beyond Microservices: Why Cell-Based Architectures are Dominating Distributed Systems in 2026",
     "summary": "The industry is shifting away from monolithic global control planes. Discover why Cell-Based Architecture (CBA) has become the primary defense against global cascading failures and strict data sovereignty laws in 2026.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-death-of-stateless-edge-why-2026-is-the-year-of-the-durable-actor-mesh.html",
     "id": 50
-  },
-  {
-    "category": "Distributed Systems",
-    "title": "Beyond the Saga Pattern: Why Durable Execution is Polarizing Distributed Architecture in 2026",
-    "summary": "As distributed systems hit complexity limits, the industry is shifting from stateless RPCs to Durable Execution runtimes. Explore why this architectural transition is sparking fierce debates among systems architects from Tokyo to Kathmandu.",
-    "date": "25 May 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?distributed-database-architecture",
-    "slug": "beyond-the-saga-pattern-why-durable-execution-is-polarizing-distributed-architecture-in-2026",
-    "isPopular": false,
-    "link": "blog/beyond-the-saga-pattern-why-durable-execution-is-polarizing-distributed-architecture-in-2026.html",
-    "id": 49
   }
 ]
