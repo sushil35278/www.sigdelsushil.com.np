@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "The Sovereign Mesh: Why 2026 is the Year We Abandon Centralized Cloud Regions",
+    "summary": "As data sovereignty laws tighten and latency requirements hit sub-10ms thresholds, the era of the 'Global Region' is ending. Learn how senior architects are leveraging Ephemeral Regionalism and Wasm-based orchestration to navigate the fragmented cloud landscape of 2026.",
+    "date": "04 September 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?sovereign-cloud-mesh-architecture",
+    "slug": "the-sovereign-mesh-why-2026-is-the-year-we-abandon-centralized-cloud-regions",
+    "isPopular": false,
+    "link": "blog/the-sovereign-mesh-why-2026-is-the-year-we-abandon-centralized-cloud-regions.html",
+    "id": 101
+  },
+  {
     "category": "AI & Machine Learning",
     "title": "The Great Divide: Centralized Cloud AI vs. Federated Edge Intelligence in 2026",
     "summary": "As we navigate 2026, the foundational debate in AI architecture isn't about *if* to leverage machine learning, but *where* and *how*. Engineering leaders are grappling with the critical choice between traditional centralized cloud-based AI and the burgeoning decentralized paradigms of federated learning and on-device intelligence. This strategic pivot, driven by privacy, latency, and data gravity, demands a fresh look at our ML stacks.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-the-global-vpc-why-architectures-in-2026-are-pivoting-to-sovereign-cell-based-topologies.html",
     "id": 51
-  },
-  {
-    "category": "Distributed Systems",
-    "title": "The Death of Stateless Edge: Why 2026 is the Year of the Durable Actor Mesh",
-    "summary": "Decoupling compute from state was the golden rule of the cloud era. In 2026, rising egress costs, strict localized data residency laws, and physical latency limits are forcing a massive architectural pivot toward stateful, durable WebAssembly actors at the edge.",
-    "date": "26 May 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?distributed-systems-edge-network",
-    "slug": "the-death-of-stateless-edge-why-2026-is-the-year-of-the-durable-actor-mesh",
-    "isPopular": false,
-    "link": "blog/the-death-of-stateless-edge-why-2026-is-the-year-of-the-durable-actor-mesh.html",
-    "id": 50
   }
 ]
