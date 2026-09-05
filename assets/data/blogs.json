@@ -1,6 +1,18 @@
 [
   {
     "category": "Cloud Architecture",
+    "title": "The Cloud Native Architecture Debate of 2026: Hyper-Specialization vs. Standardized Generalization",
+    "summary": "As cloud-native architectures mature, engineering leaders face a critical architectural fork: embracing vendor-specific, hyper-specialized services for peak performance or championing generalized, portable platforms for flexibility. This post dives into the heated debate, examining the strategic implications for businesses navigating the complex cloud landscape in 2026.",
+    "date": "05 September 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?hybrid-cloud-architecture-2026",
+    "slug": "the-cloud-native-architecture-debate-of-2026-hyper-specialization-vs-standardized-generalization",
+    "isPopular": false,
+    "link": "blog/the-cloud-native-architecture-debate-of-2026-hyper-specialization-vs-standardized-generalization.html",
+    "id": 101
+  },
+  {
+    "category": "Cloud Architecture",
     "title": "The Sovereign Mesh: Why 2026 is the Year We Abandon Centralized Cloud Regions",
     "summary": "As data sovereignty laws tighten and latency requirements hit sub-10ms thresholds, the era of the 'Global Region' is ending. Learn how senior architects are leveraging Ephemeral Regionalism and Wasm-based orchestration to navigate the fragmented cloud landscape of 2026.",
     "date": "04 September 2026",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-the-cloud-hub-the-2026-pivot-to-deterministic-edge-orchestration.html",
     "id": 52
-  },
-  {
-    "category": "Cloud Architecture",
-    "title": "Beyond the Global VPC: Why Architectures in 2026 are Pivoting to Sovereign Cell-Based Topologies",
-    "summary": "As global egress costs spiral and regional compliance mandates tighten, engineering leaders are abandoning the monolithic, multi-region VPC. This article explores how Cell-Based Architectures (CBA) paired with WebAssembly isolation are redefining fault tolerance and operational costs from Tokyo to Kathmandu.",
-    "date": "27 May 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?server-farm-modular-cells",
-    "slug": "beyond-the-global-vpc-why-architectures-in-2026-are-pivoting-to-sovereign-cell-based-topologies",
-    "isPopular": false,
-    "link": "blog/beyond-the-global-vpc-why-architectures-in-2026-are-pivoting-to-sovereign-cell-based-topologies.html",
-    "id": 51
   }
 ]
