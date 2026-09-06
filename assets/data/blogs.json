@@ -1,5 +1,17 @@
 [
   {
+    "category": "DevOps & SRE",
+    "title": "The Observability Triad: Navigating the 2026 Debate Between Platform Engineering, FinOps, and Security's Rise",
+    "summary": "As systems grow more complex and distributed, senior engineers are grappling with a new 'Observability Triad' in 2026: Platform Engineering, FinOps, and Security. This post dives into the intensifying debate about how these disciplines intersect, diverge, and ultimately, how they must converge for robust and efficient operations.",
+    "date": "06 September 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?cloud+computing+observability+dashboard",
+    "slug": "the-observability-triad-navigating-the-2026-debate-between-platform-engineering-finops-and-securitys-rise",
+    "isPopular": false,
+    "link": "blog/the-observability-triad-navigating-the-2026-debate-between-platform-engineering-finops-and-securitys-rise.html",
+    "id": 101
+  },
+  {
     "category": "Cloud Architecture",
     "title": "The Cloud Native Architecture Debate of 2026: Hyper-Specialization vs. Standardized Generalization",
     "summary": "As cloud-native architectures mature, engineering leaders face a critical architectural fork: embracing vendor-specific, hyper-specialized services for peak performance or championing generalized, portable platforms for flexibility. This post dives into the heated debate, examining the strategic implications for businesses navigating the complex cloud landscape in 2026.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-the-container-why-webassembly-wasm-micro-vms-are-splitting-cloud-architects-in-2026.html",
     "id": 53
-  },
-  {
-    "category": "Distributed Systems",
-    "title": "Beyond the Cloud Hub: The 2026 Pivot to Deterministic Edge Orchestration",
-    "summary": "As centralized cloud architectures hit the latency ceiling, 2026 marks a decisive shift toward local-first distributed systems. This deep dive explores how engineers are utilizing CRDTs and WebAssembly to maintain state across fragmented networks from Nagoya to Kathmandu.",
-    "date": "28 May 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?distributed-computing-mesh",
-    "slug": "beyond-the-cloud-hub-the-2026-pivot-to-deterministic-edge-orchestration",
-    "isPopular": false,
-    "link": "blog/beyond-the-cloud-hub-the-2026-pivot-to-deterministic-edge-orchestration.html",
-    "id": 52
   }
 ]
