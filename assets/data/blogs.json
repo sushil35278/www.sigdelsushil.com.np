@@ -1,5 +1,17 @@
 [
   {
+    "category": "AI & Machine Learning",
+    "title": "Beyond the ReAct Illusion: Why 2026 Architecture Favors Deterministic State Machines for LLMs",
+    "summary": "As engineering organizations abandon unpredictable autonomous agent loops due to cascading state drift and latency inflation, 2026 has cemented a structural shift toward deterministic finite-state orchestration. Drawing on distributed systems deployments from Tokyo to Kathmandu, this analysis explains why verifiable state machines paired with constrained sampling are replacing pure agentic loops.",
+    "date": "07 September 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?deterministic-ai-architecture",
+    "slug": "beyond-the-react-illusion-why-2026-architecture-favors-deterministic-state-machines-for-llms",
+    "isPopular": false,
+    "link": "blog/beyond-the-react-illusion-why-2026-architecture-favors-deterministic-state-machines-for-llms.html",
+    "id": 101
+  },
+  {
     "category": "DevOps & SRE",
     "title": "The Observability Triad: Navigating the 2026 Debate Between Platform Engineering, FinOps, and Security's Rise",
     "summary": "As systems grow more complex and distributed, senior engineers are grappling with a new 'Observability Triad' in 2026: Platform Engineering, FinOps, and Security. This post dives into the intensifying debate about how these disciplines intersect, diverge, and ultimately, how they must converge for robust and efficient operations.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-death-of-the-sidecar-why-ebpf-and-wasm-are-redefining-sre-in-2026.html",
     "id": 54
-  },
-  {
-    "category": "Cloud Architecture",
-    "title": "Beyond the Container: Why WebAssembly (Wasm) Micro-VMs are Splitting Cloud Architects in 2026",
-    "summary": "As Kubernetes faces scaling bottlenecks at the edge, a high-stakes debate has emerged around WebAssembly (Wasm) micro-VMs. Here is an architectural deep-dive into why containers are losing their monopoly on compute.",
-    "date": "29 May 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?wasm-micro-vm-edge-architecture",
-    "slug": "beyond-the-container-why-webassembly-wasm-micro-vms-are-splitting-cloud-architects-in-2026",
-    "isPopular": false,
-    "link": "blog/beyond-the-container-why-webassembly-wasm-micro-vms-are-splitting-cloud-architects-in-2026.html",
-    "id": 53
   }
 ]
