@@ -1,6 +1,18 @@
 [
   {
     "category": "AI & Machine Learning",
+    "title": "Beyond Probabilistic Guesswork: The 2026 Shift Toward Verifiable Neuro-Symbolic Architectures",
+    "summary": "As we move past the era of large-scale LLM experimentation, senior architects are grappling with the 'Reliability Gap.' This post explores how merging symbolic logic with neural networks is solving the non-determinism crisis in mission-critical systems.",
+    "date": "08 September 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?industrial-robotics-logical-circuit",
+    "slug": "beyond-probabilistic-guesswork-the-2026-shift-toward-verifiable-neuro-symbolic-architectures",
+    "isPopular": false,
+    "link": "blog/beyond-probabilistic-guesswork-the-2026-shift-toward-verifiable-neuro-symbolic-architectures.html",
+    "id": 101
+  },
+  {
+    "category": "AI & Machine Learning",
     "title": "Beyond the ReAct Illusion: Why 2026 Architecture Favors Deterministic State Machines for LLMs",
     "summary": "As engineering organizations abandon unpredictable autonomous agent loops due to cascading state drift and latency inflation, 2026 has cemented a structural shift toward deterministic finite-state orchestration. Drawing on distributed systems deployments from Tokyo to Kathmandu, this analysis explains why verifiable state machines paired with constrained sampling are replacing pure agentic loops.",
     "date": "07 September 2026",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-great-decentralization-why-engineering-leaders-are-abandoning-mega-llm-apis-for-edge-moe-meshes-in-2026.html",
     "id": 55
-  },
-  {
-    "category": "DevOps & SRE",
-    "title": "The Death of the Sidecar: Why eBPF and Wasm are Redefining SRE in 2026",
-    "summary": "The traditional sidecar proxy model has hit a performance and complexity wall. We explore the 2026 shift toward kernel-level observability and deterministic remediation, drawing on architectural evolutions from the high-frequency trading floors of Tokyo to the resource-constrained edge hubs of Kathmandu.",
-    "date": "30 May 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?ebpf-kernel-networking-topology",
-    "slug": "the-death-of-the-sidecar-why-ebpf-and-wasm-are-redefining-sre-in-2026",
-    "isPopular": false,
-    "link": "blog/the-death-of-the-sidecar-why-ebpf-and-wasm-are-redefining-sre-in-2026.html",
-    "id": 54
   }
 ]
