@@ -1,5 +1,17 @@
 [
   {
+    "category": "DevOps & SRE",
+    "title": "The Rise of Autonomous SRE: Are We Liberating Engineers or Eroding Expertise in 2026?",
+    "summary": "The promise of autonomous SRE agents to solve incident fatigue and system complexity is compelling. But as we navigate 2026, a critical debate is intensifying: are these advanced systems truly empowering our engineering teams, or are we risking the erosion of fundamental SRE expertise and introducing new forms of operational opacity?",
+    "date": "09 September 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?autonomous-sre-agent-human-collaboration",
+    "slug": "the-rise-of-autonomous-sre-are-we-liberating-engineers-or-eroding-expertise-in-2026",
+    "isPopular": false,
+    "link": "blog/the-rise-of-autonomous-sre-are-we-liberating-engineers-or-eroding-expertise-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "AI & Machine Learning",
     "title": "Beyond Probabilistic Guesswork: The 2026 Shift Toward Verifiable Neuro-Symbolic Architectures",
     "summary": "As we move past the era of large-scale LLM experimentation, senior architects are grappling with the 'Reliability Gap.' This post explores how merging symbolic logic with neural networks is solving the non-determinism crisis in mission-critical systems.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/from-llms-to-llrts-navigating-the-rise-of-real-time-generative-ai-in-2026.html",
     "id": 56
-  },
-  {
-    "category": "AI & Machine Learning",
-    "title": "The Great Decentralization: Why Engineering Leaders Are Abandoning Mega-LLM APIs for Edge-MoE Meshes in 2026",
-    "summary": "As monolithic cloud-based AI costs skyrocket and data sovereignty laws tighten globally, senior software architects are shifting to decentralized Small Language Model (SLM) meshes. Discover how local hardware and smart routing are replacing centralized endpoints.",
-    "date": "31 May 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?edge-computing-server-rack",
-    "slug": "the-great-decentralization-why-engineering-leaders-are-abandoning-mega-llm-apis-for-edge-moe-meshes-in-2026",
-    "isPopular": false,
-    "link": "blog/the-great-decentralization-why-engineering-leaders-are-abandoning-mega-llm-apis-for-edge-moe-meshes-in-2026.html",
-    "id": 55
   }
 ]
