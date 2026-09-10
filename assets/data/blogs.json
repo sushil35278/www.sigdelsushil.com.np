@@ -1,6 +1,18 @@
 [
   {
     "category": "DevOps & SRE",
+    "title": "Platform Engineering in 2026: The Centralized Cognitive Load Debate",
+    "summary": "In 2026, Platform Engineering has matured, but it's sparking a critical debate: how much centralization is too much? This post explores the tension between reducing developer cognitive load through opinionated platforms and preserving the autonomy crucial for innovation, drawing on real-world lessons and looking ahead to the future.",
+    "date": "10 September 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?devops-platform-engineering-balance",
+    "slug": "platform-engineering-in-2026-the-centralized-cognitive-load-debate",
+    "isPopular": false,
+    "link": "blog/platform-engineering-in-2026-the-centralized-cognitive-load-debate.html",
+    "id": 101
+  },
+  {
+    "category": "DevOps & SRE",
     "title": "The Rise of Autonomous SRE: Are We Liberating Engineers or Eroding Expertise in 2026?",
     "summary": "The promise of autonomous SRE agents to solve incident fatigue and system complexity is compelling. But as we navigate 2026, a critical debate is intensifying: are these advanced systems truly empowering our engineering teams, or are we risking the erosion of fundamental SRE expertise and introducing new forms of operational opacity?",
     "date": "09 September 2026",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-sboms-the-2026-debate-on-autonomous-policy-enforcement-in-the-software-supply-chain.html",
     "id": 57
-  },
-  {
-    "category": "AI & Machine Learning",
-    "title": "From LLMs to LLRTs: Navigating the Rise of Real-Time Generative AI in 2026",
-    "summary": "The promise of Large Language Models (LLMs) has evolved. In 2026, the critical debate centers not on their existence, but on their real-time, interactive capabilities. This post explores the challenges and opportunities of Low-Latency Response Transformers (LLRTs) and their impact on enterprise applications.",
-    "date": "01 June 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?low+latency+neural+network",
-    "slug": "from-llms-to-llrts-navigating-the-rise-of-real-time-generative-ai-in-2026",
-    "isPopular": false,
-    "link": "blog/from-llms-to-llrts-navigating-the-rise-of-real-time-generative-ai-in-2026.html",
-    "id": 56
   }
 ]
