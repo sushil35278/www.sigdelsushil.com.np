@@ -1,6 +1,18 @@
 [
   {
     "category": "DevOps & SRE",
+    "title": "The 2026 DevOps & SRE Debate: Autonomous Operations vs. Human-in-the-Loop",
+    "summary": "In 2026, engineering leaders are grappling with a pivotal question: how much autonomy should our operational systems possess? This post dives into the heated debate surrounding Autonomous Operations, exploring the promises of efficiency against the critical need for human oversight and ethical guardrails in our increasingly complex infrastructure.",
+    "date": "11 September 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?futuristic+SRE+control+room+with+human+oversight",
+    "slug": "the-2026-devops-sre-debate-autonomous-operations-vs-human-in-the-loop",
+    "isPopular": false,
+    "link": "blog/the-2026-devops-sre-debate-autonomous-operations-vs-human-in-the-loop.html",
+    "id": 101
+  },
+  {
+    "category": "DevOps & SRE",
     "title": "Platform Engineering in 2026: The Centralized Cognitive Load Debate",
     "summary": "In 2026, Platform Engineering has matured, but it's sparking a critical debate: how much centralization is too much? This post explores the tension between reducing developer cognitive load through opinionated platforms and preserving the autonomy crucial for innovation, drawing on real-world lessons and looking ahead to the future.",
     "date": "10 September 2026",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/post-quantum-cryptography-in-2026-why-senior-architects-are-rejecting-the-lift-and-shift-migration-strategy.html",
     "id": 58
-  },
-  {
-    "category": "Cybersecurity",
-    "title": "Beyond SBOMs: The 2026 Debate on Autonomous Policy Enforcement in the Software Supply Chain",
-    "summary": "The software supply chain, a complex web of dependencies, remains a primary target for sophisticated attacks. As we stand in 2026, the discussion has moved beyond mere Software Bill of Materials (SBOMs) to the hotly debated topic of autonomous, algorithmic enforcement of security policies directly within our development and deployment pipelines. This post unpacks the challenges, promises, and the profound questions this shift raises for engineering leaders.",
-    "date": "02 June 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?autonomous-security-robot-digital-supply-chain",
-    "slug": "beyond-sboms-the-2026-debate-on-autonomous-policy-enforcement-in-the-software-supply-chain",
-    "isPopular": false,
-    "link": "blog/beyond-sboms-the-2026-debate-on-autonomous-policy-enforcement-in-the-software-supply-chain.html",
-    "id": 57
   }
 ]
