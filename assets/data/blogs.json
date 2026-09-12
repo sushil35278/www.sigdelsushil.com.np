@@ -1,6 +1,18 @@
 [
   {
     "category": "DevOps & SRE",
+    "title": "The 2026 SRE Reckoning: Why Teams Are Abandoning Non-Deterministic Auto-Remediation for eBPF Control Loops",
+    "summary": "Between 2024 and 2025, enterprise engineering teams rushed to deploy autonomous, generative remediation agents across production clusters. In 2026, after high-profile cascading outages and stringent audit crackdowns, site reliability engineering is making a decisive shift back to deterministic, eBPF-driven runtime invariants.",
+    "date": "12 September 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?ebpf-kernel-infrastructure",
+    "slug": "the-2026-sre-reckoning-why-teams-are-abandoning-non-deterministic-auto-remediation-for-ebpf-control-loops",
+    "isPopular": false,
+    "link": "blog/the-2026-sre-reckoning-why-teams-are-abandoning-non-deterministic-auto-remediation-for-ebpf-control-loops.html",
+    "id": 101
+  },
+  {
+    "category": "DevOps & SRE",
     "title": "The 2026 DevOps & SRE Debate: Autonomous Operations vs. Human-in-the-Loop",
     "summary": "In 2026, engineering leaders are grappling with a pivotal question: how much autonomy should our operational systems possess? This post dives into the heated debate surrounding Autonomous Operations, exploring the promises of efficiency against the critical need for human oversight and ethical guardrails in our increasingly complex infrastructure.",
     "date": "11 September 2026",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-server-components-why-local-first-architecture-is-the-great-2026-web-debate.html",
     "id": 59
-  },
-  {
-    "category": "Cybersecurity",
-    "title": "Post-Quantum Cryptography in 2026: Why Senior Architects Are Rejecting the 'Lift-and-Shift' Migration Strategy",
-    "summary": "As NIST’s post-quantum standards transition from academic theory to runtime reality, engineering teams face a critical performance bottleneck. Learn why a simple dependency upgrade will degrade your service-to-service latency and how to implement true cryptographic agility.",
-    "date": "03 June 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?secure-cryptography-network",
-    "slug": "post-quantum-cryptography-in-2026-why-senior-architects-are-rejecting-the-lift-and-shift-migration-strategy",
-    "isPopular": false,
-    "link": "blog/post-quantum-cryptography-in-2026-why-senior-architects-are-rejecting-the-lift-and-shift-migration-strategy.html",
-    "id": 58
   }
 ]
