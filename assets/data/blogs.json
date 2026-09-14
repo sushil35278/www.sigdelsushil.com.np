@@ -1,5 +1,17 @@
 [
   {
+    "category": "Web Development",
+    "title": "The Great Runtime Divorce: Why Senior Architects are Moving Beyond the V8 Monopoly in 2026",
+    "summary": "As we hit the physical limits of JIT optimization, 2026 has become the year of the 'Binary-First' web. We explore why engineering leaders are shifting from JavaScript-heavy SPAs to Wasm-native Extensible Web Components (EWC) to solve the latency and resilience crisis.",
+    "date": "14 September 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?webassembly-binary-nodes-abstract",
+    "slug": "the-great-runtime-divorce-why-senior-architects-are-moving-beyond-the-v8-monopoly-in-2026",
+    "isPopular": false,
+    "link": "blog/the-great-runtime-divorce-why-senior-architects-are-moving-beyond-the-v8-monopoly-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "DevOps & SRE",
     "title": "Beyond Envoy Sidecars: Why We Killed the Telemetry Tax in 2026",
     "summary": "Injecting proxies into every pod seemed harmless until fleets scaled to tens of thousands of microservices, consuming up to 25% of baseline cluster compute. In 2026, high-throughput architectures are ripping out the sidecar pattern in favor of ambient kernel-level eBPF routing and continuous profiling.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/local-first-vs-edge-streaming-the-architectural-battleground-of-2026.html",
     "id": 61
-  },
-  {
-    "category": "AI & Machine Learning",
-    "title": "Beyond the API: Why Senior Architects in 2026 are Moving to WebAssembly-Based Local SLMs",
-    "summary": "As centralized cloud inference costs skyrocket and offline reliability becomes non-negotiable, engineering leaders are shifting from monolithic LLM APIs to decentralized Small Language Models running inside WebAssembly. This deep dive explores the architecture, performance trade-offs, and real-world implementation of edge-native inference.",
-    "date": "05 June 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?wasm-edge-computing",
-    "slug": "beyond-the-api-why-senior-architects-in-2026-are-moving-to-webassembly-based-local-slms",
-    "isPopular": false,
-    "link": "blog/beyond-the-api-why-senior-architects-in-2026-are-moving-to-webassembly-based-local-slms.html",
-    "id": 60
   }
 ]
