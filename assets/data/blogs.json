@@ -1,5 +1,17 @@
 [
   {
+    "category": "Software Engineering",
+    "title": "Beyond Infrastructure as Code: The 2026 Shift Toward Deterministic Contextual Environments",
+    "summary": "As LLM agents now contribute nearly 45% of production code, the industry is shifting from managing infrastructure to managing 'Contextual State.' This post explores why traditional CI/CD is failing and how a new era of deterministic environments is emerging to solve the agentic drift problem.",
+    "date": "16 September 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?decentralized-cloud-infrastructure-schematic",
+    "slug": "beyond-infrastructure-as-code-the-2026-shift-toward-deterministic-contextual-environments",
+    "isPopular": false,
+    "link": "blog/beyond-infrastructure-as-code-the-2026-shift-toward-deterministic-contextual-environments.html",
+    "id": 101
+  },
+  {
     "category": "Distributed Systems",
     "title": "The Death of Global Linearizability: Why Geo-Local Partitioning is the 2026 Architecture Standard",
     "summary": "As data sovereignty laws tighten and edge computing matures, senior architects are moving away from global consensus models. This post explores why the industry is shifting toward 'Local-First' distributed systems that prioritize regional survivability over total global consistency.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/wasm-components-vs-oci-containers-the-architectural-battleground-of-2026.html",
     "id": 63
-  },
-  {
-    "category": "Web Development",
-    "title": "Beyond REST and gRPC: Why Local-First Sync Engines Are the Most Debated Web Trend of 2026",
-    "summary": "As we navigate 2026, the traditional request-response paradigm is facing its toughest challenger yet. This post explores the architectural shift toward local-first sync engines, comparing real-world engineering lessons from Tokyo's high-density infrastructure to Kathmandu's offline-heavy networks.",
-    "date": "07 June 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?distributed-database-network",
-    "slug": "beyond-rest-and-grpc-why-local-first-sync-engines-are-the-most-debated-web-trend-of-2026",
-    "isPopular": false,
-    "link": "blog/beyond-rest-and-grpc-why-local-first-sync-engines-are-the-most-debated-web-trend-of-2026.html",
-    "id": 62
   }
 ]
