@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cybersecurity",
+    "title": "Confidential Computing in 2026: Navigating the Data Sovereignty Paradox for Architects and Engineering Leaders",
+    "summary": "In 2026, Confidential Computing promises unprecedented data protection, even from cloud providers. Yet, its adoption sparks heated debate among senior developers and architects: does true data sovereignty exist when processing happens in a black box, regardless of geography? We delve into the architectural challenges and the philosophical shift required to leverage this powerful, yet complex, technology.",
+    "date": "17 September 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?confidential+computing+trusted+execution+environment+diagram",
+    "slug": "confidential-computing-in-2026-navigating-the-data-sovereignty-paradox-for-architects-and-engineering-leaders",
+    "isPopular": false,
+    "link": "blog/confidential-computing-in-2026-navigating-the-data-sovereignty-paradox-for-architects-and-engineering-leaders.html",
+    "id": 101
+  },
+  {
     "category": "Software Engineering",
     "title": "Beyond Infrastructure as Code: The 2026 Shift Toward Deterministic Contextual Environments",
     "summary": "As LLM agents now contribute nearly 45% of production code, the industry is shifting from managing infrastructure to managing 'Contextual State.' This post explores why traditional CI/CD is failing and how a new era of deterministic environments is emerging to solve the agentic drift problem.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-the-blast-radius-why-cellular-architecture-is-reclaiming-the-cloud-in-2026.html",
     "id": 64
-  },
-  {
-    "category": "Cloud Architecture",
-    "title": "WASM Components vs. OCI Containers: The Architectural Battleground of 2026",
-    "summary": "As the WASI Component Model reaches production maturity in 2026, engineering teams are debating whether to abandon traditional Docker containers for lightweight WebAssembly runtimes. We analyze the performance realities, developer experience friction, and how geographic infrastructure disparities in Japan and Nepal are driving this architectural shift.",
-    "date": "08 June 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?server-architecture-abstract",
-    "slug": "wasm-components-vs-oci-containers-the-architectural-battleground-of-2026",
-    "isPopular": false,
-    "link": "blog/wasm-components-vs-oci-containers-the-architectural-battleground-of-2026.html",
-    "id": 63
   }
 ]
