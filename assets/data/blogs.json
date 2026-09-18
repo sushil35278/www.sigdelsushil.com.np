@@ -1,5 +1,17 @@
 [
   {
+    "category": "Web Development",
+    "title": "Beyond the Edge: Why Senior Architects are Moving the Backend to the Browser in 2026",
+    "summary": "As cloud egress costs skyrocket and user expectations for zero-latency reach a breaking point, the industry is pivoting toward 'Local-First' architectures. We analyze the shift from server-side rendering to client-side runtimes and why your next backend might actually live in the user's browser.",
+    "date": "18 September 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-computing-network",
+    "slug": "beyond-the-edge-why-senior-architects-are-moving-the-backend-to-the-browser-in-2026",
+    "isPopular": false,
+    "link": "blog/beyond-the-edge-why-senior-architects-are-moving-the-backend-to-the-browser-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "Cybersecurity",
     "title": "Confidential Computing in 2026: Navigating the Data Sovereignty Paradox for Architects and Engineering Leaders",
     "summary": "In 2026, Confidential Computing promises unprecedented data protection, even from cloud providers. Yet, its adoption sparks heated debate among senior developers and architects: does true data sovereignty exist when processing happens in a black box, regardless of geography? We delve into the architectural challenges and the philosophical shift required to leverage this powerful, yet complex, technology.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-the-cloud-api-why-2026-is-the-year-of-webassembly-based-local-slm-architectures.html",
     "id": 65
-  },
-  {
-    "category": "Cloud Architecture",
-    "title": "Beyond the Blast Radius: Why Cellular Architecture is Reclaiming the Cloud in 2026",
-    "summary": "As centralized control planes reach their scaling limits and regional outages become more costly, senior architects are shifting toward Cellular Architecture. This post explores how isolating workloads into independent, shared-nothing 'cells' is replacing the monolithic regional model to ensure true fault tolerance.",
-    "date": "09 June 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?distributed-system-nodes-isolation",
-    "slug": "beyond-the-blast-radius-why-cellular-architecture-is-reclaiming-the-cloud-in-2026",
-    "isPopular": false,
-    "link": "blog/beyond-the-blast-radius-why-cellular-architecture-is-reclaiming-the-cloud-in-2026.html",
-    "id": 64
   }
 ]
