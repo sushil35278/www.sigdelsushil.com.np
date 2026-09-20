@@ -1,6 +1,18 @@
 [
   {
     "category": "AI & Machine Learning",
+    "title": "Beyond Prompt Engineering: The Rise of Compiled LLM Pipelines in 2026",
+    "summary": "As engineering leaders transition from raw API wrapper patterns to deterministic systems, the debate has shifted to compiled AI pipelines. Explore how declarative LLM architectures are solving reliability issues from industrial Tokyo to off-grid Nepal.",
+    "date": "20 September 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?autonomous-ai-architecture",
+    "slug": "beyond-prompt-engineering-the-rise-of-compiled-llm-pipelines-in-2026",
+    "isPopular": false,
+    "link": "blog/beyond-prompt-engineering-the-rise-of-compiled-llm-pipelines-in-2026.html",
+    "id": 101
+  },
+  {
+    "category": "AI & Machine Learning",
     "title": "The Inference Budget: Why 2026 Is the Year of 1-Bit LLMs and Local-First Intelligence",
     "summary": "As the industry moves past the 'bigger is better' era of 2024, senior architects are debating the shift toward 1-bit quantization and localized inference. This post explores how sub-7B models are outperforming giants in specialized tasks across global infrastructure gaps.",
     "date": "19 September 2026",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-evolving-sre-role-in-2026-from-operational-custodian-to-platform-enablement-engineer-a-debate-on-cognitive-load-and-developer-autonomy.html",
     "id": 67
-  },
-  {
-    "category": "Distributed Systems",
-    "title": "Beyond Microservices: The Rise of Deterministic Cell-Based Architectures in 2026",
-    "summary": "As distributed systems hit the complexity wall, 2026 is seeing a radical shift toward deterministic state machines and cell-based isolation. Learn how global engineering teams are moving away from sidecar-heavy meshes to kernel-level orchestration and sovereign data cells.",
-    "date": "11 June 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?distributed-computing-lattice",
-    "slug": "beyond-microservices-the-rise-of-deterministic-cell-based-architectures-in-2026",
-    "isPopular": false,
-    "link": "blog/beyond-microservices-the-rise-of-deterministic-cell-based-architectures-in-2026.html",
-    "id": 66
   }
 ]
