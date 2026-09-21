@@ -1,5 +1,17 @@
 [
   {
+    "category": "DevOps & SRE",
+    "title": "The 'You Build It, We Platform It' Debate: DevOps & SRE's Core Tension in 2026",
+    "summary": "The foundational DevOps mantra 'You Build It, You Run It' is facing its biggest challenge yet. In 2026, engineering leaders are grappling with the critical balance between developer autonomy and the rising imperative for standardized, opinionated Internal Developer Platforms. This article dives into the nuanced debate shaping the future of SRE and developer experience.",
+    "date": "21 September 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?internal-developer-platform-blueprint",
+    "slug": "the-you-build-it-we-platform-it-debate-devops-sres-core-tension-in-2026",
+    "isPopular": false,
+    "link": "blog/the-you-build-it-we-platform-it-debate-devops-sres-core-tension-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "AI & Machine Learning",
     "title": "Beyond Prompt Engineering: The Rise of Compiled LLM Pipelines in 2026",
     "summary": "As engineering leaders transition from raw API wrapper patterns to deterministic systems, the debate has shifted to compiled AI pipelines. Explore how declarative LLM architectures are solving reliability issues from industrial Tokyo to off-grid Nepal.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-death-of-the-centralized-llm-api-why-2026-is-the-year-of-158-bit-local-inference-on-webassembly.html",
     "id": 68
-  },
-  {
-    "category": "DevOps & SRE",
-    "title": "The Evolving SRE Role in 2026: From Operational Custodian to Platform Enablement Engineer – A Debate on Cognitive Load and Developer Autonomy",
-    "summary": "The SRE landscape is shifting dramatically. In 2026, engineering leaders are locked in a crucial debate: should SREs remain operational custodians, directly responsible for critical service reliability, or pivot to building robust internal platforms that empower developers? This post dissects the arguments, drawing on real-world experiences and future predictions.",
-    "date": "12 June 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?Platform+engineering+dashboard",
-    "slug": "the-evolving-sre-role-in-2026-from-operational-custodian-to-platform-enablement-engineer-a-debate-on-cognitive-load-and-developer-autonomy",
-    "isPopular": false,
-    "link": "blog/the-evolving-sre-role-in-2026-from-operational-custodian-to-platform-enablement-engineer-a-debate-on-cognitive-load-and-developer-autonomy.html",
-    "id": 67
   }
 ]
