@@ -1,5 +1,17 @@
 [
   {
+    "category": "Software Engineering",
+    "title": "Beyond Hallucination: The Rise of Deterministic Agentic Orchestration in 2026",
+    "summary": "As we move past the era of probabilistic 'chat-bot' sprawl, senior architects are shifting toward Deterministic Agentic Orchestration (DAO) to restore system reliability. This post explores why 2026 marks the end of the 'black-box' era and the return of formal verification in software engineering.",
+    "date": "22 September 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?deterministic-circuit-neural-diagram",
+    "slug": "beyond-hallucination-the-rise-of-deterministic-agentic-orchestration-in-2026",
+    "isPopular": false,
+    "link": "blog/beyond-hallucination-the-rise-of-deterministic-agentic-orchestration-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "DevOps & SRE",
     "title": "The 'You Build It, We Platform It' Debate: DevOps & SRE's Core Tension in 2026",
     "summary": "The foundational DevOps mantra 'You Build It, You Run It' is facing its biggest challenge yet. In 2026, engineering leaders are grappling with the critical balance between developer autonomy and the rising imperative for standardized, opinionated Internal Developer Platforms. This article dives into the nuanced debate shaping the future of SRE and developer experience.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-the-cloud-the-2026-battle-between-local-first-crdts-and-edge-state-hydration.html",
     "id": 69
-  },
-  {
-    "category": "AI & Machine Learning",
-    "title": "The Death of the Centralized LLM API? Why 2026 is the Year of 1.58-Bit Local Inference on WebAssembly",
-    "summary": "As cloud API costs skyrocket and privacy mandates tighten, engineering leaders in 2026 are shifting from massive cloud-hosted LLMs to local, 1.58-bit quantized models running on WebAssembly. Discover how this architectural shift reduces latency, cuts costs, and enables offline-first intelligence.",
-    "date": "13 June 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?edge-computing-tokyo-neon",
-    "slug": "the-death-of-the-centralized-llm-api-why-2026-is-the-year-of-158-bit-local-inference-on-webassembly",
-    "isPopular": false,
-    "link": "blog/the-death-of-the-centralized-llm-api-why-2026-is-the-year-of-158-bit-local-inference-on-webassembly.html",
-    "id": 68
   }
 ]
