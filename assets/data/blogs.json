@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "Cloud's Great Rebalancing Act: Strategic Repatriation and the Intelligent Edge in 2026",
+    "summary": "The 'cloud-first' mantra has matured, giving way to a more nuanced, cost-conscious, and performance-driven era of cloud architecture. In 2026, engineering leaders are grappling with strategic repatriation, not as a rejection of the cloud, but as an optimization, alongside the burgeoning influence of the intelligent edge as a primary compute domain.",
+    "date": "23 September 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-cloud-architecture",
+    "slug": "clouds-great-rebalancing-act-strategic-repatriation-and-the-intelligent-edge-in-2026",
+    "isPopular": false,
+    "link": "blog/clouds-great-rebalancing-act-strategic-repatriation-and-the-intelligent-edge-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "Software Engineering",
     "title": "Beyond Hallucination: The Rise of Deterministic Agentic Orchestration in 2026",
     "summary": "As we move past the era of probabilistic 'chat-bot' sprawl, senior architects are shifting toward Deterministic Agentic Orchestration (DAO) to restore system reliability. This post explores why 2026 marks the end of the 'black-box' era and the return of formal verification in software engineering.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-yaml-hell-why-sres-are-shifting-to-programmable-wasm-control-planes-in-2026.html",
     "id": 70
-  },
-  {
-    "category": "Web Development",
-    "title": "Beyond the Cloud: The 2026 Battle Between Local-First CRDTs and Edge-State Hydration",
-    "summary": "As we enter 2026, the architectural consensus around server-centric rendering is fracturing. Engineering leaders are split between the immediate, offline-resilient feedback loops of local-first CRDTs and the centralized control of edge-native Server Components.",
-    "date": "14 June 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?local-first-data-synchronization",
-    "slug": "beyond-the-cloud-the-2026-battle-between-local-first-crdts-and-edge-state-hydration",
-    "isPopular": false,
-    "link": "blog/beyond-the-cloud-the-2026-battle-between-local-first-crdts-and-edge-state-hydration.html",
-    "id": 69
   }
 ]

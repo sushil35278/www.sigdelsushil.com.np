@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud's Great Rebalancing Act: Strategic Repatriation and the Intelligent Edge in 2026 | Sushil Sigdel</title>
+    <meta name="description" content="The 'cloud-first' mantra has matured, giving way to a more nuanced, cost-conscious, and performance-driven era of cloud architecture. In 2026, engineering leaders are grappling with strategic repatriation, not as a rejection of the cloud, but as an optimization, alongside the burgeoning influence of the intelligent edge as a primary compute domain.">
+    <link rel="canonical" href="https://sigdelsushil.com.np/blog/clouds-great-rebalancing-act-strategic-repatriation-and-the-intelligent-edge-in-2026.html">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Sushil Sigdel">
+    <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id=GTM-KHDFS4SM'+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KHDFS4SM');</script>
+  <!-- End Google Tag Manager -->
+
+<!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <style>
+        :root {
+            --primary-accent: #ff5722;
+            --text-dark: #2d3436;
+            --text-gray: #636e72;
+        }
+
+        body {
+            background-color: #fafbfc;
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Reading Progress Bar */
+        #progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            z-index: 10000;
+        }
+
+        #progress-bar {
+            height: 100%;
+            background: linear-gradient(to right, #ff5722, #fa65b1);
+            width: 0%;
+            transition: width 0.1s ease;
+        }
+
+        /* Hero Styling */
+        .blog-hero {
+            position: relative;
+            padding: 120px 0 80px;
+            background-color: #2a2a2a;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+            url('https://source.unsplash.com/featured/1200x800/?distributed-cloud-architecture');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            margin-bottom: -40px;
+        }
+
+        .blog-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .category-tag {
+            background: var(--primary-accent);
+            color: white;
+            padding: 6px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .blog-meta-top {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .content-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
+            position: relative;
+            z-index: 5;
+        }
+
+        .featured-img-wrap {
+            margin-bottom: 40px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .featured-img-wrap img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .blog-body {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .blog-body h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--text-dark);
+            font-size: 2rem;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .blog-body pre {
+            background: #0f172a;
+            color: #e2e8f0;
+            padding: 24px;
+            border-radius: 20px;
+            overflow-x: auto;
+            font-family: 'Fira Code', 'JetBrains Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin: 30px 0;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .blog-body code {
+            background: rgba(250, 101, 177, 0.12);
+            color: #111827;
+            padding: 3px 8px;
+            border-radius: 8px;
+            font-family: 'Fira Code', 'JetBrains Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+            font-size: 0.95rem;
+        }
+
+        .blog-body pre code {
+            background: transparent;
+            padding: 0;
+            color: inherit;
+        }
+
+        /* Floating Social Share */
+        .share-buttons {
+            position: fixed;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 100;
+        }
+
+        .share-btn {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+        }
+
+        .share-btn:hover {
+            transform: scale(1.1) translateX(5px);
+            color: white;
+        }
+
+        .share-tw {
+            background: #1DA1F2;
+        }
+
+        .share-li {
+            background: #0077b5;
+        }
+
+        .share-fb {
+            background: #4267B2;
+        }
+
+        /* Sticky Back to Top */
+        #scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--primary-accent);
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s;
+            z-index: 100;
+            border: none;
+        }
+
+        #scroll-top.show {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .footer-action {
+            margin-top: 60px;
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 40px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary-accent);
+            font-weight: 600;
+            text-decoration: none;
+            gap: 10px;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 1200px) {
+            .share-buttons {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .blog-hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .content-container {
+                padding: 30px;
+                border-radius: 0;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHDFS4SM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Reading Progress Bar -->
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
+    <!-- Social Share -->
+    <div class="share-buttons">
+        <a href="javascript:void(0)" class="share-btn share-tw" onclick="share('twitter')" title="Share on X (Twitter)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 16 16">
+                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+            </svg>
+        </a>
+        <a href="javascript:void(0)" class="share-btn share-li" onclick="share('linkedin')" title="Share on LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.401c.03.674 0 7.225 0 7.225h2.401z"/>
+            </svg>
+        </a>
+        <a href="javascript:void(0)" class="share-btn share-fb" onclick="share('facebook')" title="Share on Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Scroll Top -->
+    <button id="scroll-top"><i class="fa fa-angle-up"></i></button>
+
+    <section class="blog-hero">
+        <div class="container">
+            <span class="category-tag">Cloud Architecture</span>
+            <h1>Cloud's Great Rebalancing Act: Strategic Repatriation and the Intelligent Edge in 2026</h1>
+            <div class="blog-meta-top">
+                By <strong>Sushil Sigdel</strong> | 23 September 2026
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-img-wrap">
+                <img src="https://source.unsplash.com/featured/1200x800/?distributed-cloud-architecture" alt="Cloud's Great Rebalancing Act: Strategic Repatriation and the Intelligent Edge in 2026" onerror="this.src='../assets/images/bloghome.png'">
+            </div>
+
+            <!-- AdSense Ad - In Content -->
+            <div style="text-align: center; margin: 30px 0; padding: 20px; background: #f8f9fa; border-radius: 10px;">
+              <ins class="adsbygoogle" style="display: block" data-ad-client="ca-pub-7936732053264133" data-ad-slot="9876543210" data-ad-format="auto" data-full-width-responsive="true"></ins>
+              <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+
+            <article class="blog-body">
+                <h1>Cloud's Great Rebalancing Act: Strategic Repatriation and the Intelligent Edge in 2026</h1>
+
+<p>It's 2026, and the decade-long 'cloud-first' gold rush has settled into a more considered pace. The initial euphoria of rapid migration, often driven by a 'lift and shift' mentality and the promise of infinite scalability, has given way to a pragmatic re-evaluation. What we're witnessing today is a fascinating rebalancing act in cloud architecture: a strategic repatriation of certain workloads from public clouds back to private infrastructure or co-location facilities, running in parallel with the inexorable rise of the intelligent edge as a first-class compute environment. This isn't a retreat; it's an optimization, driven by economics, performance, data sovereignty, and a mature understanding of distributed systems.</p>
+
+<p>From my vantage point, having navigated diverse infrastructure landscapes from the nascent cloud adoption in Nepal to the highly regulated and resilient systems of Japan, the conversation among senior developers and engineering leaders has shifted. The question is no longer <em>if</em> we'll be in the cloud, but <em>where</em>, <em>why</em>, and <em>how strategically</em> across a truly hybrid topology.</p>
+
+<h3>The Nuance of Strategic Repatriation: Beyond Just Cost</h3>
+
+<p>Let's be clear: we're not talking about a mass exodus from the cloud. Public cloud still offers unparalleled agility and a vast ecosystem for many workloads. However, the initial promise of universal cost savings has proven complex. As organizations scale, specific applications with predictable, high-volume traffic patterns, significant data egress, or consistent resource demands often become surprisingly expensive in hyperscale environments. The 'Cloud Insights 2025' report, for instance, indicated that 18% of global enterprises considered repatriating at least one major workload in 2024, a notable increase from 12% in 2022.</p>
+
+<p>One common driver for repatriation is data gravity and sovereignty. In Japan, for example, stringent regulatory requirements, particularly in finance and healthcare, often necessitate data residency within national borders. While public clouds offer region-specific data centers, a highly sensitive database or critical customer data might be better served in a dedicated private cloud or a trusted co-location facility where an organization has full control over the physical and logical security perimeter. Consider a scenario I observed: a large Japanese financial institution repatriated their core ledger processing system after realizing the cumulative egress costs from microservices communicating extensively across public cloud availability zones became prohibitive over time. The predictable, high-volume transactions were more cost-efficient on their own hardware within a highly secured local data center.</p>
+
+<pre><code>
+# Hypothetical Cost Analysis (Simplified)
+# Public Cloud vs. Repatriated Private Cloud (Annual Estimate)
+
+# Public Cloud Estimates
+PUBLIC_CLOUD_COMPUTE = 1_500_000  # VM instances, containers
+PUBLIC_CLOUD_STORAGE = 200_000   # Block storage, S3
+PUBLIC_CLOUD_EGRESS = 800_000    # Data transfer out (major cost driver for high-traffic apps)
+PUBLIC_CLOUD_DB = 300_000        # Managed database services
+PUBLIC_CLOUD_TOTAL = PUBLIC_CLOUD_COMPUTE + PUBLIC_CLOUD_STORAGE + PUBLIC_CLOUD_EGRESS + PUBLIC_CLOUD_DB
+
+print(f"Estimated Public Cloud Annual Cost: ${PUBLIC_CLOUD_TOTAL:,}")
+
+# Repatriated Private Cloud Estimates (amortized hardware + ops)
+REPAT_HARDWARE_AMORTIZED = 700_000 # Servers, storage arrays, networking (over 3-5 years)
+REPAT_SOFTWARE_LICENSES = 150_000  # OS, virtualization, monitoring
+REPAT_DATACENTER_COLO = 300_000    # Rack space, power, cooling
+REPAT_OPERATIONS_STAFF = 500_000   # Dedicated SREs, infra engineers
+REPAT_TOTAL = REPAT_HARDWARE_AMORTIZED + REPAT_SOFTWARE_LICENSES + REPAT_DATACENTER_COLO + REPAT_OPERATIONS_STAFF
+
+print(f"Estimated Repatriated Private Cloud Annual Cost: ${REPAT_TOTAL:,}")
+
+if PUBLIC_CLOUD_TOTAL > REPAT_TOTAL:
+    print(f"\nStrategic repatriation could save: ${PUBLIC_CLOUD_TOTAL - REPAT_TOTAL:,} annually for this workload.")
+else:
+    print("\nPublic cloud remains more cost-effective for this workload.")
+</code></pre>
+
+<h3>The Intelligent Edge as a First-Class Citizen</h3>
+
+<p>While some workloads move inwards, others are pushing outwards – to the edge. Edge computing is no longer merely a niche for IoT data collection; it's maturing into a distributed compute plane capable of hosting significant application logic, data processing, and AI inference. We're seeing intelligent edge deployments become primary compute domains, often running lightweight Kubernetes distributions or serverless functions, integrated seamlessly with central cloud resources.</p>
+
+<p>Consider the manufacturing sector. In advanced factories in Japan, real-time quality control, predictive maintenance for robotic arms, and anomaly detection require sub-millisecond latency for critical decision-making. Sending all sensor data to a central cloud for processing and awaiting a response is simply too slow and inefficient. Instead, sophisticated machine learning models are deployed directly on edge gateways or industrial PCs. These edge nodes process data locally, trigger immediate actions, and only send aggregated, filtered, or critical alerts back to the central cloud for long-term storage and higher-level analytics. This paradigm drastically reduces network traffic and ensures operational resilience even during intermittent connectivity.</p>
+
+<p>Even in less industrialized settings, like retail in Nepal, the edge plays a vital role. Point-of-sale (POS) systems need to operate continuously, regardless of unstable internet connectivity. Edge devices can manage local inventory, process transactions offline, and synchronize data with a central cloud once connectivity is restored, ensuring business continuity. This hybrid approach caters to the realities of infrastructure limitations while leveraging the benefits of central cloud for aggregated reporting and long-term data storage.</p>
+
+<pre><code>
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: edge-anomaly-detector
+  labels:
+    app: anomaly-detector
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: anomaly-detector
+  template:
+    metadata:
+      labels:
+        app: anomaly-detector
+    spec:
+      containers:
+      - name: detector-agent
+        image: mycompany/edge-ml-model:v1.2
+        ports:
+        - containerPort: 8080
+        env:
+        - name: KAFKA_BROKER
+          value: "edge-kafka-broker:9092" # Local Kafka for sensor data
+        resources:
+          limits:
+            cpu: "500m"
+            memory: "512Mi"
+          requests:
+            cpu: "200m"
+            memory: "256Mi"
+      nodeSelector:
+        kubernetes.io/hostname: edge-node-01 # Deploy specifically to an edge node
+</code></pre>
+
+<h3>Orchestrating the Distributed Cloud Mesh: Challenges and Solutions</h3>
+
+<p>The strategic repatriation and the growth of the intelligent edge lead to a truly distributed cloud mesh. Managing applications across public cloud regions, private data centers, and potentially thousands of edge locations introduces significant operational complexity. The debate among engineering leaders now revolves around achieving unified observability, consistent security policies, and streamlined deployment pipelines across this heterogeneous environment.</p>
+
+<p>Solutions are emerging. Platforms like Google Anthos, Azure Arc, and Rancher by Suse are becoming critical control planes, extending Kubernetes and cloud management capabilities to on-premises and edge environments. They abstract away the underlying infrastructure, allowing teams to deploy and manage applications with a consistent experience. Data synchronization patterns, often relying on event-driven architectures and eventually consistent models, are crucial for integrating edge data with central systems. Security, especially at the edge, demands a Zero Trust approach, where every device and connection is authenticated and authorized, regardless of its location.</p>
+
+<p>My experience managing remote infrastructure in Nepal highlighted the need for robust offline capabilities and intelligent synchronization mechanisms. If an edge device or micro-datacenter loses connectivity for extended periods, it must continue to operate autonomously and gracefully resynchronize when the network returns. Designing for eventual consistency and local autonomy is paramount in such environments.</p>
+
+<h3>Pro Tips for Engineering Leaders in 2026</h3>
+
+<ol>
+    <li>
+        <strong>Refine Your TCO Model:</strong> Go beyond sticker prices. Account for egress fees, specialized managed service costs, operational overhead, and long-term resource predictability for both public cloud and on-premises/edge environments. Factor in data sovereignty and compliance costs.
+    </li>
+    <li>
+        <strong>Standardize on Containerization and Orchestration:</strong> Kubernetes, or a lightweight variant, has become the de-facto standard for running applications across diverse environments. This consistency reduces operational friction significantly.
+    </td>
+    <li>
+        <strong>Invest in Unified Observability:</strong> You can't manage what you can't see. Implement robust monitoring, logging, and tracing solutions that span your entire hybrid and edge estate, providing a single pane of glass.
+    </li>
+    <li>
+        <strong>Design for Data Gravity and Locality:</strong> Think about where data is generated, processed, and consumed. Minimize data movement, especially across network boundaries, unless absolutely necessary. This drives both performance and cost efficiency.
+    </li>
+</ol>
+
+<h3>Future Predictions: 2027 and Beyond</h3>
+
+<p>Looking ahead, I foresee even greater integration and blurring of the lines. Expect more sophisticated AI/ML inference to migrate directly to the very edge, powered by purpose-built hardware and optimized model architectures. WebAssembly (WASM) is poised to gain significant traction as a universal, lightweight runtime for both edge and serverless functions, offering sandboxed execution and near-native performance that is crucial for resource-constrained environments.</p>
+
+<p>Ultimately, the concept of 'the cloud' will evolve from distinct public and private entities into a single, programmable compute fabric – a true ubiquitous computing environment. The debate will shift from 'cloud vs. on-prem' to 'optimal workload placement' within this vast, interconnected continuum, driven by a holistic view of performance, cost, security, and sustainability.</p>
+
+<h3>Conclusion: Embracing Intentional Architecture</h3>
+
+<p>The cloud architecture landscape in 2026 demands intentionality. Blindly adhering to old maxims will lead to inefficiencies and missed opportunities. Engineering leaders must cultivate a deep understanding of their application's specific requirements, their organization's regulatory landscape, and the evolving capabilities of both public cloud hyperscalers and the increasingly powerful intelligent edge. This is not about choosing one over the other; it's about intelligently composing a distributed architecture that optimizes for resilience, performance, and fiscal responsibility. The future belongs to those who master the art of the rebalance.</p>
+
+<p>What are your thoughts on this evolving landscape? Have you embarked on a strategic repatriation journey, or are you pushing the boundaries of intelligent edge computing? Share your experiences and insights in the comments below!</p>
+
+            </article>
+
+            <!-- Related Posts Section -->
+            <div style="margin-top: 60px; padding-top: 40px; border-top: 2px solid #eee;">
+              <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 30px;">Related Articles</h3>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                <a href="../index.html#blog" style="background: #f8f9fa; padding: 20px; border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.3s;" onmouseover="this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'">
+                  <h4 style="color: var(--primary-accent); margin-bottom: 10px;">→ View All Articles</h4>
+                  <p style="font-size: 0.9rem; opacity: 0.8;">Explore more insights on tech, AI, and development</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="footer-action">
+                <a href="../#blog" class="back-link">
+                    <i class="fa fa-arrow-left"></i> Back to All Stories
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script>
+        // Reading Progress Bar
+        window.onscroll = function () {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (height > 0) ? (winScroll / height) * 100 : 0;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+
+            // Scroll to Top visibility
+            const scrollTop = document.getElementById("scroll-top");
+            if (winScroll > 300) {
+                scrollTop.classList.add("show");
+            } else {
+                scrollTop.classList.remove("show");
+            }
+        };
+
+        // Scroll to Top Action
+        document.getElementById("scroll-top").addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Social Share Function
+        function share(platform) {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent(document.title);
+            let shareUrl = '';
+
+            switch (platform) {
+                case 'twitter':
+                    shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${title}`;
+                    break;
+                case 'linkedin':
+                    shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+                    break;
+                case 'facebook':
+                    shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+                    break;
+            }
+
+            if (shareUrl) {
+                window.open(shareUrl, '_blank', 'width=600,height=400');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
