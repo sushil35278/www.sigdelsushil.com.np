@@ -1,5 +1,17 @@
 [
   {
+    "category": "DevOps & SRE",
+    "title": "Beyond Pipelines: Why Continuous State Reconciliation is Replacing CI/CD in 2026",
+    "summary": "As distributed systems move toward edge-heavy and sovereign architectures, the linear CI/CD pipeline is hitting a wall. We explore why senior architects are ditching scripted workflows for autonomous, policy-driven reconciliation loops.",
+    "date": "24 September 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-computing-matrix-logic",
+    "slug": "beyond-pipelines-why-continuous-state-reconciliation-is-replacing-cicd-in-2026",
+    "isPopular": false,
+    "link": "blog/beyond-pipelines-why-continuous-state-reconciliation-is-replacing-cicd-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "Cloud Architecture",
     "title": "Cloud's Great Rebalancing Act: Strategic Repatriation and the Intelligent Edge in 2026",
     "summary": "The 'cloud-first' mantra has matured, giving way to a more nuanced, cost-conscious, and performance-driven era of cloud architecture. In 2026, engineering leaders are grappling with strategic repatriation, not as a rejection of the cloud, but as an optimization, alongside the burgeoning influence of the intelligent edge as a primary compute domain.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-death-of-the-autonomous-agent-why-engineering-leaders-are-shifting-to-compiled-ai-workflows-in-2026.html",
     "id": 71
-  },
-  {
-    "category": "DevOps & SRE",
-    "title": "Beyond YAML-Hell: Why SREs are Shifting to Programmable Wasm Control Planes in 2026",
-    "summary": "The decade-long reign of declarative YAML in GitOps is facing a quiet rebellion. As SRE teams in Tokyo and Kathmandu grapple with templating fatigue and performance overheads, programmable WebAssembly (Wasm) control planes are emerging as the modern standard for policy-as-code and infrastructure automation.",
-    "date": "15 June 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?wasm-kubernetes-cloud-architecture",
-    "slug": "beyond-yaml-hell-why-sres-are-shifting-to-programmable-wasm-control-planes-in-2026",
-    "isPopular": false,
-    "link": "blog/beyond-yaml-hell-why-sres-are-shifting-to-programmable-wasm-control-planes-in-2026.html",
-    "id": 70
   }
 ]
