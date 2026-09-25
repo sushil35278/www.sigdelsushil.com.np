@@ -1,5 +1,17 @@
 [
   {
+    "category": "Distributed Systems",
+    "title": "Beyond CAP: The Eventual Consistency Renaissance in 2026",
+    "summary": "As distributed systems mature, the rigid confines of CAP theorem are proving insufficient. We're witnessing a resurgence of interest in sophisticated eventual consistency models, driven by real-world demands for resilience and performance, even in the face of network partitions. This post explores this trend, drawing lessons from recent architectural challenges.",
+    "date": "25 September 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed+system+network",
+    "slug": "beyond-cap-the-eventual-consistency-renaissance-in-2026",
+    "isPopular": false,
+    "link": "blog/beyond-cap-the-eventual-consistency-renaissance-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "DevOps & SRE",
     "title": "Beyond Pipelines: Why Continuous State Reconciliation is Replacing CI/CD in 2026",
     "summary": "As distributed systems move toward edge-heavy and sovereign architectures, the linear CI/CD pipeline is hitting a wall. We explore why senior architects are ditching scripted workflows for autonomous, policy-driven reconciliation loops.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-great-code-debt-of-2026-why-senior-architects-are-restricting-ai-agents-with-wasm-based-micro-sandboxes.html",
     "id": 72
-  },
-  {
-    "category": "AI & Machine Learning",
-    "title": "The Death of the Autonomous Agent: Why Engineering Leaders are Shifting to Compiled AI Workflows in 2026",
-    "summary": "After years of burning budgets on unpredictable, multi-agent loops, engineering teams are demanding deterministic reliability. This article explores the shift toward compiled, declarative AI pipelines using structural frameworks, drawing on real-world lessons from Tokyo and Kathmandu.",
-    "date": "16 June 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?deterministic-software-architecture",
-    "slug": "the-death-of-the-autonomous-agent-why-engineering-leaders-are-shifting-to-compiled-ai-workflows-in-2026",
-    "isPopular": false,
-    "link": "blog/the-death-of-the-autonomous-agent-why-engineering-leaders-are-shifting-to-compiled-ai-workflows-in-2026.html",
-    "id": 71
   }
 ]
