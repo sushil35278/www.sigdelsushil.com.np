@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Quantum Cryptography Crossroads: Why Engineering Leaders Are Debating Our Digital Future in 2026 | Sushil Sigdel</title>
+    <meta name="description" content="As 2026 unfolds, a looming threat once relegated to theoretical physics labs is now demanding urgent attention from engineering leaders: the advent of cryptographically relevant quantum computers. The debate isn't about 'if' but 'how' we transition global digital infrastructure to Post-Quantum Cryptography (PQC) – a challenge with staggering technical, financial, and logistical implications.">
+    <link rel="canonical" href="https://sigdelsushil.com.np/blog/the-quantum-cryptography-crossroads-why-engineering-leaders-are-debating-our-digital-future-in-2026.html">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Sushil Sigdel">
+    <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id=GTM-KHDFS4SM'+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KHDFS4SM');</script>
+  <!-- End Google Tag Manager -->
+
+<!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <style>
+        :root {
+            --primary-accent: #ff5722;
+            --text-dark: #2d3436;
+            --text-gray: #636e72;
+        }
+
+        body {
+            background-color: #fafbfc;
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Reading Progress Bar */
+        #progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            z-index: 10000;
+        }
+
+        #progress-bar {
+            height: 100%;
+            background: linear-gradient(to right, #ff5722, #fa65b1);
+            width: 0%;
+            transition: width 0.1s ease;
+        }
+
+        /* Hero Styling */
+        .blog-hero {
+            position: relative;
+            padding: 120px 0 80px;
+            background-color: #2a2a2a;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+            url('https://source.unsplash.com/featured/1200x800/?quantum-computer-cybersecurity-encryption');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            margin-bottom: -40px;
+        }
+
+        .blog-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .category-tag {
+            background: var(--primary-accent);
+            color: white;
+            padding: 6px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .blog-meta-top {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .content-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
+            position: relative;
+            z-index: 5;
+        }
+
+        .featured-img-wrap {
+            margin-bottom: 40px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .featured-img-wrap img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .blog-body {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .blog-body h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--text-dark);
+            font-size: 2rem;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .blog-body pre {
+            background: #0f172a;
+            color: #e2e8f0;
+            padding: 24px;
+            border-radius: 20px;
+            overflow-x: auto;
+            font-family: 'Fira Code', 'JetBrains Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin: 30px 0;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .blog-body code {
+            background: rgba(250, 101, 177, 0.12);
+            color: #111827;
+            padding: 3px 8px;
+            border-radius: 8px;
+            font-family: 'Fira Code', 'JetBrains Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+            font-size: 0.95rem;
+        }
+
+        .blog-body pre code {
+            background: transparent;
+            padding: 0;
+            color: inherit;
+        }
+
+        /* Floating Social Share */
+        .share-buttons {
+            position: fixed;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 100;
+        }
+
+        .share-btn {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+        }
+
+        .share-btn:hover {
+            transform: scale(1.1) translateX(5px);
+            color: white;
+        }
+
+        .share-tw {
+            background: #1DA1F2;
+        }
+
+        .share-li {
+            background: #0077b5;
+        }
+
+        .share-fb {
+            background: #4267B2;
+        }
+
+        /* Sticky Back to Top */
+        #scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--primary-accent);
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s;
+            z-index: 100;
+            border: none;
+        }
+
+        #scroll-top.show {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .footer-action {
+            margin-top: 60px;
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 40px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary-accent);
+            font-weight: 600;
+            text-decoration: none;
+            gap: 10px;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 1200px) {
+            .share-buttons {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .blog-hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .content-container {
+                padding: 30px;
+                border-radius: 0;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHDFS4SM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Reading Progress Bar -->
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
+    <!-- Social Share -->
+    <div class="share-buttons">
+        <a href="javascript:void(0)" class="share-btn share-tw" onclick="share('twitter')" title="Share on X (Twitter)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 16 16">
+                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+            </svg>
+        </a>
+        <a href="javascript:void(0)" class="share-btn share-li" onclick="share('linkedin')" title="Share on LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.401c.03.674 0 7.225 0 7.225h2.401z"/>
+            </svg>
+        </a>
+        <a href="javascript:void(0)" class="share-btn share-fb" onclick="share('facebook')" title="Share on Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Scroll Top -->
+    <button id="scroll-top"><i class="fa fa-angle-up"></i></button>
+
+    <section class="blog-hero">
+        <div class="container">
+            <span class="category-tag">Cybersecurity</span>
+            <h1>The Quantum Cryptography Crossroads: Why Engineering Leaders Are Debating Our Digital Future in 2026</h1>
+            <div class="blog-meta-top">
+                By <strong>Sushil Sigdel</strong> | 26 September 2026
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-img-wrap">
+                <img src="https://source.unsplash.com/featured/1200x800/?quantum-computer-cybersecurity-encryption" alt="The Quantum Cryptography Crossroads: Why Engineering Leaders Are Debating Our Digital Future in 2026" onerror="this.src='../assets/images/bloghome.png'">
+            </div>
+
+            <!-- AdSense Ad - In Content -->
+            <div style="text-align: center; margin: 30px 0; padding: 20px; background: #f8f9fa; border-radius: 10px;">
+              <ins class="adsbygoogle" style="display: block" data-ad-client="ca-pub-7936732053264133" data-ad-slot="9876543210" data-ad-format="auto" data-full-width-responsive="true"></ins>
+              <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+
+            <article class="blog-body">
+                <h1>The Quantum Cryptography Crossroads: Why Engineering Leaders Are Debating Our Digital Future in 2026</h1>
+
+<p>It’s 2026, and the faint hum that once emanated from physics labs has grown into a discernible roar. The advent of cryptographically relevant quantum computers (CRQCs) is no longer a distant theoretical threat; it’s a tangible horizon pushing engineering leaders worldwide into urgent, often heated, debates. Our current digital security, built upon the bedrock of public-key cryptography like RSA and Elliptic Curve Cryptography (ECC), is vulnerable. And the clock, as they say, is ticking.</p>
+
+<p>Having navigated complex security architectures from the bustling financial hubs of Tokyo to the burgeoning tech ecosystems in Kathmandu, I’ve seen firsthand the spectrum of infrastructure – from meticulously planned, robust systems to deeply entrenched legacy environments. This varied landscape magnifies the central cybersecurity debate for 2026: <strong>how do we orchestrate a global, systemic transition to Post-Quantum Cryptography (PQC) before our digital secrets are irrevocably exposed?</strong> It's a question fraught with technical complexity, economic burden, and an unprecedented coordination challenge.</p>
+
+<h3>The Imminent Threat: Shor's Algorithm and the 'Harvest Now, Decrypt Later' Reality</h3>
+
+<p>The core of the problem lies with Shor's Algorithm. Discovered in 1994, this quantum algorithm can efficiently factor large numbers and solve discrete logarithm problems – the mathematical foundations underpinning RSA and ECC, respectively. While a CRQC capable of breaking widely used encryption isn't here today, the consensus among experts, including the National Institute of Standards and Technology (NIST), is that it's a matter of when, not if. Projections vary, but many foresee CRQCs becoming a reality within the next decade, well within the lifecycle of data encrypted today.</p>
+
+<p>This timeline gives rise to the chilling concept of 'Harvest Now, Decrypt Later.' Adversaries, potentially state-sponsored, are already accumulating vast quantities of encrypted data – network traffic, financial transactions, sensitive communications – knowing that once a powerful enough quantum computer exists, they can retrospectively decrypt it. The implications for national security, corporate espionage, and individual privacy are profound and immediate.</p>
+
+<p>NIST has been at the forefront, running a multi-year competition to standardize quantum-resistant cryptographic algorithms. By 2026, we have a clear set of finalists and initial standards for key encapsulation mechanisms (KEMs) like Kyber and digital signature algorithms (DSAs) like Dilithium. The debate now shifts from *which* algorithms to *how* to integrate them into every layer of our digital infrastructure.</p>
+
+<h3>The Engineering Quandary: Beyond Algorithm Swaps</h3>
+
+<p>For senior developers and engineering leaders, PQC transition isn't merely about swapping out an API call. It's a multi-faceted engineering challenge:</p>
+
+<h4>1. Inventory and Discovery: The Unseen Cryptographic Dependencies</h4>
+<p>Do you know every place your organization uses public-key cryptography? This includes not just TLS/SSL certificates, but VPNs, code signing, hardware security modules (HSMs), email encryption, supply chain verification, blockchain systems, and even embedded firmware. The sheer scale of identifying these dependencies across complex, often decades-old, systems is monumental. Imagine navigating a landscape like some critical national infrastructure in Nepal, perhaps financial transaction systems, still relying on platforms developed in the early 2000s, barely patched, and maintained by a small, overworked team. The sheer engineering overhead of a PQC transition in such environments isn't just a technical challenge; it's a profound societal and economic one. This necessitates sophisticated tooling for cryptographic asset discovery, and often, extensive manual auditing.</p>
+
+<h4>2. Crypto-Agility: The Architectural Imperative</h4>
+<p>Our current systems often hardcode cryptographic primitives, making upgrades costly and risky. The PQC transition demands 'crypto-agility' – the ability to swap cryptographic algorithms with minimal disruption. This means designing systems where cryptographic components are modular, configurable, and easily updateable.</p>
+
+<p>Consider a conceptual API for establishing a secure channel using a hybrid approach (combining classical and PQC algorithms for layered security), which is a common interim strategy:</p>
+
+<pre><code>
+import crypto_api_2026 as pqc_crypto
+
+def establish_hybrid_secure_channel(
+    peer_identifier: str,
+    pqc_kem_alg: str = "Kyber768",
+    classical_kex_alg: str = "X25519"
+) -> bytes:
+    """
+    Establishes a secure channel using a hybrid classical + PQC key exchange.
+    Returns a session key derived from both schemes.
+    """
+    print(f"[DEBUG] Initiating hybrid key exchange with {peer_identifier}...")
+
+    # 1. Classical Key Exchange (e.g., X25519)
+    classical_kex = pqc_crypto.KeyExchange.create(classical_kex_alg)
+    classical_ephemeral_pub = classical_kex.generate_ephemeral_keypair()
+
+    # 2. PQC Key Encapsulation Mechanism (e.g., Kyber)
+    pqc_kem = pqc_crypto.KeyEncapsulation.create(pqc_kem_alg)
+    pqc_encap_keypair = pqc_kem.generate_keypair()
+
+    # In a real scenario, these public keys/ciphertext would be exchanged via network
+    # For illustration, let's assume we 'send' and 'receive' them.
+    print(f"[DEBUG] Exchanging public keys with {peer_identifier}...")
+    # simulated_peer_classical_pub, simulated_peer_pqc_ciphertext = 
+    #    network.exchange(classical_ephemeral_pub, pqc_encap_keypair.public_key)
+
+    # Simulate receiving peer's components
+    simulated_peer_classical_pub = b"fake_peer_x25519_pub"
+    simulated_peer_pqc_ciphertext = b"fake_peer_kyber_ciphertext"
+
+    # Derive shared secret from both schemes
+    shared_secret_classical = classical_kex.derive_secret(simulated_peer_classical_pub)
+    shared_secret_pqc = pqc_kem.decapsulate(pqc_encap_keypair.private_key, simulated_peer_pqc_ciphertext)
+
+    # Combine secrets using a KDF (e.g., HKDF) for robust security
+    final_session_key = pqc_crypto.KDF.hkdf(
+        input_key_material=shared_secret_classical + shared_secret_pqc,
+        salt=b"pqc_transition_salt_2026",
+        length=32
+    )
+
+    print(f"[INFO] Hybrid PQC/Classical session key established. Length: {len(final_session_key)} bytes")
+    return final_session_key
+
+# Example usage in a client application:
+# current_session_key = establish_hybrid_secure_channel("api.example.com")
+</code></pre>
+
+<p>This snippet highlights the complexity: multiple algorithms, key types, and the need for careful secret combination. Furthermore, PQC algorithms often have larger key sizes and signature lengths, impacting network bandwidth, storage, and processing power – not insignificant for latency-sensitive applications or resource-constrained IoT devices.</p>
+
+<h3>Global Disparities and the Resource Crunch</h3>
+
+<p>The PQC transition is a global undertaking, but preparedness varies wildly. In an engineering culture like Japan's, where meticulous planning and long-term vision are paramount, the PQC transition will undoubtedly be approached with unparalleled rigor. Yet, even there, the interconnectedness of vast, high-speed networks, sophisticated financial systems, and deeply integrated supply chains means that a coordinated, synchronous upgrade across billions of endpoints is a logistical Everest, regardless of planning. This often leads to conservative, slower adoption despite early planning, due to the immense risk involved in large-scale system changes.</p>
+
+<p>Conversely, less developed regions often grapple with significant technical debt, limited budgets, and a critical shortage of cybersecurity talent. For them, PQC can feel like an insurmountable hurdle, potentially widening the digital security gap globally. A 2024 survey by the Cloud Security Alliance indicated that <a href="https://cloudsecurityalliance.org/research/artifacts/pqc-report-2024">less than 15% of organizations globally felt 'very prepared'</a> for quantum threats, a statistic that likely masks even deeper disparities between well-resourced and under-resourced entities.</p>
+
+<h2>Pro Tips for Engineering Leaders in 2026</h2>
+<ol>
+    <li><strong>Conduct a Crypto-Inventory NOW:</strong> Start identifying every instance of public-key cryptography in your organization, from codebases to hardware. Don't underestimate this task; it's often the longest pole in the tent.</li>
+    <li><strong>Architect for Crypto-Agility:</strong> Begin refactoring systems to decouple cryptographic primitives. Implement abstraction layers that allow for easy swapping of algorithms. This is not a 'nice-to-have' but a fundamental architectural shift.</li>
+    <li><strong>Embrace Hybrid Approaches:</strong> Implement PQC alongside classical cryptography (as shown in the code example). This provides an immediate layer of quantum resistance while retaining existing security guarantees and allowing for phased rollout.</li>
+    <li><strong>Invest in Education and Talent:</strong> PQC requires specialized knowledge. Train your security teams and developers. Partner with academic institutions. The talent crunch is real.</li>
+    <li><strong>Engage with Standards and Community:</strong> Stay abreast of NIST PQC standards, participate in industry working groups, and share learnings. This is a collective challenge.</li>
+</ol>
+
+<h2>Future Predictions Beyond 2026</h2>
+<p>As we move past the initial PQC standardization phase:</p>
+<ul>
+    <li><strong>Mandated Compliance:</strong> Expect government regulations and industry standards to enforce PQC adoption for critical infrastructure and sensitive data, mirroring GDPR or PCI-DSS in scope.</li>
+    <li><strong>PQC-as-a-Service:</strong> Specialized cloud providers and cybersecurity firms will offer PQC-ready APIs and infrastructure, simplifying adoption for smaller entities.</li>
+    <li><strong>Hardware-Level Integration:</strong> New generations of CPUs, GPUs, and Hardware Security Modules (HSMs) will feature native PQC acceleration, mitigating some of the performance overheads.</li>
+    <li><strong>Decentralized Trust Models:</strong> The PQC transition may accelerate interest in decentralized identity and verifiable credentials that are inherently quantum-resistant, driven by the need for more robust trust anchors.</li>
+</ul>
+
+<h2>Conclusion: The Time for Debate is Over, the Time for Action is Now</h2>
+<p>The debate among engineering leaders in 2026 is no longer about the reality of the quantum threat, but the most effective, economical, and secure path to PQC. It's a journey that will redefine our understanding of digital security, demanding unprecedented foresight, collaboration, and investment.</p>
+
+<p>To those leading development teams and shaping engineering strategy: the time for theoretical discussions is largely behind us. The imperative is to act. Start your inventory, plan your crypto-agility roadmap, and invest in your team's PQC literacy today. Our digital future depends on it. What steps is your organization taking to prepare for the quantum shift?</p>
+            </article>
+
+            <!-- Related Posts Section -->
+            <div style="margin-top: 60px; padding-top: 40px; border-top: 2px solid #eee;">
+              <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 30px;">Related Articles</h3>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                <a href="../index.html#blog" style="background: #f8f9fa; padding: 20px; border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.3s;" onmouseover="this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'">
+                  <h4 style="color: var(--primary-accent); margin-bottom: 10px;">→ View All Articles</h4>
+                  <p style="font-size: 0.9rem; opacity: 0.8;">Explore more insights on tech, AI, and development</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="footer-action">
+                <a href="../#blog" class="back-link">
+                    <i class="fa fa-arrow-left"></i> Back to All Stories
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script>
+        // Reading Progress Bar
+        window.onscroll = function () {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (height > 0) ? (winScroll / height) * 100 : 0;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+
+            // Scroll to Top visibility
+            const scrollTop = document.getElementById("scroll-top");
+            if (winScroll > 300) {
+                scrollTop.classList.add("show");
+            } else {
+                scrollTop.classList.remove("show");
+            }
+        };
+
+        // Scroll to Top Action
+        document.getElementById("scroll-top").addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Social Share Function
+        function share(platform) {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent(document.title);
+            let shareUrl = '';
+
+            switch (platform) {
+                case 'twitter':
+                    shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${title}`;
+                    break;
+                case 'linkedin':
+                    shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+                    break;
+                case 'facebook':
+                    shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+                    break;
+            }
+
+            if (shareUrl) {
+                window.open(shareUrl, '_blank', 'width=600,height=400');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
