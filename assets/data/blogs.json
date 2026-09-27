@@ -1,5 +1,17 @@
 [
   {
+    "category": "Distributed Systems",
+    "title": "The Ephemeral State Dilemma: Debating Data Transience in Serverless & Edge Architectures in 2026",
+    "summary": "The promise of serverless and edge computing was a stateless nirvana, but real-world applications invariably need to manage some form of transient data. In 2026, senior architects are locked in a critical debate: how do we effectively manage ephemeral state without compromising the core benefits of these distributed paradigms? This post dives into the architectural strategies, challenges, and future of transient data in highly distributed systems.",
+    "date": "27 September 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-systems-ephemeral-state",
+    "slug": "the-ephemeral-state-dilemma-debating-data-transience-in-serverless-edge-architectures-in-2026",
+    "isPopular": false,
+    "link": "blog/the-ephemeral-state-dilemma-debating-data-transience-in-serverless-edge-architectures-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "Cybersecurity",
     "title": "The Quantum Cryptography Crossroads: Why Engineering Leaders Are Debating Our Digital Future in 2026",
     "summary": "As 2026 unfolds, a looming threat once relegated to theoretical physics labs is now demanding urgent attention from engineering leaders: the advent of cryptographically relevant quantum computers. The debate isn't about 'if' but 'how' we transition global digital infrastructure to Post-Quantum Cryptography (PQC) – a challenge with staggering technical, financial, and logistical implications.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-hyper-distributed-cloud-fabric-rethinking-edge-to-core-architectures-in-2026.html",
     "id": 74
-  },
-  {
-    "category": "DevOps & SRE",
-    "title": "Beyond Uptime: The Great Debate on SRE's Expanded Role in Sustainable Cloud Architectures for 2026",
-    "summary": "In 2026, the SRE mandate is evolving beyond just reliability. Driven by relentless cloud cost pressures and urgent sustainability goals, engineering leaders are grappling with whether SRE teams should proactively architect for efficiency – sparking a critical debate on scope, ownership, and the future of cloud operations.",
-    "date": "18 June 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?sre-cloud-efficiency-sustainability-2026",
-    "slug": "beyond-uptime-the-great-debate-on-sres-expanded-role-in-sustainable-cloud-architectures-for-2026",
-    "isPopular": false,
-    "link": "blog/beyond-uptime-the-great-debate-on-sres-expanded-role-in-sustainable-cloud-architectures-for-2026.html",
-    "id": 73
   }
 ]
