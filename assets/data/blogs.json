@@ -1,5 +1,17 @@
 [
   {
+    "category": "Software Engineering",
+    "title": "Beyond the Cloud-First Dogma: Why 2026 is the Year of Local-First Enterprise Architecture",
+    "summary": "As network latency plateaus and client-side computing power surges, senior architects are moving away from traditional cloud-reliant APIs. This post explores the rise of local-first architectures using WASM-SQLite and CRDTs to build resilient, ultra-low latency enterprise applications.",
+    "date": "28 September 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-database-sync",
+    "slug": "beyond-the-cloud-first-dogma-why-2026-is-the-year-of-local-first-enterprise-architecture",
+    "isPopular": false,
+    "link": "blog/beyond-the-cloud-first-dogma-why-2026-is-the-year-of-local-first-enterprise-architecture.html",
+    "id": 101
+  },
+  {
     "category": "Distributed Systems",
     "title": "The Ephemeral State Dilemma: Debating Data Transience in Serverless & Edge Architectures in 2026",
     "summary": "The promise of serverless and edge computing was a stateless nirvana, but real-world applications invariably need to manage some form of transient data. In 2026, senior architects are locked in a critical debate: how do we effectively manage ephemeral state without compromising the core benefits of these distributed paradigms? This post dives into the architectural strategies, challenges, and future of transient data in highly distributed systems.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-the-container-why-we-are-replacing-docker-with-wasm-in-2026.html",
     "id": 75
-  },
-  {
-    "category": "Cloud Architecture",
-    "title": "The Hyper-Distributed Cloud Fabric: Rethinking Edge-to-Core Architectures in 2026",
-    "summary": "The traditional divide between 'cloud' and 'edge' is dissolving. In 2026, engineering leaders are grappling with the implications of a truly hyper-distributed cloud fabric, where compute extends seamlessly from core data centers to the remotest sensors. This shift demands a radical re-evaluation of our architectural patterns, operational models, and security strategies.",
-    "date": "19 June 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?distributed-cloud-fabric-edge-computing-2026",
-    "slug": "the-hyper-distributed-cloud-fabric-rethinking-edge-to-core-architectures-in-2026",
-    "isPopular": false,
-    "link": "blog/the-hyper-distributed-cloud-fabric-rethinking-edge-to-core-architectures-in-2026.html",
-    "id": 74
   }
 ]
