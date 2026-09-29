@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "Beyond Hyper-Serverless: The 2026 Cloud Debate on Pragmatic Workload Consolidation for Cost and Predictability",
+    "summary": "In 2026, the cloud architecture pendulum is swinging. After years of embracing hyper-decomposed serverless, many senior developers and engineering leaders are grappling with the real-world costs and operational complexities of ubiquitous FaaS, leading to a critical debate: when and how to pragmatically re-consolidate workloads for optimal predictability and economic efficiency. Join me as we explore this evolving landscape and the architectural decisions shaping the future of cloud.",
+    "date": "29 September 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?cloud-architecture-consolidation-predictability",
+    "slug": "beyond-hyper-serverless-the-2026-cloud-debate-on-pragmatic-workload-consolidation-for-cost-and-predictability",
+    "isPopular": false,
+    "link": "blog/beyond-hyper-serverless-the-2026-cloud-debate-on-pragmatic-workload-consolidation-for-cost-and-predictability.html",
+    "id": 101
+  },
+  {
     "category": "Software Engineering",
     "title": "Beyond the Cloud-First Dogma: Why 2026 is the Year of Local-First Enterprise Architecture",
     "summary": "As network latency plateaus and client-side computing power surges, senior architects are moving away from traditional cloud-reliant APIs. This post explores the rise of local-first architectures using WASM-SQLite and CRDTs to build resilient, ultra-low latency enterprise applications.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/sre-in-2026-why-engineering-leaders-are-rejecting-probabilistic-ai-for-deterministic-ebpf-guided-recovery.html",
     "id": 76
-  },
-  {
-    "category": "Distributed Systems",
-    "title": "Beyond the Container: Why We Are Replacing Docker with WASM in 2026",
-    "summary": "The debate between traditional containerization and WebAssembly (WASM) has moved from theoretical edge use cases to core production environments. This article analyzes how architects are navigating the shift to WASM micro-VMs, drawing on deployment patterns from Tokyo's high-throughput transit backends to Nepal's off-grid micro-datacenters.",
-    "date": "20 June 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?wasm-distributed-computing",
-    "slug": "beyond-the-container-why-we-are-replacing-docker-with-wasm-in-2026",
-    "isPopular": false,
-    "link": "blog/beyond-the-container-why-we-are-replacing-docker-with-wasm-in-2026.html",
-    "id": 75
   }
 ]
