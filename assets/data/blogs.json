@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cybersecurity",
+    "title": "eBPF vs. Sidecars: The 2026 Battleground for Microservice Security",
+    "summary": "As sidecar-induced latency reaches its breaking point in high-throughput environments, engineering teams in 2026 are shifting to eBPF-based runtime security. This article analyzes the architectural trade-offs, security implications, and why kernel-level bytecode execution is dividing senior architects.",
+    "date": "30 September 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?ebpf-kernel-security",
+    "slug": "ebpf-vs-sidecars-the-2026-battleground-for-microservice-security",
+    "isPopular": false,
+    "link": "blog/ebpf-vs-sidecars-the-2026-battleground-for-microservice-security.html",
+    "id": 101
+  },
+  {
     "category": "Cloud Architecture",
     "title": "Beyond Hyper-Serverless: The 2026 Cloud Debate on Pragmatic Workload Consolidation for Cost and Predictability",
     "summary": "In 2026, the cloud architecture pendulum is swinging. After years of embracing hyper-decomposed serverless, many senior developers and engineering leaders are grappling with the real-world costs and operational complexities of ubiquitous FaaS, leading to a critical debate: when and how to pragmatically re-consolidate workloads for optimal predictability and economic efficiency. Join me as we explore this evolving landscape and the architectural decisions shaping the future of cloud.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-the-api-why-senior-architects-in-2026-are-migrating-to-local-first-and-wasm-sqlite.html",
     "id": 77
-  },
-  {
-    "category": "DevOps & SRE",
-    "title": "SRE in 2026: Why Engineering Leaders are Rejecting Probabilistic AI for Deterministic eBPF-Guided Recovery",
-    "summary": "As autonomous AI SRE agents face a wave of production rollbacks, engineering organizations are returning to deterministic principles. This article explores how combining eBPF kernel tracing with WebAssembly runtimes is shaping the real-world recovery architectures of 2026.",
-    "date": "21 June 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?ebpf-kernel-networking-telemetry",
-    "slug": "sre-in-2026-why-engineering-leaders-are-rejecting-probabilistic-ai-for-deterministic-ebpf-guided-recovery",
-    "isPopular": false,
-    "link": "blog/sre-in-2026-why-engineering-leaders-are-rejecting-probabilistic-ai-for-deterministic-ebpf-guided-recovery.html",
-    "id": 76
   }
 ]
