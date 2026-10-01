@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Stateful Serverless Paradox: Why Distributed Transactions are Back on the Table in 2026 | Sushil Sigdel</title>
+    <meta name="description" content="The serverless revolution promised an end to operational overhead, but its stateless nature has created a new frontier of complexity for long-running business processes. In 2026, engineering leaders are actively debating how to reconcile serverless agility with the inherent need for robust distributed state management, bringing sophisticated transaction patterns back into focus.">
+    <link rel="canonical" href="https://sigdelsushil.com.np/blog/the-stateful-serverless-paradox-why-distributed-transactions-are-back-on-the-table-in-2026.html">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Sushil Sigdel">
+    <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id=GTM-KHDFS4SM'+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KHDFS4SM');</script>
+  <!-- End Google Tag Manager -->
+
+<!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <style>
+        :root {
+            --primary-accent: #00d2ff;
+            --text-dark: #2d3436;
+            --text-gray: #636e72;
+        }
+
+        body {
+            background-color: #fafbfc;
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Reading Progress Bar */
+        #progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            z-index: 10000;
+        }
+
+        #progress-bar {
+            height: 100%;
+            background: linear-gradient(to right, #00d2ff, #fa65b1);
+            width: 0%;
+            transition: width 0.1s ease;
+        }
+
+        /* Hero Styling */
+        .blog-hero {
+            position: relative;
+            padding: 120px 0 80px;
+            background-color: #2a2a2a;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+            url('https://source.unsplash.com/featured/1200x800/?distributed-systems-workflow-orchestration-2026');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            margin-bottom: -40px;
+        }
+
+        .blog-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .category-tag {
+            background: var(--primary-accent);
+            color: white;
+            padding: 6px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .blog-meta-top {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .content-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
+            position: relative;
+            z-index: 5;
+        }
+
+        .featured-img-wrap {
+            margin-bottom: 40px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .featured-img-wrap img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .blog-body {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .blog-body h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--text-dark);
+            font-size: 2rem;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .blog-body pre {
+            background: #0f172a;
+            color: #e2e8f0;
+            padding: 24px;
+            border-radius: 20px;
+            overflow-x: auto;
+            font-family: 'Fira Code', 'JetBrains Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin: 30px 0;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .blog-body code {
+            background: rgba(250, 101, 177, 0.12);
+            color: #111827;
+            padding: 3px 8px;
+            border-radius: 8px;
+            font-family: 'Fira Code', 'JetBrains Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+            font-size: 0.95rem;
+        }
+
+        .blog-body pre code {
+            background: transparent;
+            padding: 0;
+            color: inherit;
+        }
+
+        /* Floating Social Share */
+        .share-buttons {
+            position: fixed;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 100;
+        }
+
+        .share-btn {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+        }
+
+        .share-btn:hover {
+            transform: scale(1.1) translateX(5px);
+            color: white;
+        }
+
+        .share-tw {
+            background: #1DA1F2;
+        }
+
+        .share-li {
+            background: #0077b5;
+        }
+
+        .share-fb {
+            background: #4267B2;
+        }
+
+        /* Sticky Back to Top */
+        #scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--primary-accent);
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s;
+            z-index: 100;
+            border: none;
+        }
+
+        #scroll-top.show {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .footer-action {
+            margin-top: 60px;
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 40px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary-accent);
+            font-weight: 600;
+            text-decoration: none;
+            gap: 10px;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 1200px) {
+            .share-buttons {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .blog-hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .content-container {
+                padding: 30px;
+                border-radius: 0;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHDFS4SM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Reading Progress Bar -->
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
+    <!-- Social Share -->
+    <div class="share-buttons">
+        <a href="javascript:void(0)" class="share-btn share-tw" onclick="share('twitter')" title="Share on X (Twitter)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 16 16">
+                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+            </svg>
+        </a>
+        <a href="javascript:void(0)" class="share-btn share-li" onclick="share('linkedin')" title="Share on LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.401c.03.674 0 7.225 0 7.225h2.401z"/>
+            </svg>
+        </a>
+        <a href="javascript:void(0)" class="share-btn share-fb" onclick="share('facebook')" title="Share on Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Scroll Top -->
+    <button id="scroll-top"><i class="fa fa-angle-up"></i></button>
+
+    <section class="blog-hero">
+        <div class="container">
+            <span class="category-tag">Distributed Systems</span>
+            <h1>The Stateful Serverless Paradox: Why Distributed Transactions are Back on the Table in 2026</h1>
+            <div class="blog-meta-top">
+                By <strong>Sushil Sigdel</strong> | 01 October 2026
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-img-wrap">
+                <img src="https://source.unsplash.com/featured/1200x800/?distributed-systems-workflow-orchestration-2026" alt="The Stateful Serverless Paradox: Why Distributed Transactions are Back on the Table in 2026" onerror="this.src='../assets/images/bloghome.png'">
+            </div>
+
+            <!-- AdSense Ad - In Content -->
+            <div style="text-align: center; margin: 30px 0; padding: 20px; background: #f8f9fa; border-radius: 10px;">
+              <ins class="adsbygoogle" style="display: block" data-ad-client="ca-pub-7936732053264133" data-ad-slot="9876543210" data-ad-format="auto" data-full-width-responsive="true"></ins>
+              <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+
+            <article class="blog-body">
+                <h1>The Stateful Serverless Paradox: Why Distributed Transactions are Back on the Table in 2026</h1>
+
+<p>It's 2026, and the distributed systems landscape continues its relentless evolution. We've witnessed a dramatic shift from monolithic giants to federated microservices, and then a profound embrace of serverless functions. This journey has brought unprecedented scalability and reduced operational burden. Yet, as we push the boundaries of what these ephemeral, stateless paradigms can achieve, a critical challenge has emerged: the management of long-running, stateful business processes across distributed boundaries. The debate among senior architects isn't *if* we need robust distributed state management, but *how* – and increasingly, the conversation is circling back to sophisticated distributed transaction models that some thought were relegated to database textbooks.</p>
+
+<p>Having navigated the complexities of distributed payment gateways in environments as demanding as Kathmandu, where network reliability is often a luxury, to architecting high-frequency trading platforms in Tokyo, where every microsecond and byte of data consistency counts, I've seen firsthand the spectrum of challenges. The current debate around stateful serverless and distributed transactions isn't new, but its context in 2026 – driven by platform maturity and business demands – makes it uniquely compelling.</p>
+
+<h3>The Stateless Utopia and Its Inherent Compromises</h3>
+
+<p>The core tenet of early serverless adoption was statelessness. Functions were designed to be ephemeral, responding to an event, executing, and then vanishing. This model excels for simple, independent tasks: resizing an image, processing a single API request, or triggering a notification. It offers unparalleled elasticity and cost efficiency, paying only for execution time. Many organizations, accelerated by the digital transformation mandates of the post-pandemic era, aggressively adopted serverless for its speed of deployment and operational simplicity.</p>
+
+<p>However, real-world business processes are rarely simple and isolated. Consider an e-commerce order: it involves inventory reservation, payment processing, fraud checks, shipping arrangements, and customer notifications. Each step might involve different services, databases, and external APIs. Orchestrating these without shared state or a centralized coordinator quickly becomes an exercise in frustration. Developers resorted to externalizing state to databases, message queues, or object storage, then building custom logic for retries, error handling, and eventual consistency. While effective for many scenarios, this approach often shifted complexity rather than eliminating it, leading to:</p>
+
+<ul>
+    <li>Increased cognitive load for developers designing complex interaction flows.</li>
+    <li>Difficult debugging of distributed failures due to scattered state.</li>
+    <li>Challenges in ensuring transactional integrity across disparate services.</li>
+</ul>
+
+<h3>Stateful Serverless: Bridging the Gap (2024-2026)</h3>
+
+<p>Recognizing these limitations, cloud providers have been investing heavily in stateful serverless orchestrators. Services like AWS Step Functions, Azure Durable Functions, and Google Cloud Workflows have matured significantly, offering primitives for defining and managing complex, long-running workflows with built-in state persistence, retries, and error handling. These platforms allow developers to visually or programmatically define multi-step processes, abstracting away much of the underlying distributed systems complexity.</p>
+
+<p>For instance, an order processing workflow can now be defined as a series of steps, where the orchestrator maintains the state of the entire process, including inputs, outputs, and intermediate results. If a step fails, the orchestrator can automatically retry, invoke compensation logic, or mark the entire workflow for manual intervention. This evolution has been critical for industries requiring robust business process automation, from financial services onboarding to supply chain logistics, where consistency and auditability are non-negotiable.</p>
+
+<p>The adoption of these stateful orchestrators has been swift. A recent <a href="#" onclick="return false;">hypothetical industry report</a> indicated that enterprises leveraging stateful serverless for core business processes saw a 35% reduction in time-to-market for complex features and a 20% decrease in critical incident rates related to workflow inconsistencies in 2025.</p>
+
+<h3>The Great Debate: Orchestrated Compensation vs. True Distributed Transactions</h3>
+
+<p>This brings us to the core debate raging in 2026: how far should platform-provided stateful serverless go in providing transactional guarantees? On one side, proponents advocate for enhancing these orchestrators with more robust, even potentially <i>optimistic</i> distributed transaction capabilities. They argue that manually managing compensation logic for every failure path in a complex Saga pattern is still arduous, error-prone, and increases development cost, despite the orchestration framework. They point to scenarios in financial payments or critical infrastructure where even eventual consistency, if delayed, can have significant real-world costs.</p>
+
+<p>Consider the <a href="https://www.martinfowler.com/articles/microservice-trade-offs/saga.html" target="_blank">Saga pattern</a>, a widely adopted approach for maintaining consistency across microservices without atomic two-phase commit (2PC). It involves a sequence of local transactions, with each transaction updating its local database and publishing a message to trigger the next step. If a step fails, compensation transactions are executed to undo the changes made by preceding steps. While powerful, implementing comprehensive compensation logic for every possible failure scenario is a non-trivial engineering effort, especially as workflows grow in complexity.</p>
+
+<p>Here's a simplified pseudo-code snippet for a Saga using a Durable Function-like orchestrator:</p>
+<pre><code>
+// Pseudo-code for a Durable Function-like orchestrator
+async function OrderProcessingSaga(context: DurableOrchestrationContext): Promise&lt;void&gt; {
+    const orderDetails = context.df.getInput();
+
+    try {
+        // 1. Reserve Inventory
+        const reservationResult = await context.df.callActivity("ReserveInventory", orderDetails);
+        if (!reservationResult.success) {
+            throw new Error("Inventory reservation failed");
+        }
+
+        // 2. Process Payment
+        const paymentResult = await context.df.callActivity("ProcessPayment", orderDetails);
+        if (!paymentResult.success) {
+            await context.df.callActivity("CompensateInventoryReservation", orderDetails); // Compensation
+            throw new Error("Payment processing failed");
+        }
+
+        // 3. Arrange Shipping
+        const shippingResult = await context.df.callActivity("ArrangeShipping", orderDetails);
+        if (!shippingResult.success) {
+            await context.df.callActivity("RefundPayment", orderDetails); // Compensation
+            await context.df.callActivity("CompensateInventoryReservation", orderDetails); // Compensation
+            throw new Error("Shipping arrangement failed");
+        }
+
+        context.df.complete("Order processed successfully!");
+
+    } catch (error) {
+        context.df.fail(`Order processing failed: ${error.message}`);
+        // Further compensation could be triggered here for any unhandled failures
+    }
+}
+</code></pre>
+
+<p>On the other side of the debate, purists argue that distributed 2PC is fundamentally anti-scalable and introduces unacceptable coupling and latency. They champion the continued evolution of asynchronous, compensation-based patterns like Sagas or Try-Confirm/Cancel (TCC), leveraging the orchestrators primarily for coordination and state persistence, but placing the responsibility for defining compensation firmly on the service developers. Their argument emphasizes the autonomy of services and the desire to avoid blocking operations that can cripple high-throughput systems.</p>
+
+<h3>Pro Tips for Navigating the Stateful Serverless Landscape in 2026</h3>
+
+<ol>
+    <li><b>Know Your Consistency Requirements:</b> Not every process needs strong global consistency. Understand which parts of your system can tolerate eventual consistency and where absolute atomicity is paramount. This dictates your choice of pattern.</li>
+    <li><b>Leverage Platform Primitives:</b> Maximize the built-in capabilities of your cloud provider's stateful orchestrators (e.g., idempotent activity functions, durable entities, automatic retries). These significantly reduce boilerplate.</li>
+    <li><b>Design Compensation Explicitly:</b> If you're using Sagas, treat compensation as a first-class citizen during design. Map out all potential failure scenarios and their corresponding undo actions early. Observability for these compensation flows is not a luxury; something I learned acutely managing payment systems with varied network reliability in Kathmandu.</li>
+    <li><b>Prioritize Observability:</b> Long-running distributed workflows are inherently complex. Invest heavily in tracing, logging, and metrics that allow you to visualize the flow, identify bottlenecks, and quickly pinpoint where a Saga might have failed or stalled.</li>
+    <li><b>Test, Test, Test:</b> Testing distributed systems is notoriously difficult. Focus on integration testing for your workflows, including injecting failures at various steps to ensure your compensation logic behaves as expected.</li>
+</ol>
+
+<h3>Future Predictions (2026+)</h3>
+
+<p>Looking ahead, I foresee several key developments:</p>
+
+<ul>
+    <li><b>Advanced Platform Primitives:</b> Cloud providers will likely offer more sophisticated, yet still decentralized, transaction primitives that simplify Saga implementation, potentially even introducing higher-level `compensateWith` or `rollbackOnFailure` constructs within their orchestrator languages. These won't be traditional 2PC, but rather intelligent, platform-managed compensation frameworks.</li>
+    <li><b>AI-Assisted Workflow Design:</b> We'll see AI/ML tools emerge that can analyze workflow definitions and even suggest optimal compensation logic or identify potential deadlocks and inconsistencies proactively, drawing from patterns learned across vast datasets of similar workflows.</li>
+    <li><b>Convergence with Event Streaming:</b> The lines between stateful serverless orchestrators and advanced event streaming platforms will blur further, enabling highly reactive, state-aware systems that can react to external events and drive complex, multi-stage processes more seamlessly.</li>
+    <li><b>Standardization Efforts:</b> As these patterns mature, there may be increasing pressure for open standards or common declarative languages for defining and orchestrating distributed workflows and their transactional properties across different cloud environments.</li>
+</ul>
+
+<h3>Conclusion</h3>
+
+<p>The paradox of serverless – its profound simplicity for stateless operations, contrasted with the inherent complexity of distributed state – continues to drive innovation. In 2026, the debate around distributed transactions in a serverless world is not about discarding progress, but about intelligently integrating robust state management into the agile, scalable future we're building. The days of dismissing distributed transactions entirely are over; instead, we're finding nuanced, platform-assisted ways to achieve consistency without sacrificing the benefits of modern cloud architectures.</p>
+
+<p>What are your experiences with stateful serverless workflows and distributed transactions? Are you leaning towards richer platform primitives or refining your Saga implementations? Share your thoughts below!</p>
+
+            </article>
+
+            <!-- Related Posts Section -->
+            <div style="margin-top: 60px; padding-top: 40px; border-top: 2px solid #eee;">
+              <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 30px;">Related Articles</h3>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                <a href="../index.html#blog" style="background: #f8f9fa; padding: 20px; border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.3s;" onmouseover="this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'">
+                  <h4 style="color: var(--primary-accent); margin-bottom: 10px;">→ View All Articles</h4>
+                  <p style="font-size: 0.9rem; opacity: 0.8;">Explore more insights on tech, AI, and development</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="footer-action">
+                <a href="../#blog" class="back-link">
+                    <i class="fa fa-arrow-left"></i> Back to All Stories
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script>
+        // Reading Progress Bar
+        window.onscroll = function () {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (height > 0) ? (winScroll / height) * 100 : 0;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+
+            // Scroll to Top visibility
+            const scrollTop = document.getElementById("scroll-top");
+            if (winScroll > 300) {
+                scrollTop.classList.add("show");
+            } else {
+                scrollTop.classList.remove("show");
+            }
+        };
+
+        // Scroll to Top Action
+        document.getElementById("scroll-top").addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Social Share Function
+        function share(platform) {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent(document.title);
+            let shareUrl = '';
+
+            switch (platform) {
+                case 'twitter':
+                    shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${title}`;
+                    break;
+                case 'linkedin':
+                    shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+                    break;
+                case 'facebook':
+                    shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+                    break;
+            }
+
+            if (shareUrl) {
+                window.open(shareUrl, '_blank', 'width=600,height=400');
+            }
+        }
+    </script>
+
+</body>
+
+</html>

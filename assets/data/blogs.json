@@ -1,5 +1,17 @@
 [
   {
+    "category": "Distributed Systems",
+    "title": "The Stateful Serverless Paradox: Why Distributed Transactions are Back on the Table in 2026",
+    "summary": "The serverless revolution promised an end to operational overhead, but its stateless nature has created a new frontier of complexity for long-running business processes. In 2026, engineering leaders are actively debating how to reconcile serverless agility with the inherent need for robust distributed state management, bringing sophisticated transaction patterns back into focus.",
+    "date": "01 October 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-systems-workflow-orchestration-2026",
+    "slug": "the-stateful-serverless-paradox-why-distributed-transactions-are-back-on-the-table-in-2026",
+    "isPopular": false,
+    "link": "blog/the-stateful-serverless-paradox-why-distributed-transactions-are-back-on-the-table-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "Cybersecurity",
     "title": "eBPF vs. Sidecars: The 2026 Battleground for Microservice Security",
     "summary": "As sidecar-induced latency reaches its breaking point in high-throughput environments, engineering teams in 2026 are shifting to eBPF-based runtime security. This article analyzes the architectural trade-offs, security implications, and why kernel-level bytecode execution is dividing senior architects.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-rise-of-adversarial-statecraft-in-2026-a-cybersecurity-dilemma-for-developers.html",
     "id": 78
-  },
-  {
-    "category": "Distributed Systems",
-    "title": "Beyond the API: Why Senior Architects in 2026 are Migrating to Local-First and WASM-SQLite",
-    "summary": "The traditional request-response REST API is hitting its physical limits. Senior engineers are increasingly adopting local-first architectures powered by WebAssembly-compiled SQLite and CRDTs to solve latency, resilience, and cloud-hosting costs.",
-    "date": "22 June 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?distributed-database-network",
-    "slug": "beyond-the-api-why-senior-architects-in-2026-are-migrating-to-local-first-and-wasm-sqlite",
-    "isPopular": false,
-    "link": "blog/beyond-the-api-why-senior-architects-in-2026-are-migrating-to-local-first-and-wasm-sqlite.html",
-    "id": 77
   }
 ]
