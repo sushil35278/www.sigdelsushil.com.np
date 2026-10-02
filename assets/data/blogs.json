@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "Beyond the Hyperscale: Why 2026 is the Year of the Sovereign Micro-Cloud",
+    "summary": "As hyperscaler egress costs and global data residency laws reach a breaking point, senior architects are pivoting toward decentralized 'Micro-Clouds.' This post explores the shift from monolithic cloud providers to Wasm-based bare metal orchestration and regional sovereignty.",
+    "date": "02 October 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?decentralized-cloud-datacenter-neon",
+    "slug": "beyond-the-hyperscale-why-2026-is-the-year-of-the-sovereign-micro-cloud",
+    "isPopular": false,
+    "link": "blog/beyond-the-hyperscale-why-2026-is-the-year-of-the-sovereign-micro-cloud.html",
+    "id": 101
+  },
+  {
     "category": "Distributed Systems",
     "title": "The Stateful Serverless Paradox: Why Distributed Transactions are Back on the Table in 2026",
     "summary": "The serverless revolution promised an end to operational overhead, but its stateless nature has created a new frontier of complexity for long-running business processes. In 2026, engineering leaders are actively debating how to reconcile serverless agility with the inherent need for robust distributed state management, bringing sophisticated transaction patterns back into focus.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-slm-ascendancy-optimizing-for-practical-ai-in-2026s-enterprise-landscape.html",
     "id": 79
-  },
-  {
-    "category": "Cybersecurity",
-    "title": "The Rise of 'Adversarial Statecraft' in 2026: A Cybersecurity Dilemma for Developers",
-    "summary": "As nation-state actors evolve their tactics beyond traditional espionage, software engineering teams in 2026 face a new paradigm: 'Adversarial Statecraft.' This isn't just about zero-days; it's about the subtle weaponization of software supply chains and infrastructure. Are your development practices prepared for this sophisticated threat landscape?",
-    "date": "23 June 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?digital+supply+chain+security",
-    "slug": "the-rise-of-adversarial-statecraft-in-2026-a-cybersecurity-dilemma-for-developers",
-    "isPopular": false,
-    "link": "blog/the-rise-of-adversarial-statecraft-in-2026-a-cybersecurity-dilemma-for-developers.html",
-    "id": 78
   }
 ]
