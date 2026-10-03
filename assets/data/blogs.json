@@ -1,5 +1,17 @@
 [
   {
+    "category": "Distributed Systems",
+    "title": "The State of Temporal Consistency in 2026: Navigating Eventual Consistency's Evolving Landscape",
+    "summary": "In 2026, the debate around temporal consistency in distributed systems is intensifying, pushing beyond the 'eventual' promise. As applications demand tighter coordination and developers grapple with complex failure modes, we explore the practical implications and emerging patterns.",
+    "date": "03 October 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed+systems+abstract",
+    "slug": "the-state-of-temporal-consistency-in-2026-navigating-eventual-consistencys-evolving-landscape",
+    "isPopular": false,
+    "link": "blog/the-state-of-temporal-consistency-in-2026-navigating-eventual-consistencys-evolving-landscape.html",
+    "id": 101
+  },
+  {
     "category": "Cloud Architecture",
     "title": "Beyond the Hyperscale: Why 2026 is the Year of the Sovereign Micro-Cloud",
     "summary": "As hyperscaler egress costs and global data residency laws reach a breaking point, senior architects are pivoting toward decentralized 'Micro-Clouds.' This post explores the shift from monolithic cloud providers to Wasm-based bare metal orchestration and regional sovereignty.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-the-bearer-token-why-2026-is-the-year-of-deterministic-identity-and-dpop.html",
     "id": 80
-  },
-  {
-    "category": "AI & Machine Learning",
-    "title": "The SLM Ascendancy: Optimizing for Practical AI in 2026's Enterprise Landscape",
-    "summary": "In 2026, the AI debate among senior engineering leaders isn't just about scaling LLMs; it's about the pragmatic shift towards Small Language Models (SLMs). This post dives into why specialized, efficient models are becoming critical for real-world enterprise applications, addressing cost, latency, and data governance challenges.",
-    "date": "24 June 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?compact-ai-model-orchestration",
-    "slug": "the-slm-ascendancy-optimizing-for-practical-ai-in-2026s-enterprise-landscape",
-    "isPopular": false,
-    "link": "blog/the-slm-ascendancy-optimizing-for-practical-ai-in-2026s-enterprise-landscape.html",
-    "id": 79
   }
 ]
