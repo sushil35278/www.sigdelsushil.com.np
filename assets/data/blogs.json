@@ -1,5 +1,17 @@
 [
   {
+    "category": "DevOps & SRE",
+    "title": "Platform Engineering in 2026: The Abstraction Debate & The Future of Developer Experience",
+    "summary": "The promise of Platform Engineering has reshaped DevOps, offering 'paved roads' for developer velocity. But in 2026, a critical debate rages: Is this abstraction truly a net gain, or are we simply shifting the cognitive load and creating new bottlenecks? We explore the nuances, draw lessons from diverse global contexts, and peer into the future of this evolving paradigm.",
+    "date": "04 October 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?platform-engineering-developer-experience-futuristic",
+    "slug": "platform-engineering-in-2026-the-abstraction-debate-the-future-of-developer-experience",
+    "isPopular": false,
+    "link": "blog/platform-engineering-in-2026-the-abstraction-debate-the-future-of-developer-experience.html",
+    "id": 101
+  },
+  {
     "category": "Distributed Systems",
     "title": "The State of Temporal Consistency in 2026: Navigating Eventual Consistency's Evolving Landscape",
     "summary": "In 2026, the debate around temporal consistency in distributed systems is intensifying, pushing beyond the 'eventual' promise. As applications demand tighter coordination and developers grapple with complex failure modes, we explore the practical implications and emerging patterns.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-great-api-decoupling-why-local-first-architecture-is-dividing-engineering-teams-in-2026.html",
     "id": 81
-  },
-  {
-    "category": "Cybersecurity",
-    "title": "Beyond the Bearer Token: Why 2026 is the Year of Deterministic Identity and DPoP",
-    "summary": "As token-theft surges and the 'Golden SAML' attacks of the mid-2020s haunt enterprise security, senior architects are moving away from traditional JWTs toward sender-constrained, hardware-bound identity. This post explores the implementation of RFC 9449 and the shift toward cryptographic proof-of-possession.",
-    "date": "25 June 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?secure-hardware-key-encryption",
-    "slug": "beyond-the-bearer-token-why-2026-is-the-year-of-deterministic-identity-and-dpop",
-    "isPopular": false,
-    "link": "blog/beyond-the-bearer-token-why-2026-is-the-year-of-deterministic-identity-and-dpop.html",
-    "id": 80
   }
 ]
