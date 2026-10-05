@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "Beyond OCI Containers: The WebAssembly Component Model in 2026 Production Systems",
+    "summary": "As memory footprints and cold-start latencies of Linux containers hit physical scaling ceilings, engineering teams in 2026 are shifting core workloads to the WebAssembly Component Model. Drawing from distributed deployments across Tokyo telematics and Himalayan banking gateways, this article explores the architectural realities, performance metrics, and operational trade-offs of post-container runtimes.",
+    "date": "05 October 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?cloud-infrastructure-serverless",
+    "slug": "beyond-oci-containers-the-webassembly-component-model-in-2026-production-systems",
+    "isPopular": false,
+    "link": "blog/beyond-oci-containers-the-webassembly-component-model-in-2026-production-systems.html",
+    "id": 101
+  },
+  {
     "category": "DevOps & SRE",
     "title": "Platform Engineering in 2026: The Abstraction Debate & The Future of Developer Experience",
     "summary": "The promise of Platform Engineering has reshaped DevOps, offering 'paved roads' for developer velocity. But in 2026, a critical debate rages: Is this abstraction truly a net gain, or are we simply shifting the cognitive load and creating new bottlenecks? We explore the nuances, draw lessons from diverse global contexts, and peer into the future of this evolving paradigm.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-the-api-why-senior-architects-in-2026-are-decoupling-systems-with-local-speculative-decoding-and-wasm.html",
     "id": 82
-  },
-  {
-    "category": "Web Development",
-    "title": "The Great API Decoupling: Why Local-First Architecture is Dividing Engineering Teams in 2026",
-    "summary": "As the latency gap between edge computing and client-side storage narrows, senior architects are debating the necessity of traditional REST and GraphQL layers. We explore how Local-First (Lo-Fi) patterns and CRDTs are fundamentally altering the state management lifecycle.",
-    "date": "26 June 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?distributed-database-network",
-    "slug": "the-great-api-decoupling-why-local-first-architecture-is-dividing-engineering-teams-in-2026",
-    "isPopular": false,
-    "link": "blog/the-great-api-decoupling-why-local-first-architecture-is-dividing-engineering-teams-in-2026.html",
-    "id": 81
   }
 ]
