@@ -1,5 +1,17 @@
 [
   {
+    "category": "DevOps & SRE",
+    "title": "SRE in 2026: The Critical Debate on LLM Autonomy vs. Human Judgment in Incident Response",
+    "summary": "The SRE landscape is undergoing a profound transformation. As Large Language Models mature, the debate on their autonomous role in incident remediation intensifies. Are we ready to delegate critical system operations to algorithms, or does human judgment remain indispensable for true resilience?",
+    "date": "06 October 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?AI+SRE+collaboration+incident+response",
+    "slug": "sre-in-2026-the-critical-debate-on-llm-autonomy-vs-human-judgment-in-incident-response",
+    "isPopular": false,
+    "link": "blog/sre-in-2026-the-critical-debate-on-llm-autonomy-vs-human-judgment-in-incident-response.html",
+    "id": 101
+  },
+  {
     "category": "Cloud Architecture",
     "title": "Beyond OCI Containers: The WebAssembly Component Model in 2026 Production Systems",
     "summary": "As memory footprints and cold-start latencies of Linux containers hit physical scaling ceilings, engineering teams in 2026 are shifting core workloads to the WebAssembly Component Model. Drawing from distributed deployments across Tokyo telematics and Himalayan banking gateways, this article explores the architectural realities, performance metrics, and operational trade-offs of post-container runtimes.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-great-attestation-divide-securing-the-software-supply-chain-beyond-sca-in-2026.html",
     "id": 83
-  },
-  {
-    "category": "AI & Machine Learning",
-    "title": "Beyond the API: Why Senior Architects in 2026 are Decoupling Systems with Local Speculative Decoding and Wasm",
-    "summary": "As centralized API costs, network latency, and strict data residency rules hit a wall in 2026, senior engineering leaders are shifting workloads to edge-computed Small Language Models (SLMs). We dive deep into the technical realities of deploying cooperative speculative decoding using WebAssembly, drawing on real-world architectural lessons from Tokyo to Kathmandu.",
-    "date": "28 June 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?decentralized-edge-computing",
-    "slug": "beyond-the-api-why-senior-architects-in-2026-are-decoupling-systems-with-local-speculative-decoding-and-wasm",
-    "isPopular": false,
-    "link": "blog/beyond-the-api-why-senior-architects-in-2026-are-decoupling-systems-with-local-speculative-decoding-and-wasm.html",
-    "id": 82
   }
 ]
