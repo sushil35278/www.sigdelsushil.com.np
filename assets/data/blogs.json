@@ -1,5 +1,17 @@
 [
   {
+    "category": "Software Engineering",
+    "title": "The 2026 Pivot: Why Engineering Leaders are Moving from AI-Generated Bloat to Verifiable Architecture",
+    "summary": "As we move past the honeymoon phase of AI-assisted coding, 2026 has brought a sobering reality: a 40% increase in technical debt. This post explores the transition toward verifiable, capability-based systems and why 'intentional' engineering is making a massive comeback.",
+    "date": "08 October 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-systems-verification",
+    "slug": "the-2026-pivot-why-engineering-leaders-are-moving-from-ai-generated-bloat-to-verifiable-architecture",
+    "isPopular": false,
+    "link": "blog/the-2026-pivot-why-engineering-leaders-are-moving-from-ai-generated-bloat-to-verifiable-architecture.html",
+    "id": 101
+  },
+  {
     "category": "DevOps & SRE",
     "title": "2026 DevOps Debate: Platform Engineering vs. SRE – A Symbiotic Evolution or a Turf War?",
     "summary": "By 2026, the discussion around Platform Engineering and Site Reliability Engineering (SRE) has moved past initial hype into a critical debate: Are these disciplines on a collision course, or are they forging a necessary, powerful alliance? This post explores their distinct mandates, areas of overlap, and how leading organizations are navigating their integration for optimal developer experience and system reliability.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-edge-ai-paradox-performance-vs-explainability-in-2026-and-beyond.html",
     "id": 85
-  },
-  {
-    "category": "AI & Machine Learning",
-    "title": "Beyond Centralized LLMs: The 2026 Shift to Tiered Local SLMs and WebGPU Orchestration",
-    "summary": "As centralized API costs skyrocket and offline latency requirements tighten, engineering leaders in 2026 are shifting from massive cloud-hosted LLMs to tiered architectures utilizing local WebGPU-driven Small Language Models (SLMs).",
-    "date": "30 June 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?edge-computing-neural-network",
-    "slug": "beyond-centralized-llms-the-2026-shift-to-tiered-local-slms-and-webgpu-orchestration",
-    "isPopular": false,
-    "link": "blog/beyond-centralized-llms-the-2026-shift-to-tiered-local-slms-and-webgpu-orchestration.html",
-    "id": 84
   }
 ]
