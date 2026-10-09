@@ -1,5 +1,17 @@
 [
   {
+    "category": "Web Development",
+    "title": "Beyond the Fetch Loop: Why Local-First is the Definitive Architecture of 2026",
+    "summary": "As we move into 2026, the industry is shifting away from centralized API patterns toward local-first architectures. This transition, fueled by WASM-based databases and CRDTs, is fundamentally changing how senior architects approach state management and latency.",
+    "date": "09 October 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-database-network",
+    "slug": "beyond-the-fetch-loop-why-local-first-is-the-definitive-architecture-of-2026",
+    "isPopular": false,
+    "link": "blog/beyond-the-fetch-loop-why-local-first-is-the-definitive-architecture-of-2026.html",
+    "id": 101
+  },
+  {
     "category": "Software Engineering",
     "title": "The 2026 Pivot: Why Engineering Leaders are Moving from AI-Generated Bloat to Verifiable Architecture",
     "summary": "As we move past the honeymoon phase of AI-assisted coding, 2026 has brought a sobering reality: a 40% increase in technical debt. This post explores the transition toward verifiable, capability-based systems and why 'intentional' engineering is making a massive comeback.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-kernel-space-the-2026-sre-transition-from-ebpf-to-wasm-telemetry.html",
     "id": 86
-  },
-  {
-    "category": "AI & Machine Learning",
-    "title": "The Edge AI Paradox: Performance vs. Explainability in 2026 and Beyond",
-    "summary": "By 2026, AI's omnipresence on the edge is undeniable, driving innovation across industries. Yet, as models become hyper-optimized for constrained environments, a critical debate emerges: how do we balance raw performance with the imperative for transparency, auditability, and ethical governance? This post delves into the core challenges and emerging strategies for accountable Edge AI.",
-    "date": "01 July 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?edge-ai-network-distributed-intelligence",
-    "slug": "the-edge-ai-paradox-performance-vs-explainability-in-2026-and-beyond",
-    "isPopular": false,
-    "link": "blog/the-edge-ai-paradox-performance-vs-explainability-in-2026-and-beyond.html",
-    "id": 85
   }
 ]
