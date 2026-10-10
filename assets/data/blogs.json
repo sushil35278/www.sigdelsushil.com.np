@@ -1,5 +1,17 @@
 [
   {
+    "category": "Distributed Systems",
+    "title": "Consensus in the Wild: Why Distributed Systems in 2026 Are Abandoning Cross-Region Raft",
+    "summary": "As network instability and regional data sovereignty mandates challenge flat global clouds, engineering leaders in 2026 are ditching synchronous multi-region Raft. Drawing from distributed deployments across Tokyo and Kathmandu, this deep dive explores the shift toward localized consensus, deterministic simulation testing, and causal convergence.",
+    "date": "10 October 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-server-network",
+    "slug": "consensus-in-the-wild-why-distributed-systems-in-2026-are-abandoning-cross-region-raft",
+    "isPopular": false,
+    "link": "blog/consensus-in-the-wild-why-distributed-systems-in-2026-are-abandoning-cross-region-raft.html",
+    "id": 101
+  },
+  {
     "category": "Web Development",
     "title": "Beyond the Fetch Loop: Why Local-First is the Definitive Architecture of 2026",
     "summary": "As we move into 2026, the industry is shifting away from centralized API patterns toward local-first architectures. This transition, fueled by WASM-based databases and CRDTs, is fundamentally changing how senior architects approach state management and latency.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-edge-kubernetes-the-2026-shift-to-wasm-native-gitops-in-extreme-environments.html",
     "id": 87
-  },
-  {
-    "category": "DevOps & SRE",
-    "title": "Beyond Kernel Space: The 2026 SRE Transition from eBPF to WASM Telemetry",
-    "summary": "As SRE teams encounter strict security audits and resource limits with kernel-level eBPF probes at scale, WebAssembly (WASM) is emerging as the preferred runtime for isolated, high-performance user-space telemetry.",
-    "date": "02 July 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?datacenter-rack-telemetry-glow",
-    "slug": "beyond-kernel-space-the-2026-sre-transition-from-ebpf-to-wasm-telemetry",
-    "isPopular": false,
-    "link": "blog/beyond-kernel-space-the-2026-sre-transition-from-ebpf-to-wasm-telemetry.html",
-    "id": 86
   }
 ]
