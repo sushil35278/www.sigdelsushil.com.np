@@ -1,5 +1,17 @@
 [
   {
+    "category": "Software Engineering",
+    "title": "Beyond Containers: The 2026 Architectural Shift Toward the WebAssembly Component Model",
+    "summary": "Engineering teams in 2026 are actively challenging the microservice-over-Kubernetes default. By adopting the WebAssembly Component Model and WASI 0.3, systems are achieving microsecond startup times, deterministic memory footprints, and language-agnostic modularity without container virtualization tax.",
+    "date": "11 October 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?webassembly-runtime-architecture",
+    "slug": "beyond-containers-the-2026-architectural-shift-toward-the-webassembly-component-model",
+    "isPopular": false,
+    "link": "blog/beyond-containers-the-2026-architectural-shift-toward-the-webassembly-component-model.html",
+    "id": 101
+  },
+  {
     "category": "Distributed Systems",
     "title": "Consensus in the Wild: Why Distributed Systems in 2026 Are Abandoning Cross-Region Raft",
     "summary": "As network instability and regional data sovereignty mandates challenge flat global clouds, engineering leaders in 2026 are ditching synchronous multi-region Raft. Drawing from distributed deployments across Tokyo and Kathmandu, this deep dive explores the shift toward localized consensus, deterministic simulation testing, and causal convergence.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-the-cloud-api-why-2026-is-the-year-of-deterministic-local-slms-on-webgpu.html",
     "id": 88
-  },
-  {
-    "category": "DevOps & SRE",
-    "title": "Beyond Edge-Kubernetes: The 2026 Shift to Wasm-Native GitOps in Extreme Environments",
-    "summary": "As SRE teams face the limitations of running lightweight Kubernetes distributions on constrained edge hardware, a new architecture is emerging. We explore why platforms are transitioning from K3s to WebAssembly (Wasm) runtimes managed directly by declarative GitOps controllers.",
-    "date": "03 July 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?edge-computing-server-rack",
-    "slug": "beyond-edge-kubernetes-the-2026-shift-to-wasm-native-gitops-in-extreme-environments",
-    "isPopular": false,
-    "link": "blog/beyond-edge-kubernetes-the-2026-shift-to-wasm-native-gitops-in-extreme-environments.html",
-    "id": 87
   }
 ]
