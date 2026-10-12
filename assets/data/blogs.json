@@ -1,5 +1,17 @@
 [
   {
+    "category": "Web Development",
+    "title": "Beyond Full-Stack Hydration in 2026: Why Architecture Teams Are Moving to Local-First Islands",
+    "summary": "Universal SSR hydration has hit an architectural wall in enterprise web applications. Discover why teams operating across disparate network conditions are replacing massive client-side reconcilers with resumable WebAssembly islands and SQLite-Wasm persistence in 2026.",
+    "date": "12 October 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-database-network",
+    "slug": "beyond-full-stack-hydration-in-2026-why-architecture-teams-are-moving-to-local-first-islands",
+    "isPopular": false,
+    "link": "blog/beyond-full-stack-hydration-in-2026-why-architecture-teams-are-moving-to-local-first-islands.html",
+    "id": 101
+  },
+  {
     "category": "Software Engineering",
     "title": "Beyond Containers: The 2026 Architectural Shift Toward the WebAssembly Component Model",
     "summary": "Engineering teams in 2026 are actively challenging the microservice-over-Kubernetes default. By adopting the WebAssembly Component Model and WASI 0.3, systems are achieving microsecond startup times, deterministic memory footprints, and language-agnostic modularity without container virtualization tax.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-the-scraping-loop-why-sres-in-2026-are-replacing-prometheus-with-active-ebpf-mitigations.html",
     "id": 89
-  },
-  {
-    "category": "AI & Machine Learning",
-    "title": "Beyond the Cloud API: Why 2026 is the Year of Deterministic Local SLMs on WebGPU",
-    "summary": "Engineering teams are abandoning centralized LLM APIs due to cost, latency, and compliance risks. This post explores the technical realities of deploying deterministic, quantized Small Language Models directly in the browser using WebGPU and WebAssembly.",
-    "date": "04 July 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?webgpu-silicon-chip",
-    "slug": "beyond-the-cloud-api-why-2026-is-the-year-of-deterministic-local-slms-on-webgpu",
-    "isPopular": false,
-    "link": "blog/beyond-the-cloud-api-why-2026-is-the-year-of-deterministic-local-slms-on-webgpu.html",
-    "id": 88
   }
 ]
