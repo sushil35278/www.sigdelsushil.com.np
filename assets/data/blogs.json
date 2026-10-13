@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "The Death of the Monolithic Availability Zone: Why 2026 is the Year of Functional Cloud Sharding",
+    "summary": "As centralized cloud regions buckle under the weight of sovereign data laws and edge-compute demands, senior architects are shifting toward Functional Cloud Sharding. This post explores why Japan’s strict residency requirements and Nepal’s unique topographical latency challenges are forcing a move away from the 'Triple-AZ' standard.",
+    "date": "13 October 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?decentralized-cloud-infrastructure",
+    "slug": "the-death-of-the-monolithic-availability-zone-why-2026-is-the-year-of-functional-cloud-sharding",
+    "isPopular": false,
+    "link": "blog/the-death-of-the-monolithic-availability-zone-why-2026-is-the-year-of-functional-cloud-sharding.html",
+    "id": 101
+  },
+  {
     "category": "Web Development",
     "title": "Beyond Full-Stack Hydration in 2026: Why Architecture Teams Are Moving to Local-First Islands",
     "summary": "Universal SSR hydration has hit an architectural wall in enterprise web applications. Discover why teams operating across disparate network conditions are replacing massive client-side reconcilers with resumable WebAssembly islands and SQLite-Wasm persistence in 2026.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-raft-the-2026-rise-of-physical-time-consensus-in-distributed-systems.html",
     "id": 90
-  },
-  {
-    "category": "DevOps & SRE",
-    "title": "Beyond the Scraping Loop: Why SREs in 2026 are Replacing Prometheus with Active eBPF Mitigations",
-    "summary": "The classic reactive alert-response loop is failing under the pressures of extreme network latency and microsecond SLA requirements. This article explores how modern engineering teams are shifting from passive observability to autonomous, in-kernel eBPF self-healing systems.",
-    "date": "05 July 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?linux-kernel-ebpf-architecture",
-    "slug": "beyond-the-scraping-loop-why-sres-in-2026-are-replacing-prometheus-with-active-ebpf-mitigations",
-    "isPopular": false,
-    "link": "blog/beyond-the-scraping-loop-why-sres-in-2026-are-replacing-prometheus-with-active-ebpf-mitigations.html",
-    "id": 89
   }
 ]
