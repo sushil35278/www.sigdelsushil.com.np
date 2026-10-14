@@ -1,5 +1,17 @@
 [
   {
+    "category": "Web Development",
+    "title": "Beyond Static Pixels: The Hyper-Personalization vs. Complexity Debate in Web Development 2026",
+    "summary": "As web applications mature, the push for deeply personalized user experiences is colliding with the realities of architectural complexity, privacy concerns, and developer overhead. In 2026, senior leaders are grappling with how to deliver adaptive UIs at the edge without sacrificing performance or trust. This post unpacks the debate shaping the future of web design.",
+    "date": "14 October 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?adaptive-ui-interface-ai-edge-web",
+    "slug": "beyond-static-pixels-the-hyper-personalization-vs-complexity-debate-in-web-development-2026",
+    "isPopular": false,
+    "link": "blog/beyond-static-pixels-the-hyper-personalization-vs-complexity-debate-in-web-development-2026.html",
+    "id": 101
+  },
+  {
     "category": "Cloud Architecture",
     "title": "The Death of the Monolithic Availability Zone: Why 2026 is the Year of Functional Cloud Sharding",
     "summary": "As centralized cloud regions buckle under the weight of sovereign data laws and edge-compute demands, senior architects are shifting toward Functional Cloud Sharding. This post explores why Japan’s strict residency requirements and Nepal’s unique topographical latency challenges are forcing a move away from the 'Triple-AZ' standard.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-death-of-the-sidecar-why-we-are-migrating-to-kernel-level-ebpf-service-meshes-in-2026.html",
     "id": 91
-  },
-  {
-    "category": "Distributed Systems",
-    "title": "Beyond Raft: The 2026 Rise of Physical Time Consensus in Distributed Systems",
-    "summary": "As hardware-assisted Precision Time Protocol (PTP) moves from specialized financial desks to commodity public cloud instances, distributed systems architects are debating a fundamental shift: abandoning heavy logical consensus protocols in favor of hard physical-time bounds. Here is how this shift impacts latency, consistency, and system design in 2026.",
-    "date": "06 July 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?atomic-clock-datacenter",
-    "slug": "beyond-raft-the-2026-rise-of-physical-time-consensus-in-distributed-systems",
-    "isPopular": false,
-    "link": "blog/beyond-raft-the-2026-rise-of-physical-time-consensus-in-distributed-systems.html",
-    "id": 90
   }
 ]
