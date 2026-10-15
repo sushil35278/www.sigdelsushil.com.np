@@ -1,5 +1,17 @@
 [
   {
+    "category": "DevOps & SRE",
+    "title": "Beyond the Dashboard: The Rise of Observability as Proactive Resilience in 2026",
+    "summary": "As system complexity escalates, the debate in 2026 isn't about *if* we need observability, but *how* it's evolving from reactive monitoring to proactive resilience.  This post explores this critical shift, drawing lessons from global incidents and nuanced engineering philosophies.",
+    "date": "15 October 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?observability+system+dashboard",
+    "slug": "beyond-the-dashboard-the-rise-of-observability-as-proactive-resilience-in-2026",
+    "isPopular": false,
+    "link": "blog/beyond-the-dashboard-the-rise-of-observability-as-proactive-resilience-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "Web Development",
     "title": "Beyond Static Pixels: The Hyper-Personalization vs. Complexity Debate in Web Development 2026",
     "summary": "As web applications mature, the push for deeply personalized user experiences is colliding with the realities of architectural complexity, privacy concerns, and developer overhead. In 2026, senior leaders are grappling with how to deliver adaptive UIs at the edge without sacrificing performance or trust. This post unpacks the debate shaping the future of web design.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-the-control-plane-why-we-are-swapping-multi-region-kubernetes-for-localized-wasi-outposts-in-2026.html",
     "id": 92
-  },
-  {
-    "category": "Cloud Architecture",
-    "title": "The Death of the Sidecar: Why We are Migrating to Kernel-Level eBPF Service Meshes in 2026",
-    "summary": "The classic sidecar pattern for service meshes is reaching its architectural limits. As we navigate 2026, leading platform teams are discarding Envoy-based sidecars in favor of kernel-level eBPF routing to eliminate the microservice latency tax.",
-    "date": "07 July 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?kubernetes-cluster-network-topology",
-    "slug": "the-death-of-the-sidecar-why-we-are-migrating-to-kernel-level-ebpf-service-meshes-in-2026",
-    "isPopular": false,
-    "link": "blog/the-death-of-the-sidecar-why-we-are-migrating-to-kernel-level-ebpf-service-meshes-in-2026.html",
-    "id": 91
   }
 ]
