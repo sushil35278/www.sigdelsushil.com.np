@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "Beyond the Mega-Region: Why Sovereign Cell-Based Architectures are the 2026 Standard",
+    "summary": "As global cloud outages and data residency laws reach a breaking point, senior architects are abandoning traditional multi-region patterns for Sovereign Cell-Based Architectures. This shift marks a fundamental change in how we manage blast radii and regulatory compliance in a fragmented geopolitical landscape.",
+    "date": "16 October 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-cloud-mesh",
+    "slug": "beyond-the-mega-region-why-sovereign-cell-based-architectures-are-the-2026-standard",
+    "isPopular": false,
+    "link": "blog/beyond-the-mega-region-why-sovereign-cell-based-architectures-are-the-2026-standard.html",
+    "id": 101
+  },
+  {
     "category": "DevOps & SRE",
     "title": "Beyond the Dashboard: The Rise of Observability as Proactive Resilience in 2026",
     "summary": "As system complexity escalates, the debate in 2026 isn't about *if* we need observability, but *how* it's evolving from reactive monitoring to proactive resilience.  This post explores this critical shift, drawing lessons from global incidents and nuanced engineering philosophies.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-global-consensus-why-2026-is-the-year-we-pivot-to-local-first-crdts.html",
     "id": 93
-  },
-  {
-    "category": "Cloud Architecture",
-    "title": "Beyond the Control Plane: Why We Are Swapping Multi-Region Kubernetes for Localized WASI Outposts in 2026",
-    "summary": "The dream of a unified global cloud control plane is fracturing under the weight of regulatory compliance and egress costs. This post explores why leading software architects are shifting from heavy Kubernetes clusters to localized, WebAssembly-based micro-runtimes running on sovereign edge infrastructure.",
-    "date": "08 July 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?decentralized-cloud-datacenter-edge",
-    "slug": "beyond-the-control-plane-why-we-are-swapping-multi-region-kubernetes-for-localized-wasi-outposts-in-2026",
-    "isPopular": false,
-    "link": "blog/beyond-the-control-plane-why-we-are-swapping-multi-region-kubernetes-for-localized-wasi-outposts-in-2026.html",
-    "id": 92
   }
 ]
