@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cybersecurity",
+    "title": "Post-Quantum TLS in 2026: Why ML-KEM Is Breaking Microservice Latency Budgets",
+    "summary": "As engineering organizations roll out NIST-standardized post-quantum cryptography, service meshes face unexpected latency degradation. Here is how hybrid key exchange impacts high-throughput systems and how to re-architect around MTU limits.",
+    "date": "17 October 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?quantum-cryptography-network",
+    "slug": "post-quantum-tls-in-2026-why-ml-kem-is-breaking-microservice-latency-budgets",
+    "isPopular": false,
+    "link": "blog/post-quantum-tls-in-2026-why-ml-kem-is-breaking-microservice-latency-budgets.html",
+    "id": 101
+  },
+  {
     "category": "Cloud Architecture",
     "title": "Beyond the Mega-Region: Why Sovereign Cell-Based Architectures are the 2026 Standard",
     "summary": "As global cloud outages and data residency laws reach a breaking point, senior architects are abandoning traditional multi-region patterns for Sovereign Cell-Based Architectures. This shift marks a fundamental change in how we manage blast radii and regulatory compliance in a fragmented geopolitical landscape.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-great-container-de-escalation-why-2026-belongs-to-wasi-based-edge-actors.html",
     "id": 94
-  },
-  {
-    "category": "Distributed Systems",
-    "title": "Beyond Global Consensus: Why 2026 is the Year We Pivot to Local-First CRDTs",
-    "summary": "As global WAN egress costs soar and physical latency limits persist, senior architects are moving away from centralized synchronous consensus. Discover how local-first SQLite and delta-state CRDTs are redefining distributed systems from Tokyo to rural Nepal.",
-    "date": "09 July 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?distributed-nodes-network-globe",
-    "slug": "beyond-global-consensus-why-2026-is-the-year-we-pivot-to-local-first-crdts",
-    "isPopular": false,
-    "link": "blog/beyond-global-consensus-why-2026-is-the-year-we-pivot-to-local-first-crdts.html",
-    "id": 93
   }
 ]
