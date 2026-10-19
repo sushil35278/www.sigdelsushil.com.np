@@ -1,5 +1,17 @@
 [
   {
+    "category": "AI & Machine Learning",
+    "title": "Speculative Decoding at the Edge: Why Monolithic Inference is Failing in 2026",
+    "summary": "Engineering teams are abandoning pure cloud-hosted LLM endpoints in favor of heterogeneous speculative decoding topologies. By pairing localized 1B–3B parameter draft models on local hardware with centralized verifiers, systems achieve a 3.4x reduction in p99 latency and slash compute bills.",
+    "date": "19 October 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?edge-computing-neural-network",
+    "slug": "speculative-decoding-at-the-edge-why-monolithic-inference-is-failing-in-2026",
+    "isPopular": false,
+    "link": "blog/speculative-decoding-at-the-edge-why-monolithic-inference-is-failing-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "Cybersecurity",
     "title": "The Data Dilemma of 2026: Balancing Ubiquitous Telemetry with Evolving Privacy Mandates",
     "summary": "In an era where advanced threats demand unprecedented visibility, engineering leaders are grappling with a profound ethical and technical challenge: how to gather the extensive telemetry needed for robust security without violating increasingly stringent data privacy regulations. This piece dives into the heated debate shaping architectural decisions and developer practices across the industry in 2026, offering a look at the trade-offs and emerging solutions.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/wasm-in-the-cloud-the-serverless-runtime-debate-defining-2026s-architecture-future.html",
     "id": 96
-  },
-  {
-    "category": "DevOps & SRE",
-    "title": "Beyond OpenTelemetry: Why eBPF-Driven Zero-Instrumentation is Splitting SRE Teams in 2026",
-    "summary": "As the computational cost of telemetry agents reaches a breaking point, platform engineering teams are debating a shift from SDK-based tracing to kernel-level eBPF observability. We analyze the architectural trade-offs between semantic application-level tracking and zero-overhead kernel monitoring.",
-    "date": "11 July 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?ebpf-kernel-observability-network",
-    "slug": "beyond-opentelemetry-why-ebpf-driven-zero-instrumentation-is-splitting-sre-teams-in-2026",
-    "isPopular": false,
-    "link": "blog/beyond-opentelemetry-why-ebpf-driven-zero-instrumentation-is-splitting-sre-teams-in-2026.html",
-    "id": 95
   }
 ]
