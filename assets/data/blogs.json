@@ -1,5 +1,17 @@
 [
   {
+    "category": "DevOps & SRE",
+    "title": "Beyond Declarative GitOps: The 2026 Shift to Kernel-Level Autonomous SRE",
+    "summary": "As distributed systems scale past the tolerance of 90-second CI/CD reconciliation loops, engineering organizations are abandoning pure GitOps for in-kernel autonomous remediation. Here is how SRE teams in Tokyo and Kathmandu are leveraging eBPF control planes to solve cascade failures in sub-millisecond timeframes.",
+    "date": "20 October 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?ebpf-kernel-infrastructure",
+    "slug": "beyond-declarative-gitops-the-2026-shift-to-kernel-level-autonomous-sre",
+    "isPopular": false,
+    "link": "blog/beyond-declarative-gitops-the-2026-shift-to-kernel-level-autonomous-sre.html",
+    "id": 101
+  },
+  {
     "category": "AI & Machine Learning",
     "title": "Speculative Decoding at the Edge: Why Monolithic Inference is Failing in 2026",
     "summary": "Engineering teams are abandoning pure cloud-hosted LLM endpoints in favor of heterogeneous speculative decoding topologies. By pairing localized 1B–3B parameter draft models on local hardware with centralized verifiers, systems achieve a 3.4x reduction in p99 latency and slash compute bills.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-pqc-hangover-why-ml-kem-is-breaking-high-throughput-pipelines-in-2026.html",
     "id": 97
-  },
-  {
-    "category": "Cloud Architecture",
-    "title": "Wasm in the Cloud: The Serverless Runtime Debate Defining 2026's Architecture Future",
-    "summary": "The cloud landscape is always shifting, but a foundational debate is intensifying as we head into 2026: are containers, once the undisputed champions of cloud deployment, becoming too much of a good thing? WebAssembly (Wasm) is emerging as a formidable contender, promising a leaner, faster, and more secure runtime for serverless functions and microservices, sparking fervent discussion among senior architects and engineering leaders.",
-    "date": "12 July 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?WebAssembly+cloud+architecture",
-    "slug": "wasm-in-the-cloud-the-serverless-runtime-debate-defining-2026s-architecture-future",
-    "isPopular": false,
-    "link": "blog/wasm-in-the-cloud-the-serverless-runtime-debate-defining-2026s-architecture-future.html",
-    "id": 96
   }
 ]
