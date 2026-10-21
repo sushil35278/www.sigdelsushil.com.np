@@ -1,5 +1,17 @@
 [
   {
+    "category": "Distributed Systems",
+    "title": "Beyond Chaos Engineering: Why 2026 Belongs to Deterministic Simulation Testing",
+    "summary": "As distributed systems scale beyond human comprehension, traditional testing reaches its limit. Explore why senior architects are shifting from reactive Chaos Engineering to proactive Deterministic Simulation Testing (DST) to ensure 99.999% reliability.",
+    "date": "21 October 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-systems-simulation-matrix",
+    "slug": "beyond-chaos-engineering-why-2026-belongs-to-deterministic-simulation-testing",
+    "isPopular": false,
+    "link": "blog/beyond-chaos-engineering-why-2026-belongs-to-deterministic-simulation-testing.html",
+    "id": 101
+  },
+  {
     "category": "DevOps & SRE",
     "title": "Beyond Declarative GitOps: The 2026 Shift to Kernel-Level Autonomous SRE",
     "summary": "As distributed systems scale past the tolerance of 90-second CI/CD reconciliation loops, engineering organizations are abandoning pure GitOps for in-kernel autonomous remediation. Here is how SRE teams in Tokyo and Kathmandu are leveraging eBPF control planes to solve cascade failures in sub-millisecond timeframes.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-global-consensus-why-2026-is-the-year-of-deterministic-regional-clusters.html",
     "id": 98
-  },
-  {
-    "category": "Cybersecurity",
-    "title": "The PQC Hangover: Why ML-KEM is Breaking High-Throughput Pipelines in 2026",
-    "summary": "As NIST's post-quantum cryptography standards shift from theoretical RFCs to mandatory production baselines, engineering leaders are hitting an unexpected wall. This article analyzes how ML-KEM's packet fragmentation and CPU overhead are impacting low-latency distributed networks from Tokyo to Kathmandu.",
-    "date": "13 July 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?cryptography-quantum-datacenter",
-    "slug": "the-pqc-hangover-why-ml-kem-is-breaking-high-throughput-pipelines-in-2026",
-    "isPopular": false,
-    "link": "blog/the-pqc-hangover-why-ml-kem-is-breaking-high-throughput-pipelines-in-2026.html",
-    "id": 97
   }
 ]
