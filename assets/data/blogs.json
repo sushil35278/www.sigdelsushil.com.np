@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cybersecurity",
+    "title": "Software Supply Chain Security in 2026: The Hard-Won Battle for Trust and Developer Velocity",
+    "summary": "By 2026, the rhetoric around software supply chain security has shifted from 'if' to 'how'. Engineering leaders are now grappling with the practicalities of mandating and scaling robust security measures across complex ecosystems, often at odds with developer agility. This post delves into the core debates and offers practical strategies for navigating this essential, yet challenging, domain.",
+    "date": "22 October 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?software-supply-chain-security-futuristic",
+    "slug": "software-supply-chain-security-in-2026-the-hard-won-battle-for-trust-and-developer-velocity",
+    "isPopular": false,
+    "link": "blog/software-supply-chain-security-in-2026-the-hard-won-battle-for-trust-and-developer-velocity.html",
+    "id": 101
+  },
+  {
     "category": "Distributed Systems",
     "title": "Beyond Chaos Engineering: Why 2026 Belongs to Deterministic Simulation Testing",
     "summary": "As distributed systems scale beyond human comprehension, traditional testing reaches its limit. Explore why senior architects are shifting from reactive Chaos Engineering to proactive Deterministic Simulation Testing (DST) to ensure 99.999% reliability.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/beyond-edge-rendering-why-local-first-web-architectures-are-dividing-engineering-teams-in-2026.html",
     "id": 99
-  },
-  {
-    "category": "Distributed Systems",
-    "title": "Beyond Global Consensus: Why 2026 is the Year of Deterministic Regional Clusters",
-    "summary": "As we move further into 2026, the reliance on heavyweight consensus protocols like Raft and Paxos across global spans is facing a reckoning. This post explores the technical pivot toward locally deterministic edge clusters and how this architectural shift is solving the latency paradox between urban hubs and remote nodes.",
-    "date": "14 July 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?distributed-edge-server-matrix",
-    "slug": "beyond-global-consensus-why-2026-is-the-year-of-deterministic-regional-clusters",
-    "isPopular": false,
-    "link": "blog/beyond-global-consensus-why-2026-is-the-year-of-deterministic-regional-clusters.html",
-    "id": 98
   }
 ]
