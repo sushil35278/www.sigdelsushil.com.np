@@ -1,5 +1,17 @@
 [
   {
+    "category": "Software Engineering",
+    "title": "Beyond Copilot: The 2026 Debate on Autonomous Code Generation Agents and the Evolving Developer Role",
+    "summary": "By 2026, the discussion around AI's role in software development has moved beyond mere autocomplete. Autonomous Code Generation Agents (ACGAs) are redefining what it means to write software, sparking intense debate among senior developers and engineering leaders globally. This post delves into the profound implications, challenges, and opportunities presented by this transformative shift.",
+    "date": "24 October 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?human-AI-coding-collaboration-interface",
+    "slug": "beyond-copilot-the-2026-debate-on-autonomous-code-generation-agents-and-the-evolving-developer-role",
+    "isPopular": false,
+    "link": "blog/beyond-copilot-the-2026-debate-on-autonomous-code-generation-agents-and-the-evolving-developer-role.html",
+    "id": 101
+  },
+  {
     "category": "AI & Machine Learning",
     "title": "Speculative Decoding at the Edge: Why Senior Architects Are Decoupling from Frontier Models in 2026",
     "summary": "In 2026, the escalating unit economics and unpredictable p99 latencies of centralized frontier model APIs have forced an architectural shift. Engineering teams are turning to speculative decoding pipelines using localized draft models to slash inference costs by 70% while guaranteeing deterministic runtime performance.",
@@ -1186,17 +1198,5 @@
     "isPopular": false,
     "link": "blog/the-death-of-the-api-loop-why-architects-are-moving-to-local-semantic-routing-in-2026.html",
     "id": 101
-  },
-  {
-    "category": "Cybersecurity",
-    "title": "The Fragmented Reality of Post-Quantum Cryptography: Why ML-KEM is Breaking Real-World Networks in 2026",
-    "summary": "As organizations transition to NIST-standardized post-quantum algorithms, engineering teams are facing a harsh reality: ML-KEM key sizes are causing severe IP fragmentation and TLS handshake failures on high-latency networks. Here is how senior architects are balancing quantum safety with real-world network performance.",
-    "date": "16 July 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?post-quantum-cryptography-network-cables",
-    "slug": "the-fragmented-reality-of-post-quantum-cryptography-why-ml-kem-is-breaking-real-world-networks-in-2026",
-    "isPopular": false,
-    "link": "blog/the-fragmented-reality-of-post-quantum-cryptography-why-ml-kem-is-breaking-real-world-networks-in-2026.html",
-    "id": 100
   }
 ]
