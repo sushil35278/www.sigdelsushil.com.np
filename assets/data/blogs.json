@@ -1,5 +1,17 @@
 [
   {
+    "category": "Distributed Systems",
+    "title": "Beyond Multi-Region Raft in 2026: The Shift to Deterministic State Machine Replication",
+    "summary": "As multi-region deployments expand into emerging edge markets, teams are hitting a hard latency ceiling with traditional Paxos and Raft implementations. In 2026, senior architects are turning toward deterministic state machine replication to balance strong consistency with heterogeneous network realities.",
+    "date": "25 October 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-systems-network",
+    "slug": "beyond-multi-region-raft-in-2026-the-shift-to-deterministic-state-machine-replication",
+    "isPopular": false,
+    "link": "blog/beyond-multi-region-raft-in-2026-the-shift-to-deterministic-state-machine-replication.html",
+    "id": 101
+  },
+  {
     "category": "Software Engineering",
     "title": "Beyond Copilot: The 2026 Debate on Autonomous Code Generation Agents and the Evolving Developer Role",
     "summary": "By 2026, the discussion around AI's role in software development has moved beyond mere autocomplete. Autonomous Code Generation Agents (ACGAs) are redefining what it means to write software, sparking intense debate among senior developers and engineering leaders globally. This post delves into the profound implications, challenges, and opportunities presented by this transformative shift.",
@@ -1185,18 +1197,6 @@
     "slug": "beyond-the-sbom-why-2026-is-the-year-of-mandatory-runtime-attestation",
     "isPopular": false,
     "link": "blog/beyond-the-sbom-why-2026-is-the-year-of-mandatory-runtime-attestation.html",
-    "id": 101
-  },
-  {
-    "category": "AI & Machine Learning",
-    "title": "The Death of the API Loop: Why Architects are Moving to Local Semantic Routing in 2026",
-    "summary": "As network latency, rising egress costs, and data sovereignty laws expose the limits of centralized LLM APIs, engineering leaders are shifting toward edge-native semantic routing. Learn how combining local WebAssembly-driven embedding models with specialized edge NPUs is reshaping enterprise AI architecture.",
-    "date": "17 July 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?edge-computing-neural-network",
-    "slug": "the-death-of-the-api-loop-why-architects-are-moving-to-local-semantic-routing-in-2026",
-    "isPopular": false,
-    "link": "blog/the-death-of-the-api-loop-why-architects-are-moving-to-local-semantic-routing-in-2026.html",
     "id": 101
   }
 ]
