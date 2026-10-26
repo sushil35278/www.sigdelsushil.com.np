@@ -1,6 +1,18 @@
 [
   {
     "category": "Distributed Systems",
+    "title": "Rethinking Multi-Raft in 2026: The Rise of Deterministic Transaction Scheduling",
+    "summary": "Operating tens of thousands of Multi-Raft consensus groups across heterogeneous global infrastructure has revealed severe latency and operational bottlenecks. In 2026, distributed systems architects are migrating toward deterministic transaction ordering to bypass distributed commit protocols entirely.",
+    "date": "26 October 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-computing-network",
+    "slug": "rethinking-multi-raft-in-2026-the-rise-of-deterministic-transaction-scheduling",
+    "isPopular": false,
+    "link": "blog/rethinking-multi-raft-in-2026-the-rise-of-deterministic-transaction-scheduling.html",
+    "id": 101
+  },
+  {
+    "category": "Distributed Systems",
     "title": "Beyond Multi-Region Raft in 2026: The Shift to Deterministic State Machine Replication",
     "summary": "As multi-region deployments expand into emerging edge markets, teams are hitting a hard latency ceiling with traditional Paxos and Raft implementations. In 2026, senior architects are turning toward deterministic state machine replication to balance strong consistency with heterogeneous network realities.",
     "date": "25 October 2026",
@@ -1185,18 +1197,6 @@
     "slug": "the-post-quantum-cryptography-dilemma-why-hybrid-key-exchange-is-choking-constrained-networks-in-2026",
     "isPopular": false,
     "link": "blog/the-post-quantum-cryptography-dilemma-why-hybrid-key-exchange-is-choking-constrained-networks-in-2026.html",
-    "id": 101
-  },
-  {
-    "category": "Cybersecurity",
-    "title": "Beyond the SBOM: Why 2026 is the Year of Mandatory Runtime Attestation",
-    "summary": "Static Software Bill of Materials (SBOMs) are no longer enough to satisfy regulatory and security demands. We examine the shift toward live, cryptographic provenance and how engineering leaders are restructuring CI/CD pipelines to survive the era of automated supply chain exploits.",
-    "date": "18 July 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?cryptographic-binary-security",
-    "slug": "beyond-the-sbom-why-2026-is-the-year-of-mandatory-runtime-attestation",
-    "isPopular": false,
-    "link": "blog/beyond-the-sbom-why-2026-is-the-year-of-mandatory-runtime-attestation.html",
     "id": 101
   }
 ]
