@@ -1,5 +1,17 @@
 [
   {
+    "category": "DevOps & SRE",
+    "title": "The Observability Retraction: Why 2026 SRE Teams Are Replacing Blanket Telemetry with Kernel-Level eBPF Sampling",
+    "summary": "Observability bills in 2026 routinely rival compute spend, forcing engineering leaders to abandon 100% ingestion pipelines. Here is why high-throughput architectures are shifting toward kernel-level eBPF tail-sampling and on-demand dynamic profiling.",
+    "date": "27 October 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?server-telemetry-datacenter",
+    "slug": "the-observability-retraction-why-2026-sre-teams-are-replacing-blanket-telemetry-with-kernel-level-ebpf-sampling",
+    "isPopular": false,
+    "link": "blog/the-observability-retraction-why-2026-sre-teams-are-replacing-blanket-telemetry-with-kernel-level-ebpf-sampling.html",
+    "id": 101
+  },
+  {
     "category": "Distributed Systems",
     "title": "Rethinking Multi-Raft in 2026: The Rise of Deterministic Transaction Scheduling",
     "summary": "Operating tens of thousands of Multi-Raft consensus groups across heterogeneous global infrastructure has revealed severe latency and operational bottlenecks. In 2026, distributed systems architects are migrating toward deterministic transaction ordering to bypass distributed commit protocols entirely.",
@@ -1185,18 +1197,6 @@
     "slug": "the-post-quantum-fragmentation-crisis-why-ml-kem-is-breaking-our-networks-in-2026",
     "isPopular": false,
     "link": "blog/the-post-quantum-fragmentation-crisis-why-ml-kem-is-breaking-our-networks-in-2026.html",
-    "id": 101
-  },
-  {
-    "category": "Cybersecurity",
-    "title": "The Post-Quantum Cryptography Dilemma: Why Hybrid Key Exchange is Choking Constrained Networks in 2026",
-    "summary": "As NIST's FIPS post-quantum standards move from compliance mandates to production deployments, engineering leaders are facing a silent performance crisis. This article analyzes the real-world architectural costs of hybrid ML-KEM key exchanges on legacy and edge infrastructure.",
-    "date": "19 July 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?quantum-cryptography-network",
-    "slug": "the-post-quantum-cryptography-dilemma-why-hybrid-key-exchange-is-choking-constrained-networks-in-2026",
-    "isPopular": false,
-    "link": "blog/the-post-quantum-cryptography-dilemma-why-hybrid-key-exchange-is-choking-constrained-networks-in-2026.html",
     "id": 101
   }
 ]
