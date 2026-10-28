@@ -1,6 +1,18 @@
 [
   {
     "category": "DevOps & SRE",
+    "title": "The Post-AI SRE Realignment of 2026: Deterministic eBPF Over Autonomous Hallucinations",
+    "summary": "After two years of erratic incident auto-remediation tools breaking production systems, engineering teams in 2026 are shifting back to deterministic, kernel-level verification. Here is why SRE leaders are replacing probabilistic LLM remediators with eBPF-driven runtime invariants.",
+    "date": "28 October 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?server-rack-datacenter-ebpf",
+    "slug": "the-post-ai-sre-realignment-of-2026-deterministic-ebpf-over-autonomous-hallucinations",
+    "isPopular": false,
+    "link": "blog/the-post-ai-sre-realignment-of-2026-deterministic-ebpf-over-autonomous-hallucinations.html",
+    "id": 101
+  },
+  {
+    "category": "DevOps & SRE",
     "title": "The Observability Retraction: Why 2026 SRE Teams Are Replacing Blanket Telemetry with Kernel-Level eBPF Sampling",
     "summary": "Observability bills in 2026 routinely rival compute spend, forcing engineering leaders to abandon 100% ingestion pipelines. Here is why high-throughput architectures are shifting toward kernel-level eBPF tail-sampling and on-demand dynamic profiling.",
     "date": "27 October 2026",
@@ -1185,18 +1197,6 @@
     "slug": "the-post-quantum-tax-inside-the-2026-battle-over-ml-kem-and-packet-fragmentation",
     "isPopular": false,
     "link": "blog/the-post-quantum-tax-inside-the-2026-battle-over-ml-kem-and-packet-fragmentation.html",
-    "id": 101
-  },
-  {
-    "category": "Cybersecurity",
-    "title": "The Post-Quantum Fragmentation Crisis: Why ML-KEM is Breaking Our Networks in 2026",
-    "summary": "As organizations rush to comply with post-quantum mandates, engineering teams are running into a silent killer: MTU fragmentation. Discover how larger public keys are breaking TCP handshakes and how to architect around these structural network limits.",
-    "date": "20 July 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?post-quantum-cryptography-network",
-    "slug": "the-post-quantum-fragmentation-crisis-why-ml-kem-is-breaking-our-networks-in-2026",
-    "isPopular": false,
-    "link": "blog/the-post-quantum-fragmentation-crisis-why-ml-kem-is-breaking-our-networks-in-2026.html",
     "id": 101
   }
 ]
