@@ -1,5 +1,17 @@
 [
   {
+    "category": "AI & Machine Learning",
+    "title": "Beyond FP8: Why Engineering Teams Are Migrating to 1.58-Bit Ternary Architectures in 2026",
+    "summary": "The relentless scaling of GPU memory bandwidth has forced an architectural reckoning. In 2026, production engineering teams are systematically swapping floating-point inference pipelines for ternary weight architectures, dramatically slashing power budgets across distributed infrastructure.",
+    "date": "29 October 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?processor-architecture",
+    "slug": "beyond-fp8-why-engineering-teams-are-migrating-to-158-bit-ternary-architectures-in-2026",
+    "isPopular": false,
+    "link": "blog/beyond-fp8-why-engineering-teams-are-migrating-to-158-bit-ternary-architectures-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "DevOps & SRE",
     "title": "The Post-AI SRE Realignment of 2026: Deterministic eBPF Over Autonomous Hallucinations",
     "summary": "After two years of erratic incident auto-remediation tools breaking production systems, engineering teams in 2026 are shifting back to deterministic, kernel-level verification. Here is why SRE leaders are replacing probabilistic LLM remediators with eBPF-driven runtime invariants.",
@@ -1185,18 +1197,6 @@
     "slug": "sre-in-2026-the-great-platform-engineering-debate-to-build-or-to-consume",
     "isPopular": false,
     "link": "blog/sre-in-2026-the-great-platform-engineering-debate-to-build-or-to-consume.html",
-    "id": 101
-  },
-  {
-    "category": "Cybersecurity",
-    "title": "The Post-Quantum Tax: Inside the 2026 Battle Over ML-KEM and Packet Fragmentation",
-    "summary": "As senior engineering teams transition production systems to quantum-resistant algorithms in 2026, a quiet crisis is emerging at the network layer. This article explores how NIST's post-quantum cryptography standards break legacy MTU limits, degrade performance over unstable networks, and require immediate architectural remediation.",
-    "date": "21 July 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?quantum-cryptography-network",
-    "slug": "the-post-quantum-tax-inside-the-2026-battle-over-ml-kem-and-packet-fragmentation",
-    "isPopular": false,
-    "link": "blog/the-post-quantum-tax-inside-the-2026-battle-over-ml-kem-and-packet-fragmentation.html",
     "id": 101
   }
 ]
