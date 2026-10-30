@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "Data Gravity's Grip: Why 2026 Sees a Strategic Retreat from True Multi-Cloud for Core Workloads",
+    "summary": "The promise of 'true multi-cloud' once captivated engineering leaders, offering vendor independence and ultimate flexibility. Yet, as we navigate 2026, many senior developers are witnessing a quiet, strategic pivot: a conscious consolidation of core workloads back onto primary hyperscaler platforms. This isn't a rejection of cloud, but a pragmatic re-evaluation driven by the unyielding forces of data gravity, operational overhead, and the pursuit of deep cloud-native optimization.",
+    "date": "30 October 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?cloud-architecture-data-gravity",
+    "slug": "data-gravitys-grip-why-2026-sees-a-strategic-retreat-from-true-multi-cloud-for-core-workloads",
+    "isPopular": false,
+    "link": "blog/data-gravitys-grip-why-2026-sees-a-strategic-retreat-from-true-multi-cloud-for-core-workloads.html",
+    "id": 101
+  },
+  {
     "category": "AI & Machine Learning",
     "title": "Beyond FP8: Why Engineering Teams Are Migrating to 1.58-Bit Ternary Architectures in 2026",
     "summary": "The relentless scaling of GPU memory bandwidth has forced an architectural reckoning. In 2026, production engineering teams are systematically swapping floating-point inference pipelines for ternary weight architectures, dramatically slashing power budgets across distributed infrastructure.",
@@ -1185,18 +1197,6 @@
     "slug": "zero-trust-at-the-kernel-why-2026-engineering-leaders-are-replacing-sidecars-with-ebpf",
     "isPopular": false,
     "link": "blog/zero-trust-at-the-kernel-why-2026-engineering-leaders-are-replacing-sidecars-with-ebpf.html",
-    "id": 101
-  },
-  {
-    "category": "DevOps & SRE",
-    "title": "SRE in 2026: The Great Platform Engineering Debate – To Build or To Consume?",
-    "summary": "The rise of Platform Engineering promises to revolutionize developer experience, but it poses a critical question for Site Reliability Engineering (SRE) teams: Do we become the architects and builders of these internal platforms, or do we pivot to expertly consuming and optimizing them? This article explores the nuanced debate shaping the future of SRE.",
-    "date": "22 July 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?platform-engineering-blueprint",
-    "slug": "sre-in-2026-the-great-platform-engineering-debate-to-build-or-to-consume",
-    "isPopular": false,
-    "link": "blog/sre-in-2026-the-great-platform-engineering-debate-to-build-or-to-consume.html",
     "id": 101
   }
 ]
