@@ -1,5 +1,17 @@
 [
   {
+    "category": "DevOps & SRE",
+    "title": "The Great Re-centralization: Why DevOps & SRE Leaders in 2026 Are Debating Developer Autonomy vs. Platform Control",
+    "summary": "The pendulum is swinging. After years of pushing 'you build it, you run it' to its limits, engineering leaders in 2026 are grappling with a renewed drive for standardization. This post explores the friction between developer autonomy and the imperative for cohesive, secure, and efficient internal platforms.",
+    "date": "31 October 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?platform-engineering-blueprint",
+    "slug": "the-great-re-centralization-why-devops-sre-leaders-in-2026-are-debating-developer-autonomy-vs-platform-control",
+    "isPopular": false,
+    "link": "blog/the-great-re-centralization-why-devops-sre-leaders-in-2026-are-debating-developer-autonomy-vs-platform-control.html",
+    "id": 101
+  },
+  {
     "category": "Cloud Architecture",
     "title": "Data Gravity's Grip: Why 2026 Sees a Strategic Retreat from True Multi-Cloud for Core Workloads",
     "summary": "The promise of 'true multi-cloud' once captivated engineering leaders, offering vendor independence and ultimate flexibility. Yet, as we navigate 2026, many senior developers are witnessing a quiet, strategic pivot: a conscious consolidation of core workloads back onto primary hyperscaler platforms. This isn't a rejection of cloud, but a pragmatic re-evaluation driven by the unyielding forces of data gravity, operational overhead, and the pursuit of deep cloud-native optimization.",
@@ -1185,18 +1197,6 @@
     "slug": "cloud-architecture-in-2026-ditching-kubernetes-pods-for-webassembly-micro-runtimes",
     "isPopular": false,
     "link": "blog/cloud-architecture-in-2026-ditching-kubernetes-pods-for-webassembly-micro-runtimes.html",
-    "id": 101
-  },
-  {
-    "category": "Cybersecurity",
-    "title": "Zero-Trust at the Kernel: Why 2026 Engineering Leaders Are Replacing Sidecars with eBPF",
-    "summary": "As microservice architectures hit performance limits, the traditional user-space sidecar proxy model for Zero Trust security is causing severe latency and cost inflation. Senior architects are turning to kernel-enforced eBPF security probes to handle identity and network policy directly at the OS boundary.",
-    "date": "23 July 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?linux-kernel-ebpf-network",
-    "slug": "zero-trust-at-the-kernel-why-2026-engineering-leaders-are-replacing-sidecars-with-ebpf",
-    "isPopular": false,
-    "link": "blog/zero-trust-at-the-kernel-why-2026-engineering-leaders-are-replacing-sidecars-with-ebpf.html",
     "id": 101
   }
 ]
