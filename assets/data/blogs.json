@@ -1,5 +1,17 @@
 [
   {
+    "category": "AI & Machine Learning",
+    "title": "The Lean AI Imperative: Why Specialized Models Outperform Generalist Giants in 2026",
+    "summary": "In 2026, engineering leaders are grappling with the immense operational costs and practical limitations of ever-larger generalist AI models. This post dives deep into the strategic shift towards smaller, specialized, and highly efficient models, arguing why 'lean AI' is becoming the pragmatic choice for specific, high-value business challenges.",
+    "date": "02 November 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?lean-ai-edge-computing-specialized-models-2026",
+    "slug": "the-lean-ai-imperative-why-specialized-models-outperform-generalist-giants-in-2026",
+    "isPopular": false,
+    "link": "blog/the-lean-ai-imperative-why-specialized-models-outperform-generalist-giants-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "DevOps & SRE",
     "title": "The Death of the Sidecar and the Rise of Kernel-Native SRE: DevOps in 2026",
     "summary": "As we move into 2026, the industry is witnessing a massive migration away from sidecar-heavy architectures toward eBPF-driven, kernel-native observability and security. This post explores why senior engineers are trading YAML-heavy service meshes for programmatic control planes and what this means for infrastructure efficiency.",
@@ -1185,18 +1197,6 @@
     "slug": "beyond-the-bundle-why-2026-is-the-year-of-edge-native-wasm-and-the-death-of-the-heavy-spa",
     "isPopular": false,
     "link": "blog/beyond-the-bundle-why-2026-is-the-year-of-edge-native-wasm-and-the-death-of-the-heavy-spa.html",
-    "id": 101
-  },
-  {
-    "category": "Cybersecurity",
-    "title": "Supply Chain Security's New Frontier: The 2026 Debate Over Verifiable Builds and AI-Generated Code",
-    "summary": "In 2026, the specter of SolarWinds and Log4j still looms, but the battlefield for software supply chain security has shifted. Engineering leaders are locked in a critical debate: how do we secure our systems when code is increasingly ephemeral, AI-generated, and sourced from a vast, often opaque ecosystem? This isn't just about scanning for known CVEs; it's about deep, verifiable integrity from commit to runtime.",
-    "date": "25 July 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?software-supply-chain-security-blockchain-attestation",
-    "slug": "supply-chain-securitys-new-frontier-the-2026-debate-over-verifiable-builds-and-ai-generated-code",
-    "isPopular": false,
-    "link": "blog/supply-chain-securitys-new-frontier-the-2026-debate-over-verifiable-builds-and-ai-generated-code.html",
     "id": 101
   }
 ]
