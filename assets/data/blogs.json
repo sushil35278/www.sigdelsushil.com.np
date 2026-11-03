@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "Beyond Regions: The 2026 Debate on Cloud Data Sovereignty Zones",
+    "summary": "The global cloud landscape in 2026 is grappling with an escalating demand for granular data residency. This post explores the emergence of 'Sovereign Micro-Regions' – a declarative approach to control data processing and storage far beyond traditional cloud regions – and the complex architectural challenges and opportunities it presents for engineering leaders.",
+    "date": "03 November 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?cloud+data+sovereignty+globe",
+    "slug": "beyond-regions-the-2026-debate-on-cloud-data-sovereignty-zones",
+    "isPopular": false,
+    "link": "blog/beyond-regions-the-2026-debate-on-cloud-data-sovereignty-zones.html",
+    "id": 101
+  },
+  {
     "category": "AI & Machine Learning",
     "title": "The Lean AI Imperative: Why Specialized Models Outperform Generalist Giants in 2026",
     "summary": "In 2026, engineering leaders are grappling with the immense operational costs and practical limitations of ever-larger generalist AI models. This post dives deep into the strategic shift towards smaller, specialized, and highly efficient models, arguing why 'lean AI' is becoming the pragmatic choice for specific, high-value business challenges.",
@@ -1185,18 +1197,6 @@
     "slug": "the-great-rebalancing-are-framework-monoliths-fading-for-a-standards-first-web-in-2026",
     "isPopular": false,
     "link": "blog/the-great-rebalancing-are-framework-monoliths-fading-for-a-standards-first-web-in-2026.html",
-    "id": 101
-  },
-  {
-    "category": "Web Development",
-    "title": "Beyond the Bundle: Why 2026 is the Year of Edge-Native Wasm and the Death of the Heavy SPA",
-    "summary": "As the performance ceiling of JavaScript-heavy Single Page Applications becomes a liability, senior architects are pivoting toward Edge-Native WebAssembly. This shift moves orchestration from the browser to distributed nodes, solving the latency challenges found in both hyper-connected cities like Tokyo and bandwidth-constrained regions like Kathmandu.",
-    "date": "26 July 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?edge-computing-serverless-architecture",
-    "slug": "beyond-the-bundle-why-2026-is-the-year-of-edge-native-wasm-and-the-death-of-the-heavy-spa",
-    "isPopular": false,
-    "link": "blog/beyond-the-bundle-why-2026-is-the-year-of-edge-native-wasm-and-the-death-of-the-heavy-spa.html",
     "id": 101
   }
 ]
