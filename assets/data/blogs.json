@@ -1,5 +1,17 @@
 [
   {
+    "category": "Software Engineering",
+    "title": "The Great Rebalancing: Rethinking Service Granularity in 2026 – Beyond Nano-services",
+    "summary": "For years, the industry championed extreme microservice decomposition. But as we navigate 2026, many senior engineering leaders are grappling with the unintended consequences of 'nano-services': soaring operational costs, cognitive overhead, and fragile systems. This post delves into the pressing debate around service granularity, advocating for a pragmatic shift towards well-defined 'contextual components'—a crucial rebalancing act for the future of software architecture.",
+    "date": "04 November 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?software-architecture-rebalancing",
+    "slug": "the-great-rebalancing-rethinking-service-granularity-in-2026-beyond-nano-services",
+    "isPopular": false,
+    "link": "blog/the-great-rebalancing-rethinking-service-granularity-in-2026-beyond-nano-services.html",
+    "id": 101
+  },
+  {
     "category": "Cloud Architecture",
     "title": "Beyond Regions: The 2026 Debate on Cloud Data Sovereignty Zones",
     "summary": "The global cloud landscape in 2026 is grappling with an escalating demand for granular data residency. This post explores the emergence of 'Sovereign Micro-Regions' – a declarative approach to control data processing and storage far beyond traditional cloud regions – and the complex architectural challenges and opportunities it presents for engineering leaders.",
@@ -1185,18 +1197,6 @@
     "slug": "identity-fabric-in-2026-why-adaptive-access-control-is-sparking-the-next-big-cybersecurity-debate-for-engineering-leaders",
     "isPopular": false,
     "link": "blog/identity-fabric-in-2026-why-adaptive-access-control-is-sparking-the-next-big-cybersecurity-debate-for-engineering-leaders.html",
-    "id": 101
-  },
-  {
-    "category": "Web Development",
-    "title": "The Great Rebalancing: Are Framework Monoliths Fading for a Standards-First Web in 2026?",
-    "summary": "The web development landscape in 2026 is grappling with a profound shift: the increasing viability of standards-first approaches challenging the long-held dominance of monolithic JavaScript frameworks. This post dives deep into the 'Intrinsic Web Components' movement, exploring why senior developers and engineering leaders are re-evaluating their core architectural choices and pushing for a leaner, more resilient web.",
-    "date": "27 July 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?web-components-architecture-diagram-future",
-    "slug": "the-great-rebalancing-are-framework-monoliths-fading-for-a-standards-first-web-in-2026",
-    "isPopular": false,
-    "link": "blog/the-great-rebalancing-are-framework-monoliths-fading-for-a-standards-first-web-in-2026.html",
     "id": 101
   }
 ]
