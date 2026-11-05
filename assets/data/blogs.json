@@ -1,5 +1,17 @@
 [
   {
+    "category": "DevOps & SRE",
+    "title": "Beyond YAML: The Rise of Deterministic Infrastructure Policy in 2026",
+    "summary": "As we move past the era of 'YAML hell,' senior SREs are shifting toward functional, deterministic infrastructure logic. This post explores why 2026 marks the definitive transition from declarative manifests to compiled policy enforcement.",
+    "date": "05 November 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?ebpf-network-topology",
+    "slug": "beyond-yaml-the-rise-of-deterministic-infrastructure-policy-in-2026",
+    "isPopular": false,
+    "link": "blog/beyond-yaml-the-rise-of-deterministic-infrastructure-policy-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "Software Engineering",
     "title": "The Great Rebalancing: Rethinking Service Granularity in 2026 – Beyond Nano-services",
     "summary": "For years, the industry championed extreme microservice decomposition. But as we navigate 2026, many senior engineering leaders are grappling with the unintended consequences of 'nano-services': soaring operational costs, cognitive overhead, and fragile systems. This post delves into the pressing debate around service granularity, advocating for a pragmatic shift towards well-defined 'contextual components'—a crucial rebalancing act for the future of software architecture.",
@@ -1185,18 +1197,6 @@
     "slug": "the-post-quantum-migration-debt-why-2026-is-the-year-of-crypto-agility",
     "isPopular": false,
     "link": "blog/the-post-quantum-migration-debt-why-2026-is-the-year-of-crypto-agility.html",
-    "id": 101
-  },
-  {
-    "category": "Cybersecurity",
-    "title": "Identity Fabric in 2026: Why Adaptive Access Control is Sparking the Next Big Cybersecurity Debate for Engineering Leaders",
-    "summary": "Traditional Identity and Access Management (IAM) is buckling under the weight of hyperscale, multi-cloud architectures. Enter Identity Fabric – a decentralized, context-aware approach to access control. But as enterprises grapple with its promises of resilience and agility, a fierce debate is emerging among engineering leaders regarding its complexity, cost, and the very definition of security.",
-    "date": "28 July 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?Adaptive+Security+Network+Diagram",
-    "slug": "identity-fabric-in-2026-why-adaptive-access-control-is-sparking-the-next-big-cybersecurity-debate-for-engineering-leaders",
-    "isPopular": false,
-    "link": "blog/identity-fabric-in-2026-why-adaptive-access-control-is-sparking-the-next-big-cybersecurity-debate-for-engineering-leaders.html",
     "id": 101
   }
 ]
