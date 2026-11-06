@@ -1,5 +1,17 @@
 [
   {
+    "category": "AI & Machine Learning",
+    "title": "The Great Embodiment Debate: AI's Future in Physical Systems (2026)",
+    "summary": "As AI's cognitive prowess expands, a critical debate rages: how much should AI 'understand' and interact with the physical world? This post explores the challenges and opportunities of embodied AI, drawing on real-world engineering and lessons from both serene landscapes and bustling metropolises.",
+    "date": "06 November 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?robotics+control+panel",
+    "slug": "the-great-embodiment-debate-ais-future-in-physical-systems-2026",
+    "isPopular": false,
+    "link": "blog/the-great-embodiment-debate-ais-future-in-physical-systems-2026.html",
+    "id": 101
+  },
+  {
     "category": "DevOps & SRE",
     "title": "Beyond YAML: The Rise of Deterministic Infrastructure Policy in 2026",
     "summary": "As we move past the era of 'YAML hell,' senior SREs are shifting toward functional, deterministic infrastructure logic. This post explores why 2026 marks the definitive transition from declarative manifests to compiled policy enforcement.",
@@ -1185,18 +1197,6 @@
     "slug": "local-first-crdts-vs-edge-ssr-in-2026-architectural-trade-offs-for-high-availability-web-apps",
     "isPopular": false,
     "link": "blog/local-first-crdts-vs-edge-ssr-in-2026-architectural-trade-offs-for-high-availability-web-apps.html",
-    "id": 101
-  },
-  {
-    "category": "Cybersecurity",
-    "title": "The Post-Quantum Migration Debt: Why 2026 is the Year of Crypto-Agility",
-    "summary": "As NIST-standardized algorithms like ML-KEM become the baseline, engineering leaders are facing a massive 'cryptographic debt' crisis. This post explores why 2026 is the year we move from static encryption to programmatic crypto-agility.",
-    "date": "29 July 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?quantum-cryptography-circuit",
-    "slug": "the-post-quantum-migration-debt-why-2026-is-the-year-of-crypto-agility",
-    "isPopular": false,
-    "link": "blog/the-post-quantum-migration-debt-why-2026-is-the-year-of-crypto-agility.html",
     "id": 101
   }
 ]
