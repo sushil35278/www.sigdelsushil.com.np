@@ -1,5 +1,17 @@
 [
   {
+    "category": "Web Development",
+    "title": "The Edge-Native Frontend: Debating Web Development's Serverless-First Future in 2026",
+    "summary": "In 2026, a fundamental architectural shift is taking root in web development: the rise of the 'serverless-first' frontend. This isn't just about static assets; it's about deeply integrating serverless functions and edge computing to deliver unparalleled performance and dynamic experiences. But as engineering leaders embrace this paradigm, debates rage on regarding its true cost, complexity, and the evolving developer experience.",
+    "date": "08 November 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?edge-native+web+architecture+2026",
+    "slug": "the-edge-native-frontend-debating-web-developments-serverless-first-future-in-2026",
+    "isPopular": false,
+    "link": "blog/the-edge-native-frontend-debating-web-developments-serverless-first-future-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "AI & Machine Learning",
     "title": "The 'Intelligent Agent' Divide: Navigating the 2026 Debate on Autonomous AI Deployment",
     "summary": "In 2026, senior engineers and architects are grappling with a fundamental shift: the growing autonomy of AI agents. This post dissects the escalating debate around their responsible deployment, from operational integration to ethical considerations.",
@@ -1185,18 +1197,6 @@
     "slug": "micro-model-architectures-the-2026-debate-on-scaling-ai-beyond-monoliths",
     "isPopular": false,
     "link": "blog/micro-model-architectures-the-2026-debate-on-scaling-ai-beyond-monoliths.html",
-    "id": 101
-  },
-  {
-    "category": "AI & Machine Learning",
-    "title": "The GFM vs. SLM Divide: Navigating Enterprise AI Strategy in 2026",
-    "summary": "Engineering leaders in 2026 face a critical architectural decision: harness the broad power of generalized foundational models or invest in highly specialized, smaller alternatives. This post dives into the complex trade-offs, offering a pragmatic guide for navigating this evolving landscape of cost, performance, and data sensitivity.",
-    "date": "31 July 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?neural-network-specialized-general",
-    "slug": "the-gfm-vs-slm-divide-navigating-enterprise-ai-strategy-in-2026",
-    "isPopular": false,
-    "link": "blog/the-gfm-vs-slm-divide-navigating-enterprise-ai-strategy-in-2026.html",
     "id": 101
   }
 ]
