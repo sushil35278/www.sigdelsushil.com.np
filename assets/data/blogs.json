@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "The Unseen Cost of Distributed Observability: Architecting for Clarity in 2026",
+    "summary": "As microservices and serverless architectures proliferate, the promise of agility often obscures a growing challenge: achieving true observability. This post delves into the ongoing debate among senior engineers and architects in 2026 around the escalating complexity and hidden costs of distributed tracing, logging, and metrics, and proposes pragmatic strategies for maintaining clarity.",
+    "date": "09 November 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed+systems+complexity",
+    "slug": "the-unseen-cost-of-distributed-observability-architecting-for-clarity-in-2026",
+    "isPopular": false,
+    "link": "blog/the-unseen-cost-of-distributed-observability-architecting-for-clarity-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "Web Development",
     "title": "The Edge-Native Frontend: Debating Web Development's Serverless-First Future in 2026",
     "summary": "In 2026, a fundamental architectural shift is taking root in web development: the rise of the 'serverless-first' frontend. This isn't just about static assets; it's about deeply integrating serverless functions and edge computing to deliver unparalleled performance and dynamic experiences. But as engineering leaders embrace this paradigm, debates rage on regarding its true cost, complexity, and the evolving developer experience.",
@@ -1185,18 +1197,6 @@
     "slug": "the-great-inference-split-why-engineering-leaders-in-2026-are-ditching-cloud-llms-for-edge-speculative-decoding",
     "isPopular": false,
     "link": "blog/the-great-inference-split-why-engineering-leaders-in-2026-are-ditching-cloud-llms-for-edge-speculative-decoding.html",
-    "id": 101
-  },
-  {
-    "category": "AI & Machine Learning",
-    "title": "Micro-Model Architectures: The 2026 Debate on Scaling AI Beyond Monoliths",
-    "summary": "As the initial wave of massive foundation models settles, engineering leaders in 2026 are grappling with a new architectural paradigm: hyper-specialized, smaller models. This post dives into the strategic shift towards micro-model architectures, exploring their promise for efficiency, cost-effectiveness, and real-world impact, from Himalayan clinics to bustling Tokyo data centers.",
-    "date": "01 August 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?micro-model-architecture-distributed-ai",
-    "slug": "micro-model-architectures-the-2026-debate-on-scaling-ai-beyond-monoliths",
-    "isPopular": false,
-    "link": "blog/micro-model-architectures-the-2026-debate-on-scaling-ai-beyond-monoliths.html",
     "id": 101
   }
 ]
