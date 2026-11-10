@@ -1,5 +1,17 @@
 [
   {
+    "category": "AI & Machine Learning",
+    "title": "Navigating the Autonomous AI Agent Frontier: The Senior Engineering Debate of 2026",
+    "summary": "In 2026, the discussion among engineering leaders isn't just about Foundation Models; it's about orchestrating truly autonomous AI agents. This article delves into the profound engineering challenges—reliability, cost, and debuggability—that define this critical frontier, drawing on real-world lessons from diverse operational landscapes.",
+    "date": "10 November 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?autonomous+agent+decision+matrix",
+    "slug": "navigating-the-autonomous-ai-agent-frontier-the-senior-engineering-debate-of-2026",
+    "isPopular": false,
+    "link": "blog/navigating-the-autonomous-ai-agent-frontier-the-senior-engineering-debate-of-2026.html",
+    "id": 101
+  },
+  {
     "category": "Cloud Architecture",
     "title": "The Unseen Cost of Distributed Observability: Architecting for Clarity in 2026",
     "summary": "As microservices and serverless architectures proliferate, the promise of agility often obscures a growing challenge: achieving true observability. This post delves into the ongoing debate among senior engineers and architects in 2026 around the escalating complexity and hidden costs of distributed tracing, logging, and metrics, and proposes pragmatic strategies for maintaining clarity.",
@@ -1185,18 +1197,6 @@
     "slug": "neuro-symbolic-ai-in-2026-the-enterprises-path-to-explainable-robust-intelligence",
     "isPopular": false,
     "link": "blog/neuro-symbolic-ai-in-2026-the-enterprises-path-to-explainable-robust-intelligence.html",
-    "id": 101
-  },
-  {
-    "category": "AI & Machine Learning",
-    "title": "The Great Inference Split: Why Engineering Leaders in 2026 Are Ditching Cloud LLMs for Edge Speculative Decoding",
-    "summary": "As cloud inference costs balloon and privacy mandates tighten across Asia and Europe, senior architects in 2026 are shifting critical AI workloads to hybrid edge architecture. This article explores how on-device speculative decoding and micro-distillation are replacing monolithic API calls in production environments.",
-    "date": "02 August 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?edge-computing-neural-network-2026",
-    "slug": "the-great-inference-split-why-engineering-leaders-in-2026-are-ditching-cloud-llms-for-edge-speculative-decoding",
-    "isPopular": false,
-    "link": "blog/the-great-inference-split-why-engineering-leaders-in-2026-are-ditching-cloud-llms-for-edge-speculative-decoding.html",
     "id": 101
   }
 ]
