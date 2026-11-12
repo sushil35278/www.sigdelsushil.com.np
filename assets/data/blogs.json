@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "The Ubiquitous Data Plane: Navigating State and Data Gravity in Multi-Cloud 2026",
+    "summary": "In 2026, as enterprises embrace strategic multi-cloud deployments, the silent killer of agility and cost-efficiency isn't just compute orchestration – it's data gravity and consistent state management. This post delves into the emerging trend of the Ubiquitous Data Plane, an architectural shift crucial for senior developers and engineering leaders grappling with complex data landscapes across disparate environments.",
+    "date": "12 November 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-data-plane-network",
+    "slug": "the-ubiquitous-data-plane-navigating-state-and-data-gravity-in-multi-cloud-2026",
+    "isPopular": false,
+    "link": "blog/the-ubiquitous-data-plane-navigating-state-and-data-gravity-in-multi-cloud-2026.html",
+    "id": 101
+  },
+  {
     "category": "Software Engineering",
     "title": "The Autonomous Architect: Debating AI's Role in Critical Systems Design (2026 Trends)",
     "summary": "As AI models evolve beyond mere code assistance, their capacity for autonomous architectural design and implementation in critical systems is sparking a profound debate among engineering leaders. This post explores the promise and inherent challenges of entrusting AI with our most fundamental software foundations, examining the implications for senior architects in 2026 and beyond.",
@@ -1185,18 +1197,6 @@
     "slug": "beyond-the-global-cluster-why-cell-based-architectures-are-dominating-cloud-design-in-2026",
     "isPopular": false,
     "link": "blog/beyond-the-global-cluster-why-cell-based-architectures-are-dominating-cloud-design-in-2026.html",
-    "id": 101
-  },
-  {
-    "category": "Cloud Architecture",
-    "title": "The Death of the MicroVM? Why WASI Preview 3 is Dividing Cloud Architects in 2026",
-    "summary": "As cold-start latencies and ballooning container images strain edge networks, a fierce debate is brewing: should we abandon microVMs for the WebAssembly Component Model? Here is why the transition is far more complex than simply swapping Docker for WASI.",
-    "date": "04 August 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?cloud-infrastructure-datacenter-isometric",
-    "slug": "the-death-of-the-microvm-why-wasi-preview-3-is-dividing-cloud-architects-in-2026",
-    "isPopular": false,
-    "link": "blog/the-death-of-the-microvm-why-wasi-preview-3-is-dividing-cloud-architects-in-2026.html",
     "id": 101
   }
 ]
