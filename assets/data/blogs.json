@@ -1,5 +1,17 @@
 [
   {
+    "category": "Software Engineering",
+    "title": "The Unseen Cost: Bridging the Generative AI Productivity Gap in 2026",
+    "summary": "Generative AI promises to revolutionize software development, but are we truly measuring its impact beyond raw output? In 2026, senior engineers and leaders are grappling with the 'unseen cost' of integrating these tools, from skill degradation to the subtle erosion of critical thinking.",
+    "date": "13 November 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?software+engineer+contemplating+code+on+screen",
+    "slug": "the-unseen-cost-bridging-the-generative-ai-productivity-gap-in-2026",
+    "isPopular": false,
+    "link": "blog/the-unseen-cost-bridging-the-generative-ai-productivity-gap-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "Cloud Architecture",
     "title": "The Ubiquitous Data Plane: Navigating State and Data Gravity in Multi-Cloud 2026",
     "summary": "In 2026, as enterprises embrace strategic multi-cloud deployments, the silent killer of agility and cost-efficiency isn't just compute orchestration – it's data gravity and consistent state management. This post delves into the emerging trend of the Ubiquitous Data Plane, an architectural shift crucial for senior developers and engineering leaders grappling with complex data landscapes across disparate environments.",
@@ -1185,18 +1197,6 @@
     "slug": "the-great-sidecar-debate-of-2026-why-sre-teams-are-replacing-envoy-with-ebpf-ambient-architectures",
     "isPopular": false,
     "link": "blog/the-great-sidecar-debate-of-2026-why-sre-teams-are-replacing-envoy-with-ebpf-ambient-architectures.html",
-    "id": 101
-  },
-  {
-    "category": "Cloud Architecture",
-    "title": "Beyond the Global Cluster: Why Cell-Based Architectures are Dominating Cloud Design in 2026",
-    "summary": "As global data sovereignty laws tighten and physics-constrained latency becomes the primary bottleneck, senior architects are moving away from massive regional clusters toward deterministic, cell-based architectures powered by WebAssembly.",
-    "date": "05 August 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?sovereign-cloud-datacenter",
-    "slug": "beyond-the-global-cluster-why-cell-based-architectures-are-dominating-cloud-design-in-2026",
-    "isPopular": false,
-    "link": "blog/beyond-the-global-cluster-why-cell-based-architectures-are-dominating-cloud-design-in-2026.html",
     "id": 101
   }
 ]
