@@ -1,5 +1,17 @@
 [
   {
+    "category": "DevOps & SRE",
+    "title": "SRE as Product Owner? The 2026 Debate Over IDP Ownership and Reliability",
+    "summary": "Platform Engineering and Internal Developer Platforms (IDPs) are critical for modern software delivery. But as SREs increasingly champion these platforms, a pivotal debate emerges: Does owning the IDP dilute their core reliability mandate, or is it a natural evolution for safeguarding developer experience and systemic resilience? This post delves into the challenges and opportunities of this evolving role in 2026.",
+    "date": "14 November 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?site-reliability-engineer-platform-devops-future-2026",
+    "slug": "sre-as-product-owner-the-2026-debate-over-idp-ownership-and-reliability",
+    "isPopular": false,
+    "link": "blog/sre-as-product-owner-the-2026-debate-over-idp-ownership-and-reliability.html",
+    "id": 101
+  },
+  {
     "category": "Software Engineering",
     "title": "The Unseen Cost: Bridging the Generative AI Productivity Gap in 2026",
     "summary": "Generative AI promises to revolutionize software development, but are we truly measuring its impact beyond raw output? In 2026, senior engineers and leaders are grappling with the 'unseen cost' of integrating these tools, from skill degradation to the subtle erosion of critical thinking.",
@@ -1185,18 +1197,6 @@
     "slug": "local-first-llms-and-slms-in-2026-the-architectural-shift-away-from-centralized-apis",
     "isPopular": false,
     "link": "blog/local-first-llms-and-slms-in-2026-the-architectural-shift-away-from-centralized-apis.html",
-    "id": 101
-  },
-  {
-    "category": "DevOps & SRE",
-    "title": "The Great Sidecar Debate of 2026: Why SRE Teams Are Replacing Envoy with eBPF Ambient Architectures",
-    "summary": "As microservice clusters scale across high-density datacenters in Tokyo and constrained edge nodes in Kathmandu, engineering teams are confronting the steep compute cost of sidecar proxies. In 2026, the SRE community is fiercely debating the transition from sidecar-based service meshes to eBPF-driven kernel-level networking.",
-    "date": "06 August 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?ebpf-service-mesh-architecture",
-    "slug": "the-great-sidecar-debate-of-2026-why-sre-teams-are-replacing-envoy-with-ebpf-ambient-architectures",
-    "isPopular": false,
-    "link": "blog/the-great-sidecar-debate-of-2026-why-sre-teams-are-replacing-envoy-with-ebpf-ambient-architectures.html",
     "id": 101
   }
 ]
