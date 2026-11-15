@@ -1,5 +1,17 @@
 [
   {
+    "category": "Web Development",
+    "title": "The 2026 Web Architecture Shift: Why Engineering Leaders Are Abandoning Server-Driven UI for Local-First CRDTs",
+    "summary": "As cloud compute bills surge and edge-rendering hits physical latency limits across global network paths, the web architecture consensus of 2026 is rapidly pivoting away from server-rendered UI paradigms. This deep dive examines the operational reality of Local-First architectures, comparing client-side CRDT storage against edge SSR.",
+    "date": "15 November 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-database-edge",
+    "slug": "the-2026-web-architecture-shift-why-engineering-leaders-are-abandoning-server-driven-ui-for-local-first-crdts",
+    "isPopular": false,
+    "link": "blog/the-2026-web-architecture-shift-why-engineering-leaders-are-abandoning-server-driven-ui-for-local-first-crdts.html",
+    "id": 101
+  },
+  {
     "category": "DevOps & SRE",
     "title": "SRE as Product Owner? The 2026 Debate Over IDP Ownership and Reliability",
     "summary": "Platform Engineering and Internal Developer Platforms (IDPs) are critical for modern software delivery. But as SREs increasingly champion these platforms, a pivotal debate emerges: Does owning the IDP dilute their core reliability mandate, or is it a natural evolution for safeguarding developer experience and systemic resilience? This post delves into the challenges and opportunities of this evolving role in 2026.",
@@ -1185,18 +1197,6 @@
     "slug": "the-great-decoupling-data-plane-unbundling-in-distributed-systems-blessing-or-burden-for-2026",
     "isPopular": false,
     "link": "blog/the-great-decoupling-data-plane-unbundling-in-distributed-systems-blessing-or-burden-for-2026.html",
-    "id": 101
-  },
-  {
-    "category": "AI & Machine Learning",
-    "title": "Local-First LLMs and SLMs in 2026: The Architectural Shift Away from Centralized APIs",
-    "summary": "As network latency, data sovereignty laws, and inference costs push engineering teams to rethink infrastructure, local-first Small Language Models (SLMs) are replacing centralized frontier APIs for mission-critical microservices. Here is how senior architects are designing hybrid edge-cloud pipelines in 2026.",
-    "date": "07 August 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?server-rack-neural-network",
-    "slug": "local-first-llms-and-slms-in-2026-the-architectural-shift-away-from-centralized-apis",
-    "isPopular": false,
-    "link": "blog/local-first-llms-and-slms-in-2026-the-architectural-shift-away-from-centralized-apis.html",
     "id": 101
   }
 ]
