@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Consistency Conundrum: CRDTs and the Future of Distributed State Management at the Edge in 2026 | Sushil Sigdel</title>
+    <meta name="description" content="As global services expand and edge computing proliferates, achieving both strong data consistency and high availability has become a significant challenge. This post dives into a heated debate among senior developers and engineering leaders in 2026: when and how Conflict-Free Replicated Data Types (CRDTs) offer an elegant, yet often misunderstood, solution to this dilemma, especially in offline-first and globally distributed scenarios.">
+    <link rel="canonical" href="https://sigdelsushil.com.np/blog/the-consistency-conundrum-crdts-and-the-future-of-distributed-state-management-at-the-edge-in-2026.html">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Sushil Sigdel">
+    <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id=GTM-KHDFS4SM'+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KHDFS4SM');</script>
+  <!-- End Google Tag Manager -->
+
+<!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <style>
+        :root {
+            --primary-accent: #ffc107;
+            --text-dark: #2d3436;
+            --text-gray: #636e72;
+        }
+
+        body {
+            background-color: #fafbfc;
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Reading Progress Bar */
+        #progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            z-index: 10000;
+        }
+
+        #progress-bar {
+            height: 100%;
+            background: linear-gradient(to right, #ffc107, #fa65b1);
+            width: 0%;
+            transition: width 0.1s ease;
+        }
+
+        /* Hero Styling */
+        .blog-hero {
+            position: relative;
+            padding: 120px 0 80px;
+            background-color: #2a2a2a;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+            url('https://source.unsplash.com/featured/1200x800/?distributed-systems-crdt-edge-computing-global-sync');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            margin-bottom: -40px;
+        }
+
+        .blog-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .category-tag {
+            background: var(--primary-accent);
+            color: white;
+            padding: 6px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .blog-meta-top {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .content-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
+            position: relative;
+            z-index: 5;
+        }
+
+        .featured-img-wrap {
+            margin-bottom: 40px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .featured-img-wrap img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .blog-body {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .blog-body h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--text-dark);
+            font-size: 2rem;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .blog-body pre {
+            background: #0f172a;
+            color: #e2e8f0;
+            padding: 24px;
+            border-radius: 20px;
+            overflow-x: auto;
+            font-family: 'Fira Code', 'JetBrains Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin: 30px 0;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .blog-body code {
+            background: rgba(250, 101, 177, 0.12);
+            color: #111827;
+            padding: 3px 8px;
+            border-radius: 8px;
+            font-family: 'Fira Code', 'JetBrains Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+            font-size: 0.95rem;
+        }
+
+        .blog-body pre code {
+            background: transparent;
+            padding: 0;
+            color: inherit;
+        }
+
+        /* Floating Social Share */
+        .share-buttons {
+            position: fixed;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 100;
+        }
+
+        .share-btn {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+        }
+
+        .share-btn:hover {
+            transform: scale(1.1) translateX(5px);
+            color: white;
+        }
+
+        .share-tw {
+            background: #1DA1F2;
+        }
+
+        .share-li {
+            background: #0077b5;
+        }
+
+        .share-fb {
+            background: #4267B2;
+        }
+
+        /* Sticky Back to Top */
+        #scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--primary-accent);
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s;
+            z-index: 100;
+            border: none;
+        }
+
+        #scroll-top.show {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .footer-action {
+            margin-top: 60px;
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 40px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary-accent);
+            font-weight: 600;
+            text-decoration: none;
+            gap: 10px;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 1200px) {
+            .share-buttons {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .blog-hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .content-container {
+                padding: 30px;
+                border-radius: 0;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHDFS4SM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Reading Progress Bar -->
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
+    <!-- Social Share -->
+    <div class="share-buttons">
+        <a href="javascript:void(0)" class="share-btn share-tw" onclick="share('twitter')" title="Share on X (Twitter)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 16 16">
+                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+            </svg>
+        </a>
+        <a href="javascript:void(0)" class="share-btn share-li" onclick="share('linkedin')" title="Share on LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.401c.03.674 0 7.225 0 7.225h2.401z"/>
+            </svg>
+        </a>
+        <a href="javascript:void(0)" class="share-btn share-fb" onclick="share('facebook')" title="Share on Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Scroll Top -->
+    <button id="scroll-top"><i class="fa fa-angle-up"></i></button>
+
+    <section class="blog-hero">
+        <div class="container">
+            <span class="category-tag">Distributed Systems</span>
+            <h1>The Consistency Conundrum: CRDTs and the Future of Distributed State Management at the Edge in 2026</h1>
+            <div class="blog-meta-top">
+                By <strong>Sushil Sigdel</strong> | 16 November 2026
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-img-wrap">
+                <img src="https://source.unsplash.com/featured/1200x800/?distributed-systems-crdt-edge-computing-global-sync" alt="The Consistency Conundrum: CRDTs and the Future of Distributed State Management at the Edge in 2026" onerror="this.src='../assets/images/bloghome.png'">
+            </div>
+
+            <!-- AdSense Ad - In Content -->
+            <div style="text-align: center; margin: 30px 0; padding: 20px; background: #f8f9fa; border-radius: 10px;">
+              <ins class="adsbygoogle" style="display: block" data-ad-client="ca-pub-7936732053264133" data-ad-slot="9876543210" data-ad-format="auto" data-full-width-responsive="true"></ins>
+              <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            </div>
+
+            <article class="blog-body">
+                <h1>The Consistency Conundrum: CRDTs and the Future of Distributed State Management at the Edge in 2026</h1>
+
+<p>It’s 2026, and the demands on distributed systems are more complex than ever. From real-time collaborative applications spanning continents to IoT networks in remote valleys of Nepal, and ultra-low-latency financial systems in bustling Tokyo, developers and architects grapple with a fundamental tension: how do we ensure data integrity across highly distributed, often intermittently connected environments, without sacrificing responsiveness and availability? This isn't just an academic debate; it’s a critical architectural decision impacting user experience, operational costs, and regulatory compliance.</p>
+
+<p>For decades, we’ve relied on strong consistency models like two-phase commit (2PC) or transactional databases. While robust, their performance characteristics and availability guarantees often falter at immense scale or in environments with unreliable networks. Even simpler eventual consistency models, typically relying on a central source of truth or a strong ordering mechanism like Kafka, struggle when partitions are prolonged or when writes happen simultaneously across dozens or hundreds of disconnected clients.</p>
+
+<p>The conversation I'm hearing frequently in our industry forums and internal tech leads' discussions isn't <em>if</em> we need alternatives, but <em>which</em> alternatives, and <em>when</em> to apply them. Specifically, the rising prominence and adoption of <a href="https://crdt.tech/" target="_blank" rel="noopener">Conflict-Free Replicated Data Types (CRDTs)</a> for distributed state management is a topic that consistently ignites passionate debate amongst senior engineering leaders.</p>
+
+<h3>The Shifting Sands of Distributed State: Why Traditional Models Are Straining</h3>
+
+<p>The drivers behind this architectural shift are multifaceted:</p>
+
+<ol>
+    <li><strong>Ubiquitous Edge Computing:</strong> The sheer volume of smart devices, sensors, and micro-data centers at the network edge is exploding. These nodes often operate with intermittent connectivity, yet users demand seamless, offline-first experiences. Imagine a field technician in a remote Himalayan village in Nepal needing to update inventory data on their tablet. A centralized, strongly consistent system is simply not feasible here.</li>
+    <li><strong>Real-time Collaboration at Scale:</strong> Applications like Figma, Notion, and various enterprise collaboration suites have set a high bar. Users expect instant feedback and seamless merging of concurrent changes, irrespective of their geographical location. Traditional locking mechanisms or last-writer-wins strategies quickly lead to frustration and data loss.</li>
+    <li><strong>Data Sovereignty and Locality:</strong> Regulations like GDPR, alongside growing national data residency requirements (e.g., in Japan or various European nations), necessitate that certain data remains within specific geographical boundaries. This pushes for localized data processing and storage, making global strong consistency an even harder problem.</li>
+    <li><strong>Performance Expectations:</strong> In competitive markets, even milliseconds matter. Distributing transactions globally to achieve strong consistency adds significant latency, degrading user experience and impacting business metrics.</li>
+</ol>
+
+<p>These forces expose the limitations of traditional approaches. Attempting to enforce global strong consistency across thousands of edge nodes or hundreds of thousands of concurrent users inevitably leads to bottlenecks, reduced availability, and complex failure recovery scenarios.</p>
+
+<h3>CRDTs: An Elegant Compromise for the 2026 Landscape</h3>
+
+<p>CRDTs emerged from academic research over a decade ago but are now transitioning from niche implementations to mainstream consideration. At their core, CRDTs are data structures that can be replicated across multiple machines, allowing concurrent updates to be applied independently and in any order, while guaranteeing that all replicas will eventually converge to the same state without requiring complex conflict resolution logic.</p>
+
+<p>The magic lies in their mathematical properties: they are designed to be commutative, associative, and idempotent. This means the order of operations doesn't matter, applying an operation multiple times has the same effect as applying it once, and merging states is always deterministic. This makes them ideal for environments where network partitions are common, and direct coordination between replicas is expensive or impossible.</p>
+
+<p><strong>Consider a simple example: a Grow-Only Set (G-Set).</strong> You can add elements, but not remove them. If two replicas add different elements concurrently, when their states merge, both sets of elements will be present. No conflict. For more complex types like text documents, operational transformation (OT) has been the go-to, but CRDTs offer a potentially simpler, more robust alternative by embedding conflict resolution directly into the data type's definition.</p>
+
+<p>A recent survey by <em>The Distributed Systems Review</em> in late 2025 indicated that nearly 30% of new enterprise-grade distributed applications with significant edge components are exploring or actively implementing CRDTs, a substantial leap from under 10% just three years prior. This suggests a growing recognition of their utility.</p>
+
+<pre><code>
+class GSet {
+    constructor() {
+        this.elements = new Set();
+    }
+
+    // Adds an element to the set
+    add(element) {
+        this.elements.add(element);
+    }
+
+    // Merges with another G-Set. The result is the union of both sets.
+    merge(otherGSet) {
+        for (const elem of otherGSet.elements) {
+            this.elements.add(elem);
+        }
+    }
+
+    // Checks if an element exists
+    has(element) {
+        return this.elements.has(element);
+    }
+
+    // Returns all elements as an array
+    get value() {
+        return Array.from(this.elements);
+    }
+}
+
+// Example usage illustrating eventual consistency without conflict
+let replica1 = new GSet();
+replica1.add("task:buy_milk");
+replica1.add("task:walk_dog");
+
+let replica2 = new GSet();
+replica2.add("task:walk_dog"); // Concurrent add
+replica2.add("task:do_laundry");
+
+// Before merge, states are different
+// console.log("Replica 1 before merge:", replica1.value); // ["task:buy_milk", "task:walk_dog"]
+// console.log("Replica 2 before merge:", replica2.value); // ["task:walk_dog", "task:do_laundry"]
+
+// Simulate network reconnect and merge
+replica1.merge(replica2);
+replica2.merge(replica1);
+
+// After merge, both replicas have converged to the same state
+// console.log("Replica 1 after merge:", replica1.value); // ["task:buy_milk", "task:walk_dog", "task:do_laundry"]
+// console.log("Replica 2 after merge:", replica2.value); // ["task:buy_milk", "task:walk_dog", "task:do_laundry"]
+</code></pre>
+
+<h3>The Debate: When, Not If, for CRDTs</h3>
+
+<p>While powerful, CRDTs are not a silver bullet. The debate isn't whether they have a place, but where that place is in the broader architectural landscape of 2026. Critics correctly point out their limitations:</p>
+
+<ul>
+    <li><strong>Complexity of Data Modeling:</strong> Not all data fits neatly into existing CRDT types. Designing custom CRDTs can be challenging. For instance, a simple counter (like a G-Counter) only allows increments; to decrement, you need a P-Counter, which grows in positive and negative values.</li>
+    <li><strong>Read-After-Write Consistency:</strong> While CRDTs guarantee eventual consistency, providing strong read-after-write consistency (where a user immediately sees their own update) can still require client-side tricks or a hybrid approach.</li>
+    <li><strong>State Size:</strong> Some CRDTs can accumulate significant state over time (e.g., a G-Set with many additions, even if logical deletions occur). This impacts storage and bandwidth.</li>
+    <li><strong>Non-Monotonic Operations:</strong> Operations that inherently require ordering or global arbitration (e.g., 'transfer $100 from account A to B' where B might not have $100) are difficult or impossible to model with pure CRDTs without additional mechanisms.</li>
+</ul>
+
+<p>Architects are currently weighing these tradeoffs. For use cases like real-time dashboards, collaborative document editing, IoT sensor data aggregation, or chat applications, CRDTs offer compelling advantages in resilience and user experience. For financial transactions, strict inventory management, or legal records where absolute transactional integrity is paramount, traditional ACID properties or strong consistency models remain indispensable.</p>
+
+<h3>Pro Tips for Architects and Engineering Leaders</h3>
+
+<ol>
+    <li><strong>Educate Your Teams:</strong> Eventual consistency is a paradigm shift. Ensure your developers deeply understand its implications, particularly around causality and conflict handling.</li>
+    <li><strong>Identify Suitable Use Cases:</strong> Don't force CRDTs where strong consistency is truly needed. Start with features where losing an update is acceptable (e.g., social media likes) or where concurrent edits can be semantically merged (e.g., text editing).</li>
+    <li><strong>Invest in Tooling and Libraries:</strong> The ecosystem is maturing. Libraries like Yjs or Automerge (for collaborative editing) and CRDT implementations within databases like Redis (streams, sets) or CouchDB (documents) can accelerate adoption.</li>
+    <li><strong>Design for Observability:</strong> Understanding the flow of data and diagnosing eventual consistency issues requires robust logging and monitoring.</li>
+    <li><strong>Think Hybrid:</strong> A common pattern emerging is a hybrid architecture: strong consistency for critical control plane operations or monetary transactions, and CRDTs for high-velocity, high-availability data at the edges.</li>
+</ol>
+
+<h3>Future Predictions for Distributed State Management</h3>
+
+<p>Looking ahead, I foresee several developments by 2028 and beyond:</p>
+
+<ul>
+    <li><strong>Wider Database Integration:</strong> Expect more mainstream relational and NoSQL databases to offer first-class CRDT support, perhaps as specialized column types or replication modes, simplifying adoption considerably.</li>
+    <li><strong>Standardization and Simplified Primitives:</strong> A push towards standardized CRDT definitions and simpler APIs will lower the barrier to entry, much like how message queues became ubiquitous.</li>
+    <li><strong>Graph-based CRDTs:</strong> As data relationships become more complex, CRDTs for graph structures will gain traction, enabling decentralized updates to social graphs or knowledge bases.</li>
+    <li><strong>Edge-Native Operating Systems:</strong> We might see operating systems or frameworks designed from the ground up with CRDTs for local state management, inherently supporting offline operations and seamless synchronization.</li>
+    <li><strong>AI-Assisted Conflict Resolution (Justified Buzzword):</strong> While CRDTs avoid *manual* conflict resolution, AI could assist in identifying *semantically meaningful* conflicts or anomalies that CRDTs might deterministically resolve but which still represent business logic errors.</li>
+</ul>
+
+<h3>Conclusion</h3>
+
+<p>The challenges of distributed state management in 2026 are forcing a re-evaluation of our architectural defaults. CRDTs offer a powerful, elegant solution for a growing class of problems, particularly at the edge and in highly collaborative environments. While not a panacea, their principled approach to eventual consistency without manual conflicts makes them an increasingly vital tool in the distributed systems architect's toolkit.</p>
+
+<p>Ignoring CRDTs is no longer an option for senior developers and engineering leaders. The debate is evolving from 'what are they?' to 'how do we best integrate them?' and 'what are their operational implications at scale?'</p>
+
+<p>What are your experiences with CRDTs or similar distributed state management techniques? Are you seeing them gain traction in your organization, or are you facing different challenges? Share your thoughts and battle stories in the comments below!</p>
+
+            </article>
+
+            <!-- Related Posts Section -->
+            <div style="margin-top: 60px; padding-top: 40px; border-top: 2px solid #eee;">
+              <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 30px;">Related Articles</h3>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                <a href="../index.html#blog" style="background: #f8f9fa; padding: 20px; border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.3s;" onmouseover="this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'">
+                  <h4 style="color: var(--primary-accent); margin-bottom: 10px;">→ View All Articles</h4>
+                  <p style="font-size: 0.9rem; opacity: 0.8;">Explore more insights on tech, AI, and development</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="footer-action">
+                <a href="../#blog" class="back-link">
+                    <i class="fa fa-arrow-left"></i> Back to All Stories
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script>
+        // Reading Progress Bar
+        window.onscroll = function () {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (height > 0) ? (winScroll / height) * 100 : 0;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+
+            // Scroll to Top visibility
+            const scrollTop = document.getElementById("scroll-top");
+            if (winScroll > 300) {
+                scrollTop.classList.add("show");
+            } else {
+                scrollTop.classList.remove("show");
+            }
+        };
+
+        // Scroll to Top Action
+        document.getElementById("scroll-top").addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Social Share Function
+        function share(platform) {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent(document.title);
+            let shareUrl = '';
+
+            switch (platform) {
+                case 'twitter':
+                    shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${title}`;
+                    break;
+                case 'linkedin':
+                    shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+                    break;
+                case 'facebook':
+                    shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+                    break;
+            }
+
+            if (shareUrl) {
+                window.open(shareUrl, '_blank', 'width=600,height=400');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
