@@ -1,5 +1,17 @@
 [
   {
+    "category": "AI & Machine Learning",
+    "title": "Federated Learning at Scale: The 2026 Debate on Edge AI, Data Sovereignty, and Model Ownership",
+    "summary": "As edge devices proliferate, federated learning emerges as a critical paradigm for privacy-preserving AI. But its adoption at scale in 2026 brings complex debates around data sovereignty, model ownership, and the operational challenges that senior engineering leaders must navigate.",
+    "date": "17 November 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?federated-learning-edge-ai-network",
+    "slug": "federated-learning-at-scale-the-2026-debate-on-edge-ai-data-sovereignty-and-model-ownership",
+    "isPopular": false,
+    "link": "blog/federated-learning-at-scale-the-2026-debate-on-edge-ai-data-sovereignty-and-model-ownership.html",
+    "id": 101
+  },
+  {
     "category": "Distributed Systems",
     "title": "The Consistency Conundrum: CRDTs and the Future of Distributed State Management at the Edge in 2026",
     "summary": "As global services expand and edge computing proliferates, achieving both strong data consistency and high availability has become a significant challenge. This post dives into a heated debate among senior developers and engineering leaders in 2026: when and how Conflict-Free Replicated Data Types (CRDTs) offer an elegant, yet often misunderstood, solution to this dilemma, especially in offline-first and globally distributed scenarios.",
@@ -1185,18 +1197,6 @@
     "slug": "the-death-of-the-sidecar-proxy-ebpf-and-wasm-architectures-in-2026",
     "isPopular": false,
     "link": "blog/the-death-of-the-sidecar-proxy-ebpf-and-wasm-architectures-in-2026.html",
-    "id": 101
-  },
-  {
-    "category": "Web Development",
-    "title": "The Death of Client Hydration: Why Senior Architects Are Shifting to WASI Edge Components in 2026",
-    "summary": "As mobile JavaScript bundles surpass 500KB on average, engineering teams are divided between JS resumability and zero-bundle WebAssembly components at the edge. Here is an evidence-backed analysis of why streaming Wasm-native micro-frontends are replacing traditional hydration paradigms across global networks.",
-    "date": "09 August 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?edge-computing-webassembly-network",
-    "slug": "the-death-of-client-hydration-why-senior-architects-are-shifting-to-wasi-edge-components-in-2026",
-    "isPopular": false,
-    "link": "blog/the-death-of-client-hydration-why-senior-architects-are-shifting-to-wasi-edge-components-in-2026.html",
     "id": 101
   }
 ]
