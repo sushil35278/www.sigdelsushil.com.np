@@ -1,5 +1,17 @@
 [
   {
+    "category": "Distributed Systems",
+    "title": "Beyond Multi-Raft: The Shift to Invariant-Driven Concurrency in 2026",
+    "summary": "As cross-region physical latency limits collide with edge-computing realities, engineering leaders are stepping away from universal Multi-Raft consensus. Here is why the industry is migrating toward invariant-driven escrow architectures and localized quorums to achieve single-digit p99 latencies.",
+    "date": "18 November 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed-systems-network-nodes",
+    "slug": "beyond-multi-raft-the-shift-to-invariant-driven-concurrency-in-2026",
+    "isPopular": false,
+    "link": "blog/beyond-multi-raft-the-shift-to-invariant-driven-concurrency-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "AI & Machine Learning",
     "title": "Federated Learning at Scale: The 2026 Debate on Edge AI, Data Sovereignty, and Model Ownership",
     "summary": "As edge devices proliferate, federated learning emerges as a critical paradigm for privacy-preserving AI. But its adoption at scale in 2026 brings complex debates around data sovereignty, model ownership, and the operational challenges that senior engineering leaders must navigate.",
@@ -1185,18 +1197,6 @@
     "slug": "beyond-prompt-engineering-the-rise-of-deterministic-guardrails-in-2026-ai-architectures",
     "isPopular": false,
     "link": "blog/beyond-prompt-engineering-the-rise-of-deterministic-guardrails-in-2026-ai-architectures.html",
-    "id": 101
-  },
-  {
-    "category": "Distributed Systems",
-    "title": "The Death of the Sidecar Proxy: eBPF and Wasm Architectures in 2026",
-    "summary": "Engineering teams in 2026 are abandoning sidecar containers like Envoy in favor of eBPF kernel redirection and embedded WebAssembly runtimes. This article analyzes the technical trade-offs, performance statistics, and real-world deployment patterns from Tokyo to Kathmandu.",
-    "date": "10 August 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?ebpf-network-architecture",
-    "slug": "the-death-of-the-sidecar-proxy-ebpf-and-wasm-architectures-in-2026",
-    "isPopular": false,
-    "link": "blog/the-death-of-the-sidecar-proxy-ebpf-and-wasm-architectures-in-2026.html",
     "id": 101
   }
 ]
