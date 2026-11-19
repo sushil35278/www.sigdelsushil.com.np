@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "The Great Cloud Rebalance: Internal Developer Platforms Driving Pragmatic Repatriation in 2026",
+    "summary": "In 2026, the cloud narrative shifts from unbridled adoption to strategic optimization. This post dissects how Internal Developer Platforms (IDPs) are emerging as the linchpin, enabling organizations to navigate the complexities of multi-cloud environments and make informed decisions on selective, pragmatic cloud repatriation – balancing agility with cost predictability and control.",
+    "date": "19 November 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?cloud-platform-developer-experience-hybrid",
+    "slug": "the-great-cloud-rebalance-internal-developer-platforms-driving-pragmatic-repatriation-in-2026",
+    "isPopular": false,
+    "link": "blog/the-great-cloud-rebalance-internal-developer-platforms-driving-pragmatic-repatriation-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "Distributed Systems",
     "title": "Beyond Multi-Raft: The Shift to Invariant-Driven Concurrency in 2026",
     "summary": "As cross-region physical latency limits collide with edge-computing realities, engineering leaders are stepping away from universal Multi-Raft consensus. Here is why the industry is migrating toward invariant-driven escrow architectures and localized quorums to achieve single-digit p99 latencies.",
@@ -1185,18 +1197,6 @@
     "slug": "the-distributed-monolith-dilemma-rethinking-microservices-in-2026-cloud-architectures",
     "isPopular": false,
     "link": "blog/the-distributed-monolith-dilemma-rethinking-microservices-in-2026-cloud-architectures.html",
-    "id": 101
-  },
-  {
-    "category": "AI & Machine Learning",
-    "title": "Beyond Prompt Engineering: The Rise of Deterministic Guardrails in 2026 AI Architectures",
-    "summary": "As foundational models mature, senior engineering teams are abandoning probabilistic prompt hacks in favor of deterministic guardrail architectures. Here is how production systems are solving non-determinism at scale.",
-    "date": "11 August 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?server-rack-cybersecurity-code",
-    "slug": "beyond-prompt-engineering-the-rise-of-deterministic-guardrails-in-2026-ai-architectures",
-    "isPopular": false,
-    "link": "blog/beyond-prompt-engineering-the-rise-of-deterministic-guardrails-in-2026-ai-architectures.html",
     "id": 101
   }
 ]
