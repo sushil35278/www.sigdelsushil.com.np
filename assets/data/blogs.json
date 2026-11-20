@@ -1,6 +1,18 @@
 [
   {
     "category": "Cloud Architecture",
+    "title": "WASM Components vs. MicroVMs: The Great Cloud Execution Debate of 2026",
+    "summary": "As cloud infrastructure costs escalate and container overhead faces scrutiny, engineering teams in 2026 are split between WebAssembly component runtimes and MicroVM isolation models. This article explores cold-start benchmarks, memory footprints, and architectural trade-offs based on real-world deployments across Asia and North America.",
+    "date": "20 November 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?cloud-server-infrastructure",
+    "slug": "wasm-components-vs-microvms-the-great-cloud-execution-debate-of-2026",
+    "isPopular": false,
+    "link": "blog/wasm-components-vs-microvms-the-great-cloud-execution-debate-of-2026.html",
+    "id": 101
+  },
+  {
+    "category": "Cloud Architecture",
     "title": "The Great Cloud Rebalance: Internal Developer Platforms Driving Pragmatic Repatriation in 2026",
     "summary": "In 2026, the cloud narrative shifts from unbridled adoption to strategic optimization. This post dissects how Internal Developer Platforms (IDPs) are emerging as the linchpin, enabling organizations to navigate the complexities of multi-cloud environments and make informed decisions on selective, pragmatic cloud repatriation – balancing agility with cost predictability and control.",
     "date": "19 November 2026",
@@ -1185,18 +1197,6 @@
     "slug": "the-post-quantum-fragmentation-crisis-why-dual-key-tls-13-is-breaking-the-edge-in-2026",
     "isPopular": false,
     "link": "blog/the-post-quantum-fragmentation-crisis-why-dual-key-tls-13-is-breaking-the-edge-in-2026.html",
-    "id": 101
-  },
-  {
-    "category": "Cloud Architecture",
-    "title": "The 'Distributed Monolith' Dilemma: Rethinking Microservices in 2026 Cloud Architectures",
-    "summary": "As cloud-native architectures mature, the initial promises of microservices are being re-evaluated. In 2026, many organizations grapple with the complexities of 'distributed monoliths,' prompting a critical debate about the optimal path forward. This post explores this trend, drawing lessons from global experiences, and offers practical advice.",
-    "date": "12 August 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?distributed+systems+complexity",
-    "slug": "the-distributed-monolith-dilemma-rethinking-microservices-in-2026-cloud-architectures",
-    "isPopular": false,
-    "link": "blog/the-distributed-monolith-dilemma-rethinking-microservices-in-2026-cloud-architectures.html",
     "id": 101
   }
 ]
