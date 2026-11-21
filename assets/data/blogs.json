@@ -1,5 +1,17 @@
 [
   {
+    "category": "Web Development",
+    "title": "The Great Re-Bundling: Hybrid Architectures & The Future of Web Dev in 2026",
+    "summary": "After years of extreme decoupling, web development is witnessing a strategic re-evaluation. Senior architects in 2026 are debating the merits of cohesive hybrid architectures, balancing independent scaling with critical developer experience and performance needs. This shift impacts everything from team structure to global user accessibility, demanding a nuanced approach to system design.",
+    "date": "21 November 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?web-architecture-hybrid-blueprint",
+    "slug": "the-great-re-bundling-hybrid-architectures-the-future-of-web-dev-in-2026",
+    "isPopular": false,
+    "link": "blog/the-great-re-bundling-hybrid-architectures-the-future-of-web-dev-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "Cloud Architecture",
     "title": "WASM Components vs. MicroVMs: The Great Cloud Execution Debate of 2026",
     "summary": "As cloud infrastructure costs escalate and container overhead faces scrutiny, engineering teams in 2026 are split between WebAssembly component runtimes and MicroVM isolation models. This article explores cold-start benchmarks, memory footprints, and architectural trade-offs based on real-world deployments across Asia and North America.",
@@ -1185,18 +1197,6 @@
     "slug": "beyond-the-spinner-why-local-first-architecture-is-the-senior-dev-debate-of-2026",
     "isPopular": false,
     "link": "blog/beyond-the-spinner-why-local-first-architecture-is-the-senior-dev-debate-of-2026.html",
-    "id": 101
-  },
-  {
-    "category": "Cybersecurity",
-    "title": "The Post-Quantum Fragmentation Crisis: Why Dual-Key TLS 1.3 is Breaking the Edge in 2026",
-    "summary": "As engineering teams race to implement NIST-approved post-quantum algorithms, a quiet architectural crisis has emerged. This post explores why the massive cryptographic keys of ML-KEM and ML-DSA are causing IP fragmentation, packet loss, and latency anomalies across high-performance service meshes and constrained networks.",
-    "date": "13 August 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?post-quantum-cryptography-network",
-    "slug": "the-post-quantum-fragmentation-crisis-why-dual-key-tls-13-is-breaking-the-edge-in-2026",
-    "isPopular": false,
-    "link": "blog/the-post-quantum-fragmentation-crisis-why-dual-key-tls-13-is-breaking-the-edge-in-2026.html",
     "id": 101
   }
 ]
