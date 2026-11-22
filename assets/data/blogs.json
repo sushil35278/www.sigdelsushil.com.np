@@ -1,5 +1,17 @@
 [
   {
+    "category": "Software Engineering",
+    "title": "Why Senior Architects in 2026 Are Replacing Autonomous Agents with Deterministic State Machines",
+    "summary": "Following two years of chaotic production post-mortems caused by autonomous LLM agents, enterprise engineering teams in 2026 are enforcing strict finite state machines over dynamic agentic loops. Here is an architectural breakdown of why bounded state execution has become the standard for reliable software.",
+    "date": "22 November 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?state-machine-software-architecture",
+    "slug": "why-senior-architects-in-2026-are-replacing-autonomous-agents-with-deterministic-state-machines",
+    "isPopular": false,
+    "link": "blog/why-senior-architects-in-2026-are-replacing-autonomous-agents-with-deterministic-state-machines.html",
+    "id": 101
+  },
+  {
     "category": "Web Development",
     "title": "The Great Re-Bundling: Hybrid Architectures & The Future of Web Dev in 2026",
     "summary": "After years of extreme decoupling, web development is witnessing a strategic re-evaluation. Senior architects in 2026 are debating the merits of cohesive hybrid architectures, balancing independent scaling with critical developer experience and performance needs. This shift impacts everything from team structure to global user accessibility, demanding a nuanced approach to system design.",
@@ -1185,18 +1197,6 @@
     "slug": "post-quantum-tls-in-2026-surviving-packet-fragmentation-and-handshake-blowup-in-distributed-systems",
     "isPopular": false,
     "link": "blog/post-quantum-tls-in-2026-surviving-packet-fragmentation-and-handshake-blowup-in-distributed-systems.html",
-    "id": 101
-  },
-  {
-    "category": "Web Development",
-    "title": "Beyond the Spinner: Why Local-First Architecture is the Senior Dev Debate of 2026",
-    "summary": "As the industry moves past the 'Server Components vs. SPA' wars, a more fundamental shift toward local-first synchronization is redefining web architecture. This post explores why senior engineers are abandoning traditional REST patterns for CRDTs and WASM-based sync engines to solve the global latency gap.",
-    "date": "14 August 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?distributed-database-sync",
-    "slug": "beyond-the-spinner-why-local-first-architecture-is-the-senior-dev-debate-of-2026",
-    "isPopular": false,
-    "link": "blog/beyond-the-spinner-why-local-first-architecture-is-the-senior-dev-debate-of-2026.html",
     "id": 101
   }
 ]
