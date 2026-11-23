@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cybersecurity",
+    "title": "The Autonomous Security Operations Paradox: Trust, Risk, and the Human Element in 2026",
+    "summary": "As cyber threats accelerate, the allure of autonomous security operations (ASO) grows stronger. Yet, senior engineering leaders globally are grappling with a fundamental paradox: how much trust can we truly place in machines to defend our digital fortresses? This post dives into the critical debate shaping cybersecurity in 2026, exploring the promises, pitfalls, and the indispensable role of human oversight.",
+    "date": "23 November 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?ai-cybersecurity-human-interface",
+    "slug": "the-autonomous-security-operations-paradox-trust-risk-and-the-human-element-in-2026",
+    "isPopular": false,
+    "link": "blog/the-autonomous-security-operations-paradox-trust-risk-and-the-human-element-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "Software Engineering",
     "title": "Why Senior Architects in 2026 Are Replacing Autonomous Agents with Deterministic State Machines",
     "summary": "Following two years of chaotic production post-mortems caused by autonomous LLM agents, enterprise engineering teams in 2026 are enforcing strict finite state machines over dynamic agentic loops. Here is an architectural breakdown of why bounded state execution has become the standard for reliable software.",
@@ -1185,18 +1197,6 @@
     "slug": "beyond-edge-hydration-why-local-first-crdt-architectures-are-winning-in-2026",
     "isPopular": false,
     "link": "blog/beyond-edge-hydration-why-local-first-crdt-architectures-are-winning-in-2026.html",
-    "id": 101
-  },
-  {
-    "category": "Cybersecurity",
-    "title": "Post-Quantum TLS in 2026: Surviving Packet Fragmentation and Handshake Blowup in Distributed Systems",
-    "summary": "As NIST FIPS 203 and 204 mandates hit production in 2026, the transition to post-quantum cryptography is triggering unexpected tail-latency spikes and MTU fragmentation across distributed architectures. Here is an architectural blueprint for navigating algorithm agility and cryptographic observability without breaking throughput.",
-    "date": "15 August 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?quantum-cryptography-network",
-    "slug": "post-quantum-tls-in-2026-surviving-packet-fragmentation-and-handshake-blowup-in-distributed-systems",
-    "isPopular": false,
-    "link": "blog/post-quantum-tls-in-2026-surviving-packet-fragmentation-and-handshake-blowup-in-distributed-systems.html",
     "id": 101
   }
 ]
