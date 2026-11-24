@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "The 'Federated Cloud' Debate: Bridging Decentralization and Control in 2026",
+    "summary": "As cloud-native architectures mature, a heated debate is emerging around the concept of 'Federated Clouds' in 2026. This isn't about public vs. private, but rather a spectrum of distributed control and data sovereignty, impacting everything from regulatory compliance to resilience.",
+    "date": "24 November 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?distributed+cloud+network",
+    "slug": "the-federated-cloud-debate-bridging-decentralization-and-control-in-2026",
+    "isPopular": false,
+    "link": "blog/the-federated-cloud-debate-bridging-decentralization-and-control-in-2026.html",
+    "id": 101
+  },
+  {
     "category": "Cybersecurity",
     "title": "The Autonomous Security Operations Paradox: Trust, Risk, and the Human Element in 2026",
     "summary": "As cyber threats accelerate, the allure of autonomous security operations (ASO) grows stronger. Yet, senior engineering leaders globally are grappling with a fundamental paradox: how much trust can we truly place in machines to defend our digital fortresses? This post dives into the critical debate shaping cybersecurity in 2026, exploring the promises, pitfalls, and the indispensable role of human oversight.",
@@ -1185,18 +1197,6 @@
     "slug": "the-invisible-compute-paradox-navigating-the-rise-of-embedded-ai-in-2026",
     "isPopular": false,
     "link": "blog/the-invisible-compute-paradox-navigating-the-rise-of-embedded-ai-in-2026.html",
-    "id": 101
-  },
-  {
-    "category": "Web Development",
-    "title": "Beyond Edge Hydration: Why Local-First CRDT Architectures Are Winning in 2026",
-    "summary": "As distributed web applications face escalating cloud compute bills and unpredictable mobile networks, engineering teams are shifting away from pure edge SSR toward local-first runtimes. Here is an architectural analysis of why embedded client databases and CRDT synchronization are redefining modern web systems in 2026.",
-    "date": "16 August 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?distributed-database-network",
-    "slug": "beyond-edge-hydration-why-local-first-crdt-architectures-are-winning-in-2026",
-    "isPopular": false,
-    "link": "blog/beyond-edge-hydration-why-local-first-crdt-architectures-are-winning-in-2026.html",
     "id": 101
   }
 ]
