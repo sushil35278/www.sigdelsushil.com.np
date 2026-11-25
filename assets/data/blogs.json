@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cybersecurity",
+    "title": "The 2026 Post-Quantum Reality Check: Mitigating Latency and MTU Bloat in Hybrid PQC Migrations",
+    "summary": "As NIST's FIPS 203 (ML-KEM) standard becomes a mandatory security requirement in 2026, engineering leaders face unexpected network latency and payload degradation. This article breaks down the technical impact of hybrid post-quantum TLS key exchanges on API gateways, MTU fragmentation, and edge performance.",
+    "date": "25 November 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?post-quantum-cryptography-network",
+    "slug": "the-2026-post-quantum-reality-check-mitigating-latency-and-mtu-bloat-in-hybrid-pqc-migrations",
+    "isPopular": false,
+    "link": "blog/the-2026-post-quantum-reality-check-mitigating-latency-and-mtu-bloat-in-hybrid-pqc-migrations.html",
+    "id": 101
+  },
+  {
     "category": "Cloud Architecture",
     "title": "The 'Federated Cloud' Debate: Bridging Decentralization and Control in 2026",
     "summary": "As cloud-native architectures mature, a heated debate is emerging around the concept of 'Federated Clouds' in 2026. This isn't about public vs. private, but rather a spectrum of distributed control and data sovereignty, impacting everything from regulatory compliance to resilience.",
@@ -1185,18 +1197,6 @@
     "slug": "the-sidecar-tax-is-too-high-why-sres-are-migrating-to-ebpf-ambient-meshes-in-2026",
     "isPopular": false,
     "link": "blog/the-sidecar-tax-is-too-high-why-sres-are-migrating-to-ebpf-ambient-meshes-in-2026.html",
-    "id": 101
-  },
-  {
-    "category": "Software Engineering",
-    "title": "The 'Invisible Compute' Paradox: Navigating the Rise of Embedded AI in 2026",
-    "summary": "In 2026, senior engineers are grappling with the subtle yet profound shift towards 'invisible compute' – AI models embedded deeply within application logic, rather than deployed as standalone services. This trend presents unique challenges for observability, maintainability, and even ethical considerations. Let's explore this burgeoning landscape.",
-    "date": "17 August 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?embedded-ai-circuitry",
-    "slug": "the-invisible-compute-paradox-navigating-the-rise-of-embedded-ai-in-2026",
-    "isPopular": false,
-    "link": "blog/the-invisible-compute-paradox-navigating-the-rise-of-embedded-ai-in-2026.html",
     "id": 101
   }
 ]
