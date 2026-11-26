@@ -1,5 +1,17 @@
 [
   {
+    "category": "Distributed Systems",
+    "title": "Beyond the Cloud: The 'Local-First' State Debate in Distributed Systems for 2026",
+    "summary": "The gravitational pull towards centralized cloud infrastructure is facing a counter-force: the urgent need for local resilience, ultra-low latency, and true offline capability. In 2026, engineering leaders are grappling with the architectural complexities and profound implications of adopting 'local-first' patterns, redefining how we manage state and consistency in a globally distributed world.",
+    "date": "26 November 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?decentralized-network-node-data-flow",
+    "slug": "beyond-the-cloud-the-local-first-state-debate-in-distributed-systems-for-2026",
+    "isPopular": false,
+    "link": "blog/beyond-the-cloud-the-local-first-state-debate-in-distributed-systems-for-2026.html",
+    "id": 101
+  },
+  {
     "category": "Cybersecurity",
     "title": "The 2026 Post-Quantum Reality Check: Mitigating Latency and MTU Bloat in Hybrid PQC Migrations",
     "summary": "As NIST's FIPS 203 (ML-KEM) standard becomes a mandatory security requirement in 2026, engineering leaders face unexpected network latency and payload degradation. This article breaks down the technical impact of hybrid post-quantum TLS key exchanges on API gateways, MTU fragmentation, and edge performance.",
@@ -1185,18 +1197,6 @@
     "slug": "the-pragmatic-repatriation-architecting-for-a-hybrid-cloud-reality-in-2026",
     "isPopular": false,
     "link": "blog/the-pragmatic-repatriation-architecting-for-a-hybrid-cloud-reality-in-2026.html",
-    "id": 101
-  },
-  {
-    "category": "DevOps & SRE",
-    "title": "The Sidecar Tax is Too High: Why SREs are Migrating to eBPF Ambient Meshes in 2026",
-    "summary": "As platform teams hit the scaling limits of sidecar-heavy service meshes, a shift toward kernel-space networking is reshaping Kubernetes architecture. Explore why senior SREs are abandoning the sidecar pattern in favor of eBPF-driven ambient service meshes and the trade-offs this migration introduces.",
-    "date": "18 August 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?kubernetes-ebpf-network-topology",
-    "slug": "the-sidecar-tax-is-too-high-why-sres-are-migrating-to-ebpf-ambient-meshes-in-2026",
-    "isPopular": false,
-    "link": "blog/the-sidecar-tax-is-too-high-why-sres-are-migrating-to-ebpf-ambient-meshes-in-2026.html",
     "id": 101
   }
 ]
