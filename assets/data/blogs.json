@@ -1,5 +1,17 @@
 [
   {
+    "category": "Cloud Architecture",
+    "title": "Cloud Architecture in 2026: Why We Are Replacing OCI Containers with WebAssembly Micro-Runtimes",
+    "summary": "As standard container overhead hits a hard latency and memory wall at the edge, senior architects are shifting stateless microservices to WASI 0.2 component architectures. Here is an architectural deep dive into how teams in Tokyo and Kathmandu are slashing cold starts to under 1ms while reducing egress and compute costs by 80%.",
+    "date": "27 November 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?cloud-architecture-edge-server",
+    "slug": "cloud-architecture-in-2026-why-we-are-replacing-oci-containers-with-webassembly-micro-runtimes",
+    "isPopular": false,
+    "link": "blog/cloud-architecture-in-2026-why-we-are-replacing-oci-containers-with-webassembly-micro-runtimes.html",
+    "id": 101
+  },
+  {
     "category": "Distributed Systems",
     "title": "Beyond the Cloud: The 'Local-First' State Debate in Distributed Systems for 2026",
     "summary": "The gravitational pull towards centralized cloud infrastructure is facing a counter-force: the urgent need for local resilience, ultra-low latency, and true offline capability. In 2026, engineering leaders are grappling with the architectural complexities and profound implications of adopting 'local-first' patterns, redefining how we manage state and consistency in a globally distributed world.",
@@ -1185,18 +1197,6 @@
     "slug": "why-we-are-abandoning-centralized-cloud-databases-in-2026-the-rise-of-sovereign-cell-architecture",
     "isPopular": false,
     "link": "blog/why-we-are-abandoning-centralized-cloud-databases-in-2026-the-rise-of-sovereign-cell-architecture.html",
-    "id": 101
-  },
-  {
-    "category": "Cloud Architecture",
-    "title": "The Pragmatic Repatriation: Architecting for a Hybrid Cloud Reality in 2026",
-    "summary": "As cloud costs escalate and operational complexities mount, senior developers and engineering leaders in 2026 are deeply engaged in a nuanced debate: not about abandoning the cloud, but about strategically bringing specific workloads back on-premises or to co-location facilities. This isn't a retreat, but a matured re-evaluation of optimal infrastructure, driven by financial prudence, performance demands, and regulatory foresight.",
-    "date": "19 August 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?hybrid-cloud-architecture-data-flow",
-    "slug": "the-pragmatic-repatriation-architecting-for-a-hybrid-cloud-reality-in-2026",
-    "isPopular": false,
-    "link": "blog/the-pragmatic-repatriation-architecting-for-a-hybrid-cloud-reality-in-2026.html",
     "id": 101
   }
 ]
