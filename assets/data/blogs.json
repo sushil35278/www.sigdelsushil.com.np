@@ -1,5 +1,17 @@
 [
   {
+    "category": "AI & Machine Learning",
+    "title": "Beyond Attention: Why 2026 Production Architectures Are Replacing Pure Transformers with Hybrid SSMs",
+    "summary": "The KV-cache memory wall has rendered pure Transformer architectures economically and physically unviable for high-throughput, long-context production workloads. Here is an architectural deep-dive into how engineering teams are transitioning to hybrid State-Space Models (SSMs) to achieve linear time complexity without sacrificing recall.",
+    "date": "28 November 2026",
+    "author": "Sushil Sigdel",
+    "image": "https://source.unsplash.com/featured/1200x800/?neural-network-silicon-chip",
+    "slug": "beyond-attention-why-2026-production-architectures-are-replacing-pure-transformers-with-hybrid-ssms",
+    "isPopular": false,
+    "link": "blog/beyond-attention-why-2026-production-architectures-are-replacing-pure-transformers-with-hybrid-ssms.html",
+    "id": 101
+  },
+  {
     "category": "Cloud Architecture",
     "title": "Cloud Architecture in 2026: Why We Are Replacing OCI Containers with WebAssembly Micro-Runtimes",
     "summary": "As standard container overhead hits a hard latency and memory wall at the edge, senior architects are shifting stateless microservices to WASI 0.2 component architectures. Here is an architectural deep dive into how teams in Tokyo and Kathmandu are slashing cold starts to under 1ms while reducing egress and compute costs by 80%.",
@@ -1185,18 +1197,6 @@
     "slug": "the-great-decentralization-debating-security-ownership-in-2026s-cloud-native-world",
     "isPopular": false,
     "link": "blog/the-great-decentralization-debating-security-ownership-in-2026s-cloud-native-world.html",
-    "id": 101
-  },
-  {
-    "category": "Cloud Architecture",
-    "title": "Why We Are Abandoning Centralized Cloud Databases in 2026: The Rise of Sovereign Cell Architecture",
-    "summary": "As global data residency laws harden and cloud egress fees squeeze margins, engineering leaders are shifting from massive multi-region RDBMS setups to localized, sovereign cell-based architectures. Here is how edge-replicated SQLite and cellular isolation are redefining high-availability systems.",
-    "date": "20 August 2026",
-    "author": "Sushil Sigdel",
-    "image": "https://source.unsplash.com/featured/1200x800/?edge-computing-datacenter-networking",
-    "slug": "why-we-are-abandoning-centralized-cloud-databases-in-2026-the-rise-of-sovereign-cell-architecture",
-    "isPopular": false,
-    "link": "blog/why-we-are-abandoning-centralized-cloud-databases-in-2026-the-rise-of-sovereign-cell-architecture.html",
     "id": 101
   }
 ]
